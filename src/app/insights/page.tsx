@@ -74,7 +74,7 @@ export default function InsightsPage() {
     <main className="overflow-hidden bg-[#fbfaf7] text-[#101820]">
       {/* HERO — browse framing only; no article list */}
       <StackedPageHero
-        imageSrc="/media/contact/hero-banner.png"
+        imageSrc="/media/insights/insights-hero.png"
         imageAlt="Rise Power systems prepared for field briefing and evaluation"
         tone="#0a100e"
       >

@@ -15,7 +15,7 @@ export const insights: InsightArticle[] = [
     readTime: `3 min read`,
     accentPhrase: `Hydrogen Fuel Cell`,
     hero: {
-      src: `/media/why-hydrogen/comparison.png`,
+      src: `/media/insights/diesel-comparison.png`,
       alt: `Hydrogen power compared with conventional generators`,
     },
     relatedSlugs: [
@@ -163,7 +163,7 @@ export const insights: InsightArticle[] = [
     readTime: `4 min read`,
     accentPhrase: `Hydrogen Fuel Cell`,
     hero: {
-      src: `/media/ecosystem/fuel-cell.png`,
+      src: `/media/insights/fuel-cell.png`,
       alt: `Hydrogen fuel cell technology`,
     },
     relatedSlugs: [
@@ -350,7 +350,7 @@ export const insights: InsightArticle[] = [
     readTime: `4 min read`,
     accentPhrase: `Silent Generators`,
     hero: {
-      src: `/media/why-hydrogen/comparison.png`,
+      src: `/media/insights/defense-silent.png`,
       alt: `Hydrogen power compared with conventional generators`,
     },
     relatedSlugs: [
@@ -506,7 +506,7 @@ export const insights: InsightArticle[] = [
     readTime: `4 min read`,
     accentPhrase: `Zero Emission`,
     hero: {
-      src: `/media/products/product-sentinal.png`,
+      src: `/media/insights/zero-emission.png`,
       alt: `Rise Sentinel portable hydrogen power system`,
     },
     relatedSlugs: [
@@ -714,7 +714,7 @@ export const insights: InsightArticle[] = [
     readTime: `4 min read`,
     accentPhrase: `Disaster Response`,
     hero: {
-      src: `/media/use-cases/disaster-response.jpg`,
+      src: `/media/insights/disaster-response.png`,
       alt: `Portable power for disaster and emergency response`,
     },
     relatedSlugs: [
@@ -894,7 +894,7 @@ export const insights: InsightArticle[] = [
     readTime: `4 min read`,
     accentPhrase: `Fuel Cell`,
     hero: {
-      src: `/media/products/product-falcon.png`,
+      src: `/media/insights/drone-falcon.png`,
       alt: `Rise Falcon hydrogen fuel cell range extender`,
     },
     relatedSlugs: [
@@ -1096,7 +1096,7 @@ export const insights: InsightArticle[] = [
     readTime: `5 min read`,
     accentPhrase: `Hydrogen Cartridge`,
     hero: {
-      src: `/media/products/hydrogen-cartridge-kit.png`,
+      src: `/media/insights/cartridge-tech.png`,
       alt: `Rise Power hydrogen cartridge kit`,
     },
     relatedSlugs: [
@@ -1305,7 +1305,7 @@ export const insights: InsightArticle[] = [
     readTime: `4 min read`,
     accentPhrase: `Critical Infrastructure`,
     hero: {
-      src: `/media/use-cases/uc-grid1.png`,
+      src: `/media/insights/infrastructure-backup.png`,
       alt: `Reliable backup and off-grid power systems`,
     },
     relatedSlugs: [
@@ -1515,7 +1515,7 @@ export const insights: InsightArticle[] = [
     readTime: `4 min read`,
     accentPhrase: `Lithium Batteries`,
     hero: {
-      src: `/media/markets/defense-military.png`,
+      src: `/media/insights/defense-battery.png`,
       alt: `Defense and military portable power operations`,
     },
     relatedSlugs: [
@@ -1659,7 +1659,7 @@ export const insights: InsightArticle[] = [
     readTime: `4 min read`,
     accentPhrase: `Fuel Cell`,
     hero: {
-      src: `/media/ecosystem/fuel-cell.png`,
+      src: `/media/insights/pem-fuel-cell.png`,
       alt: `Hydrogen fuel cell technology`,
     },
     relatedSlugs: [
@@ -1823,7 +1823,7 @@ export const insights: InsightArticle[] = [
     readTime: `4 min read`,
     accentPhrase: `Forward Operating Bases`,
     hero: {
-      src: `/media/markets/defense-military.png`,
+      src: `/media/insights/defense-fob.png`,
       alt: `Defense and military portable power operations`,
     },
     relatedSlugs: [
@@ -1991,7 +1991,7 @@ export const insights: InsightArticle[] = [
     readTime: `4 min read`,
     accentPhrase: `Noise Levels`,
     hero: {
-      src: `/media/why-hydrogen/comparison.png`,
+      src: `/media/insights/generator-noise.png`,
       alt: `Hydrogen power compared with conventional generators`,
     },
     relatedSlugs: [
@@ -2155,7 +2155,7 @@ export const insights: InsightArticle[] = [
     readTime: `6 min read`,
     accentPhrase: `Safety Myths`,
     hero: {
-      src: `/media/capabilities/safety-compliance.png`,
+      src: `/media/insights/safety.png`,
       alt: `Hydrogen safety and compliance engineering`,
     },
     relatedSlugs: [
@@ -2360,7 +2360,7 @@ export const insights: InsightArticle[] = [
     readTime: `4 min read`,
     accentPhrase: `Off-Grid Power`,
     hero: {
-      src: `/media/use-cases/uc-grid1.png`,
+      src: `/media/insights/off-grid.png`,
       alt: `Reliable backup and off-grid power systems`,
     },
     relatedSlugs: [
@@ -2536,7 +2536,7 @@ export const insights: InsightArticle[] = [
     readTime: `5 min read`,
     accentPhrase: `Power Logistics`,
     hero: {
-      src: `/media/products/hydrogen-cartridge-kit.png`,
+      src: `/media/insights/defense-logistics.png`,
       alt: `Rise Power hydrogen cartridge kit`,
     },
     relatedSlugs: [
@@ -2745,7 +2745,7 @@ export const insights: InsightArticle[] = [
     readTime: `4 min read`,
     accentPhrase: `Fuel Cell`,
     hero: {
-      src: `/media/ecosystem/fuel-cell.png`,
+      src: `/media/insights/fuel-cell-vs-solar.png`,
       alt: `Hydrogen fuel cell technology`,
     },
     relatedSlugs: [
@@ -2902,7 +2902,7 @@ export const insights: InsightArticle[] = [
     readTime: `4 min read`,
     accentPhrase: `Data Centers`,
     hero: {
-      src: `/media/use-cases/uc-grid1.png`,
+      src: `/media/insights/data-centers.png`,
       alt: `Reliable backup and off-grid power systems`,
     },
     relatedSlugs: [
@@ -3082,7 +3082,7 @@ export const insights: InsightArticle[] = [
     excerpt: `Compare diesel, gas, propane, solar, battery, and hydrogen portable generators on noise, weight, runtime, emissions, and cost. Full comparison table.`,
     readTime: `3 min read`,
     hero: {
-      src: `/media/why-hydrogen/comparison.png`,
+      src: `/media/insights/generator-comparison.png`,
       alt: `Hydrogen power compared with conventional generators`,
     },
     relatedSlugs: [
@@ -3298,7 +3298,7 @@ export const insights: InsightArticle[] = [
     readTime: `4 min read`,
     accentPhrase: `Green Hydrogen`,
     hero: {
-      src: `/media/ecosystem/fuel-cell.png`,
+      src: `/media/insights/green-hydrogen.png`,
       alt: `Hydrogen fuel cell technology`,
     },
     relatedSlugs: [
@@ -3454,7 +3454,7 @@ export const insights: InsightArticle[] = [
     readTime: `3 min read`,
     accentPhrase: `Hydrogen Fuel Cell`,
     hero: {
-      src: `/media/ecosystem/fuel-cell.png`,
+      src: `/media/insights/fuel-cell-maintenance.png`,
       alt: `Hydrogen fuel cell technology`,
     },
     relatedSlugs: [
@@ -3617,7 +3617,7 @@ export const insights: InsightArticle[] = [
     excerpt: `Hospitals need backup power that starts instantly, runs clean, and works indoors. Hydrogen fuel cells deliver where diesel generators fall short.`,
     readTime: `5 min read`,
     hero: {
-      src: `/media/use-cases/disaster-response.jpg`,
+      src: `/media/insights/emergency-hospitals.png`,
       alt: `Portable power for disaster and emergency response`,
     },
     relatedSlugs: [
@@ -3822,7 +3822,7 @@ export const insights: InsightArticle[] = [
     readTime: `4 min read`,
     accentPhrase: `Hydrogen Fuel Cell`,
     hero: {
-      src: `/media/ecosystem/fuel-cell.png`,
+      src: `/media/insights/fuel-cell-lifespan.png`,
       alt: `Hydrogen fuel cell technology`,
     },
     relatedSlugs: [
@@ -3999,7 +3999,7 @@ export const insights: InsightArticle[] = [
     readTime: `5 min read`,
     accentPhrase: `Film Production`,
     hero: {
-      src: `/media/use-cases/uc-grid1.png`,
+      src: `/media/insights/film-production.png`,
       alt: `Reliable backup and off-grid power systems`,
     },
     relatedSlugs: [
@@ -4183,7 +4183,7 @@ export const insights: InsightArticle[] = [
     readTime: `6 min read`,
     accentPhrase: `Fuel Cell`,
     hero: {
-      src: `/media/products/product-falcon.png`,
+      src: `/media/insights/military-drone.png`,
       alt: `Rise Falcon hydrogen fuel cell range extender`,
     },
     relatedSlugs: [
@@ -4393,7 +4393,7 @@ export const insights: InsightArticle[] = [
     excerpt: `Compressed gas, liquid, and solid-state: each hydrogen storage method has trade-offs. Here is which works best for portable power applications.`,
     readTime: `5 min read`,
     hero: {
-      src: `/media/products/hydrogen-cartridge-kit.png`,
+      src: `/media/insights/hydrogen-storage.png`,
       alt: `Rise Power hydrogen cartridge kit`,
     },
     relatedSlugs: [
@@ -4600,7 +4600,7 @@ export const insights: InsightArticle[] = [
     readTime: `5 min read`,
     accentPhrase: `Emissions Regulations`,
     hero: {
-      src: `/media/why-hydrogen/comparison.png`,
+      src: `/media/insights/emissions-regulations.png`,
       alt: `Hydrogen power compared with conventional generators`,
     },
     relatedSlugs: [
@@ -4819,7 +4819,7 @@ export const insights: InsightArticle[] = [
     readTime: `5 min read`,
     accentPhrase: `Tactical Power`,
     hero: {
-      src: `/media/markets/defense-military.png`,
+      src: `/media/insights/defense-tactical.png`,
       alt: `Defense and military portable power operations`,
     },
     relatedSlugs: [
@@ -5013,7 +5013,7 @@ export const insights: InsightArticle[] = [
     readTime: `5 min read`,
     accentPhrase: `Portable Power`,
     hero: {
-      src: `/media/ecosystem/fuel-cell.png`,
+      src: `/media/insights/future-portable-power.png`,
       alt: `Hydrogen fuel cell technology`,
     },
     relatedSlugs: [

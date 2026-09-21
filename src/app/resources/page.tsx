@@ -93,15 +93,15 @@ const systems = [
 
 const insightImages: Record<string, { src: string; alt: string }> = {
   "hydrogen-fuel-cell-vs-diesel-generator": {
-    src: "/media/why-hydrogen/comparison.png",
+    src: "/media/insights/diesel-comparison.png",
     alt: "Hydrogen fuel cell compared with diesel generators",
   },
   "what-is-a-hydrogen-fuel-cell": {
-    src: "/media/ecosystem/fuel-cell.png",
+    src: "/media/insights/fuel-cell.png",
     alt: "How a hydrogen fuel cell works",
   },
   "silent-generator-for-military-operations": {
-    src: "/media/markets/defense-military.png",
+    src: "/media/insights/defense-silent.png",
     alt: "Silent generators for military operations",
   },
 };
