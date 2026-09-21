@@ -448,12 +448,18 @@ export default function ProductsPage() {
           className="object-cover"
         />
 
-        <div className="absolute inset-0 bg-[#f7f6f2]/10" />
+        <div className="absolute inset-0 bg-[#f7f6f2]/45" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#f7f6f2]/95 via-[#f7f6f2]/70 to-transparent lg:via-[#f7f6f2]/55 lg:to-transparent" />
 
         <div className="relative z-10 mx-auto grid max-w-[1440px] items-center gap-10 px-5 sm:px-6 lg:grid-cols-[0.9fr_1.35fr_0.7fr] lg:gap-8 lg:px-10">
 
           {/* CONTENT */}
-          <Reveal variant="left">
+          <Reveal variant="left" className="relative">
+            <div
+              aria-hidden="true"
+              className="pointer-events-none absolute -inset-x-4 -inset-y-6 rounded-lg bg-[#f7f6f2]/55 blur-xl lg:-inset-x-6 lg:-inset-y-8"
+            />
+            <div className="relative">
             <p className="text-mm font-semibold tracking-[0.2em] text-[#6e7f42] uppercase">
               ⌁ One Cartridge Ecosystem
             </p>
@@ -464,7 +470,7 @@ export default function ProductsPage() {
               <span className="text-[#6e7f42]">As a System.</span>
             </h2>
 
-            <p className="mt-6 max-w-[520px] text-sm leading-relaxed text-[#5c584e] sm:text-base">
+            <p className="mt-6 max-w-[520px] text-sm leading-relaxed text-[#3f3c36] sm:text-base">
               Every Rise Power product is designed as a complete system. Power
               generation, fuel delivery, controls, and enclosure working together.
               Integrated system design delivers better performance and reliability
@@ -486,6 +492,7 @@ export default function ProductsPage() {
                 See Use Cases
                 <ArrowRight className="size-4 text-[#6e7f42]" />
               </Link>
+            </div>
             </div>
           </Reveal>
 

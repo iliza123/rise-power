@@ -414,15 +414,6 @@ export default function CompanyPage() {
               Whether you&apos;re a procurement officer, integration partner, or
               potential team member — we want to hear from you.
             </p>
-            <div className="mt-9">
-              <a
-                href="/contact"
-                className="inline-flex min-h-12 items-center justify-center gap-2 rounded-sm bg-[#849363] px-8 text-sm font-semibold tracking-wide text-white uppercase transition-opacity hover:opacity-90"
-              >
-                Request a Briefing
-                <ArrowRight className="size-5" aria-hidden="true" />
-              </a>
-            </div>
           </Reveal>
         </div>
       </section>
