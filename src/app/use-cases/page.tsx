@@ -704,15 +704,13 @@ export default function UseCasesPage() {
           {/* Deployment image */}
           <Reveal variant="right" delay={100}>
             <div className="relative aspect-[1.15/1] overflow-hidden rounded-xl bg-[#dfe4dc]">
-              {defense?.image ? (
-                <Image
-                  src={defense.image}
-                  alt="Representative forward operating base deployment"
-                  fill
-                  sizes="(min-width: 1024px) 55vw, 100vw"
-                  className="object-cover"
-                />
-              ) : null}
+              <Image
+                src="/media/use-cases/uc-deployment.png"
+                alt="Representative forward operating base deployment"
+                fill
+                sizes="(min-width: 1024px) 55vw, 100vw"
+                className="object-cover"
+              />
 
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
             </div>

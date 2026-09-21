@@ -26,28 +26,28 @@ const values = [
     title: "Operator First\nEngineering",
     description:
       "Every engineering decision starts with the end user and the operating environment.",
-    image: "/media/company/company-v1.png",
+    image: "/media/company/company-value-1.png",
   },
   {
     number: "02",
     title: "Safety\nEngineered In",
     description:
       "Pressure vessels, leak detection, and thermal management are designed in from day one.",
-    image: "/media/company/company-v2.png",
+    image: "/media/company/company-value-2.png",
   },
   {
     number: "03",
     title: "Canadian\nManufacturing",
     description:
       "Designed, built, tested, and supported in British Columbia.",
-    image: "/media/company/company-v3.png",
+    image: "/media/company/company-value-3.png",
   },
   {
     number: "04",
     title: "Mission\nDuration",
     description:
       "Runtime measured in days. Cartridge logistics replace fuel convoys.",
-    image: "/media/company/company-v4.png",
+    image: "/media/company/company-value-4.png",
   },
 ];
 

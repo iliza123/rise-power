@@ -322,7 +322,7 @@ export const productEcosystem = {
       title: "Return & Refill",
       blurb: "Used cartridges are returned, refilled, and redeployed.",
       image: "Return & refill",
-      imageSrc: "/media/ecosystem/05.png",
+      imageSrc: "/media/ecosystem/05-return-refill.png",
       caption: "RENEW. REFILL. REDEPLOY.",
     },
   ] satisfies readonly EcosystemStep[],
@@ -774,15 +774,15 @@ export const capabilities = {
         "Disaster response deployment with safety-first hydrogen power",
       gallery: [
         {
-          src: "/media/capabilities/safety-compliance.png",
-          alt: "Safety and compliance focus for Rise Power systems",
-        },
-        {
           src: "/media/company/company-v4.png",
           alt: "Quality and compliance review of Rise Power hardware",
         },
         {
-          src: "/media/use-cases/disaster-response.jpg",
+          src: "/media/products/product-sentinal.png",
+          alt: "Rise Power Sentinel configured for safe field deployment",
+        },
+        {
+          src: "/media/cases/emergency.png",
           alt: "Emergency response power with safety systems engineered in",
         },
       ],

@@ -224,7 +224,7 @@ export default function ResourcesPage() {
   return (
     <main className="overflow-hidden bg-[#fbfaf7] text-[#101820]">
       <StackedPageHero
-        imageSrc="/media/datasheets/datasheet-hero.png"
+        imageSrc="/media/resources/resources-hero.png"
         imageAlt="Rise Power hydrogen systems prepared for field evaluation"
         tone="#0a0f10"
       >
