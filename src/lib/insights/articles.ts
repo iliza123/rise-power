@@ -2155,7 +2155,7 @@ export const insights: InsightArticle[] = [
     readTime: `6 min read`,
     accentPhrase: `Safety Myths`,
     hero: {
-      src: `/media/capabilities/safety-compliance.jpg`,
+      src: `/media/capabilities/safety-compliance.png`,
       alt: `Hydrogen safety and compliance engineering`,
     },
     relatedSlugs: [

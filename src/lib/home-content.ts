@@ -416,7 +416,7 @@ export const capabilities = {
     headlineLine1: "Capabilities",
     headlineAccent: "",
     body: "End to end hydrogen power engineering, from concept to deployment.",
-    imageSrc: "/media/capabilities/engineering-development.jpg",
+    imageSrc: "/media/capabilities/engineering-development.png",
     primaryCta: { label: "Explore Capabilities", href: "#pillars" } satisfies Cta,
     secondaryCta: { label: "Request a Briefing", href: "/contact" } satisfies Cta,
   },
@@ -455,9 +455,9 @@ export const capabilities = {
     headingBefore: "ENGINEERED FOR THE FIELD.",
     headingAccent: "VALIDATED IN IT.",
     body: "Rise Power systems are designed from operator requirements outward. Sealed against dust and salt spray. Validated across coastal British Columbia, arctic, and high altitude conditions. Built for mission duration in environments where commercial hardware fails.",
-    imageSrc: "/media/capabilities/field-deployment.jpg",
+    imageSrc: "/media/capabilities/field-deployment.png",
     imageAlt: "Engineered for the field. Validated in it.",
-    secondaryImageSrc: "/media/cta/closing.png",
+    secondaryImageSrc: "/media/capabilities/field-validation-secondary.png",
     secondaryImageAlt: "Mission landscape supporting field-validated hydrogen power",
   },
   closingBand: {
@@ -523,7 +523,7 @@ export const capabilities = {
       heroBody:
         "Hydrogen fuel cell design, power electronics, and ruggedized system development from concept through production.",
       href: "/capabilities/engineering-development",
-      imageSrc: "/media/capabilities/engineering-development.jpg",
+      imageSrc: "/media/capabilities/engineering-development.png",
       imageAlt:
         "Rise Power engineers reviewing a fuel cell stack and CAD exploded view.",
       secondaryImageSrc: "/media/company/company-v2.png",
@@ -604,7 +604,7 @@ export const capabilities = {
       heroBody:
         "Integration with existing vehicle platforms, communications systems, and facility power networks.",
       href: "/capabilities/system-integration",
-      imageSrc: "/media/capabilities/system-integration.jpg",
+      imageSrc: "/media/capabilities/system-integration.png",
       imageAlt:
         "Gloved hands mating a stainless quick-disconnect coupler into a control cabinet.",
       secondaryImageSrc: "/media/use-cases/uc-deployment.png",
@@ -612,7 +612,7 @@ export const capabilities = {
         "Rise Sentinel integrated with field shelter and communications rack",
       gallery: [
         {
-          src: "/media/capabilities/system-integration.jpg",
+          src: "/media/capabilities/system-integration.png",
           alt: "Platform integration with communications and field power",
         },
         {
@@ -685,7 +685,7 @@ export const capabilities = {
       heroBody:
         "Logistics planning, operator training, and field service for deployed hydrogen power systems.",
       href: "/capabilities/field-deployment",
-      imageSrc: "/media/capabilities/field-deployment.jpg",
+      imageSrc: "/media/capabilities/field-deployment-hero.png",
       imageAlt:
         "Canadian Armed Forces soldiers unloading a Rise Power power cube from a military truck at golden hour.",
       secondaryImageSrc: "/media/products/hydrogen-cartridge-kit.png",
@@ -701,7 +701,7 @@ export const capabilities = {
           alt: "Defense field operations with Rise Power systems",
         },
         {
-          src: "/media/capabilities/field-deployment.jpg",
+          src: "/media/capabilities/field-deployment-hero.png",
           alt: "Field deployment of Rise Mission Power systems",
         },
       ],
@@ -766,7 +766,7 @@ export const capabilities = {
       heroBody:
         "Safety engineered in from day one. Active certification across defense, transport, and indoor industrial standards.",
       href: "/capabilities/safety-compliance",
-      imageSrc: "/media/capabilities/safety-compliance.jpg",
+      imageSrc: "/media/capabilities/safety-compliance.png",
       imageAlt:
         "Safety technician in nitrile gloves testing a hydrogen cartridge with a handheld leak detector.",
       secondaryImageSrc: "/media/use-cases/disaster-response.jpg",
@@ -774,7 +774,7 @@ export const capabilities = {
         "Disaster response deployment with safety-first hydrogen power",
       gallery: [
         {
-          src: "/media/capabilities/safety-compliance.jpg",
+          src: "/media/capabilities/safety-compliance.png",
           alt: "Safety and compliance focus for Rise Power systems",
         },
         {

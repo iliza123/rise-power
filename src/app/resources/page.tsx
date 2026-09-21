@@ -49,7 +49,7 @@ const destinations = [
       "Guides and comparisons on hydrogen power, field logistics, and defense applications from Rise Power.",
     href: "/insights",
     cta: "View Insights",
-    image: "/media/capabilities/field-deployment.jpg",
+    image: "/media/capabilities/field-deployment.png",
     imageAlt: "Rise Power systems in field deployment",
   },
   {
@@ -111,7 +111,7 @@ const featuredInsights = insights.slice(0, 3).map((article) => ({
   image:
     insightImages[article.slug] ??
     article.hero ?? {
-      src: "/media/capabilities/engineering-development.jpg",
+      src: "/media/capabilities/engineering-development.png",
       alt: article.title,
     },
 }));
