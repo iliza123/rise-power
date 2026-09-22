@@ -3,7 +3,7 @@ import { site } from "@/lib/content";
 
 export const siteTitle = "Rise Mission Power";
 export const siteDescription =
-  "Mobile tactical power for defense and critical missions. Portable hydrogen fuel cell systems built for autonomous operations—silent, clean, and mission-ready.";
+  "Portable hydrogen power for everyday resilience. Quiet, zero-emission fuel cell systems for municipal, emergency, field, and off-grid applications — engineered and built in British Columbia.";
 
 export function pageMetadata({
   title,

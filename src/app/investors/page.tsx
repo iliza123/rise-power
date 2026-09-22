@@ -213,19 +213,19 @@ const pressUpdates = [
   {
     number: "03",
     image: "/media/investors/investor-p3.png",
-    imageAlt: "Hydrogen power for defense applications",
+    imageAlt: "Hydrogen power for demanding field applications",
     title: (
       <>
         Understanding Hydrogen
         <br />
-        Power for Defense
+        Power for Field
         <br />
         Applications
       </>
     ),
     meta: "2025-11-18",
     category: "Resources",
-    body: "A primer on hydrogen fuel cell technology for defense power applications, and how it compares to diesel and lithium alternatives.",
+    body: "A primer on hydrogen fuel cell technology for portable field power, and how it compares to diesel and lithium alternatives.",
   },
   {
     number: "04",
@@ -304,7 +304,7 @@ const glanceItems = [
     title: "Category",
     lead: "Portable hydrogen fuel cell power.",
     detail:
-      "Defense, disaster response, remote operations, critical infrastructure.",
+      "Disaster response, remote operations, critical infrastructure, and defense.",
     icon: LayersIcon,
   },
   {
@@ -364,8 +364,8 @@ export default function InvestorsPage() {
 
           <p className="mt-4 max-w-[650px] text-base leading-[1.55] text-white sm:text-xl">
             Rise Power is raising to scale manufacturing, complete certification,
-            and fulfill pilot deployments across defense, disaster response, and
-            critical infrastructure. Materials and contact below for qualified
+            and fulfill pilot deployments across disaster response, critical
+            infrastructure, and defense. Materials and contact below for qualified
             investors.
           </p>
 

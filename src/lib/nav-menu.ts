@@ -34,17 +34,17 @@ export const megaNavItems: readonly MegaNavItem[] = [
       {
         label: "Rise Sentinel™",
         href: "/products#sentinel",
-        description: "Man-portable hydrogen power for forward operations.",
+        description: "Power Cube for everyday backup and outdoor use.",
       },
       {
         label: "Rise Falcon™",
         href: "/products#falcon",
-        description: "Hydrogen range extender for ISR and UAV platforms.",
+        description: "Plug-and-play drone range extender — up to 5x flight range.",
       },
       {
         label: "Rise Titan™",
         href: "/products#titan",
-        description: "3 kW silent hydrogen generator for sustained ops.",
+        description: "1.5 kW portable generator for everyday and emergency backup.",
       },
       {
         label: "Hydrogen Cartridge Kit",
@@ -54,7 +54,7 @@ export const megaNavItems: readonly MegaNavItem[] = [
     ],
     feature: {
       title: "All Products",
-      body: "Four systems. One cartridge ecosystem. Engineered for defense, disaster response, and critical backup.",
+      body: "Four systems. One cartridge ecosystem. Portable hydrogen power for everyday resilience.",
       href: "/products",
       cta: "View All Products",
     },
@@ -109,19 +109,19 @@ export const megaNavItems: readonly MegaNavItem[] = [
       //   description: "The mission behind portable hydrogen power.",
       // },
       {
-        label: "Leadership",
-        href: "/company#leadership",
-        description: "The team behind the systems.",
+        label: "Focus Areas",
+        href: "/company#focus",
+        description: "Municipalities, utilities, communities, and emergency backup.",
       },
       {
         label: "Contact",
         href: "/contact",
-        description: "Request a briefing with our team.",
+        description: "Ask about product trials and clean-energy pilots.",
       },
     ],
     feature: {
       title: "Canadian-Built",
-      body: "Engineered, manufactured, and validated in British Columbia. A CIMtech Green Energy company.",
+      body: "Engineered and built in British Columbia. A CIMtech Green Energy company.",
       href: "/company",
       cta: "About Rise Power",
     },

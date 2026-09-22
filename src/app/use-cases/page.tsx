@@ -95,7 +95,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata: Metadata = pageMetadata({
   title: "Use Cases",
   description:
-    "Explore how Rise Power hydrogen systems support defense, remote operations, disaster response, and critical infrastructure.",
+    "Explore how Rise Power hydrogen systems support municipalities, utilities, remote communities, homes, and emergency backup.",
   path: "/use-cases",
 });
 
@@ -298,9 +298,9 @@ export default function UseCasesPage() {
   const productConnections = [
     {
       eyebrow: "RISE SENTINEL",
-      title: "Built for extended missions.",
+      title: "Compact. Everyday backup.",
       description:
-        "Scalable, swappable power for defense and critical operations.",
+        "Quiet Power Cube power for outdoor use, home outages, and emergency kits.",
       image: products.find((product) => product.slug === "sentinel")?.image,
       href: "/products#sentinel",
     },
@@ -319,17 +319,17 @@ export default function UseCasesPage() {
     },
     {
       eyebrow: "RISE FALCON",
-      title: "Lightweight. High performance.",
+      title: "Up to 5× flight range.",
       description:
-        "Portable power for autonomous systems and mobile operations.",
+        "Plug-and-play drone range extender for inspection, mapping, and public safety.",
       image: products.find((product) => product.slug === "falcon")?.image,
       href: "/products#falcon",
     },
     {
       eyebrow: "RISE TITAN",
-      title: "High-capacity power for any environment.",
+      title: "1.5 kW everyday and emergency backup.",
       description:
-        "Clean, reliable energy for commercial and industrial use.",
+        "Clean, quiet portable generation for municipalities, utilities, and communities.",
       image: products.find((product) => product.slug === "titan")?.image,
       href: "/products#titan",
     },
@@ -338,7 +338,7 @@ export default function UseCasesPage() {
   const defenseFeatures = [
     {
       icon: VolumeX,
-      title: "Silent portable power",
+      title: "Quiet portable power",
     },
     {
       icon: Leaf,
@@ -346,38 +346,38 @@ export default function UseCasesPage() {
     },
     {
       icon: Database,
-      title: "Reduced fuel logistics",
+      title: "No grid connection required",
     },
     {
       icon: Clock3,
-      title: "Extended mission duration",
+      title: "Unlimited runtime with cartridge swap",
     },
     {
       icon: Plane,
-      title: "Drone ISR endurance",
+      title: "Drone range extension up to 5×",
     },
   ];
 
   const deploymentRows = [
     {
       icon: Target,
-      label: "Mission",
-      value: "Forward operating base",
+      label: "Application",
+      value: "City facility backup",
     },
     {
       icon: Box,
       label: "System",
-      value: "Rise Sentinel™",
+      value: "Rise Sentinel™ / Rise Titan™",
     },
     {
       icon: Settings2,
-      label: "Application",
-      value: "Communications + ISR",
+      label: "Loads",
+      value: "Lights, communications, charging",
     },
     {
       icon: Database,
       label: "Fuel",
-      value: "Pre-positioned hydrogen cartridges",
+      value: "Refillable hydrogen cartridges",
     },
   ];
 
@@ -536,23 +536,23 @@ export default function UseCasesPage() {
                   <span className="h-5 w-px bg-[#cfd4ce]" />
 
                   <p className="text-mm font-semibold tracking-[0.08em] text-[#59615b] uppercase">
-                    Defense & Security
+                    Municipalities & Public Works
                   </p>
                 </div>
 
                 <h2 className="mt-7 font-display text-4xl leading-[0.92] font-bold tracking-tight uppercase sm:text-5xl">
-                  Silent Power
+                  Quiet Power
                   <br />
                   <span style={{ color: sage }}>
-                    For the Forward Edge.
+                    For Everyday Resilience.
                   </span>
                 </h2>
 
                 <p className="mt-4 text-base leading-relaxed text-[#646c65] sm:text-lg">
-                  Portable hydrogen power for bases, troops, communications
-                  and surveillance systems. Reduce fuel-convoy dependency
-                  while eliminating the acoustic, thermal and emissions
-                  signatures that compromise operational security.
+                  Portable hydrogen power for city facilities, public works,
+                  and neighbourhood operations. Quiet, zero-emission backup
+                  when the grid is down — with refillable cartridges swapped
+                  in under 30 seconds.
                 </p>
 
                 {/* Feature list */}
@@ -591,7 +591,7 @@ export default function UseCasesPage() {
                     className="inline-flex min-h-12 items-center justify-center gap-2 rounded-sm px-7 text-sm font-semibold tracking-wide text-white uppercase transition-opacity hover:opacity-90"
                     style={{ background: sage }}
                   >
-                    Explore Defense Solutions
+                    Explore Municipal Solutions
                     <ArrowRight className="size-5" />
                   </a>
 
@@ -628,17 +628,17 @@ export default function UseCasesPage() {
               <SectionEyebrow>Representative Deployment</SectionEyebrow>
 
               <h2 className="mt-7 max-w-3xl font-display text-4xl leading-[0.94] font-bold tracking-tight uppercase sm:text-5xl lg:text-6xl">
-                Unlimited Silent Comms
+                Quiet Backup Power
                 <br />
                 <span style={{ color: sage }}>
-                  At a Forward Operating Base.
+                  For City Facilities.
                 </span>
               </h2>
 
               <p className="mt-4 max-w-2xl text-base leading-relaxed text-[#687068] sm:text-lg">
-                Continuous power without fuel-convoy dependency. Swap
-                cartridges and extend runtime as long as the mission
-                requires.
+                Continuous power without a diesel truck on site. Swap
+                refillable cartridges and extend runtime as long as the
+                outage lasts.
               </p>
 
               {/* Deployment specification table */}
@@ -706,7 +706,7 @@ export default function UseCasesPage() {
             <div className="relative aspect-[1.15/1] overflow-hidden rounded-xl bg-[#dfe4dc]">
               <Image
                 src="/media/use-cases/uc-deployment.png"
-                alt="Representative forward operating base deployment"
+                alt="Representative municipal backup power deployment"
                 fill
                 sizes="(min-width: 1024px) 55vw, 100vw"
                 className="object-cover"
@@ -742,13 +742,13 @@ export default function UseCasesPage() {
               </SectionEyebrow>
 
               <h2 className="mt-6 font-display text-4xl leading-[0.95] font-bold tracking-tight uppercase sm:text-5xl lg:text-6xl">
-                Real Missions.{" "}
+                Real Deployments.{" "}
                 <span style={{ color: sage }}>Real Power.</span>
               </h2>
 
               <p className="mx-auto mt-5 max-w-3xl text-base leading-relaxed text-[#626a63] sm:text-lg">
-                Explore how each Rise product supports mission-critical
-                operations across defense, commercial, consumer and more.
+                Explore how each Rise product supports everyday resilience
+                across municipal, field, emergency, and mobile applications.
               </p>
             </div>
           </Reveal>

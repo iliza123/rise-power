@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const alt =
-  "Rise Mission Power — portable hydrogen fuel cell systems for defense and critical missions";
+  "Rise Mission Power — portable hydrogen power for everyday resilience";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -31,18 +31,10 @@ export default function OpenGraphImage() {
             textTransform: "uppercase",
           }}
         >
-          <div
-            style={{
-              width: 18,
-              height: 18,
-              transform: "rotate(45deg)",
-              border: "2px solid #6e7f42",
-            }}
-          />
-          Rise Power
+          Rise Mission Power
         </div>
 
-        <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+        <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
           <div
             style={{
               color: "#f3f0e8",
@@ -53,7 +45,7 @@ export default function OpenGraphImage() {
               textTransform: "uppercase",
             }}
           >
-            Mission-ready
+            Everyday
           </div>
           <div
             style={{
@@ -65,7 +57,7 @@ export default function OpenGraphImage() {
               textTransform: "uppercase",
             }}
           >
-            Hydrogen power.
+            Resilience.
           </div>
         </div>
 
@@ -77,8 +69,8 @@ export default function OpenGraphImage() {
             maxWidth: 920,
           }}
         >
-          Portable fuel cell systems for defense, disaster response, and
-          critical infrastructure.
+          Portable hydrogen power for municipal, emergency, field, and off-grid
+          applications.
         </div>
       </div>
     ),

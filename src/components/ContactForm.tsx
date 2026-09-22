@@ -15,13 +15,12 @@ const roles = [
 ];
 
 const useCases = [
-  "Defense & Security",
-  "Disaster Response",
-  "Remote Operations",
-  "Critical Backup",
-  "Data Center / Infrastructure",
-  "Drone / UAV Power",
-  "Research / Evaluation",
+  "Municipalities & Public Works",
+  "Utilities & Remote Communities",
+  "Homes & Emergency Response",
+  "Small Business & Mobile Sites",
+  "Drone / Inspection Power",
+  "Clean-Energy Pilot / Trial",
   "Other",
 ];
 

@@ -215,7 +215,7 @@ export default function ContactPage() {
                 <div className="relative mb-4 hidden aspect-[21/9] overflow-hidden rounded-[7px] lg:block">
                   <Image
                     src="/media/products/falcon.png"
-                    alt="Rise Power Falcon portable hydrogen power system"
+                    alt="Rise Power Falcon hydrogen drone range extender"
                     fill
                     sizes="50vw"
                     className="object-cover object-center"

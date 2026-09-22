@@ -117,7 +117,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Yes. Hydrogen fuel cells have no combustion, no moving parts in the power stack, and fewer failure modes than diesel engines. They operate in extreme temperatures from -20°C to 50°C and have been validated in field testing for defense applications.`,
+        text: `Yes. Hydrogen fuel cells have no combustion, no moving parts in the power stack, and fewer failure modes than diesel engines. They operate in extreme temperatures from −22°C to +50°C and have been validated in field testing across demanding environments.`,
       },
       {
         type: "heading",
@@ -149,7 +149,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Yes. Hydrogen fuel cells operate efficiently down to -20°C without the gelling problems that affect diesel fuel in cold climates. Performance remains consistent across the full temperature range.`,
+        text: `Yes. Hydrogen fuel cells operate efficiently down to −22°C without the gelling problems that affect diesel fuel in cold climates. Performance remains consistent across the full temperature range.`,
       },
     ],
   },
@@ -452,7 +452,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Modern military hydrogen generators like the Titan deliver 3kW of continuous power at under 65 dBA. Man-portable systems like the Sentinel weigh under 15 lbs and provide 30+ hours of silent power.`,
+        text: `Modern portable hydrogen generators like the Titan deliver 1.5 kW of continuous power at under 65 dBA. Compact systems like the Sentinel Power Cube provide extended runtime via cartridge swap with silent operation.`,
       },
       {
         type: "paragraph",
@@ -492,7 +492,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Yes. Military-grade hydrogen fuel cell generators are designed for operational environments including extreme temperatures (-20°C to 50°C), dust, rain, vibration, and rough handling during transport and deployment.`,
+        text: `Yes. Field-ready hydrogen fuel cell generators are designed for operational environments including extreme temperatures (−22°C to +50°C), dust, rain, vibration, and rough handling during transport and deployment.`,
       },
     ],
   },
@@ -684,7 +684,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Yes. A 3kW hydrogen fuel cell generator can power essential home systems including refrigeration, lighting, communications, and medical equipment during an outage. This is especially valuable where indoor use of diesel generators would be dangerous.`,
+        text: `Yes. A 1.5 kW hydrogen fuel cell generator can power essential home systems including refrigeration, lighting, communications, and medical equipment during an outage. This is especially valuable where indoor use of diesel generators would be dangerous.`,
       },
       {
         type: "heading",
@@ -700,7 +700,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Hydrogen fuel cells operate reliably down to -20°C. Lithium batteries lose 20-40% of their capacity in cold conditions. For cold weather operations, hydrogen fuel cells are the more reliable choice.`,
+        text: `Hydrogen fuel cells operate reliably down to −22°C. Lithium batteries lose 20-40% of their capacity in cold conditions. For cold weather operations, hydrogen fuel cells are the more reliable choice.`,
       },
     ],
   },
@@ -796,7 +796,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Most disaster response power needs fall under 3kW and require indoor operation. This is exactly where hydrogen fuel cells excel.`,
+        text: `Most disaster response power needs fall in the low-kilowatt range and require indoor operation. This is exactly where hydrogen fuel cells excel.`,
       },
       {
         type: "heading",
@@ -912,7 +912,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Hydrogen fuel cells solve the endurance problem. A fuel cell range extender can push flight time to 4+ hours, a 5x improvement over batteries alone.`,
+        text: `Hydrogen fuel cells solve the endurance problem. A fuel cell range extender can deliver up to 5x extended flight range over batteries alone.`,
       },
       {
         type: "heading",
@@ -974,7 +974,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `• Fuel cell hybrid: 1 fuel cell (800g) + 1 cartridge (300g) = 1.1 kg total`,
+        text: `• Fuel cell hybrid: fuel cell + cartridge typically lighter than the equivalent battery pack for extended missions`,
       },
       {
         type: "heading",
@@ -986,7 +986,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Hydrogen fuel cells maintain consistent output down to -20°C. For military operations in cold climates, this reliability difference can be the margin between mission success and failure.`,
+        text: `Hydrogen fuel cells maintain consistent output down to −22°C. For cold-climate operations, this reliability difference can be the margin between mission success and failure.`,
       },
       {
         type: "heading",
@@ -1461,7 +1461,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Cell towers and switching centers need backup power in every weather condition. Hydrogen fuel cells operate reliably from -20°C to 50°C without the cold-weather issues that affect diesel.`,
+        text: `Cell towers and switching centers need backup power in every weather condition. Hydrogen fuel cells operate reliably from −22°C to +50°C without the cold-weather issues that affect diesel.`,
       },
       {
         type: "paragraph",
@@ -1565,7 +1565,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Every pound matters when soldiers operate on foot for days. Lithium battery packs for a 72-hour mission weigh 17-25 lbs depending on the power draw. The Sentinel hydrogen fuel cell weighs under 15 lbs with enough cartridges for 30+ hours of continuous power. Swap cartridges to extend indefinitely without adding charging infrastructure.`,
+        text: `Every pound matters when soldiers operate on foot for days. Lithium battery packs for a 72-hour mission weigh 17-25 lbs depending on the power draw. The Sentinel is a lightweight Power Cube with extended runtime via cartridge swap. Swap cartridges to extend indefinitely without adding charging infrastructure.`,
       },
       {
         type: "heading",
@@ -1573,7 +1573,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Lithium batteries lose 20-40% of their capacity below freezing. In Arctic or high-altitude operations, that capacity loss can mean mission failure. Hydrogen fuel cells operate reliably down to -20°C. The electrochemical reaction generates its own heat, keeping the system functional in conditions that cripple battery packs.`,
+        text: `Lithium batteries lose 20-40% of their capacity below freezing. In Arctic or high-altitude operations, that capacity loss can mean mission failure. Hydrogen fuel cells operate reliably down to −22°C. The electrochemical reaction generates its own heat, keeping the system functional in conditions that cripple battery packs.`,
       },
       {
         type: "heading",
@@ -1673,7 +1673,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `A PEM fuel cell turns hydrogen into electricity, heat, and water. Nothing else. No combustion, no emissions, no noise from engine parts. This is the technology inside every Rise Power product, from the man-portable Sentinel to the 3kW Titan generator.`,
+        text: `A PEM fuel cell turns hydrogen into electricity, heat, and water. Nothing else. No combustion, no emissions, no noise from engine parts. This is the technology inside every Rise Power product, from the compact Sentinel Power Cube to the 1.5 kW Titan generator.`,
       },
       {
         type: "paragraph",
@@ -1737,7 +1737,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `The low operating temperature also means PEM cells can use lightweight polymer materials instead of heavy ceramics. That's why the Sentinel weighs under 15 lbs while delivering 30+ hours of runtime.`,
+        text: `The low operating temperature also means PEM cells can use lightweight polymer materials instead of heavy ceramics. That's why the Sentinel is a compact Power Cube delivering extended runtime via cartridge swap.`,
       },
       {
         type: "heading",
@@ -1757,7 +1757,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `The membrane must stay hydrated to conduct protons effectively. Too dry and conductivity drops. Too wet and water floods the catalyst. Rise Power's fuel cell systems manage this water balance automatically, which is why they perform reliably from -20°C to 50°C.`,
+        text: `The membrane must stay hydrated to conduct protons effectively. Too dry and conductivity drops. Too wet and water floods the catalyst. Rise Power's fuel cell systems manage this water balance automatically, which is why they perform reliably from −22°C to +50°C.`,
       },
       {
         type: "heading",
@@ -1785,7 +1785,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Yes. While the membrane needs some warmth to function optimally, PEM fuel cells generate their own heat during operation. Rise Power systems operate down to -20°C. The startup process includes a brief warm-up phase that takes seconds.`,
+        text: `Yes. While the membrane needs some warmth to function optimally, PEM fuel cells generate their own heat during operation. Rise Power systems operate down to −22°C. The startup process includes a brief warm-up phase that takes seconds.`,
       },
       {
         type: "heading",
@@ -1865,7 +1865,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `The Titan 3kW generator provides continuous baseload power for communications, computing, and command operations. At under 65 dBA, it runs without revealing position. Multiple Titan units can be networked for higher power demands.`,
+        text: `The Titan 1.5 kW generator provides continuous baseload power for communications, computing, and command operations. At under 65 dBA, it runs without revealing position. Multiple Titan units can be networked for higher power demands.`,
       },
       {
         type: "heading",
@@ -1873,7 +1873,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Patrol teams and observation posts carry the Sentinel for independent power. Under 15 lbs with 30+ hours of runtime, it powers radios, optics, and tactical electronics without resupply.`,
+        text: `Patrol teams and observation posts carry the Sentinel for independent power. The lightweight Power Cube delivers extended runtime via cartridge swap, powering radios, optics, and tactical electronics without resupply.`,
       },
       {
         type: "heading",
@@ -1881,7 +1881,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `The Falcon range extender gives ISR drones 4+ hours of flight time and 5x the range of battery-only platforms. Launch, recover, and recharge from the FOB without dedicated generator support.`,
+        text: `The Falcon range extender gives ISR drones up to 5x extended flight range over battery-only platforms. Launch, recover, and recharge from the FOB without dedicated generator support.`,
       },
       {
         type: "heading",
@@ -1945,7 +1945,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `The Titan's 3kW output can run small portable AC units. For larger cooling loads, multiple Titan units can be networked. Most FOB cooling needs fall within 2-6 kW range.`,
+        text: `The Titan's 1.5 kW output can run small portable AC units. For larger cooling loads, multiple Titan units can be networked. Most FOB cooling needs fall within a multi-kilowatt range.`,
       },
       {
         type: "heading",
@@ -2141,7 +2141,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Slightly. Cooling fans may run less in cold conditions, marginally reducing noise. Overall, hydrogen fuel cell noise levels remain consistent across the operating range of -20°C to 50°C.`,
+        text: `Slightly. Cooling fans may run less in cold conditions, marginally reducing noise. Overall, hydrogen fuel cell noise levels remain consistent across the operating range of −22°C to +50°C.`,
       },
     ],
   },
@@ -2458,7 +2458,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Hydrogen fuel cells operate to -20°C and generate waste heat that can be captured for equipment warming. The Titan's operating range of -20°C to 50°C covers virtually every inhabited climate zone on Earth.`,
+        text: `Hydrogen fuel cells operate to −22°C and generate waste heat that can be captured for equipment warming. The Titan's operating range of −22°C to +50°C covers virtually every inhabited climate zone on Earth.`,
       },
       {
         type: "heading",
@@ -2490,7 +2490,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Yes. Multiple Titan generators can be networked for 3-15 kW of continuous power. That covers lighting, communications, computing, refrigeration, and small HVAC loads for camps up to 50 people.`,
+        text: `Yes. Multiple Titan units can be networked (for example, about 1.5–7.5 kW with 1–5 units). That covers lighting, communications, computing, refrigeration, and small HVAC loads for camps up to 50 people.`,
       },
       {
         type: "heading",
@@ -2522,7 +2522,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Yes. PEM fuel cells actually perform slightly better in humid conditions because the membrane stays naturally hydrated. The Titan operates from -20°C to 50°C across all humidity levels.`,
+        text: `Yes. PEM fuel cells actually perform slightly better in humid conditions because the membrane stays naturally hydrated. The Titan operates from −22°C to +50°C across all humidity levels.`,
       },
     ],
   },
@@ -2618,7 +2618,7 @@ export const insights: InsightArticle[] = [
         items: [
           `Sentinel (man-portable, 200W)`,
           `Falcon (drone range extender)`,
-          `Titan (3kW generator)`,
+          `Titan (1.5 kW generator)`,
         ],
       },
       {
@@ -3268,7 +3268,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Diesel and gasoline generators in the 5-10 kW range can power most household loads. Propane standby generators are the most common home backup solution. Battery stations handle essentials for a few hours. Hydrogen fuel cells currently max out at 3 kW for portable units, sufficient for critical loads but not whole-house.`,
+        text: `Diesel and gasoline generators in the 5-10 kW range can power most household loads. Propane standby generators are the most common home backup solution. Battery stations handle essentials for a few hours. Portable hydrogen fuel cells like the Titan deliver 1.5 kW, sufficient for critical loads but not whole-house.`,
       },
       {
         type: "heading",
@@ -3432,7 +3432,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Rise Power's Titan generator operates from -20C to 50C. The hydrogen itself does not freeze. Cold-weather performance is actually an advantage over diesel, which gels in extreme cold.`,
+        text: `Rise Power's Titan generator operates from −22°C to +50°C. The hydrogen itself does not freeze. Cold-weather performance is actually an advantage over diesel, which gels in extreme cold.`,
       },
       {
         type: "heading",
@@ -3516,7 +3516,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `The Sentinel portable fuel cell runs 30+ hours per cartridge. Swap a cartridge, and it runs another 30. No maintenance stop required.`,
+        text: `The Sentinel portable fuel cell delivers extended runtime via cartridge swap. Swap a cartridge, and runtime continues. No maintenance stop required.`,
       },
       {
         type: "heading",
@@ -3596,7 +3596,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Fuel cells that operate in cold environments need freeze protection strategies for any residual water in the system. The Titan is rated for operation down to -20C and handles cold-weather operation automatically.`,
+        text: `Fuel cells that operate in cold environments need freeze protection strategies for any residual water in the system. The Titan is rated for operation down to −22°C and handles cold-weather operation automatically.`,
       },
       {
         type: "heading",
@@ -3695,7 +3695,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Multiple fuel cell units can be deployed in parallel. Start with backup for the ICU and surgical suites. Add units for imaging, pharmacy, and administrative systems. The Titan 3kW generator operates from -20C to 50C, and multiple units can be combined for higher power requirements.`,
+        text: `Multiple fuel cell units can be deployed in parallel. Start with backup for the ICU and surgical suites. Add units for imaging, pharmacy, and administrative systems. The Titan 1.5 kW generator operates from −22°C to +50°C, and multiple units can be combined for higher power requirements.`,
       },
       {
         type: "heading",
@@ -3731,7 +3731,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Disaster response medical facilities often operate in tents or temporary structures where diesel exhaust is not an option. The Sentinel portable fuel cell weighing under 15 lbs provides clean, quiet power for mobile medical equipment.`,
+        text: `Disaster response medical facilities often operate in tents or temporary structures where diesel exhaust is not an option. The Sentinel's compact Power Cube provides clean, quiet power for mobile medical equipment.`,
       },
       {
         type: "heading",
@@ -3892,7 +3892,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Salt air, sand, extreme humidity, and temperature swings all affect auxiliary components (fans, pumps, electronics) more than the stack itself. Robust enclosure design mitigates these factors. The Titan is engineered for operation from -20C to 50C, covering virtually all deployment environments.`,
+        text: `Salt air, sand, extreme humidity, and temperature swings all affect auxiliary components (fans, pumps, electronics) more than the stack itself. Robust enclosure design mitigates these factors. The Titan is engineered for operation from −22°C to +50°C, covering virtually all deployment environments.`,
       },
       {
         type: "heading",
@@ -4077,7 +4077,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `The Sentinel at under 15 lbs is particularly suited for camera department power, monitor feeds, and remote charging stations where hauling a diesel generator would be impractical.`,
+        text: `The lightweight Sentinel is particularly suited for camera department power, monitor feeds, and remote charging stations where hauling a diesel generator would be impractical.`,
       },
       {
         type: "heading",
@@ -4145,7 +4145,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `The Sentinel runs 30+ hours per hydrogen cartridge. For a typical 12-14 hour shoot day, you may not need to swap cartridges at all. The Titan provides similar extended runtime for higher-power applications.`,
+        text: `The Sentinel delivers extended runtime via hydrogen cartridge swap. For a typical 12-14 hour shoot day, you may not need to swap cartridges at all. The Titan provides similar extended runtime for higher-power applications.`,
       },
       {
         type: "heading",
@@ -4179,7 +4179,7 @@ export const insights: InsightArticle[] = [
     date: `2025-05-22`,
     displayDate: `May 22, 2025`,
     category: `Defense`,
-    excerpt: `Hydrogen fuel cells give military drones 4+ hours of flight time and 5x range over batteries. Here is how fuel cell propulsion changes ISR operations.`,
+    excerpt: `Hydrogen fuel cells give drones up to 5x extended flight range over batteries. Here is how fuel cell propulsion changes ISR operations.`,
     readTime: `6 min read`,
     accentPhrase: `Fuel Cell`,
     hero: {
@@ -4201,7 +4201,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Hydrogen fuel cell propulsion shatters this limitation. Rise Power's Falcon drone range extender delivers 4+ hours of flight time and 5x the range of equivalent battery systems. For ISR (Intelligence, Surveillance, and Reconnaissance) missions, that means continuous coverage instead of scheduled gaps.`,
+        text: `Hydrogen fuel cell propulsion shatters this limitation. Rise Power's Falcon drone range extender delivers up to 5x extended flight range over equivalent battery systems. For ISR (Intelligence, Surveillance, and Reconnaissance) missions, that means continuous coverage instead of scheduled gaps.`,
       },
       {
         type: "heading",
@@ -4299,7 +4299,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `The Falcon is designed to integrate with Group 1 and Group 2 UAS platforms (under 55 lbs). The fuel cell system replaces battery weight, so the airframe does not need structural modification in most cases. Net weight change is typically neutral or slightly favorable.`,
+        text: `The Falcon is designed to integrate with compatible UAS platforms. The fuel cell system replaces battery weight, so the airframe does not need structural modification in most cases. Net weight change is typically neutral or slightly favorable.`,
       },
       {
         type: "heading",
@@ -4562,7 +4562,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `The Sentinel portable fuel cell runs 30+ hours on a single cartridge. Hydrogen consumption depends on the power output, but typical portable PEM systems consume 0.5-1.0 grams of hydrogen per watt-hour of electricity produced.`,
+        text: `The Sentinel portable fuel cell delivers extended runtime via cartridge swap. Hydrogen consumption depends on the power output, but typical portable PEM systems consume 0.5-1.0 grams of hydrogen per watt-hour of electricity produced.`,
       },
       {
         type: "heading",
@@ -4877,7 +4877,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Rise Power's Sentinel weighing under 15 lbs provides 30+ hours of continuous power from a single hydrogen cartridge. A soldier carrying two cartridges has more energy available than 20 lbs of lithium batteries, at less total weight.`,
+        text: `Rise Power's lightweight Sentinel Power Cube provides extended runtime via cartridge swap. A soldier carrying two cartridges has more energy available than 20 lbs of lithium batteries, at less total weight.`,
       },
       {
         type: "heading",
@@ -4897,7 +4897,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `The Titan 3kW generator provides silent, zero-emission power for FOB operations. Operating at under 70 dB, it eliminates the acoustic signature that diesel generators project. Zero exhaust means zero thermal signature from the power source.`,
+        text: `The Titan 1.5 kW generator provides silent, zero-emission power for FOB operations. Operating at under 70 dB, it eliminates the acoustic signature that diesel generators project. Zero exhaust means zero thermal signature from the power source.`,
       },
       {
         type: "paragraph",
@@ -5047,7 +5047,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Rise Power's product line exemplifies this maturation. The Sentinel delivers man-portable hydrogen power at under 15 lbs with 30+ hours of runtime. The Falcon extends drone endurance by 5x. The Titan provides 3kW zero-emission generation in extreme conditions.`,
+        text: `Rise Power's product line exemplifies this maturation. The Sentinel delivers lightweight, man-portable hydrogen power with extended runtime via cartridge swap. The Falcon extends drone endurance by 5x. The Titan provides 1.5 kW zero-emission generation in extreme conditions.`,
       },
       {
         type: "paragraph",

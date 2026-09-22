@@ -67,7 +67,7 @@ const destinations = [
 const systems = [
   {
     name: "Rise Sentinel™",
-    label: "Man-portable power",
+    label: "Power Cube",
     href: "/datasheets#sentinel",
     image: "/media/products/product-sentinal2.png",
   },
@@ -79,7 +79,7 @@ const systems = [
   },
   {
     name: "Rise Titan™",
-    label: "3 kW field generator",
+    label: "1.5 kW portable generator",
     href: "/datasheets#titan",
     image: "/media/products/product-titan2.png",
   },

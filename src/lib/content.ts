@@ -24,10 +24,10 @@ export const nav = [
 ] as const;
 
 export const stats = [
-  { value: "<65 dBA", label: "Acoustic signature at 1m" },
+  { value: "Quiet", label: "Neighbourhood-friendly operation" },
   { value: "0 Emissions", label: "Zero exhaust at point of use" },
   { value: "∞ Runtime", label: "Unlimited with cartridge swap" },
-  { value: "<50 lbs", label: "Portable system weight target" },
+  { value: "40 lb", label: "Titan portable generator weight" },
 ];
 
 export const products = [
@@ -35,16 +35,16 @@ export const products = [
     slug: "sentinel",
     number: "01",
     name: "Rise Sentinel™",
-    tagline: "Man-portable tactical power",
+    tagline: "Power Cube for everyday backup",
     description:
-      "Man portable hydrogen power in a ruggedized, field ready form factor. Unlimited runtime via 30 second cartridge swap. Under 15 lbs. Sub ambient acoustic signature for forward positions.",
+      "Compact hydrogen power for everyday backup and outdoor use. Quiet, plug-and-play setup with refillable hydrogen cartridges. Lightweight and easy to carry — no grid connection required, zero-emissions power at the point of use.",
     image: "/media/products/product-sentinal.png",
     specs: [
-      "Unlimited runtime via 30 second cartridge swap",
-      "Under 15 lbs total system weight (cube plus cartridge)",
-      "Below 70 dB acoustic signature",
-      "Plug and play cartridge refueling",
-      "15 year cartridge shelf life",
+      "Quiet operation for everyday settings",
+      "Plug-and-play setup with simple controls",
+      "Refillable hydrogen cartridge system",
+      "Lightweight and easy to carry",
+      "Zero-emissions power at point of use",
     ],
   },
   {
@@ -53,30 +53,30 @@ export const products = [
     name: "Rise Falcon™",
     tagline: "Drone range extender",
     description:
-      "Plug and play hydrogen range extender for lithium polymer drones. Extends flight time to 4 plus hours, targeting 5x the range of lithium alone. Engineered for ISR, remote surveillance, and autonomous delivery.",
+      "Plug-and-play hydrogen range extender for compatible drones. Up to 5x extended flight range with low-noise, zero-emission operation. Quick-swap hydrogen cartridges, reliable in cold weather, and a lightweight modular design for inspection, mapping, public safety, and remote operations.",
     image: "/media/products/product-falcon.png",
     specs: [
-      "5x range extension over lithium batteries",
-      "4 plus hours continuous airtime",
-      "Cold weather efficient. No performance degradation.",
-      "Whisper quiet operation for low signature missions",
-      "Easy refill hydrogen cartridges",
+      "Up to 5x extended flight range",
+      "Low noise, zero-emission operation",
+      "Quick-swap hydrogen cartridge system",
+      "Reliable in cold-weather missions (−20 °C to +50 °C)",
+      "Cartridge load time under 30 seconds",
     ],
   },
   {
     slug: "titan",
     number: "03",
     name: "Rise Titan™",
-    tagline: "3 kW field generator",
+    tagline: "1.5 kW portable generator",
     description:
-      "A 3 kW zero emission generator built for sustained field operations. Operates silently across extreme temperature ranges with zero heat signature. Purpose built for defense, disaster response, and remote infrastructure.",
+      "Clean backup power for everyday and emergency use. A 1.5 kW zero-emissions portable generator with quiet operation, plug-and-play setup, and refillable hydrogen cartridges. Built for municipalities, utilities, communities, and businesses.",
     image: "/media/products/product-titan.png",
     specs: [
-      "3000 W nominal power output",
-      "Operates minus 20 to plus 50 degrees C",
-      "Zero heat signature",
-      "Silent continuous power",
-      "Plug and play hydrogen cartridges",
+      "1.5 kW capacity",
+      "40 lb portable weight · 24 × 18 × 24 in",
+      "Operates −22 °C to +50 °C",
+      "Unlimited runtime with 3-cartridge support",
+      "Cartridge swap in less than 30 seconds",
     ],
   },
   {
@@ -100,58 +100,58 @@ export const products = [
 export const useCases = [
   {
     slug: "defense-security",
-    title: "Defense & Security",
+    title: "Municipalities & Public Works",
     description:
-      "Silent portable power for bases, troops, and surveillance drones. Reduces reliance on fuel convoys. Eliminates the acoustic, thermal, and emissions signatures that compromise operational security.",
+      "Quiet, zero-emission backup for city facilities, public works, and neighbourhood operations when the grid is down. Rapidly deployable portable hydrogen power for civic teams.",
     image: "/media/use-cases/uc-defence.png",
     howItWorks: [
-      "Deploy Sentinel or Titan to forward positions",
-      "Operate communications and surveillance equipment silently",
-      "Extend drone ISR missions with Falcon range extender",
-      "Swap fuel cartridges for extended mission duration",
-      "Maintain zero thermal and acoustic signature",
+      "Deploy Sentinel or Titan at city facilities and public works sites",
+      "Power lights, communications, charging, and essential devices",
+      "Extend drone inspection and mapping flights with Falcon",
+      "Swap refillable hydrogen cartridges in under 30 seconds",
+      "Operate quietly with zero emissions at the point of use",
     ],
   },
   {
     slug: "remote-operations",
-    title: "Remote Operations",
+    title: "Utilities & Remote Communities",
     description:
-      "Sustained, reliable power in austere environments where fuel resupply is difficult and generator maintenance is impractical. Pre position cartridges and operate for days without intervention.",
+      "Field support for utility service and repair crews, plus reliable off-grid power for remote and Indigenous communities where grid access is limited.",
     image: "/media/use-cases/uc-grid2.png",
     howItWorks: [
-      "Pre position fuel cartridges at remote sites",
-      "Operate continuously for days without maintenance",
-      "Monitor system status remotely via RFID enabled cartridges",
-      "Eliminate fuel spill and contamination risk",
-      "Operate across minus 20 to plus 50 degrees C",
+      "Pre-position refillable cartridges at remote and community sites",
+      "Support utility crews with portable power for tools and communications",
+      "Operate without a grid connection for days of continuous use",
+      "Run Titan from −22 °C to +50 °C in real-world field conditions",
+      "Eliminate fuel spill and contamination risk at sensitive sites",
     ],
   },
   {
     slug: "disaster-response",
-    title: "Disaster Response",
+    title: "Homes & Emergency Response",
     description:
-      "Indoor safe emergency power for shelters, medical, and communications when the grid drops. Zero exhaust enables indoor operation. Cartridges stockpile indefinitely. Crews swap them in seconds without tools.",
+      "Backup during outages and severe weather for homes, community gathering spaces, and emergency kits. Zero exhaust enables indoor-safe operation when the grid drops.",
     image: "/media/use-cases/uc-grid3.png",
     howItWorks: [
-      "Pre position cartridges at emergency depots",
-      "Deploy units to shelters, comms posts, and triage tents",
-      "Run safely indoors with zero emissions",
+      "Keep Sentinel or Titan ready in home and community emergency kits",
+      "Power lights, laptops, charging, and essential small devices",
+      "Deploy to shelters and gathering spaces with zero emissions indoors",
       "Swap cartridges in seconds to extend runtime",
-      "Coordinate with emergency response logistics chains",
+      "Stockpile cartridges indefinitely for seasonal readiness",
     ],
   },
   {
     slug: "critical-infrastructure",
-    title: "Critical Infrastructure",
+    title: "Small Business & Mobile Sites",
     description:
-      "Mission duration backup for data centers, command facilities, and telecom that cannot drop. Sealed indoor operation, automatic failover, and a fuel supply that does not spoil, leak, or require a service truck.",
+      "Temporary power for essential small-business operations, community facilities, events, and mobile work sites where grid access is limited or unreliable.",
     image: "/media/use-cases/uc-grid4.png",
     howItWorks: [
-      "Install in rack as primary or backup power source",
-      "Failover to fuel cell within milliseconds",
-      "Operate inside server halls with zero exhaust",
-      "Scale runtime by adding cartridges, not generators",
-      "Integrate with existing UPS and ATS infrastructure",
+      "Set up Titan plug-and-play for temporary or event power",
+      "Run lights, communications, charging, and small tools",
+      "Move a 40 lb portable generator where power is needed",
+      "Scale runtime with refillable cartridges — no fuel truck required",
+      "Pilot clean-energy programs with municipalities and businesses",
     ],
   },
 ];
@@ -159,8 +159,8 @@ export const useCases = [
 export const values = [
   {
     number: "01",
-    title: "Operator First Engineering",
-    body: "Every engineering decision starts with the end user and the operating environment.",
+    title: "Everyday Resilience",
+    body: "Portable hydrogen power engineered for backup, outdoor, and off-grid use when the grid cannot be trusted.",
   },
   {
     number: "02",
@@ -170,12 +170,12 @@ export const values = [
   {
     number: "03",
     title: "Canadian Manufacturing",
-    body: "Designed, built, tested, and supported in British Columbia.",
+    body: "Engineered and built in British Columbia for quiet, reliable, rapidly deployable operations.",
   },
   {
     number: "04",
-    title: "Mission Duration",
-    body: "Runtime measured in days. Cartridge logistics replace fuel convoys.",
+    title: "Clean & Sustainable",
+    body: "Zero-emissions at the point of use. Refillable cartridges and long service life reduce waste.",
   },
 ];
 
@@ -193,7 +193,7 @@ export const team = [
   {
     name: "[Team Member TBA]",
     role: "VP Programs & Business Development",
-    bio: "Defense and infrastructure programs, partnerships, and customer engagement. Bio to be announced.",
+    bio: "Municipal programs, partnerships, and customer engagement. Bio to be announced.",
   },
 ];
 

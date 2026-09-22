@@ -109,7 +109,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata: Metadata = pageMetadata({
   title: "Products",
   description:
-    "Rise Sentinel, Falcon, Titan, and hydrogen cartridge systems. Portable fuel cell power for defense, disaster response, remote operations, and critical infrastructure.",
+    "Rise Sentinel, Falcon, Titan, and hydrogen cartridge systems. Portable fuel cell power for everyday resilience — municipal, emergency, field, and off-grid applications.",
   path: "/products",
 });
 
@@ -118,30 +118,30 @@ const lime = "#b5d13c";
 
 const systemMeta = [
   {
-    category: "MAN-PORTABLE POWER",
+    category: "EVERYDAY BACKUP",
     icon: ShieldCheck,
     stats: [
-      [Zap, "<65 dBA", "QUIET OPERATION"],
+      [Zap, "QUIET", "OPERATION"],
       [Leaf, "ZERO", "EMISSIONS"],
-      [Weight, "<15 lbs", "LIGHTWEIGHT"],
+      [Weight, "LIGHT", "WEIGHT"],
     ],
   },
   {
     category: "DRONE POWER",
     icon: BatteryCharging,
     stats: [
-      [Clock3, "4+ HRS", "ENDURANCE"],
-      [Infinity, "UNLIMITED", "RUNTIME"],
+      [Clock3, "UP TO 5×", "FLIGHT RANGE"],
+      [Infinity, "UNDER 30s", "CARTRIDGE SWAP"],
       [Leaf, "ZERO", "EMISSIONS"],
     ],
   },
   {
-    category: "FIELD POWER",
+    category: "PORTABLE GENERATOR",
     icon: Zap,
     stats: [
-      [Zap, "3 kW", "CONTINUOUS POWER"],
-      [Clock3, "72+ HRS", "RUNTIME"],
-      [ShieldCheck, "BUILT", "FOR THE FIELD"],
+      [Zap, "1.5 kW", "CAPACITY"],
+      [Clock3, "UNLIMITED", "RUNTIME"],
+      [Weight, "40 LB", "PORTABLE"],
     ],
   },
   {
@@ -160,9 +160,9 @@ const comparisonRows = [
     label: "Primary Use",
     icon: Crosshair,
     values: [
-      "Portable power for dismounted operations and remote systems",
-      "UAS and aerial system power",
-      "High-capacity field power for forward bases",
+      "Everyday backup and outdoor portable power",
+      "Drone range extender for compatible platforms",
+      "Everyday and emergency portable generation",
       "Clean hydrogen fuel storage and delivery",
     ],
   },
@@ -170,9 +170,9 @@ const comparisonRows = [
     label: "Power Output",
     icon: Zap,
     values: [
-      "Man-portable tactical output",
-      "4+ hrs (extended flight)",
-      "3 kW (continuous power)",
+      "Compact Power Cube output",
+      "Up to 5x extended flight range",
+      "1.5 kW capacity",
       "High energy density",
     ],
   },
@@ -181,8 +181,8 @@ const comparisonRows = [
     icon: Clock3,
     values: [
       "Unlimited with cartridge swap",
-      "4+ hours",
-      "Sustained field runtime",
+      "Extended endurance via 5x range",
+      "Unlimited with cartridge swap",
       "N/A (fuel supply)",
     ],
   },
@@ -190,9 +190,9 @@ const comparisonRows = [
     label: "Weight",
     icon: Weight,
     values: [
-      "<15 lbs (lightweight)",
-      "Optimized for UAV integration",
-      "Built for the field",
+      "Lightweight and easy to carry",
+      "Lightweight modular design",
+      "40 lb portable generator",
       "Compact & portable",
     ],
   },
@@ -200,9 +200,9 @@ const comparisonRows = [
     label: "Form Factor",
     icon: Box,
     values: [
-      "Rugged, man-portable",
+      "Power Cube — compact portable",
       "Modular, UAV-ready",
-      "Mobile, high-capacity",
+      "24 × 18 × 24 in portable",
       "Cartridge-based system",
     ],
   },
@@ -210,10 +210,10 @@ const comparisonRows = [
     label: "Ideal For",
     icon: Users,
     values: [
-      "Tactical teams, surveillance, remote operations",
-      "Defense, commercial UAS, long-endurance missions",
-      "Forward bases, critical infrastructure, extended operations",
-      "Rapid deployment, field operations, fuel resupply",
+      "Camping, home outages, emergency kits",
+      "Inspection, mapping, public safety",
+      "Municipalities, utilities, home backup",
+      "Rapid deployment, field refuel, resupply",
     ],
   },
 ];
@@ -353,8 +353,9 @@ export default function ProductsPage() {
           </h1>
 
           <p className="mt-5 max-w-[540px] text-base leading-relaxed text-white sm:text-lg xl:mt-7">
-            Four products. One cartridge ecosystem. Engineered for defense,
-            disaster response, remote operations, and critical backup.
+            Four products. One cartridge ecosystem. Portable hydrogen power
+            for everyday resilience — municipal, emergency, field, and
+            off-grid applications.
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
@@ -362,7 +363,7 @@ export default function ProductsPage() {
               href="/contact"
               className="inline-flex min-h-12 w-full items-center justify-center gap-2 whitespace-nowrap rounded-sm bg-[#849363] px-7 text-xs font-bold tracking-[0.12em] text-white uppercase transition-opacity hover:opacity-90 sm:w-auto"
             >
-              Request a Briefing
+              Request a Trial
               <ArrowRight className="size-4 shrink-0" />
             </Link>
             <Link
