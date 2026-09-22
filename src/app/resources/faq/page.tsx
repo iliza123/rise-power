@@ -109,7 +109,7 @@ const faqGroups = [
       },
       {
         q: "Where are the systems built?",
-        a: "Engineered, manufactured, and validated in Surrey, British Columbia. Rise Power is a CIMtech Green Energy company — a Canadian advanced manufacturing operation with a multi decade track record.",
+        a: "Rise Power is based in Vancouver, Canada, and is a CIMtech Green Energy company — a Canadian advanced manufacturing operation with a multi decade track record.",
       },
       {
         q: "Do you support integration with existing platforms?",

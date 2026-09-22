@@ -201,13 +201,9 @@ export default function ContactPage() {
                       Address
                     </p>
                     <p className="mt-1.5 text-lg leading-relaxed text-[#101820]">
-                      {site.parent}
+                      {site.name}
                       <br />
-                      {site.address.line1}
-                      <br />
-                      {site.address.city}
-                      <br />
-                      {site.address.country}
+                      {site.address.city}, {site.address.country}
                     </p>
                   </div>
                 </div>

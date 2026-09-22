@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { PageHero } from "@/components/PageHero";
 import { Reveal } from "@/components/motion/Reveal";
+import { site } from "@/lib/content";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata({
@@ -74,7 +75,7 @@ const sections = [
   {
     title: "10. Contact Us",
     paragraphs: [
-      "If you have questions about these Terms of Use, please contact us at info@risepower.com.",
+      `If you have questions about these Terms of Use, please contact us at ${site.email}.`,
     ],
   },
 ] as const;

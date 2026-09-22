@@ -4,6 +4,7 @@ import Link from "next/link";
 import { SnapCarousel } from "@/components/home/SnapCarousel";
 import { Reveal, RevealStagger } from "@/components/motion/Reveal";
 import { StackedPageHero } from "@/components/StackedPageHero";
+import { site } from "@/lib/content";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata({
@@ -324,7 +325,7 @@ const glanceItems = [
   {
     number: "04",
     title: "Location",
-    lead: "Engineered, built, and validated in Surrey, British Columbia.",
+    lead: "Based in Vancouver, Canada.",
     detail: null,
     icon: LocationIcon,
   },
@@ -676,7 +677,7 @@ export default function InvestorsPage() {
                 <>
                   Company news, technology updates, and development milestones.
                   <br className="hidden sm:block" />
-                  For press inquiries, contact info@risepower.com.
+                  For press inquiries, contact {site.email}.
                 </>
               }
             />

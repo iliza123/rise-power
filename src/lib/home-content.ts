@@ -1,3 +1,4 @@
+import { site } from "./content";
 import { megaNavItems } from "./nav-menu";
 
 export type {
@@ -920,19 +921,20 @@ export const businessesCompanies = {
     {
       name: "CIMtech Green Energy",
       body: "Canadian advanced manufacturing for hydrogen systems—precision engineering, production capability, and field-ready energy platforms.",
-      image: "CIMtech Green Energy precision manufacturing",
+      image: "CIMtech Green Energy facility and clean energy infrastructure",
       imageSrc: "/media/businesses/cimtech-green-energy.png",
       href: "https://www.cimtechgreenenergy.com",
       cta: "Visit CIMtech Green Energy",
       external: true,
     },
     {
-      name: "Rise Mission Power",
-      body: "Portable hydrogen fuel cell systems for defense, disaster response, and off-grid operations—silent, zero-emission, and mission-ready.",
-      image: "Rise Mission Power field deployment",
-      imageSrc: "/media/businesses/rise-mission-power.png",
-      href: "/products",
-      cta: "Explore Rise Mission Power",
+      name: "Dr. Paul Ghotra",
+      body: "Founder & CEO of CIMtech Green Energy and Rise Mission Power—visionary entrepreneur and award-winning leader in Canadian green energy.",
+      image: "Portrait of Dr. Paul Ghotra",
+      imageSrc: "/media/businesses/dr-paul-ghotra.png",
+      href: "https://www.drpaulghotra.com/",
+      cta: "Visit Dr. Paul Ghotra",
+      external: true,
     },
   ] satisfies readonly GroupCompanyCard[],
 };
@@ -1005,10 +1007,10 @@ export const footer = {
     placeholder: "Enter your email address",
   },
   contact: {
-    email: "info@risepower.com",
-    phone: "+1 (604) 807-4850",
-    phoneHref: "tel:+16048074850",
-    location: "CIMtech Green Energy · 17942 55 Avenue · Surrey, BC V3S 6C8",
+    email: site.email,
+    phone: site.phone,
+    phoneHref: site.phoneHref,
+    location: `${site.name} · ${site.address.city}, ${site.address.country}`,
   },
   social: [
     { label: "LinkedIn", href: "#" },

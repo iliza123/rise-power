@@ -19,13 +19,14 @@ const organizationJsonLd = {
   image: `${site.url}/media/brand/rise-power-logo.png`,
   description: siteDescription,
   email: site.email,
-  telephone: "+1-604-807-4850",
+  telephone: site.phoneHref.replace("tel:", ""),
   address: {
     "@type": "PostalAddress",
-    streetAddress: site.address.line1,
-    addressLocality: "Surrey",
-    addressRegion: "BC",
-    postalCode: "V3S 6C8",
+    addressLocality: site.address.city,
+    addressRegion: site.address.region,
+    ...(site.address.postalCode
+      ? { postalCode: site.address.postalCode }
+      : {}),
     addressCountry: "CA",
   },
   parentOrganization: {
