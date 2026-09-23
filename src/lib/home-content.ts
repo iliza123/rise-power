@@ -949,9 +949,9 @@ export const customerPartners = {
         { value: "CARTRIDGE", label: "Logistics Ready" },
       ],
       href: "/use-cases#use-cases",
-      image: "Soldiers using Rise Mission Power in a snowy forest camp",
+      image: "Soldiers with Rise power systems at a mountain overlook at sunset",
       imageSrc: "/media/cases/homes-community.png",
-      imageClassName: "object-cover object-[center_40%]",
+      imageClassName: "object-cover object-center",
     },
     {
       category: "MINING COMPANY",

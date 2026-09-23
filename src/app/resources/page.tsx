@@ -94,15 +94,15 @@ const systems = [
 const insightImages: Record<string, { src: string; alt: string }> = {
   "hydrogen-fuel-cell-vs-diesel-generator": {
     src: "/media/insights/diesel-comparison.png",
-    alt: "Couple cooking at a campsite",
+    alt: "Couple at a lakeside campsite with Rise portable power and a laptop at sunset",
   },
   "what-is-a-hydrogen-fuel-cell": {
     src: "/media/insights/fuel-cell.png",
-    alt: "Camper and dog at an RV",
+    alt: "Field workstation by a lake with Rise portable power systems and laptops",
   },
   "silent-generator-for-military-operations": {
     src: "/media/insights/defense-silent.png",
-    alt: "Silent hydrogen power for military field operations",
+    alt: "Outdoor field setup with Rise portable power units, solar panel, and communications gear",
   },
 };
 
@@ -226,9 +226,9 @@ export default function ResourcesPage() {
       <StackedPageHero
         layout="split"
         imageSrc="/media/resources/resources-hero.png"
-        imageAlt="Military camp with a generator and mountains"
-        imageWidth={1374}
-        imageHeight={1145}
+        imageAlt="Rise Mission Power station at a mountain field camp at sunset"
+        imageWidth={3840}
+        imageHeight={1200}
         tone="#0a0f10"
         splitWash="linear-gradient(90deg, #0a0f10 0%, #0a0f10 44%, rgba(10,15,16,0.82) 52%, rgba(10,15,16,0.35) 62%, transparent 74%)"
       >
