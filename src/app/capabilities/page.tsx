@@ -221,11 +221,13 @@ export default function CapabilitiesPage() {
   return (
     <main id="capabilities" className="scroll-mt-28 bg-[#fbfaf7] text-[#101713]">
       <StackedPageHero
+        layout="split"
         imageSrc={hero.imageSrc}
         imageAlt="Rise Power engineering capabilities"
-        imageClassName="object-cover object-[center_30%]"
+        imageWidth={1536}
+        imageHeight={1024}
       >
-        <div className="hero-animate-copy max-w-[720px]">
+        <div className="hero-animate-copy w-full text-left">
           <SectionEyebrow light>{hero.eyebrow}</SectionEyebrow>
 
           <h1 className="mt-6 type-page-h1">

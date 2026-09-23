@@ -137,11 +137,14 @@ export default function DatasheetsPage() {
     <main className="bg-[#fbfaf7] text-[#101820]">
       {/* HERO */}
       <StackedPageHero
+        layout="split"
         imageSrc="/media/datasheets/datasheet-hero.png"
         imageAlt="Rise Power hydrogen systems in a field environment"
+        imageWidth={1716}
+        imageHeight={916}
         tone="#0a0f10"
       >
-        <div className="hero-animate-copy max-w-[780px]">
+        <div className="hero-animate-copy w-full text-left">
           <SectionEyebrow onDark>Resources</SectionEyebrow>
 
           <h1 className="mt-5 type-page-h1">

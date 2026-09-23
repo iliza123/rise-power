@@ -51,11 +51,14 @@ export default function ContactPage() {
   return (
     <main className="overflow-hidden bg-[#fbfaf7] text-[#101820]">
       <StackedPageHero
+        layout="split"
         imageSrc="/media/contact/hero-banner.png"
         imageAlt="Rise Power field deployment — request a capability briefing"
+        imageWidth={1448}
+        imageHeight={1086}
         tone="#101820"
       >
-        <div className="hero-animate-copy max-w-[760px]">
+        <div className="hero-animate-copy w-full text-left">
           <SectionEyebrow light>{site.name}</SectionEyebrow>
 
           <h1 className="mt-5 type-page-h1">

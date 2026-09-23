@@ -121,12 +121,15 @@ export function CapabilityDetail({ capability }: CapabilityDetailProps) {
     <main className="bg-[#fbfaf7] text-[#101820]">
       {/* 1. Hero */}
       <StackedPageHero
+        layout="split"
         imageSrc={capability.images.hero.src}
         imageAlt={capability.images.hero.alt}
+        imageWidth={1536}
+        imageHeight={1024}
         tone="#101820"
         compact
       >
-        <div className="hero-animate-copy max-w-[720px]">
+        <div className="hero-animate-copy w-full text-left">
           <SectionEyebrow light>
             {capability.eyebrow || "Capability"}
           </SectionEyebrow>

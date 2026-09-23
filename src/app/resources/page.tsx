@@ -224,11 +224,14 @@ export default function ResourcesPage() {
   return (
     <main className="overflow-hidden bg-[#fbfaf7] text-[#101820]">
       <StackedPageHero
+        layout="split"
         imageSrc="/media/resources/resources-hero.png"
         imageAlt="Rise Power hydrogen systems prepared for field evaluation"
+        imageWidth={1374}
+        imageHeight={1145}
         tone="#0a0f10"
       >
-        <div className="hero-animate-copy max-w-[820px]">
+        <div className="hero-animate-copy w-full text-left">
           <SectionEyebrow onDark>Resource Center</SectionEyebrow>
 
           <h1 className="mt-4 type-page-h1">

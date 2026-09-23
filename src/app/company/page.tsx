@@ -265,11 +265,14 @@ export default function CompanyPage() {
   return (
     <main className="overflow-hidden bg-[#fbfaf7] text-[#101820]">
       <StackedPageHero
+        layout="split"
         imageSrc="/media/company/company-hero.png"
         imageAlt="Rise Power systems deployed in a remote operating environment"
+        imageWidth={1717}
+        imageHeight={916}
         tone="#101820"
       >
-        <div className="hero-animate-copy max-w-[820px]">
+        <div className="hero-animate-copy w-full text-left">
           <SectionEyebrow light>Company</SectionEyebrow>
 
           <h1 className="mt-6 type-page-h1">

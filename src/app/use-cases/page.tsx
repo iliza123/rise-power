@@ -385,11 +385,13 @@ export default function UseCasesPage() {
   return (
     <main className="bg-[#fbfaf7] text-[#101713]">
       <StackedPageHero
+        layout="split"
         imageSrc={defense?.image ?? "/media/use-cases/uc-hero.png"}
         imageAlt="Hydrogen power supporting mission operations"
-        imageClassName="object-cover object-[center_15%]"
+        imageWidth={1716}
+        imageHeight={916}
       >
-        <div className="hero-animate-copy max-w-[700px]">
+        <div className="hero-animate-copy w-full text-left">
           <SectionEyebrow light>Use Cases</SectionEyebrow>
 
           <h1 className="mt-6 type-page-h1">

@@ -74,11 +74,14 @@ export default function InsightsPage() {
     <main className="overflow-hidden bg-[#fbfaf7] text-[#101820]">
       {/* HERO — browse framing only; no article list */}
       <StackedPageHero
+        layout="split"
         imageSrc="/media/insights/insights-hero.png"
         imageAlt="Rise Power systems prepared for field briefing and evaluation"
+        imageWidth={1672}
+        imageHeight={941}
         tone="#0a100e"
       >
-        <div className="hero-animate-copy max-w-[820px]">
+        <div className="hero-animate-copy w-full text-left">
           <SectionEyebrow onDark>News & Insights</SectionEyebrow>
 
           <h1 className="mt-4 type-page-h1">

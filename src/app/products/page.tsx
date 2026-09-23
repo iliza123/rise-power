@@ -354,27 +354,29 @@ export default function ProductsPage() {
   return (
     <>
       <StackedPageHero
+        layout="split"
         imageSrc="/media/products/product-hero.png"
         imageAlt="Rise Falcon, Sentinel, and Titan hydrogen power systems"
-        imageClassName="object-cover object-[center_40%]"
+        imageWidth={1920}
+        imageHeight={1081}
         tone="#07100d"
       >
-        <div className="hero-animate-copy w-full max-w-[620px]">
+        <div className="hero-animate-copy w-full text-left">
           <p className="text-mm font-semibold tracking-[0.18em] text-white uppercase">
             ⌁ Products
           </p>
 
-          <h1 className="mt-5 type-page-h1 xl:mt-6">
+          <h1 className="mt-4 type-page-h1 sm:mt-5">
             Products
           </h1>
 
-          <p className="type-section-body mt-5 max-w-[540px] text-white xl:mt-7">
+          <p className="type-section-body mt-5 max-w-[32rem] !text-white/90 sm:mt-6">
             Four products. One cartridge ecosystem. Portable hydrogen power
             for everyday resilience — municipal, emergency, field, and
             off-grid applications.
           </p>
 
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+          <div className="mt-8 flex w-full flex-col gap-3 sm:mt-9 sm:flex-row sm:flex-wrap sm:items-center">
             <Link
               href="/contact"
               className="inline-flex min-h-12 w-full items-center justify-center gap-2 whitespace-nowrap rounded-sm bg-[#849363] px-7 text-xs font-bold tracking-[0.12em] text-white uppercase transition-opacity hover:opacity-90 sm:w-auto"
@@ -456,117 +458,108 @@ export default function ProductsPage() {
       </section>
 
       {/* ENGINEERED AS A SYSTEM */}
-      <section className="relative overflow-hidden bg-[#f7f6f2] py-10 sm:py-12 lg:py-16">
-
+      <section className="relative overflow-hidden bg-[#0e1210] py-12 sm:py-14 lg:py-16">
+        {/* Full-bleed photo — keep clearly visible */}
         <Image
           src="/media/products/product-ecosystem.png"
           alt="Rise Power ecosystem"
           fill
           quality={90}
           sizes="100vw"
-          className="object-cover object-[center_45%]"
+          className="object-cover object-[center_42%]"
         />
+        {/* Very light wash only */}
+        <div className="absolute inset-0 bg-white/10" />
+        {/* Soft white edge fades — light enough that photo stays clear */}
+        <div className="pointer-events-none absolute inset-y-0 left-0 z-[1] w-[22%] bg-gradient-to-r from-white/80 via-white/35 to-transparent" />
+        <div className="pointer-events-none absolute inset-y-0 right-0 z-[1] w-[14%] bg-gradient-to-l from-white/55 via-white/20 to-transparent" />
 
-        <div className="absolute inset-0 bg-[#f7f6f2]/10" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#f7f6f2]/45 via-[#f7f6f2]/15 to-transparent lg:via-[#f7f6f2]/10 lg:to-transparent" />
+        <div className="relative z-10 mx-auto grid max-w-[1440px] items-center gap-8 px-5 sm:px-6 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.1fr)_minmax(0,0.85fr)] lg:gap-6 lg:px-10">
+          {/* Left copy — opaque panel + hard shadow for readability */}
+          <Reveal variant="left" className="relative max-w-[34rem]">
+            <div className="relative rounded-xl border border-[#e8e6df] bg-white/95 px-5 py-5 shadow-[6px_6px_0_0_rgba(20,26,20,0.35)] sm:px-6 sm:py-6">
+              <p className="text-[11px] font-semibold tracking-[0.2em] text-[#6e7f42] uppercase sm:text-xs">
+                ⌁ One Cartridge Ecosystem
+              </p>
 
-        <div className="relative z-10 mx-auto grid max-w-[1440px] items-center gap-6 px-5 sm:px-6 lg:grid-cols-[0.9fr_1.35fr_0.7fr] lg:gap-6 lg:px-10">
+              <h2 className="mt-3 text-[2rem] leading-[1.08] font-bold tracking-tight text-[#141a14] sm:text-[2.35rem] lg:text-[2.65rem]">
+                Engineered
+                <br />
+                <span className="text-[#6e7f42]">As a System.</span>
+              </h2>
 
-          {/* CONTENT */}
-          <Reveal variant="left" className="relative">
-            <div
-              aria-hidden="true"
-              className="pointer-events-none absolute -inset-x-3 -inset-y-4 rounded-lg bg-[#f7f6f2]/20 blur-xl lg:-inset-x-5 lg:-inset-y-5"
-            />
-            <div className="relative">
-            <p className="text-sm font-semibold tracking-[0.18em] text-[#6e7f42] uppercase sm:text-base">
-              ⌁ One Cartridge Ecosystem
-            </p>
+              <p className="mt-4 max-w-[28rem] text-[14px] leading-relaxed text-[#3f3c36] sm:text-[15px]">
+                Every Rise Power product is designed as a complete system. Power
+                generation, fuel delivery, controls, and enclosure working together.
+                Integrated system design delivers better performance and reliability
+                than assembled from parts alternatives.
+              </p>
 
-            <h2 className="mt-3 text-[3.7rem] leading-[1.05] font-bold tracking-tight sm:text-[4.3rem] lg:text-[4.9rem]">
-              Engineered
-              <br />
-              <span className="text-[#6e7f42]">As a System.</span>
-            </h2>
+              <div className="mt-6 flex flex-wrap items-center gap-4">
+                <Link
+                  href="/contact"
+                  className="inline-flex min-h-11 items-center gap-2 rounded-sm border border-[#252925] bg-white px-6 text-xs font-semibold uppercase shadow-[3px_3px_0_0_rgba(20,26,20,0.28)] transition-colors hover:bg-[#141a14] hover:text-white"
+                >
+                  Request a Briefing
+                </Link>
 
-            <p className="mt-4 max-w-[640px] text-[28px] leading-relaxed text-[#3f3c36] sm:text-[30px]">
-              Every Rise Power product is designed as a complete system. Power
-              generation, fuel delivery, controls, and enclosure working together.
-              Integrated system design delivers better performance and reliability
-              than assembled from parts alternatives.
-            </p>
-
-            <div className="mt-5 flex flex-wrap items-center gap-4">
-              <Link
-                href="/contact"
-                className="inline-flex min-h-12 items-center gap-2 rounded-sm border border-[#252925] px-6 text-base font-semibold uppercase hover:bg-[#141a14] hover:text-white"
-              >
-                Request a Briefing
-              </Link>
-
-              <Link
-                href="/use-cases"
-                className="inline-flex items-center gap-2 text-base font-semibold uppercase"
-              >
-                See Use Cases
-                <ArrowRight className="size-5 text-[#6e7f42]" />
-              </Link>
-            </div>
+                <Link
+                  href="/use-cases"
+                  className="inline-flex items-center gap-2 text-xs font-semibold uppercase text-[#141a14]"
+                >
+                  See Use Cases
+                  <ArrowRight className="size-4 text-[#6e7f42]" />
+                </Link>
+              </div>
             </div>
           </Reveal>
 
+          {/* Open middle — product imagery from the photo shows through */}
+          <div className="hidden min-h-[18rem] lg:block" aria-hidden />
 
-          {/* SPACE FOR BACKGROUND PRODUCT IMAGE */}
-          <div className="hidden lg:block" />
-
-
-          {/* SYSTEM FLOW */}
+          {/* Right system flow cards — opaque + hard shadow */}
           <RevealStagger
-            className="flex w-full max-w-lg flex-col gap-2.5"
+            className="flex w-full max-w-md flex-col gap-3 justify-self-end lg:max-w-none"
             step={70}
             variant="right"
           >
             {systemFlow.map((item, index) => (
               <div
                 key={item.title}
-                className="relative flex items-stretch overflow-visible rounded-md border border-[#dcded8] bg-white/70"
+                className="relative flex items-stretch rounded-md border border-[#e8e6df] bg-white/95 shadow-[5px_5px_0_0_rgba(20,26,20,0.32)]"
               >
-                {/* Image */}
-                <div className="relative m-3 h-16 w-16 shrink-0 self-center overflow-hidden rounded-md sm:h-[4.5rem] sm:w-[4.5rem]">
+                <div className="relative m-2.5 h-14 w-14 shrink-0 self-center overflow-hidden rounded-sm bg-[#f7f6f2] sm:h-16 sm:w-16">
                   <Image
                     src={item.image}
                     alt={item.title}
                     fill
-                    className="object-contain"
+                    sizes="64px"
+                    className="object-contain p-0.5"
                   />
                 </div>
 
-                {/* Dot + connecting line, between image and text */}
                 <div className="relative w-3 shrink-0">
                   {index !== 0 && (
-                    <span className="absolute -top-3 bottom-1/2 left-1/2 w-px -translate-x-1/2 bg-[#6e7f42]/50" />
+                    <span className="absolute -top-3.5 bottom-1/2 left-1/2 w-px -translate-x-1/2 bg-[#c5c8bf]" />
                   )}
                   {index !== systemFlow.length - 1 && (
-                    <span className="absolute top-1/2 -bottom-3 left-1/2 w-px -translate-x-1/2 bg-[#6e7f42]/50" />
+                    <span className="absolute top-1/2 -bottom-3.5 left-1/2 w-px -translate-x-1/2 bg-[#c5c8bf]" />
                   )}
-                  <span className="absolute top-1/2 left-1/2 z-10 size-2.5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#6e7f42] ring-2 ring-white" />
+                  <span className="absolute top-1/2 left-1/2 z-10 size-2.5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#6e7f42] ring-[3px] ring-white" />
                 </div>
 
-                {/* Text */}
-                <div className="min-w-0 flex-1 self-center px-3 py-3">
-                  <h3 className="text-[15px] font-bold uppercase leading-tight sm:text-base">
+                <div className="min-w-0 flex-1 self-center pr-3.5 py-2.5 pl-1">
+                  <h3 className="text-[12px] font-bold uppercase leading-tight tracking-wide text-[#141a14] sm:text-[13px]">
                     {item.title}
                   </h3>
-                  <p className="mt-1 text-[13px] leading-snug text-[#5c584e] sm:text-sm">
+                  <p className="mt-0.5 text-[12px] leading-snug text-[#5c584e] sm:text-[13px]">
                     {item.body}
                   </p>
                 </div>
               </div>
             ))}
           </RevealStagger>
-
         </div>
-
       </section>
 
       {/* PRODUCT COMPARISON */}

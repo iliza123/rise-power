@@ -337,11 +337,14 @@ export default function InvestorsPage() {
       {/* ==================================================================== */}
 
       <StackedPageHero
+        layout="split"
         imageSrc="/media/investors/investor-hero.png"
         imageAlt="Rise Power hydrogen power system in a mountain environment"
+        imageWidth={1672}
+        imageHeight={941}
         tone="#101820"
       >
-        <div className="hero-animate-copy max-w-[700px]">
+        <div className="hero-animate-copy w-full text-left">
           <div className="flex items-center gap-4">
             <p className="font-display text-mm font-semibold tracking-[0.2em] text-white uppercase">
               Capital Raise

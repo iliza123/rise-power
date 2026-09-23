@@ -170,13 +170,15 @@ export function InsightArticleView({
   return (
     <article className="bg-[#fbfaf7] text-[#101820]">
       <StackedPageHero
+        layout="split"
         imageSrc={article.hero.src}
         imageAlt={article.hero.alt}
+        imageWidth={1672}
+        imageHeight={941}
         tone="#101820"
         compact
-        contentMaxWidthClassName="max-w-[991px]"
       >
-        <div className="hero-animate-copy">
+        <div className="hero-animate-copy w-full text-left">
           <p className="text-xs font-semibold tracking-[0.2em] text-[#c5d4a8] uppercase sm:text-[13px]">
             {article.category}
             <span className="mx-2 text-white/40" aria-hidden>
