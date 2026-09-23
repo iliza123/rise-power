@@ -503,7 +503,7 @@ export default function UseCasesPage() {
             <Reveal variant="left">
               <div className="relative aspect-[1.03/1] overflow-hidden rounded-xl bg-[#dfe4dc]">
                 <Image
-                  src={defense.image}
+                  src="/media/use-cases/uc-defence.png"
                   alt={defense.title}
                   fill
                   sizes="(min-width: 1024px) 52vw, 100vw"
