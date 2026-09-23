@@ -253,7 +253,7 @@ export const threeMarkets = {
       href: "/use-cases#use-cases",
       cta: "View Municipal",
       image: "Municipalities and public works market imagery",
-      imageSrc: "/media/markets/defense-military.png",
+      imageSrc: "/media/markets/municipal.png",
     },
     {
       title: "Utilities & Remote Communities",
@@ -265,7 +265,7 @@ export const threeMarkets = {
       href: "/use-cases#remote-operations",
       cta: "View Field Support",
       image: "Utilities and remote communities market imagery",
-      imageSrc: "/media/markets/commercial.png",
+      imageSrc: "/media/markets/utilities.png",
     },
     {
       title: "Homes & Emergency Response",
@@ -277,7 +277,7 @@ export const threeMarkets = {
       href: "/use-cases#disaster-response",
       cta: "View Emergency Backup",
       image: "Homes and emergency response market imagery",
-      imageSrc: "/media/markets/field-consumer.png",
+      imageSrc: "/media/markets/emergency.png",
     },
   ] satisfies readonly MarketCard[],
 };
@@ -351,7 +351,7 @@ export const featuredProducts = {
       detailsHref: "/products#sentinel",
       datasheetHref: "/datasheets",
       image: "SENTINEL portable hydrogen power system",
-      imageSrc: "/media/products/sentinel.png",
+      imageSrc: "/media/products/featured-sentinel.png",
     },
     {
       name: "FALCON",
@@ -368,7 +368,7 @@ export const featuredProducts = {
       detailsHref: "/products#falcon",
       datasheetHref: "/datasheets",
       image: "FALCON hydrogen drone range extender",
-      imageSrc: "/media/products/falcon.png",
+      imageSrc: "/media/products/featured-falcon.png",
     },
     {
       name: "TITAN",
@@ -385,7 +385,7 @@ export const featuredProducts = {
       detailsHref: "/products#titan",
       datasheetHref: "/datasheets",
       image: "TITAN zero-emission generator",
-      imageSrc: "/media/products/titan.png",
+      imageSrc: "/media/products/featured-titan.png",
     },
     {
       name: "HYDROGEN CARTRIDGE KIT",
@@ -402,7 +402,7 @@ export const featuredProducts = {
       detailsHref: "/products#cartridge-kit",
       datasheetHref: "/datasheets",
       image: "Hydrogen Cartridge Kit with RFID smart monitoring",
-      imageSrc: "/media/products/hydrogen-cartridge-kit.png",
+      imageSrc: "/media/products/featured-cartridge.png",
     },
   ] satisfies readonly FeaturedProduct[],
 };
@@ -860,7 +860,7 @@ export const customerPartners = {
       ],
       href: "/use-cases#use-cases",
       image: "Municipal backup case",
-      imageSrc: "/media/cases/defense.png",
+      imageSrc: "/media/cases/municipalities.png",
     },
     {
       category: "HOMES & COMMUNITY",
@@ -873,7 +873,7 @@ export const customerPartners = {
       ],
       href: "/use-cases#use-cases",
       image: "Home and community backup case",
-      imageSrc: "/media/cases/telecom.png",
+      imageSrc: "/media/cases/homes-community.png",
     },
     {
       category: "UTILITIES & REMOTE",
@@ -886,7 +886,7 @@ export const customerPartners = {
       ],
       href: "/use-cases#use-cases",
       image: "Utility and remote site case",
-      imageSrc: "/media/cases/mining.png",
+      imageSrc: "/media/cases/utilities-remote.png",
     },
     {
       category: "DISASTER RESPONSE",
@@ -899,7 +899,7 @@ export const customerPartners = {
       ],
       href: "/use-cases#use-cases",
       image: "Emergency services case",
-      imageSrc: "/media/cases/emergency.png",
+      imageSrc: "/media/cases/disaster-response.png",
     },
   ] satisfies readonly CaseCard[],
   partnerHeading: "PARTNERING WITH INNOVATORS AND INDUSTRY LEADERS",

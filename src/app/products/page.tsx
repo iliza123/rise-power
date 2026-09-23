@@ -155,6 +155,13 @@ const systemMeta = [
   },
 ];
 
+const comparisonImages = [
+  "/media/products/compare-sentinel.png",
+  "/media/products/compare-falcon.png",
+  "/media/products/compare-titan.png",
+  "/media/products/compare-cartridge.png",
+] as const;
+
 const comparisonRows = [
   {
     label: "Primary Use",
@@ -449,58 +456,60 @@ export default function ProductsPage() {
       </section>
 
       {/* ENGINEERED AS A SYSTEM */}
-      <section className="relative overflow-hidden bg-[#f7f6f2] py-16 sm:py-20 lg:py-24">
+      <section className="relative overflow-hidden bg-[#f7f6f2] py-10 sm:py-12 lg:py-16">
 
         <Image
           src="/media/products/product-ecosystem.png"
           alt="Rise Power ecosystem"
           fill
-          className="object-cover"
+          quality={90}
+          sizes="100vw"
+          className="object-cover object-[center_45%]"
         />
 
-        <div className="absolute inset-0 bg-[#f7f6f2]/45" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#f7f6f2]/95 via-[#f7f6f2]/70 to-transparent lg:via-[#f7f6f2]/55 lg:to-transparent" />
+        <div className="absolute inset-0 bg-[#f7f6f2]/10" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#f7f6f2]/45 via-[#f7f6f2]/15 to-transparent lg:via-[#f7f6f2]/10 lg:to-transparent" />
 
-        <div className="relative z-10 mx-auto grid max-w-[1440px] items-center gap-10 px-5 sm:px-6 lg:grid-cols-[0.9fr_1.35fr_0.7fr] lg:gap-8 lg:px-10">
+        <div className="relative z-10 mx-auto grid max-w-[1440px] items-center gap-6 px-5 sm:px-6 lg:grid-cols-[0.9fr_1.35fr_0.7fr] lg:gap-6 lg:px-10">
 
           {/* CONTENT */}
           <Reveal variant="left" className="relative">
             <div
               aria-hidden="true"
-              className="pointer-events-none absolute -inset-x-4 -inset-y-6 rounded-lg bg-[#f7f6f2]/55 blur-xl lg:-inset-x-6 lg:-inset-y-8"
+              className="pointer-events-none absolute -inset-x-3 -inset-y-4 rounded-lg bg-[#f7f6f2]/20 blur-xl lg:-inset-x-5 lg:-inset-y-5"
             />
             <div className="relative">
-            <p className="text-mm font-semibold tracking-[0.2em] text-[#6e7f42] uppercase">
+            <p className="text-sm font-semibold tracking-[0.18em] text-[#6e7f42] uppercase sm:text-base">
               ⌁ One Cartridge Ecosystem
             </p>
 
-            <h2 className="mt-5 type-section-h2">
+            <h2 className="mt-3 text-[3.7rem] leading-[1.05] font-bold tracking-tight sm:text-[4.3rem] lg:text-[4.9rem]">
               Engineered
               <br />
               <span className="text-[#6e7f42]">As a System.</span>
             </h2>
 
-            <p className="type-section-body mt-6 max-w-[520px] text-[#3f3c36]">
+            <p className="mt-4 max-w-[640px] text-[28px] leading-relaxed text-[#3f3c36] sm:text-[30px]">
               Every Rise Power product is designed as a complete system. Power
               generation, fuel delivery, controls, and enclosure working together.
               Integrated system design delivers better performance and reliability
               than assembled from parts alternatives.
             </p>
 
-            <div className="mt-8 flex flex-wrap gap-5">
+            <div className="mt-5 flex flex-wrap items-center gap-4">
               <Link
                 href="/contact"
-                className="inline-flex min-h-12 items-center gap-3 border border-[#252925] px-6 text-xs font-semibold uppercase hover:bg-[#141a14] hover:text-white rounded-sm"
+                className="inline-flex min-h-12 items-center gap-2 rounded-sm border border-[#252925] px-6 text-base font-semibold uppercase hover:bg-[#141a14] hover:text-white"
               >
                 Request a Briefing
               </Link>
 
               <Link
                 href="/use-cases"
-                className="inline-flex items-center gap-2 text-xs font-semibold uppercase"
+                className="inline-flex items-center gap-2 text-base font-semibold uppercase"
               >
                 See Use Cases
-                <ArrowRight className="size-4 text-[#6e7f42]" />
+                <ArrowRight className="size-5 text-[#6e7f42]" />
               </Link>
             </div>
             </div>
@@ -513,17 +522,17 @@ export default function ProductsPage() {
 
           {/* SYSTEM FLOW */}
           <RevealStagger
-            className="flex w-full max-w-md flex-col gap-4"
-            step={80}
+            className="flex w-full max-w-lg flex-col gap-2.5"
+            step={70}
             variant="right"
           >
             {systemFlow.map((item, index) => (
               <div
                 key={item.title}
-                className="relative flex items-stretch overflow-visible rounded-md border border-[#dcded8] bg-white/80"
+                className="relative flex items-stretch overflow-visible rounded-md border border-[#dcded8] bg-white/70"
               >
                 {/* Image */}
-                <div className="relative m-3 h-16 w-16 shrink-0 self-center overflow-hidden rounded-md sm:h-20 sm:w-20">
+                <div className="relative m-3 h-16 w-16 shrink-0 self-center overflow-hidden rounded-md sm:h-[4.5rem] sm:w-[4.5rem]">
                   <Image
                     src={item.image}
                     alt={item.title}
@@ -535,20 +544,20 @@ export default function ProductsPage() {
                 {/* Dot + connecting line, between image and text */}
                 <div className="relative w-3 shrink-0">
                   {index !== 0 && (
-                    <span className="absolute -top-4 bottom-1/2 left-1/2 w-px -translate-x-1/2 bg-[#6e7f42]/50 sm:-top-6" />
+                    <span className="absolute -top-3 bottom-1/2 left-1/2 w-px -translate-x-1/2 bg-[#6e7f42]/50" />
                   )}
                   {index !== systemFlow.length - 1 && (
-                    <span className="absolute top-1/2 -bottom-4 left-1/2 w-px -translate-x-1/2 bg-[#6e7f42]/50 sm:-bottom-6" />
+                    <span className="absolute top-1/2 -bottom-3 left-1/2 w-px -translate-x-1/2 bg-[#6e7f42]/50" />
                   )}
-                  <span className="absolute top-1/2 left-1/2 z-10 size-3 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#6e7f42] ring-4 ring-white" />
+                  <span className="absolute top-1/2 left-1/2 z-10 size-2.5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#6e7f42] ring-2 ring-white" />
                 </div>
 
                 {/* Text */}
-                <div className="min-w-0 flex-1 self-center p-3">
-                  <h3 className="text-[15px] font-bold uppercase leading-tight sm:text-[18px]">
+                <div className="min-w-0 flex-1 self-center px-3 py-3">
+                  <h3 className="text-[15px] font-bold uppercase leading-tight sm:text-base">
                     {item.title}
                   </h3>
-                  <p className="type-section-body mt-1 text-[#5c584e]">
+                  <p className="mt-1 text-[13px] leading-snug text-[#5c584e] sm:text-sm">
                     {item.body}
                   </p>
                 </div>
@@ -591,7 +600,7 @@ export default function ProductsPage() {
                     Specifications
                   </h3>
 
-                  <p className="type-section-body mt-3 max-w-[190px] text-white">
+                  <p className="type-section-body mt-3 max-w-[190px] !text-white/90">
                     Compare key features across the Rise Power product
                     lineup.
                   </p>
@@ -605,13 +614,14 @@ export default function ProductsPage() {
                       : "ml-1 rounded-t-lg"
                       }`}
                   >
-                    <div className="relative aspect-[1.35/1] overflow-hidden">
+                    <div className="relative aspect-square overflow-hidden">
                       <Image
-                        src={product.image}
+                        src={comparisonImages[index] ?? product.image}
                         alt={product.name}
                         fill
+                        quality={95}
                         sizes="220px"
-                        className="object-cover"
+                        className="object-cover object-center"
                       />
 
                       <div className="absolute inset-0 bg-gradient-to-t from-[#07151b] via-transparent to-transparent" />

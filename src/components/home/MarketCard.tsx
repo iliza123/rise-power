@@ -51,8 +51,8 @@ export function MarketRow({
             src={imageSrc}
             alt={imageLabel}
             fill
-            quality={80}
-            className="object-cover object-center scale-[1.02]"
+            quality={90}
+            className="object-cover object-[center_40%]"
             sizes="(max-width: 1280px) 90vw, 32vw"
           />
         ) : (
@@ -63,7 +63,7 @@ export function MarketRow({
         )}
 
         <div
-          className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#1a1c16]/45 via-transparent to-transparent opacity-50"
+          className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#1a1c16]/25 via-transparent to-transparent opacity-40"
           aria-hidden
         />
 

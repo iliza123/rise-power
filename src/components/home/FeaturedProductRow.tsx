@@ -37,16 +37,17 @@ export function FeaturedProductRow({
     <Link
       href={detailsHref}
       id={name.toLowerCase().replace(/\s+/g, "-")}
-      className="group relative flex h-full min-h-[26rem] w-full scroll-mt-28 flex-col overflow-hidden rounded-2xl sm:min-h-[30rem] lg:min-h-[34rem]"
+      className="group relative flex aspect-[4/5] h-auto w-full scroll-mt-28 flex-col overflow-hidden rounded-2xl"
     >
       {imageSrc ? (
         <Image
           src={imageSrc}
           alt={image}
           fill
-          quality={85}
-          className="object-cover object-center transition-transform duration-700 ease-out group-hover:scale-[1.04]"
-          sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 25vw"
+          quality={95}
+          priority={false}
+          className="object-cover object-center transition-transform duration-700 ease-out group-hover:scale-[1.03]"
+          sizes="(max-width: 640px) 88vw, (max-width: 1280px) 45vw, 22vw"
         />
       ) : (
         <PlaceholderMedia
@@ -56,11 +57,11 @@ export function FeaturedProductRow({
       )}
 
       <div
-        className="absolute inset-0 bg-gradient-to-t from-[#060806]/96 via-[#060806]/55 to-[#060806]/20 transition-[opacity,background] duration-500 group-hover:from-[#060806]/98 group-hover:via-[#060806]/65"
+        className="absolute inset-0 bg-gradient-to-t from-[#060806]/90 via-[#060806]/35 to-[#060806]/10 transition-[opacity,background] duration-500 group-hover:from-[#060806]/96 group-hover:via-[#060806]/55"
         aria-hidden
       />
 
-      <div className="absolute inset-x-0 bottom-0 flex min-h-[55%] flex-col justify-end p-5 transition-transform duration-500 ease-out group-hover:-translate-y-2 group-focus-visible:-translate-y-2 sm:p-6 lg:p-7">
+      <div className="absolute inset-x-0 bottom-0 flex flex-col justify-end p-5 transition-transform duration-500 ease-out group-hover:-translate-y-1 group-focus-visible:-translate-y-1 sm:p-6">
         <p className="type-card-label text-white">
           {subtitle}
         </p>
@@ -73,12 +74,12 @@ export function FeaturedProductRow({
         </h3>
 
         {/* Details cluster — hidden until hover / keyboard focus; always open on touch */}
-        <div className="mt-4 max-h-[18rem] overflow-hidden opacity-100 transition-all duration-500 ease-out [@media(hover:hover)]:mt-0 [@media(hover:hover)]:max-h-0 [@media(hover:hover)]:opacity-0 [@media(hover:hover)]:group-hover:mt-5 [@media(hover:hover)]:group-hover:max-h-[18rem] [@media(hover:hover)]:group-hover:opacity-100 [@media(hover:hover)]:group-focus-visible:mt-5 [@media(hover:hover)]:group-focus-visible:max-h-[18rem] [@media(hover:hover)]:group-focus-visible:opacity-100">
-          <p className="type-card-body-on-dark max-w-sm line-clamp-3 !text-white">
+        <div className="mt-3 max-h-[14rem] overflow-hidden opacity-100 transition-all duration-500 ease-out [@media(hover:hover)]:mt-0 [@media(hover:hover)]:max-h-0 [@media(hover:hover)]:opacity-0 [@media(hover:hover)]:group-hover:mt-4 [@media(hover:hover)]:group-hover:max-h-[14rem] [@media(hover:hover)]:group-hover:opacity-100 [@media(hover:hover)]:group-focus-visible:mt-4 [@media(hover:hover)]:group-focus-visible:max-h-[14rem] [@media(hover:hover)]:group-focus-visible:opacity-100">
+          <p className="type-card-body-on-dark max-w-sm line-clamp-2 !text-white">
             {body}
           </p>
 
-          <dl className="mt-5 space-y-2.5 border-t border-white/25 pt-4">
+          <dl className="mt-4 space-y-2 border-t border-white/25 pt-3">
             {specs.map((spec) => (
               <div
                 key={spec.label}
@@ -94,7 +95,7 @@ export function FeaturedProductRow({
             ))}
           </dl>
 
-          <span className="type-cta-ghost mt-5 inline-flex min-h-11 items-center gap-2 rounded-full bg-white px-5 py-2.5 text-[#6e7f42] transition-all duration-500 ease-out [@media(hover:hover)]:rounded-none [@media(hover:hover)]:bg-transparent [@media(hover:hover)]:px-0 [@media(hover:hover)]:py-0 [@media(hover:hover)]:text-white [@media(hover:hover)]:group-hover:rounded-full [@media(hover:hover)]:group-hover:bg-white [@media(hover:hover)]:group-hover:px-5 [@media(hover:hover)]:group-hover:py-2.5 [@media(hover:hover)]:group-hover:text-[#6e7f42] [@media(hover:hover)]:group-focus-visible:rounded-full [@media(hover:hover)]:group-focus-visible:bg-white [@media(hover:hover)]:group-focus-visible:px-5 [@media(hover:hover)]:group-focus-visible:py-2.5 [@media(hover:hover)]:group-focus-visible:text-[#6e7f42]">
+          <span className="type-cta-ghost mt-4 inline-flex min-h-10 items-center gap-2 rounded-full bg-white px-4 py-2 text-[#6e7f42] transition-all duration-500 ease-out [@media(hover:hover)]:rounded-none [@media(hover:hover)]:bg-transparent [@media(hover:hover)]:px-0 [@media(hover:hover)]:py-0 [@media(hover:hover)]:text-white [@media(hover:hover)]:group-hover:rounded-full [@media(hover:hover)]:group-hover:bg-white [@media(hover:hover)]:group-hover:px-4 [@media(hover:hover)]:group-hover:py-2 [@media(hover:hover)]:group-hover:text-[#6e7f42] [@media(hover:hover)]:group-focus-visible:rounded-full [@media(hover:hover)]:group-focus-visible:bg-white [@media(hover:hover)]:group-focus-visible:px-4 [@media(hover:hover)]:group-focus-visible:py-2 [@media(hover:hover)]:group-focus-visible:text-[#6e7f42]">
             {productUiLabels.viewDetails}
             <ArrowRight
               className="size-4 shrink-0 transition-transform duration-500 ease-out group-hover:translate-x-1 group-focus-visible:translate-x-1"

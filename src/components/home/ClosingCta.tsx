@@ -26,28 +26,29 @@ export function ClosingCta() {
   return (
     <section
       id="demo"
-      className="relative w-full overflow-hidden text-[#f3efe4]"
+      className="relative flex min-h-[22rem] w-full items-center overflow-hidden bg-[#061018] text-[#f3efe4] sm:min-h-[26rem] lg:min-h-[28rem]"
     >
       <Image
         src={closingCta.imageSrc ?? "/media/cta/closing.jpg"}
         alt={closingCta.image}
         fill
-        quality={85}
-        className="object-cover object-center"
+        quality={90}
+        priority={false}
         sizes="100vw"
+        className="object-cover object-[center_48%]"
       />
 
       {/* Overall dark mood */}
-      <div className="absolute inset-0 bg-[#061018]/55" />
+      <div className="absolute inset-0 bg-[#061018]/30" />
 
       {/* Left text readability */}
-      <div className="absolute inset-0 bg-gradient-to-r from-[#061018]/95 via-[#061018]/70 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[#061018]/80 via-[#061018]/45 to-transparent" />
 
       {/* Right side slight dark */}
-      <div className="absolute inset-0 bg-gradient-to-l from-[#061018]/45 via-transparent to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-l from-[#061018]/25 via-transparent to-transparent" />
 
-      {/* Bottom cinematic fade */}
-      <div className="absolute inset-x-0 bottom-0 h-48 bg-gradient-to-t from-[#061018]/75 via-transparent to-transparent" />
+      {/* Bottom overlay */}
+      <div className="absolute inset-x-0 bottom-0 h-48 bg-gradient-to-t from-[#061018]/75 via-[#061018]/35 to-transparent" />
 
       <div className="relative mx-auto w-full max-w-[1716px] px-5 py-8 sm:px-8 sm:py-12 lg:px-10 lg:py-16">
         <div className="grid items-center xl:grid-cols-[minmax(0,1.75fr)_minmax(0,0.55fr)] xl:gap-10">
