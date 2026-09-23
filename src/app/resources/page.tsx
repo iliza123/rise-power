@@ -30,7 +30,7 @@ const destinations = [
     href: "/datasheets",
     cta: "Open Datasheets",
     image: "/media/resources/choose-brief-datasheets.png",
-    imageAlt: "Rise Mission Power datasheets and portable power station",
+    imageAlt: "Soldier operating Rise Mission Power system in a snowy forest",
   },
   {
     number: "02",
