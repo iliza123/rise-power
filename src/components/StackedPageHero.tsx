@@ -20,6 +20,10 @@ type StackedPageHeroProps = {
   imageWidth?: number;
   /** Intrinsic height for split layout (avoids cover/zoom crop). */
   imageHeight?: number;
+  /** Next/Image quality 1–100. Overlay defaults to 90; split to 100. */
+  quality?: number;
+  /** Soft kenburns on overlay media. Disable for low-res assets. */
+  animateMedia?: boolean;
   children: React.ReactNode;
 };
 
@@ -31,15 +35,20 @@ type StackedPageHeroProps = {
 export function StackedPageHero({
   imageSrc,
   imageAlt,
-  imageClassName = "object-cover object-center",
+  imageClassName,
   tone = "#0a100e",
   compact = false,
   contentMaxWidthClassName = "max-w-[1440px]",
   layout = "overlay",
   imageWidth = 1920,
   imageHeight = 1080,
+  quality,
+  animateMedia = true,
   children,
 }: StackedPageHeroProps) {
+  const mediaClassName = imageClassName ?? "object-cover object-center";
+  const overlayQuality = quality ?? 90;
+  const splitQuality = quality ?? 100;
   const desktopMinH = compact
     ? "xl:min-h-[min(62svh,520px)]"
     : "xl:min-h-[min(100svh,800px)]";
@@ -61,7 +70,7 @@ export function StackedPageHero({
             width={imageWidth}
             height={imageHeight}
             priority
-            quality={100}
+            quality={splitQuality}
             sizes="100vw"
             className="h-auto w-full"
           />
@@ -78,9 +87,9 @@ export function StackedPageHero({
             width={imageWidth}
             height={imageHeight}
             priority
-            quality={100}
+            quality={splitQuality}
             sizes="58vw"
-            className="h-full w-auto max-w-none"
+            className={`h-full w-auto max-w-none ${imageClassName ?? ""}`}
           />
         </div>
 
@@ -113,8 +122,9 @@ export function StackedPageHero({
           alt={imageAlt}
           fill
           priority
+          quality={overlayQuality}
           sizes="100vw"
-          className={`hero-animate-media ${imageClassName}`}
+          className={`${animateMedia ? "hero-animate-media" : ""} ${mediaClassName}`}
         />
         <div className="pointer-events-none absolute inset-0 hidden xl:block" aria-hidden>
           <div className="absolute inset-0 bg-gradient-to-r from-[#071016]/95 via-[#071016]/35 to-transparent" />

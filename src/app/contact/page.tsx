@@ -54,8 +54,10 @@ export default function ContactPage() {
         layout="split"
         imageSrc="/media/contact/hero-banner.png"
         imageAlt="Rise Power field deployment — request a capability briefing"
-        imageWidth={1448}
-        imageHeight={1086}
+        imageWidth={1920}
+        imageHeight={600}
+        imageClassName="translate-x-[14%]"
+        quality={100}
         tone="#101820"
       >
         <div className="hero-animate-copy w-full text-left">
