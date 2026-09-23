@@ -15,9 +15,10 @@ import {
 import { whyHydrogen } from "@/lib/home-content";
 import { Reveal, RevealStagger } from "@/components/motion/Reveal";
 
-/** Lime accent from the Cleaner / Quieter / Stronger board */
-const accent = "#8CC63F";
-const pageInset = "mx-auto w-full max-w-[1400px] px-5 sm:px-8 lg:px-10";
+/** Match homepage section accent + layout tokens */
+const sage = "#6e7f42";
+const pageInset = "mx-auto w-full max-w-[1760px] px-6 lg:px-10";
+const sectionY = "py-14 sm:py-18 lg:py-20";
 
 const metricIcons: LucideIcon[] = [VolumeX, Leaf, Wrench, KeyRound, Timer];
 const benefitIcons: LucideIcon[] = [Leaf, VolumeX, Wrench, Timer];
@@ -31,6 +32,7 @@ const pillarIcons: LucideIcon[] = [
 
 export function WhyHydrogen() {
   const {
+    eyebrow,
     headingBefore,
     headingAccent,
     headingAfter,
@@ -46,45 +48,43 @@ export function WhyHydrogen() {
   return (
     <section
       id="why-hydrogen"
-      className="scroll-mt-28 bg-white py-10 sm:py-12 lg:py-14"
+      className={`scroll-mt-28 bg-[#fbfaf7] ${sectionY}`}
     >
       <div className={pageInset}>
         <Reveal variant="up">
           <header className="mx-auto max-w-3xl text-center">
-            <h2 className="font-display text-[1.85rem] leading-[0.92] font-bold tracking-[-0.02em] text-[#111] uppercase sm:text-4xl lg:text-[2.75rem] xl:text-[3.15rem]">
+            <p className="type-eyebrow" style={{ color: sage }}>
+              {eyebrow}
+            </p>
+            <h2 className="type-section-h2 mt-3 text-[#1a1c16]">
               {headingBefore}{" "}
-              <span style={{ color: accent }}>{headingAccent}</span>{" "}
+              <span style={{ color: sage }}>{headingAccent}</span>{" "}
               {headingAfter}
             </h2>
-            <p className="mx-auto mt-3 max-w-2xl text-[13px] leading-relaxed text-[#555] sm:mt-4 sm:text-sm lg:text-[15px]">
-              {body}
-            </p>
+            <p className="type-section-body mx-auto mt-4 max-w-2xl">{body}</p>
           </header>
         </Reveal>
 
-        <div className="mt-7 grid gap-3 sm:mt-8 lg:mt-9 lg:grid-cols-2 lg:gap-4">
-          {/* Left — dark comparison table */}
+        <div className="mt-10 grid gap-5 sm:mt-12 lg:grid-cols-2 lg:gap-6">
+          {/* Left — comparison table */}
           <Reveal variant="up" className="min-w-0">
-            <div className="flex h-full flex-col overflow-hidden rounded-lg bg-[#1c1c1c] px-4 py-5 text-white sm:rounded-xl sm:px-5 sm:py-6 lg:px-6">
-              <p className="font-display text-base font-bold tracking-[0.06em] uppercase sm:text-lg lg:text-xl">
-                <span style={{ color: accent }}>HYDROGEN</span>
-                <span className="text-white"> VS DIESEL</span>
-              </p>
+            <div className="flex h-full flex-col overflow-hidden rounded-2xl bg-[#141814] px-5 py-6 text-white sm:px-6 sm:py-8 lg:px-8">
+              <h3 className="type-card-title text-white">
+                <span style={{ color: sage }}>HYDROGEN</span>
+                <span> VS DIESEL</span>
+              </h3>
 
-              <div className="mt-4 flex-1 sm:mt-5">
+              <div className="mt-6 flex-1 sm:mt-8">
                 <table className="w-full border-collapse text-left">
                   <thead>
-                    <tr className="border-b border-white/[0.12]">
-                      <th className="w-[34%] pb-2.5 text-[9px] font-semibold tracking-[0.18em] text-white/50 uppercase sm:text-[10px]">
+                    <tr className="border-b border-white/15">
+                      <th className="type-card-label w-[34%] pb-3 text-white/75">
                         {tableHeaders.metric}
                       </th>
-                      <th
-                        className="w-[36%] px-1 pb-2.5 text-center text-[9px] font-bold tracking-[0.16em] uppercase sm:text-[10px]"
-                        style={{ color: accent }}
-                      >
+                      <th className="type-card-label w-[38%] px-2 pb-3 text-center text-[#c5d48a]">
                         {tableHeaders.hydrogen}
                       </th>
-                      <th className="w-[30%] pb-2.5 text-center text-[9px] font-semibold tracking-[0.16em] text-white/50 uppercase sm:text-[10px]">
+                      <th className="type-card-label w-[28%] pb-3 text-center text-white/75">
                         {tableHeaders.diesel}
                       </th>
                     </tr>
@@ -95,40 +95,37 @@ export function WhyHydrogen() {
                       return (
                         <tr
                           key={row.metric}
-                          className="border-b border-white/[0.1] last:border-b-0"
+                          className="border-b border-white/10 last:border-b-0"
                         >
-                          <td className="py-3 pr-1 align-middle sm:py-3.5">
-                            <span className="flex items-center gap-2 sm:gap-2.5">
+                          <td className="py-3.5 pr-2 align-middle sm:py-4">
+                            <span className="flex items-center gap-2.5 sm:gap-3">
                               <Icon
-                                className="size-3.5 shrink-0 sm:size-4"
-                                style={{ color: accent }}
+                                className="size-4 shrink-0 sm:size-[1.125rem]"
+                                style={{ color: sage }}
                                 strokeWidth={1.75}
                                 aria-hidden
                               />
-                              <span className="text-[11px] font-semibold text-white sm:text-xs">
+                              <span className="font-display text-sm font-bold tracking-[0.02em] text-white uppercase sm:text-base">
                                 {row.metric}
                               </span>
                             </span>
                           </td>
-                          <td className="px-1 py-2 align-middle">
+                          <td className="px-1.5 py-2.5 align-middle sm:px-2">
                             <div
-                              className="mx-auto flex min-h-[2.35rem] items-center justify-center gap-1.5 rounded border px-1.5 py-1.5 text-center text-[10px] font-bold sm:min-h-[2.6rem] sm:text-[11px]"
+                              className="mx-auto flex min-h-11 max-w-[11.5rem] items-center justify-center gap-2 rounded-md px-2.5 py-2 text-center font-display text-sm font-bold tracking-[0.04em] text-white uppercase sm:min-h-12 sm:max-w-none sm:text-[15px]"
                               style={{
-                                borderColor: accent,
-                                background: "rgba(140, 198, 63, 0.14)",
-                                color: accent,
-                                boxShadow: "0 0 16px rgba(140, 198, 63, 0.2)",
+                                background: sage,
+                                boxShadow: "0 0 0 1px rgba(255,255,255,0.12)",
                               }}
                             >
                               <span
-                                className="size-1.5 shrink-0 rounded-full"
-                                style={{ background: accent }}
+                                className="size-1.5 shrink-0 rounded-full bg-white"
                                 aria-hidden
                               />
                               {row.hydrogen}
                             </div>
                           </td>
-                          <td className="py-3 pl-1 text-center align-middle text-[10px] font-medium text-white/70 sm:py-3.5 sm:text-[11px]">
+                          <td className="py-3.5 pl-1 text-center align-middle text-sm font-medium text-white/85 sm:py-4 sm:text-base">
                             {row.diesel}
                           </td>
                         </tr>
@@ -142,8 +139,8 @@ export function WhyHydrogen() {
 
           {/* Right — visual + benefits */}
           <Reveal variant="fade" className="min-w-0">
-            <div className="flex h-full flex-col overflow-hidden rounded-lg border border-[#e8e8e8] bg-[#f5f5f5] sm:rounded-xl">
-              <div className="relative aspect-[2.75/1] w-full bg-[#e8e8e8] sm:aspect-[2.6/1]">
+            <div className="flex h-full flex-col overflow-hidden rounded-2xl border border-[#e0dcd3] bg-white">
+              <div className="relative aspect-[2.4/1] w-full bg-[#eceae3] sm:aspect-[2.5/1]">
                 <Image
                   src={productImageSrc}
                   alt={productImageAlt}
@@ -153,31 +150,25 @@ export function WhyHydrogen() {
                 />
               </div>
 
-              <ul className="flex flex-1 flex-col justify-center gap-3.5 px-4 py-4 sm:gap-4 sm:px-5 sm:py-5 lg:px-6">
+              <ul className="flex flex-1 flex-col justify-center gap-5 px-5 py-6 sm:gap-6 sm:px-6 sm:py-8 lg:px-8">
                 {benefits.map((item, index) => {
                   const Icon = benefitIcons[index] ?? Leaf;
                   return (
-                    <li key={item.title} className="flex gap-3">
+                    <li key={item.title} className="flex gap-4">
                       <span
-                        className="mt-0.5 grid size-8 shrink-0 place-items-center rounded-full border-[1.5px] bg-white sm:size-9"
-                        style={{ borderColor: accent, color: accent }}
+                        className="mt-0.5 grid size-10 shrink-0 place-items-center rounded-full border-2 bg-white"
+                        style={{ borderColor: sage, color: sage }}
                       >
-                        <Icon
-                          className="size-3.5 sm:size-4"
-                          strokeWidth={1.75}
-                          aria-hidden
-                        />
+                        <Icon className="size-4" strokeWidth={1.75} aria-hidden />
                       </span>
                       <div className="min-w-0">
                         <p
-                          className="font-display text-[11px] font-bold tracking-[0.08em] uppercase sm:text-xs"
-                          style={{ color: accent }}
+                          className="type-card-title-sm"
+                          style={{ color: sage }}
                         >
                           {item.title}
                         </p>
-                        <p className="mt-0.5 text-[12px] leading-snug text-[#444] sm:text-[13px]">
-                          {item.body}
-                        </p>
+                        <p className="type-card-body mt-1.5">{item.body}</p>
                       </div>
                     </li>
                   );
@@ -187,27 +178,40 @@ export function WhyHydrogen() {
           </Reveal>
         </div>
 
-        {/* Bottom pillars */}
+        {/* Bottom pillars — readable icon strip */}
         <RevealStagger
-          className="mt-3 grid grid-cols-2 gap-x-4 gap-y-6 rounded-lg border border-[#e8e8e8] bg-[#f5f5f5] px-4 py-6 sm:mt-4 sm:grid-cols-3 sm:rounded-xl sm:px-6 sm:py-7 lg:grid-cols-5 lg:gap-3 lg:px-8"
+          className="mt-4 grid grid-cols-1 divide-y divide-[#eeeae3] overflow-hidden rounded-2xl border border-[#e0dcd3] bg-white sm:mt-5 sm:grid-cols-2 sm:divide-x lg:grid-cols-5 lg:divide-y-0"
           step={45}
         >
           {pillars.map((pillar, index) => {
             const Icon = pillarIcons[index] ?? ShieldCheck;
             return (
-              <div key={pillar.title} className="text-center">
+              <div
+                key={pillar.title}
+                className="flex gap-3 px-4 py-4 sm:px-5 sm:py-5 lg:flex-col lg:items-center lg:px-3 lg:py-5 xl:px-4"
+              >
                 <span
-                  className="mx-auto grid size-9 place-items-center sm:size-10"
-                  style={{ color: accent }}
+                  className="grid size-[3.25rem] shrink-0 place-items-center rounded-full border sm:size-14"
+                  style={{
+                    borderColor: "rgba(110, 127, 66, 0.45)",
+                    color: sage,
+                  }}
                 >
-                  <Icon className="size-5 sm:size-6" strokeWidth={1.5} aria-hidden />
+                  <Icon
+                    className="size-6 sm:size-7"
+                    strokeWidth={1.5}
+                    aria-hidden
+                  />
                 </span>
-                <p className="mt-2 font-display text-[10px] font-bold tracking-[0.1em] text-[#111] uppercase sm:text-[11px]">
-                  {pillar.title}
-                </p>
-                <p className="mt-1 text-[10px] leading-snug text-[#666] sm:text-[11px]">
-                  {pillar.body}
-                </p>
+
+                <div className="min-w-0 lg:mt-2.5 lg:text-center">
+                  <p className="font-display text-base font-bold tracking-[0.08em] text-[#1a1c16] uppercase sm:text-lg">
+                    {pillar.title}
+                  </p>
+                  <p className="mt-1 text-base leading-snug text-[#5c584e] sm:mt-1.5 sm:text-[1.0625rem] sm:leading-snug lg:mx-auto lg:max-w-[13.5rem]">
+                    {pillar.body}
+                  </p>
+                </div>
               </div>
             );
           })}
