@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 
 import { ContactForm } from "@/components/ContactForm";
@@ -16,54 +15,6 @@ export const metadata: Metadata = pageMetadata({
 });
 
 const sage = "#6e7f42";
-
-function ContourDecoration({
-  position = "left",
-}: {
-  position?: "left" | "right";
-}) {
-  return (
-    <div
-      aria-hidden="true"
-      className={`pointer-events-none absolute top-0 h-[280px] w-[440px] overflow-hidden opacity-40 ${
-        position === "left" ? "-left-24" : "-right-24"
-      }`}
-    >
-      <svg viewBox="0 0 440 330" className="h-full w-full" fill="none">
-        <path
-          d="M-20 35C55 80 85 0 165 28C240 55 275 4 350 36C405 60 430 40 465 15"
-          stroke="#e2e7e1"
-          strokeWidth="1"
-        />
-        <path
-          d="M-25 65C45 108 88 25 164 57C238 88 284 29 354 65C405 91 432 70 465 45"
-          stroke="#e5e9e5"
-          strokeWidth="1"
-        />
-        <path
-          d="M-25 95C42 137 91 54 164 87C237 119 288 59 355 94C405 121 433 101 465 75"
-          stroke="#e8ece8"
-          strokeWidth="1"
-        />
-        <path
-          d="M-25 125C43 167 92 84 165 117C238 150 287 90 356 124C406 151 434 131 465 105"
-          stroke="#ebeeeb"
-          strokeWidth="1"
-        />
-        <path
-          d="M-25 155C42 197 93 114 165 147C238 180 288 120 357 154C406 181 434 161 465 135"
-          stroke="#edf0ed"
-          strokeWidth="1"
-        />
-        <path
-          d="M-25 185C42 227 94 144 166 177C238 210 288 150 357 184C406 211 434 191 465 165"
-          stroke="#eff2ef"
-          strokeWidth="1"
-        />
-      </svg>
-    </div>
-  );
-}
 
 function SectionEyebrow({
   children,
@@ -138,95 +89,69 @@ export default function ContactPage() {
         </div>
       </StackedPageHero>
 
-      {/* Briefing form + channels */}
       <section
         id="briefing"
-        className="relative overflow-hidden bg-[#fbfaf7] py-16 sm:py-20 lg:py-24"
+        className="relative scroll-mt-28 bg-[#fbfaf7] py-16 sm:py-20 lg:py-24"
       >
-        <ContourDecoration position="left" />
-
-        <div className="relative mx-auto max-w-[1440px] px-6 lg:px-10">
-          <div className="grid items-start gap-10 lg:grid-cols-2 lg:gap-14 xl:gap-16">
+        <div className="mx-auto max-w-[1440px] px-6 lg:px-10">
+          <div className="grid items-start gap-8 lg:grid-cols-2 lg:gap-10">
             <Reveal variant="left">
-              <div className="flex flex-col gap-8">
-                <div className="relative aspect-[16/11] overflow-hidden rounded-[7px]">
-                  <Image
-                    src="/media/contact/rise-mission-power.png"
-                    alt="Rise Mission Power systems in the field"
-                    fill
-                    sizes="(min-width: 1024px) 45vw, 100vw"
-                    className="object-cover"
-                  />
-                </div>
+              <div className="flex h-full flex-col">
+                <SectionEyebrow>Contact</SectionEyebrow>
 
-                <div className="flex flex-col gap-5">
-                  <SectionEyebrow>Contact</SectionEyebrow>
+                <h2 className="mt-4 type-section-h2 text-[#101820]">
+                  Tell us your operating environment.
+                </h2>
 
-                  <h2 className="type-section-h2 text-[#101820]">
-                    Tell us your operating environment.
-                  </h2>
+                <p className="type-section-body mt-4 text-[#626e7a]">
+                  We respond with specs, runtime data, and a deployment summary
+                  tailored to your mission. For procurement, programs,
+                  integration, and serious technical evaluation.
+                </p>
 
-                  <p className="type-section-body max-w-[420px] text-[#626e7a]">
-                    We respond with specs, runtime data, and a deployment
-                    summary tailored to your mission. For procurement, programs,
-                    integration, and serious technical evaluation.
-                  </p>
-                </div>
+                {/* Email / Phone / Address — one row under the copy */}
+                <div className="mt-auto grid gap-6 border-t border-[#d9dfe3] pt-8 sm:grid-cols-3 sm:gap-0 sm:divide-x sm:divide-[#d9dfe3] lg:mt-10">
+                  <div className="sm:pr-5">
+                    <p className="text-[11px] font-semibold tracking-[0.18em] text-[#6e7f42] uppercase">
+                      Email
+                    </p>
+                    <a
+                      href={`mailto:${site.email}`}
+                      className="mt-2 block break-words text-[15px] leading-snug text-[#101820] transition-colors hover:text-[#6e7f42]"
+                    >
+                      {site.email}
+                    </a>
+                  </div>
 
-                <ul className="relative z-10 max-w-[420px] divide-y divide-[#d9dfe3] border-y border-[#d9dfe3]">
-                  {[
-                    {
-                      label: "Email",
-                      href: `mailto:${site.email}`,
-                      value: site.email,
-                    },
-                    {
-                      label: "Phone",
-                      href: site.phoneHref,
-                      value: site.phone,
-                    },
-                  ].map((item) => (
-                    <li key={item.label} className="py-5">
-                      <p className="text-[11px] font-semibold tracking-[0.18em] text-[#6e7f42] uppercase">
-                        {item.label}
-                      </p>
-                      <a
-                        href={item.href}
-                        className="mt-2 block text-lg leading-snug text-[#101820] transition-colors hover:text-[#6e7f42]"
-                      >
-                        {item.value}
-                      </a>
-                    </li>
-                  ))}
-                  <li className="py-5">
+                  <div className="border-t border-[#d9dfe3] pt-6 sm:border-t-0 sm:px-5 sm:pt-0">
+                    <p className="text-[11px] font-semibold tracking-[0.18em] text-[#6e7f42] uppercase">
+                      Phone
+                    </p>
+                    <a
+                      href={site.phoneHref}
+                      className="mt-2 block text-[15px] leading-snug text-[#101820] transition-colors hover:text-[#6e7f42]"
+                    >
+                      {site.phone}
+                    </a>
+                  </div>
+
+                  <div className="border-t border-[#d9dfe3] pt-6 sm:border-t-0 sm:pl-5 sm:pt-0">
                     <p className="text-[11px] font-semibold tracking-[0.18em] text-[#6e7f42] uppercase">
                       Address
                     </p>
-                    <p className="mt-2 text-lg leading-snug text-[#101820]">
+                    <p className="mt-2 text-[15px] leading-snug text-[#101820]">
                       {site.name}
                       <br />
                       {site.address.city}, {site.address.country}
                     </p>
-                  </li>
-                </ul>
+                  </div>
+                </div>
               </div>
             </Reveal>
 
-            <Reveal variant="right" delay={100}>
-              <div className="flex flex-col gap-6 lg:sticky lg:top-28">
-                <div className="relative hidden aspect-[21/9] overflow-hidden rounded-[7px] lg:block">
-                  <Image
-                    src="/media/products/falcon.png"
-                    alt="Rise Power Falcon hydrogen drone range extender"
-                    fill
-                    sizes="45vw"
-                    className="object-cover object-center"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#071016]/40 to-transparent" />
-                </div>
-                <div className="border border-[#d9dfe3] bg-white p-6 sm:p-8">
-                  <ContactForm />
-                </div>
+            <Reveal variant="right" delay={80}>
+              <div className="border border-[#d9dfe3] bg-white p-6 sm:p-8">
+                <ContactForm />
               </div>
             </Reveal>
           </div>

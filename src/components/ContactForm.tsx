@@ -28,7 +28,7 @@ const labelClass =
   "text-[11px] font-semibold tracking-[0.16em] text-[#66717d] uppercase";
 
 const fieldClass =
-  "mt-2 block w-full rounded-sm border border-[#d9dfe3] bg-[#fbfaf7] px-4 py-3.5 text-base text-[#101820] placeholder:text-[#66717d]/50 focus:border-[#849363] focus:outline-none";
+  "mt-2 block w-full rounded-sm border border-[#d9dfe3] bg-[#fbfaf7] px-4 py-3 text-base text-[#101820] placeholder:text-[#66717d]/50 focus:border-[#849363] focus:outline-none";
 
 export function ContactForm() {
   const [sent, setSent] = useState(false);
@@ -81,15 +81,15 @@ export function ContactForm() {
 
   if (sent) {
     return (
-      <div className="border border-[#849363]/35 bg-[#fbfaf7] px-6 py-12 text-center sm:px-10">
+      <div className="border border-[#849363]/35 bg-[#fbfaf7] px-6 py-10 text-center sm:px-8">
         <div
           aria-hidden="true"
-          className="mx-auto mb-6 h-px w-16 bg-[#849363]"
+          className="mx-auto mb-5 h-px w-14 bg-[#849363]"
         />
         <h3 className="font-display text-2xl tracking-wide text-[#101820] uppercase sm:text-3xl">
           Message Received
         </h3>
-        <p className="type-section-body mt-4 text-[#626e7a]">
+        <p className="type-section-body mt-3 text-[#626e7a]">
           Thank you for reaching out. We will respond with specs, runtime data,
           and a deployment summary.
         </p>
@@ -98,7 +98,7 @@ export function ContactForm() {
   }
 
   return (
-    <form onSubmit={onSubmit} noValidate className="space-y-5">
+    <form onSubmit={onSubmit} noValidate className="space-y-4">
       <div className="absolute -left-[9999px]" aria-hidden="true">
         <input type="text" name="website" tabIndex={-1} autoComplete="off" />
       </div>
@@ -146,7 +146,7 @@ export function ContactForm() {
         />
       </div>
 
-      <div className="grid gap-5 sm:grid-cols-2">
+      <div className="grid gap-4 sm:grid-cols-2">
         <div>
           <label htmlFor="role" className={labelClass}>
             Role
@@ -191,7 +191,7 @@ export function ContactForm() {
         <textarea
           id="message"
           name="message"
-          rows={5}
+          rows={4}
           className={`${fieldClass} resize-none`}
           placeholder="Operating environment, runtime requirements, deployment timeline, integration needs."
         />
