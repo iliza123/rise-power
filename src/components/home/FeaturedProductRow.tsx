@@ -15,6 +15,10 @@ export type FeaturedProductRowProps = FeaturedProduct & {
  * Full-bleed product card — same hover language as Businesses & Companies:
  * cinematic image at rest; body, specs, and CTA reveal on hover.
  */
+function isPdfDownload(href: string) {
+  return href.endsWith(".pdf");
+}
+
 export function FeaturedProductRow({
   name,
   trademark,
@@ -24,6 +28,7 @@ export function FeaturedProductRow({
   weight,
   power,
   detailsHref,
+  datasheetHref,
   image,
   imageSrc,
 }: FeaturedProductRowProps) {
@@ -33,12 +38,19 @@ export function FeaturedProductRow({
     { label: productUiLabels.power, value: power },
   ] as const;
 
+  const anchorId = name.toLowerCase().replace(/\s+/g, "-");
+  const specIsPdf = isPdfDownload(datasheetHref);
+
   return (
-    <Link
-      href={detailsHref}
-      id={name.toLowerCase().replace(/\s+/g, "-")}
+    <article
+      id={anchorId}
       className="group relative flex aspect-[4/5] h-auto w-full scroll-mt-28 flex-col overflow-hidden rounded-2xl"
     >
+      <Link
+        href={detailsHref}
+        className="absolute inset-0 z-0"
+        aria-label={`${name} — ${productUiLabels.viewDetails}`}
+      />
       {imageSrc ? (
         <Image
           src={imageSrc}
@@ -95,16 +107,37 @@ export function FeaturedProductRow({
             ))}
           </dl>
 
-          <span className="type-cta-ghost mt-4 inline-flex min-h-10 items-center gap-2 rounded-full bg-white px-4 py-2 text-[#6e7f42] transition-all duration-500 ease-out [@media(hover:hover)]:rounded-none [@media(hover:hover)]:bg-transparent [@media(hover:hover)]:px-0 [@media(hover:hover)]:py-0 [@media(hover:hover)]:text-white [@media(hover:hover)]:group-hover:rounded-full [@media(hover:hover)]:group-hover:bg-white [@media(hover:hover)]:group-hover:px-4 [@media(hover:hover)]:group-hover:py-2 [@media(hover:hover)]:group-hover:text-[#6e7f42] [@media(hover:hover)]:group-focus-visible:rounded-full [@media(hover:hover)]:group-focus-visible:bg-white [@media(hover:hover)]:group-focus-visible:px-4 [@media(hover:hover)]:group-focus-visible:py-2 [@media(hover:hover)]:group-focus-visible:text-[#6e7f42]">
-            {productUiLabels.viewDetails}
-            <ArrowRight
-              className="size-4 shrink-0 transition-transform duration-500 ease-out group-hover:translate-x-1 group-focus-visible:translate-x-1"
-              strokeWidth={1.8}
-              aria-hidden
-            />
-          </span>
+          <div className="relative z-10 mt-4 flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:items-center sm:gap-3">
+            <Link
+              href={detailsHref}
+              className="type-cta-ghost inline-flex min-h-10 items-center gap-2 rounded-full bg-white px-4 py-2 text-[#6e7f42] transition-all duration-500 ease-out [@media(hover:hover)]:rounded-none [@media(hover:hover)]:bg-transparent [@media(hover:hover)]:px-0 [@media(hover:hover)]:py-0 [@media(hover:hover)]:text-white [@media(hover:hover)]:group-hover:rounded-full [@media(hover:hover)]:group-hover:bg-white [@media(hover:hover)]:group-hover:px-4 [@media(hover:hover)]:group-hover:py-2 [@media(hover:hover)]:group-hover:text-[#6e7f42] [@media(hover:hover)]:group-focus-within:rounded-full [@media(hover:hover)]:group-focus-within:bg-white [@media(hover:hover)]:group-focus-within:px-4 [@media(hover:hover)]:group-focus-within:py-2 [@media(hover:hover)]:group-focus-within:text-[#6e7f42]"
+            >
+              {productUiLabels.viewDetails}
+              <ArrowRight
+                className="size-4 shrink-0 transition-transform duration-500 ease-out group-hover:translate-x-1 group-focus-within:translate-x-1"
+                strokeWidth={1.8}
+                aria-hidden
+              />
+            </Link>
+            {specIsPdf ? (
+              <a
+                href={datasheetHref}
+                download
+                className="type-cta-ghost relative z-10 inline-flex min-h-10 items-center gap-2 rounded-full border border-white/40 bg-white/10 px-4 py-2 text-white transition-colors hover:bg-white/20 [@media(hover:hover)]:group-hover:border-[#6e7f42]/30 [@media(hover:hover)]:group-hover:bg-white [@media(hover:hover)]:group-hover:text-[#6e7f42]"
+              >
+                {productUiLabels.downloadSpec}
+              </a>
+            ) : (
+              <Link
+                href={datasheetHref}
+                className="type-cta-ghost relative z-10 inline-flex min-h-10 items-center gap-2 rounded-full border border-white/40 bg-white/10 px-4 py-2 text-white transition-colors hover:bg-white/20 [@media(hover:hover)]:group-hover:border-[#6e7f42]/30 [@media(hover:hover)]:group-hover:bg-white [@media(hover:hover)]:group-hover:text-[#6e7f42]"
+              >
+                {productUiLabels.downloadSpec}
+              </Link>
+            )}
+          </div>
         </div>
       </div>
-    </Link>
+    </article>
   );
 }

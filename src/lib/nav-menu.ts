@@ -111,7 +111,7 @@ export const megaNavItems: readonly MegaNavItem[] = [
       {
         label: "Focus Areas",
         href: "/company#focus",
-        description: "Municipalities, utilities, communities, and emergency backup.",
+        description: "Military, commercial, and consumer power applications.",
       },
       {
         label: "Contact",

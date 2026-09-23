@@ -43,16 +43,6 @@ export type MarketCard = {
   imageSrc?: string;
 };
 
-export type EcosystemStep = {
-  step: string;
-  title: string;
-  blurb: string;
-  image: string;
-  imageSrc?: string;
-  caption?: string;
-  highlighted?: boolean;
-};
-
 export type FeaturedProduct = {
   name: string;
   trademark: string;
@@ -154,7 +144,8 @@ export const sectionOrder = [
   "hero",
   "performance-metrics",
   "three-markets",
-  "product-ecosystem",
+  "how-it-works",
+  "why-hydrogen",
   "featured-products",
   "customer-partners",
   "businesses-companies",
@@ -238,95 +229,179 @@ export const performanceMetrics = {
 };
 
 export const threeMarkets = {
-  eyebrow: "WHERE POWER IS NEEDED",
-  headingBefore: "EVERYDAY",
-  headingAccent: "RESILIENCE.",
-  body: "Select a scenario to see how Rise Power systems support municipal, community, and emergency backup.",
+  eyebrow: "THREE MARKETS. ONE MISSION.",
+  headingBefore: "POWERING",
+  headingAccent: "EVERY MISSION.",
+  body: "Rise Mission Power systems are engineered to perform in the toughest environments across military, commercial, and consumer applications.",
   cards: [
     {
-      title: "Municipalities & Public Works",
-      body: "Quiet backup for city facilities, public works, and neighbourhood operations.",
-      theater: "CIVIC",
-      points: ["City Facilities", "Public Works", "Quiet Ops"],
+      title: "Military & Defence",
+      body: "Silent hydrogen power for tactical communications, UAV operations, and ISR systems in forward deployments.",
+      theater: "DEFENCE",
+      points: ["Tactical Communications", "UAV Operations", "ISR Systems"],
       detail:
-        "Rapidly deployable zero-emission power when the grid is down — ready for product trials and clean-energy pilots.",
-      href: "/use-cases#use-cases",
-      cta: "View Municipal",
-      image: "Municipalities and public works market imagery",
-      imageSrc: "/media/markets/municipal.png",
+        "Ultra-quiet, zero-emission power with rapid cartridge swaps for mission-critical operations where diesel logistics and acoustic signature are unacceptable.",
+      href: "/use-cases#defense-security",
+      cta: "Explore Solutions",
+      image: "Military and defence market imagery",
+      imageSrc: "/media/markets/defense-military.png",
     },
     {
-      title: "Utilities & Remote Communities",
-      body: "Field support for service crews and off-grid power for remote and Indigenous communities.",
-      theater: "FIELD",
-      points: ["Utility Crews", "Remote Sites", "Off-Grid"],
+      title: "Commercial",
+      body: "Reliable power for construction sites, telecom backup, mining, and other demanding industrial applications.",
+      theater: "COMMERCIAL",
+      points: ["Construction Sites", "Telecom Backup", "Mining"],
       detail:
-        "Pre-position cartridges and operate from −22 °C to +50 °C without a fuel truck.",
+        "Robust, low-maintenance hydrogen power for electrified drilling, remote site infrastructure, and off-grid operations without fuel-truck dependency.",
       href: "/use-cases#remote-operations",
-      cta: "View Field Support",
-      image: "Utilities and remote communities market imagery",
-      imageSrc: "/media/markets/utilities.png",
+      cta: "Explore Solutions",
+      image: "Commercial market imagery",
+      imageSrc: "/media/markets/commercial.png",
     },
     {
-      title: "Homes & Emergency Response",
-      body: "Backup during outages and severe weather for homes, gathering spaces, and emergency kits.",
-      theater: "BACKUP",
-      points: ["Home Outages", "Shelters", "Emergency Kits"],
+      title: "Consumer",
+      body: "Portable backup for camping, RV power, and emergency home use when the grid cannot be trusted.",
+      theater: "CONSUMER",
+      points: ["Camping", "RV Power", "Emergency Home Backup"],
       detail:
-        "Indoor-safe zero exhaust. Refillable cartridges stockpile indefinitely; swap in seconds.",
+        "Quiet neighbourhood-ready operation with zero exhaust at the point of use. Refillable cartridges swap in under 30 seconds.",
       href: "/use-cases#disaster-response",
-      cta: "View Emergency Backup",
-      image: "Homes and emergency response market imagery",
-      imageSrc: "/media/markets/emergency.png",
+      cta: "Explore Solutions",
+      image: "Consumer market imagery",
+      imageSrc: "/media/markets/field-consumer.png",
     },
   ] satisfies readonly MarketCard[],
 };
 
-export const productEcosystem = {
-  eyebrow: "OUR ECOSYSTEM. ENDLESS POWER.",
-  headingBefore: "THE",
-  headingAccent: "HYDROGEN POWER",
-  headingAfter: "ECOSYSTEM",
-  body: "A closed-loop system engineered for performance, sustainability, and mission-ready reliability.",
-  steps: [
+export type ComparisonRow = {
+  metric: string;
+  hydrogen: string;
+  diesel: string;
+};
+
+export type WhyHydrogenBenefit = {
+  title: string;
+  body: string;
+};
+
+export type WhyHydrogenPillar = {
+  title: string;
+  body: string;
+};
+
+export const howItWorks = {
+  eyebrow: "HOW IT WORKS",
+  heading: "CLEAN HYDROGEN. ENDLESS POSSIBILITIES.",
+  body: "Hydrogen is converted into electricity through a chemical reaction in the fuel cell—producing only water and heat. Our cartridge-based system makes power simple, scalable, and sustainable.",
+  cta: { label: "Explore Technology", href: "/capabilities" } satisfies Cta,
+  diagram: {
+    stackLabel: "FUEL CELL STACK",
+    inputs: [
+      {
+        label: "HYDROGEN",
+        sublabel: "H2",
+        imageSrc: "/media/ecosystem/hydrogen.png",
+        alt: "Hydrogen input",
+      },
+    ],
+    stackImageSrc: "/media/ecosystem/fuel-cell.png",
+    stackAlt: "Fuel cell stack",
+    outputs: [
+      {
+        label: "ELECTRICITY",
+        imageSrc: "/media/ecosystem/electricity.png",
+        alt: "Electricity output",
+      },
+      {
+        label: "WATER",
+        sublabel: "H2O",
+        imageSrc: "/media/ecosystem/water.png",
+        alt: "Water output",
+      },
+      {
+        label: "HEAT",
+        imageSrc: "/media/ecosystem/heat.png",
+        alt: "Heat output",
+      },
+    ],
+    legend: [
+      "HYDROGEN IN",
+      "OXYGEN IN",
+      "ELECTRICITY OUT",
+      "WATER OUT",
+      "HEAT",
+    ] as const,
+  },
+  zeroEmissions: {
+    title: "ZERO EMISSIONS",
+    subtitle: "At the point of use.",
+    bullets: ["No exhaust", "No noise"] as const,
+  },
+};
+
+export const whyHydrogen = {
+  eyebrow: "WHY HYDROGEN WINS",
+  headingBefore: "CLEANER.",
+  headingAccent: "QUIETER.",
+  headingAfter: "STRONGER.",
+  body: "Hydrogen fuel cells provide silent, zero-emission power while reducing maintenance and enabling rapid cartridge refueling for mission-critical operations.",
+  tableHeading: "HYDROGEN VS DIESEL",
+  tableHeaders: {
+    metric: "METRIC",
+    hydrogen: "HYDROGEN",
+    diesel: "DIESEL",
+  },
+  comparison: [
+    { metric: "Noise", hydrogen: "<65 dB", diesel: ">90 dB" },
+    { metric: "Emissions", hydrogen: "Water only", diesel: "CO₂ + NOₓ" },
+    { metric: "Maintenance", hydrogen: "Low", diesel: "High" },
+    { metric: "Runtime", hydrogen: "Unlimited swap", diesel: "Fuel logistics" },
+    { metric: "Refueling", hydrogen: "30 sec", diesel: "Minutes" },
+  ] satisfies readonly ComparisonRow[],
+  /** Prior design visual: Rise unit + cartridge swap vs diesel smoke */
+  productImageSrc: "/media/why-hydrogen/vs-diesel-visual.jpg",
+  productImageAlt:
+    "Rise Power hydrogen unit with cartridge swap compared to a diesel generator",
+  benefits: [
     {
-      step: "01",
-      title: "Hydrogen Supply",
-      blurb: "Clean hydrogen is produced and delivered.",
-      image: "Hydrogen supply",
-      imageSrc: "/media/ecosystem/01.png",
+      title: "ZERO EMISSIONS",
+      body: "Produces only water vapor—no harmful exhaust, no carbon footprint.",
     },
     {
-      step: "02",
-      title: "Refill Station",
-      blurb: "Hydrogen is safely transferred at certified stations.",
-      image: "H2 refill station",
-      imageSrc: "/media/ecosystem/02.png",
+      title: "ULTRA-QUIET OPERATION",
+      body: "Operates at <65 dB for stealth and low acoustic signature.",
     },
     {
-      step: "03",
-      title: "Plug & Play Cartridge",
-      blurb: "Standardized cartridges enable rapid, tool-free swaps.",
-      image: "Plug & play cartridge",
-      imageSrc: "/media/ecosystem/03.png",
-      highlighted: true,
+      title: "LOW MAINTENANCE",
+      body: "Fewer moving parts mean lower wear, less downtime, and reduced lifecycle costs.",
     },
     {
-      step: "04",
-      title: "Mission Power",
-      blurb: "Reliable, silent power for the toughest missions.",
-      image: "Mission power unit",
-      imageSrc: "/media/ecosystem/04.png",
+      title: "RAPID CARTRIDGE REFUELING",
+      body: "Swap cartridges in 30 seconds and stay powered without long refueling delays.",
+    },
+  ] satisfies readonly WhyHydrogenBenefit[],
+  pillars: [
+    {
+      title: "MISSION READY",
+      body: "Reliable power in any environment.",
     },
     {
-      step: "05",
-      title: "Return & Refill",
-      blurb: "Used cartridges are returned, refilled, and redeployed.",
-      image: "Return & refill",
-      imageSrc: "/media/ecosystem/05-return-refill.png",
-      caption: "RENEW. REFILL. REDEPLOY.",
+      title: "HIGH EFFICIENCY",
+      body: "Maximum power, minimal waste.",
     },
-  ] satisfies readonly EcosystemStep[],
+    {
+      title: "SUSTAINABLE",
+      body: "Clean energy today for a better tomorrow.",
+    },
+    {
+      title: "FUTURE PROOF",
+      body: "Scalable technology for a changing world.",
+    },
+    {
+      title: "SECURE POWER",
+      body: "Resilient systems for critical missions and operations.",
+    },
+  ] satisfies readonly WhyHydrogenPillar[],
 };
 
 export const featuredProducts = {
@@ -349,7 +424,7 @@ export const featuredProducts = {
       powerNote: "At Point of Use",
       idealFor: ["Camping & Outdoor", "Home Outages", "Emergency Kits"],
       detailsHref: "/products#sentinel",
-      datasheetHref: "/datasheets",
+      datasheetHref: "/media/brochures/sentinel-power-cube.pdf",
       image: "SENTINEL portable hydrogen power system",
       imageSrc: "/media/products/featured-sentinel.png",
     },
@@ -366,7 +441,7 @@ export const featuredProducts = {
       powerNote: "Cartridge Load Time",
       idealFor: ["Inspection", "Mapping", "Public Safety"],
       detailsHref: "/products#falcon",
-      datasheetHref: "/datasheets",
+      datasheetHref: "/media/brochures/falcon-drone-range-extender.pdf",
       image: "FALCON hydrogen drone range extender",
       imageSrc: "/media/products/featured-falcon.png",
     },
@@ -381,9 +456,9 @@ export const featuredProducts = {
       weightNote: "24 × 18 × 24 in",
       power: "1.5 kW",
       powerNote: "Capacity",
-      idealFor: ["Municipalities", "Utilities", "Home Backup"],
+      idealFor: ["Construction Sites", "Mining Operations", "Telecom Backup"],
       detailsHref: "/products#titan",
-      datasheetHref: "/datasheets",
+      datasheetHref: "/media/brochures/rise-mission-power-brochure.pdf",
       image: "TITAN zero-emission generator",
       imageSrc: "/media/products/featured-titan.png",
     },
@@ -400,7 +475,8 @@ export const featuredProducts = {
       powerNote: "Monitoring Enabled",
       idealFor: ["Fuel Cell Systems", "Field Operations", "Rapid Replenishment"],
       detailsHref: "/products#cartridge-kit",
-      datasheetHref: "/datasheets",
+      // TODO: Add hydrogen-cartridge-kit spec PDF when available from client.
+      datasheetHref: "/contact",
       image: "Hydrogen Cartridge Kit with RFID smart monitoring",
       imageSrc: "/media/products/featured-cartridge.png",
     },
@@ -876,17 +952,17 @@ export const customerPartners = {
       imageSrc: "/media/cases/homes-community.png",
     },
     {
-      category: "UTILITIES & REMOTE",
-      title: "Clean Power for Field and Off-Grid Sites",
-      body: "Robust, low-maintenance power for utility crews and remote communities where diesel logistics are a liability.",
+      category: "MINING COMPANY",
+      title: "Clean Power for Extreme Environments",
+      body: "Delivered robust, low-maintenance power solutions for electrified drilling and site infrastructure.",
       stats: [
-        { value: "LOW MAINT.", label: "Fewer Moving Parts" },
-        { value: "40 LB", label: "Titan Portable Weight" },
-        { value: "1.5 kW", label: "Titan Capacity" },
+        { value: "30% LOWER TCO", label: "vs Diesel" },
+        { value: "70% LESS MAINT.", label: "Downtime Reduced" },
+        { value: "BUILT TOUGH", label: "For Harsh Sites" },
       ],
-      href: "/use-cases#use-cases",
-      image: "Utility and remote site case",
-      imageSrc: "/media/cases/utilities-remote.png",
+      href: "/use-cases#remote-operations",
+      image: "Mining company case study",
+      imageSrc: "/media/cases/mining.png",
     },
     {
       category: "DISASTER RESPONSE",
@@ -968,16 +1044,16 @@ export const footer = {
         { label: "Products", href: "/products" },
         { label: "Use Cases", href: "/use-cases" },
         { label: "Capabilities", href: "/capabilities" },
-        { label: "Product Ecosystem", href: "/#product-ecosystem" },
+        { label: "How It Works", href: "/#how-it-works" },
       ],
     },
     {
       heading: "Markets",
       links: [
+        { label: "Military & Defence", href: "/use-cases#defense-security" },
+        { label: "Commercial", href: "/use-cases#remote-operations" },
+        { label: "Consumer", href: "/use-cases#disaster-response" },
         { label: "Municipalities & Public Works", href: "/use-cases#use-cases" },
-        { label: "Small Business & Mobile Sites", href: "/use-cases#critical-infrastructure" },
-        { label: "Utilities & Remote Communities", href: "/use-cases#remote-operations" },
-        { label: "Homes & Emergency Response", href: "/use-cases#disaster-response" },
       ],
     },
     {

@@ -18,13 +18,13 @@ import {
   hero,
   heroImageSrc,
   performanceMetrics,
-  productEcosystem,
   threeMarkets,
 } from "@/lib/home-content";
 import { standards } from "@/lib/content";
 import { Reveal, RevealStagger } from "@/components/motion/Reveal";
-import { EcosystemStepCard } from "./EcosystemStepCard";
 import { FeaturedProductRow } from "./FeaturedProductRow";
+import { HowItWorks } from "./HowItWorks";
+import { WhyHydrogen } from "./WhyHydrogen";
 import { MarketsShowcase } from "./MarketsShowcase";
 import { PerformanceMetricCard } from "./PerformanceMetricCard";
 import { SectionSkeleton } from "./SectionSkeleton";
@@ -254,83 +254,8 @@ export function HomePage() {
         </div>
       </section>
 
-      {/* 4. Product Ecosystem */}
-      <section
-        id="product-ecosystem"
-        className="relative scroll-mt-28 overflow-hidden bg-[#fbfaf7] py-12 sm:py-14 lg:py-16"
-      >
-        <div className={pageInset}>
-          <Reveal variant="up">
-            <p
-              className="type-eyebrow text-center"
-              style={{ color: sage }}
-            >
-              {productEcosystem.eyebrow}
-            </p>
-            <h2 className="type-section-h2 mt-4 text-center">
-              {productEcosystem.headingBefore}{" "}
-              <span style={{ color: sage }}>{productEcosystem.headingAccent}</span>{" "}
-              {productEcosystem.headingAfter}
-            </h2>
-            <p className="type-section-body mx-auto mt-5 max-w-3xl text-center">
-              {productEcosystem.body}
-            </p>
-          </Reveal>
-
-          {/* Mobile / tablet / laptop: horizontal process rail */}
-          <div className="mt-10 sm:mt-12 xl:hidden">
-            <SnapCarousel
-              ariaLabel="Product ecosystem steps"
-              showArrows
-              showDots
-              arrowPlacement="bottom"
-              itemClassName="w-[min(85vw,17rem)] sm:w-[min(70vw,19rem)] md:w-[min(45vw,20rem)]"
-              trackClassName="gap-5 px-1 pb-1"
-            >
-              {productEcosystem.steps.map((step) => (
-                <EcosystemStepCard
-                  key={step.step}
-                  step={step.step}
-                  title={step.title}
-                  blurb={step.blurb}
-                  imageSrc={step.imageSrc}
-                  imageLabel={step.image}
-                  caption={step.caption}
-                  highlighted={step.highlighted}
-                />
-              ))}
-            </SnapCarousel>
-          </div>
-
-          {/* Desktop: full 5-step process with connectors between cards */}
-          <RevealStagger
-            className="mt-12 hidden gap-5 xl:grid xl:grid-cols-5 xl:gap-6"
-            step={70}
-          >
-            {productEcosystem.steps.map((step, index) => (
-              <div key={step.step} className="relative h-full min-w-0">
-                <EcosystemStepCard
-                  step={step.step}
-                  title={step.title}
-                  blurb={step.blurb}
-                  imageSrc={step.imageSrc}
-                  imageLabel={step.image}
-                  caption={step.caption}
-                  highlighted={step.highlighted}
-                />
-                {index < productEcosystem.steps.length - 1 ? (
-                  <ArrowRight
-                    className="absolute top-[7.25rem] -right-4 z-10 size-6 -translate-y-1/2 rounded-full border border-[#7b963f] bg-[#fbfaf7] p-1 xl:-right-5"
-                    strokeWidth={2.4}
-                    style={{ color: "#1a1c16" }}
-                    aria-hidden
-                  />
-                ) : null}
-              </div>
-            ))}
-          </RevealStagger>
-        </div>
-      </section>
+      <HowItWorks />
+      <WhyHydrogen />
 
       {/* 5. Featured Products — snap carousel on mobile, grid on desktop */}
       <section

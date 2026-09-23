@@ -15,6 +15,8 @@ export type DatasheetProduct = {
   specs: [string, string][];
   sectionTitle: string;
   productHref: string;
+  /** When set, enables a direct PDF download (brochure / spec sheet). */
+  pdfHref?: string;
 };
 
 const CREAM = "#fbfaf7";
@@ -135,14 +137,26 @@ export function DatasheetProductSection({
             </div>
 
             <div className="mt-6 flex flex-wrap items-center gap-x-8 gap-y-3">
-              <Link
-                href="/contact"
-                className="inline-flex min-h-12 items-center justify-center gap-2 rounded-sm px-7 text-xs font-semibold tracking-[0.08em] text-white uppercase transition-opacity hover:opacity-90"
-                style={{ backgroundColor: SAGE_CTA }}
-              >
-                Request Full Datasheet
-                <ArrowRight className="size-4 shrink-0" aria-hidden="true" />
-              </Link>
+              {product.pdfHref ? (
+                <a
+                  href={product.pdfHref}
+                  download
+                  className="inline-flex min-h-12 items-center justify-center gap-2 rounded-sm px-7 text-xs font-semibold tracking-[0.08em] text-white uppercase transition-opacity hover:opacity-90"
+                  style={{ backgroundColor: SAGE_CTA }}
+                >
+                  Download Spec Sheet (PDF)
+                  <ArrowRight className="size-4 shrink-0" aria-hidden="true" />
+                </a>
+              ) : (
+                <Link
+                  href="/contact"
+                  className="inline-flex min-h-12 items-center justify-center gap-2 rounded-sm px-7 text-xs font-semibold tracking-[0.08em] text-white uppercase transition-opacity hover:opacity-90"
+                  style={{ backgroundColor: SAGE_CTA }}
+                >
+                  Request Full Datasheet
+                  <ArrowRight className="size-4 shrink-0" aria-hidden="true" />
+                </Link>
+              )}
 
               <Link
                 href={product.productHref}

@@ -103,7 +103,7 @@ export const useCases = [
     title: "Municipalities & Public Works",
     description:
       "Quiet, zero-emission backup for city facilities, public works, and neighbourhood operations when the grid is down. Rapidly deployable portable hydrogen power for civic teams.",
-    image: "/media/use-cases/uc-defence.png",
+    image: "/media/cases/municipalities.png",
     howItWorks: [
       "Deploy Sentinel or Titan at city facilities and public works sites",
       "Power lights, communications, charging, and essential devices",
@@ -117,7 +117,7 @@ export const useCases = [
     title: "Utilities & Remote Communities",
     description:
       "Field support for utility service and repair crews, plus reliable off-grid power for remote and Indigenous communities where grid access is limited.",
-    image: "/media/use-cases/uc-grid2.png",
+    image: "/media/cases/utilities-remote.png",
     howItWorks: [
       "Pre-position refillable cartridges at remote and community sites",
       "Support utility crews with portable power for tools and communications",
@@ -131,7 +131,7 @@ export const useCases = [
     title: "Homes & Emergency Response",
     description:
       "Backup during outages and severe weather for homes, community gathering spaces, and emergency kits. Zero exhaust enables indoor-safe operation when the grid drops.",
-    image: "/media/use-cases/uc-grid3.png",
+    image: "/media/cases/homes-community.png",
     howItWorks: [
       "Keep Sentinel or Titan ready in home and community emergency kits",
       "Power lights, laptops, charging, and essential small devices",

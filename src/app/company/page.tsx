@@ -55,30 +55,30 @@ const values = [
 const focusAreas = [
   {
     number: "01",
-    title: "Municipalities",
+    title: "Military &\nDefence",
     description:
-      "Quiet backup for city facilities, public works, and neighbourhood operations. Open to product trials and clean-energy pilot programs.",
-    image: "/media/company/focus-municipalities.png",
-    href: "/use-cases#use-cases",
-    cta: "View Municipalities",
+      "Silent hydrogen power for tactical communications, UAV operations, and ISR systems in forward deployments.",
+    image: "/media/markets/defense-military.png",
+    href: "/use-cases#defense-security",
+    cta: "Explore Solutions",
   },
   {
     number: "02",
-    title: "Utilities &\nCommunities",
+    title: "Commercial",
     description:
-      "Field support for service crews and off-grid power for remote and Indigenous communities where grid access is limited.",
-    image: "/media/company/focus-utilities.png",
+      "Construction sites, telecom backup, mining, and remote industrial power without diesel fuel-truck dependency.",
+    image: "/media/markets/commercial.png",
     href: "/use-cases#remote-operations",
-    cta: "View Field Support",
+    cta: "Explore Solutions",
   },
   {
     number: "03",
-    title: "Homes &\nEmergency",
+    title: "Consumer",
     description:
-      "Backup during outages and severe weather for homes, gathering spaces, and emergency kits. Zero exhaust enables indoor-safe operation.",
-    image: "/media/company/focus-emergency.png",
+      "Camping, RV power, and emergency home backup with quiet, zero-emission operation at the point of use.",
+    image: "/media/markets/field-consumer.png",
     href: "/use-cases#disaster-response",
-    cta: "View Emergency Backup",
+    cta: "Explore Solutions",
   },
 ];
 

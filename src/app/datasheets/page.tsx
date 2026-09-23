@@ -39,6 +39,7 @@ const products: DatasheetProduct[] = [
     ],
     sectionTitle: "Product Highlights",
     productHref: "/products#sentinel",
+    pdfHref: "/media/brochures/sentinel-power-cube.pdf",
   },
   {
     number: "02",
@@ -58,6 +59,7 @@ const products: DatasheetProduct[] = [
     ],
     sectionTitle: "Technical Specifications",
     productHref: "/products#falcon",
+    pdfHref: "/media/brochures/falcon-drone-range-extender.pdf",
   },
   {
     number: "03",
@@ -78,6 +80,7 @@ const products: DatasheetProduct[] = [
     ],
     sectionTitle: "Technical Specifications",
     productHref: "/products#titan",
+    pdfHref: "/media/brochures/rise-mission-power-brochure.pdf",
   },
   {
     number: "04",
@@ -98,8 +101,11 @@ const products: DatasheetProduct[] = [
     ],
     sectionTitle: "Engineering Targets",
     productHref: "/products#hydrogen-cartridge-kit",
+    // TODO: Add hydrogen-cartridge-kit spec PDF when available from client.
   },
 ];
+
+const companyBrochureHref = "/media/brochures/rise-mission-power-brochure.pdf";
 
 function SectionEyebrow({
   children,
@@ -158,9 +164,17 @@ export default function DatasheetsPage() {
           </p>
 
           <div className="mt-7 flex flex-wrap items-center gap-3 sm:mt-8 sm:gap-4">
+            <a
+              href={companyBrochureHref}
+              download
+              className="inline-flex min-h-12 items-center justify-center gap-2 rounded-sm bg-[#849363] px-7 text-sm font-semibold tracking-wide text-white uppercase transition-opacity hover:opacity-90"
+            >
+              Download Company Brochure
+              <ArrowRight className="size-4 shrink-0" aria-hidden="true" />
+            </a>
             <Link
               href="/contact"
-              className="inline-flex min-h-12 items-center justify-center gap-2 rounded-sm bg-[#849363] px-7 text-sm font-semibold tracking-wide text-white uppercase transition-opacity hover:opacity-90"
+              className="inline-flex min-h-12 items-center justify-center gap-2 rounded-sm border border-white/45 px-7 text-sm font-semibold tracking-wide text-white uppercase transition-colors hover:bg-white/10"
             >
               Request Full Datasheets
               <ArrowRight className="size-4 shrink-0" aria-hidden="true" />

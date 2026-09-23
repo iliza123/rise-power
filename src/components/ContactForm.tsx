@@ -15,10 +15,10 @@ const roles = [
 ];
 
 const useCases = [
+  "Military & Defence",
+  "Commercial",
+  "Consumer",
   "Municipalities & Public Works",
-  "Utilities & Remote Communities",
-  "Homes & Emergency Response",
-  "Small Business & Mobile Sites",
   "Drone / Inspection Power",
   "Clean-Energy Pilot / Trial",
   "Other",
