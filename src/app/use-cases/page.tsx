@@ -90,7 +90,7 @@ import {
 import { SnapCarousel } from "@/components/home/SnapCarousel";
 import { Reveal, RevealStagger } from "@/components/motion/Reveal";
 import { StackedPageHero } from "@/components/StackedPageHero";
-import { products, useCases } from "@/lib/content";
+import { useCases } from "@/lib/content";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata({
@@ -161,7 +161,7 @@ type ProductConnection = {
   eyebrow: string;
   title: string;
   description: string;
-  image: string | undefined;
+  image: string;
   href: string;
 };
 
@@ -302,7 +302,7 @@ export default function UseCasesPage() {
       title: "Compact. Everyday backup.",
       description:
         "Quiet Power Cube power for outdoor use, home outages, and emergency kits.",
-      image: products.find((product) => product.slug === "sentinel")?.image,
+      image: "/media/use-cases/uc-product-sentinel.png",
       href: "/products#sentinel",
     },
     {
@@ -310,7 +310,7 @@ export default function UseCasesPage() {
       title: "Up to 5× flight range.",
       description:
         "Plug-and-play drone range extender for inspection, mapping, and public safety.",
-      image: products.find((product) => product.slug === "falcon")?.image,
+      image: "/media/use-cases/uc-product-falcon.png",
       href: "/products#falcon",
     },
     {
@@ -318,7 +318,7 @@ export default function UseCasesPage() {
       title: "1.5 kW everyday and emergency backup.",
       description:
         "Clean, quiet portable generation for municipalities, utilities, and communities.",
-      image: products.find((product) => product.slug === "titan")?.image,
+      image: "/media/use-cases/uc-product-titan.png",
       href: "/products#titan",
     },
     {
@@ -326,12 +326,7 @@ export default function UseCasesPage() {
       title: "Energy on demand.",
       description:
         "Pre-positioned hydrogen for rapid refueling and extended runtime.",
-      image:
-        products.find(
-          (product) =>
-            product.slug.includes("cartridge") ||
-            product.name.toLowerCase().includes("cartridge"),
-        )?.image ?? products[3]?.image,
+      image: "/media/use-cases/uc-product-cartridge.png",
       href: "/products#cartridge-kit",
     },
   ];
