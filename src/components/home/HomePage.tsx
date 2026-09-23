@@ -24,7 +24,7 @@ import { standards } from "@/lib/content";
 import { Reveal, RevealStagger } from "@/components/motion/Reveal";
 import { FeaturedProductRow } from "./FeaturedProductRow";
 import { HowItWorks } from "./HowItWorks";
-import { WhyHydrogen } from "./WhyHydrogen";
+// import { WhyHydrogen } from "./WhyHydrogen";
 import { MarketsShowcase } from "./MarketsShowcase";
 import { PerformanceMetricCard } from "./PerformanceMetricCard";
 import { SectionSkeleton } from "./SectionSkeleton";
@@ -255,7 +255,8 @@ export function HomePage() {
       </section>
 
       <HowItWorks />
-      <WhyHydrogen />
+      {/* Temporarily hidden: CLEANER. QUIETER. STRONGER. / Why Hydrogen */}
+      {/* <WhyHydrogen /> */}
 
       {/* 5. Featured Products — snap carousel on mobile, grid on desktop */}
       <section
