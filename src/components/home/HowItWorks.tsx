@@ -33,9 +33,19 @@ function CircleAsset({
         alt={alt}
         fill
         className="object-contain"
-        sizes="(max-width: 640px) 96px, 128px"
+        sizes="(max-width: 1024px) 80px, 96px"
       />
     </div>
+  );
+}
+
+function FlowArrow({ className }: { className?: string }) {
+  return (
+    <ArrowRight
+      className={`size-4 shrink-0 text-[#8a8f82] sm:size-[1.125rem] lg:size-5 ${className ?? ""}`}
+      strokeWidth={2}
+      aria-hidden
+    />
   );
 }
 
@@ -49,8 +59,8 @@ export function HowItWorks() {
       className={`scroll-mt-28 bg-[#f3f0e8] ${sectionY}`}
     >
       <div className={pageInset}>
-        <div className="grid items-stretch gap-6 lg:grid-cols-12">
-          {/* Left — shared type scale (eyebrow / h2 / body) */}
+        <div className="grid items-stretch gap-8 lg:grid-cols-12 lg:gap-5">
+          {/* Left — shared section type scale */}
           <Reveal
             variant="up"
             className="flex h-full flex-col justify-center lg:col-span-3"
@@ -62,7 +72,7 @@ export function HowItWorks() {
             <p className="type-section-body mt-4 max-w-md">{body}</p>
             <Link
               href={cta.href}
-              className="mt-6 inline-flex w-fit min-h-12 items-center gap-2 px-7 text-sm font-semibold tracking-[0.08em] text-white uppercase transition-colors duration-200 hover:opacity-90"
+              className="type-cta mt-6 inline-flex w-fit min-h-12 items-center justify-center gap-2 rounded-sm px-7 text-white transition-opacity duration-200 hover:opacity-90"
               style={{ background: sage }}
             >
               {cta.label}
@@ -70,57 +80,53 @@ export function HowItWorks() {
             </Link>
           </Reveal>
 
-          {/* Center — one-line process diagram */}
-          <Reveal variant="fade" className="h-full lg:col-span-6">
-            <div className="flex h-full flex-col justify-center rounded-2xl border border-[#e0dcd3] bg-white px-4 py-6 sm:px-6 sm:py-7 lg:px-7">
-              <div className="-mx-1 overflow-x-auto px-1 [scrollbar-width:thin]">
-                <div className="mx-auto flex w-max min-w-full items-center justify-center gap-2 sm:gap-3 lg:gap-4">
+          {/* Center — single-row process diagram (scroll on narrow viewports) */}
+          <Reveal variant="fade" className="h-full min-w-0 lg:col-span-6">
+            <div className="flex h-full min-h-0 flex-col justify-center rounded-2xl border border-[#e0dcd3] bg-white px-3 py-6 sm:px-5 sm:py-7 lg:px-6 lg:py-8">
+              <div className="overflow-x-auto overscroll-x-contain [-webkit-overflow-scrolling:touch] [scrollbar-width:thin]">
+                <div
+                  className="mx-auto flex w-max flex-nowrap items-center justify-center gap-1.5 px-1 sm:gap-2.5 lg:gap-3 xl:gap-3.5"
+                  role="img"
+                  aria-label="Hydrogen flows through a fuel cell to produce electricity, water, and heat"
+                >
                   {hydrogenIn ? (
                     <CircleAsset
                       src={hydrogenIn.imageSrc}
                       alt={hydrogenIn.alt}
-                      sizeClass="size-20 sm:size-24 lg:size-[6.5rem]"
+                      sizeClass="size-[4.5rem] sm:size-20 lg:size-[5.25rem] xl:size-24"
                     />
                   ) : null}
 
-                  <ArrowRight
-                    className="size-5 shrink-0 text-[#8a8f82]"
-                    strokeWidth={2}
-                    aria-hidden
-                  />
+                  <FlowArrow />
 
-                  <div className="relative h-24 w-[6.5rem] shrink-0 sm:h-28 sm:w-32 lg:h-32 lg:w-36">
+                  <div className="relative h-[4.5rem] w-[5.25rem] shrink-0 sm:h-20 sm:w-24 lg:h-[5.25rem] lg:w-28 xl:h-24 xl:w-32">
                     <Image
                       src={diagram.stackImageSrc}
                       alt={diagram.stackAlt}
                       fill
                       className="object-contain"
-                      sizes="160px"
+                      sizes="(max-width: 1024px) 96px, 128px"
                     />
                   </div>
 
                   {diagram.outputs.map((out) => (
                     <div key={out.label} className="contents">
-                      <ArrowRight
-                        className="size-5 shrink-0 text-[#8a8f82]"
-                        strokeWidth={2}
-                        aria-hidden
-                      />
+                      <FlowArrow />
                       <CircleAsset
                         src={out.imageSrc}
                         alt={out.alt}
-                        sizeClass="size-20 sm:size-24 lg:size-[6.5rem]"
+                        sizeClass="size-[4.5rem] sm:size-20 lg:size-[5.25rem] xl:size-24"
                       />
                     </div>
                   ))}
                 </div>
               </div>
 
-              <ul className="mt-5 flex flex-wrap items-center justify-center gap-x-5 gap-y-2 border-t border-[#eeeae3] pt-5 sm:mt-6 sm:gap-x-6 sm:pt-5">
+              <ul className="mt-5 grid grid-cols-2 gap-x-3 gap-y-2.5 border-t border-[#eeeae3] pt-5 sm:mt-6 sm:flex sm:flex-wrap sm:items-center sm:justify-center sm:gap-x-5 sm:gap-y-2 sm:pt-6 md:gap-x-6">
                 {diagram.legend.map((item, index) => (
                   <li
                     key={item}
-                    className="flex items-center gap-2 font-display text-[11px] font-semibold tracking-[0.14em] text-[#5c5f56] uppercase sm:text-xs"
+                    className="type-card-label flex max-w-full items-center gap-2 text-[#5c5f56]"
                   >
                     <span
                       className="size-2 shrink-0 rounded-full"
@@ -129,19 +135,19 @@ export function HowItWorks() {
                       }}
                       aria-hidden
                     />
-                    {item}
+                    <span className="leading-snug">{item}</span>
                   </li>
                 ))}
               </ul>
             </div>
           </Reveal>
 
-          {/* Right — Zero Emissions (type-card-* tokens) */}
-          <Reveal variant="up" className="h-full lg:col-span-3">
-            <div className="flex h-full flex-col justify-between gap-8 rounded-2xl bg-[#141814] px-7 py-7 text-white sm:px-8 sm:py-8">
+          {/* Right — Zero Emissions */}
+          <Reveal variant="up" className="h-full min-w-0 lg:col-span-3">
+            <div className="flex h-full flex-col justify-between gap-6 rounded-2xl bg-[#141814] px-6 py-7 text-white sm:px-7 sm:py-8 lg:gap-8 lg:px-6 lg:py-8 xl:px-7">
               <div>
                 <span
-                  className="relative mb-5 grid size-11 place-items-center"
+                  className="relative mb-4 grid size-11 place-items-center lg:mb-5"
                   aria-hidden
                 >
                   <Hexagon
@@ -156,24 +162,21 @@ export function HowItWorks() {
                   />
                 </span>
 
-                <h3 className="type-card-title-lg text-white">
+                <h3 className="type-card-title text-white">
                   {zeroEmissions.title}
                 </h3>
-                <p className="type-card-body-on-dark mt-2.5 !text-white/70">
+                <p className="type-card-body-on-dark mt-2 text-white/70">
                   {zeroEmissions.subtitle}
                 </p>
               </div>
 
-              <div
-                className="h-px w-full bg-white/15"
-                aria-hidden
-              />
+              <div className="h-px w-full shrink-0 bg-white/15" aria-hidden />
 
-              <ul className="space-y-5">
+              <ul className="space-y-4 sm:space-y-5">
                 {zeroEmissions.bullets.map((item, index) => {
                   const Icon = index === 0 ? Leaf : VolumeX;
                   return (
-                    <li key={item} className="flex items-center gap-3.5">
+                    <li key={item} className="flex items-center gap-3">
                       <span className="grid size-10 shrink-0 place-items-center rounded-full border border-white/20 bg-white/5">
                         <Icon
                           className="size-4 text-white/90"
@@ -181,7 +184,7 @@ export function HowItWorks() {
                           aria-hidden
                         />
                       </span>
-                      <span className="font-display text-[15px] font-bold tracking-[0.1em] text-white uppercase sm:text-base">
+                      <span className="type-card-label text-white/90">
                         {item}
                       </span>
                     </li>
