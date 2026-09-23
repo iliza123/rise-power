@@ -191,7 +191,7 @@ function EnvironmentTile({
         />
       ) : null}
 
-      <div className="absolute inset-0 bg-gradient-to-r from-[#07100d]/90 via-[#07100d]/55 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[#07100d]/55 via-[#07100d]/28 to-transparent" />
 
       <div className="absolute inset-0 flex flex-col justify-between p-7 sm:p-8 lg:p-9">
         <div>

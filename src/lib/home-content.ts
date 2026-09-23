@@ -615,7 +615,7 @@ export const capabilities = {
           alt: "Mission environment where engineered systems are deployed",
         },
         {
-          src: "/media/use-cases/uc-defence.png",
+          src: "/media/capabilities/engineering-focus-3.png",
           alt: "Fielded Rise Power hardware in operational use",
         },
       ],
@@ -681,14 +681,15 @@ export const capabilities = {
         "Integration with existing vehicle platforms, communications systems, and facility power networks.",
       href: "/capabilities/system-integration",
       imageSrc: "/media/capabilities/system-integration.png",
-      imageAlt: "Soldier carrying a portable power unit on his back",
+      imageAlt:
+        "Rise Mission Power module on a workbench with vehicle and facility power integration",
       secondaryImageSrc: "/media/use-cases/uc-deployment.png",
       secondaryImageAlt:
         "Military personnel, drone, and truck in a snowy field",
       gallery: [
         {
           src: "/media/capabilities/system-integration.png",
-          alt: "Platform integration with communications and field power",
+          alt: "Rise Mission Power module connected for vehicle and facility power integration",
         },
         {
           src: "/media/use-cases/defense-security.jpg",
@@ -761,7 +762,8 @@ export const capabilities = {
         "Logistics planning, operator training, and field service for deployed hydrogen power systems.",
       href: "/capabilities/field-deployment",
       imageSrc: "/media/capabilities/field-deployment-hero.png",
-      imageAlt: "Person camping at an RV with a dog",
+      imageAlt:
+        "Rise Mission Power field camp with portable generator, solar panels, and support vehicle",
       secondaryImageSrc: "/media/products/hydrogen-cartridge-kit.png",
       secondaryImageAlt:
         "Hydrogen cartridge kit ready for rapid field replenishment",
@@ -776,7 +778,7 @@ export const capabilities = {
         },
         {
           src: "/media/capabilities/field-deployment-hero.png",
-          alt: "Camper and dog at an RV site",
+          alt: "Field camp with Rise portable power, open equipment cases, and a drone overhead",
         },
       ],
       deliverablesIntro:
