@@ -32,18 +32,18 @@ export function PerformanceMetricCard({
       }}
     >
       <article
-        className="relative flex h-full flex-col items-center bg-white px-4 pt-5 pb-5 sm:px-5 sm:pt-6 sm:pb-6"
+        className="relative flex h-full flex-col items-center bg-white px-3.5 pt-4 pb-4 sm:px-4 sm:pt-5 sm:pb-5"
         style={{
           clipPath:
             "polygon(12px 0, calc(100% - 12px) 0, 100% 12px, 100% calc(100% - 10px), calc(100% - 10px) 100%, 10px 100%, 0 calc(100% - 10px), 0 12px)",
           boxShadow: "inset 0 0 0 1px #e6e3da",
         }}
       >
-        <div className="mx-auto aspect-square w-full max-w-[140px] sm:max-w-[156px]">
-          <StatGauge value={value} unit={unit} percent={percent} size={156} />
+        <div className="mx-auto aspect-square w-full max-w-[128px] sm:max-w-[144px]">
+          <StatGauge value={value} unit={unit} percent={percent} size={144} />
         </div>
 
-        <div className="relative mt-4 mb-0.5 flex w-[78%] max-w-[12rem] shrink-0 items-center justify-center">
+        <div className="relative mt-3 mb-0.5 flex w-[78%] max-w-[12rem] shrink-0 items-center justify-center">
           <div
             className="absolute inset-x-0 top-1/2 h-px -translate-y-1/2"
             style={{ background: "#d8d4ca" }}
@@ -59,10 +59,10 @@ export function PerformanceMetricCard({
           </div>
         </div>
 
-        <h3 className="type-card-title-sm mt-3 flex min-h-[2.6em] max-w-[14rem] items-start justify-center text-center text-[0.8rem] leading-snug text-[#1a1c16] sm:min-h-[2.8em] sm:text-[0.85rem]">
+        <h3 className="mt-2.5 flex min-h-[2.4em] max-w-[15rem] items-start justify-center text-center font-display text-[0.95rem] leading-snug font-bold tracking-[0.02em] text-[#1a1c16] uppercase sm:min-h-[2.5em] sm:text-[1.05rem]">
           {title}
         </h3>
-        <p className="type-card-body mt-1.5 min-h-[2.4em] max-w-[13.5rem] text-center leading-snug">
+        <p className="mt-1 min-h-[2.2em] max-w-[14rem] text-center text-[0.9375rem] leading-snug text-[#5c584e] sm:text-[1.05rem]">
           {body}
         </p>
       </article>

@@ -28,7 +28,7 @@ const labelClass =
   "text-[11px] font-semibold tracking-[0.16em] text-[#66717d] uppercase";
 
 const fieldClass =
-  "mt-2 block w-full rounded-sm border border-[#d9dfe3] bg-[#fbfaf7] px-4 py-3 text-sm text-[#101820] placeholder:text-[#66717d]/50 focus:border-[#849363] focus:outline-none";
+  "mt-2 block w-full rounded-sm border border-[#d9dfe3] bg-[#fbfaf7] px-4 py-3.5 text-base text-[#101820] placeholder:text-[#66717d]/50 focus:border-[#849363] focus:outline-none";
 
 export function ContactForm() {
   const [sent, setSent] = useState(false);
@@ -89,7 +89,7 @@ export function ContactForm() {
         <h3 className="font-display text-2xl tracking-wide text-[#101820] uppercase sm:text-3xl">
           Message Received
         </h3>
-        <p className="type-section-body mt-3 text-[#626e7a]">
+        <p className="type-section-body mt-4 text-[#626e7a]">
           Thank you for reaching out. We will respond with specs, runtime data,
           and a deployment summary.
         </p>
@@ -98,7 +98,7 @@ export function ContactForm() {
   }
 
   return (
-    <form onSubmit={onSubmit} noValidate className="space-y-4">
+    <form onSubmit={onSubmit} noValidate className="space-y-5">
       <div className="absolute -left-[9999px]" aria-hidden="true">
         <input type="text" name="website" tabIndex={-1} autoComplete="off" />
       </div>
@@ -114,7 +114,7 @@ export function ContactForm() {
           placeholder="Your name"
         />
         {errors.name ? (
-          <p className="mt-1 text-xs text-red-500">{errors.name}</p>
+          <p className="mt-1.5 text-xs text-red-500">{errors.name}</p>
         ) : null}
       </div>
 
@@ -130,7 +130,7 @@ export function ContactForm() {
           placeholder="you@company.com"
         />
         {errors.email ? (
-          <p className="mt-1 text-xs text-red-500">{errors.email}</p>
+          <p className="mt-1.5 text-xs text-red-500">{errors.email}</p>
         ) : null}
       </div>
 
@@ -146,7 +146,7 @@ export function ContactForm() {
         />
       </div>
 
-      <div className="grid gap-4 sm:grid-cols-2">
+      <div className="grid gap-5 sm:grid-cols-2">
         <div>
           <label htmlFor="role" className={labelClass}>
             Role
@@ -196,7 +196,7 @@ export function ContactForm() {
           placeholder="Operating environment, runtime requirements, deployment timeline, integration needs."
         />
         {errors.message ? (
-          <p className="mt-1 text-xs text-red-500">{errors.message}</p>
+          <p className="mt-1.5 text-xs text-red-500">{errors.message}</p>
         ) : null}
       </div>
 
@@ -204,16 +204,18 @@ export function ContactForm() {
         <p className="text-xs text-red-500">{errors.form}</p>
       ) : null}
 
-      <button
-        type="submit"
-        disabled={pending}
-        className="group inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-sm bg-[#849363] px-8 text-sm font-semibold tracking-wide text-white uppercase transition-opacity hover:opacity-90 disabled:opacity-60 sm:w-auto"
-      >
-        {pending ? "Sending..." : "Request Briefing"}
-        {!pending ? (
-          <ArrowRight className="size-5 transition-transform duration-300 group-hover:translate-x-1" />
-        ) : null}
-      </button>
+      <div className="pt-1">
+        <button
+          type="submit"
+          disabled={pending}
+          className="group inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-sm bg-[#849363] px-8 text-sm font-semibold tracking-wide text-white uppercase transition-opacity hover:opacity-90 disabled:opacity-60 sm:w-auto"
+        >
+          {pending ? "Sending..." : "Request Briefing"}
+          {!pending ? (
+            <ArrowRight className="size-5 transition-transform duration-300 group-hover:translate-x-1" />
+          ) : null}
+        </button>
+      </div>
     </form>
   );
 }

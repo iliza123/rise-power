@@ -96,7 +96,7 @@ export function FaqAccordion({
                 className="flex w-full cursor-pointer items-center justify-between gap-6 px-1 py-3.5 text-left outline-none sm:py-4"
               >
                 <h3
-                  className={`text-base font-semibold leading-snug transition-colors duration-300 sm:text-lg ${
+                  className={`text-lg font-semibold leading-snug transition-colors duration-300 sm:text-xl ${
                     isOpen ? "text-[#6e7f42]" : "text-[#101820]"
                   }`}
                 >
@@ -131,7 +131,7 @@ export function FaqAccordion({
                     }`}
                   >
                     <p
-                      className="type-section-body text-left"
+                      className="text-left text-lg leading-[1.65] sm:text-xl"
                       style={{ color: muted }}
                     >
                       <AnswerBody text={item.a} />

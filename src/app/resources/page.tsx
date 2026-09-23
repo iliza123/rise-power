@@ -231,7 +231,7 @@ export default function ResourcesPage() {
         <div className="hero-animate-copy max-w-[820px]">
           <SectionEyebrow onDark>Resource Center</SectionEyebrow>
 
-          <h1 className="mt-4 font-display text-[42px] leading-[0.92] font-bold tracking-tight text-white uppercase sm:mt-6 sm:text-[68px] md:text-[78px] xl:text-[88px] 2xl:text-[96px]">
+          <h1 className="mt-4 type-page-h1">
             Resources
           </h1>
 
@@ -272,7 +272,7 @@ export default function ResourcesPage() {
           <Reveal variant="up">
             <div className="max-w-[720px]">
               <SectionEyebrow>Destinations</SectionEyebrow>
-              <h2 className="mt-4 font-display text-4xl leading-[0.95] font-bold tracking-tight uppercase sm:mt-5 sm:text-5xl lg:text-[64px]">
+              <h2 className="mt-4 type-section-h2">
                 Choose Your Brief.
               </h2>
               <p
@@ -410,7 +410,7 @@ export default function ResourcesPage() {
           <Reveal variant="up">
             <div className="max-w-[720px]">
               <SectionEyebrow onDark>Systems Library</SectionEyebrow>
-              <h2 className="mt-4 font-display text-4xl leading-[0.95] font-bold tracking-tight text-white uppercase sm:mt-5 sm:text-5xl lg:text-[56px]">
+              <h2 className="mt-4 type-section-h2">
                 Specs Behind
                 <br />
                 <span style={{ color: sage }}>The Hardware.</span>
@@ -512,7 +512,7 @@ export default function ResourcesPage() {
             <div className="flex flex-col gap-4 sm:gap-5 lg:flex-row lg:items-end lg:justify-between">
               <div className="max-w-[720px]">
                 <SectionEyebrow>From the Field</SectionEyebrow>
-                <h2 className="mt-4 font-display text-4xl leading-[0.95] font-bold tracking-tight uppercase sm:mt-5 sm:text-5xl lg:text-[64px]">
+                <h2 className="mt-4 type-section-h2">
                   Recent Briefings.
                 </h2>
                 <p
@@ -657,7 +657,7 @@ export default function ResourcesPage() {
               <div className="flex justify-center">
                 <SectionEyebrow>Optional Downloads</SectionEyebrow>
               </div>
-              <h2 className="mt-3 font-display text-4xl leading-[0.95] font-bold tracking-tight uppercase sm:mt-4 sm:text-5xl lg:text-[64px]">
+              <h2 className="mt-3 type-section-h2">
                 Investor Materials.
               </h2>
               <div
@@ -676,13 +676,13 @@ export default function ResourcesPage() {
           </Reveal>
 
           <RevealStagger
-            className="mt-8 grid gap-4 sm:mt-10 sm:gap-5 lg:grid-cols-2"
+            className="mt-8 grid items-stretch gap-4 sm:mt-10 sm:gap-5 lg:grid-cols-2"
             step={80}
           >
             {downloads.map((item) => (
               <article
                 key={item.number}
-                className="group relative flex flex-col overflow-hidden rounded-sm border border-[#e4e1d8] bg-white"
+                className="group relative flex h-full flex-col overflow-hidden rounded-sm border border-[#e4e1d8] bg-white"
               >
                 <div className="relative aspect-[16/9] overflow-hidden bg-[#0c1210]">
                   <Image
@@ -711,13 +711,13 @@ export default function ResourcesPage() {
                   </h3>
 
                   <p
-                    className="type-card-body mt-2 max-w-[420px] flex-1"
+                    className="type-card-body mt-2 min-h-[4.5rem] max-w-[420px] flex-1"
                     style={{ color: muted }}
                   >
                     {item.description}
                   </p>
 
-                  <div className="mt-5 flex items-center justify-between gap-4 border-t border-[#ebe7de] pt-4">
+                  <div className="mt-auto flex items-center justify-between gap-4 border-t border-[#ebe7de] pt-4">
                     <a
                       href={item.href}
                       download={item.download}

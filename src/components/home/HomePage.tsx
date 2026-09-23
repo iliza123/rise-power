@@ -91,7 +91,7 @@ export function HomePage() {
               <p className="type-eyebrow text-white">
                 {hero.eyebrow}
               </p>
-              <h1 className="mt-5 font-display text-[2.25rem] leading-[0.9] font-bold tracking-[-0.02em] uppercase sm:text-5xl md:text-5xl lg:text-6xl xl:text-[5.25rem]">
+              <h1 className="mt-5 type-page-h1">
                 {hero.headlineLine1}
                 <br />
                 <span style={{ color: sage }}>{hero.headlineLine2}</span>
@@ -121,7 +121,7 @@ export function HomePage() {
             </div>
           </div>
 
-          <div className="hero-animate-chips mt-10 grid max-w-4xl grid-cols-2 gap-x-6 gap-y-5 sm:grid-cols-4 sm:gap-x-8 lg:mt-10 lg:pb-2">
+          <div className="hero-animate-chips mt-16 grid max-w-4xl grid-cols-2 gap-x-6 gap-y-5 sm:mt-20 sm:grid-cols-4 sm:gap-x-8 lg:mt-24 lg:pb-2">
             {hero.chips.map((chip, index) => {
               const Icon = heroChipIcons[index] ?? Leaf;
               return (
@@ -181,29 +181,29 @@ export function HomePage() {
       {/* 2. Performance Metrics — Built to Outperform */}
       <section
         id="performance-metrics"
-        className="scroll-mt-28 py-10 sm:py-12 lg:py-14"
+        className="scroll-mt-28 py-7 sm:py-8 lg:py-9"
         style={{ background: "#fafaf8" }}
       >
         <div className={pageInset}>
           <Reveal variant="up">
             <p
-              className="type-eyebrow text-center"
+              className="type-eyebrow text-center text-[14px] sm:text-[15px]"
               style={{ color: "#6e7f42" }}
             >
               {performanceMetrics.eyebrow}
             </p>
-            <h2 className="type-section-h2 mt-3 text-center">
+            <h2 className="type-section-h2 mt-2 text-center sm:mt-2.5">
               {performanceMetrics.headingBefore}{" "}
               <span style={{ color: "#6e7f42" }}>
                 {performanceMetrics.headingAccent}
               </span>
             </h2>
-            <p className="type-section-body mx-auto mt-3 max-w-2xl text-center">
+            <p className="type-section-body mx-auto mt-2 max-w-2xl text-center text-[1.0625rem] sm:mt-2.5 sm:text-[1.2rem]">
               {performanceMetrics.body}
             </p>
           </Reveal>
           <RevealStagger
-            className="mx-auto mt-8 grid w-full max-w-5xl grid-cols-1 items-stretch gap-4 sm:mt-9 sm:grid-cols-2 sm:gap-4 xl:mt-10 xl:max-w-none xl:grid-cols-4 xl:gap-5"
+            className="mx-auto mt-5 grid w-full max-w-5xl grid-cols-1 items-stretch gap-3 sm:mt-6 sm:grid-cols-2 sm:gap-3.5 xl:mt-7 xl:max-w-none xl:grid-cols-4 xl:gap-4"
             step={70}
           >
             {performanceMetrics.gauges.map((item, index) => {

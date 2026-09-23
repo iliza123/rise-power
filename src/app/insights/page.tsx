@@ -81,7 +81,7 @@ export default function InsightsPage() {
         <div className="hero-animate-copy max-w-[820px]">
           <SectionEyebrow onDark>News & Insights</SectionEyebrow>
 
-          <h1 className="mt-4 font-display text-[42px] leading-[0.92] font-bold tracking-tight text-white uppercase sm:mt-6 sm:text-[68px] md:text-[78px] xl:text-[88px] 2xl:text-[96px]">
+          <h1 className="mt-4 type-page-h1">
             Field power.
             <br />
             Clear{" "}
@@ -152,7 +152,7 @@ export default function InsightsPage() {
                     {featuredMeta.readTime}
                   </p>
 
-                  <h2 className="mt-4 font-display text-3xl leading-[0.95] font-bold tracking-tight uppercase sm:text-4xl lg:text-[44px]">
+                  <h2 className="mt-4 type-section-h2">
                     <Link
                       href={`/insights/${featured.slug}`}
                       className="transition-colors hover:text-[#6e7f42]"
@@ -195,7 +195,7 @@ export default function InsightsPage() {
               <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between sm:gap-8">
                 <div className="max-w-[560px]">
                   <SectionEyebrow>Archive</SectionEyebrow>
-                  <h2 className="mt-3 font-display text-3xl leading-[0.95] font-bold tracking-tight uppercase sm:text-4xl lg:text-[2.75rem]">
+                  <h2 className="mt-3 type-section-h2">
                     All Field{" "}
                     <span style={{ color: sage }}>Notes.</span>
                   </h2>

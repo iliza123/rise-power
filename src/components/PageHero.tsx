@@ -22,7 +22,7 @@ export function PageHero({ eyebrow, title, description }: PageHeroProps) {
               {eyebrow}
             </p>
           ) : null}
-          <h1 className="font-display text-[42px] leading-[0.95] font-bold tracking-tight uppercase sm:text-5xl lg:text-6xl">
+          <h1 className="type-page-h1">
             {title}
           </h1>
           {description ? (

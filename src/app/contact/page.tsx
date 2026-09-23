@@ -25,9 +25,9 @@ function ContourDecoration({
   return (
     <div
       aria-hidden="true"
-      className={`pointer-events-none absolute ${
-        position === "left" ? "-left-24 -top-20" : "-right-24 -top-20"
-      } h-[330px] w-[440px] opacity-70`}
+      className={`pointer-events-none absolute top-0 h-[280px] w-[440px] overflow-hidden opacity-40 ${
+        position === "left" ? "-left-24" : "-right-24"
+      }`}
     >
       <svg viewBox="0 0 440 330" className="h-full w-full" fill="none">
         <path
@@ -107,19 +107,19 @@ export default function ContactPage() {
         <div className="hero-animate-copy max-w-[760px]">
           <SectionEyebrow light>{site.name}</SectionEyebrow>
 
-          <h1 className="mt-4 font-display text-[42px] leading-[0.9] font-bold tracking-tight text-white uppercase sm:mt-5 sm:text-[68px] md:text-[78px] xl:text-[88px] 2xl:text-[96px]">
+          <h1 className="mt-5 type-page-h1">
             Request a
             <br />
             Briefing
           </h1>
 
-          <p className="type-section-body mt-4 max-w-[650px] text-white sm:mt-5">
+          <p className="type-section-body mt-5 max-w-[650px] text-white">
             For procurement, programs, and integration leads. Tell us your
             operating environment and we will respond with specs, runtime data,
             and a deployment summary.
           </p>
 
-          <div className="mt-6 flex flex-col gap-3 sm:mt-7 sm:flex-row">
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <a
               href="#briefing"
               className="inline-flex min-h-12 items-center justify-center gap-2 rounded-sm bg-[#849363] px-8 text-sm font-semibold tracking-wide text-white uppercase transition-opacity hover:opacity-90"
@@ -141,88 +141,90 @@ export default function ContactPage() {
       {/* Briefing form + channels */}
       <section
         id="briefing"
-        className="relative overflow-hidden bg-[#fbfaf7] py-8 sm:py-12 lg:py-16"
+        className="relative overflow-hidden bg-[#fbfaf7] py-16 sm:py-20 lg:py-24"
       >
         <ContourDecoration position="left" />
 
         <div className="relative mx-auto max-w-[1440px] px-6 lg:px-10">
-          <div className="grid items-start gap-6 sm:gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:gap-10">
+          <div className="grid items-start gap-10 lg:grid-cols-2 lg:gap-14 xl:gap-16">
             <Reveal variant="left">
-              <div>
-                <div className="relative mb-6 aspect-[16/11] overflow-hidden rounded-[7px]">
+              <div className="flex flex-col gap-8">
+                <div className="relative aspect-[16/11] overflow-hidden rounded-[7px]">
                   <Image
                     src="/media/contact/rise-mission-power.png"
                     alt="Rise Mission Power systems in the field"
                     fill
-                    sizes="(min-width: 1024px) 40vw, 100vw"
+                    sizes="(min-width: 1024px) 45vw, 100vw"
                     className="object-cover"
                   />
                 </div>
 
-                <SectionEyebrow>Contact</SectionEyebrow>
+                <div className="flex flex-col gap-5">
+                  <SectionEyebrow>Contact</SectionEyebrow>
 
-                <h2 className="mt-4 font-display text-4xl leading-[0.95] font-bold tracking-tight text-[#101820] uppercase sm:text-5xl lg:text-[56px]">
-                  Tell us your operating environment.
-                </h2>
+                  <h2 className="type-section-h2 text-[#101820]">
+                    Tell us your operating environment.
+                  </h2>
 
-                <p className="type-section-body mt-3 max-w-[420px] text-[#626e7a]">
-                  We respond with specs, runtime data, and a deployment summary
-                  tailored to your mission. For procurement, programs,
-                  integration, and serious technical evaluation.
-                </p>
+                  <p className="type-section-body max-w-[420px] text-[#626e7a]">
+                    We respond with specs, runtime data, and a deployment
+                    summary tailored to your mission. For procurement, programs,
+                    integration, and serious technical evaluation.
+                  </p>
+                </div>
 
-                <div className="mt-6 space-y-0">
-                  <div className="border-t border-[#d9dfe3] py-4">
-                    <p className="text-[11px] font-semibold tracking-[0.18em] text-[#6e7f42] uppercase">
-                      Email
-                    </p>
-                    <a
-                      href={`mailto:${site.email}`}
-                      className="mt-1.5 block text-lg text-[#101820] transition-colors hover:text-[#6e7f42]"
-                    >
-                      {site.email}
-                    </a>
-                  </div>
-
-                  <div className="border-t border-[#d9dfe3] py-4">
-                    <p className="text-[11px] font-semibold tracking-[0.18em] text-[#6e7f42] uppercase">
-                      Phone
-                    </p>
-                    <a
-                      href={site.phoneHref}
-                      className="mt-1.5 block text-lg text-[#101820] transition-colors hover:text-[#6e7f42]"
-                    >
-                      {site.phone}
-                    </a>
-                  </div>
-
-                  <div className="border-t border-b border-[#d9dfe3] py-4">
+                <ul className="relative z-10 max-w-[420px] divide-y divide-[#d9dfe3] border-y border-[#d9dfe3]">
+                  {[
+                    {
+                      label: "Email",
+                      href: `mailto:${site.email}`,
+                      value: site.email,
+                    },
+                    {
+                      label: "Phone",
+                      href: site.phoneHref,
+                      value: site.phone,
+                    },
+                  ].map((item) => (
+                    <li key={item.label} className="py-5">
+                      <p className="text-[11px] font-semibold tracking-[0.18em] text-[#6e7f42] uppercase">
+                        {item.label}
+                      </p>
+                      <a
+                        href={item.href}
+                        className="mt-2 block text-lg leading-snug text-[#101820] transition-colors hover:text-[#6e7f42]"
+                      >
+                        {item.value}
+                      </a>
+                    </li>
+                  ))}
+                  <li className="py-5">
                     <p className="text-[11px] font-semibold tracking-[0.18em] text-[#6e7f42] uppercase">
                       Address
                     </p>
-                    <p className="type-section-body mt-1.5 !text-[#101820]">
+                    <p className="mt-2 text-lg leading-snug text-[#101820]">
                       {site.name}
                       <br />
                       {site.address.city}, {site.address.country}
                     </p>
-                  </div>
-                </div>
+                  </li>
+                </ul>
               </div>
             </Reveal>
 
             <Reveal variant="right" delay={100}>
-              <div className="lg:sticky lg:top-28">
-                <div className="relative mb-4 hidden aspect-[21/9] overflow-hidden rounded-[7px] lg:block">
+              <div className="flex flex-col gap-6 lg:sticky lg:top-28">
+                <div className="relative hidden aspect-[21/9] overflow-hidden rounded-[7px] lg:block">
                   <Image
                     src="/media/products/falcon.png"
                     alt="Rise Power Falcon hydrogen drone range extender"
                     fill
-                    sizes="50vw"
+                    sizes="45vw"
                     className="object-cover object-center"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#071016]/40 to-transparent" />
                 </div>
-                <div className="border border-[#d9dfe3] bg-white p-5 sm:p-6 lg:p-8">
+                <div className="border border-[#d9dfe3] bg-white p-6 sm:p-8">
                   <ContactForm />
                 </div>
               </div>

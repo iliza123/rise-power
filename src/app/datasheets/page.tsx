@@ -144,7 +144,7 @@ export default function DatasheetsPage() {
         <div className="hero-animate-copy max-w-[780px]">
           <SectionEyebrow onDark>Resources</SectionEyebrow>
 
-          <h1 className="mt-5 font-display text-[42px] leading-[0.9] font-bold tracking-tight text-white uppercase sm:mt-6 sm:text-[56px] xl:text-[82px]">
+          <h1 className="mt-5 type-page-h1">
             Datasheets
           </h1>
 

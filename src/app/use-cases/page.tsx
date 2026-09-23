@@ -306,19 +306,6 @@ export default function UseCasesPage() {
       href: "/products#sentinel",
     },
     {
-      eyebrow: "H2 CARTRIDGE",
-      title: "Energy on demand.",
-      description:
-        "Pre-positioned hydrogen for rapid refueling and extended runtime.",
-      image:
-        products.find(
-          (product) =>
-            product.slug.includes("cartridge") ||
-            product.name.toLowerCase().includes("cartridge"),
-        )?.image ?? products[3]?.image,
-      href: "/products#cartridge-kit",
-    },
-    {
       eyebrow: "RISE FALCON",
       title: "Up to 5× flight range.",
       description:
@@ -333,6 +320,19 @@ export default function UseCasesPage() {
         "Clean, quiet portable generation for municipalities, utilities, and communities.",
       image: products.find((product) => product.slug === "titan")?.image,
       href: "/products#titan",
+    },
+    {
+      eyebrow: "H2 CARTRIDGE",
+      title: "Energy on demand.",
+      description:
+        "Pre-positioned hydrogen for rapid refueling and extended runtime.",
+      image:
+        products.find(
+          (product) =>
+            product.slug.includes("cartridge") ||
+            product.name.toLowerCase().includes("cartridge"),
+        )?.image ?? products[3]?.image,
+      href: "/products#cartridge-kit",
     },
   ];
 
@@ -392,7 +392,7 @@ export default function UseCasesPage() {
         <div className="hero-animate-copy max-w-[700px]">
           <SectionEyebrow light>Use Cases</SectionEyebrow>
 
-          <h1 className="mt-6 font-display text-[42px] leading-[0.9] font-bold tracking-tight uppercase sm:mt-7 sm:text-[64px] xl:text-[82px] 2xl:text-[94px]">
+          <h1 className="mt-6 type-page-h1">
             Use Cases
           </h1>
 
@@ -442,7 +442,7 @@ export default function UseCasesPage() {
             <div className="mx-auto max-w-5xl text-center">
               <SectionEyebrow center>Use Cases</SectionEyebrow>
 
-              <h2 className="mt-6 font-display text-4xl leading-[0.95] font-bold tracking-tight uppercase sm:text-5xl lg:text-6xl">
+              <h2 className="mt-6 type-section-h2">
                 Four Environments.{" "}
                 <span style={{ color: sage }}>One Power Platform.</span>
               </h2>
@@ -541,7 +541,7 @@ export default function UseCasesPage() {
                   </p>
                 </div>
 
-                <h2 className="mt-7 font-display text-4xl leading-[0.92] font-bold tracking-tight uppercase sm:text-5xl">
+                <h2 className="mt-7 type-section-h2">
                   Quiet Power
                   <br />
                   <span style={{ color: sage }}>
@@ -626,7 +626,7 @@ export default function UseCasesPage() {
             <div>
               <SectionEyebrow>Representative Deployment</SectionEyebrow>
 
-              <h2 className="mt-7 max-w-3xl font-display text-4xl leading-[0.94] font-bold tracking-tight uppercase sm:text-5xl lg:text-6xl">
+              <h2 className="mt-7 max-w-3xl type-section-h2">
                 Quiet Backup Power
                 <br />
                 <span style={{ color: sage }}>
@@ -738,7 +738,7 @@ export default function UseCasesPage() {
                 From Use Case to Solution
               </SectionEyebrow>
 
-              <h2 className="mt-6 font-display text-4xl leading-[0.95] font-bold tracking-tight uppercase sm:text-5xl lg:text-6xl">
+              <h2 className="mt-6 type-section-h2">
                 Real Deployments.{" "}
                 <span style={{ color: sage }}>Real Power.</span>
               </h2>

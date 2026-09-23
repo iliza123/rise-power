@@ -93,7 +93,7 @@ export function DatasheetProductSection({
               </p>
             </div>
 
-            <h2 className="mt-4 font-display text-3xl leading-[0.95] font-bold tracking-tight uppercase sm:mt-5 sm:text-4xl lg:text-5xl">
+            <h2 className="mt-4 type-section-h2">
               {titleLines
                 ? titleLines.map((line, i) => (
                     <span key={`${line}-${i}`}>

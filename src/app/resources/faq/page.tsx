@@ -181,11 +181,11 @@ export default function ProcurementFaqPage() {
         <div className="hero-animate-copy max-w-[780px]">
           <SectionEyebrow onDark>Resources</SectionEyebrow>
 
-          <h1 className="mt-5 font-display text-[42px] leading-[0.9] font-bold tracking-tight text-white uppercase sm:mt-6 sm:text-[56px] xl:text-[82px]">
+          <h1 className="mt-5 type-page-h1">
             Procurement FAQ
           </h1>
 
-          <p className="type-section-body mt-5 max-w-[640px] text-white sm:mt-6">
+          <p className="mt-5 max-w-[640px] text-lg leading-[1.6] text-white sm:mt-6 sm:text-xl">
             Common questions from procurement, programs, and integration teams
             evaluating Rise Power systems.
           </p>
@@ -227,13 +227,13 @@ export default function ProcurementFaqPage() {
                   {String(groupIndex + 1).padStart(2, "0")}
                 </p>
                 <h2
-                  className="mt-1 font-display text-3xl leading-[0.95] font-bold tracking-tight uppercase sm:text-4xl lg:text-[40px]"
+                  className="mt-1 type-section-h2"
                   style={{ color: ink }}
                 >
                   {group.title}
                 </h2>
                 <p
-                  className="type-section-body mx-auto mt-2 max-w-[480px]"
+                  className="mx-auto mt-2 max-w-[480px] text-lg leading-[1.6] sm:text-xl"
                   style={{ color: muted }}
                 >
                   {group.summary}

@@ -131,7 +131,7 @@ export function CapabilityDetail({ capability }: CapabilityDetailProps) {
             {capability.eyebrow || "Capability"}
           </SectionEyebrow>
 
-          <h1 className="mt-4 font-display text-[36px] leading-[0.95] font-bold tracking-tight text-white uppercase sm:mt-5 sm:text-[48px] xl:text-[56px]">
+          <h1 className="mt-4 type-page-h1">
             <TitleWithAccent title={capability.title} />
           </h1>
 
@@ -164,11 +164,11 @@ export function CapabilityDetail({ capability }: CapabilityDetailProps) {
           <Reveal variant="up">
             <div className="max-w-2xl">
               <SectionEyebrow>Overview</SectionEyebrow>
-              <h2 className="mt-2.5 font-display text-3xl leading-[0.95] font-bold tracking-tight uppercase sm:mt-3 sm:text-4xl lg:text-5xl">
+              <h2 className="mt-3 font-display text-[1.75rem] leading-[0.95] font-bold tracking-tight uppercase sm:text-[2.25rem] lg:text-[2.75rem]">
                 <TitleWithAccent title={capability.heading} />
               </h2>
               <p
-                className="type-section-body mt-3 max-w-[42rem]"
+                className="mt-4 max-w-[42rem] text-[1.0625rem] leading-[1.65] font-normal sm:text-lg"
                 style={{ color: MUTED }}
               >
                 {capability.body}
@@ -177,7 +177,7 @@ export function CapabilityDetail({ capability }: CapabilityDetailProps) {
           </Reveal>
 
           {capability.stats.length > 0 ? (
-            <div className="mt-6 border-t border-[#c9c4b8] sm:mt-7">
+            <div className="mt-7 border-t border-[#c9c4b8] sm:mt-8">
               <div className="grid grid-cols-1 divide-y divide-[#c9c4b8] sm:grid-cols-2 sm:divide-y-0 lg:grid-cols-4">
                 {capability.stats.map((stat, index) => {
                   const isOdd = index % 2 === 1;
@@ -187,7 +187,7 @@ export function CapabilityDetail({ capability }: CapabilityDetailProps) {
                     <Reveal key={stat.label} variant="up" delay={index * 60}>
                       <article
                         className={[
-                          "px-0 py-4 sm:px-4 sm:py-5 lg:px-5 lg:py-5",
+                          "px-0 py-5 sm:px-4 sm:py-6 lg:px-5 lg:py-6",
                           isOdd ? "sm:border-l sm:border-[#c9c4b8]" : "",
                           isBottomRow
                             ? "sm:border-t sm:border-[#c9c4b8] lg:border-t-0"
@@ -195,23 +195,20 @@ export function CapabilityDetail({ capability }: CapabilityDetailProps) {
                           index > 0 ? "lg:border-l lg:border-[#c9c4b8]" : "",
                         ].join(" ")}
                       >
-                        <p
-                          className="font-display text-[11px] font-semibold tracking-[0.28em] uppercase"
-                          style={{ color: "#8a9186" }}
-                        >
+                        <p className="font-display text-xs font-medium tracking-[0.2em] text-[#8a9186] uppercase">
                           {String(index + 1).padStart(2, "0")}
                         </p>
-                        <p className="mt-1.5 font-display text-2xl leading-none font-bold tracking-tight uppercase sm:text-3xl">
+                        <p className="mt-2.5 font-display text-[1.5rem] leading-[1.05] font-bold tracking-tight text-[#101820] uppercase sm:text-[1.75rem] lg:text-[1.875rem]">
                           {stat.value}
                         </p>
                         <p
-                          className="mt-1.5 text-[11px] font-semibold tracking-[0.16em] uppercase"
+                          className="mt-2.5 text-[13px] font-semibold tracking-[0.12em] uppercase sm:text-sm"
                           style={{ color: SAGE }}
                         >
                           {stat.label}
                         </p>
                         <p
-                          className="mt-1 max-w-[18ch] text-base leading-snug"
+                          className="mt-2.5 max-w-[24ch] text-[0.9375rem] leading-[1.5] font-normal sm:text-base"
                           style={{ color: MUTED }}
                         >
                           {stat.body}
@@ -226,7 +223,7 @@ export function CapabilityDetail({ capability }: CapabilityDetailProps) {
 
           {capability.callouts.length > 0 ? (
             <ul
-              className="mt-5 grid grid-cols-1 gap-x-6 gap-y-3 border-t pt-5 sm:mt-6 sm:grid-cols-2 sm:pt-5 lg:grid-cols-4 lg:gap-x-8"
+              className="mt-6 grid grid-cols-1 gap-x-6 gap-y-4 border-t pt-6 sm:mt-7 sm:grid-cols-2 sm:pt-6 lg:grid-cols-4 lg:gap-x-8"
               style={{ borderColor: SECTION_RULE }}
             >
               {capability.callouts.map((callout, index) => (
@@ -235,16 +232,16 @@ export function CapabilityDetail({ capability }: CapabilityDetailProps) {
                     <div className="flex items-start gap-2.5">
                       <span
                         aria-hidden
-                        className="mt-1.5 size-1.5 shrink-0 rounded-full"
+                        className="mt-2 size-1.5 shrink-0 rounded-full"
                         style={{ background: SAGE }}
                       />
                       <div>
-                        <p className="text-[11px] font-semibold tracking-[0.16em] text-[#101820] uppercase">
+                        <p className="text-[13px] font-bold tracking-[0.1em] text-[#101820] uppercase sm:text-sm">
                           {callout.title}
                         </p>
                         <p
-                          className="type-section-body mt-0.5 leading-snug"
-                          style={{ color: "#6b746c" }}
+                          className="mt-1.5 text-[0.9375rem] leading-[1.5] font-normal sm:text-base"
+                          style={{ color: MUTED }}
                         >
                           {callout.body}
                         </p>
@@ -260,38 +257,38 @@ export function CapabilityDetail({ capability }: CapabilityDetailProps) {
 
       {/* 3. What We Deliver */}
       <section
-        className={`relative overflow-hidden border-t ${SECTION_PAD}`}
+        className="relative overflow-hidden border-t py-7 sm:py-8 lg:py-9"
         style={{ background: "#f3f0e8", borderColor: SECTION_RULE }}
       >
-        <div className="relative mx-auto grid max-w-[1440px] items-start gap-6 px-6 lg:grid-cols-[1.35fr_0.65fr] lg:gap-8 lg:px-10">
+        <div className="relative mx-auto grid max-w-[1440px] items-start gap-5 px-6 lg:grid-cols-[1.35fr_0.65fr] lg:gap-7 lg:px-10">
           <Reveal variant="left">
             <SectionEyebrow>What We Deliver</SectionEyebrow>
 
-            <h2 className="mt-2.5 font-display text-3xl leading-[0.95] font-bold tracking-tight uppercase sm:mt-3 sm:text-4xl lg:text-5xl">
+            <h2 className="mt-3 font-display text-[1.75rem] leading-[0.95] font-bold tracking-tight uppercase sm:text-[2.25rem] lg:text-[2.75rem]">
               Scope of <span style={{ color: SAGE }}>Work.</span>
             </h2>
 
             <p
-              className="type-section-body mt-3 max-w-[560px]"
+              className="mt-4 max-w-[560px] text-base leading-[1.65] font-normal sm:text-[1.0625rem]"
               style={{ color: MUTED }}
             >
               {capability.deliverablesIntro}
             </p>
 
-            <ol className="mt-5 space-y-0 sm:mt-6">
+            <ol className="mt-5 space-y-0 sm:mt-5">
               {capability.deliverables.map((item, index) => (
                 <li
                   key={item}
-                  className="flex gap-4 border-b py-3 first:pt-0 last:border-b-0 last:pb-0 sm:gap-5 sm:py-3.5"
+                  className="flex items-baseline gap-4 border-b py-2.5 first:border-t first:pt-2.5 last:border-b-0 sm:gap-5 sm:py-3"
                   style={{ borderColor: SECTION_RULE }}
                 >
                   <span
-                    className="w-9 shrink-0 font-display text-xl leading-none font-bold sm:w-10 sm:text-2xl"
+                    className="w-8 shrink-0 font-display text-lg leading-none font-bold sm:w-9 sm:text-xl"
                     style={{ color: SAGE }}
                   >
                     {String(index + 1).padStart(2, "0")}
                   </span>
-                  <p className="type-section-body text-[#20251f]">
+                  <p className="text-base leading-[1.5] font-medium text-[#20251f] sm:text-[1.0625rem]">
                     {item}
                   </p>
                 </li>
@@ -322,7 +319,7 @@ export function CapabilityDetail({ capability }: CapabilityDetailProps) {
               <div className="max-w-3xl">
                 <SectionEyebrow>{roadmap.eyebrow}</SectionEyebrow>
 
-                <h2 className="mt-2.5 font-display text-3xl leading-[0.95] font-bold tracking-tight uppercase sm:mt-3 sm:text-4xl lg:text-5xl">
+                <h2 className="mt-2.5 type-section-h2">
                   {roadmap.heading}
                 </h2>
 
@@ -375,7 +372,7 @@ export function CapabilityDetail({ capability }: CapabilityDetailProps) {
         <div className="mx-auto max-w-[1440px] px-6 lg:px-10">
           <Reveal variant="up">
             <SectionEyebrow>In Focus</SectionEyebrow>
-            <h2 className="mt-2.5 max-w-3xl font-display text-3xl leading-[0.95] font-bold tracking-tight uppercase sm:mt-3 sm:text-4xl lg:text-5xl">
+            <h2 className="mt-2.5 max-w-3xl type-section-h2">
               {galleryCopy.before}{" "}
               <span style={{ color: SAGE }}>{galleryCopy.accent}</span>
             </h2>
@@ -417,7 +414,7 @@ export function CapabilityDetail({ capability }: CapabilityDetailProps) {
           <div className="mx-auto max-w-[1440px] px-6 lg:px-10">
             <Reveal variant="up">
               <SectionEyebrow>Related</SectionEyebrow>
-              <h2 className="mt-2.5 font-display text-3xl leading-[0.95] font-bold tracking-tight uppercase sm:mt-3 sm:text-4xl">
+              <h2 className="mt-2.5 type-section-h2">
                 Other capabilities
               </h2>
             </Reveal>

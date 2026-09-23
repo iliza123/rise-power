@@ -212,11 +212,11 @@ export function StatGauge({
             className={`font-display leading-[0.9] font-bold tracking-[-0.02em] ${
               compactValue
                 ? compactSize
-                  ? "text-[1.55rem] sm:text-[1.75rem]"
-                  : "text-[2.65rem] sm:text-[3.15rem]"
+                  ? "text-[1.75rem] sm:text-[1.95rem]"
+                  : "text-[2.85rem] sm:text-[3.35rem]"
                 : compactSize
-                  ? "text-[1.85rem] sm:text-[2.05rem]"
-                  : "text-[clamp(2.6rem,6.2vw,3.55rem)]"
+                  ? "text-[2.05rem] sm:text-[2.25rem]"
+                  : "text-[clamp(2.85rem,6.2vw,3.75rem)]"
             }`}
             style={{ color: PRIMARY_GREEN }}
           >
@@ -224,14 +224,14 @@ export function StatGauge({
           </span>
           {unit ? (
             <span
-              className={`mt-1 font-display leading-none font-bold uppercase ${
+              className={`mt-0.5 font-display leading-none font-bold uppercase ${
                 compactSize
                   ? unit.length > 6
-                    ? "text-[9px] tracking-[0.12em] sm:text-[10px]"
-                    : "text-[11px] tracking-[0.16em] sm:text-[12px]"
+                    ? "text-[10px] tracking-[0.12em] sm:text-[11px]"
+                    : "text-[12px] tracking-[0.16em] sm:text-[13px]"
                   : unit.length > 6
-                    ? "text-[11px] tracking-[0.14em] sm:text-[25px]"
-                    : "text-[14px] tracking-[0.18em] sm:text-[25px]"
+                    ? "text-[12px] tracking-[0.14em] sm:text-[16px]"
+                    : "text-[15px] tracking-[0.18em] sm:text-[18px]"
               }`}
               style={{ color: PRIMARY_GREEN }}
             >

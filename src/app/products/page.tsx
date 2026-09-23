@@ -357,7 +357,7 @@ export default function ProductsPage() {
             ⌁ Products
           </p>
 
-          <h1 className="mt-5 font-display text-4xl leading-[0.95] font-bold tracking-tight uppercase sm:text-5xl xl:mt-6 xl:text-[76px] xl:leading-[0.9]">
+          <h1 className="mt-5 type-page-h1 xl:mt-6">
             Products
           </h1>
 
@@ -397,7 +397,7 @@ export default function ProductsPage() {
               ⌁ Our Product Systems
             </p>
 
-            <h2 className="mt-4 font-display text-4xl leading-[0.95] font-bold tracking-tight uppercase sm:text-5xl lg:text-6xl">
+            <h2 className="mt-4 type-section-h2">
               Power for{" "}
               <span className="text-[#6e7f42]">Every Mission.</span>
             </h2>
@@ -474,7 +474,7 @@ export default function ProductsPage() {
               ⌁ One Cartridge Ecosystem
             </p>
 
-            <h2 className="mt-5 font-display text-4xl leading-[0.9] font-bold uppercase sm:text-5xl lg:text-6xl">
+            <h2 className="mt-5 type-section-h2">
               Engineered
               <br />
               <span className="text-[#6e7f42]">As a System.</span>
@@ -571,7 +571,7 @@ export default function ProductsPage() {
               ⌁ Product Comparison
             </p>
 
-            <h2 className="mt-4 font-display text-4xl leading-[0.95] font-bold tracking-tight uppercase sm:text-5xl lg:text-6xl">
+            <h2 className="mt-4 type-section-h2">
               Four Solutions.{" "}
               <span className="text-[#6e7f42]">One Mission.</span>
             </h2>

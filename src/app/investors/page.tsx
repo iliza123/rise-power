@@ -162,7 +162,7 @@ function SectionHeading({
         {eyebrow}
       </p>
 
-      <h2 className="mt-5 font-display text-4xl font-bold leading-[0.95] tracking-tight text-[#101820] uppercase sm:text-5xl lg:text-[64px]">
+      <h2 className="mt-5 type-section-h2">
         {title}
       </h2>
 
@@ -279,16 +279,6 @@ function PressCard({ item }: { item: (typeof pressUpdates)[number] }) {
         <p className="mt-4 text-[16px] leading-[1.4] text-[#65717d]">
           {item.body}
         </p>
-
-        <div className="mt-auto pt-7">
-          <Link
-            href="/resources"
-            className="inline-flex items-center gap-3 text-sm font-semibold tracking-[0.06em] text-[#101820] uppercase transition-colors hover:text-[#55a326]"
-          >
-            Read More
-            <ArrowRight className="size-5 transition-transform duration-300 group-hover:translate-x-1" />
-          </Link>
-        </div>
       </div>
     </article>
   );
@@ -358,7 +348,7 @@ export default function InvestorsPage() {
             </p>
           </div>
 
-          <h1 className="mt-6 font-display text-[42px] font-bold leading-[0.9] tracking-tight text-white uppercase sm:mt-7 sm:text-[56px] xl:text-[82px]">
+          <h1 className="mt-6 type-page-h1">
             Investors
           </h1>
 
@@ -422,10 +412,10 @@ export default function InvestorsPage() {
           </Reveal>
 
           <RevealStagger
-            className="mt-8 grid gap-4 sm:mt-10 sm:gap-5 lg:grid-cols-2"
+            className="mt-8 grid items-stretch gap-4 sm:mt-10 sm:gap-5 lg:grid-cols-2"
             step={80}
           >
-            <article className="group relative flex flex-col overflow-hidden rounded-sm border border-[#e4e1d8] bg-white">
+            <article className="group relative flex h-full flex-col overflow-hidden rounded-sm border border-[#e4e1d8] bg-white">
               <div className="relative aspect-[16/9] overflow-hidden bg-[#0c1210]">
                 <Image
                   src="/media/investors/investor-deck.png"
@@ -447,11 +437,11 @@ export default function InvestorsPage() {
                 <h3 className="mt-2 font-display text-2xl leading-[1.05] font-bold tracking-tight text-[#101820] uppercase sm:text-[28px] lg:text-[32px]">
                   Investor Deck
                 </h3>
-                <p className="type-card-body mt-2 max-w-[420px] flex-1 text-[#66717d]">
+                <p className="type-card-body mt-2 min-h-[4.5rem] max-w-[420px] flex-1 text-[#66717d]">
                   Full Rise Power investor briefing. Market sizing, technology,
                   traction, team, and use of funds.
                 </p>
-                <div className="mt-5 flex items-center justify-between gap-4 border-t border-[#ebe7de] pt-4">
+                <div className="mt-auto flex items-center justify-between gap-4 border-t border-[#ebe7de] pt-4">
                   <a
                     href="/media/investors/rise-power-deck.pdf"
                     download="rise-power-deck.pdf"
@@ -467,7 +457,7 @@ export default function InvestorsPage() {
               </div>
             </article>
 
-            <article className="group relative flex flex-col overflow-hidden rounded-sm border border-[#e4e1d8] bg-white">
+            <article className="group relative flex h-full flex-col overflow-hidden rounded-sm border border-[#e4e1d8] bg-white">
               <div className="relative aspect-[16/9] overflow-hidden bg-[#0c1210]">
                 <Image
                   src="/media/investors/investor-onepage.png"
@@ -489,11 +479,11 @@ export default function InvestorsPage() {
                 <h3 className="mt-2 font-display text-2xl leading-[1.05] font-bold tracking-tight text-[#101820] uppercase sm:text-[28px] lg:text-[32px]">
                   Company One-Pager
                 </h3>
-                <p className="type-card-body mt-2 max-w-[440px] flex-1 text-[#66717d]">
+                <p className="type-card-body mt-2 min-h-[4.5rem] max-w-[440px] flex-1 text-[#66717d]">
                   Revenue forecast and company overview. Quick-reference summary
                   for sharing with partners and committees.
                 </p>
-                <div className="mt-5 flex items-center justify-between gap-4 border-t border-[#ebe7de] pt-4">
+                <div className="mt-auto flex items-center justify-between gap-4 border-t border-[#ebe7de] pt-4">
                   <a
                     href="/media/investors/rise-power-one-pager.pdf"
                     download="rise-power-one-pager.pdf"
@@ -557,7 +547,7 @@ export default function InvestorsPage() {
                     </p>
                   </div>
 
-                  <h2 className="mt-3 max-w-[14ch] font-display text-[1.85rem] font-bold leading-[0.92] tracking-tight text-white uppercase sm:mt-4 sm:text-4xl lg:text-[2.75rem] xl:text-[3.25rem]">
+                  <h2 className="type-section-h2 mt-3 max-w-[14ch] text-white">
                     Why Rise
                     <br />
                     <span className="text-[#a8b87a]">Power.</span>
@@ -589,61 +579,38 @@ export default function InvestorsPage() {
             >
               {glanceItems.map((item, index) => {
                 const Icon = item.icon;
-                const isLast = index === glanceItems.length - 1;
 
                 return (
                   <article
                     key={item.number}
-                    className={`group relative px-4 py-3.5 transition-colors duration-300 sm:px-5 sm:py-4 lg:px-6 lg:py-[1.05rem] ${
-                      isLast
-                        ? "bg-[#101820] text-white"
-                        : "hover:bg-white"
-                    } ${index > 0 ? "border-t" : ""} ${
-                      isLast ? "border-white/10" : "border-[#e4e1d8]"
+                    className={`group relative px-4 py-3.5 transition-colors duration-300 hover:bg-white sm:px-5 sm:py-4 lg:px-6 lg:py-[1.05rem] ${
+                      index > 0 ? "border-t border-[#e4e1d8]" : ""
                     }`}
                   >
                     <div className="flex items-start justify-between gap-3">
                       <div className="flex min-w-0 flex-1 items-center gap-2.5 sm:gap-3">
-                        <span
-                          className={`shrink-0 font-display text-lg font-bold tabular-nums tracking-tight sm:text-xl ${
-                            isLast ? "text-white" : "text-[#6e7f42]"
-                          }`}
-                        >
+                        <span className="shrink-0 font-display text-lg font-bold tabular-nums tracking-tight text-[#6e7f42] sm:text-xl">
                           {item.number}
                         </span>
                         <span
                           aria-hidden="true"
-                          className={`hidden h-px w-8 shrink-0 sm:block sm:w-10 ${
-                            isLast ? "bg-white/25" : "bg-[#c9c4b8]"
-                          }`}
+                          className="hidden h-px w-8 shrink-0 bg-[#c9c4b8] sm:block sm:w-10"
                         />
                         <h3 className="min-w-0 font-display text-base font-bold leading-none tracking-tight uppercase sm:text-lg lg:text-xl">
                           {item.title}
                         </h3>
                       </div>
-                      <div
-                        className={`shrink-0 opacity-65 transition-opacity duration-300 group-hover:opacity-100 [&_svg]:h-6 [&_svg]:w-6 sm:[&_svg]:h-7 sm:[&_svg]:w-7 ${
-                          isLast ? "text-white" : "text-[#101820]"
-                        }`}
-                      >
+                      <div className="shrink-0 text-[#101820] opacity-65 transition-opacity duration-300 group-hover:opacity-100 [&_svg]:h-6 [&_svg]:w-6 sm:[&_svg]:h-7 sm:[&_svg]:w-7">
                         <Icon />
                       </div>
                     </div>
 
                     <div className="mt-2 min-w-0 sm:mt-2.5 sm:pl-11 lg:pl-12">
-                      <p
-                        className={`type-section-body ${
-                          isLast ? "text-white" : "text-[#2a333c]"
-                        }`}
-                      >
+                      <p className="text-base leading-[1.55] text-[#2a333c] sm:text-lg">
                         {item.lead}
                       </p>
                       {item.detail ? (
-                        <p
-                          className={`mt-1 text-sm leading-[1.4] ${
-                            isLast ? "text-white" : "text-[#66727d]"
-                          }`}
-                        >
+                        <p className="mt-1 text-sm leading-[1.45] text-[#4f5a64]">
                           {item.detail}
                         </p>
                       ) : null}

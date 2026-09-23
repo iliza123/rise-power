@@ -129,7 +129,7 @@ function PillarRow({
           </p>
         </div>
 
-        <h3 className="mt-4 max-w-[16ch] font-display text-[1.7rem] leading-[0.95] font-bold tracking-tight text-[#101820] uppercase sm:mt-5 sm:text-3xl lg:text-[2.35rem]">
+        <h3 className="mt-4 max-w-[16ch] font-display text-[1.5rem] leading-[0.95] font-bold tracking-tight text-[#101820] uppercase sm:mt-5 sm:text-[1.75rem] lg:text-[2rem]">
           {tab.title}
         </h3>
 
@@ -148,7 +148,7 @@ function PillarRow({
                     style={{ background: sage }}
                   />
                   <div>
-                    <p className="text-[11px] font-semibold tracking-[0.16em] text-[#101820] uppercase">
+                    <p className="text-sm font-bold tracking-[0.12em] text-[#101820] uppercase sm:text-[15px]">
                       {callout.title}
                     </p>
                     <p className="type-section-body mt-0.5 text-[#6b746c]">
@@ -228,7 +228,7 @@ export default function CapabilitiesPage() {
         <div className="hero-animate-copy max-w-[720px]">
           <SectionEyebrow light>{hero.eyebrow}</SectionEyebrow>
 
-          <h1 className="mt-6 font-display text-[42px] leading-[0.9] font-bold tracking-tight uppercase sm:mt-7 sm:text-[64px] xl:text-[82px] 2xl:text-[94px]">
+          <h1 className="mt-6 type-page-h1">
             {hero.headlineLine1}
             {hero.headlineAccent ? (
               <>
@@ -282,7 +282,7 @@ export default function CapabilitiesPage() {
               <SectionEyebrow center light>
                 {capabilities.eyebrow}
               </SectionEyebrow>
-              <h2 className="mt-4 font-display text-4xl leading-[0.92] font-bold tracking-tight text-white uppercase sm:mt-5 sm:text-5xl lg:text-[3.5rem]">
+              <h2 className="mt-4 type-section-h2">
                 {capabilities.headingBefore}{" "}
                 <span style={{ color: "#a8b87a" }}>
                   {capabilities.headingAccent}
@@ -327,7 +327,7 @@ export default function CapabilitiesPage() {
               <SectionEyebrow center>
                 {performanceMetrics.eyebrow}
               </SectionEyebrow>
-              <h2 className="mx-auto mt-4 max-w-[18ch] font-display text-4xl leading-[0.9] font-bold tracking-tight text-[#101820] uppercase sm:mt-5 sm:text-5xl lg:text-[3.25rem]">
+              <h2 className="type-section-h2 mx-auto mt-4 max-w-[18ch] text-[#101820] sm:mt-5">
                 {performanceMetrics.headingBefore}{" "}
                 <span style={{ color: sage }}>
                   {performanceMetrics.headingAccent}
@@ -368,16 +368,18 @@ export default function CapabilitiesPage() {
                       {String(index + 1).padStart(2, "0")}
                     </span>
 
-                    <div className="mt-4 flex flex-wrap items-end justify-center gap-x-2.5 gap-y-1 sm:mt-5">
-                      <p className="font-display text-[3.25rem] leading-[0.85] font-bold tracking-[-0.04em] text-[#101820] transition-transform duration-700 ease-out group-hover:-translate-y-0.5 sm:text-[3.75rem] lg:text-[4.25rem] xl:text-[4.75rem]">
+                    <div className="mt-3 flex w-full flex-wrap items-center justify-center gap-x-2 gap-y-0.5 text-center sm:mt-4">
+                      <p className="w-full text-center font-display text-[2.15rem] leading-[0.9] font-bold tracking-[-0.03em] text-[#101820] transition-transform duration-700 ease-out group-hover:-translate-y-0.5 sm:w-auto sm:text-[2.4rem] lg:text-[2.75rem] xl:text-[3rem]">
                         {gauge.value}
                       </p>
-                      <p
-                        className="mb-1 font-display text-sm font-semibold tracking-[0.16em] uppercase sm:mb-1.5 sm:text-base"
-                        style={{ color: sage }}
-                      >
-                        {gauge.unit}
-                      </p>
+                      {gauge.unit ? (
+                        <p
+                          className="font-display text-xs font-semibold tracking-[0.16em] uppercase sm:text-sm"
+                          style={{ color: sage }}
+                        >
+                          {gauge.unit}
+                        </p>
+                      ) : null}
                     </div>
 
                     <div
@@ -410,11 +412,11 @@ export default function CapabilitiesPage() {
       </section>
 
       {/* FIELD VALIDATION */}
-      <section className="relative overflow-hidden bg-[#fbfaf7] py-12 sm:py-16 lg:py-24">
+      <section className="relative overflow-hidden bg-[#fbfaf7] py-10 sm:py-12 lg:py-16">
         <div className="mx-auto grid max-w-[1440px] items-center gap-8 px-6 lg:grid-cols-[0.95fr_1.05fr] lg:gap-16 lg:px-10">
           <Reveal variant="left">
             <SectionEyebrow>{proof.eyebrow}</SectionEyebrow>
-            <h2 className="mt-7 max-w-3xl font-display text-4xl leading-[0.94] font-bold tracking-tight uppercase sm:text-5xl lg:text-6xl">
+            <h2 className="mt-7 max-w-3xl type-section-h2">
               {proof.headingBefore}
               <br />
               <span style={{ color: sage }}>{proof.headingAccent}</span>
@@ -463,19 +465,19 @@ export default function CapabilitiesPage() {
       </section>
 
       {/* PHOTO GALLERY */}
-      <section className="overflow-hidden bg-[#f3f0e8] py-16 sm:py-20 lg:py-24">
+      <section className="overflow-hidden bg-[#f3f0e8] pt-10 pb-14 sm:pt-12 sm:pb-16 lg:pt-14 lg:pb-20">
         <div className="mx-auto max-w-[1440px] px-6 lg:px-10">
           <Reveal variant="up">
             <div className="mx-auto max-w-3xl text-center">
               <SectionEyebrow center>Visual Proof</SectionEyebrow>
-              <h2 className="mt-6 font-display text-4xl leading-[0.95] font-bold tracking-tight uppercase sm:text-5xl">
+              <h2 className="mt-4 type-section-h2">
                 Systems in{" "}
                 <span style={{ color: sage }}>Context.</span>
               </h2>
             </div>
           </Reveal>
 
-          <Reveal variant="up" delay={80} className="mt-12 xl:hidden">
+          <Reveal variant="up" delay={80} className="mt-8 xl:hidden">
             <SnapCarousel
               ariaLabel="Photo gallery"
               showArrows
@@ -489,7 +491,7 @@ export default function CapabilitiesPage() {
             </SnapCarousel>
           </Reveal>
           <RevealStagger
-            className="mt-12 hidden gap-5 xl:grid xl:grid-cols-4"
+            className="mt-8 hidden gap-5 xl:grid xl:grid-cols-4"
             step={70}
             variant="fade"
           >

@@ -185,7 +185,7 @@ export function InsightArticleView({
             {article.displayDate}
           </p>
 
-          <h1 className="mt-4 font-display text-[36px] leading-[0.95] font-bold tracking-tight text-white uppercase sm:mt-5 sm:text-[48px] xl:text-[56px]">
+          <h1 className="mt-4 type-page-h1">
             <TitleWithAccent
               title={article.title}
               accentPhrase={article.accentPhrase}
@@ -241,7 +241,7 @@ export function InsightArticleView({
           <div className="mx-auto max-w-[1440px] px-6 lg:px-10">
             <Reveal variant="up">
               <SectionEyebrow>Related</SectionEyebrow>
-              <h2 className="mt-3 font-display text-3xl leading-[0.95] font-bold tracking-tight uppercase sm:text-4xl">
+              <h2 className="mt-3 type-section-h2">
                 Continue reading
               </h2>
             </Reveal>

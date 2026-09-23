@@ -272,7 +272,7 @@ export default function CompanyPage() {
         <div className="hero-animate-copy max-w-[820px]">
           <SectionEyebrow light>Company</SectionEyebrow>
 
-          <h1 className="mt-6 font-display text-[42px] leading-[0.9] font-bold tracking-tight text-white uppercase sm:mt-8 sm:text-[68px] md:text-[78px] xl:text-[88px] 2xl:text-[96px]">
+          <h1 className="mt-6 type-page-h1">
             Canadian
             <br />
             Engineered.
@@ -331,7 +331,7 @@ export default function CompanyPage() {
               <div className="min-w-0 lg:pl-2">
                 <SectionEyebrow>Our Mission</SectionEyebrow>
 
-                <h2 className="mt-4 font-display text-4xl leading-[0.92] font-bold tracking-tight uppercase sm:text-[52px] lg:text-[64px] xl:text-[74px]">
+                <h2 className="mt-4 type-section-h2">
                   Mission.
                 </h2>
 
@@ -382,7 +382,7 @@ export default function CompanyPage() {
                 <SectionEyebrow>Our Values</SectionEyebrow>
               </div>
 
-              <h2 className="mt-4 font-display text-4xl leading-[0.92] font-bold tracking-tight uppercase sm:text-[48px] lg:text-[62px] xl:text-[76px]">
+              <h2 className="mt-4 type-section-h2">
                 Our Values
               </h2>
             </div>
@@ -433,7 +433,7 @@ export default function CompanyPage() {
                 <SectionEyebrow>Focus Areas</SectionEyebrow>
               </div>
 
-              <h2 className="mt-4 font-display text-4xl leading-[0.92] font-bold tracking-tight uppercase sm:text-[46px] lg:text-[60px] xl:text-[74px]">
+              <h2 className="mt-4 type-section-h2">
                 Built For The Missions That Matter.
               </h2>
 

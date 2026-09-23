@@ -93,7 +93,7 @@ export function CapabilitiesTabs() {
           {capabilities.eyebrow}
         </p>
         <h2
-          className="mt-3 font-display text-4xl leading-[0.95] font-bold tracking-tight uppercase sm:text-5xl lg:text-6xl"
+          className="mt-3 type-section-h2"
           style={{ color: text }}
         >
           {capabilities.headingBefore}{" "}
