@@ -8,25 +8,39 @@ export function getInsightBySlug(slug: string): InsightArticle | undefined {
   return insights.find((article) => article.slug === slug);
 }
 
+/**
+ * Prefer relatedSlugs, then fill from insights — never reuse the same hero.src
+ * as the current article or any already-selected related card.
+ */
 export function getRelatedInsights(
   article: InsightArticle,
   limit = 2,
 ): InsightArticle[] {
-  const related = article.relatedSlugs
-    .map((slug) => getInsightBySlug(slug))
-    .filter((item): item is InsightArticle => Boolean(item));
+  const usedHeroes = new Set<string>([article.hero.src]);
+  const selected: InsightArticle[] = [];
+  const selectedSlugs = new Set<string>([article.slug]);
 
-  if (related.length >= limit) {
-    return related.slice(0, limit);
+  for (const slug of article.relatedSlugs) {
+    if (selected.length >= limit) break;
+    const item = getInsightBySlug(slug);
+    if (!item || selectedSlugs.has(item.slug)) continue;
+    if (usedHeroes.has(item.hero.src)) continue;
+    selected.push(item);
+    selectedSlugs.add(item.slug);
+    usedHeroes.add(item.hero.src);
   }
 
-  const fallback = insights.filter(
-    (item) =>
-      item.slug !== article.slug &&
-      !related.some((r) => r.slug === item.slug),
-  );
+  if (selected.length < limit) {
+    for (const item of insights) {
+      if (selected.length >= limit) break;
+      if (selectedSlugs.has(item.slug) || usedHeroes.has(item.hero.src)) continue;
+      selected.push(item);
+      selectedSlugs.add(item.slug);
+      usedHeroes.add(item.hero.src);
+    }
+  }
 
-  return [...related, ...fallback].slice(0, limit);
+  return selected;
 }
 
 /** Flatten block body to plain text for legacy consumers that expect a string. */
