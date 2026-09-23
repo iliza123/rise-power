@@ -356,7 +356,7 @@ export default function ProductsPage() {
       <StackedPageHero
         layout="split"
         imageSrc="/media/products/product-hero.png"
-        imageAlt="Rise Falcon, Sentinel, and Titan hydrogen power systems"
+        imageAlt="Camouflage Rise product lineup"
         imageWidth={1920}
         imageHeight={1081}
         tone="#07100d"

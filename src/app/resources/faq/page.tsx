@@ -174,36 +174,39 @@ export default function ProcurementFaqPage() {
       />
 
       <StackedPageHero
-        layout="split"
+        layout="overlay"
         imageSrc="/media/FAQ/FAQ-hero.png"
-        imageAlt="Rise Power systems prepared for procurement and program evaluation"
-        imageWidth={1448}
-        imageHeight={1086}
+        imageAlt="Rise Mission Power engineers reviewing portable hydrogen systems in the lab"
+        imageClassName="object-cover object-[68%_center]"
+        imageWidth={1920}
+        imageHeight={600}
         tone="#0a0f10"
+        compact
+        animateMedia={false}
       >
-        <div className="hero-animate-copy w-full text-left">
+        <div className="hero-animate-copy w-full max-w-[40rem] text-left">
           <SectionEyebrow onDark>Resources</SectionEyebrow>
 
-          <h1 className="mt-5 type-page-h1">
+          <h1 className="mt-4 type-page-h1 sm:mt-5">
             Procurement FAQ
           </h1>
 
-          <p className="mt-5 max-w-[640px] text-lg leading-[1.6] text-white sm:mt-6 sm:text-xl">
+          <p className="type-section-body mt-4 max-w-[36rem] !text-white/90 sm:mt-5">
             Common questions from procurement, programs, and integration teams
             evaluating Rise Power systems.
           </p>
 
-          <div className="mt-7 flex flex-wrap items-center gap-3 sm:mt-8 sm:gap-4">
+          <div className="mt-6 flex flex-wrap items-center gap-3 sm:mt-7 sm:gap-4">
             <a
               href="#product-performance"
-              className="inline-flex min-h-12 items-center justify-center gap-2 rounded-sm bg-[#849363] px-7 text-sm font-semibold tracking-wide text-white uppercase transition-opacity hover:opacity-90"
+              className="type-cta inline-flex min-h-12 items-center justify-center gap-2 rounded-sm bg-[#849363] px-7 text-white uppercase transition-opacity hover:opacity-90"
             >
               Browse Answers
               <ArrowRight className="size-4 shrink-0" aria-hidden="true" />
             </a>
             <Link
               href="/contact"
-              className="inline-flex min-h-12 items-center justify-center gap-2 rounded-sm border border-white/45 px-7 text-sm font-semibold tracking-wide text-white uppercase transition-colors hover:bg-white/10"
+              className="type-cta inline-flex min-h-12 items-center justify-center gap-2 rounded-sm border border-white/45 px-7 text-white uppercase transition-colors hover:bg-white/10"
             >
               Request a Briefing
               <ArrowRight className="size-4 shrink-0" aria-hidden="true" />

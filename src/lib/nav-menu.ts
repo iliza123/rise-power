@@ -175,9 +175,9 @@ export const megaNavItems: readonly MegaNavItem[] = [
         description: "Download the Rise Power investor briefing (PDF).",
       },
       {
-        label: "Company One-Pager",
-        href: "/rise-power-one-pager.pdf",
-        description: "Revenue forecast and company overview (PDF).",
+        label: "Company Brochure",
+        href: "/media/brochures/rise-mission-power-brochure.pdf",
+        description: "Company overview and product brochure (PDF).",
       },
       {
         label: "Press & Updates",

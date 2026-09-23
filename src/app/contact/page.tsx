@@ -53,7 +53,7 @@ export default function ContactPage() {
       <StackedPageHero
         layout="split"
         imageSrc="/media/contact/hero-banner.png"
-        imageAlt="Rise Power field deployment — request a capability briefing"
+        imageAlt="Soldiers in a forest"
         imageWidth={1920}
         imageHeight={600}
         imageClassName="translate-x-[14%]"

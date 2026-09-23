@@ -425,7 +425,7 @@ export const featuredProducts = {
       idealFor: ["Camping & Outdoor", "Home Outages", "Emergency Kits"],
       detailsHref: "/products#sentinel",
       datasheetHref: "/media/brochures/sentinel-power-cube.pdf",
-      image: "SENTINEL portable hydrogen power system",
+      image: "Hiker with a backpack facing mountain scenery",
       imageSrc: "/media/products/featured-sentinel.png",
     },
     {
@@ -459,7 +459,7 @@ export const featuredProducts = {
       idealFor: ["Construction Sites", "Mining Operations", "Telecom Backup"],
       detailsHref: "/products#titan",
       datasheetHref: "/media/brochures/rise-mission-power-brochure.pdf",
-      image: "TITAN zero-emission generator",
+      image: "Soldiers with a camouflage portable generator",
       imageSrc: "/media/products/featured-titan.png",
     },
     {
@@ -516,7 +516,7 @@ export const capabilities = {
     },
     {
       src: "/media/capabilities/systems-context-2.png",
-      alt: "Military drone operating over snowy mountain terrain at dusk",
+      alt: "Two hikers facing glacier mountains",
     },
     {
       src: "/media/capabilities/systems-context-3.png",
@@ -535,7 +535,7 @@ export const capabilities = {
     imageSrc: "/media/capabilities/field-validation-primary.png",
     imageAlt: "Engineered for the field. Validated in it.",
     secondaryImageSrc: "/media/capabilities/field-validation-secondary.png",
-    secondaryImageAlt: "Mission landscape supporting field-validated hydrogen power",
+    secondaryImageAlt: "Soldier with laptop beside a generator in a forest",
   },
   closingBand: {
     imageSrc: "/media/use-cases/uc-defence.png",
@@ -601,15 +601,14 @@ export const capabilities = {
         "Hydrogen fuel cell design, power electronics, and ruggedized system development from concept through production.",
       href: "/capabilities/engineering-development",
       imageSrc: "/media/capabilities/engineering-development.png",
-      imageAlt:
-        "Rise Power engineers reviewing a fuel cell stack and CAD exploded view.",
+      imageAlt: "Soldiers with backpacks walking through grassland",
       secondaryImageSrc: "/media/company/company-v2.png",
       secondaryImageAlt:
-        "Rise Power enclosure and harnessing during engineering development",
+        "Soldier using a laptop beside a camouflage generator in a forest",
       gallery: [
         {
           src: "/media/capabilities/engineering.png",
-          alt: "Engineering diagram of Rise Power hydrogen system architecture",
+          alt: "Soldiers in a forest with a portable generator",
         },
         {
           src: "/media/missions/mountain.png",
@@ -682,11 +681,10 @@ export const capabilities = {
         "Integration with existing vehicle platforms, communications systems, and facility power networks.",
       href: "/capabilities/system-integration",
       imageSrc: "/media/capabilities/system-integration.png",
-      imageAlt:
-        "Gloved hands mating a stainless quick-disconnect coupler into a control cabinet.",
+      imageAlt: "Soldier carrying a portable power unit on his back",
       secondaryImageSrc: "/media/use-cases/uc-deployment.png",
       secondaryImageAlt:
-        "Rise Sentinel integrated with field shelter and communications rack",
+        "Military personnel, drone, and truck in a snowy field",
       gallery: [
         {
           src: "/media/capabilities/system-integration.png",
@@ -698,7 +696,7 @@ export const capabilities = {
         },
         {
           src: "/media/use-cases/uc-grid1.png",
-          alt: "Integrated hydrogen power components for vehicle and facility use",
+          alt: "Soldier on a mountain with a portable generator and cartridge props",
         },
       ],
       deliverablesIntro:
@@ -763,8 +761,7 @@ export const capabilities = {
         "Logistics planning, operator training, and field service for deployed hydrogen power systems.",
       href: "/capabilities/field-deployment",
       imageSrc: "/media/capabilities/field-deployment-hero.png",
-      imageAlt:
-        "Canadian Armed Forces soldiers unloading a Rise Power power cube from a military truck at golden hour.",
+      imageAlt: "Person camping at an RV with a dog",
       secondaryImageSrc: "/media/products/hydrogen-cartridge-kit.png",
       secondaryImageAlt:
         "Hydrogen cartridge kit ready for rapid field replenishment",
@@ -779,7 +776,7 @@ export const capabilities = {
         },
         {
           src: "/media/capabilities/field-deployment-hero.png",
-          alt: "Field deployment of Rise Mission Power systems",
+          alt: "Camper and dog at an RV site",
         },
       ],
       deliverablesIntro:
@@ -844,23 +841,22 @@ export const capabilities = {
         "Safety engineered in from day one. Active certification across defense, transport, and indoor industrial standards.",
       href: "/capabilities/safety-compliance",
       imageSrc: "/media/capabilities/safety-compliance.png",
-      imageAlt:
-        "Safety technician in nitrile gloves testing a hydrogen cartridge with a handheld leak detector.",
+      imageAlt: "Empty forest landscape with no people or equipment",
       secondaryImageSrc: "/media/use-cases/disaster-response.jpg",
       secondaryImageAlt:
-        "Disaster response deployment with safety-first hydrogen power",
+        "Disaster-response camp with rubble and temporary shelters",
       gallery: [
         {
           src: "/media/company/company-v4.png",
-          alt: "Quality and compliance review of Rise Power hardware",
+          alt: "Military camp with a portable generator",
         },
         {
           src: "/media/products/product-sentinal.png",
-          alt: "Rise Power Sentinel configured for safe field deployment",
+          alt: "Couple cooking at a campsite",
         },
         {
           src: "/media/cases/emergency.png",
-          alt: "Emergency response power with safety systems engineered in",
+          alt: "Soldiers in a field deployment",
         },
       ],
       deliverablesIntro:
@@ -915,7 +911,7 @@ export const capabilities = {
       ],
     },
   ] satisfies readonly CapabilityTab[],
-  diagramImage: "Capabilities engineering diagram",
+  diagramImage: "Soldiers in a forest with a portable generator",
   diagramImageSrc: "/media/capabilities/engineering.png",
 };
 
@@ -948,7 +944,7 @@ export const customerPartners = {
         { value: "CARTRIDGE", label: "Logistics Ready" },
       ],
       href: "/use-cases#use-cases",
-      image: "Home and community backup case",
+      image: "Soldiers in a snowy military camp",
       imageSrc: "/media/cases/homes-community.png",
     },
     {
@@ -997,7 +993,7 @@ export const businessesCompanies = {
     {
       name: "CIMtech Green Energy",
       body: "Canadian advanced manufacturing for hydrogen systems—precision engineering, production capability, and field-ready energy platforms.",
-      image: "CIMtech Green Energy facility and clean energy infrastructure",
+      image: "Manufacturing plant image with mountains and a non-official logo",
       imageSrc: "/media/businesses/cimtech-green-energy.png",
       href: "https://www.cimtechgreenenergy.com",
       cta: "Visit CIMtech Green Energy",
@@ -1028,7 +1024,7 @@ export const closingCta = {
     { title: "RAPID REFUEL", subtitle: "Under-30-second cartridge exchange." },
     { title: "BC-BUILT", subtitle: "Engineered and built in British Columbia." },
   ] satisfies readonly HeroChip[],
-  image: "Closing CTA mission landscape",
+  image: "Camouflage generator by a forest lake with mountains",
   imageSrc: "/media/cta/closing.png",
 };
 

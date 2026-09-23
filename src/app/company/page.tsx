@@ -267,7 +267,7 @@ export default function CompanyPage() {
       <StackedPageHero
         layout="split"
         imageSrc="/media/company/company-hero.png"
-        imageAlt="Rise Power systems deployed in a remote operating environment"
+        imageAlt="Soldier with a drone in mountain terrain"
         imageWidth={1920}
         imageHeight={650}
         tone="#101820"
@@ -322,7 +322,7 @@ export default function CompanyPage() {
               <div className="relative aspect-[1.08/1] overflow-hidden rounded-[7px]">
                 <Image
                   src="/media/company/company-mission.png"
-                  alt="Rise Power Sentinel hydrogen power system in the field"
+                  alt="Military camp with a generator and mountains"
                   fill
                   sizes="(min-width: 1024px) 52vw, 100vw"
                   className="object-cover"

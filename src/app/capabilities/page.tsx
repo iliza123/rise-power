@@ -223,7 +223,7 @@ export default function CapabilitiesPage() {
       <StackedPageHero
         layout="split"
         imageSrc={hero.imageSrc}
-        imageAlt="Rise Power engineering capabilities"
+        imageAlt="Soldiers walking through open grassland"
         imageWidth={1920}
         imageHeight={768}
       >

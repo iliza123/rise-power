@@ -196,7 +196,7 @@ const pressUpdates = [
   {
     number: "02",
     image: "/media/investors/investor-p2.png",
-    imageAlt: "Rise Power field testing",
+    imageAlt: "Soldier with a laptop beside a generator in a forest",
     title: (
       <>
         Field Testing Validates
@@ -213,7 +213,7 @@ const pressUpdates = [
   {
     number: "03",
     image: "/media/investors/investor-p3.png",
-    imageAlt: "Hydrogen power for demanding field applications",
+    imageAlt: "Military drone and truck in a field",
     title: (
       <>
         Understanding Hydrogen
@@ -230,7 +230,7 @@ const pressUpdates = [
   {
     number: "04",
     image: "/media/investors/investor-p4.png",
-    imageAlt: "Rise Power engineering team and technology",
+    imageAlt: "Soldiers walking through a field",
     title: (
       <>
         Rise Power Expands
@@ -339,7 +339,7 @@ export default function InvestorsPage() {
       <StackedPageHero
         layout="split"
         imageSrc="/media/investors/investor-hero.png"
-        imageAlt="Rise Power hydrogen power system in a mountain environment"
+        imageAlt="Person camping at an RV with a dog"
         imageWidth={1672}
         imageHeight={941}
         tone="#101820"
@@ -464,7 +464,7 @@ export default function InvestorsPage() {
               <div className="relative aspect-[16/9] overflow-hidden bg-[#0c1210]">
                 <Image
                   src="/media/investors/investor-onepage.png"
-                  alt="Rise Power company one-pager"
+                  alt="Rise Mission Power company brochure"
                   fill
                   sizes="(min-width: 1024px) 50vw, 100vw"
                   className="object-cover object-center transition-transform duration-700 ease-out group-hover:scale-[1.03]"
@@ -477,19 +477,19 @@ export default function InvestorsPage() {
 
               <div className="flex flex-1 flex-col px-5 py-5 sm:px-6 sm:py-6 lg:px-7 lg:py-6">
                 <p className="text-[11px] font-semibold tracking-[0.22em] text-[#6e7f42] uppercase">
-                  PDF · Company Overview
+                  PDF · Company Brochure
                 </p>
                 <h3 className="mt-2 font-display text-2xl leading-[1.05] font-bold tracking-tight text-[#101820] uppercase sm:text-[28px] lg:text-[32px]">
-                  Company One-Pager
+                  Company Brochure
                 </h3>
                 <p className="type-card-body mt-2 min-h-[4.5rem] max-w-[440px] flex-1 text-[#66717d]">
-                  Revenue forecast and company overview. Quick-reference summary
+                  Company overview and product brochure. Quick-reference summary
                   for sharing with partners and committees.
                 </p>
                 <div className="mt-auto flex items-center justify-between gap-4 border-t border-[#ebe7de] pt-4">
                   <a
-                    href="/media/investors/rise-power-one-pager.pdf"
-                    download="rise-power-one-pager.pdf"
+                    href="/media/brochures/rise-mission-power-brochure.pdf"
+                    download="rise-mission-power-brochure.pdf"
                     className="group/button inline-flex items-center gap-3 text-sm font-semibold tracking-[0.14em] text-[#101820] uppercase transition-colors duration-300 hover:text-[#6e7f42]"
                   >
                     Download
@@ -528,7 +528,7 @@ export default function InvestorsPage() {
             >
               <Image
                 src="/media/investors/investor-why.png"
-                alt="Rise Power hydrogen power system"
+                alt="Titan on rocky ground with a soldier and mountains"
                 fill
                 sizes="(min-width: 1024px) 45vw, 100vw"
                 className="object-cover object-center"

@@ -40,7 +40,7 @@ const destinations = [
     href: "/resources/faq",
     cta: "Read FAQ",
     image: "/media/FAQ/FAQ-hero.png",
-    imageAlt: "Rise Power systems prepared for procurement evaluation",
+    imageAlt: "Soldiers in a forest",
   },
   {
     number: "03",
@@ -94,15 +94,15 @@ const systems = [
 const insightImages: Record<string, { src: string; alt: string }> = {
   "hydrogen-fuel-cell-vs-diesel-generator": {
     src: "/media/insights/diesel-comparison.png",
-    alt: "Hydrogen fuel cell compared with diesel generators",
+    alt: "Couple cooking at a campsite",
   },
   "what-is-a-hydrogen-fuel-cell": {
     src: "/media/insights/fuel-cell.png",
-    alt: "How a hydrogen fuel cell works",
+    alt: "Camper and dog at an RV",
   },
   "silent-generator-for-military-operations": {
     src: "/media/insights/defense-silent.png",
-    alt: "Silent generators for military operations",
+    alt: "Silent hydrogen power for military field operations",
   },
 };
 
@@ -130,14 +130,14 @@ const downloads = [
   },
   {
     number: "02",
-    label: "PDF · Company Overview",
-    title: "Company One-Pager",
+    label: "PDF · Company Brochure",
+    title: "Company Brochure",
     description:
-      "Revenue forecast and company overview. Quick-reference summary for sharing with partners and committees.",
-    href: "/media/investors/rise-power-one-pager.pdf",
-    download: "rise-power-one-pager.pdf",
+      "Company overview and product brochure. Quick-reference summary for sharing with partners and committees.",
+    href: "/media/brochures/rise-mission-power-brochure.pdf",
+    download: "rise-mission-power-brochure.pdf",
     image: "/media/investors/investor-onepage.png",
-    imageAlt: "Rise Power company one-pager",
+    imageAlt: "Rise Mission Power company brochure",
   },
 ] as const;
 
@@ -226,7 +226,7 @@ export default function ResourcesPage() {
       <StackedPageHero
         layout="split"
         imageSrc="/media/resources/resources-hero.png"
-        imageAlt="Rise Power hydrogen systems prepared for field evaluation"
+        imageAlt="Military camp with a generator and mountains"
         imageWidth={1374}
         imageHeight={1145}
         tone="#0a0f10"

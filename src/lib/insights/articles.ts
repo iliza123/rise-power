@@ -16,7 +16,7 @@ export const insights: InsightArticle[] = [
     accentPhrase: `Hydrogen Fuel Cell`,
     hero: {
       src: `/media/insights/diesel-comparison.png`,
-      alt: `Hydrogen power compared with conventional generators`,
+      alt: `Couple cooking at a campsite`,
     },
     relatedSlugs: [
       `what-is-a-hydrogen-fuel-cell`,
@@ -164,7 +164,7 @@ export const insights: InsightArticle[] = [
     accentPhrase: `Hydrogen Fuel Cell`,
     hero: {
       src: `/media/insights/fuel-cell.png`,
-      alt: `Hydrogen fuel cell technology`,
+      alt: `Camper and dog at an RV`,
     },
     relatedSlugs: [
       `hydrogen-fuel-cell-vs-diesel-generator`,
@@ -351,7 +351,7 @@ export const insights: InsightArticle[] = [
     accentPhrase: `Silent Generators`,
     hero: {
       src: `/media/insights/defense-silent.png`,
-      alt: `Hydrogen power compared with conventional generators`,
+      alt: `Silent hydrogen power for military field operations`,
     },
     relatedSlugs: [
       `what-is-a-hydrogen-fuel-cell`,
@@ -507,7 +507,7 @@ export const insights: InsightArticle[] = [
     accentPhrase: `Zero Emission`,
     hero: {
       src: `/media/insights/zero-emission.png`,
-      alt: `Rise Sentinel portable hydrogen power system`,
+      alt: `Cartridge kit in snow-covered mountains`,
     },
     relatedSlugs: [
       `silent-generator-for-military-operations`,
@@ -1097,7 +1097,7 @@ export const insights: InsightArticle[] = [
     accentPhrase: `Hydrogen Cartridge`,
     hero: {
       src: `/media/insights/cartridge-tech.png`,
-      alt: `Rise Power hydrogen cartridge kit`,
+      alt: `Soldier carrying a backpack power unit`,
     },
     relatedSlugs: [
       `drone-fuel-cell-vs-battery`,
@@ -1306,7 +1306,7 @@ export const insights: InsightArticle[] = [
     accentPhrase: `Critical Infrastructure`,
     hero: {
       src: `/media/insights/infrastructure-backup.png`,
-      alt: `Reliable backup and off-grid power systems`,
+      alt: `Empty forest landscape`,
     },
     relatedSlugs: [
       `hydrogen-cartridge-technology`,

@@ -34,7 +34,7 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/rise-power-one-pager.pdf",
-        destination: "/media/investors/rise-power-one-pager.pdf",
+        destination: "/media/brochures/rise-mission-power-brochure.pdf",
         permanent: false,
       },
       {
