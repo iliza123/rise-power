@@ -58,7 +58,7 @@ const focusAreas = [
     title: "Municipalities",
     description:
       "Quiet backup for city facilities, public works, and neighbourhood operations. Open to product trials and clean-energy pilot programs.",
-    image: "/media/markets/commercial.png",
+    image: "/media/company/focus-municipalities.png",
     href: "/use-cases#use-cases",
     cta: "View Municipalities",
   },
@@ -67,7 +67,7 @@ const focusAreas = [
     title: "Utilities &\nCommunities",
     description:
       "Field support for service crews and off-grid power for remote and Indigenous communities where grid access is limited.",
-    image: "/media/markets/defense-military.png",
+    image: "/media/company/focus-utilities.png",
     href: "/use-cases#remote-operations",
     cta: "View Field Support",
   },
@@ -76,7 +76,7 @@ const focusAreas = [
     title: "Homes &\nEmergency",
     description:
       "Backup during outages and severe weather for homes, gathering spaces, and emergency kits. Zero exhaust enables indoor-safe operation.",
-    image: "/media/markets/field-consumer.png",
+    image: "/media/company/focus-emergency.png",
     href: "/use-cases#disaster-response",
     cta: "View Emergency Backup",
   },

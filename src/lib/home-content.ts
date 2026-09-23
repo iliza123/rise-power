@@ -417,7 +417,7 @@ export const capabilities = {
     headlineLine1: "Capabilities",
     headlineAccent: "",
     body: "End to end hydrogen power engineering, from concept to deployment.",
-    imageSrc: "/media/capabilities/engineering-development.png",
+    imageSrc: "/media/capabilities/capabilities-hero.png",
     primaryCta: { label: "Explore Capabilities", href: "#pillars" } satisfies Cta,
     secondaryCta: { label: "Request a Briefing", href: "/contact" } satisfies Cta,
   },
@@ -435,20 +435,20 @@ export const capabilities = {
   },
   gallery: [
     {
-      src: "/media/use-cases/defense-security.jpg",
-      alt: "Defense and security power deployment with communications hardware",
+      src: "/media/capabilities/systems-context-1.png",
+      alt: "Tactical portable power unit supporting field communications in a forest at sunset",
     },
     {
-      src: "/media/use-cases/uc-deployment.png",
-      alt: "Field shelter powered by Rise Power systems at dusk",
+      src: "/media/capabilities/systems-context-2.png",
+      alt: "Military drone operating over snowy mountain terrain at dusk",
     },
     {
-      src: "/media/cases/mining.png",
-      alt: "Remote industrial and mining power operations",
+      src: "/media/capabilities/systems-context-3.png",
+      alt: "Operators guiding a drone-lifted equipment crate in dry hill country",
     },
     {
-      src: "/media/company/company-v1.png",
-      alt: "Operator with Rise Power portable hydrogen hardware",
+      src: "/media/capabilities/systems-context-4.png",
+      alt: "Stacked portable power units supporting a snowfield drone deployment",
     },
   ] satisfies readonly CapabilityMedia[],
   proof: {

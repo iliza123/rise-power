@@ -224,8 +224,8 @@ export default function CapabilitiesPage() {
         layout="split"
         imageSrc={hero.imageSrc}
         imageAlt="Rise Power engineering capabilities"
-        imageWidth={1536}
-        imageHeight={1024}
+        imageWidth={1920}
+        imageHeight={768}
       >
         <div className="hero-animate-copy w-full text-left">
           <SectionEyebrow light>{hero.eyebrow}</SectionEyebrow>
