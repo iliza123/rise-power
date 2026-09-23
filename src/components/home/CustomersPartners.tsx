@@ -20,7 +20,11 @@ import {
   VolumeX,
   Wrench,
 } from "lucide-react";
-import { customerPartners, productUiLabels } from "@/lib/home-content";
+import {
+  customerPartners,
+  productUiLabels,
+  type CaseCard,
+} from "@/lib/home-content";
 import { Reveal, RevealStagger } from "@/components/motion/Reveal";
 import { PlaceholderMedia } from "./PlaceholderMedia";
 import { SnapCarousel } from "./SnapCarousel";
@@ -40,7 +44,7 @@ const statIcons: LucideIcon[][] = [
 
 const partnerIcons: LucideIcon[] = [Cog, Handshake, ShieldCheck, Globe, Award];
 
-type CaseItem = (typeof customerPartners.cases)[number];
+type CaseItem = CaseCard;
 
 function CaseCard({ item, index }: { item: CaseItem; index: number }) {
   const CategoryIcon = categoryIcons[index] ?? Shield;
