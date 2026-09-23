@@ -143,14 +143,14 @@ export function CapabilityDetail({ capability }: CapabilityDetailProps) {
           capability.id === "field" ||
           capability.id === "safety"
             ? 3840
-            : 1920
+            : 771
         }
         imageHeight={
           capability.id === "integration" ||
           capability.id === "field" ||
           capability.id === "safety"
             ? 1300
-            : 1080
+            : 650
         }
         tone="#0a100e"
         compact

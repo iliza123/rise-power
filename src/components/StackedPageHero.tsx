@@ -13,12 +13,12 @@ type StackedPageHeroProps = {
   contentMaxWidthClassName?: string;
   /**
    * `overlay` (default): full-bleed image with left gradient for copy.
-   * `split`: left content + original-aspect clear right image (xl+).
+   * `split`: left content + clear right image (xl+).
    */
   layout?: "overlay" | "split";
-  /** Intrinsic width for split layout (avoids cover/zoom crop). */
+  /** Intrinsic width for split layout. */
   imageWidth?: number;
-  /** Intrinsic height for split layout (avoids cover/zoom crop). */
+  /** Intrinsic height for split layout. */
   imageHeight?: number;
   /** Next/Image quality 1–100. Overlay defaults to 90; split to 100. */
   quality?: number;
@@ -33,9 +33,10 @@ type StackedPageHeroProps = {
 };
 
 /**
- * Page hero: image above / copy below below xl; full-bleed cinematic overlay on xl+.
- * Optional `layout="split"` keeps copy on the left and the photo clear on the right
- * at its original aspect — no cover crop or kenburns zoom.
+ * Page hero: image above / copy below below xl; cinematic on xl+.
+ * Split keeps copy left + photo right. Non-panoramic assets fill the
+ * right column with cover so wide viewports don't show tone gaps.
+ * Mobile split uses a controlled aspect band + fade into `tone`.
  */
 export function StackedPageHero({
   imageSrc,
@@ -55,6 +56,15 @@ export function StackedPageHero({
   const mediaClassName = imageClassName ?? "object-cover object-center";
   const overlayQuality = quality ?? 90;
   const splitQuality = quality ?? 100;
+  const aspectRatio = imageWidth / Math.max(imageHeight, 1);
+  /** Ultra-wide (≥2.2) can sit uncropped; narrower assets fill with cover. */
+  const panoramic = aspectRatio >= 2.2;
+  const splitMinH = compact
+    ? "xl:min-h-[min(62svh,520px)]"
+    : "xl:min-h-[min(78svh,720px)]";
+  const splitCopyPad = compact
+    ? "xl:pt-28 xl:pb-12"
+    : "xl:pt-28 xl:pb-16";
   const desktopMinH = compact
     ? "xl:min-h-[min(62svh,520px)]"
     : "xl:min-h-[min(100svh,800px)]";
@@ -66,41 +76,64 @@ export function StackedPageHero({
   if (layout === "split") {
     return (
       <section
-        className="relative isolate w-full overflow-hidden text-white xl:min-h-[min(78svh,720px)]"
+        className={`relative isolate w-full overflow-hidden text-white ${splitMinH}`}
         style={{ backgroundColor: tone }}
       >
-        {/* Mobile / tablet — original-aspect image above copy */}
-        <div className="relative w-full xl:hidden" style={{ backgroundColor: tone }}>
-          <Image
-            src={imageSrc}
-            alt={imageAlt}
-            width={imageWidth}
-            height={imageHeight}
-            priority
-            quality={splitQuality}
-            sizes="100vw"
-            className="h-auto w-full"
-          />
-        </div>
-
-        {/* Desktop — original-aspect image anchored right; bleeds left under the wash */}
+        {/* Mobile / tablet — fixed band height + cover crop + fade into tone */}
         <div
-          className="pointer-events-none absolute inset-y-0 right-0 z-0 hidden w-[58%] overflow-visible xl:flex xl:items-center xl:justify-end"
-          aria-hidden
+          className="relative h-[min(42svh,320px)] w-full overflow-hidden sm:h-[min(38svh,380px)] xl:hidden"
+          style={{ backgroundColor: tone }}
         >
           <Image
             src={imageSrc}
-            alt=""
-            width={imageWidth}
-            height={imageHeight}
+            alt={imageAlt}
+            fill
             priority
             quality={splitQuality}
-            sizes="58vw"
-            className={`h-full w-auto max-w-none ${imageClassName ?? ""}`}
+            sizes="100vw"
+            className={mediaClassName}
+          />
+          <div
+            className="pointer-events-none absolute inset-x-0 bottom-0 h-24"
+            aria-hidden
+            style={{
+              background: `linear-gradient(to top, ${tone} 0%, ${tone}00 100%)`,
+            }}
           />
         </div>
 
-        {/* Overlay wash — solid under copy, soft blend across the mid seam, clear on the right */}
+        {/* Desktop — fill right column; panoramic keeps natural width */}
+        <div
+          className="pointer-events-none absolute inset-y-0 right-0 z-0 hidden w-[58%] overflow-hidden xl:block"
+          aria-hidden
+        >
+          {panoramic ? (
+            <div className="flex h-full w-full items-center justify-end">
+              <Image
+                src={imageSrc}
+                alt=""
+                width={imageWidth}
+                height={imageHeight}
+                priority
+                quality={splitQuality}
+                sizes="58vw"
+                className={`h-full w-auto max-w-none ${imageClassName ?? ""}`}
+              />
+            </div>
+          ) : (
+            <Image
+              src={imageSrc}
+              alt=""
+              fill
+              priority
+              quality={splitQuality}
+              sizes="58vw"
+              className={mediaClassName}
+            />
+          )}
+        </div>
+
+        {/* Overlay wash — solid under copy, soft blend across the mid seam */}
         <div
           className="pointer-events-none absolute inset-0 z-[1] hidden xl:block"
           aria-hidden
@@ -110,7 +143,7 @@ export function StackedPageHero({
         />
 
         <div
-          className={`relative z-10 mx-auto flex w-full ${contentMaxWidthClassName} flex-col px-6 py-10 sm:px-8 sm:py-12 lg:px-10 xl:min-h-[min(78svh,720px)] xl:justify-center xl:px-10 xl:pt-28 xl:pb-16 2xl:px-14 [&_p]:!text-white`}
+          className={`relative z-10 mx-auto flex w-full ${contentMaxWidthClassName} flex-col px-6 pt-6 pb-10 sm:px-8 sm:pt-8 sm:pb-12 lg:px-10 ${splitMinH} xl:justify-center xl:px-10 2xl:px-14 ${splitCopyPad} [&_p]:!text-white`}
         >
           <div className="w-full max-w-[34rem]">{children}</div>
         </div>
@@ -133,6 +166,14 @@ export function StackedPageHero({
           sizes="100vw"
           className={`${animateMedia ? "hero-animate-media" : ""} ${mediaClassName}`}
         />
+        {/* Mobile seam into tone */}
+        <div
+          className="pointer-events-none absolute inset-x-0 bottom-0 h-20 xl:hidden"
+          aria-hidden
+          style={{
+            background: `linear-gradient(to top, ${tone} 0%, ${tone}00 100%)`,
+          }}
+        />
         <div className="pointer-events-none absolute inset-0 hidden xl:block" aria-hidden>
           <div className="absolute inset-0 bg-gradient-to-r from-[#071016]/95 via-[#071016]/35 to-transparent" />
           <div className="absolute inset-0 bg-gradient-to-t from-[#071016]/45 via-transparent to-transparent" />
@@ -140,7 +181,7 @@ export function StackedPageHero({
       </div>
 
       <div
-        className={`relative z-10 mx-auto flex w-full ${contentMaxWidthClassName} flex-1 flex-col justify-center px-6 pt-8 pb-12 sm:px-8 sm:pt-10 sm:pb-14 lg:px-10 ${desktopMinH} ${copyPad} [&_p]:!text-white`}
+        className={`relative z-10 mx-auto flex w-full ${contentMaxWidthClassName} flex-1 flex-col justify-center px-6 pt-6 pb-10 sm:px-8 sm:pt-8 sm:pb-12 lg:px-10 ${desktopMinH} ${copyPad} [&_p]:!text-white`}
       >
         {children}
       </div>

@@ -77,8 +77,8 @@ export default function InsightsPage() {
         layout="split"
         imageSrc="/media/insights/insights-hero.png"
         imageAlt="Rise Power systems prepared for field briefing and evaluation"
-        imageWidth={1672}
-        imageHeight={941}
+        imageWidth={1920}
+        imageHeight={600}
         tone="#0a100e"
       >
         <div className="hero-animate-copy w-full text-left">

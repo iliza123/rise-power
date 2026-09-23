@@ -179,38 +179,40 @@ function EnvironmentTile({
       id={
         includeAnchorId && item.slug !== defenseSlug ? item.slug : undefined
       }
-      className="group relative block min-h-[280px] sm:min-h-[320px] lg:min-h-[340px] scroll-mt-28 overflow-hidden rounded-xl bg-[#101713]"
+      className="group relative block aspect-[4/5] min-h-[22rem] scroll-mt-28 overflow-hidden rounded-xl bg-[#101713] sm:aspect-auto sm:min-h-[320px] lg:min-h-[340px]"
     >
       {item.image ? (
         <Image
           src={item.image}
           alt={item.title}
           fill
-          sizes="(min-width: 1024px) 50vw, 100vw"
-          className="object-cover transition-transform duration-700 group-hover:scale-[1.035]"
+          sizes="(min-width: 1280px) 50vw, (min-width: 640px) 70vw, 90vw"
+          className="object-cover object-center transition-transform duration-700 group-hover:scale-[1.035]"
         />
       ) : null}
 
-      <div className="absolute inset-0 bg-gradient-to-r from-[#07100d]/55 via-[#07100d]/28 to-transparent" />
+      {/* Readability wash — stronger on mobile where copy sits over the photo */}
+      <div className="absolute inset-0 bg-gradient-to-t from-[#07100d]/92 via-[#07100d]/45 to-[#07100d]/20 sm:via-[#07100d]/35 sm:to-transparent" />
+      <div className="absolute inset-0 hidden bg-gradient-to-r from-[#07100d]/50 via-[#07100d]/20 to-transparent sm:block" />
 
-      <div className="absolute inset-0 flex flex-col justify-between p-7 sm:p-8 lg:p-9">
-        <div>
-          <div className="flex items-center gap-4">
-            <span
-              className="font-display text-4xl leading-none font-bold"
-              style={{ color: sage }}
-            >
-              {item.number}
-            </span>
+      <div className="absolute inset-0 flex flex-col justify-between p-5 sm:p-7 lg:p-9">
+        {/* Index — top */}
+        <div className="flex items-center gap-3 sm:gap-4">
+          <span
+            className="font-display text-3xl leading-none font-bold sm:text-4xl"
+            style={{ color: sage }}
+          >
+            {item.number}
+          </span>
+          <span className="h-px w-12 sm:w-16" style={{ background: sage }} />
+        </div>
 
-            <span className="h-px w-16" style={{ background: sage }} />
-          </div>
-
-          <h3 className="mt-5 max-w-[340px] font-display text-3xl leading-[0.95] font-bold tracking-tight text-white uppercase sm:text-4xl">
+        {/* Title + body — bottom (was stuck under the index on mobile) */}
+        <div className="max-w-[26rem]">
+          <h3 className="font-display text-[1.65rem] leading-[0.95] font-bold tracking-tight text-white uppercase sm:text-3xl lg:text-4xl">
             {item.title}
           </h3>
-
-          <p className="type-card-body-on-dark mt-4 max-w-[390px]">
+          <p className="type-card-body-on-dark mt-3 text-[0.9375rem] leading-snug sm:mt-4 sm:text-base sm:leading-relaxed">
             {item.description}
           </p>
         </div>
@@ -423,7 +425,7 @@ export default function UseCasesPage() {
 
       <section
         id="use-cases"
-        className="relative scroll-mt-28 overflow-hidden bg-[#fbfaf7] py-12 sm:py-16 lg:py-24"
+        className="relative scroll-mt-28 overflow-hidden bg-[#fbfaf7] pt-12 pb-5 sm:pt-16 sm:pb-8 lg:py-24"
       >
         {/* Decorative background lines */}
         <div
@@ -453,12 +455,12 @@ export default function UseCasesPage() {
             </div>
           </Reveal>
 
-          <Reveal variant="up" delay={80} className="mt-12 xl:hidden">
+          <Reveal variant="up" delay={80} className="mt-10 sm:mt-12 xl:hidden">
             <SnapCarousel
               ariaLabel="Use case environments"
               showArrows
               showDots
-              itemClassName="w-[min(100%,22.5rem)] sm:w-[min(85vw,26rem)] md:w-[min(70vw,28rem)]"
+              itemClassName="w-[min(92vw,22.5rem)] sm:w-[min(85vw,26rem)] md:w-[min(70vw,28rem)]"
               trackClassName="gap-4 px-1 pb-1"
             >
               {overviewCases.map((item) => (
@@ -493,7 +495,7 @@ export default function UseCasesPage() {
       {defense && (
         <section
           id={defense.slug}
-          className="relative scroll-mt-28 overflow-hidden bg-[#fbfaf7] py-16 sm:py-20 lg:py-0"
+          className="relative scroll-mt-28 overflow-hidden bg-[#fbfaf7] pt-6 pb-16 sm:pt-8 sm:pb-20 lg:py-0"
         >
           <div className="mx-auto grid max-w-[1440px] items-center gap-5 px-6 lg:grid-cols-[1fr_0.92fr] lg:px-10">
             {/* Image */}
@@ -664,7 +666,7 @@ export default function UseCasesPage() {
                         {row.label}
                       </span>
 
-                      <span className="col-span-2 text-mm text-[#222922] sm:col-span-1">
+                      <span className="col-start-2 text-mm text-[#222922] sm:col-start-auto">
                         {row.value}
                       </span>
                     </div>

@@ -359,7 +359,9 @@ export default function ProductsPage() {
         imageAlt="Camouflage Rise product lineup"
         imageWidth={1920}
         imageHeight={1081}
+        imageClassName="object-cover object-[center_55%]"
         tone="#07100d"
+        compact
       >
         <div className="hero-animate-copy w-full text-left">
           <p className="text-mm font-semibold tracking-[0.18em] text-white uppercase">
@@ -376,17 +378,17 @@ export default function ProductsPage() {
             off-grid applications.
           </p>
 
-          <div className="mt-8 flex w-full flex-col gap-3 sm:mt-9 sm:flex-row sm:flex-wrap sm:items-center">
+          <div className="mt-7 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
             <Link
               href="/contact"
-              className="inline-flex min-h-12 w-full items-center justify-center gap-2 whitespace-nowrap rounded-sm bg-[#849363] px-7 text-xs font-bold tracking-[0.12em] text-white uppercase transition-opacity hover:opacity-90 sm:w-auto"
+              className="inline-flex min-h-12 items-center justify-center gap-2 whitespace-nowrap rounded-sm bg-[#849363] px-7 text-xs font-bold tracking-[0.12em] text-white uppercase transition-opacity hover:opacity-90"
             >
               Request a Trial
               <ArrowRight className="size-4 shrink-0" />
             </Link>
             <Link
               href="/use-cases"
-              className="inline-flex min-h-12 w-full items-center justify-center gap-2 whitespace-nowrap rounded-sm border border-white/35 px-7 text-xs font-bold tracking-[0.12em] text-white uppercase transition-colors hover:bg-white/10 sm:w-auto"
+              className="inline-flex min-h-12 items-center justify-center gap-2 whitespace-nowrap rounded-sm border border-white/35 px-7 text-xs font-bold tracking-[0.12em] text-white uppercase transition-colors hover:bg-white/10"
             >
               See Use Cases
               <ArrowRight className="size-4 shrink-0" />

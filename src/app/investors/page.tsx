@@ -340,8 +340,8 @@ export default function InvestorsPage() {
         layout="split"
         imageSrc="/media/investors/investor-hero.png"
         imageAlt="Person camping at an RV with a dog"
-        imageWidth={1672}
-        imageHeight={941}
+        imageWidth={1920}
+        imageHeight={600}
         tone="#101820"
       >
         <div className="hero-animate-copy w-full text-left">
