@@ -29,8 +29,8 @@ const destinations = [
       "Technical specifications for Rise Power systems. Beta-stage hardware in active validation — full datasheets available on briefing request.",
     href: "/datasheets",
     cta: "Open Datasheets",
-    image: "/media/products/product-sentinal.png",
-    imageAlt: "Rise Sentinel hydrogen power system",
+    image: "/media/resources/choose-brief-datasheets.png",
+    imageAlt: "Rise Mission Power datasheets and portable power station",
   },
   {
     number: "02",

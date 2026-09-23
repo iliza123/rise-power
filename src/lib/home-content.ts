@@ -843,7 +843,8 @@ export const capabilities = {
         "Safety engineered in from day one. Active certification across defense, transport, and indoor industrial standards.",
       href: "/capabilities/safety-compliance",
       imageSrc: "/media/capabilities/safety-compliance.png",
-      imageAlt: "Empty forest landscape with no people or equipment",
+      imageAlt:
+        "Rise portable generator at a field camp with solar panels, vehicle, and communications tower",
       secondaryImageSrc: "/media/use-cases/disaster-response.jpg",
       secondaryImageAlt:
         "Disaster-response camp with rubble and temporary shelters",

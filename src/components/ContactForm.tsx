@@ -30,10 +30,24 @@ const labelClass =
 const fieldClass =
   "mt-2 block w-full rounded-sm border border-[#d9dfe3] bg-[#fbfaf7] px-4 py-3 text-base text-[#101820] placeholder:text-[#66717d]/50 focus:border-[#849363] focus:outline-none";
 
+/** Digits only, 7–15 (E.164). Allows +, spaces, dashes, dots, and parentheses. */
+export function isValidPhoneNumber(value: string): boolean {
+  const trimmed = value.trim();
+  if (!trimmed) return false;
+  if (!/^[+\d\s().-]+$/.test(trimmed)) return false;
+  const digits = trimmed.replace(/\D/g, "");
+  return digits.length >= 7 && digits.length <= 15;
+}
+
+function sanitizePhoneInput(value: string): string {
+  return value.replace(/[^\d+\s().-]/g, "");
+}
+
 export function ContactForm() {
   const [sent, setSent] = useState(false);
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [pending, setPending] = useState(false);
+  const [phone, setPhone] = useState("");
 
   async function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -42,12 +56,18 @@ export function ContactForm() {
 
     const name = String(data.get("name") || "").trim();
     const email = String(data.get("email") || "").trim();
+    const phoneValue = String(data.get("phone") || phone || "").trim();
     const message = String(data.get("message") || "").trim();
 
     if (!name) nextErrors.name = "Name is required.";
     if (!email) nextErrors.email = "Email is required.";
     else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
       nextErrors.email = "Please enter a valid email address.";
+    }
+    if (!phoneValue) nextErrors.phone = "Phone number is required.";
+    else if (!isValidPhoneNumber(phoneValue)) {
+      nextErrors.phone =
+        "Please enter a valid phone number (digits only; 7–15 digits).";
     }
     if (!message) nextErrors.message = "Message is required.";
 
@@ -62,6 +82,7 @@ export function ContactForm() {
         body: JSON.stringify({
           name,
           email,
+          phone: phoneValue,
           company: data.get("company"),
           role: data.get("role"),
           useCase: data.get("useCase"),
@@ -71,7 +92,14 @@ export function ContactForm() {
       });
 
       if (response.ok) setSent(true);
-      else setErrors({ form: "Something went wrong. Please try again." });
+      else {
+        const payload = (await response.json().catch(() => null)) as {
+          error?: string;
+        } | null;
+        setErrors({
+          form: payload?.error || "Something went wrong. Please try again.",
+        });
+      }
     } catch {
       setErrors({ form: "Something went wrong. Please try again." });
     } finally {
@@ -112,6 +140,7 @@ export function ContactForm() {
           name="name"
           className={fieldClass}
           placeholder="Your name"
+          autoComplete="name"
         />
         {errors.name ? (
           <p className="mt-1.5 text-xs text-red-500">{errors.name}</p>
@@ -128,9 +157,43 @@ export function ContactForm() {
           type="email"
           className={fieldClass}
           placeholder="you@company.com"
+          autoComplete="email"
         />
         {errors.email ? (
           <p className="mt-1.5 text-xs text-red-500">{errors.email}</p>
+        ) : null}
+      </div>
+
+      <div>
+        <label htmlFor="phone" className={labelClass}>
+          Phone
+        </label>
+        <input
+          id="phone"
+          name="phone"
+          type="tel"
+          inputMode="tel"
+          autoComplete="tel"
+          className={fieldClass}
+          placeholder="+1 (604) 555-0123"
+          value={phone}
+          onChange={(event) => {
+            setPhone(sanitizePhoneInput(event.target.value));
+            if (errors.phone) {
+              setErrors((prev) => {
+                const next = { ...prev };
+                delete next.phone;
+                return next;
+              });
+            }
+          }}
+          aria-invalid={Boolean(errors.phone)}
+          aria-describedby={errors.phone ? "phone-error" : undefined}
+        />
+        {errors.phone ? (
+          <p id="phone-error" className="mt-1.5 text-xs text-red-500">
+            {errors.phone}
+          </p>
         ) : null}
       </div>
 
@@ -143,6 +206,7 @@ export function ContactForm() {
           name="company"
           className={fieldClass}
           placeholder="Department, agency, or company"
+          autoComplete="organization"
         />
       </div>
 
