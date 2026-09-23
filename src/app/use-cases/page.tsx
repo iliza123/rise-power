@@ -209,7 +209,7 @@ function EnvironmentTile({
             {item.title}
           </h3>
 
-          <p className="mt-4 max-w-[390px] text-sm leading-relaxed text-white sm:text-base">
+          <p className="mt-4 max-w-[390px] text-base leading-relaxed text-white sm:text-lg">
             {item.description}
           </p>
         </div>
@@ -255,7 +255,7 @@ function ProductConnectionCard({ product }: { product: ProductConnection }) {
           {product.title}
         </h3>
 
-        <p className="mt-4 text-sm leading-relaxed text-[#687068] sm:text-[15px]">
+        <p className="mt-4 text-base leading-relaxed text-[#687068] sm:text-lg">
           {product.description}
         </p>
 

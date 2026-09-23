@@ -211,7 +211,7 @@ export function CapabilityDetail({ capability }: CapabilityDetailProps) {
                           {stat.label}
                         </p>
                         <p
-                          className="mt-1 max-w-[18ch] text-sm leading-snug"
+                          className="mt-1 max-w-[18ch] text-base leading-snug"
                           style={{ color: MUTED }}
                         >
                           {stat.body}
@@ -243,7 +243,7 @@ export function CapabilityDetail({ capability }: CapabilityDetailProps) {
                           {callout.title}
                         </p>
                         <p
-                          className="mt-0.5 text-sm leading-snug"
+                          className="mt-0.5 text-base leading-snug"
                           style={{ color: "#6b746c" }}
                         >
                           {callout.body}
@@ -448,7 +448,7 @@ export function CapabilityDetail({ capability }: CapabilityDetailProps) {
                     </h3>
 
                     <p
-                      className="mt-2 line-clamp-3 text-sm leading-relaxed sm:text-[15px]"
+                      className="mt-2 line-clamp-3 text-base leading-relaxed sm:text-lg"
                       style={{ color: MUTED }}
                     >
                       {item.body}

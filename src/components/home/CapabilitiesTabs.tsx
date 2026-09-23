@@ -99,7 +99,7 @@ export function CapabilitiesTabs() {
           {capabilities.headingBefore}{" "}
           <span style={{ color: sage }}>{capabilities.headingAccent}</span>
         </h2>
-        <p className="mt-4 text-sm leading-relaxed sm:text-base" style={{ color: muted }}>
+        <p className="mt-4 text-base leading-relaxed sm:text-lg" style={{ color: muted }}>
           {capabilities.body}
         </p>
       </Reveal>
@@ -182,7 +182,7 @@ export function CapabilitiesTabs() {
               {active.heading}
             </h3>
             <p
-              className="mt-4 max-w-xl text-sm leading-relaxed"
+              className="mt-4 max-w-xl text-base leading-relaxed"
               style={{ color: muted }}
             >
               {active.body}
@@ -226,7 +226,7 @@ export function CapabilitiesTabs() {
                       {stat.label}
                     </p>
                     <p
-                      className="mt-1 text-xs leading-relaxed"
+                      className="mt-1 text-sm leading-relaxed"
                       style={{ color: muted }}
                     >
                       {stat.body}

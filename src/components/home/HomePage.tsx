@@ -96,7 +96,7 @@ export function HomePage() {
                 <br />
                 <span style={{ color: sage }}>{hero.headlineLine2}</span>
               </h1>
-              <p className="mt-6 max-w-md text-[15px] leading-relaxed text-white sm:text-base lg:text-lg">
+              <p className="mt-6 max-w-md text-base leading-relaxed text-white sm:text-lg lg:text-xl">
                 {hero.body}
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
@@ -137,7 +137,7 @@ export function HomePage() {
                     <p className="font-display text-xs font-bold tracking-[0.08em] text-white uppercase sm:text-sm">
                       {chip.title}
                     </p>
-                    <p className="mt-0.5 text-[11px] leading-snug text-white sm:text-xs">
+                    <p className="mt-0.5 text-xs leading-snug text-white sm:text-sm">
                       {chip.subtitle}
                     </p>
                   </div>

@@ -711,7 +711,7 @@ export default function ResourcesPage() {
                   </h3>
 
                   <p
-                    className="mt-2 max-w-[420px] flex-1 text-[15px] leading-[1.55]"
+                    className="mt-2 max-w-[420px] flex-1 text-base leading-relaxed"
                     style={{ color: muted }}
                   >
                     {item.description}

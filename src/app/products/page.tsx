@@ -299,7 +299,7 @@ function ProductSystemCard({
           {product.tagline}
         </p>
 
-        <p className="mt-4 mb-3 min-h-[72px] text-[13px] leading-relaxed text-white">
+        <p className="mt-4 mb-3 min-h-[72px] text-sm leading-relaxed text-white">
           {product.description}
         </p>
 
@@ -393,7 +393,7 @@ export default function ProductsPage() {
               <span className="text-[#6e7f42]">Every Mission.</span>
             </h2>
 
-            <p className="mx-auto mt-5 max-w-2xl text-sm leading-relaxed text-[#596057] sm:text-base">
+            <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-[#596057] sm:text-lg">
               A complete ecosystem of hydrogen power systems engineered for the
               world&apos;s most demanding environments.
             </p>
@@ -471,7 +471,7 @@ export default function ProductsPage() {
               <span className="text-[#6e7f42]">As a System.</span>
             </h2>
 
-            <p className="mt-6 max-w-[520px] text-sm leading-relaxed text-[#3f3c36] sm:text-base">
+            <p className="mt-6 max-w-[520px] text-base leading-relaxed text-[#3f3c36] sm:text-lg">
               Every Rise Power product is designed as a complete system. Power
               generation, fuel delivery, controls, and enclosure working together.
               Integrated system design delivers better performance and reliability
@@ -539,7 +539,7 @@ export default function ProductsPage() {
                   <h3 className="text-[15px] font-bold uppercase leading-tight sm:text-[18px]">
                     {item.title}
                   </h3>
-                  <p className="mt-1 text-[12px] leading-relaxed text-[#5c584e] sm:text-[14px]">
+                  <p className="mt-1 text-sm leading-relaxed text-[#5c584e] sm:text-base">
                     {item.body}
                   </p>
                 </div>
@@ -567,7 +567,7 @@ export default function ProductsPage() {
               <span className="text-[#6e7f42]">One Mission.</span>
             </h2>
 
-            <p className="mx-auto mt-5 max-w-3xl text-sm leading-relaxed text-[#596057] sm:text-base">
+            <p className="mx-auto mt-5 max-w-3xl text-base leading-relaxed text-[#596057] sm:text-lg">
               Compare our hydrogen power systems and find the right solution
               for your operational needs.
             </p>
@@ -582,7 +582,7 @@ export default function ProductsPage() {
                     Specifications
                   </h3>
 
-                  <p className="mt-3 max-w-[190px] text-sm leading-relaxed text-white">
+                  <p className="mt-3 max-w-[190px] text-base leading-relaxed text-white">
                     Compare key features across the Rise Power product
                     lineup.
                   </p>
@@ -645,7 +645,7 @@ export default function ProductsPage() {
                     {row.values.map((value, index) => (
                       <div
                         key={`${row.label}-${index}`}
-                        className={`flex min-w-0 items-center border-t border-t-white/15 bg-[#07151b] px-5 py-4 text-sm leading-relaxed text-white ${index === 0
+                        className={`flex min-w-0 items-center border-t border-t-white/15 bg-[#07151b] px-5 py-4 text-base leading-relaxed text-white ${index === 0
                           ? "border-r border-[#293a40] border-l border-l-white/15"
                           : "ml-1 border-x border-[#293a40]"
                           }`}
@@ -664,7 +664,7 @@ export default function ProductsPage() {
                     Explore More
                   </p>
 
-                  <p className="mt-1 max-w-[180px] text-xs leading-relaxed text-white">
+                  <p className="mt-1 max-w-[180px] text-sm leading-relaxed text-white">
                     Learn more about each solution and its capabilities.
                   </p>
                 </div>

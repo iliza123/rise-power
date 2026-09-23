@@ -66,7 +66,7 @@ export function EcosystemStepCard({
         <h3 className="mt-1 font-display text-base leading-tight font-bold tracking-[-0.02em] text-[#161616] uppercase sm:text-lg">
           {title}
         </h3>
-        <p className="mt-1.5 text-[13px] leading-relaxed text-[#5c584e] sm:mt-2 sm:text-sm">
+        <p className="mt-1.5 text-sm leading-relaxed text-[#5c584e] sm:mt-2 sm:text-base">
           {blurb}
         </p>
       </div>

@@ -283,7 +283,7 @@ export function InsightArticleView({
                     </h3>
 
                     <p
-                      className="mt-3 line-clamp-3 text-sm leading-relaxed sm:text-[15px]"
+                      className="mt-3 line-clamp-3 text-base leading-relaxed sm:text-lg"
                       style={{ color: MUTED }}
                     >
                       {item.excerpt}

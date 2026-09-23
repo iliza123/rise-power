@@ -309,7 +309,7 @@ export default function CompanyPage() {
 
         <div className="relative mx-auto max-w-[1440px] px-6 lg:px-10">
           <div className="grid items-center gap-8 lg:grid-cols-[1.04fr_0.96fr] lg:gap-16">
-            <Reveal variant="left">
+            <Reveal variant="left" className="min-w-0">
               <div className="relative aspect-[1.08/1] overflow-hidden rounded-[7px]">
                 <Image
                   src="/media/company/company-mission.png"
@@ -321,15 +321,15 @@ export default function CompanyPage() {
               </div>
             </Reveal>
 
-            <Reveal variant="right" delay={80}>
-              <div className="lg:pl-2">
+            <Reveal variant="right" delay={80} className="min-w-0">
+              <div className="min-w-0 lg:pl-2">
                 <SectionEyebrow>Our Mission</SectionEyebrow>
 
                 <h2 className="mt-7 font-display text-4xl leading-[0.92] font-bold tracking-tight uppercase sm:text-[52px] lg:text-[64px] xl:text-[74px]">
                   Mission.
                 </h2>
 
-                <div className="mt-7 space-y-5 text-base leading-[1.6] text-[#66717d] sm:text-lg">
+                <div className="mt-7 max-w-xl space-y-5 text-base leading-[1.6] break-words text-[#66717d] sm:text-lg">
                   <p>
                     Rise Mission Power builds zero-emissions, portable hydrogen
                     power for municipal, emergency, field, and off-grid
@@ -462,24 +462,6 @@ export default function CompanyPage() {
               <FocusCard key={area.number} area={area} />
             ))}
           </RevealStagger>
-        </div>
-      </section>
-
-      {/* ================================================================== */}
-      {/* CLOSING CTA                                                         */}
-      {/* ================================================================== */}
-
-      <section className="relative overflow-hidden bg-[#101820] py-12 sm:py-16 lg:py-24">
-        <div className="relative mx-auto max-w-[900px] px-6 text-center lg:px-10">
-          <Reveal variant="up">
-            <h2 className="font-display text-4xl leading-[0.95] font-bold tracking-tight text-white uppercase sm:text-[48px] lg:text-[56px]">
-              Build the future of portable power with us.
-            </h2>
-            <p className="mx-auto mt-6 max-w-[640px] text-base leading-[1.55] text-white/75 sm:text-lg">
-              Whether you&apos;re a procurement officer, integration partner, or
-              potential team member — we want to hear from you.
-            </p>
-          </Reveal>
         </div>
       </section>
     </main>

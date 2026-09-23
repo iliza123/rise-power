@@ -50,9 +50,9 @@ export function ClosingCta() {
       <div className="absolute inset-x-0 bottom-0 h-48 bg-gradient-to-t from-[#061018]/75 via-transparent to-transparent" />
 
       <div className="relative mx-auto w-full max-w-[1716px] px-5 py-8 sm:px-8 sm:py-12 lg:px-10 lg:py-16">
-        <div className="grid items-center xl:grid-cols-[1.45fr_0.7fr] xl:gap-8">
+        <div className="grid items-center xl:grid-cols-[minmax(0,1.75fr)_minmax(0,0.55fr)] xl:gap-10">
           {/* Story — shown once */}
-          <div className="max-w-[780px]">
+          <div className="min-w-0">
             <Reveal variant="up">
               <h2 className="type-section-h2">
                 {closingCta.headingBefore}
@@ -66,7 +66,7 @@ export function ClosingCta() {
             </Reveal>
 
             <RevealStagger
-              className="mt-7 grid grid-cols-2 gap-x-4 gap-y-4 sm:mt-9 sm:grid-cols-4 sm:gap-x-4 sm:gap-y-6 lg:mt-11"
+              className="mt-7 grid grid-cols-2 gap-x-5 gap-y-5 sm:mt-9 sm:grid-cols-4 sm:gap-x-6 sm:gap-y-6 lg:mt-11 lg:gap-x-8"
               step={70}
               variant="up"
               baseDelay={40}
@@ -101,11 +101,11 @@ export function ClosingCta() {
                       />
                     </span>
 
-                    <div className="min-w-0 pt-0.5">
+                    <div className="min-w-0 flex-1 pt-0.5">
                       <p className="type-card-label text-[10px] leading-tight text-white sm:text-[11px]">
                         {chip.title}
                       </p>
-                      <p className="type-card-body-on-dark mt-0.5 hidden sm:block">
+                      <p className="type-card-body-on-dark mt-0.5 hidden text-[0.9375rem] leading-snug sm:block">
                         {chip.subtitle}
                       </p>
                       <span

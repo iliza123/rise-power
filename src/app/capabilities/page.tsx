@@ -151,7 +151,7 @@ function PillarRow({
                     <p className="text-[11px] font-semibold tracking-[0.16em] text-[#101820] uppercase">
                       {callout.title}
                     </p>
-                    <p className="mt-0.5 text-sm leading-snug text-[#6b746c]">
+                    <p className="mt-0.5 text-base leading-snug text-[#6b746c]">
                       {callout.body}
                     </p>
                   </div>
@@ -393,7 +393,7 @@ export default function CapabilitiesPage() {
                     <p className="mx-auto mt-3 max-w-[20ch] text-sm leading-[1.4] font-medium text-[#2a333c] sm:mt-4">
                       {gauge.title}
                     </p>
-                    <p className="mx-auto mt-1 max-w-[24ch] text-sm leading-[1.45] text-[#6b746c]">
+                    <p className="mx-auto mt-1 max-w-[24ch] text-base leading-[1.45] text-[#6b746c]">
                       {gauge.body}
                     </p>
                   </article>
