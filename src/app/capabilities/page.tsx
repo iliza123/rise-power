@@ -223,14 +223,16 @@ export default function CapabilitiesPage() {
       <StackedPageHero
         layout="split"
         imageSrc={hero.imageSrc}
-        imageAlt="Soldiers walking through open grassland"
-        imageWidth={1920}
-        imageHeight={768}
+        imageAlt="Soldiers with Rise Mission Power packs overlooking a mountain ridge at sunset"
+        imageWidth={3840}
+        imageHeight={1536}
+        tone="#0a0f10"
+        compact
       >
-        <div className="hero-animate-copy w-full text-left">
+        <div className="hero-animate-copy w-full max-w-[40rem] text-left">
           <SectionEyebrow light>{hero.eyebrow}</SectionEyebrow>
 
-          <h1 className="mt-6 type-page-h1">
+          <h1 className="mt-4 type-page-h1 sm:mt-5">
             {hero.headlineLine1}
             {hero.headlineAccent ? (
               <>
@@ -240,14 +242,14 @@ export default function CapabilitiesPage() {
             ) : null}
           </h1>
 
-          <p className="type-section-body mt-6 max-w-[580px] text-white sm:mt-7">
+          <p className="type-section-body mt-4 max-w-[36rem] !text-white/90 sm:mt-5">
             {hero.body}
           </p>
 
-          <div className="mt-8 flex flex-col gap-4 sm:mt-9 sm:flex-row sm:flex-wrap sm:items-center">
+          <div className="mt-6 flex flex-col gap-3 sm:mt-7 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
             <Link
               href={hero.primaryCta.href}
-              className="inline-flex min-h-12 items-center justify-center gap-2 rounded-sm px-8 text-sm font-semibold tracking-wide text-white uppercase transition-opacity hover:opacity-90"
+              className="type-cta inline-flex min-h-12 items-center justify-center gap-2 rounded-sm px-8 text-white uppercase transition-opacity hover:opacity-90"
               style={{ background: heroCta }}
             >
               {hero.primaryCta.label}
@@ -255,7 +257,7 @@ export default function CapabilitiesPage() {
             </Link>
             <Link
               href={hero.secondaryCta.href}
-              className="inline-flex min-h-12 items-center justify-center gap-2 rounded-sm border border-white/50 px-8 text-sm font-semibold tracking-wide text-white uppercase transition-colors hover:bg-white/10"
+              className="type-cta inline-flex min-h-12 items-center justify-center gap-2 rounded-sm border border-white/50 px-8 text-white uppercase transition-colors hover:bg-white/10"
             >
               {hero.secondaryCta.label}
               <ArrowRight className="size-5" aria-hidden />
@@ -284,7 +286,7 @@ export default function CapabilitiesPage() {
               <SectionEyebrow center light>
                 {capabilities.eyebrow}
               </SectionEyebrow>
-              <h2 className="mt-4 type-section-h2">
+              <h2 className="mt-4 type-section-h2 text-white">
                 {capabilities.headingBefore}{" "}
                 <span style={{ color: "#a8b87a" }}>
                   {capabilities.headingAccent}
@@ -295,7 +297,7 @@ export default function CapabilitiesPage() {
                 style={{ background: "rgba(168, 184, 122, 0.7)" }}
                 aria-hidden
               />
-              <p className="type-section-body mx-auto mt-4 max-w-2xl text-[#b7c1c9] sm:mt-5">
+              <p className="type-section-body mx-auto mt-4 max-w-2xl !text-white sm:mt-5">
                 {capabilities.body}
               </p>
             </div>

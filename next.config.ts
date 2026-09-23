@@ -7,7 +7,7 @@ const nextConfig: NextConfig = {
     // Serve original PNG/JPG from /public (no AVIF/WebP re-encode).
     // Right-click / save-as keeps full source quality and dimensions.
     unoptimized: true,
-    qualities: [60, 75, 80, 85, 90, 100],
+    qualities: [60, 75, 80, 85, 90, 95, 100],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2560, 3840],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     minimumCacheTTL: 60 * 60 * 24 * 30,

@@ -24,6 +24,11 @@ type StackedPageHeroProps = {
   quality?: number;
   /** Soft kenburns on overlay media. Disable for low-res assets. */
   animateMedia?: boolean;
+  /**
+   * Split layout only: replace the default left→right wash.
+   * Pass a full CSS `background` value (e.g. linear-gradient).
+   */
+  splitWash?: string;
   children: React.ReactNode;
 };
 
@@ -44,6 +49,7 @@ export function StackedPageHero({
   imageHeight = 1080,
   quality,
   animateMedia = true,
+  splitWash,
   children,
 }: StackedPageHeroProps) {
   const mediaClassName = imageClassName ?? "object-cover object-center";
@@ -55,6 +61,7 @@ export function StackedPageHero({
   const copyPad = compact
     ? "xl:pt-28 xl:pb-12"
     : "xl:pt-32 xl:pb-20";
+  const defaultSplitWash = `linear-gradient(90deg, ${tone} 0%, ${tone} 38%, ${tone}f2 44%, ${tone}cc 50%, ${tone}66 56%, transparent 64%)`;
 
   if (layout === "split") {
     return (
@@ -98,7 +105,7 @@ export function StackedPageHero({
           className="pointer-events-none absolute inset-0 z-[1] hidden xl:block"
           aria-hidden
           style={{
-            background: `linear-gradient(90deg, ${tone} 0%, ${tone} 38%, ${tone}f2 44%, ${tone}cc 50%, ${tone}66 56%, transparent 64%)`,
+            background: splitWash ?? defaultSplitWash,
           }}
         />
 

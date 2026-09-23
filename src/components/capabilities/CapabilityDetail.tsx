@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 
 import { Reveal } from "@/components/motion/Reveal";
 import { StackedPageHero } from "@/components/StackedPageHero";
@@ -11,6 +11,7 @@ import {
 import { capabilities } from "@/lib/home-content";
 
 const SAGE = "#6e7f42";
+const SAGE_CTA = "#849363";
 const CREAM = "#fbfaf7";
 const MUTED = "#66717d";
 const SECTION_PAD = "py-8 sm:py-10 lg:py-12";
@@ -119,36 +120,42 @@ export function CapabilityDetail({ capability }: CapabilityDetailProps) {
 
   return (
     <main className="bg-[#fbfaf7] text-[#101820]">
-      {/* 1. Hero */}
+      {/* 1. Hero — overlay (capability assets are near-square; split leaves a hard seam + empty copy column) */}
       <StackedPageHero
-        layout="split"
         imageSrc={capability.images.hero.src}
         imageAlt={capability.images.hero.alt}
-        imageWidth={1536}
-        imageHeight={1024}
-        tone="#101820"
+        imageClassName="object-cover object-[center_42%]"
+        tone="#0a100e"
         compact
       >
-        <div className="hero-animate-copy w-full text-left">
+        <div className="hero-animate-copy w-full max-w-[36rem] text-left">
           <SectionEyebrow light>
             {capability.eyebrow || "Capability"}
           </SectionEyebrow>
 
-          <h1 className="mt-4 type-page-h1">
+          <h1 className="mt-5 type-page-h1 sm:mt-6">
             <TitleWithAccent title={capability.title} />
           </h1>
 
-          <p className="type-section-body mt-5 max-w-xl !text-white/90 sm:mt-6">
+          <p className="type-section-body mt-5 max-w-[34rem] !text-white/90 sm:mt-6">
             {capability.heroBody}
           </p>
 
-          <div className="mt-7 sm:mt-8">
+          <div className="mt-7 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
+            <Link
+              href={capability.cta.href}
+              className="inline-flex min-h-12 items-center justify-center gap-2 rounded-sm px-7 text-sm font-semibold tracking-wide text-white uppercase transition-opacity hover:opacity-90"
+              style={{ background: SAGE_CTA }}
+            >
+              {capability.cta.label}
+              <ArrowRight className="size-4 shrink-0" aria-hidden />
+            </Link>
             <Link
               href="/capabilities"
-              className="group inline-flex min-h-11 items-center justify-center gap-2.5 rounded-sm border border-white/45 px-6 text-xs font-semibold tracking-[0.12em] text-white uppercase transition-colors hover:border-white hover:bg-white/10 sm:min-h-12 sm:px-7"
+              className="group inline-flex min-h-12 items-center justify-center gap-2 rounded-sm border border-white/45 px-7 text-sm font-semibold tracking-wide text-white uppercase transition-colors hover:border-white hover:bg-white/10"
             >
               <ArrowLeft
-                className="h-4 w-4 transition-transform duration-200 group-hover:-translate-x-0.5"
+                className="size-4 shrink-0 transition-transform duration-200 group-hover:-translate-x-0.5"
                 strokeWidth={2}
                 aria-hidden
               />

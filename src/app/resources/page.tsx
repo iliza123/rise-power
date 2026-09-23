@@ -230,11 +230,12 @@ export default function ResourcesPage() {
         imageWidth={1374}
         imageHeight={1145}
         tone="#0a0f10"
+        splitWash="linear-gradient(90deg, #0a0f10 0%, #0a0f10 44%, rgba(10,15,16,0.82) 52%, rgba(10,15,16,0.35) 62%, transparent 74%)"
       >
         <div className="hero-animate-copy w-full text-left">
           <SectionEyebrow onDark>Resource Center</SectionEyebrow>
 
-          <h1 className="mt-4 type-page-h1">
+          <h1 className="mt-4 type-page-h1 text-white [text-shadow:none]">
             Resources
           </h1>
 
@@ -413,12 +414,12 @@ export default function ResourcesPage() {
           <Reveal variant="up">
             <div className="max-w-[720px]">
               <SectionEyebrow onDark>Systems Library</SectionEyebrow>
-              <h2 className="mt-4 type-section-h2">
+              <h2 className="mt-4 type-section-h2 !text-white">
                 Specs Behind
                 <br />
-                <span style={{ color: sage }}>The Hardware.</span>
+                <span className="!text-white">The Hardware.</span>
               </h2>
-              <p className="type-section-body mt-3 max-w-[540px] text-[#b7c1c9] sm:mt-4">
+              <p className="type-section-body mt-3 max-w-[540px] !text-white/85 sm:mt-4">
                 Open any system for engineering targets, form factor notes, and
                 briefing-gated datasheets.
               </p>

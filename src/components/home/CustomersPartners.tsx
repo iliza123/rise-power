@@ -55,14 +55,16 @@ function CaseCard({ item, index }: { item: CaseItem; index: number }) {
         borderColor: "#23323a",
       }}
     >
-      <div className="relative aspect-[1.5/1] w-full shrink-0 overflow-hidden">
+      <div className="relative aspect-[1.5/1] w-full shrink-0 overflow-hidden bg-[#06141d]">
         {item.imageSrc ? (
           <Image
             src={item.imageSrc}
             alt={item.image}
             fill
             quality={85}
-            className="object-cover transition-transform duration-700 group-hover:scale-[1.035]"
+            className={`${
+              item.imageClassName ?? "object-cover"
+            } transition-transform duration-700 group-hover:scale-[1.035]`}
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
           />
         ) : (

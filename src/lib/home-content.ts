@@ -117,6 +117,8 @@ export type CaseCard = {
   href: string;
   image: string;
   imageSrc?: string;
+  /** Optional Next/Image object-* classes (e.g. object-fill to show full frame). */
+  imageClassName?: string;
 };
 
 export type GroupCompanyCard = {
@@ -947,7 +949,7 @@ export const customerPartners = {
         { value: "CARTRIDGE", label: "Logistics Ready" },
       ],
       href: "/use-cases#use-cases",
-      image: "Soldiers in a snowy military camp",
+      image: "Family with Rise Power backup during a home outage",
       imageSrc: "/media/cases/homes-community.png",
     },
     {

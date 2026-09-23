@@ -382,25 +382,27 @@ export default function UseCasesPage() {
       <StackedPageHero
         layout="split"
         imageSrc="/media/use-cases/uc-hero.png"
-        imageAlt="Hydrogen power supporting mission operations"
-        imageWidth={1920}
-        imageHeight={650}
+        imageAlt="Rise Sentinel and hydrogen cartridge on a workshop floor"
+        imageWidth={3840}
+        imageHeight={1300}
+        tone="#0a0f10"
+        compact
       >
-        <div className="hero-animate-copy w-full text-left">
+        <div className="hero-animate-copy w-full max-w-[40rem] text-left">
           <SectionEyebrow light>Use Cases</SectionEyebrow>
 
-          <h1 className="mt-6 type-page-h1">
+          <h1 className="mt-4 type-page-h1 sm:mt-5">
             Use Cases
           </h1>
 
-          <p className="type-section-body mt-6 max-w-[600px] text-white sm:mt-7">
+          <p className="type-section-body mt-4 max-w-[36rem] !text-white/90 sm:mt-5">
             Operating environments where Rise Power systems fit.
           </p>
 
-          <div className="mt-8 flex flex-col gap-4 sm:mt-9 sm:flex-row sm:flex-wrap sm:items-center">
+          <div className="mt-6 flex flex-col gap-3 sm:mt-7 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
             <a
               href="#use-cases"
-              className="inline-flex min-h-12 items-center justify-center gap-2 rounded-sm bg-[#849363] px-8 text-sm font-semibold tracking-wide text-white uppercase transition-opacity hover:opacity-90"
+              className="type-cta inline-flex min-h-12 items-center justify-center gap-2 rounded-sm bg-[#849363] px-8 text-white uppercase transition-opacity hover:opacity-90"
             >
               Explore Use Cases
               <ArrowRight className="size-5" />
@@ -408,7 +410,7 @@ export default function UseCasesPage() {
 
             <a
               href="#products"
-              className="inline-flex min-h-12 items-center justify-center gap-2 rounded-sm border border-white/50 px-8 text-sm font-semibold tracking-wide text-white uppercase transition-colors hover:bg-white/10"
+              className="type-cta inline-flex min-h-12 items-center justify-center gap-2 rounded-sm border border-white/50 px-8 text-white uppercase transition-colors hover:bg-white/10"
             >
               View Products
               <ArrowRight className="size-5" />
