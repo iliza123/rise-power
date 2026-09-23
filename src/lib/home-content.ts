@@ -456,7 +456,7 @@ export const capabilities = {
     headingBefore: "ENGINEERED FOR THE FIELD.",
     headingAccent: "VALIDATED IN IT.",
     body: "Rise Power systems are designed from operator requirements outward. Sealed against dust and salt spray. Validated across coastal British Columbia, arctic, and high altitude conditions. Built for mission duration in environments where commercial hardware fails.",
-    imageSrc: "/media/capabilities/field-deployment.png",
+    imageSrc: "/media/capabilities/field-validation-primary.png",
     imageAlt: "Engineered for the field. Validated in it.",
     secondaryImageSrc: "/media/capabilities/field-validation-secondary.png",
     secondaryImageAlt: "Mission landscape supporting field-validated hydrogen power",

@@ -268,8 +268,8 @@ export default function CompanyPage() {
         layout="split"
         imageSrc="/media/company/company-hero.png"
         imageAlt="Rise Power systems deployed in a remote operating environment"
-        imageWidth={1717}
-        imageHeight={916}
+        imageWidth={1920}
+        imageHeight={650}
         tone="#101820"
       >
         <div className="hero-animate-copy w-full text-left">
