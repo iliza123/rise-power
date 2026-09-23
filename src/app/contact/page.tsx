@@ -109,6 +109,38 @@ export default function ContactPage() {
                   integration, and serious technical evaluation.
                 </p>
 
+                <ul className="mt-8 space-y-4">
+                  {[
+                    {
+                      label: "Technical package",
+                      detail: "Datasheets, runtime curves, and system architecture.",
+                    },
+                    {
+                      label: "Deployment summary",
+                      detail: "Fit for your environment, duty cycle, and timeline.",
+                    },
+                    {
+                      label: "Direct follow-up",
+                      detail: "A specialist reply within one to two business days.",
+                    },
+                  ].map((item) => (
+                    <li key={item.label} className="flex gap-3">
+                      <span
+                        aria-hidden="true"
+                        className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#849363]"
+                      />
+                      <div>
+                        <p className="text-base font-semibold tracking-wide text-[#101820] uppercase">
+                          {item.label}
+                        </p>
+                        <p className="mt-1 text-base leading-snug text-[#626e7a] sm:text-lg">
+                          {item.detail}
+                        </p>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+
                 {/* Email / Phone / Address — one row under the copy */}
                 <div className="mt-auto grid gap-6 border-t border-[#d9dfe3] pt-8 sm:grid-cols-3 sm:gap-0 sm:divide-x sm:divide-[#d9dfe3] lg:mt-10">
                   <div className="sm:pr-5">
@@ -117,7 +149,7 @@ export default function ContactPage() {
                     </p>
                     <a
                       href={`mailto:${site.email}`}
-                      className="mt-2 block break-words text-[15px] leading-snug text-[#101820] transition-colors hover:text-[#6e7f42]"
+                      className="mt-2 block break-words text-base leading-snug text-[#101820] transition-colors hover:text-[#6e7f42] sm:text-lg"
                     >
                       {site.email}
                     </a>
@@ -129,7 +161,7 @@ export default function ContactPage() {
                     </p>
                     <a
                       href={site.phoneHref}
-                      className="mt-2 block text-[15px] leading-snug text-[#101820] transition-colors hover:text-[#6e7f42]"
+                      className="mt-2 block text-base leading-snug text-[#101820] transition-colors hover:text-[#6e7f42] sm:text-lg"
                     >
                       {site.phone}
                     </a>
@@ -139,7 +171,7 @@ export default function ContactPage() {
                     <p className="text-[11px] font-semibold tracking-[0.18em] text-[#6e7f42] uppercase">
                       Address
                     </p>
-                    <p className="mt-2 text-[15px] leading-snug text-[#101820]">
+                    <p className="mt-2 text-base leading-snug text-[#101820] sm:text-lg">
                       {site.name}
                       <br />
                       {site.address.city}, {site.address.country}
