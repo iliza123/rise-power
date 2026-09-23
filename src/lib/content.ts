@@ -131,7 +131,7 @@ export const useCases = [
     title: "Homes & Emergency Response",
     description:
       "Backup during outages and severe weather for homes, community gathering spaces, and emergency kits. Zero exhaust enables indoor-safe operation when the grid drops.",
-    image: "/media/cases/homes-community.png",
+    image: "/media/cases/homes-emergency.png",
     howItWorks: [
       "Keep Sentinel or Titan ready in home and community emergency kits",
       "Power lights, laptops, charging, and essential small devices",

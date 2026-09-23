@@ -120,11 +120,18 @@ export function CapabilityDetail({ capability }: CapabilityDetailProps) {
 
   return (
     <main className="bg-[#fbfaf7] text-[#101820]">
-      {/* 1. Hero — overlay (capability assets are near-square; split leaves a hard seam + empty copy column) */}
+      {/* 1. Hero — split for wide integration asset; overlay for nearer-square capability photos */}
       <StackedPageHero
+        layout={capability.id === "integration" ? "split" : "overlay"}
         imageSrc={capability.images.hero.src}
         imageAlt={capability.images.hero.alt}
-        imageClassName="object-cover object-[center_42%]"
+        imageClassName={
+          capability.id === "integration"
+            ? undefined
+            : "object-cover object-[center_42%]"
+        }
+        imageWidth={capability.id === "integration" ? 3840 : 1920}
+        imageHeight={capability.id === "integration" ? 1300 : 1080}
         tone="#0a100e"
         compact
       >

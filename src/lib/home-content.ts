@@ -684,14 +684,14 @@ export const capabilities = {
       href: "/capabilities/system-integration",
       imageSrc: "/media/capabilities/system-integration.png",
       imageAlt:
-        "Rise Mission Power module on a workbench with vehicle and facility power integration",
+        "Rise Mission Power module on a workbench beside a Rise-branded vehicle at a facility",
       secondaryImageSrc: "/media/use-cases/uc-deployment.png",
       secondaryImageAlt:
         "Military personnel, drone, and truck in a snowy field",
       gallery: [
         {
           src: "/media/capabilities/system-integration.png",
-          alt: "Rise Mission Power module connected for vehicle and facility power integration",
+          alt: "Rise Mission Power module with blueprints and vehicle for system integration",
         },
         {
           src: "/media/use-cases/defense-security.jpg",
@@ -949,8 +949,9 @@ export const customerPartners = {
         { value: "CARTRIDGE", label: "Logistics Ready" },
       ],
       href: "/use-cases#use-cases",
-      image: "Family with Rise Power backup during a home outage",
+      image: "Soldiers using Rise Mission Power in a snowy forest camp",
       imageSrc: "/media/cases/homes-community.png",
+      imageClassName: "object-cover object-[center_40%]",
     },
     {
       category: "MINING COMPANY",
