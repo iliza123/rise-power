@@ -105,7 +105,7 @@ export function DatasheetProductSection({
             </h2>
 
             <p
-              className="mt-3 max-w-xl text-base leading-relaxed"
+              className="type-section-body mt-3 max-w-xl"
               style={{ color: MUTED }}
             >
               {product.description}

@@ -79,7 +79,7 @@ function BlockRenderer({
     case "paragraph":
       return (
         <Reveal variant="up" delay={Math.min(index * 40, 200)}>
-          <p className="text-base leading-relaxed text-foreground/85 sm:text-lg">
+          <p className="type-section-body text-foreground/85">
             {block.text}
           </p>
         </Reveal>
@@ -127,7 +127,7 @@ function BlockRenderer({
                 >
                   {String(i + 1).padStart(2, "0")}
                 </span>
-                <p className="text-base leading-relaxed text-[#20251f] sm:text-lg">
+                <p className="type-section-body text-[#20251f]">
                   {item}
                 </p>
               </li>
@@ -192,7 +192,7 @@ export function InsightArticleView({
             />
           </h1>
 
-          <p className="mt-5 text-base leading-relaxed text-white/90 sm:mt-6 sm:text-lg">
+          <p className="type-section-body mt-5 !text-white/90 sm:mt-6">
             {article.excerpt}
           </p>
 
@@ -283,7 +283,7 @@ export function InsightArticleView({
                     </h3>
 
                     <p
-                      className="mt-3 line-clamp-3 text-base leading-relaxed sm:text-lg"
+                      className="type-card-body mt-3 line-clamp-3"
                       style={{ color: MUTED }}
                     >
                       {item.excerpt}

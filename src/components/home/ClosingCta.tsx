@@ -105,7 +105,7 @@ export function ClosingCta() {
                       <p className="type-card-label text-[10px] leading-tight text-white sm:text-[11px]">
                         {chip.title}
                       </p>
-                      <p className="type-card-body-on-dark mt-0.5 hidden text-[0.9375rem] leading-snug sm:block">
+                      <p className="type-card-body-on-dark mt-0.5 hidden leading-snug sm:block">
                         {chip.subtitle}
                       </p>
                       <span

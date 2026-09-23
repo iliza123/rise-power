@@ -59,8 +59,8 @@ const focusAreas = [
     description:
       "Quiet backup for city facilities, public works, and neighbourhood operations. Open to product trials and clean-energy pilot programs.",
     image: "/media/markets/commercial.png",
-    href: "/use-cases#defense-security",
-    cta: "View Municipal",
+    href: "/use-cases#use-cases",
+    cta: "View Municipalities",
   },
   {
     number: "02",
@@ -95,8 +95,8 @@ function ContourDecoration({
     <div
       aria-hidden="true"
       className={`pointer-events-none absolute ${
-        position === "left" ? "-left-24 -top-20" : "-right-24 -top-20"
-      } h-[330px] w-[440px] opacity-70`}
+        position === "left" ? "-left-24 -top-8" : "-right-24 -top-8"
+      } h-[280px] w-[440px] opacity-70`}
     >
       <svg viewBox="0 0 440 330" className="h-full w-full" fill="none">
         <path
@@ -172,27 +172,29 @@ function SectionEyebrow({
 
 function ValueCard({ value }: { value: (typeof values)[number] }) {
   return (
-    <article className="flex h-full flex-col overflow-hidden rounded-[7px] border border-[#d9dfe3] bg-white p-3.5 sm:p-4">
-      <div className="flex items-center gap-4 px-2 pt-2">
-        <span
-          className="font-display text-[30px] font-bold leading-none"
-          style={{ color: sage }}
-        >
-          {value.number}
-        </span>
+    <article className="flex h-full flex-col overflow-hidden rounded-[7px] border border-[#d9dfe3] bg-white">
+      <div className="flex flex-1 flex-col px-4 pt-4 sm:px-5 sm:pt-5">
+        <div className="flex items-center gap-4">
+          <span
+            className="font-display text-[30px] font-bold leading-none"
+            style={{ color: sage }}
+          >
+            {value.number}
+          </span>
 
-        <span className="h-px w-14 bg-[#aeb6bd]" />
+          <span className="h-px w-14 bg-[#aeb6bd]" aria-hidden="true" />
+        </div>
+
+        <h3 className="mt-4 min-h-[2.1em] whitespace-pre-line font-display text-[26px] leading-[1.05] font-bold tracking-tight uppercase sm:text-[28px]">
+          {value.title}
+        </h3>
+
+        <p className="mt-3 flex-1 text-base leading-[1.5] text-[#66717d]">
+          {value.description}
+        </p>
       </div>
 
-      <h3 className="mt-6 whitespace-pre-line px-2 font-display text-[27px] leading-[1.02] font-bold tracking-tight uppercase sm:text-[29px]">
-        {value.title}
-      </h3>
-
-      <p className="mt-5 min-h-[88px] px-2 text-base leading-[1.5] text-[#66717d]">
-        {value.description}
-      </p>
-
-      <div className="relative mt-6 aspect-[1.45/1] overflow-hidden rounded-[5px]">
+      <div className="relative mt-5 aspect-[1.45/1] w-full shrink-0 overflow-hidden">
         <Image
           src={value.image}
           alt={value.title.replace(/\n/g, " ")}
@@ -209,44 +211,48 @@ function FocusCard({ area }: { area: (typeof focusAreas)[number] }) {
   return (
     <Link
       href={area.href}
-      className="group flex h-full flex-col overflow-hidden rounded-[7px] border border-[#d9dfe3] bg-white p-3.5 transition-colors hover:border-[#b8c4a8] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6e7f42] sm:p-4"
+      className="group flex h-full flex-col overflow-hidden rounded-[7px] border border-[#d9dfe3] bg-white transition-colors hover:border-[#b8c4a8] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6e7f42]"
     >
-      <div className="flex items-center gap-4 px-2 pt-2">
+      <div className="flex flex-1 flex-col px-5 pt-4 sm:px-5 sm:pt-5">
+        <div className="flex items-center gap-4">
+          <span
+            className="font-display text-[30px] font-bold leading-none"
+            style={{ color: sage }}
+          >
+            {area.number}
+          </span>
+
+          <span className="h-px w-14 bg-[#aeb6bd]" />
+        </div>
+
+        <h3 className="mt-4 whitespace-pre-line font-display text-[27px] leading-[1.02] font-bold tracking-tight uppercase sm:text-[29px]">
+          {area.title}
+        </h3>
+
+        <p className="type-card-body mt-3 min-h-[4.5em] text-[#66717d]">
+          {area.description}
+        </p>
+      </div>
+
+      <div className="mt-auto px-5 pt-4 sm:px-5">
+        <div className="relative aspect-[1.45/1] overflow-hidden rounded-[5px]">
+          <Image
+            src={area.image}
+            alt={area.title.replace(/\n/g, " ")}
+            fill
+            sizes="(min-width: 1280px) 33vw, (min-width: 640px) 50vw, 88vw"
+            className="object-cover transition-transform duration-500 ease-out group-hover:scale-[1.03]"
+          />
+        </div>
+
         <span
-          className="font-display text-[30px] font-bold leading-none"
+          className="mt-4 mb-4 inline-flex items-center gap-2 text-sm font-semibold tracking-wide uppercase transition-opacity group-hover:opacity-80 sm:mb-5"
           style={{ color: sage }}
         >
-          {area.number}
+          {area.cta}
+          <ArrowRight className="size-4 shrink-0" aria-hidden="true" />
         </span>
-
-        <span className="h-px w-14 bg-[#aeb6bd]" />
       </div>
-
-      <h3 className="mt-6 whitespace-pre-line px-2 font-display text-[27px] leading-[1.02] font-bold tracking-tight uppercase sm:text-[29px]">
-        {area.title}
-      </h3>
-
-      <p className="mt-5 min-h-[88px] flex-1 px-2 text-base leading-[1.5] text-[#66717d]">
-        {area.description}
-      </p>
-
-      <div className="relative mt-6 aspect-[1.45/1] overflow-hidden rounded-[5px]">
-        <Image
-          src={area.image}
-          alt={area.title.replace(/\n/g, " ")}
-          fill
-          sizes="(min-width: 1280px) 33vw, (min-width: 640px) 50vw, 88vw"
-          className="object-cover transition-transform duration-500 ease-out group-hover:scale-[1.03]"
-        />
-      </div>
-
-      <span
-        className="mt-5 inline-flex items-center gap-2 px-2 text-sm font-semibold tracking-wide uppercase transition-opacity group-hover:opacity-80"
-        style={{ color: sage }}
-      >
-        {area.cta}
-        <ArrowRight className="size-4 shrink-0" aria-hidden="true" />
-      </span>
     </Link>
   );
 }
@@ -274,7 +280,7 @@ export default function CompanyPage() {
             <span style={{ color: sage }}>Field Validated.</span>
           </h1>
 
-          <p className="mt-6 max-w-[760px] text-base leading-[1.55] text-white sm:mt-8 sm:text-xl xl:text-[22px]">
+          <p className="type-section-body mt-6 max-w-[760px] text-white sm:mt-8">
             Rise Power is engineered, manufactured, and validated in British
             Columbia. A CIMtech Green Energy company.
           </p>
@@ -303,12 +309,12 @@ export default function CompanyPage() {
       {/* MISSION                                                            */}
       {/* ================================================================== */}
 
-      <section className="relative overflow-hidden bg-[#fbfaf7] py-12 sm:py-16 lg:py-24">
+      <section className="relative overflow-hidden bg-[#fbfaf7] py-10 sm:py-12 lg:py-16">
         <ContourDecoration position="left" />
         <ContourDecoration position="right" />
 
         <div className="relative mx-auto max-w-[1440px] px-6 lg:px-10">
-          <div className="grid items-center gap-8 lg:grid-cols-[1.04fr_0.96fr] lg:gap-16">
+          <div className="grid items-center gap-6 lg:grid-cols-[1.04fr_0.96fr] lg:gap-12">
             <Reveal variant="left" className="min-w-0">
               <div className="relative aspect-[1.08/1] overflow-hidden rounded-[7px]">
                 <Image
@@ -325,11 +331,11 @@ export default function CompanyPage() {
               <div className="min-w-0 lg:pl-2">
                 <SectionEyebrow>Our Mission</SectionEyebrow>
 
-                <h2 className="mt-7 font-display text-4xl leading-[0.92] font-bold tracking-tight uppercase sm:text-[52px] lg:text-[64px] xl:text-[74px]">
+                <h2 className="mt-4 font-display text-4xl leading-[0.92] font-bold tracking-tight uppercase sm:text-[52px] lg:text-[64px] xl:text-[74px]">
                   Mission.
                 </h2>
 
-                <div className="mt-7 max-w-xl space-y-5 text-base leading-[1.6] break-words text-[#66717d] sm:text-lg">
+                <div className="type-section-body mt-5 max-w-xl space-y-4 break-words text-[#66717d]">
                   <p>
                     Rise Mission Power builds zero-emissions, portable hydrogen
                     power for municipal, emergency, field, and off-grid
@@ -347,7 +353,7 @@ export default function CompanyPage() {
                   </p>
                 </div>
 
-                <div className="mt-9">
+                <div className="mt-7">
                   <a
                     href="/contact"
                     className="inline-flex min-h-12 items-center justify-center gap-2 rounded-sm bg-[#849363] px-8 text-sm font-semibold tracking-wide text-white uppercase transition-opacity hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6e7f42]"
@@ -366,7 +372,7 @@ export default function CompanyPage() {
       {/* VALUES                                                              */}
       {/* ================================================================== */}
 
-      <section className="relative overflow-hidden bg-white py-12 sm:py-16 lg:py-24">
+      <section className="relative overflow-hidden bg-white py-10 sm:py-12 lg:py-16">
         <ContourDecoration position="left" />
 
         <div className="relative mx-auto max-w-[1440px] px-6 lg:px-10">
@@ -376,13 +382,13 @@ export default function CompanyPage() {
                 <SectionEyebrow>Our Values</SectionEyebrow>
               </div>
 
-              <h2 className="mt-7 font-display text-4xl leading-[0.92] font-bold tracking-tight uppercase sm:text-[48px] lg:text-[62px] xl:text-[76px]">
+              <h2 className="mt-4 font-display text-4xl leading-[0.92] font-bold tracking-tight uppercase sm:text-[48px] lg:text-[62px] xl:text-[76px]">
                 Our Values
               </h2>
             </div>
           </Reveal>
 
-          <div className="mt-12 xl:hidden">
+          <div className="mt-8 xl:hidden">
             <SnapCarousel
               ariaLabel="Our values"
               showArrows
@@ -399,7 +405,7 @@ export default function CompanyPage() {
           </div>
 
           <RevealStagger
-            className="mt-12 hidden gap-5 xl:grid xl:grid-cols-4"
+            className="mt-8 hidden gap-4 xl:grid xl:grid-cols-4"
             step={70}
           >
             {values.map((value) => (
@@ -413,7 +419,7 @@ export default function CompanyPage() {
       {/* FOCUS AREAS                                                         */}
       {/* ================================================================== */}
 
-      <section className="relative bg-[#fbfaf7] py-12 sm:py-16 lg:py-24">
+      <section className="relative bg-[#fbfaf7] py-10 sm:py-12 lg:py-16">
         <div id="focus" className="pointer-events-none absolute top-0 h-0 w-0 scroll-mt-28" />
         <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true">
           <ContourDecoration position="left" />
@@ -427,18 +433,18 @@ export default function CompanyPage() {
                 <SectionEyebrow>Focus Areas</SectionEyebrow>
               </div>
 
-              <h2 className="mt-7 font-display text-4xl leading-[0.92] font-bold tracking-tight uppercase sm:text-[46px] lg:text-[60px] xl:text-[74px]">
+              <h2 className="mt-4 font-display text-4xl leading-[0.92] font-bold tracking-tight uppercase sm:text-[46px] lg:text-[60px] xl:text-[74px]">
                 Built For The Missions That Matter.
               </h2>
 
-              <p className="mx-auto mt-6 max-w-[640px] text-base leading-[1.55] text-[#66717d] sm:text-lg">
+              <p className="type-section-body mx-auto mt-4 max-w-[640px] text-[#66717d]">
                 Silent, field-validated hydrogen power for defense, civic
                 operations, and emergency response.
               </p>
             </div>
           </Reveal>
 
-          <div className="mt-12 xl:hidden">
+          <div className="mt-8 xl:hidden">
             <SnapCarousel
               ariaLabel="Focus areas"
               showArrows
@@ -455,7 +461,7 @@ export default function CompanyPage() {
           </div>
 
           <RevealStagger
-            className="mt-12 hidden gap-5 xl:grid xl:grid-cols-3"
+            className="mt-8 hidden gap-4 xl:grid xl:grid-cols-3"
             step={70}
           >
             {focusAreas.map((area) => (

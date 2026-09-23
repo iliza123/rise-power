@@ -133,7 +133,7 @@ function PillarRow({
           {tab.title}
         </h3>
 
-        <p className="mt-3 max-w-[42ch] text-base leading-[1.5] text-[#5c6560] sm:mt-3.5 sm:text-lg">
+        <p className="type-section-body mt-3 max-w-[42ch] text-[#5c6560] sm:mt-3.5">
           {tab.body}
         </p>
 
@@ -151,7 +151,7 @@ function PillarRow({
                     <p className="text-[11px] font-semibold tracking-[0.16em] text-[#101820] uppercase">
                       {callout.title}
                     </p>
-                    <p className="mt-0.5 text-base leading-snug text-[#6b746c]">
+                    <p className="type-section-body mt-0.5 text-[#6b746c]">
                       {callout.body}
                     </p>
                   </div>
@@ -238,7 +238,7 @@ export default function CapabilitiesPage() {
             ) : null}
           </h1>
 
-          <p className="mt-6 max-w-[580px] text-base leading-relaxed text-white sm:mt-7 sm:text-lg xl:text-xl">
+          <p className="type-section-body mt-6 max-w-[580px] text-white sm:mt-7">
             {hero.body}
           </p>
 
@@ -293,7 +293,7 @@ export default function CapabilitiesPage() {
                 style={{ background: "rgba(168, 184, 122, 0.7)" }}
                 aria-hidden
               />
-              <p className="mx-auto mt-4 max-w-2xl text-base leading-[1.5] text-[#b7c1c9] sm:mt-5 sm:text-lg">
+              <p className="type-section-body mx-auto mt-4 max-w-2xl text-[#b7c1c9] sm:mt-5">
                 {capabilities.body}
               </p>
             </div>
@@ -333,7 +333,7 @@ export default function CapabilitiesPage() {
                   {performanceMetrics.headingAccent}
                 </span>
               </h2>
-              <p className="mx-auto mt-3 max-w-[42ch] text-base leading-[1.5] text-[#5c6560] sm:mt-4 sm:text-lg">
+              <p className="type-section-body mx-auto mt-3 max-w-[42ch] text-[#5c6560] sm:mt-4">
                 {performanceMetrics.body}
               </p>
             </div>
@@ -393,7 +393,7 @@ export default function CapabilitiesPage() {
                     <p className="mx-auto mt-3 max-w-[20ch] text-sm leading-[1.4] font-medium text-[#2a333c] sm:mt-4">
                       {gauge.title}
                     </p>
-                    <p className="mx-auto mt-1 max-w-[24ch] text-base leading-[1.45] text-[#6b746c]">
+                    <p className="type-section-body mx-auto mt-1 max-w-[24ch] text-[#6b746c]">
                       {gauge.body}
                     </p>
                   </article>
@@ -419,7 +419,7 @@ export default function CapabilitiesPage() {
               <br />
               <span style={{ color: sage }}>{proof.headingAccent}</span>
             </h2>
-            <p className="mt-5 max-w-2xl text-base leading-relaxed text-[#687068] sm:text-lg">
+            <p className="type-section-body mt-5 max-w-2xl text-[#687068]">
               {proof.body}
             </p>
             <Link

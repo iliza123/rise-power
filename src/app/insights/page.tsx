@@ -88,7 +88,7 @@ export default function InsightsPage() {
             <span style={{ color: sageOnDark }}>answers.</span>
           </h1>
 
-          <p className="mt-4 max-w-[640px] text-base leading-[1.55] text-white sm:mt-6 sm:text-xl xl:text-[22px]">
+          <p className="type-section-body mt-4 max-w-[640px] text-white sm:mt-6">
             Guides and comparisons on hydrogen fuel cells, silent generators,
             and portable power for defense and critical operations.
           </p>
@@ -162,7 +162,7 @@ export default function InsightsPage() {
                   </h2>
 
                   <p
-                    className="mt-5 max-w-[480px] text-base leading-[1.6] sm:text-lg"
+                    className="type-section-body mt-5 max-w-[480px]"
                     style={{ color: muted }}
                   >
                     {featured.excerpt}

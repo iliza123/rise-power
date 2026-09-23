@@ -235,7 +235,7 @@ export default function ResourcesPage() {
             Resources
           </h1>
 
-          <p className="mt-4 max-w-[720px] text-base leading-[1.55] text-white sm:mt-6 sm:text-xl xl:text-[22px]">
+          <p className="type-section-body mt-4 max-w-[720px] text-white sm:mt-6">
             Datasheets, procurement FAQ, insights, and investor materials for
             programs, integration, and buying teams evaluating Rise Power systems.
           </p>
@@ -276,7 +276,7 @@ export default function ResourcesPage() {
                 Choose Your Brief.
               </h2>
               <p
-                className="mt-3 max-w-[560px] text-base leading-[1.55] sm:mt-4 sm:text-lg"
+                className="type-section-body mt-3 max-w-[560px] sm:mt-4"
                 style={{ color: muted }}
               >
                 Four paths into the Rise Power resource stack — specs,
@@ -330,7 +330,7 @@ export default function ResourcesPage() {
                     </h3>
 
                     <p
-                      className="mt-3 flex-1 text-base leading-[1.55]"
+                      className="type-card-body mt-3 flex-1"
                       style={{ color: muted }}
                     >
                       {item.description}
@@ -387,7 +387,7 @@ export default function ResourcesPage() {
                   </h3>
 
                   <p
-                    className="mt-3 flex-1 text-base leading-[1.55]"
+                    className="type-card-body mt-3 flex-1"
                     style={{ color: muted }}
                   >
                     {item.description}
@@ -415,7 +415,7 @@ export default function ResourcesPage() {
                 <br />
                 <span style={{ color: sage }}>The Hardware.</span>
               </h2>
-              <p className="mt-3 max-w-[540px] text-base leading-[1.55] text-[#b7c1c9] sm:mt-4 sm:text-lg">
+              <p className="type-section-body mt-3 max-w-[540px] text-[#b7c1c9] sm:mt-4">
                 Open any system for engineering targets, form factor notes, and
                 briefing-gated datasheets.
               </p>
@@ -516,7 +516,7 @@ export default function ResourcesPage() {
                   Recent Briefings.
                 </h2>
                 <p
-                  className="mt-3 max-w-[520px] text-base leading-[1.55] sm:mt-4 sm:text-lg"
+                  className="type-section-body mt-3 max-w-[520px] sm:mt-4"
                   style={{ color: muted }}
                 >
                   Milestones, validation notes, and primers for teams evaluating
@@ -572,7 +572,7 @@ export default function ResourcesPage() {
                       {article.title}
                     </h3>
                     <p
-                      className="mt-3 flex-1 text-base leading-[1.55]"
+                      className="type-card-body mt-3 flex-1"
                       style={{ color: muted }}
                     >
                       {article.excerpt}
@@ -620,7 +620,7 @@ export default function ResourcesPage() {
                     {article.title}
                   </h3>
                   <p
-                    className="mt-3 flex-1 text-base leading-[1.55]"
+                    className="type-card-body mt-3 flex-1"
                     style={{ color: muted }}
                   >
                     {article.excerpt}
@@ -666,7 +666,7 @@ export default function ResourcesPage() {
                 aria-hidden
               />
               <p
-                className="mx-auto mt-3 max-w-[520px] text-base leading-[1.55] sm:text-lg"
+                className="type-section-body mx-auto mt-3 max-w-[520px]"
                 style={{ color: muted }}
               >
                 Deck and company one-pager for qualified investors. For models,
@@ -711,7 +711,7 @@ export default function ResourcesPage() {
                   </h3>
 
                   <p
-                    className="mt-2 max-w-[420px] flex-1 text-base leading-relaxed"
+                    className="type-card-body mt-2 max-w-[420px] flex-1"
                     style={{ color: muted }}
                   >
                     {item.description}

@@ -148,7 +148,7 @@ export default function DatasheetsPage() {
             Datasheets
           </h1>
 
-          <p className="mt-5 max-w-[640px] text-base leading-[1.55] text-white sm:mt-6 sm:text-xl xl:text-[22px]">
+          <p className="type-section-body mt-5 max-w-[640px] text-white sm:mt-6">
             Technical specifications for Rise Power systems. Beta-stage hardware
             in active validation — full datasheets are available on briefing
             request as compliance work completes.

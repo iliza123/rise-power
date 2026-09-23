@@ -62,7 +62,7 @@ export function PerformanceMetricCard({
         <h3 className="type-card-title-sm mt-3 flex min-h-[2.6em] max-w-[14rem] items-start justify-center text-center text-[0.8rem] leading-snug text-[#1a1c16] sm:min-h-[2.8em] sm:text-[0.85rem]">
           {title}
         </h3>
-        <p className="type-card-body mt-1.5 min-h-[2.4em] max-w-[13.5rem] text-center text-[0.8rem] leading-snug sm:text-[0.85rem]">
+        <p className="type-card-body mt-1.5 min-h-[2.4em] max-w-[13.5rem] text-center leading-snug">
           {body}
         </p>
       </article>

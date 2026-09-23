@@ -113,7 +113,7 @@ export default function ContactPage() {
             Briefing
           </h1>
 
-          <p className="mt-4 max-w-[650px] text-base leading-[1.55] text-white sm:mt-5 sm:text-xl xl:text-[22px]">
+          <p className="type-section-body mt-4 max-w-[650px] text-white sm:mt-5">
             For procurement, programs, and integration leads. Tell us your
             operating environment and we will respond with specs, runtime data,
             and a deployment summary.
@@ -165,7 +165,7 @@ export default function ContactPage() {
                   Tell us your operating environment.
                 </h2>
 
-                <p className="mt-3 max-w-[420px] text-base leading-[1.55] text-[#626e7a] sm:text-lg">
+                <p className="type-section-body mt-3 max-w-[420px] text-[#626e7a]">
                   We respond with specs, runtime data, and a deployment summary
                   tailored to your mission. For procurement, programs,
                   integration, and serious technical evaluation.
@@ -200,7 +200,7 @@ export default function ContactPage() {
                     <p className="text-[11px] font-semibold tracking-[0.18em] text-[#6e7f42] uppercase">
                       Address
                     </p>
-                    <p className="mt-1.5 text-lg leading-relaxed text-[#101820]">
+                    <p className="type-section-body mt-1.5 !text-[#101820]">
                       {site.name}
                       <br />
                       {site.address.city}, {site.address.country}

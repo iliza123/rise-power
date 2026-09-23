@@ -26,7 +26,7 @@ export function PageHero({ eyebrow, title, description }: PageHeroProps) {
             {title}
           </h1>
           {description ? (
-            <p className="mt-6 text-base leading-relaxed text-muted lg:text-lg">
+            <p className="type-section-body mt-6 text-muted">
               {description}
             </p>
           ) : null}

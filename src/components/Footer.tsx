@@ -449,7 +449,7 @@ export function Footer() {
             {footer.tagline}
           </p>
 
-          <p className="mt-5 max-w-[340px] text-mm leading-6 text-white">
+          <p className="type-section-body mt-5 max-w-[340px] !text-white">
             {footer.blurb}
           </p>
 
@@ -503,7 +503,7 @@ export function Footer() {
             style={{ background: sage }}
           />
 
-          <p className="mt-5 max-w-[350px] text-mm leading-6 text-white">
+          <p className="type-section-body mt-5 max-w-[350px] !text-white">
             {footer.newsletter.body}
           </p>
 

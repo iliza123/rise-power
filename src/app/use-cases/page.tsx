@@ -71,6 +71,7 @@
 
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import {
   ArrowRight,
   Box,
@@ -209,7 +210,7 @@ function EnvironmentTile({
             {item.title}
           </h3>
 
-          <p className="mt-4 max-w-[390px] text-base leading-relaxed text-white sm:text-lg">
+          <p className="type-card-body-on-dark mt-4 max-w-[390px]">
             {item.description}
           </p>
         </div>
@@ -255,7 +256,7 @@ function ProductConnectionCard({ product }: { product: ProductConnection }) {
           {product.title}
         </h3>
 
-        <p className="mt-4 text-base leading-relaxed text-[#687068] sm:text-lg">
+        <p className="type-card-body mt-4 text-[#687068]">
           {product.description}
         </p>
 
@@ -395,7 +396,7 @@ export default function UseCasesPage() {
             Use Cases
           </h1>
 
-          <p className="mt-6 max-w-[600px] text-base leading-relaxed text-white sm:mt-7 sm:text-lg xl:text-xl">
+          <p className="type-section-body mt-6 max-w-[600px] text-white sm:mt-7">
             Operating environments where Rise Power systems fit.
           </p>
 
@@ -446,7 +447,7 @@ export default function UseCasesPage() {
                 <span style={{ color: sage }}>One Power Platform.</span>
               </h2>
 
-              <p className="mx-auto mt-5 max-w-4xl text-base leading-relaxed text-[#626a63] sm:text-lg">
+              <p className="type-section-body mx-auto mt-5 max-w-4xl text-[#626a63]">
                 Hydrogen power engineered for the environments where
                 conventional generators fall short.
               </p>
@@ -548,7 +549,7 @@ export default function UseCasesPage() {
                   </span>
                 </h2>
 
-                <p className="mt-4 text-base leading-relaxed text-[#646c65] sm:text-lg">
+                <p className="type-section-body mt-4 text-[#646c65]">
                   Portable hydrogen power for city facilities, public works,
                   and neighbourhood operations. Quiet, zero-emission backup
                   when the grid is down — with refillable cartridges swapped
@@ -585,28 +586,26 @@ export default function UseCasesPage() {
                   })}
                 </div>
 
-                <div className="mt-auto flex flex-col gap-6 pt-7 xl:flex-row xl:items-center">
-                  <a
-                    href="#deployment"
-                    className="inline-flex min-h-12 items-center justify-center gap-2 rounded-sm px-7 text-sm font-semibold tracking-wide text-white uppercase transition-opacity hover:opacity-90"
-                    style={{ background: sage }}
-                  >
-                    Explore Municipal Solutions
-                    <ArrowRight className="size-5" />
-                  </a>
+                <div className="mt-auto border-t border-[#e1e3de] pt-7">
+                  <p className="text-center text-[11px] font-semibold tracking-[0.16em] text-[#8a9089] uppercase">
+                    Featured Products
+                  </p>
 
-                  <div>
-                    <p className="text-[11px] font-semibold tracking-[0.16em] text-[#8a9089] uppercase">
-                      Featured Products
-                    </p>
-
-                    <div className="mt-2 flex items-center gap-3 text-sm font-semibold uppercase">
-                      <span>SENTINEL</span>
-                      <span style={{ color: sage }}>|</span>
-                      <span>FALCON</span>
-                      <span style={{ color: sage }}>|</span>
-                      <span>TITAN</span>
-                    </div>
+                  <div className="mt-4 grid grid-cols-1 gap-2.5 sm:grid-cols-3">
+                    {[
+                      { label: "Sentinel", href: "/products#sentinel" },
+                      { label: "Falcon", href: "/products#falcon" },
+                      { label: "Titan", href: "/products#titan" },
+                    ].map((product) => (
+                      <Link
+                        key={product.href}
+                        href={product.href}
+                        className="inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-sm border border-[#d9dfe3] bg-[#fbfaf7] px-3 text-sm font-semibold tracking-[0.06em] text-[#20251f] uppercase transition-colors hover:border-[#6e7f42] hover:bg-white hover:text-[#6e7f42]"
+                      >
+                        {product.label}
+                        <ArrowRight className="size-4 shrink-0" aria-hidden />
+                      </Link>
+                    ))}
                   </div>
                 </div>
               </div>
@@ -635,7 +634,7 @@ export default function UseCasesPage() {
                 </span>
               </h2>
 
-              <p className="mt-4 max-w-2xl text-base leading-relaxed text-[#687068] sm:text-lg">
+              <p className="type-section-body mt-4 max-w-2xl text-[#687068]">
                 Continuous power without a diesel truck on site. Swap
                 refillable cartridges and extend runtime as long as the
                 outage lasts.
@@ -674,28 +673,26 @@ export default function UseCasesPage() {
                 })}
               </div>
 
-              <div className="mt-auto flex flex-col gap-6 pt-7 xl:flex-row xl:items-center">
-                <a
-                  href="/products"
-                  className="inline-flex min-h-12 items-center justify-center gap-2 rounded-sm px-7 text-sm font-semibold tracking-wide text-white uppercase transition-opacity hover:opacity-90"
-                  style={{ background: sage }}
-                >
-                  See Products
-                  <ArrowRight className="size-5" />
-                </a>
+              <div className="mt-auto border-t border-[#e1e3de] pt-7">
+                <p className="text-center text-[11px] font-semibold tracking-[0.16em] text-[#8a9089] uppercase">
+                  Featured Products
+                </p>
 
-                <div>
-                  <p className="text-[11px] font-semibold tracking-[0.16em] text-[#8a9089] uppercase">
-                    Featured Products
-                  </p>
-
-                  <div className="mt-2 flex items-center gap-3 text-sm font-semibold uppercase">
-                    <span>SENTINEL</span>
-                    <span style={{ color: sage }}>|</span>
-                    <span>FALCON</span>
-                    <span style={{ color: sage }}>|</span>
-                    <span>TITAN</span>
-                  </div>
+                <div className="mt-4 grid grid-cols-1 gap-2.5 sm:grid-cols-3">
+                  {[
+                    { label: "Sentinel", href: "/products#sentinel" },
+                    { label: "Falcon", href: "/products#falcon" },
+                    { label: "Titan", href: "/products#titan" },
+                  ].map((product) => (
+                    <Link
+                      key={product.href}
+                      href={product.href}
+                      className="inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-sm border border-[#d9dfe3] bg-white px-3 text-sm font-semibold tracking-[0.06em] text-[#20251f] uppercase transition-colors hover:border-[#6e7f42] hover:bg-[#fbfaf7] hover:text-[#6e7f42]"
+                    >
+                      {product.label}
+                      <ArrowRight className="size-4 shrink-0" aria-hidden />
+                    </Link>
+                  ))}
                 </div>
               </div>
             </div>
@@ -746,7 +743,7 @@ export default function UseCasesPage() {
                 <span style={{ color: sage }}>Real Power.</span>
               </h2>
 
-              <p className="mx-auto mt-5 max-w-3xl text-base leading-relaxed text-[#626a63] sm:text-lg">
+              <p className="type-section-body mx-auto mt-5 max-w-3xl text-[#626a63]">
                 Explore how each Rise product supports everyday resilience
                 across municipal, field, emergency, and mobile applications.
               </p>

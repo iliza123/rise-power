@@ -151,7 +151,7 @@ export function InsightsArchiveList({ articles }: InsightsArchiveListProps) {
                 </h3>
 
                 <p
-                  className="mt-1.5 line-clamp-1 max-w-[54ch] text-sm leading-snug"
+                  className="type-card-body mt-1.5 line-clamp-2 max-w-[54ch]"
                   style={{ color: muted }}
                 >
                   {article.excerpt}

@@ -47,8 +47,9 @@ function CaseCard({ item, index }: { item: CaseItem; index: number }) {
   const icons = statIcons[index] ?? statIcons[0];
 
   return (
-    <article
-      className="group flex h-full min-h-0 w-full min-w-0 flex-col overflow-hidden rounded-[12px] border transition-transform duration-300 hover:-translate-y-1"
+    <Link
+      href={item.href}
+      className="group flex h-full min-h-0 w-full min-w-0 flex-col overflow-hidden rounded-[12px] border transition-transform duration-300 hover:-translate-y-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6e7f42]"
       style={{
         background: charcoal,
         borderColor: "#23323a",
@@ -164,9 +165,8 @@ function CaseCard({ item, index }: { item: CaseItem; index: number }) {
           </div>
         </div>
 
-        <Link
-          href={item.href}
-          className="group/link flex min-h-[48px] shrink-0 items-center justify-between border-t px-4 transition-colors hover:bg-white/[0.035] sm:px-5"
+        <div
+          className="flex min-h-[48px] shrink-0 items-center justify-between border-t px-4 transition-colors group-hover:bg-white/[0.035] sm:px-5"
           style={{ borderColor: "rgba(255,255,255,.13)" }}
         >
           <span className="type-cta-ghost text-white">
@@ -174,13 +174,14 @@ function CaseCard({ item, index }: { item: CaseItem; index: number }) {
           </span>
 
           <ArrowRight
-            className="size-4 shrink-0 transition-transform group-hover/link:translate-x-1"
+            className="size-4 shrink-0 transition-transform group-hover:translate-x-1"
             strokeWidth={1.8}
             style={{ color: "#8bb52e" }}
+            aria-hidden
           />
-        </Link>
+        </div>
       </div>
-    </article>
+    </Link>
   );
 }
 

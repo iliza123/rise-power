@@ -96,7 +96,7 @@ export function HomePage() {
                 <br />
                 <span style={{ color: sage }}>{hero.headlineLine2}</span>
               </h1>
-              <p className="mt-6 max-w-md text-base leading-relaxed text-white sm:text-lg lg:text-xl">
+              <p className="type-section-body mt-6 max-w-md !text-white">
                 {hero.body}
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">

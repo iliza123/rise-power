@@ -131,7 +131,7 @@ export function FaqAccordion({
                     }`}
                   >
                     <p
-                      className="text-left text-base leading-[1.65] sm:text-lg"
+                      className="type-section-body text-left"
                       style={{ color: muted }}
                     >
                       <AnswerBody text={item.a} />

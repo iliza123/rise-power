@@ -250,7 +250,7 @@ export const threeMarkets = {
       points: ["City Facilities", "Public Works", "Quiet Ops"],
       detail:
         "Rapidly deployable zero-emission power when the grid is down — ready for product trials and clean-energy pilots.",
-      href: "/use-cases#defense-security",
+      href: "/use-cases#use-cases",
       cta: "View Municipal",
       image: "Municipalities and public works market imagery",
       imageSrc: "/media/markets/defense-military.png",
@@ -338,7 +338,7 @@ export const featuredProducts = {
   products: [
     {
       name: "SENTINEL",
-      trademark: "™",
+      trademark: "",
       subtitle: "Power Cube",
       body: "Compact hydrogen power for everyday backup and outdoor use. Quiet, plug-and-play setup with refillable hydrogen cartridges. Lightweight and easy to carry — no grid connection required.",
       runtime: "QUIET",
@@ -355,7 +355,7 @@ export const featuredProducts = {
     },
     {
       name: "FALCON",
-      trademark: "™",
+      trademark: "",
       subtitle: "Hydrogen Drone Range Extender",
       body: "Plug-and-play hydrogen range extender for compatible drones. Up to 5x extended flight range with low-noise, zero-emission operation and quick-swap hydrogen cartridges.",
       runtime: "UP TO 5×",
@@ -372,7 +372,7 @@ export const featuredProducts = {
     },
     {
       name: "TITAN",
-      trademark: "™",
+      trademark: "",
       subtitle: "Portable Generator",
       body: "Clean backup power for everyday and emergency use. 1.5 kW capacity, 40 lb portable weight, and unlimited runtime with refillable hydrogen cartridges.",
       runtime: "UNLIMITED",
@@ -858,7 +858,7 @@ export const customerPartners = {
         { value: "0 EMISSIONS", label: "At Point of Use" },
         { value: "<30 SEC", label: "Cartridge Swap" },
       ],
-      href: "/use-cases#defense-security",
+      href: "/use-cases#use-cases",
       image: "Municipal backup case",
       imageSrc: "/media/cases/defense.png",
     },
@@ -871,7 +871,7 @@ export const customerPartners = {
         { value: "QUIET", label: "Backup Operation" },
         { value: "CARTRIDGE", label: "Logistics Ready" },
       ],
-      href: "/use-cases#disaster-response",
+      href: "/use-cases#use-cases",
       image: "Home and community backup case",
       imageSrc: "/media/cases/telecom.png",
     },
@@ -884,7 +884,7 @@ export const customerPartners = {
         { value: "40 LB", label: "Titan Portable Weight" },
         { value: "1.5 kW", label: "Titan Capacity" },
       ],
-      href: "/use-cases#remote-operations",
+      href: "/use-cases#use-cases",
       image: "Utility and remote site case",
       imageSrc: "/media/cases/mining.png",
     },
@@ -897,7 +897,7 @@ export const customerPartners = {
         { value: "SILENT", label: "Low Acoustic" },
         { value: "RAPID", label: "Field Deployment" },
       ],
-      href: "/use-cases#disaster-response",
+      href: "/use-cases#use-cases",
       image: "Emergency services case",
       imageSrc: "/media/cases/emergency.png",
     },
@@ -974,7 +974,7 @@ export const footer = {
     {
       heading: "Markets",
       links: [
-        { label: "Municipalities & Public Works", href: "/use-cases#defense-security" },
+        { label: "Municipalities & Public Works", href: "/use-cases#use-cases" },
         { label: "Small Business & Mobile Sites", href: "/use-cases#critical-infrastructure" },
         { label: "Utilities & Remote Communities", href: "/use-cases#remote-operations" },
         { label: "Homes & Emergency Response", href: "/use-cases#disaster-response" },

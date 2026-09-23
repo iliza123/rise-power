@@ -167,7 +167,7 @@ function SectionHeading({
       </h2>
 
       {description && (
-        <p className="mx-auto mt-5 max-w-[820px] text-base leading-[1.55] text-[#626e7a] sm:text-lg">
+        <p className="type-section-body mx-auto mt-5 max-w-[820px] text-[#626e7a]">
           {description}
         </p>
       )}
@@ -362,7 +362,7 @@ export default function InvestorsPage() {
             Investors
           </h1>
 
-          <p className="mt-4 max-w-[650px] text-base leading-[1.55] text-white sm:text-xl">
+          <p className="type-section-body mt-4 max-w-[650px] text-white">
             Rise Power is raising to scale manufacturing, complete certification,
             and fulfill pilot deployments across disaster response, critical
             infrastructure, and defense. Materials and contact below for qualified
@@ -447,7 +447,7 @@ export default function InvestorsPage() {
                 <h3 className="mt-2 font-display text-2xl leading-[1.05] font-bold tracking-tight text-[#101820] uppercase sm:text-[28px] lg:text-[32px]">
                   Investor Deck
                 </h3>
-                <p className="mt-2 max-w-[420px] flex-1 text-base leading-relaxed text-[#66717d]">
+                <p className="type-card-body mt-2 max-w-[420px] flex-1 text-[#66717d]">
                   Full Rise Power investor briefing. Market sizing, technology,
                   traction, team, and use of funds.
                 </p>
@@ -489,7 +489,7 @@ export default function InvestorsPage() {
                 <h3 className="mt-2 font-display text-2xl leading-[1.05] font-bold tracking-tight text-[#101820] uppercase sm:text-[28px] lg:text-[32px]">
                   Company One-Pager
                 </h3>
-                <p className="mt-2 max-w-[440px] flex-1 text-base leading-relaxed text-[#66717d]">
+                <p className="type-card-body mt-2 max-w-[440px] flex-1 text-[#66717d]">
                   Revenue forecast and company overview. Quick-reference summary
                   for sharing with partners and committees.
                 </p>
@@ -632,7 +632,7 @@ export default function InvestorsPage() {
 
                     <div className="mt-2 min-w-0 sm:mt-2.5 sm:pl-11 lg:pl-12">
                       <p
-                        className={`text-base leading-[1.4] ${
+                        className={`type-section-body ${
                           isLast ? "text-white" : "text-[#2a333c]"
                         }`}
                       >

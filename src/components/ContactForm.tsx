@@ -89,7 +89,7 @@ export function ContactForm() {
         <h3 className="font-display text-2xl tracking-wide text-[#101820] uppercase sm:text-3xl">
           Message Received
         </h3>
-        <p className="mt-3 text-sm leading-relaxed text-[#626e7a] sm:text-base">
+        <p className="type-section-body mt-3 text-[#626e7a]">
           Thank you for reaching out. We will respond with specs, runtime data,
           and a deployment summary.
         </p>

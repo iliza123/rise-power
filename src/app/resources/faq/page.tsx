@@ -185,7 +185,7 @@ export default function ProcurementFaqPage() {
             Procurement FAQ
           </h1>
 
-          <p className="mt-5 max-w-[640px] text-base leading-[1.55] text-white sm:mt-6 sm:text-xl xl:text-[22px]">
+          <p className="type-section-body mt-5 max-w-[640px] text-white sm:mt-6">
             Common questions from procurement, programs, and integration teams
             evaluating Rise Power systems.
           </p>
@@ -233,7 +233,7 @@ export default function ProcurementFaqPage() {
                   {group.title}
                 </h2>
                 <p
-                  className="mx-auto mt-2 max-w-[480px] text-base leading-[1.55]"
+                  className="type-section-body mx-auto mt-2 max-w-[480px]"
                   style={{ color: muted }}
                 >
                   {group.summary}

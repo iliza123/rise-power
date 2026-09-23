@@ -275,15 +275,24 @@ function ProductSystemCard({
           className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
         />
 
-        <div className="absolute inset-0 bg-gradient-to-t from-black/35 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/35 via-transparent to-black/25" />
 
-        <div className="absolute top-4 left-4 flex max-w-[85%] items-center gap-2">
-          <span className="grid size-10 shrink-0 place-items-center rounded-full border border-[#b5d13c] bg-[#07120c]/80 text-[#b5d13c] backdrop-blur-sm">
-            <CategoryIcon className="size-5" strokeWidth={1.5} />
-          </span>
+        <div className="absolute top-3 left-3 right-3 sm:top-4 sm:left-4 sm:right-4">
+          <span className="inline-flex max-w-full items-center gap-2 rounded-sm border border-white/20 bg-[#061018]/82 py-1.5 pr-3 pl-1.5 shadow-[0_8px_24px_rgba(0,0,0,0.35)] backdrop-blur-md">
+            <span
+              className="grid size-8 shrink-0 place-items-center rounded-full border sm:size-9"
+              style={{
+                borderColor: `${lime}`,
+                color: lime,
+                background: "rgba(7, 18, 12, 0.55)",
+              }}
+            >
+              <CategoryIcon className="size-4 sm:size-[18px]" strokeWidth={1.5} />
+            </span>
 
-          <span className="text-[14px] leading-tight font-bold tracking-[0.08em] text-white uppercase">
-            {meta.category}
+            <span className="truncate text-[11px] leading-none font-bold tracking-[0.1em] text-white uppercase sm:text-[12px]">
+              {meta.category}
+            </span>
           </span>
         </div>
       </div>
@@ -292,14 +301,14 @@ function ProductSystemCard({
       <div className="flex flex-1 flex-col px-5 pt-5 pb-4">
         <h3 className="font-display text-2xl leading-none font-bold uppercase sm:text-[25px]">
           {product.name}
-          <sup className="ml-1 text-[9px]">™</sup>
+          {/* <sup className="ml-1 text-[9px]">™</sup> */}
         </h3>
 
         <p className="mt-2 text-[12px] font-medium tracking-[0.08em] text-white uppercase">
           {product.tagline}
         </p>
 
-        <p className="mt-4 mb-3 min-h-[72px] text-sm leading-relaxed text-white">
+        <p className="type-card-body-on-dark mt-4 mb-3 min-h-[72px]">
           {product.description}
         </p>
 
@@ -352,7 +361,7 @@ export default function ProductsPage() {
             Products
           </h1>
 
-          <p className="mt-5 max-w-[540px] text-base leading-relaxed text-white sm:text-lg xl:mt-7">
+          <p className="type-section-body mt-5 max-w-[540px] text-white xl:mt-7">
             Four products. One cartridge ecosystem. Portable hydrogen power
             for everyday resilience — municipal, emergency, field, and
             off-grid applications.
@@ -393,7 +402,7 @@ export default function ProductsPage() {
               <span className="text-[#6e7f42]">Every Mission.</span>
             </h2>
 
-            <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-[#596057] sm:text-lg">
+            <p className="type-section-body mx-auto mt-5 max-w-2xl text-[#596057]">
               A complete ecosystem of hydrogen power systems engineered for the
               world&apos;s most demanding environments.
             </p>
@@ -471,7 +480,7 @@ export default function ProductsPage() {
               <span className="text-[#6e7f42]">As a System.</span>
             </h2>
 
-            <p className="mt-6 max-w-[520px] text-base leading-relaxed text-[#3f3c36] sm:text-lg">
+            <p className="type-section-body mt-6 max-w-[520px] text-[#3f3c36]">
               Every Rise Power product is designed as a complete system. Power
               generation, fuel delivery, controls, and enclosure working together.
               Integrated system design delivers better performance and reliability
@@ -539,7 +548,7 @@ export default function ProductsPage() {
                   <h3 className="text-[15px] font-bold uppercase leading-tight sm:text-[18px]">
                     {item.title}
                   </h3>
-                  <p className="mt-1 text-sm leading-relaxed text-[#5c584e] sm:text-base">
+                  <p className="type-section-body mt-1 text-[#5c584e]">
                     {item.body}
                   </p>
                 </div>
@@ -567,7 +576,7 @@ export default function ProductsPage() {
               <span className="text-[#6e7f42]">One Mission.</span>
             </h2>
 
-            <p className="mx-auto mt-5 max-w-3xl text-base leading-relaxed text-[#596057] sm:text-lg">
+            <p className="type-section-body mx-auto mt-5 max-w-3xl text-[#596057]">
               Compare our hydrogen power systems and find the right solution
               for your operational needs.
             </p>
@@ -582,7 +591,7 @@ export default function ProductsPage() {
                     Specifications
                   </h3>
 
-                  <p className="mt-3 max-w-[190px] text-base leading-relaxed text-white">
+                  <p className="type-section-body mt-3 max-w-[190px] text-white">
                     Compare key features across the Rise Power product
                     lineup.
                   </p>
@@ -611,7 +620,7 @@ export default function ProductsPage() {
                     <div className="px-4 pb-4 text-center">
                       <h3 className="font-display text-lg font-bold uppercase">
                         {product.name}
-                        <sup className="ml-1 text-[8px]">™</sup>
+                        {/* <sup className="ml-1 text-[8px]">™</sup> */}
                       </h3>
 
                       <p className="mt-1 text-[10px] font-semibold tracking-[0.12em] text-white uppercase">
@@ -623,15 +632,20 @@ export default function ProductsPage() {
               </div>
 
               {/* COMPARISON ROWS */}
-              {comparisonRows.map((row) => {
+              {comparisonRows.map((row, rowIndex) => {
                 const Icon = row.icon;
+                const isLast = rowIndex === comparisonRows.length - 1;
 
                 return (
                   <div
                     key={row.label}
                     className="grid grid-cols-[240px_repeat(4,minmax(200px,1fr))]"
                   >
-                    <div className="flex items-center gap-4 border-l border-[#293a40] border-t border-t-white/15 bg-[#071b23] px-6 py-4">
+                    <div
+                      className={`flex items-center gap-4 border-l border-[#293a40] border-t border-t-white/15 bg-[#071b23] px-6 py-4 ${
+                        isLast ? "rounded-bl-lg border-b" : ""
+                      }`}
+                    >
                       <Icon
                         className="size-6 shrink-0 text-[#c1df29]"
                         strokeWidth={1.5}
@@ -645,10 +659,19 @@ export default function ProductsPage() {
                     {row.values.map((value, index) => (
                       <div
                         key={`${row.label}-${index}`}
-                        className={`flex min-w-0 items-center border-t border-t-white/15 bg-[#07151b] px-5 py-4 text-base leading-relaxed text-white ${index === 0
-                          ? "border-r border-[#293a40] border-l border-l-white/15"
-                          : "ml-1 border-x border-[#293a40]"
-                          }`}
+                        className={`flex min-w-0 items-center border-t border-t-white/15 bg-[#07151b] px-5 py-4 text-base leading-relaxed text-white ${
+                          index === 0
+                            ? "border-r border-[#293a40] border-l border-l-white/15"
+                            : "ml-1 border-x border-[#293a40]"
+                        } ${
+                          isLast
+                            ? `border-b ${
+                                index === 0
+                                  ? "rounded-br-lg"
+                                  : "rounded-b-lg"
+                              }`
+                            : ""
+                        }`}
                       >
                         {value}
                       </div>
@@ -656,37 +679,6 @@ export default function ProductsPage() {
                   </div>
                 );
               })}
-
-              {/* TABLE FOOTER */}
-              <div className="grid grid-cols-[240px_repeat(4,minmax(200px,1fr))]">
-                <div className="rounded-bl-lg border-b border-l border-[#293a40] border-t border-t-white/15 bg-[#071b23] p-5">
-                  <p className="font-display text-lg font-bold uppercase">
-                    Explore More
-                  </p>
-
-                  <p className="mt-1 max-w-[180px] text-sm leading-relaxed text-white">
-                    Learn more about each solution and its capabilities.
-                  </p>
-                </div>
-
-                {products.slice(0, 4).map((product, index) => (
-                  <div
-                    key={product.slug}
-                    className={`border border-t-0 border-[#293a40] border-t border-t-white/15 bg-[#07151b] p-4 ${index === 0
-                      ? "rounded-br-lg border-l border-l-white/15"
-                      : "ml-1 rounded-b-lg"
-                      }`}
-                  >
-                    <Link
-                      href={`#${product.slug}`}
-                      className="group flex min-h-12 items-center justify-center gap-2 rounded-sm border border-white/25 px-4 text-sm font-bold tracking-[0.08em] uppercase transition hover:border-[#91ad46] hover:text-[#c1df29]"
-                    >
-                      View Product
-                      <ArrowRight className="size-5 text-[#c1df29] transition-transform group-hover:translate-x-1" />
-                    </Link>
-                  </div>
-                ))}
-              </div>
             </div>
           </Reveal>
 

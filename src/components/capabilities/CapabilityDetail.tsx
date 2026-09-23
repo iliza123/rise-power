@@ -135,7 +135,7 @@ export function CapabilityDetail({ capability }: CapabilityDetailProps) {
             <TitleWithAccent title={capability.title} />
           </h1>
 
-          <p className="mt-5 max-w-xl text-base leading-relaxed text-white/90 sm:mt-6 sm:text-lg">
+          <p className="type-section-body mt-5 max-w-xl !text-white/90 sm:mt-6">
             {capability.heroBody}
           </p>
 
@@ -168,7 +168,7 @@ export function CapabilityDetail({ capability }: CapabilityDetailProps) {
                 <TitleWithAccent title={capability.heading} />
               </h2>
               <p
-                className="mt-3 max-w-[42rem] text-base leading-relaxed sm:text-lg"
+                className="type-section-body mt-3 max-w-[42rem]"
                 style={{ color: MUTED }}
               >
                 {capability.body}
@@ -243,7 +243,7 @@ export function CapabilityDetail({ capability }: CapabilityDetailProps) {
                           {callout.title}
                         </p>
                         <p
-                          className="mt-0.5 text-base leading-snug"
+                          className="type-section-body mt-0.5 leading-snug"
                           style={{ color: "#6b746c" }}
                         >
                           {callout.body}
@@ -272,7 +272,7 @@ export function CapabilityDetail({ capability }: CapabilityDetailProps) {
             </h2>
 
             <p
-              className="mt-3 max-w-[560px] text-base leading-relaxed sm:text-lg"
+              className="type-section-body mt-3 max-w-[560px]"
               style={{ color: MUTED }}
             >
               {capability.deliverablesIntro}
@@ -291,7 +291,7 @@ export function CapabilityDetail({ capability }: CapabilityDetailProps) {
                   >
                     {String(index + 1).padStart(2, "0")}
                   </span>
-                  <p className="text-base leading-relaxed text-[#20251f] sm:text-lg">
+                  <p className="type-section-body text-[#20251f]">
                     {item}
                   </p>
                 </li>
@@ -327,7 +327,7 @@ export function CapabilityDetail({ capability }: CapabilityDetailProps) {
                 </h2>
 
                 <p
-                  className="mt-3 max-w-[680px] text-base leading-relaxed sm:text-lg"
+                  className="type-section-body mt-3 max-w-[680px]"
                   style={{ color: MUTED }}
                 >
                   {roadmap.body}
@@ -357,7 +357,7 @@ export function CapabilityDetail({ capability }: CapabilityDetailProps) {
                     </h3>
 
                     <p
-                      className="text-base leading-relaxed lg:pt-1"
+                      className="type-section-body lg:pt-1"
                       style={{ color: MUTED }}
                     >
                       {item.description}
@@ -448,7 +448,7 @@ export function CapabilityDetail({ capability }: CapabilityDetailProps) {
                     </h3>
 
                     <p
-                      className="mt-2 line-clamp-3 text-base leading-relaxed sm:text-lg"
+                      className="type-card-body mt-2 line-clamp-3"
                       style={{ color: MUTED }}
                     >
                       {item.body}
