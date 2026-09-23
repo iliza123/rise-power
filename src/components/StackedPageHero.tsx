@@ -3,7 +3,8 @@ import Image from "next/image";
 type StackedPageHeroProps = {
   imageSrc: string;
   imageAlt: string;
-  /** Extra classes for the image (object-position, etc.). */
+  /** Extra classes for desktop (xl+) framing — object-position, translate, etc.
+   * Mobile always uses object-cover object-center. */
   imageClassName?: string;
   /** Section background when copy sits below the photo (below xl). */
   tone?: string;
@@ -36,7 +37,7 @@ type StackedPageHeroProps = {
  * Page hero: image above / copy below below xl; cinematic on xl+.
  * Split keeps copy left + photo right. Non-panoramic assets fill the
  * right column with cover so wide viewports don't show tone gaps.
- * Mobile split uses a controlled aspect band + fade into `tone`.
+ * Mobile always centers the crop; `imageClassName` framing applies at xl+.
  */
 export function StackedPageHero({
   imageSrc,
@@ -53,7 +54,10 @@ export function StackedPageHero({
   splitWash,
   children,
 }: StackedPageHeroProps) {
-  const mediaClassName = imageClassName ?? "object-cover object-center";
+  /** Mobile/tablet — always centered regardless of desktop framing. */
+  const mobileMediaClassName = "object-cover object-center";
+  /** Desktop — caller framing or default center. */
+  const desktopMediaClassName = imageClassName ?? "object-cover object-center";
   const overlayQuality = quality ?? 90;
   const splitQuality = quality ?? 100;
   const aspectRatio = imageWidth / Math.max(imageHeight, 1);
@@ -79,7 +83,7 @@ export function StackedPageHero({
         className={`relative isolate w-full overflow-hidden text-white ${splitMinH}`}
         style={{ backgroundColor: tone }}
       >
-        {/* Mobile / tablet — fixed band height + cover crop + fade into tone */}
+        {/* Mobile / tablet — centered crop + fade into tone */}
         <div
           className="relative h-[min(42svh,320px)] w-full overflow-hidden sm:h-[min(38svh,380px)] xl:hidden"
           style={{ backgroundColor: tone }}
@@ -91,7 +95,7 @@ export function StackedPageHero({
             priority
             quality={splitQuality}
             sizes="100vw"
-            className={mediaClassName}
+            className={mobileMediaClassName}
           />
           <div
             className="pointer-events-none absolute inset-x-0 bottom-0 h-24"
@@ -128,7 +132,7 @@ export function StackedPageHero({
               priority
               quality={splitQuality}
               sizes="58vw"
-              className={mediaClassName}
+              className={desktopMediaClassName}
             />
           )}
         </div>
@@ -157,6 +161,7 @@ export function StackedPageHero({
       style={{ backgroundColor: tone }}
     >
       <div className="relative aspect-[3/2] w-full shrink-0 sm:aspect-[16/10] lg:aspect-[21/9] xl:absolute xl:inset-0 xl:aspect-auto">
+        {/* Mobile: always centered. Desktop: optional framing via imageClassName. */}
         <Image
           src={imageSrc}
           alt={imageAlt}
@@ -164,7 +169,17 @@ export function StackedPageHero({
           priority
           quality={overlayQuality}
           sizes="100vw"
-          className={`${animateMedia ? "hero-animate-media" : ""} ${mediaClassName}`}
+          className={`${animateMedia ? "hero-animate-media" : ""} object-cover object-center xl:hidden`}
+        />
+        <Image
+          src={imageSrc}
+          alt=""
+          fill
+          priority
+          quality={overlayQuality}
+          sizes="100vw"
+          className={`${animateMedia ? "hero-animate-media" : ""} hidden xl:block ${desktopMediaClassName}`}
+          aria-hidden
         />
         {/* Mobile seam into tone */}
         <div

@@ -75,7 +75,7 @@ export function HomePage() {
             priority
             sizes="100vw"
             quality={85}
-            className="hero-animate-media object-cover object-[58%_center]"
+            className="hero-animate-media object-cover object-center xl:object-[58%_center]"
           />
           {/* Overlays only when copy sits on the photo (xl+) */}
           <div className="pointer-events-none absolute inset-0 hidden xl:block">
