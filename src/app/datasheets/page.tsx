@@ -25,7 +25,7 @@ const products: DatasheetProduct[] = [
     id: "sentinel",
     name: "Rise Sentinel™",
     image: "/media/datasheets/datasheet-1.png",
-    imageAlt: "Hydrogen cartridge kit in an open case",
+    imageAlt: "Rise Sentinel power system on a mountain deck at sunset",
     description:
       "Compact hydrogen power for everyday backup and outdoor use. Quiet, plug-and-play setup with refillable hydrogen cartridges. Lightweight and easy to carry — no grid connection required, zero-emissions power at the point of use.",
     specs: [
@@ -46,7 +46,7 @@ const products: DatasheetProduct[] = [
     id: "falcon",
     name: "Rise Falcon™",
     image: "/media/datasheets/datasheet-2.png",
-    imageAlt: "Snow scene with a generator and personnel, no drone",
+    imageAlt: "Technician with Rise Falcon support gear and drone at sunset",
     description:
       "Plug-and-play hydrogen range extender for compatible drones. Up to 5x extended flight range with low-noise, zero-emission operation. Quick-swap cartridges for inspection, mapping, public safety, industrial sites, and remote operations.",
     specs: [
@@ -66,7 +66,7 @@ const products: DatasheetProduct[] = [
     id: "titan",
     name: "Rise Titan™",
     image: "/media/datasheets/datasheet-3.png",
-    imageAlt: "Agricultural drone spraying crops",
+    imageAlt: "Rise Titan power system on a construction site at dusk",
     description:
       "Clean backup power for everyday and emergency use. A 1.5 kW zero-emissions portable generator with quiet operation, plug-and-play setup, and refillable hydrogen cartridges for municipalities, utilities, communities, and businesses.",
     specs: [
@@ -88,7 +88,7 @@ const products: DatasheetProduct[] = [
     name: "Hydrogen Cartridge Kit",
     nameLines: ["Hydrogen", "Cartridge Kit"],
     image: "/media/datasheets/datasheet-4.png",
-    imageAlt: "Soldier with a laptop and camouflage generator",
+    imageAlt: "Soldiers powering field devices with Rise hydrogen cartridge system",
     description:
       "Universal fuel cell compatible cartridges with RFID smart monitoring. Leak proof, lightweight, and designed for rapid field replenishment. Swap a cartridge and restore full runtime without tools or specialized training.",
     specs: [
