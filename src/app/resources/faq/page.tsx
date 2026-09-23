@@ -174,15 +174,13 @@ export default function ProcurementFaqPage() {
       />
 
       <StackedPageHero
-        layout="overlay"
+        layout="split"
         imageSrc="/media/FAQ/FAQ-hero.png"
-        imageAlt="Rise Mission Power engineers reviewing portable hydrogen systems in the lab"
-        imageClassName="object-cover object-[68%_center]"
-        imageWidth={1920}
-        imageHeight={600}
+        imageAlt="Rise Power portable unit in a forest mountain landscape at dusk"
+        imageWidth={3840}
+        imageHeight={1200}
         tone="#0a0f10"
         compact
-        animateMedia={false}
       >
         <div className="hero-animate-copy w-full max-w-[40rem] text-left">
           <SectionEyebrow onDark>Resources</SectionEyebrow>

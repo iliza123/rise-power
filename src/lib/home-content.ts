@@ -765,7 +765,7 @@ export const capabilities = {
       href: "/capabilities/field-deployment",
       imageSrc: "/media/capabilities/field-deployment-hero.png",
       imageAlt:
-        "Rise Mission Power field camp with portable generator, solar panels, and support vehicle",
+        "Rise portable power units at a desert field camp with solar panels, tent, and communications tower at sunset",
       secondaryImageSrc: "/media/products/hydrogen-cartridge-kit.png",
       secondaryImageAlt:
         "Hydrogen cartridge kit ready for rapid field replenishment",
@@ -780,7 +780,7 @@ export const capabilities = {
         },
         {
           src: "/media/capabilities/field-deployment-hero.png",
-          alt: "Field camp with Rise portable power, open equipment cases, and a drone overhead",
+          alt: "Desert field camp with Rise portable power, solar panels, and a drone overhead",
         },
       ],
       deliverablesIntro:
@@ -846,14 +846,14 @@ export const capabilities = {
       href: "/capabilities/safety-compliance",
       imageSrc: "/media/capabilities/safety-compliance.png",
       imageAlt:
-        "Rise portable generator at a field camp with solar panels, vehicle, and communications tower",
+        "Technician testing a Rise hydrogen cartridge with a handheld analyzer on a lab workbench",
       secondaryImageSrc: "/media/use-cases/disaster-response.jpg",
       secondaryImageAlt:
         "Disaster-response camp with rubble and temporary shelters",
       gallery: [
         {
-          src: "/media/company/company-v4.png",
-          alt: "Military camp with a portable generator",
+          src: "/media/capabilities/safety-compliance.png",
+          alt: "Safety and compliance testing of a Rise hydrogen cartridge in the lab",
         },
         {
           src: "/media/products/product-sentinal.png",
