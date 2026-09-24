@@ -607,7 +607,7 @@ export const capabilities = {
       heroBody:
         "Hydrogen fuel cell design, power electronics, and ruggedized system development from concept through production.",
       href: "/capabilities/engineering-development",
-      imageSrc: "/media/capabilities/engineering-development.png"
+      imageSrc: "/media/capabilities/engineering-development.png",
       imageAlt: "Soldiers with backpacks walking through grassland",
       mobileImageSrc: "/media/capabilities/engineering-development-mobile.png",
       secondaryImageSrc: "/media/company/company-v2.png",
