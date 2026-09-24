@@ -94,8 +94,14 @@ export default function PrivacyPage() {
         <Reveal variant="up">
           <p className="text-foreground/80">Effective Date: April 1, 2026</p>
           <div className="mt-10 space-y-10">
-            {sections.map((section) => (
-              <section key={section.title}>
+            {sections.map((section) => {
+              const isCookies = section.title === "7. Cookies";
+              return (
+              <section
+                key={section.title}
+                id={isCookies ? "cookies" : undefined}
+                className={isCookies ? "scroll-mt-28" : undefined}
+              >
                 <h2 className="font-display text-2xl tracking-tight text-foreground uppercase">
                   {section.title}
                 </h2>
@@ -115,7 +121,8 @@ export default function PrivacyPage() {
                     : null}
                 </div>
               </section>
-            ))}
+              );
+            })}
           </div>
         </Reveal>
       </div>

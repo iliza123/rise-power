@@ -181,7 +181,6 @@ export default function ProcurementFaqPage() {
         imageWidth={3840}
         imageHeight={1200}
         tone="#0a0f10"
-        compact
       >
         <div className="hero-animate-copy w-full max-w-[40rem] text-left">
           <SectionEyebrow onDark>Resources</SectionEyebrow>

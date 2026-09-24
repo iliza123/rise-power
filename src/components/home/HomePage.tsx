@@ -59,100 +59,106 @@ const sectionY = "py-14 sm:py-18 lg:py-20";
 export function HomePage() {
   return (
     <div className="flex w-full flex-col overflow-x-clip bg-[#f3f0e8] text-[#1a1c16]">
-      {/* 1. HERO — image above / copy below below xl; shorter full-bleed overlay on xl+ */}
+      {/* 1. HERO — sized like Products; clears fixed header */}
       <section
         id="hero"
-        className="relative flex w-full flex-col overflow-hidden bg-[#060806] text-white xl:min-h-[min(94svh,860px)]"
+        className="relative flex w-full flex-col overflow-hidden bg-[#060806] text-white"
       >
-        <div className="relative aspect-[5/4] w-full shrink-0 sm:aspect-[16/10] lg:aspect-[21/9] xl:absolute xl:inset-0 xl:aspect-auto">
-          {/* Mobile / tablet — stacked hero banner */}
-          <Image
-            src={heroMobileImageSrc}
-            alt="Rise Power tactical field deployment"
-            fill
-            priority
-            sizes="100vw"
-            quality={85}
-            className="hero-animate-media object-cover object-center xl:hidden"
-          />
-          {/* Desktop xl+ — full-bleed overlay */}
-          <Image
-            src={heroImageSrc}
-            alt=""
-            fill
-            priority
-            sizes="100vw"
-            quality={85}
-            className="hero-animate-media hidden object-cover object-[58%_center] xl:block"
-            aria-hidden
-          />
-          {/* Overlays only when copy sits on the photo (xl+) */}
-          <div className="pointer-events-none absolute inset-0 hidden xl:block">
-            <div className="absolute inset-0 bg-gradient-to-r from-[#060806]/95 via-[#060806]/35 to-transparent xl:w-[60%]" />
-            <div className="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-[#060806]/45 via-transparent to-transparent" />
-            <div className="absolute inset-x-0 top-0 h-20 bg-gradient-to-b from-[#060806]/25 to-transparent" />
-          </div>
-        </div>
-
-        <div className="relative z-10 mx-auto flex w-full max-w-[1440px] flex-1 flex-col px-6 pt-8 pb-14 sm:pt-10 sm:pb-16 lg:px-10 xl:justify-center xl:pt-32 xl:pb-14">
-          <div className="flex flex-col justify-center xl:pt-8">
-            <div className="hero-animate-copy max-w-xl lg:max-w-3xl xl:max-w-4xl [&_p]:!text-white">
-              <p className="type-eyebrow text-white">
-                {hero.eyebrow}
-              </p>
-              <h1 className="mt-5 type-page-h1">
-                {hero.headlineLine1}
-                <br />
-                <span style={{ color: sage }}>{hero.headlineLine2}</span>
-              </h1>
-              <p className="type-section-body mt-6 max-w-md !text-white">
-                {hero.body}
-              </p>
-              <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
-                <Link
-                  href={hero.primaryCta.href}
-                  className="inline-flex min-h-12 items-center justify-center gap-2.5 px-7 text-sm font-semibold tracking-[0.08em] text-white uppercase transition-opacity hover:opacity-90 rounded-sm"
-                  style={{ background: heroSage }}
-                >
-                  <span className="grid size-5 place-items-center rounded-full border border-white/80">
-                    <Play className="size-2.5 fill-current" />
-                  </span>
-                  {hero.primaryCta.label}
-                </Link>
-                <Link
-                  href={hero.secondaryCta.href}
-                  className="inline-flex min-h-12 items-center justify-center gap-2 border border-white/75 px-7 text-sm font-semibold tracking-[0.08em] text-white uppercase transition-colors hover:bg-white/10 rounded-sm"
-                >
-                  {hero.secondaryCta.label}
-                  <ArrowRight className="size-4" />
-                </Link>
-              </div>
+        <div
+          className="h-16 shrink-0 sm:h-[4.5rem]"
+          aria-hidden
+          style={{ backgroundColor: "#060806" }}
+        />
+        <div className="relative flex w-full flex-col xl:min-h-[min(78svh,680px)]">
+          <div className="relative aspect-[5/4] w-full shrink-0 sm:aspect-[16/10] lg:aspect-[21/9] xl:absolute xl:inset-0 xl:aspect-auto">
+            {/* Mobile / tablet — stacked hero banner */}
+            <Image
+              src={heroMobileImageSrc}
+              alt="Rise Power tactical field deployment"
+              fill
+              priority
+              sizes="100vw"
+              quality={85}
+              className="hero-animate-media object-cover object-center xl:hidden"
+            />
+            {/* Desktop xl+ — contain full frame (no stretch / zoom) */}
+            <Image
+              src={heroImageSrc}
+              alt=""
+              fill
+              priority
+              sizes="100vw"
+              quality={85}
+              className="hidden object-cover object-[58%_center] xl:block"
+              aria-hidden
+            />
+            {/* Overlays only when copy sits on the photo (xl+) */}
+            <div className="pointer-events-none absolute inset-0 hidden xl:block">
+              <div className="absolute inset-0 bg-gradient-to-r from-[#060806]/95 via-[#060806]/35 to-transparent xl:w-[60%]" />
+              <div className="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-[#060806]/45 via-transparent to-transparent" />
             </div>
           </div>
 
-          <div className="hero-animate-chips mt-16 grid max-w-4xl grid-cols-2 gap-x-6 gap-y-5 sm:mt-20 sm:grid-cols-4 sm:gap-x-8 lg:mt-20 lg:pb-2">
-            {hero.chips.map((chip, index) => {
-              const Icon = heroChipIcons[index] ?? Leaf;
-              return (
-                <div key={chip.title} className="flex items-center gap-3">
-                  <div className="flex size-13 shrink-0 items-center justify-center rounded-full border border-[#849363]">
-                    <Icon
-                      className="mt-0.5 size-8 shrink-0"
-                      strokeWidth={1.6}
-                      style={{ color: heroSage }}
-                    />
-                  </div>
-                  <div>
-                    <p className="font-display text-base font-bold tracking-[0.08em] text-white uppercase sm:text-sm">
-                      {chip.title}
-                    </p>
-                    <p className="mt-0.5 text-sm leading-snug text-white sm:text-sm">
-                      {chip.subtitle}
-                    </p>
-                  </div>
+          <div className="relative z-10 mx-auto flex w-full max-w-[1440px] flex-1 flex-col px-6 pt-8 pb-14 sm:pt-10 sm:pb-16 lg:px-10 xl:min-h-[min(78svh,680px)] xl:justify-center xl:pt-32 xl:pb-16">
+            <div className="flex flex-col justify-center">
+              <div className="hero-animate-copy max-w-xl lg:max-w-3xl xl:max-w-4xl [&_p]:!text-white">
+                <p className="type-eyebrow text-white">
+                  {hero.eyebrow}
+                </p>
+                <h1 className="mt-5 type-page-h1">
+                  {hero.headlineLine1}
+                  <br />
+                  <span style={{ color: sage }}>{hero.headlineLine2}</span>
+                </h1>
+                <p className="type-section-body mt-6 max-w-md !text-white">
+                  {hero.body}
+                </p>
+                <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
+                  <Link
+                    href={hero.primaryCta.href}
+                    className="inline-flex min-h-12 items-center justify-center gap-2.5 px-7 text-sm font-semibold tracking-[0.08em] text-white uppercase transition-opacity hover:opacity-90 rounded-sm"
+                    style={{ background: heroSage }}
+                  >
+                    <span className="grid size-5 place-items-center rounded-full border border-white/80">
+                      <Play className="size-2.5 fill-current" />
+                    </span>
+                    {hero.primaryCta.label}
+                  </Link>
+                  <Link
+                    href={hero.secondaryCta.href}
+                    className="inline-flex min-h-12 items-center justify-center gap-2 border border-white/75 px-7 text-sm font-semibold tracking-[0.08em] text-white uppercase transition-colors hover:bg-white/10 rounded-sm"
+                  >
+                    {hero.secondaryCta.label}
+                    <ArrowRight className="size-4" />
+                  </Link>
                 </div>
-              );
-            })}
+              </div>
+            </div>
+
+            <div className="hero-animate-chips mt-16 grid max-w-4xl grid-cols-2 gap-x-6 gap-y-5 sm:mt-20 sm:grid-cols-4 sm:gap-x-8 lg:mt-20 lg:pb-2">
+              {hero.chips.map((chip, index) => {
+                const Icon = heroChipIcons[index] ?? Leaf;
+                return (
+                  <div key={chip.title} className="flex items-center gap-3">
+                    <div className="flex size-13 shrink-0 items-center justify-center rounded-full border border-[#849363]">
+                      <Icon
+                        className="mt-0.5 size-8 shrink-0"
+                        strokeWidth={1.6}
+                        style={{ color: heroSage }}
+                      />
+                    </div>
+                    <div>
+                      <p className="font-display text-base font-bold tracking-[0.08em] text-white uppercase sm:text-sm">
+                        {chip.title}
+                      </p>
+                      <p className="mt-0.5 text-sm leading-snug text-white sm:text-sm">
+                        {chip.subtitle}
+                      </p>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </div>
 

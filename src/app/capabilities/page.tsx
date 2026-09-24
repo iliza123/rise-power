@@ -228,7 +228,6 @@ export default function CapabilitiesPage() {
         imageWidth={3840}
         imageHeight={1536}
         tone="#0a0f10"
-        compact
       >
         <div className="hero-animate-copy w-full max-w-[40rem] text-left">
           <SectionEyebrow light>{hero.eyebrow}</SectionEyebrow>

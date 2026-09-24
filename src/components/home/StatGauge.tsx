@@ -200,44 +200,46 @@ export function StatGauge({
         )}
       </svg>
 
-      <div
-        className="relative z-[1] grid place-items-center rounded-full bg-white"
-        style={{
-          width: "58%",
-          height: "58%",
-        }}
-      >
-        <div className="flex flex-col items-center justify-center px-1 text-center">
-          <span
-            className={`font-display leading-[0.9] font-bold tracking-[-0.02em] ${
-              compactValue
-                ? compactSize
-                  ? "text-[1.75rem] sm:text-[1.95rem]"
-                  : "text-[2.85rem] sm:text-[3.35rem]"
-                : compactSize
-                  ? "text-[2.05rem] sm:text-[2.25rem]"
-                  : "text-[clamp(2.85rem,6.2vw,3.75rem)]"
-            }`}
-            style={{ color: PRIMARY_GREEN }}
-          >
-            {value}
-          </span>
-          {unit ? (
+      <div className="pointer-events-none absolute inset-0 z-[1] grid place-items-center">
+        <div
+          className="grid place-items-center overflow-hidden rounded-full bg-white"
+          style={{
+            width: "58%",
+            height: "58%",
+          }}
+        >
+          <div className="flex w-full max-w-[85%] flex-col items-center justify-center text-center">
             <span
-              className={`mt-0.5 font-display leading-none font-bold uppercase ${
-                compactSize
-                  ? unit.length > 6
-                    ? "text-sm tracking-[0.12em] sm:text-[11px]"
-                    : "text-sm tracking-[0.16em] sm:text-[13px]"
-                  : unit.length > 6
-                    ? "text-sm tracking-[0.14em] sm:text-[16px]"
-                    : "text-[15px] tracking-[0.18em] sm:text-[18px]"
+              className={`font-display w-full leading-[0.9] font-bold tracking-[-0.02em] ${
+                compactValue
+                  ? compactSize
+                    ? "text-[1.55rem] sm:text-[1.75rem]"
+                    : "text-[2.5rem] sm:text-[2.95rem]"
+                  : compactSize
+                    ? "text-[1.85rem] sm:text-[2.05rem]"
+                    : "text-[clamp(2.6rem,5.8vw,3.4rem)]"
               }`}
               style={{ color: PRIMARY_GREEN }}
             >
-              {unit}
+              {value}
             </span>
-          ) : null}
+            {unit ? (
+              <span
+                className={`mt-0.5 w-full font-display leading-none font-bold uppercase ${
+                  compactSize
+                    ? unit.length > 6
+                      ? "text-[10px] tracking-[0.08em] sm:text-[11px]"
+                      : "text-[11px] tracking-[0.12em] sm:text-[13px]"
+                    : unit.length > 6
+                      ? "text-xs tracking-[0.1em] sm:text-[15px]"
+                      : "text-[14px] tracking-[0.14em] sm:text-[17px]"
+                }`}
+                style={{ color: PRIMARY_GREEN }}
+              >
+                {unit}
+              </span>
+            ) : null}
+          </div>
         </div>
       </div>
     </div>

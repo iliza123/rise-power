@@ -228,8 +228,8 @@ export const performanceMetrics = {
       percent: 88,
     },
     {
-      value: "−22",
-      unit: "to +50 °C",
+      value: "−22°",
+      unit: "to +50°C",
       title: "Operating temperature for all products",
       body: "Rated from −22 °C to +50 °C across the Rise Power product line.",
       percent: 60,
@@ -614,7 +614,7 @@ export const capabilities = {
       imageSrc: "/media/capabilities/engineering-development.png",
       imageAlt: "Soldiers with backpacks walking through grassland",
       mobileImageSrc: "/media/capabilities/engineering-development-mobile.png",
-      secondaryImageSrc: "/media/company/company-v2.png",
+      secondaryImageSrc: "/media/capabilities/engineering-scope.png",
       secondaryImageAlt:
         "Soldier using a laptop beside a camouflage generator in a forest",
       gallery: [
@@ -1010,6 +1010,8 @@ export const footer = {
     heading: "Stay Connected",
     body: "Subscribe for updates on new products, deployments, and industry insights.",
     placeholder: "Enter your email address",
+    comingSoonMessage:
+      "Thanks for your interest. Email updates aren’t live yet — please reach us through Contact and we’ll follow up.",
   },
   contact: {
     email: site.email,
@@ -1025,6 +1027,7 @@ export const footer = {
   legal: [
     { label: "Privacy Policy", href: "/privacy" },
     { label: "Terms of Use", href: "/terms" },
+    { label: "Cookies Policy", href: "/privacy#cookies" },
   ] satisfies readonly NavItem[],
   copyright: "© 2026 Rise Power, Inc. All rights reserved.",
   badgeBefore: "CANADIAN-ENGINEERED.",

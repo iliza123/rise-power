@@ -389,7 +389,6 @@ export default function UseCasesPage() {
         imageWidth={3840}
         imageHeight={1300}
         tone="#0a0f10"
-        compact
       >
         <div className="hero-animate-copy w-full max-w-[40rem] text-left">
           <SectionEyebrow light>Use Cases</SectionEyebrow>

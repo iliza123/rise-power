@@ -367,7 +367,6 @@ export default function ProductsPage() {
         imageHeight={1081}
         imageClassName="object-cover object-[center_55%]"
         tone="#07100d"
-        compact
       >
         <div className="hero-animate-copy w-full text-left">
           <p className="text-base font-semibold tracking-[0.14em] text-white uppercase sm:text-[0.9375rem]">

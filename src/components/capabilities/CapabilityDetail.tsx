@@ -141,7 +141,6 @@ export function CapabilityDetail({ capability }: CapabilityDetailProps) {
           capability.id === "field" || capability.id === "safety" ? 1300 : 650
         }
         tone="#0a100e"
-        compact
       >
         <div className="hero-animate-copy w-full max-w-[36rem] text-left">
           <SectionEyebrow light>

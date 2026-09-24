@@ -431,6 +431,8 @@ function FooterNavGroups() {
 }
 
 export function Footer() {
+  const [newsletterNote, setNewsletterNote] = useState<string | null>(null);
+
   return (
     <footer
       className="relative overflow-hidden text-cream"
@@ -507,32 +509,43 @@ export function Footer() {
             {footer.newsletter.body}
           </p>
 
-          <form
-            className="mt-5 flex h-12 max-w-[380px] overflow-hidden border border-white/20 rounded-sm"
-            action="#"
-            method="post"
-          >
-            <label className="sr-only" htmlFor="footer-email">
-              Email
-            </label>
-
-            <input
-              id="footer-email"
-              type="email"
-              name="email"
-              placeholder={footer.newsletter.placeholder}
-              className="min-w-0 flex-1 bg-[#0b151b] px-4 text-mm text-cream outline-none placeholder:text-cream/40 focus:border-sage"
-            />
-
-            <button
-              type="submit"
-              aria-label="Subscribe"
-              className="inline-flex w-12 shrink-0 items-center justify-center text-cream transition-opacity hover:opacity-85 bg-[#849363]"
-              // style={{ background: sage }}
+          {newsletterNote ? (
+            <p
+              role="status"
+              className="mt-5 max-w-[380px] border border-sage/40 bg-[#0b151b] px-4 py-3 text-sm leading-snug text-cream"
             >
-              <ArrowRight className="size-5" />
-            </button>
-          </form>
+              {newsletterNote}
+            </p>
+          ) : (
+            <form
+              className="mt-5 flex h-12 max-w-[380px] overflow-hidden border border-white/20 rounded-sm"
+              onSubmit={(event) => {
+                event.preventDefault();
+                setNewsletterNote(footer.newsletter.comingSoonMessage);
+              }}
+            >
+              <label className="sr-only" htmlFor="footer-email">
+                Email
+              </label>
+
+              <input
+                id="footer-email"
+                type="email"
+                name="email"
+                required
+                placeholder={footer.newsletter.placeholder}
+                className="min-w-0 flex-1 bg-[#0b151b] px-4 text-mm text-cream outline-none placeholder:text-cream/40 focus:border-sage"
+              />
+
+              <button
+                type="submit"
+                aria-label="Subscribe"
+                className="inline-flex w-12 shrink-0 items-center justify-center text-cream transition-opacity hover:opacity-85 bg-[#849363]"
+              >
+                <ArrowRight className="size-5" />
+              </button>
+            </form>
+          )}
 
           <ul className="mt-6 space-y-4 text-mm text-white">
             <li>
@@ -574,21 +587,21 @@ export function Footer() {
           {/* Legal */}
           <nav
             aria-label="Legal"
-            className="flex flex-wrap items-center justify-center"
+            className="flex flex-wrap items-center justify-center gap-y-2"
           >
             {footer.legal.map((item, index) => (
               <span
-                key={item.href + item.label}
+                key={item.label}
                 className="inline-flex items-center"
               >
-                {index > 0 && (
+                {index > 0 ? (
                   <span
-                    className="mx-3 text-cream/25"
+                    className="mx-3 select-none text-white/40"
                     aria-hidden
                   >
                     |
                   </span>
-                )}
+                ) : null}
 
                 <AppLink
                   href={item.href}

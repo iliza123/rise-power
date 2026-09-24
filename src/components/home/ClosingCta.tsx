@@ -78,7 +78,7 @@ export function ClosingCta() {
                 return (
                   <div
                     key={chip.title}
-                    className="group relative flex min-w-0 items-start gap-2.5 sm:gap-3"
+                    className="group relative flex min-w-0 items-center gap-2.5 sm:items-start sm:gap-3"
                   >
                     <span
                       className="relative grid size-9 shrink-0 place-items-center rounded-full sm:size-11"
@@ -102,7 +102,7 @@ export function ClosingCta() {
                       />
                     </span>
 
-                    <div className="min-w-0 flex-1 pt-0.5">
+                    <div className="min-w-0 flex-1 sm:pt-0.5">
                       <p className="type-card-label leading-tight text-white">
                         {chip.title}
                       </p>

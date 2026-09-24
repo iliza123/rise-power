@@ -176,7 +176,6 @@ export function InsightArticleView({
         imageWidth={1672}
         imageHeight={941}
         tone="#101820"
-        compact
       >
         <div className="hero-animate-copy w-full text-left">
           <p className="text-base font-semibold tracking-[0.14em] text-[#c5d4a8] uppercase sm:text-[0.9375rem]">
