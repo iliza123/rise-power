@@ -5,8 +5,10 @@ type StackedPageHeroProps = {
   imageAlt: string;
   /** Optional banner for stacked layout below xl. Falls back to `imageSrc`. */
   mobileImageSrc?: string;
-  /** Extra classes for desktop (xl+) framing — object-position, translate, etc.
-   * Mobile always uses object-cover object-center. */
+  /**
+   * Extra classes for mobile framing only (object-position, etc.).
+   * Desktop always uses object-contain — no stretch / zoom crop.
+   */
   imageClassName?: string;
   /** Section background when copy sits below the photo (below xl). */
   tone?: string;
@@ -19,13 +21,13 @@ type StackedPageHeroProps = {
    * `split`: left content + clear right image (xl+).
    */
   layout?: "overlay" | "split";
-  /** Intrinsic width for split layout. */
+  /** Intrinsic width for layout / Next Image sizing. */
   imageWidth?: number;
-  /** Intrinsic height for split layout. */
+  /** Intrinsic height for layout / Next Image sizing. */
   imageHeight?: number;
   /** Next/Image quality 1–100. Overlay defaults to 90; split to 100. */
   quality?: number;
-  /** Soft kenburns on overlay media. Disable for low-res assets. */
+  /** Soft kenburns on mobile overlay media only. Disabled on desktop. */
   animateMedia?: boolean;
   /**
    * Split layout only: replace the default left→right wash.
@@ -37,9 +39,8 @@ type StackedPageHeroProps = {
 
 /**
  * Page hero: image above / copy below below xl; cinematic on xl+.
- * Split keeps copy left + photo right. Non-panoramic assets fill the
- * right column with cover so wide viewports don't show tone gaps.
- * Mobile always centers the crop; `imageClassName` framing applies at xl+.
+ * Desktop (xl+) always fits the full image with object-contain (no stretch,
+ * no cover zoom) — letterboxing uses `tone`. Mobile keeps a centered cover band.
  */
 export function StackedPageHero({
   imageSrc,
@@ -57,16 +58,15 @@ export function StackedPageHero({
   splitWash,
   children,
 }: StackedPageHeroProps) {
-  /** Mobile/tablet — always centered regardless of desktop framing. */
-  const mobileMediaClassName = "object-cover object-center";
-  /** Desktop — caller framing or default center. */
-  const desktopMediaClassName = imageClassName ?? "object-cover object-center";
+  /** Mobile/tablet — centered cover band. */
+  const mobileMediaClassName =
+    imageClassName ?? "object-cover object-center";
+  /** Desktop — full frame, never stretched or zoom-cropped. */
+  const desktopSplitClassName = "object-contain object-right";
+  const desktopOverlayClassName = "object-contain object-center";
   const mobileSrc = mobileImageSrc ?? imageSrc;
   const overlayQuality = quality ?? 90;
   const splitQuality = quality ?? 100;
-  const aspectRatio = imageWidth / Math.max(imageHeight, 1);
-  /** Ultra-wide (≥2.2) can sit uncropped; narrower assets fill with cover. */
-  const panoramic = aspectRatio >= 2.2;
   const splitMinH = compact
     ? "xl:min-h-[min(78svh,680px)]"
     : "xl:min-h-[min(90svh,860px)]";
@@ -110,35 +110,21 @@ export function StackedPageHero({
           />
         </div>
 
-        {/* Desktop — fill right column; panoramic keeps natural width */}
+        {/* Desktop — full image contained in the right column (no stretch / zoom) */}
         <div
           className="pointer-events-none absolute inset-y-0 right-0 z-0 hidden w-[58%] overflow-hidden xl:block"
           aria-hidden
+          style={{ backgroundColor: tone }}
         >
-          {panoramic ? (
-            <div className="flex h-full w-full items-center justify-end">
-              <Image
-                src={imageSrc}
-                alt=""
-                width={imageWidth}
-                height={imageHeight}
-                priority
-                quality={splitQuality}
-                sizes="58vw"
-                className={`h-full w-auto max-w-none ${imageClassName ?? ""}`}
-              />
-            </div>
-          ) : (
-            <Image
-              src={imageSrc}
-              alt=""
-              fill
-              priority
-              quality={splitQuality}
-              sizes="58vw"
-              className={desktopMediaClassName}
-            />
-          )}
+          <Image
+            src={imageSrc}
+            alt=""
+            fill
+            priority
+            quality={splitQuality}
+            sizes="58vw"
+            className={desktopSplitClassName}
+          />
         </div>
 
         {/* Overlay wash — solid under copy, soft blend across the mid seam */}
@@ -164,8 +150,11 @@ export function StackedPageHero({
       className={`relative flex w-full flex-col overflow-hidden text-white ${desktopMinH}`}
       style={{ backgroundColor: tone }}
     >
-      <div className="relative aspect-[3/2] w-full shrink-0 sm:aspect-[16/10] lg:aspect-[21/9] xl:absolute xl:inset-0 xl:aspect-auto">
-        {/* Mobile: always centered. Desktop: optional framing via imageClassName. */}
+      <div
+        className="relative aspect-[3/2] w-full shrink-0 sm:aspect-[16/10] lg:aspect-[21/9] xl:absolute xl:inset-0 xl:aspect-auto"
+        style={{ backgroundColor: tone }}
+      >
+        {/* Mobile: cover + optional kenburns */}
         <Image
           src={mobileSrc}
           alt={imageAlt}
@@ -175,6 +164,7 @@ export function StackedPageHero({
           sizes="100vw"
           className={`${animateMedia ? "hero-animate-media" : ""} object-cover object-center xl:hidden`}
         />
+        {/* Desktop: contain full frame — no stretch, zoom, or kenburns */}
         <Image
           src={imageSrc}
           alt=""
@@ -182,7 +172,7 @@ export function StackedPageHero({
           priority
           quality={overlayQuality}
           sizes="100vw"
-          className={`${animateMedia ? "hero-animate-media" : ""} hidden xl:block ${desktopMediaClassName}`}
+          className={`hidden xl:block ${desktopOverlayClassName}`}
           aria-hidden
         />
         {/* Mobile seam into tone */}

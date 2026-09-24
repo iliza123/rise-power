@@ -436,8 +436,8 @@ export const featuredProducts = {
       datasheetHref: "/media/brochures/sentinel-power-cube.pdf",
       image: "Hiker with a backpack facing mountain scenery",
       imageSrc: "/media/products/featured-sentinel.png",
-      // Keep woman + backpack Power Cube in the tall crop (source is landscape).
-      imageClassName: "object-cover object-[62%_42%]",
+      // Bias right so the backpack Power Cube stays in frame; woman sits mid-left.
+      imageClassName: "object-cover object-[70%_40%]",
     },
     {
       name: "FALCON",
@@ -993,7 +993,6 @@ export const footer = {
       links: [
         { label: "About", href: "/company" },
         { label: "Investors", href: "/investors" },
-        { label: "Careers", href: "/contact" },
         { label: "Contact", href: "/contact" },
       ],
     },
@@ -1004,8 +1003,6 @@ export const footer = {
         { label: "Datasheets", href: "/datasheets" },
         { label: "Procurement FAQ", href: "/resources/faq" },
         { label: "Insights", href: "/insights" },
-        { label: "Privacy", href: "/privacy" },
-        { label: "Terms", href: "/terms" },
       ],
     },
   ] satisfies readonly FooterGroup[],
@@ -1028,7 +1025,6 @@ export const footer = {
   legal: [
     { label: "Privacy Policy", href: "/privacy" },
     { label: "Terms of Use", href: "/terms" },
-    { label: "Cookies Policy", href: "/privacy" },
   ] satisfies readonly NavItem[],
   copyright: "© 2026 Rise Power, Inc. All rights reserved.",
   badgeBefore: "CANADIAN-ENGINEERED.",
