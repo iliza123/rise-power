@@ -12,7 +12,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata: Metadata = pageMetadata({
   title: "Capabilities",
   description:
-    "Engineering, integration, field deployment, and safety — hydrogen power systems built for real operating environments.",
+    "Engineering, field deployment, and safety — hydrogen power systems built for real operating environments.",
   path: "/capabilities",
 });
 

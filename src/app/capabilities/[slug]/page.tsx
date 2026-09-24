@@ -25,7 +25,7 @@ export async function generateMetadata({
     return pageMetadata({
       title: "Capabilities",
       description:
-        "Engineering, integration, field deployment, and safety for hydrogen power systems.",
+        "Engineering, field deployment, and safety for hydrogen power systems.",
       path: "/capabilities",
     });
   }

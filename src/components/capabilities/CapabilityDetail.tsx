@@ -86,11 +86,6 @@ function galleryHeading(capability: CapabilityDetailPage) {
         before: "From concept to",
         accent: "hardware.",
       };
-    case "integration":
-      return {
-        before: "Platforms in",
-        accent: "context.",
-      };
     case "field":
       return {
         before: "Deployed where it",
@@ -120,12 +115,10 @@ export function CapabilityDetail({ capability }: CapabilityDetailProps) {
 
   return (
     <main className="bg-[#fbfaf7] text-[#101820]">
-      {/* 1. Hero — split for wide integration asset; overlay for nearer-square capability photos */}
+      {/* 1. Hero — split for wide field/safety assets; overlay for nearer-square capability photos */}
       <StackedPageHero
         layout={
-          capability.id === "integration" ||
-          capability.id === "field" ||
-          capability.id === "safety"
+          capability.id === "field" || capability.id === "safety"
             ? "split"
             : "overlay"
         }
@@ -133,25 +126,15 @@ export function CapabilityDetail({ capability }: CapabilityDetailProps) {
         mobileImageSrc={capability.images.hero.mobileSrc}
         imageAlt={capability.images.hero.alt}
         imageClassName={
-          capability.id === "integration" ||
-          capability.id === "field" ||
-          capability.id === "safety"
+          capability.id === "field" || capability.id === "safety"
             ? undefined
             : "object-cover object-[center_42%]"
         }
         imageWidth={
-          capability.id === "integration" ||
-          capability.id === "field" ||
-          capability.id === "safety"
-            ? 3840
-            : 771
+          capability.id === "field" || capability.id === "safety" ? 3840 : 771
         }
         imageHeight={
-          capability.id === "integration" ||
-          capability.id === "field" ||
-          capability.id === "safety"
-            ? 1300
-            : 650
+          capability.id === "field" || capability.id === "safety" ? 1300 : 650
         }
         tone="#0a100e"
         compact

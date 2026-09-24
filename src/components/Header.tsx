@@ -290,11 +290,7 @@ export function Header() {
         <div className="relative z-10 flex shrink-0 items-center gap-2 sm:gap-3">
           <Link
             href={contactCta.href}
-            className={
-              chromeOnDark
-                ? "hidden items-center rounded-sm border border-white/70 px-3.5 py-2 text-[11px] font-semibold tracking-[0.06em] text-white uppercase transition-all hover:border-white hover:bg-white/10 xl:inline-flex 2xl:px-5 2xl:py-2.5 2xl:text-[12px] 2xl:tracking-[0.08em]"
-                : "hidden items-center rounded-sm bg-forest px-3.5 py-2 text-[11px] font-semibold tracking-[0.06em] text-cream uppercase transition-colors hover:bg-ink xl:inline-flex 2xl:px-5 2xl:py-2.5 2xl:text-[12px] 2xl:tracking-[0.08em]"
-            }
+            className="hidden min-h-10 items-center justify-center rounded-sm bg-[#849363] px-5 py-2.5 text-[12px] font-semibold tracking-[0.08em] text-white uppercase shadow-[0_1px_2px_rgba(0,0,0,0.18)] transition-opacity hover:opacity-90 xl:inline-flex 2xl:min-h-11 2xl:px-6"
           >
             {contactCta.label}
           </Link>
@@ -369,14 +365,18 @@ export function Header() {
 
                 if (!hasLinks) {
                   return (
-                    <Link
+                    <div
                       key={item.label}
-                      href={item.href}
-                      onClick={() => setOpen(false)}
-                      className={`flex min-h-12 items-center py-3 text-base font-medium ${textClass}`}
+                      className={`border-b ${rowBorder} last:border-b-0`}
                     >
-                      {item.label}
-                    </Link>
+                      <Link
+                        href={item.href}
+                        onClick={() => setOpen(false)}
+                        className={`flex min-h-12 items-center py-3 text-base font-medium ${textClass}`}
+                      >
+                        {item.label}
+                      </Link>
+                    </div>
                   );
                 }
 
@@ -470,7 +470,7 @@ export function Header() {
             <Link
               href={contactCta.href}
               onClick={() => setOpen(false)}
-              className="flex min-h-12 items-center justify-center rounded-sm bg-forest px-5 py-3 text-center text-sm font-semibold tracking-[0.08em] text-cream uppercase transition-colors hover:bg-ink"
+              className="flex min-h-12 items-center justify-center rounded-sm bg-[#849363] px-5 py-3 text-center text-sm font-semibold tracking-[0.08em] text-white uppercase transition-opacity hover:opacity-90"
             >
               {contactCta.label}
             </Link>

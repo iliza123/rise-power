@@ -31,6 +31,7 @@ export function FeaturedProductRow({
   datasheetHref,
   image,
   imageSrc,
+  imageClassName,
 }: FeaturedProductRowProps) {
   const specs = [
     { label: productUiLabels.runtime, value: runtime },
@@ -40,6 +41,8 @@ export function FeaturedProductRow({
 
   const anchorId = name.toLowerCase().replace(/\s+/g, "-");
   const specIsPdf = isPdfDownload(datasheetHref);
+  const mediaClassName =
+    imageClassName ?? "object-cover object-center";
 
   return (
     <article
@@ -58,7 +61,7 @@ export function FeaturedProductRow({
           fill
           quality={95}
           priority={false}
-          className="object-cover object-center transition-transform duration-700 ease-out group-hover:scale-[1.03]"
+          className={`${mediaClassName} transition-transform duration-700 ease-out group-hover:scale-[1.03]`}
           sizes="(max-width: 640px) 88vw, (max-width: 1280px) 45vw, 22vw"
         />
       ) : (

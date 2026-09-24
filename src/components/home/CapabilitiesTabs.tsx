@@ -9,7 +9,6 @@ import {
   Box,
   Crosshair,
   Leaf,
-  Plug,
   Quote,
   Settings,
   Shield,
@@ -27,7 +26,6 @@ const cardBg = "#0f140f";
 
 const tabIcons: Record<string, LucideIcon> = {
   engineering: Settings,
-  integration: Plug,
   field: Crosshair,
   safety: Shield,
 };

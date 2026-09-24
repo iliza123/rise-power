@@ -294,7 +294,7 @@ export default function CompanyPage() {
               href="/contact"
               className="inline-flex min-h-12 items-center justify-center gap-2 rounded-sm bg-[#849363] px-8 text-sm font-semibold tracking-wide text-white uppercase transition-opacity hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
             >
-              Request a Trial
+              Request a Demo
               <ArrowRight className="size-5" aria-hidden="true" />
             </a>
 
@@ -362,7 +362,7 @@ export default function CompanyPage() {
                     href="/contact"
                     className="inline-flex min-h-12 items-center justify-center gap-2 rounded-sm bg-[#849363] px-8 text-sm font-semibold tracking-wide text-white uppercase transition-opacity hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6e7f42]"
                   >
-                    Request a Trial
+                    Request a Demo
                     <ArrowRight className="size-5" aria-hidden="true" />
                   </a>
                 </div>

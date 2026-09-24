@@ -113,7 +113,7 @@ const faqGroups = [
       },
       {
         q: "Do you support integration with existing platforms?",
-        a: "Yes. System Integration covers electronics, mounts, and field interfaces for drones, generators, and facility backup loads.",
+        a: "Yes. Rise Power covers electronics, mounts, and field interfaces for drones, generators, and facility backup loads — platform integration is part of engineering and development.",
       },
     ],
   },
@@ -176,6 +176,7 @@ export default function ProcurementFaqPage() {
       <StackedPageHero
         layout="split"
         imageSrc="/media/FAQ/FAQ-hero.png"
+        mobileImageSrc="/media/FAQ/FAQ-hero-mobile.png"
         imageAlt="Rise Power portable unit in a forest mountain landscape at dusk"
         imageWidth={3840}
         imageHeight={1200}

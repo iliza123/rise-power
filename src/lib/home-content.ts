@@ -59,6 +59,8 @@ export type FeaturedProduct = {
   datasheetHref: string;
   image: string;
   imageSrc?: string;
+  /** Optional object-position / framing for the card image. */
+  imageClassName?: string;
 };
 
 export type CapabilityStat = {
@@ -174,7 +176,7 @@ export const heroMobileImageSrc = "/media/hero-mobile.png";
 /** Exact Frame 1 product CTA / stat labels */
 export const productUiLabels = {
   runtime: "Runtime",
-  weight: "Weight",
+  weight: "Temperature",
   power: "Power Output",
   idealFor: "Ideal For",
   viewDetails: "View Details",
@@ -187,7 +189,7 @@ export const hero = {
   headlineLine1: "for everyday",
   headlineLine2: "resilience.",
   body: "Zero-emissions portable power for municipal, emergency, field, and off-grid applications. Quiet, rapidly deployable, and engineered in British Columbia.",
-  primaryCta: { label: "Request a Trial", href: "/contact" } satisfies Cta,
+  primaryCta: { label: "Request a Demo", href: "/contact" } satisfies Cta,
   secondaryCta: { label: "See Products", href: "/products" } satisfies Cta,
   chips: [
     { title: "Everyday Backup", subtitle: "When the grid is down" },
@@ -226,10 +228,10 @@ export const performanceMetrics = {
       percent: 88,
     },
     {
-      value: "40",
-      unit: "lb",
-      title: "Titan portable generator weight",
-      body: "Portable and easy to move where power is needed.",
+      value: "−22",
+      unit: "to +50 °C",
+      title: "Operating temperature for all products",
+      body: "Rated from −22 °C to +50 °C across the Rise Power product line.",
       percent: 60,
     },
   ] satisfies readonly PerformanceGauge[],
@@ -425,8 +427,8 @@ export const featuredProducts = {
       body: "Compact hydrogen power for everyday backup and outdoor use. Quiet, plug-and-play setup with refillable hydrogen cartridges. Lightweight and easy to carry — no grid connection required.",
       runtime: "QUIET",
       runtimeNote: "Everyday Operation",
-      weight: "LIGHTWEIGHT",
-      weightNote: "Easy to Carry",
+      weight: "−22 °C to +50 °C",
+      weightNote: "Operating Range",
       power: "ZERO EMISSIONS",
       powerNote: "At Point of Use",
       idealFor: ["Camping & Outdoor", "Home Outages", "Emergency Kits"],
@@ -434,6 +436,8 @@ export const featuredProducts = {
       datasheetHref: "/media/brochures/sentinel-power-cube.pdf",
       image: "Hiker with a backpack facing mountain scenery",
       imageSrc: "/media/products/featured-sentinel.png",
+      // Keep woman + backpack Power Cube in the tall crop (source is landscape).
+      imageClassName: "object-cover object-[62%_42%]",
     },
     {
       name: "FALCON",
@@ -442,8 +446,8 @@ export const featuredProducts = {
       body: "Plug-and-play hydrogen range extender for compatible drones. Up to 5x extended flight range with low-noise, zero-emission operation and quick-swap hydrogen cartridges.",
       runtime: "UP TO 5×",
       runtimeNote: "Extended Flight Range",
-      weight: "COLD WEATHER",
-      weightNote: "−20 °C to +50 °C",
+      weight: "−22 °C to +50 °C",
+      weightNote: "Operating Range",
       power: "UNDER 30 SEC",
       powerNote: "Cartridge Load Time",
       idealFor: ["Inspection", "Mapping", "Public Safety"],
@@ -459,8 +463,8 @@ export const featuredProducts = {
       body: "Clean backup power for everyday and emergency use. 1.5 kW capacity, 40 lb portable weight, and unlimited runtime with refillable hydrogen cartridges.",
       runtime: "UNLIMITED",
       runtimeNote: "With Cartridge Swap",
-      weight: "40 LB",
-      weightNote: "24 × 18 × 24 in",
+      weight: "−22 °C to +50 °C",
+      weightNote: "Operating Range",
       power: "1.5 kW",
       powerNote: "Capacity",
       idealFor: ["Construction Sites", "Mining Operations", "Telecom Backup"],
@@ -476,8 +480,8 @@ export const featuredProducts = {
       body: "Universal fuel cell compatible cartridges with RFID smart monitoring. Leak proof, lightweight, and designed for rapid field replenishment. Swap a cartridge and restore full runtime without tools or specialized training.",
       runtime: "15 YEARS",
       runtimeNote: "Shelf Life",
-      weight: "LEAK PROOF",
-      weightNote: "Lightweight Design",
+      weight: "−22 °C to +50 °C",
+      weightNote: "Operating Range",
       power: "RFID SMART",
       powerNote: "Monitoring Enabled",
       idealFor: ["Fuel Cell Systems", "Field Operations", "Rapid Replenishment"],
@@ -679,88 +683,6 @@ export const capabilities = {
       ],
     },
     {
-      id: "integration",
-      label: "Integration",
-      title: "System Integration",
-      eyebrow: "PLATFORMS. NETWORKS. INFRASTRUCTURE.",
-      heading: "System Integration",
-      body: "Integration with existing vehicle platforms, communications systems, and facility power networks.",
-      heroBody:
-        "Integration with existing vehicle platforms, communications systems, and facility power networks.",
-      href: "/capabilities/system-integration",
-      imageSrc: "/media/capabilities/system-integration.png",
-      imageAlt:
-        "Rise Mission Power module on a workbench beside a Rise-branded vehicle at a facility",
-      mobileImageSrc: "/media/capabilities/system-integration-mobile.png",
-      secondaryImageSrc: "/media/use-cases/uc-deployment.png",
-      secondaryImageAlt:
-        "Military personnel, drone, and truck in a snowy field",
-      gallery: [
-        {
-          src: "/media/capabilities/system-integration.png",
-          alt: "Rise Mission Power module with blueprints and vehicle for system integration",
-        },
-        {
-          src: "/media/use-cases/defense-security.jpg",
-          alt: "Integrated power supporting defense communications hardware",
-        },
-        {
-          src: "/media/use-cases/uc-grid1.png",
-          alt: "Soldier on a mountain with a portable generator and cartridge props",
-        },
-      ],
-      deliverablesIntro:
-        "Rise Power systems are designed from the start to work within existing infrastructure. Integration covers vehicle platforms, communications systems, facility power networks, and legacy power management hardware.",
-      deliverables: [
-        "Platform specific integration engineering",
-        "Power management and load balancing",
-        "Communications and control interface design",
-        "Hybrid power system architecture",
-        "Legacy system compatibility assessment",
-      ],
-      cta: { label: "Request a Briefing", href: "/contact" },
-      stats: [
-        {
-          value: "VEHICLE",
-          label: "PLATFORMS",
-          body: "Platform-specific integration engineering.",
-        },
-        {
-          value: "COMMS",
-          label: "INTERFACES",
-          body: "Control and communications design.",
-        },
-        {
-          value: "FACILITY",
-          label: "POWER",
-          body: "Works with existing site networks.",
-        },
-        {
-          value: "HYBRID",
-          label: "ARCHITECTURE",
-          body: "Legacy power compatibility assessed.",
-        },
-      ],
-      callouts: [
-        {
-          title: "VEHICLE PLATFORMS",
-          body: "Integration with existing platforms.",
-        },
-        {
-          title: "COMMS SYSTEMS",
-          body: "Interfaces for mission networks.",
-        },
-        {
-          title: "FACILITY POWER",
-          body: "Fits existing infrastructure.",
-        },
-        {
-          title: "LOAD BALANCING",
-          body: "Power management for mixed loads.",
-        },
-      ],
-    },
-    {
       id: "field",
       label: "Field",
       title: "Field Deployment",
@@ -852,6 +774,7 @@ export const capabilities = {
         "Safety engineered in from day one. Active certification across defense, transport, and indoor industrial standards.",
       href: "/capabilities/safety-compliance",
       imageSrc: "/media/capabilities/safety-compliance.png",
+      mobileImageSrc: "/media/capabilities/safety-compliance-mobile.png",
       imageAlt:
         "Technician testing a Rise hydrogen cartridge with a handheld analyzer on a lab workbench",
       secondaryImageSrc: "/media/use-cases/disaster-response.jpg",
@@ -987,7 +910,7 @@ export const customerPartners = {
       imageSrc: "/media/cases/disaster-response.png",
     },
   ] satisfies readonly CaseCard[],
-  partnerHeading: "PARTNERING WITH INNOVATORS AND INDUSTRY LEADERS",
+  partnerHeading: "ENGINEERING THE FUTURE OF HYDROGEN",
   partners: [
     "ENGINEERED FOR RELIABILITY",
     "CANADIAN-ENGINEERED. FIELD-VALIDATED.",
@@ -1029,7 +952,7 @@ export const closingCta = {
   headingAccent: "PRODUCT TRIAL.",
   body: "We welcome municipalities, utilities, and community partners to explore product trials and clean-energy pilot programs. Tell us your backup or field power need and we will respond with specs and a deployment summary.",
   panelEyebrow: "READY TO DISCUSS YOUR REQUIREMENTS?",
-  primaryCta: { label: "REQUEST A TRIAL", href: "/contact" } satisfies Cta,
+  primaryCta: { label: "REQUEST A DEMO", href: "/contact" } satisfies Cta,
   secondaryCta: { label: "VIEW PRODUCTS", href: "/products" } satisfies Cta,
   chips: [
     { title: "ZERO EMISSIONS", subtitle: "Clean power at point of use." },

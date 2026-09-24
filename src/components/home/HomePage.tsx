@@ -9,16 +9,13 @@ import {
   Mouse,
   Play,
   Shield,
-  AudioLines,
   Volume2,
-  Weight,
 } from "lucide-react";
 import {
   featuredProducts,
   hero,
   heroImageSrc,
   heroMobileImageSrc,
-  performanceMetrics,
   threeMarkets,
 } from "@/lib/home-content";
 import { standards } from "@/lib/content";
@@ -27,7 +24,6 @@ import { FeaturedProductRow } from "./FeaturedProductRow";
 import { HowItWorks } from "./HowItWorks";
 // import { WhyHydrogen } from "./WhyHydrogen";
 import { MarketsShowcase } from "./MarketsShowcase";
-import { PerformanceMetricCard } from "./PerformanceMetricCard";
 import { SectionSkeleton } from "./SectionSkeleton";
 import { SnapCarousel } from "./SnapCarousel";
 
@@ -53,7 +49,7 @@ const sage = "#6e7f42";
 /** Hero accent from Frame 1 reference (slightly brighter olive). */
 const heroSage = "#849363";
 
-const gaugeIcons = [AudioLines, Leaf, Crosshair, Weight] as const;
+/** Hero capability chips — quiet / precision / low signature / durable. */
 const heroChipIcons = [Leaf, Crosshair, Volume2, Shield] as const;
 
 /** Shared page inset + vertical rhythm (content sections — not hero). */
@@ -161,7 +157,7 @@ export function HomePage() {
         </div>
 
         <a
-          href="#performance-metrics"
+          href="#three-markets"
           className="absolute bottom-3 left-1/2 z-10 hidden -translate-x-1/2 flex-col items-center gap-1 text-white/75 transition-colors hover:text-white xl:flex"
           aria-label="Scroll to next section"
         >
@@ -191,53 +187,7 @@ export function HomePage() {
         </div>
       </section> */}
 
-      {/* 2. Performance Metrics — Built to Outperform */}
-      <section
-        id="performance-metrics"
-        className="scroll-mt-28 py-7 sm:py-8 lg:py-9"
-        style={{ background: "#fafaf8" }}
-      >
-        <div className={pageInset}>
-          <Reveal variant="up">
-            <p
-              className="type-eyebrow text-center text-[14px] sm:text-[15px]"
-              style={{ color: "#6e7f42" }}
-            >
-              {performanceMetrics.eyebrow}
-            </p>
-            <h2 className="type-section-h2 mt-2 text-center sm:mt-2.5">
-              {performanceMetrics.headingBefore}{" "}
-              <span style={{ color: "#6e7f42" }}>
-                {performanceMetrics.headingAccent}
-              </span>
-            </h2>
-            <p className="type-section-body mx-auto mt-2 max-w-2xl text-center text-[1.0625rem] sm:mt-2.5 sm:text-[1.2rem]">
-              {performanceMetrics.body}
-            </p>
-          </Reveal>
-          <RevealStagger
-            className="mx-auto mt-5 grid w-full max-w-5xl grid-cols-1 items-stretch gap-3 sm:mt-6 sm:grid-cols-2 sm:gap-3.5 xl:mt-7 xl:max-w-none xl:grid-cols-4 xl:gap-4"
-            step={70}
-          >
-            {performanceMetrics.gauges.map((item, index) => {
-              const Icon = gaugeIcons[index] ?? Crosshair;
-              return (
-                <PerformanceMetricCard
-                  key={item.title}
-                  icon={Icon}
-                  value={item.value}
-                  unit={item.unit}
-                  title={item.title}
-                  body={item.body}
-                  percent={item.percent}
-                />
-              );
-            })}
-          </RevealStagger>
-        </div>
-      </section>
-
-      {/* 3. Three Markets — standard image-led panels */}
+      {/* 2. Three Markets — standard image-led panels */}
       <section
         id="three-markets"
         className={`scroll-mt-28 bg-[#f3f0e8] ${sectionY}`}

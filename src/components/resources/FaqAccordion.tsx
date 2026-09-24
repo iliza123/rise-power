@@ -46,18 +46,18 @@ function AnswerBody({ text }: { text: string }) {
     );
   }
 
-  if (text.includes("System Integration covers")) {
+  if (text.includes("System Integration covers") || text.includes("platform integration")) {
     return (
       <>
-        Yes.{" "}
+        Yes. Rise Power covers electronics, mounts, and field interfaces for
+        drones, generators, and facility backup loads. See{" "}
         <Link
-          href="/capabilities/system-integration"
+          href="/capabilities/engineering-development"
           className="font-medium text-[#101820] underline decoration-[#d9dfe3] underline-offset-4 transition-colors hover:text-[#6e7f42] hover:decoration-[#6e7f42]"
         >
-          System Integration
+          Engineering & Development
         </Link>{" "}
-        covers electronics, mounts, and field interfaces for drones, generators,
-        and facility backup loads.
+        for how we design systems into existing platforms.
       </>
     );
   }
