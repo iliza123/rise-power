@@ -340,9 +340,9 @@ export default function InvestorsPage() {
         layout="split"
         imageSrc="/media/investors/investor-hero.png"
         mobileImageSrc="/media/investors/investor-hero-mobile.png"
-        imageAlt="Person camping at an RV with a dog"
-        imageWidth={1920}
-        imageHeight={600}
+        imageAlt="Rise Power systems supporting field and municipal operations"
+        imageWidth={1672}
+        imageHeight={941}
         tone="#0a0f10"
         splitWash="linear-gradient(90deg, #0a0f10 0%, #0a0f10 44%, rgba(10,15,16,0.82) 52%, rgba(10,15,16,0.35) 62%, transparent 74%)"
       >
