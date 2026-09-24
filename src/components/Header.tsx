@@ -45,6 +45,10 @@ export function Header() {
   const headerRef = useRef<HTMLElement>(null);
 
   const isHome = pathname === "/";
+  /** Dark heroes under a transparent bar — same mobile treatment as home. */
+  const overDarkHero =
+    isHome ||
+    (!pathname.startsWith("/terms") && !pathname.startsWith("/privacy"));
   const megaOpen = activeKey !== null;
 
   const activeItem =
@@ -56,8 +60,9 @@ export function Header() {
   /*
    * Smart sticky header:
    *
-   * - At the top: transparent on homepage.
+   * - At the top over dark heroes (home + inner pages): transparent.
    * - Scrolled: premium dark translucent sticky surface.
+   * - Legal / light pages: cream sticky surface.
    * - Scrolling down: hide.
    * - Scrolling up: show immediately.
    * - Open menus always keep the header visible.
@@ -181,20 +186,28 @@ export function Header() {
     return () => window.removeEventListener("resize", onResize);
   }, []);
 
-  const linkColor = isHome
+  /** Transparent white chrome only while parked on the dark hero. */
+  const onHeroTransparent =
+    overDarkHero && !isScrolled && !megaOpen && !open;
+  /** Home scrolled/menu stays dark glass; inner pages use cream sticky. */
+  const useDarkSticky = isHome && (isScrolled || megaOpen || open);
+
+  const linkColor = onHeroTransparent || useDarkSticky
     ? "text-white/80 hover:text-white"
     : "text-ink/75 hover:text-ink";
 
-  const activeColor = isHome ? "text-white" : "text-ink";
+  const activeColor =
+    onHeroTransparent || useDarkSticky ? "text-white" : "text-ink";
 
   /*
    * Header styling.
    *
-   * Homepage:
-   * - Top of page = transparent.
-   * - After scrolling = dark glass/sticky surface.
+   * Home + inner pages over dark heroes:
+   * - Top of page = transparent (hero shows through).
+   * - Home scrolled / menu open = dark glass.
+   * - Inner scrolled / menu open = cream sticky (not dark).
    *
-   * Inner pages:
+   * Legal / light pages:
    * - Always cream sticky surface.
    */
   const headerSurface = (() => {
@@ -202,19 +215,21 @@ export function Header() {
       ? "translate-y-0 opacity-100"
       : "-translate-y-[110%] opacity-0";
 
-    if (isHome) {
-      const backgroundClass =
-        megaOpen || open || isScrolled
-          ? "border-b border-white/10 bg-[#07100d]/85 text-white shadow-[0_10px_40px_rgba(0,0,0,0.25)] backdrop-blur-2xl"
-          : "bg-transparent text-white";
-
-      return `fixed top-0 right-0 left-0 z-50 will-change-transform transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${visibilityClass} ${backgroundClass}`;
+    if (onHeroTransparent) {
+      return `fixed top-0 right-0 left-0 z-50 will-change-transform transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${visibilityClass} bg-transparent text-white`;
     }
 
-    // Drop border-b while mega is open so the panel sits flush with the nav bar.
+    if (useDarkSticky) {
+      return `fixed top-0 right-0 left-0 z-50 will-change-transform transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${visibilityClass} border-b border-white/10 bg-[#07100d]/85 text-white shadow-[0_10px_40px_rgba(0,0,0,0.25)] backdrop-blur-2xl`;
+    }
+
+    // Cream sticky — inner pages after scroll, menus, and legal pages.
     const borderClass = megaOpen ? "" : "border-b border-border";
-    return `fixed top-0 right-0 left-0 z-50 will-change-transform ${borderClass} bg-cream text-ink shadow-[0_4px_20px_rgba(0,0,0,0.06)] transition-transform duration-300 ease-out ${visibilityClass}`;
+    return `fixed top-0 right-0 left-0 z-50 will-change-transform ${borderClass} bg-cream text-ink shadow-[0_4px_20px_rgba(0,0,0,0.06)] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${visibilityClass}`;
   })();
+
+  const logoOnDark = onHeroTransparent || useDarkSticky;
+  const chromeOnDark = onHeroTransparent || useDarkSticky;
 
   const closeMega = () => setActiveKey(null);
 
@@ -230,7 +245,7 @@ export function Header() {
       >
         {/* Logo */}
         <div className="relative z-10 shrink-0">
-          <Logo variant={isHome ? "onDark" : "onLight"} priority />
+          <Logo variant={logoOnDark ? "onDark" : "onLight"} priority />
         </div>
 
         {/* Desktop Navigation — xl+ only so mid widths never crowd the CTA */}
@@ -276,7 +291,7 @@ export function Header() {
           <Link
             href={contactCta.href}
             className={
-              isHome
+              chromeOnDark
                 ? "hidden items-center rounded-sm border border-white/70 px-3.5 py-2 text-[11px] font-semibold tracking-[0.06em] text-white uppercase transition-all hover:border-white hover:bg-white/10 xl:inline-flex 2xl:px-5 2xl:py-2.5 2xl:text-[12px] 2xl:tracking-[0.08em]"
                 : "hidden items-center rounded-sm bg-forest px-3.5 py-2 text-[11px] font-semibold tracking-[0.06em] text-cream uppercase transition-colors hover:bg-ink xl:inline-flex 2xl:px-5 2xl:py-2.5 2xl:text-[12px] 2xl:tracking-[0.08em]"
             }
@@ -286,7 +301,7 @@ export function Header() {
 
           <button
             className={`flex min-h-11 min-w-11 items-center justify-center xl:hidden ${
-              isHome ? "text-white" : "text-ink"
+              chromeOnDark ? "text-white" : "text-ink"
             }`}
             aria-expanded={open}
             aria-controls="site-menu"
@@ -325,7 +340,7 @@ export function Header() {
         <div
           id="site-menu"
           className={
-            isHome
+            chromeOnDark || useDarkSticky
               ? "mobile-nav-drawer flex max-h-[min(80vh,640px)] flex-col border-t border-white/15 bg-[#07100d]/97 backdrop-blur-xl xl:hidden"
               : "mobile-nav-drawer flex max-h-[min(80vh,640px)] flex-col border-t border-border bg-cream xl:hidden"
           }
@@ -340,14 +355,17 @@ export function Header() {
                 const hasLinks = links.length > 0;
                 const expanded = mobileExpandedKey === item.label;
 
-                const textClass = isHome ? "text-white/90" : "text-ink";
-                const mutedClass = isHome
-                  ? "text-white/55"
-                  : "text-ink/55";
+                const textClass =
+                  chromeOnDark || useDarkSticky ? "text-white/90" : "text-ink";
+                const mutedClass =
+                  chromeOnDark || useDarkSticky
+                    ? "text-white/55"
+                    : "text-ink/55";
 
-                const rowBorder = isHome
-                  ? "border-white/10"
-                  : "border-border/80";
+                const rowBorder =
+                  chromeOnDark || useDarkSticky
+                    ? "border-white/10"
+                    : "border-border/80";
 
                 if (!hasLinks) {
                   return (
@@ -444,7 +462,7 @@ export function Header() {
           {/* Mobile CTA */}
           <div
             className={
-              isHome
+              chromeOnDark || useDarkSticky
                 ? "sticky bottom-0 border-t border-white/10 bg-[#07100d]/97 px-6 py-4 backdrop-blur-xl"
                 : "sticky bottom-0 border-t border-border bg-cream px-6 py-4"
             }

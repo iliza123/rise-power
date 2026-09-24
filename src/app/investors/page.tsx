@@ -339,6 +339,7 @@ export default function InvestorsPage() {
       <StackedPageHero
         layout="split"
         imageSrc="/media/investors/investor-hero.png"
+        mobileImageSrc="/media/investors/investor-hero-mobile.png"
         imageAlt="Person camping at an RV with a dog"
         imageWidth={1920}
         imageHeight={600}

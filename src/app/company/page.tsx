@@ -267,6 +267,7 @@ export default function CompanyPage() {
       <StackedPageHero
         layout="split"
         imageSrc="/media/company/company-hero.png"
+        mobileImageSrc="/media/company/company-hero-mobile.png"
         imageAlt="Soldier with a drone in mountain terrain"
         imageWidth={1920}
         imageHeight={650}

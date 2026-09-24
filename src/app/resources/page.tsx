@@ -225,10 +225,11 @@ export default function ResourcesPage() {
     <main className="overflow-hidden bg-[#fbfaf7] text-[#101820]">
       <StackedPageHero
         layout="split"
-        imageSrc="/media/resources/resources-hero.png"
+        imageSrc="/media/resources/resources-hero-desktop.png"
+        mobileImageSrc="/media/resources/resources-hero-mobile.png"
         imageAlt="Rise Mission Power station at a mountain field camp at sunset"
         imageWidth={3840}
-        imageHeight={1200}
+        imageHeight={1600}
         tone="#0a0f10"
         splitWash="linear-gradient(90deg, #0a0f10 0%, #0a0f10 44%, rgba(10,15,16,0.82) 52%, rgba(10,15,16,0.35) 62%, transparent 74%)"
       >
