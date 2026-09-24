@@ -64,17 +64,17 @@ export function StackedPageHero({
   /** Ultra-wide (≥2.2) can sit uncropped; narrower assets fill with cover. */
   const panoramic = aspectRatio >= 2.2;
   const splitMinH = compact
-    ? "xl:min-h-[min(62svh,520px)]"
-    : "xl:min-h-[min(78svh,720px)]";
+    ? "xl:min-h-[min(78svh,680px)]"
+    : "xl:min-h-[min(90svh,860px)]";
   const splitCopyPad = compact
-    ? "xl:pt-28 xl:pb-12"
-    : "xl:pt-28 xl:pb-16";
+    ? "xl:pt-32 xl:pb-16"
+    : "xl:pt-36 xl:pb-20";
   const desktopMinH = compact
-    ? "xl:min-h-[min(62svh,520px)]"
-    : "xl:min-h-[min(100svh,800px)]";
+    ? "xl:min-h-[min(78svh,680px)]"
+    : "xl:min-h-[min(100svh,900px)]";
   const copyPad = compact
-    ? "xl:pt-28 xl:pb-12"
-    : "xl:pt-32 xl:pb-20";
+    ? "xl:pt-32 xl:pb-16"
+    : "xl:pt-36 xl:pb-24";
   const defaultSplitWash = `linear-gradient(90deg, ${tone} 0%, ${tone} 38%, ${tone}f2 44%, ${tone}cc 50%, ${tone}66 56%, transparent 64%)`;
 
   if (layout === "split") {
@@ -85,7 +85,7 @@ export function StackedPageHero({
       >
         {/* Mobile / tablet — centered crop + fade into tone */}
         <div
-          className="relative h-[min(42svh,320px)] w-full overflow-hidden sm:h-[min(38svh,380px)] xl:hidden"
+          className="relative h-[min(48svh,400px)] w-full overflow-hidden sm:h-[min(44svh,460px)] xl:hidden"
           style={{ backgroundColor: tone }}
         >
           <Image
