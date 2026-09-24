@@ -1,6 +1,7 @@
 export type CapabilityMedia = {
   src: string;
   alt: string;
+  mobileSrc?: string;
 };
 
 export type CapabilityStat = {

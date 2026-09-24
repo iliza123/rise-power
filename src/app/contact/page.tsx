@@ -53,6 +53,7 @@ export default function ContactPage() {
       <StackedPageHero
         layout="split"
         imageSrc="/media/contact/hero-banner.png"
+        mobileImageSrc="/media/contact/hero-banner-mobile.png"
         imageAlt="Soldiers in a forest"
         imageWidth={1920}
         imageHeight={600}

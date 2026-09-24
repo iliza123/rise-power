@@ -26,7 +26,11 @@ function toDetailPage(tab: CapabilityTab): CapabilityDetailPage {
     heroBody: tab.heroBody,
     href: tab.href,
     images: {
-      hero: { src: tab.imageSrc, alt: tab.imageAlt },
+      hero: {
+        src: tab.imageSrc,
+        alt: tab.imageAlt,
+        mobileSrc: tab.mobileImageSrc,
+      },
       secondary: {
         src: tab.secondaryImageSrc,
         alt: tab.secondaryImageAlt,

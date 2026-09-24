@@ -130,6 +130,7 @@ export function CapabilityDetail({ capability }: CapabilityDetailProps) {
             : "overlay"
         }
         imageSrc={capability.images.hero.src}
+        mobileImageSrc={capability.images.hero.mobileSrc}
         imageAlt={capability.images.hero.alt}
         imageClassName={
           capability.id === "integration" ||

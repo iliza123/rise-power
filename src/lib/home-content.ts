@@ -88,6 +88,8 @@ export type CapabilityTab = {
   href: string;
   imageSrc: string;
   imageAlt: string;
+  /** Optional stacked-hero image below xl. */
+  mobileImageSrc?: string;
   secondaryImageSrc: string;
   secondaryImageAlt: string;
   gallery: readonly CapabilityMedia[];
@@ -605,8 +607,9 @@ export const capabilities = {
       heroBody:
         "Hydrogen fuel cell design, power electronics, and ruggedized system development from concept through production.",
       href: "/capabilities/engineering-development",
-      imageSrc: "/media/capabilities/engineering-development.png",
+      imageSrc: "/media/capabilities/engineering-development.png"
       imageAlt: "Soldiers with backpacks walking through grassland",
+      mobileImageSrc: "/media/capabilities/engineering-development-mobile.png",
       secondaryImageSrc: "/media/company/company-v2.png",
       secondaryImageAlt:
         "Soldier using a laptop beside a camouflage generator in a forest",
@@ -688,6 +691,7 @@ export const capabilities = {
       imageSrc: "/media/capabilities/system-integration.png",
       imageAlt:
         "Rise Mission Power module on a workbench beside a Rise-branded vehicle at a facility",
+      mobileImageSrc: "/media/capabilities/system-integration-mobile.png",
       secondaryImageSrc: "/media/use-cases/uc-deployment.png",
       secondaryImageAlt:
         "Military personnel, drone, and truck in a snowy field",
