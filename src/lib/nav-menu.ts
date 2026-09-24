@@ -76,6 +76,11 @@ export const megaNavItems: readonly MegaNavItem[] = [
         description: "From prototypes to production-ready hardware.",
       },
       {
+        label: "System Integration",
+        href: "/capabilities/system-integration",
+        description: "Works with existing platforms and infrastructure.",
+      },
+      {
         label: "Field Deployment",
         href: "/capabilities/field-deployment",
         description: "Rapid deployment with end-to-end logistics support.",
@@ -88,7 +93,7 @@ export const megaNavItems: readonly MegaNavItem[] = [
     ],
     feature: {
       title: "Our Capabilities",
-      body: "Engineering, field deployment, and safety — built for real operating environments.",
+      body: "Engineering, integration, field deployment, and safety — built for real operating environments.",
       href: "/capabilities",
       cta: "See Capabilities",
     },

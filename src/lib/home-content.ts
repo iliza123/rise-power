@@ -683,6 +683,87 @@ export const capabilities = {
       ],
     },
     {
+      id: "integration",
+      label: "Integration",
+      title: "System Integration",
+      eyebrow: "PLATFORMS. NETWORKS. INFRASTRUCTURE.",
+      heading: "System Integration",
+      body: "Integration with existing vehicle platforms, communications systems, and facility power networks.",
+      heroBody:
+        "Integration with existing vehicle platforms, communications systems, and facility power networks.",
+      href: "/capabilities/system-integration",
+      imageSrc: "/media/capabilities/system-integration.png",
+      imageAlt:
+        "Rise Mission Power module on a workbench beside a Rise-branded vehicle at a facility",
+      secondaryImageSrc: "/media/use-cases/uc-deployment.png",
+      secondaryImageAlt:
+        "Military personnel, drone, and truck in a snowy field",
+      gallery: [
+        {
+          src: "/media/capabilities/system-integration.png",
+          alt: "Rise Mission Power module with blueprints and vehicle for system integration",
+        },
+        {
+          src: "/media/use-cases/defense-security.jpg",
+          alt: "Integrated power supporting defense communications hardware",
+        },
+        {
+          src: "/media/use-cases/uc-grid1.png",
+          alt: "Soldier on a mountain with a portable generator and cartridge props",
+        },
+      ],
+      deliverablesIntro:
+        "Rise Power systems are designed from the start to work within existing infrastructure. Integration covers vehicle platforms, communications systems, facility power networks, and legacy power management hardware.",
+      deliverables: [
+        "Platform specific integration engineering",
+        "Power management and load balancing",
+        "Communications and control interface design",
+        "Hybrid power system architecture",
+        "Legacy system compatibility assessment",
+      ],
+      cta: { label: "Request a Briefing", href: "/contact" },
+      stats: [
+        {
+          value: "VEHICLE",
+          label: "PLATFORMS",
+          body: "Platform-specific integration engineering.",
+        },
+        {
+          value: "COMMS",
+          label: "INTERFACES",
+          body: "Control and communications design.",
+        },
+        {
+          value: "FACILITY",
+          label: "POWER",
+          body: "Works with existing site networks.",
+        },
+        {
+          value: "HYBRID",
+          label: "ARCHITECTURE",
+          body: "Legacy power compatibility assessed.",
+        },
+      ],
+      callouts: [
+        {
+          title: "VEHICLE PLATFORMS",
+          body: "Integration with existing platforms.",
+        },
+        {
+          title: "COMMS SYSTEMS",
+          body: "Interfaces for mission networks.",
+        },
+        {
+          title: "FACILITY POWER",
+          body: "Fits existing infrastructure.",
+        },
+        {
+          title: "LOAD BALANCING",
+          body: "Power management for mixed loads.",
+        },
+      ],
+    },
+    {
       id: "field",
       label: "Field",
       title: "Field Deployment",
