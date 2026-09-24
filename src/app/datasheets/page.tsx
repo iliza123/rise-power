@@ -163,7 +163,7 @@ export default function DatasheetsPage() {
             request as compliance work completes.
           </p>
 
-          <div className="mt-7 flex flex-wrap items-center gap-3 sm:mt-8 sm:gap-4">
+          <div className="mt-7 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
             <a
               href={companyBrochureHref}
               download
@@ -179,13 +179,6 @@ export default function DatasheetsPage() {
               Request Full Datasheets
               <ArrowRight className="size-4 shrink-0" aria-hidden="true" />
             </Link>
-            <a
-              href="#sentinel"
-              className="inline-flex min-h-12 items-center justify-center gap-2 rounded-sm border border-white/45 px-7 text-sm font-semibold tracking-wide text-white uppercase transition-colors hover:bg-white/10"
-            >
-              Browse systems
-              <ArrowRight className="size-4 shrink-0" aria-hidden="true" />
-            </a>
           </div>
         </div>
       </StackedPageHero>
