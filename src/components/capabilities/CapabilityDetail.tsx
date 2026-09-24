@@ -232,7 +232,7 @@ export function CapabilityDetail({ capability }: CapabilityDetailProps) {
                           index > 0 ? "lg:border-l lg:border-[#c9c4b8]" : "",
                         ].join(" ")}
                       >
-                        <p className="font-display text-sm font-medium tracking-[0.2em] text-[#8a9186] uppercase sm:text-xs">
+                        <p className="font-display text-sm font-medium tracking-[0.2em] text-[#8a9186] uppercase">
                           {String(index + 1).padStart(2, "0")}
                         </p>
                         <p className="mt-2.5 font-display text-[1.5rem] leading-[1.05] font-bold tracking-tight text-[#101820] uppercase sm:text-[1.75rem] lg:text-[1.875rem]">
@@ -429,7 +429,7 @@ export function CapabilityDetail({ capability }: CapabilityDetailProps) {
                     style={{ borderColor: SECTION_RULE }}
                   >
                     <p
-                      className="text-sm font-semibold tracking-[0.16em] uppercase sm:text-xs"
+                      className="text-sm font-semibold tracking-[0.16em] uppercase"
                       style={{ color: SAGE }}
                     >
                       {item.status}
@@ -522,7 +522,7 @@ export function CapabilityDetail({ capability }: CapabilityDetailProps) {
                     </div>
 
                     <p
-                      className="mt-3 text-sm font-semibold tracking-[0.16em] uppercase sm:text-[11px]"
+                      className="mt-3 text-sm font-semibold tracking-[0.16em] uppercase"
                       style={{ color: SAGE }}
                     >
                       {item.label}

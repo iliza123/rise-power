@@ -18,7 +18,7 @@ export function PageHero({ eyebrow, title, description }: PageHeroProps) {
       <div className="relative mx-auto max-w-[991px] px-6 lg:px-10">
         <div className="hero-animate-copy">
           {eyebrow ? (
-            <p className="mb-4 text-sm font-semibold tracking-[0.22em] text-accent uppercase sm:text-xs">
+            <p className="mb-4 text-sm font-semibold tracking-[0.22em] text-accent uppercase">
               {eyebrow}
             </p>
           ) : null}

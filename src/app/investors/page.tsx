@@ -270,7 +270,7 @@ function PressCard({ item }: { item: (typeof pressUpdates)[number] }) {
           {item.title}
         </h3>
 
-        <p className="mt-4 text-sm font-semibold tracking-[0.14em] text-[#66727d] uppercase sm:text-[11px]">
+        <p className="mt-4 text-sm font-semibold tracking-[0.14em] text-[#66727d] uppercase">
           {item.meta}
           <span className="mx-2 text-[#aab1b7]">·</span>
           {item.category}
@@ -429,13 +429,13 @@ export default function InvestorsPage() {
                   className="object-cover object-center transition-transform duration-700 ease-out group-hover:scale-[1.03]"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0c1210]/45 via-transparent to-transparent" />
-                <span className="absolute top-4 left-4 font-display text-sm font-semibold tracking-[0.28em] text-white/70 uppercase sm:top-5 sm:left-5 sm:text-[11px]">
+                <span className="absolute top-4 left-4 font-display text-sm font-semibold tracking-[0.28em] text-white/70 uppercase sm:top-5 sm:left-5">
                   01
                 </span>
               </div>
 
               <div className="flex flex-1 flex-col px-5 py-5 sm:px-6 sm:py-6 lg:px-7 lg:py-6">
-                <p className="text-sm font-semibold tracking-[0.22em] text-[#6e7f42] uppercase sm:text-[11px]">
+                <p className="text-sm font-semibold tracking-[0.22em] text-[#6e7f42] uppercase">
                   PDF · Investor Briefing
                 </p>
                 <h3 className="mt-2 font-display text-2xl leading-[1.05] font-bold tracking-tight text-[#101820] uppercase sm:text-[28px] lg:text-[32px]">
@@ -454,7 +454,7 @@ export default function InvestorsPage() {
                     Download
                     <ArrowRight className="size-4 transition-transform duration-300 group-hover/button:translate-x-1" />
                   </a>
-                  <span className="text-sm font-medium tracking-[0.2em] text-[#66717d] uppercase sm:text-[10px]">
+                  <span className="text-sm font-medium tracking-[0.2em] text-[#66717d] uppercase">
                     PDF
                   </span>
                 </div>
@@ -471,13 +471,13 @@ export default function InvestorsPage() {
                   className="object-cover object-center transition-transform duration-700 ease-out group-hover:scale-[1.03]"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0c1210]/45 via-transparent to-transparent" />
-                <span className="absolute top-4 left-4 font-display text-sm font-semibold tracking-[0.28em] text-white/70 uppercase sm:top-5 sm:left-5 sm:text-[11px]">
+                <span className="absolute top-4 left-4 font-display text-sm font-semibold tracking-[0.28em] text-white/70 uppercase sm:top-5 sm:left-5">
                   02
                 </span>
               </div>
 
               <div className="flex flex-1 flex-col px-5 py-5 sm:px-6 sm:py-6 lg:px-7 lg:py-6">
-                <p className="text-sm font-semibold tracking-[0.22em] text-[#6e7f42] uppercase sm:text-[11px]">
+                <p className="text-sm font-semibold tracking-[0.22em] text-[#6e7f42] uppercase">
                   PDF · Company Brochure
                 </p>
                 <h3 className="mt-2 font-display text-2xl leading-[1.05] font-bold tracking-tight text-[#101820] uppercase sm:text-[28px] lg:text-[32px]">
@@ -496,7 +496,7 @@ export default function InvestorsPage() {
                     Download
                     <ArrowRight className="size-4 transition-transform duration-300 group-hover/button:translate-x-1" />
                   </a>
-                  <span className="text-sm font-medium tracking-[0.2em] text-[#66717d] uppercase sm:text-[10px]">
+                  <span className="text-sm font-medium tracking-[0.2em] text-[#66717d] uppercase">
                     PDF
                   </span>
                 </div>
@@ -563,7 +563,7 @@ export default function InvestorsPage() {
                 </div>
 
                 <div className="flex items-end justify-between gap-3 border-t border-white/20 pt-3 sm:gap-4 sm:pt-4">
-                  <p className="min-w-0 text-sm font-semibold leading-[1.4] tracking-[0.16em] text-white uppercase sm:text-[11px]">
+                  <p className="min-w-0 text-base font-semibold leading-[1.4] tracking-[0.16em] text-white uppercase">
                     Canadian-Engineered.
                     <br />
                     Field-Validated.

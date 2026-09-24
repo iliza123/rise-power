@@ -131,7 +131,7 @@ export function CapabilitiesTabs() {
                     );
                   }
                 }}
-                className={`relative flex min-h-11 items-center justify-center gap-2.5 px-3 py-4 text-sm font-semibold tracking-[0.16em] uppercase transition-colors sm:px-4 sm:py-5 sm:text-[11px] ${
+                className={`relative flex min-h-11 items-center justify-center gap-2.5 px-3 py-4 text-sm font-semibold tracking-[0.16em] uppercase transition-colors sm:px-4 sm:py-5 ${
                   index % 2 === 1 ? "border-l border-white/10" : ""
                 } ${index > 0 ? "lg:border-l lg:border-white/10" : ""} ${
                   index >= 2 ? "border-t border-white/10 lg:border-t-0" : ""
@@ -188,7 +188,7 @@ export function CapabilitiesTabs() {
 
             <Link
               href={active.cta.href}
-              className="mt-8 inline-flex w-fit min-h-11 items-center gap-2 border px-5 py-3 text-sm font-semibold tracking-[0.18em] uppercase transition-colors hover:bg-[#6e7f42]/12 rounded-sm sm:text-[11px]"
+              className="mt-8 inline-flex w-fit min-h-11 items-center gap-2 border px-5 py-3 text-sm font-semibold tracking-[0.18em] uppercase transition-colors hover:bg-[#6e7f42]/12 rounded-sm"
               style={{ borderColor: sage, color: sage }}
             >
               {active.cta.label}
@@ -218,7 +218,7 @@ export function CapabilitiesTabs() {
                       {stat.value}
                     </p>
                     <p
-                      className="mt-1.5 text-sm font-semibold tracking-[0.16em] uppercase sm:text-[12px]"
+                      className="mt-1.5 text-sm font-semibold tracking-[0.16em] uppercase"
                       style={{ color: sage }}
                     >
                       {stat.label}
@@ -261,13 +261,13 @@ export function CapabilitiesTabs() {
                     className={`absolute max-w-[38%] ${calloutPositions[i] ?? calloutPositions[0]}`}
                   >
                     <p
-                      className="text-[10px] font-semibold tracking-[0.14em] uppercase"
+                      className="text-base font-semibold tracking-[0.14em] uppercase"
                       style={{ color: sage }}
                     >
                       {callout.title}
                     </p>
                     <p
-                      className="mt-0.5 text-xs leading-snug"
+                      className="mt-0.5 text-sm leading-snug"
                       style={{ color: "#ffffff" }}
                     >
                       {callout.body}
@@ -285,13 +285,13 @@ export function CapabilitiesTabs() {
                   className="border border-white/10 px-4 py-3"
                 >
                   <p
-                    className="text-sm font-semibold tracking-[0.14em] uppercase sm:text-[10px]"
+                    className="text-base font-semibold tracking-[0.14em] uppercase"
                     style={{ color: sage }}
                   >
                     {callout.title}
                   </p>
                   <p
-                    className="mt-1 text-sm leading-snug sm:text-xs"
+                    className="mt-1 text-sm leading-snug"
                     style={{ color: "#ffffff" }}
                   >
                     {callout.body}
@@ -332,7 +332,7 @@ export function CapabilitiesTabs() {
                 >
                   {active.quote.name}
                 </p>
-                <p className="mt-1 text-xs leading-snug" style={{ color: muted }}>
+                <p className="mt-1 text-sm leading-snug" style={{ color: muted }}>
                   {active.quote.role}
                 </p>
               </div>

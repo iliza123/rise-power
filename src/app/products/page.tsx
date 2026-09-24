@@ -302,7 +302,7 @@ function ProductSystemCard({
               <CategoryIcon className="size-4 sm:size-[18px]" strokeWidth={1.5} />
             </span>
 
-            <span className="truncate text-sm leading-none font-bold tracking-[0.1em] text-white uppercase sm:text-[12px]">
+            <span className="truncate text-sm leading-none font-bold tracking-[0.1em] text-white uppercase">
               {meta.category}
             </span>
           </span>
@@ -316,7 +316,7 @@ function ProductSystemCard({
           {/* <sup className="ml-1 text-[9px]">™</sup> */}
         </h3>
 
-        <p className="mt-2 text-sm font-medium tracking-[0.08em] text-white uppercase sm:text-[12px]">
+        <p className="mt-2 text-sm font-medium tracking-[0.08em] text-white uppercase">
           {product.tagline}
         </p>
 
@@ -343,7 +343,7 @@ function ProductSystemCard({
                   {value as string}
                 </p>
 
-                <p className="mt-0.5 text-sm leading-tight font-medium tracking-[0.08em] text-white/55 uppercase sm:text-[8px]">
+                <p className="mt-0.5 text-sm leading-tight font-medium tracking-[0.08em] text-white/55 uppercase">
                   {label as string}
                 </p>
               </div>
@@ -386,14 +386,14 @@ export default function ProductsPage() {
           <div className="mt-7 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
             <Link
               href="/contact"
-              className="inline-flex min-h-12 items-center justify-center gap-2 whitespace-nowrap rounded-sm bg-[#849363] px-7 text-sm font-bold tracking-[0.12em] text-white uppercase transition-opacity hover:opacity-90 sm:text-xs"
+              className="inline-flex min-h-12 items-center justify-center gap-2 whitespace-nowrap rounded-sm bg-[#849363] px-7 text-sm font-bold tracking-[0.12em] text-white uppercase transition-opacity hover:opacity-90"
             >
               Request a Demo
               <ArrowRight className="size-4 shrink-0" />
             </Link>
             <Link
               href="/use-cases"
-              className="inline-flex min-h-12 items-center justify-center gap-2 whitespace-nowrap rounded-sm border border-white/35 px-7 text-sm font-bold tracking-[0.12em] text-white uppercase transition-colors hover:bg-white/10 sm:text-xs"
+              className="inline-flex min-h-12 items-center justify-center gap-2 whitespace-nowrap rounded-sm border border-white/35 px-7 text-sm font-bold tracking-[0.12em] text-white uppercase transition-colors hover:bg-white/10"
             >
               See Use Cases
               <ArrowRight className="size-4 shrink-0" />
@@ -505,14 +505,14 @@ export default function ProductsPage() {
               <div className="mt-6 flex flex-wrap items-center gap-4">
                 <Link
                   href="/contact"
-                  className="inline-flex min-h-11 items-center gap-2 rounded-sm border border-[#252925] bg-white px-6 text-sm font-semibold uppercase shadow-[3px_3px_0_0_rgba(20,26,20,0.28)] transition-colors hover:bg-[#141a14] hover:text-white sm:text-xs"
+                  className="inline-flex min-h-11 items-center gap-2 rounded-sm border border-[#252925] bg-white px-6 text-sm font-semibold uppercase shadow-[3px_3px_0_0_rgba(20,26,20,0.28)] transition-colors hover:bg-[#141a14] hover:text-white"
                 >
                   Request a Briefing
                 </Link>
 
                 <Link
                   href="/use-cases"
-                  className="inline-flex items-center gap-2 text-sm font-semibold uppercase text-[#141a14] sm:text-xs"
+                  className="inline-flex items-center gap-2 text-sm font-semibold uppercase text-[#141a14]"
                 >
                   See Use Cases
                   <ArrowRight className="size-4 text-[#6e7f42]" />
@@ -679,7 +679,7 @@ export default function ProductsPage() {
                         {/* <sup className="ml-1 text-[8px]">™</sup> */}
                       </h3>
 
-                      <p className="mt-1 text-sm font-semibold tracking-[0.12em] text-white uppercase sm:text-[10px]">
+                      <p className="mt-1 text-sm font-semibold tracking-[0.12em] text-white uppercase">
                         {product.tagline}
                       </p>
                     </div>

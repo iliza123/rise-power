@@ -25,7 +25,7 @@ const useCases = [
 ];
 
 const labelClass =
-  "text-sm font-semibold tracking-[0.16em] text-[#66717d] uppercase sm:text-[11px]";
+  "text-sm font-semibold tracking-[0.16em] text-[#66717d] uppercase";
 
 const fieldClass =
   "mt-2 block w-full rounded-sm border border-[#d9dfe3] bg-[#fbfaf7] px-4 py-3 text-base text-[#101820] placeholder:text-[#66717d]/50 focus:border-[#849363] focus:outline-none";
@@ -143,7 +143,7 @@ export function ContactForm() {
           autoComplete="name"
         />
         {errors.name ? (
-          <p className="mt-1.5 text-sm text-red-500 sm:text-xs">{errors.name}</p>
+          <p className="mt-1.5 text-sm text-red-500">{errors.name}</p>
         ) : null}
       </div>
 
@@ -160,7 +160,7 @@ export function ContactForm() {
           autoComplete="email"
         />
         {errors.email ? (
-          <p className="mt-1.5 text-sm text-red-500 sm:text-xs">{errors.email}</p>
+          <p className="mt-1.5 text-sm text-red-500">{errors.email}</p>
         ) : null}
       </div>
 
@@ -191,7 +191,7 @@ export function ContactForm() {
           aria-describedby={errors.phone ? "phone-error" : undefined}
         />
         {errors.phone ? (
-          <p id="phone-error" className="mt-1.5 text-sm text-red-500 sm:text-xs">
+          <p id="phone-error" className="mt-1.5 text-sm text-red-500">
             {errors.phone}
           </p>
         ) : null}
@@ -260,12 +260,12 @@ export function ContactForm() {
           placeholder="Operating environment, runtime requirements, deployment timeline, integration needs."
         />
         {errors.message ? (
-          <p className="mt-1.5 text-sm text-red-500 sm:text-xs">{errors.message}</p>
+          <p className="mt-1.5 text-sm text-red-500">{errors.message}</p>
         ) : null}
       </div>
 
       {errors.form ? (
-        <p className="text-sm text-red-500 sm:text-xs">{errors.form}</p>
+        <p className="text-sm text-red-500">{errors.form}</p>
       ) : null}
 
       <div className="pt-1">

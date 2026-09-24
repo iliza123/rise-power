@@ -103,7 +103,7 @@ export function ClosingCta() {
                     </span>
 
                     <div className="min-w-0 flex-1 sm:pt-0.5">
-                      <p className="type-card-label leading-tight text-white">
+                      <p className="type-card-label text-base leading-tight text-white">
                         {chip.title}
                       </p>
                       <p className="type-card-body-on-dark mt-0.5 hidden leading-snug sm:block">

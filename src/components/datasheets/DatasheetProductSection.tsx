@@ -141,7 +141,7 @@ export function DatasheetProductSection({
                 <a
                   href={product.pdfHref}
                   download
-                  className="inline-flex min-h-12 items-center justify-center gap-2 rounded-sm px-7 text-sm font-semibold tracking-[0.08em] text-white uppercase transition-opacity hover:opacity-90 sm:text-xs"
+                  className="inline-flex min-h-12 items-center justify-center gap-2 rounded-sm px-7 text-sm font-semibold tracking-[0.08em] text-white uppercase transition-opacity hover:opacity-90"
                   style={{ backgroundColor: SAGE_CTA }}
                 >
                   Download Spec Sheet (PDF)
@@ -150,7 +150,7 @@ export function DatasheetProductSection({
               ) : (
                 <Link
                   href="/contact"
-                  className="inline-flex min-h-12 items-center justify-center gap-2 rounded-sm px-7 text-sm font-semibold tracking-[0.08em] text-white uppercase transition-opacity hover:opacity-90 sm:text-xs"
+                  className="inline-flex min-h-12 items-center justify-center gap-2 rounded-sm px-7 text-sm font-semibold tracking-[0.08em] text-white uppercase transition-opacity hover:opacity-90"
                   style={{ backgroundColor: SAGE_CTA }}
                 >
                   Request Full Datasheet

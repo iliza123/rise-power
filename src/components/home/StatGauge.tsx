@@ -225,14 +225,14 @@ export function StatGauge({
             </span>
             {unit ? (
               <span
-                className={`mt-0.5 w-full font-display leading-none font-bold uppercase ${
+                className={`mt-0.5 w-full font-display text-sm leading-none font-bold uppercase ${
                   compactSize
                     ? unit.length > 6
-                      ? "text-[10px] tracking-[0.08em] sm:text-[11px]"
-                      : "text-[11px] tracking-[0.12em] sm:text-[13px]"
+                      ? "tracking-[0.08em]"
+                      : "tracking-[0.12em]"
                     : unit.length > 6
-                      ? "text-xs tracking-[0.1em] sm:text-[15px]"
-                      : "text-[14px] tracking-[0.14em] sm:text-[17px]"
+                      ? "sm:text-[15px] tracking-[0.1em]"
+                      : "sm:text-[17px] tracking-[0.14em]"
                 }`}
                 style={{ color: PRIMARY_GREEN }}
               >

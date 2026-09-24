@@ -94,7 +94,7 @@ function CaseCard({ item, index }: { item: CaseItem; index: number }) {
               style={{ color: "#8eaf3e" }}
             />
 
-            <span className="truncate text-sm font-bold tracking-[0.1em] text-white uppercase sm:text-[9px]">
+            <span className="truncate text-sm font-bold tracking-[0.1em] text-white uppercase">
               {item.category}
             </span>
           </span>
@@ -144,7 +144,7 @@ function CaseCard({ item, index }: { item: CaseItem; index: number }) {
 
                     <div className="min-w-0 flex-1">
                       <p
-                        className="max-w-full text-sm font-bold leading-[1.05] tracking-[-0.015em] text-white sm:text-xs"
+                        className="max-w-full text-sm font-bold leading-[1.05] tracking-[-0.015em] text-white"
                         style={{
                           overflowWrap: "anywhere",
                         }}
@@ -153,7 +153,7 @@ function CaseCard({ item, index }: { item: CaseItem; index: number }) {
                       </p>
 
                       <p
-                        className="mt-1 max-w-full text-sm font-semibold leading-[1.2] tracking-[0.01em] text-white uppercase sm:text-[10px]"
+                        className="mt-1 max-w-full text-sm font-semibold leading-[1.2] tracking-[0.01em] text-white uppercase"
                         style={{
                           display: "-webkit-box",
                           WebkitBoxOrient: "vertical",
@@ -282,7 +282,7 @@ export function CustomersPartners() {
                         aria-hidden
                       />
 
-                      <span className="whitespace-nowrap text-sm font-bold leading-[1.15] tracking-[0.03em] text-[#171b18] uppercase sm:text-[13px]">
+                      <span className="whitespace-nowrap text-sm font-bold leading-[1.15] tracking-[0.03em] text-[#171b18] uppercase">
                         {partner}
                       </span>
                     </div>

@@ -99,7 +99,7 @@ export function MegaMenuPanel({
             />
 
             <div className="relative">
-              <p className="text-[11px] font-semibold tracking-[0.16em] text-sage uppercase">
+              <p className="text-base font-semibold tracking-[0.16em] text-sage uppercase">
                 {title}
               </p>
 

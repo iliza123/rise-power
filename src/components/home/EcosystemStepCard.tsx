@@ -50,7 +50,7 @@ export function EcosystemStepCard({
           />
         )}
         {caption ? (
-          <p className="absolute inset-x-0 bottom-0 bg-[#0b0e0c]/75 px-2 py-1.5 text-center text-sm font-semibold tracking-[0.14em] text-[#f3efe4] uppercase sm:text-[10px]">
+          <p className="absolute inset-x-0 bottom-0 bg-[#0b0e0c]/75 px-2 py-1.5 text-center text-sm font-semibold tracking-[0.14em] text-[#f3efe4] uppercase">
             {caption}
           </p>
         ) : null}
@@ -58,7 +58,7 @@ export function EcosystemStepCard({
 
       <div className="flex flex-1 flex-col pt-3 sm:pt-4">
         <p
-          className="text-sm font-semibold tracking-[0.16em] uppercase sm:text-xs"
+          className="text-sm font-semibold tracking-[0.16em] uppercase"
           style={{ color: sage }}
         >
           {step}

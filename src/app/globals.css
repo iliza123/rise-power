@@ -63,15 +63,10 @@ h4 {
 /* —— Shared home type scale (keep section headings / cards consistent) —— */
 .type-eyebrow {
   font-family: var(--font-rajdhani), var(--font-barlow), sans-serif;
-  font-size: 1rem; /* 16px mobile */
+  font-size: 1rem; /* 16px — title floor */
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-}
-@media (min-width: 640px) {
-  .type-eyebrow {
-    font-size: 0.9375rem; /* 15px desktop */
-  }
 }
 
 .type-section-h2 {
@@ -198,16 +193,10 @@ h4 {
 }
 
 .type-card-label {
-  font-size: 0.875rem; /* 14px mobile floor */
+  font-size: 0.875rem; /* 14px — description/meta floor */
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-}
-@media (min-width: 640px) {
-  .type-card-label {
-    font-size: 11px; /* desktop — unchanged */
-    letter-spacing: 0.18em;
-  }
 }
 
 .type-cta {
@@ -218,23 +207,16 @@ h4 {
 }
 
 .type-cta-ghost {
-  font-size: 0.875rem; /* 14px mobile floor */
+  font-size: 0.875rem; /* 14px floor */
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
 }
-@media (min-width: 640px) {
-  .type-cta-ghost {
-    font-size: 0.75rem; /* 12px desktop — unchanged */
-  }
-}
 
-/* Mobile readability: Tailwind text-xs is 12px — bump below sm only */
-@media (max-width: 639px) {
-  .text-xs {
-    font-size: 0.875rem; /* 14px */
-    line-height: 1.25rem;
-  }
+/* Tailwind text-xs is 12px — floor at 14px for readable copy */
+.text-xs {
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.25rem;
 }
 
 ::selection {

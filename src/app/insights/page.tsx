@@ -204,7 +204,7 @@ export default function InsightsPage() {
                   </h2>
                 </div>
                 <p
-                  className="shrink-0 text-sm font-semibold tracking-[0.16em] uppercase sm:text-[11px]"
+                  className="shrink-0 text-sm font-semibold tracking-[0.16em] uppercase"
                   style={{ color: muted }}
                 >
                   <span className="font-display text-lg font-bold tabular-nums tracking-tight" style={{ color: sage }}>
