@@ -124,62 +124,55 @@ export function CapabilityDetail({ capability }: CapabilityDetailProps) {
 
   return (
     <main className="bg-[#fbfaf7] text-[#101820]">
-      {/* 1. Hero — split for wide field assets; overlay for nearer-square photos */}
+      {/* 1. Hero — same split layout / wash as main marketing pages */}
       <StackedPageHero
-        layout={
-          capability.id === "integration" || capability.id === "field"
-            ? "split"
-            : "overlay"
-        }
+        layout="split"
         imageSrc={capability.images.hero.src}
         mobileImageSrc={capability.images.hero.mobileSrc}
         imageAlt={capability.images.hero.alt}
-        imageClassName={
-          capability.id === "integration" || capability.id === "field"
-            ? undefined
-            : "object-cover object-[center_45%]"
-        }
+        imageClassName="object-cover object-[center_55%]"
         imageWidth={
-          capability.id === "integration" || capability.id === "field"
-            ? 3840
-            : capability.id === "safety"
-              ? 1254
-              : 771
+          capability.id === "safety"
+            ? 1254
+            : capability.id === "engineering"
+              ? 771
+              : 3840
         }
         imageHeight={
-          capability.id === "integration" || capability.id === "field"
-            ? 1300
-            : capability.id === "safety"
-              ? 1254
-              : 650
+          capability.id === "safety"
+            ? 1254
+            : capability.id === "engineering"
+              ? 650
+              : 1300
         }
-        tone="#0a100e"
+        tone="#0a0f10"
+        splitWash="linear-gradient(90deg, #0a0f10 0%, #0a0f10 44%, rgba(10,15,16,0.82) 52%, rgba(10,15,16,0.35) 62%, transparent 74%)"
       >
-        <div className="hero-animate-copy w-full max-w-[36rem] text-left">
+        <div className="hero-animate-copy w-full text-left">
           <SectionEyebrow light>
             {capability.eyebrow || "Capability"}
           </SectionEyebrow>
 
-          <h1 className="mt-5 type-page-h1 sm:mt-6">
+          <h1 className="mt-4 type-page-h1 text-white [text-shadow:none] sm:mt-5">
             <TitleWithAccent title={capability.title} />
           </h1>
 
-          <p className="type-section-body mt-5 max-w-[34rem] !text-white/90 sm:mt-6">
+          <p className="type-section-body mt-5 max-w-[32rem] !text-white/90 sm:mt-6">
             {capability.heroBody}
           </p>
 
           <div className="mt-7 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
             <Link
               href={capability.cta.href}
-              className="inline-flex min-h-12 items-center justify-center gap-2 rounded-sm px-7 text-sm font-semibold tracking-wide text-white uppercase transition-opacity hover:opacity-90"
+              className="inline-flex min-h-12 items-center justify-center gap-2 rounded-sm px-8 text-sm font-semibold tracking-wide text-white uppercase transition-opacity hover:opacity-90"
               style={{ background: SAGE_CTA }}
             >
               {capability.cta.label}
-              <ArrowRight className="size-4 shrink-0" aria-hidden />
+              <ArrowRight className="size-5 shrink-0" aria-hidden />
             </Link>
             <Link
               href="/capabilities"
-              className="group inline-flex min-h-12 items-center justify-center gap-2 rounded-sm border border-white/45 px-7 text-sm font-semibold tracking-wide text-white uppercase transition-colors hover:border-white hover:bg-white/10"
+              className="group inline-flex min-h-12 items-center justify-center gap-2 rounded-sm border border-white/50 px-7 text-sm font-semibold tracking-wide text-white uppercase transition-colors hover:bg-white/10"
             >
               <ArrowLeft
                 className="size-4 shrink-0 transition-transform duration-200 group-hover:-translate-x-0.5"

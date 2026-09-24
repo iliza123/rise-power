@@ -23,8 +23,8 @@ type StackedPageHeroProps = {
   /** Max width for the copy column (default 1440px). */
   contentMaxWidthClassName?: string;
   /**
-   * `overlay` (default): full-bleed image with left gradient for copy.
-   * `split`: left content + clear right image (xl+).
+   * `split` (default): left content + clear right image (xl+).
+   * `overlay`: full-bleed image with left gradient for copy.
    */
   layout?: "overlay" | "split";
   /** Intrinsic width for layout / Next Image sizing. */
@@ -53,9 +53,9 @@ export function StackedPageHero({
   imageAlt,
   mobileImageSrc,
   imageClassName,
-  tone = "#0a100e",
+  tone = "#0a0f10",
   contentMaxWidthClassName = "max-w-[1440px]",
-  layout = "overlay",
+  layout = "split",
   quality,
   animateMedia = true,
   splitWash,
@@ -80,7 +80,10 @@ export function StackedPageHero({
   /** Same as Products page hero. */
   const heroMinH = "xl:min-h-[min(78svh,680px)]";
   const copyPad = "xl:pt-32 xl:pb-16";
-  const defaultSplitWash = `linear-gradient(90deg, ${tone} 0%, ${tone} 38%, ${tone}f2 44%, ${tone}cc 50%, ${tone}66 56%, transparent 64%)`;
+  /** Strong left band so title/copy read like main marketing heroes (Resources pattern). */
+  const defaultSplitWash = `linear-gradient(90deg, ${tone} 0%, ${tone} 44%, ${tone}d1 52%, ${tone}59 62%, transparent 74%)`;
+  const overlayWashHorizontal = `linear-gradient(90deg, ${tone}f2 0%, ${tone}59 42%, transparent 70%)`;
+  const overlayWashVertical = `linear-gradient(to top, ${tone}73 0%, transparent 55%)`;
 
   if (layout === "split") {
     return (
@@ -186,8 +189,14 @@ export function StackedPageHero({
             }}
           />
           <div className="pointer-events-none absolute inset-0 hidden xl:block" aria-hidden>
-            <div className="absolute inset-0 bg-gradient-to-r from-[#071016]/95 via-[#071016]/35 to-transparent" />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#071016]/45 via-transparent to-transparent" />
+            <div
+              className="absolute inset-0"
+              style={{ background: overlayWashHorizontal }}
+            />
+            <div
+              className="absolute inset-0"
+              style={{ background: overlayWashVertical }}
+            />
           </div>
         </div>
 

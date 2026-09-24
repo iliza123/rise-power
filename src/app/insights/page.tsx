@@ -79,7 +79,8 @@ export default function InsightsPage() {
         imageAlt="Rise Power systems prepared for field briefing and evaluation"
         imageWidth={1920}
         imageHeight={600}
-        tone="#0a100e"
+        tone="#0a0f10"
+        splitWash="linear-gradient(90deg, #0a0f10 0%, #0a0f10 44%, rgba(10,15,16,0.82) 52%, rgba(10,15,16,0.35) 62%, transparent 74%)"
       >
         <div className="hero-animate-copy w-full text-left">
           <SectionEyebrow onDark>News & Insights</SectionEyebrow>

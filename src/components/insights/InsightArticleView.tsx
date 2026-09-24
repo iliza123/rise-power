@@ -175,7 +175,9 @@ export function InsightArticleView({
         imageAlt={article.hero.alt}
         imageWidth={1672}
         imageHeight={941}
-        tone="#101820"
+        imageClassName="object-cover object-[center_55%]"
+        tone="#0a0f10"
+        splitWash="linear-gradient(90deg, #0a0f10 0%, #0a0f10 44%, rgba(10,15,16,0.82) 52%, rgba(10,15,16,0.35) 62%, transparent 74%)"
       >
         <div className="hero-animate-copy w-full text-left">
           <p className="text-base font-semibold tracking-[0.14em] text-[#c5d4a8] uppercase sm:text-[0.9375rem]">
@@ -186,7 +188,7 @@ export function InsightArticleView({
             {article.displayDate}
           </p>
 
-          <h1 className="mt-4 type-page-h1">
+          <h1 className="mt-4 type-page-h1 text-white [text-shadow:none]">
             <TitleWithAccent
               title={article.title}
               accentPhrase={article.accentPhrase}
@@ -204,7 +206,7 @@ export function InsightArticleView({
           <div className="mt-7">
             <Link
               href="/insights"
-              className="group inline-flex min-h-11 items-center justify-center gap-2.5 rounded-sm border border-white/45 px-6 text-sm font-semibold tracking-[0.12em] text-white uppercase transition-colors hover:border-white hover:bg-white/10 sm:min-h-12 sm:px-7"
+              className="group inline-flex min-h-12 items-center justify-center gap-2.5 rounded-sm border border-white/50 px-7 text-sm font-semibold tracking-[0.12em] text-white uppercase transition-colors hover:bg-white/10"
             >
               <ArrowLeft
                 className="h-4 w-4 transition-transform duration-200 group-hover:-translate-x-0.5"

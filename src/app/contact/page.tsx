@@ -58,7 +58,8 @@ export default function ContactPage() {
         imageWidth={7680}
         imageHeight={3200}
         quality={100}
-        tone="#101820"
+        tone="#0a0f10"
+        splitWash="linear-gradient(90deg, #0a0f10 0%, #0a0f10 44%, rgba(10,15,16,0.82) 52%, rgba(10,15,16,0.35) 62%, transparent 74%)"
       >
         <div className="hero-animate-copy w-full text-left">
           <SectionEyebrow light>{site.name}</SectionEyebrow>

@@ -6,7 +6,8 @@ import { ArrowRight } from "lucide-react";
 import { SnapCarousel } from "@/components/home/SnapCarousel";
 import { Reveal, RevealStagger } from "@/components/motion/Reveal";
 import { StackedPageHero } from "@/components/StackedPageHero";
-import { capabilities, performanceMetrics } from "@/lib/home-content";
+import { capabilities } from "@/lib/home-content";
+// import { performanceMetrics } from "@/lib/home-content";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata({
@@ -228,6 +229,7 @@ export default function CapabilitiesPage() {
         imageWidth={3840}
         imageHeight={1536}
         tone="#0a0f10"
+        splitWash="linear-gradient(90deg, #0a0f10 0%, #0a0f10 44%, rgba(10,15,16,0.82) 52%, rgba(10,15,16,0.35) 62%, transparent 74%)"
       >
         <div className="hero-animate-copy w-full max-w-[40rem] text-left">
           <SectionEyebrow light>{hero.eyebrow}</SectionEyebrow>
@@ -311,7 +313,7 @@ export default function CapabilitiesPage() {
         </div>
       </section>
 
-      {/* QUIET METRICS — monumental instrument rail */}
+      {/* QUIET METRICS — monumental instrument rail (temporarily hidden)
       <section className="relative overflow-hidden bg-[#f3f0e8] py-10 sm:py-14 lg:py-20">
         <div
           aria-hidden
@@ -414,6 +416,7 @@ export default function CapabilitiesPage() {
           </div>
         </div>
       </section>
+      */}
 
       {/* FIELD VALIDATION */}
       <section className="relative overflow-hidden bg-[#fbfaf7] py-10 sm:py-12 lg:py-16">

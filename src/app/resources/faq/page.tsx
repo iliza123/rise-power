@@ -181,6 +181,7 @@ export default function ProcurementFaqPage() {
         imageWidth={3840}
         imageHeight={1200}
         tone="#0a0f10"
+        splitWash="linear-gradient(90deg, #0a0f10 0%, #0a0f10 44%, rgba(10,15,16,0.82) 52%, rgba(10,15,16,0.35) 62%, transparent 74%)"
       >
         <div className="hero-animate-copy w-full max-w-[40rem] text-left">
           <SectionEyebrow onDark>Resources</SectionEyebrow>
