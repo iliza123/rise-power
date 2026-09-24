@@ -857,14 +857,14 @@ export const capabilities = {
       imageSrc: "/media/capabilities/safety-compliance.png",
       mobileImageSrc: "/media/capabilities/safety-compliance-mobile.png",
       imageAlt:
-        "Technician testing a Rise hydrogen cartridge with a handheld analyzer on a lab workbench",
+        "RISE hydrogen safety inspection lab with technicians and camo power units",
       secondaryImageSrc: "/media/use-cases/disaster-response.jpg",
       secondaryImageAlt:
         "Disaster-response camp with rubble and temporary shelters",
       gallery: [
         {
           src: "/media/capabilities/safety-compliance.png",
-          alt: "Safety and compliance testing of a Rise hydrogen cartridge in the lab",
+          alt: "RISE hydrogen safety inspection lab with H2 testing rack",
         },
         {
           src: "/media/products/product-sentinal.png",

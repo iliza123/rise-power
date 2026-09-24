@@ -124,12 +124,10 @@ export function CapabilityDetail({ capability }: CapabilityDetailProps) {
 
   return (
     <main className="bg-[#fbfaf7] text-[#101820]">
-      {/* 1. Hero — split for wide integration asset; overlay for nearer-square capability photos */}
+      {/* 1. Hero — split for wide field assets; overlay for nearer-square photos */}
       <StackedPageHero
         layout={
-          capability.id === "integration" ||
-          capability.id === "field" ||
-          capability.id === "safety"
+          capability.id === "integration" || capability.id === "field"
             ? "split"
             : "overlay"
         }
@@ -137,25 +135,23 @@ export function CapabilityDetail({ capability }: CapabilityDetailProps) {
         mobileImageSrc={capability.images.hero.mobileSrc}
         imageAlt={capability.images.hero.alt}
         imageClassName={
-          capability.id === "integration" ||
-          capability.id === "field" ||
-          capability.id === "safety"
+          capability.id === "integration" || capability.id === "field"
             ? undefined
-            : "object-cover object-[center_42%]"
+            : "object-cover object-[center_45%]"
         }
         imageWidth={
-          capability.id === "integration" ||
-          capability.id === "field" ||
-          capability.id === "safety"
+          capability.id === "integration" || capability.id === "field"
             ? 3840
-            : 771
+            : capability.id === "safety"
+              ? 1254
+              : 771
         }
         imageHeight={
-          capability.id === "integration" ||
-          capability.id === "field" ||
-          capability.id === "safety"
+          capability.id === "integration" || capability.id === "field"
             ? 1300
-            : 650
+            : capability.id === "safety"
+              ? 1254
+              : 650
         }
         tone="#0a100e"
       >
