@@ -134,10 +134,10 @@ export function HomePage() {
                     />
                   </div>
                   <div>
-                    <p className="font-display text-xs font-bold tracking-[0.08em] text-white uppercase sm:text-sm">
+                    <p className="font-display text-base font-bold tracking-[0.08em] text-white uppercase sm:text-sm">
                       {chip.title}
                     </p>
-                    <p className="mt-0.5 text-xs leading-snug text-white sm:text-sm">
+                    <p className="mt-0.5 text-sm leading-snug text-white sm:text-sm">
                       {chip.subtitle}
                     </p>
                   </div>

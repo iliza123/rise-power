@@ -227,10 +227,10 @@ export function StatGauge({
               className={`mt-0.5 font-display leading-none font-bold uppercase ${
                 compactSize
                   ? unit.length > 6
-                    ? "text-[10px] tracking-[0.12em] sm:text-[11px]"
-                    : "text-[12px] tracking-[0.16em] sm:text-[13px]"
+                    ? "text-sm tracking-[0.12em] sm:text-[11px]"
+                    : "text-sm tracking-[0.16em] sm:text-[13px]"
                   : unit.length > 6
-                    ? "text-[12px] tracking-[0.14em] sm:text-[16px]"
+                    ? "text-sm tracking-[0.14em] sm:text-[16px]"
                     : "text-[15px] tracking-[0.18em] sm:text-[18px]"
               }`}
               style={{ color: PRIMARY_GREEN }}

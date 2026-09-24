@@ -43,7 +43,7 @@ function SectionEyebrow({
         />
       </span>
       <p
-        className="text-xs font-semibold tracking-[0.18em] uppercase"
+        className="text-sm font-semibold tracking-[0.18em] uppercase sm:text-xs"
         style={{ color }}
       >
         {children}
@@ -232,14 +232,14 @@ export function CapabilityDetail({ capability }: CapabilityDetailProps) {
                           index > 0 ? "lg:border-l lg:border-[#c9c4b8]" : "",
                         ].join(" ")}
                       >
-                        <p className="font-display text-xs font-medium tracking-[0.2em] text-[#8a9186] uppercase">
+                        <p className="font-display text-sm font-medium tracking-[0.2em] text-[#8a9186] uppercase sm:text-xs">
                           {String(index + 1).padStart(2, "0")}
                         </p>
                         <p className="mt-2.5 font-display text-[1.5rem] leading-[1.05] font-bold tracking-tight text-[#101820] uppercase sm:text-[1.75rem] lg:text-[1.875rem]">
                           {stat.value}
                         </p>
                         <p
-                          className="mt-2.5 text-[13px] font-semibold tracking-[0.12em] uppercase sm:text-sm"
+                          className="mt-2.5 text-sm font-semibold tracking-[0.12em] uppercase sm:text-sm"
                           style={{ color: SAGE }}
                         >
                           {stat.label}
@@ -273,7 +273,7 @@ export function CapabilityDetail({ capability }: CapabilityDetailProps) {
                         style={{ background: SAGE }}
                       />
                       <div>
-                        <p className="text-[13px] font-bold tracking-[0.1em] text-[#101820] uppercase sm:text-sm">
+                        <p className="text-sm font-bold tracking-[0.1em] text-[#101820] uppercase sm:text-sm">
                           {callout.title}
                         </p>
                         <p
@@ -380,7 +380,7 @@ export function CapabilityDetail({ capability }: CapabilityDetailProps) {
                     style={{ borderColor: SECTION_RULE }}
                   >
                     <p
-                      className="text-xs font-semibold tracking-[0.16em] uppercase"
+                      className="text-sm font-semibold tracking-[0.16em] uppercase sm:text-xs"
                       style={{ color: SAGE }}
                     >
                       {item.status}
@@ -471,7 +471,7 @@ export function CapabilityDetail({ capability }: CapabilityDetailProps) {
                     </div>
 
                     <p
-                      className="mt-3 text-[11px] font-semibold tracking-[0.16em] uppercase"
+                      className="mt-3 text-sm font-semibold tracking-[0.16em] uppercase sm:text-[11px]"
                       style={{ color: SAGE }}
                     >
                       {item.label}

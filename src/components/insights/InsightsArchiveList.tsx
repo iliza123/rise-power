@@ -121,7 +121,7 @@ export function InsightsArchiveList({ articles }: InsightsArchiveListProps) {
               <div className="min-w-0">
                 <div className="flex flex-wrap items-center gap-x-2 gap-y-0.5">
                   <p
-                    className="text-[10px] font-semibold tracking-[0.16em] uppercase sm:text-[11px]"
+                    className="text-sm font-semibold tracking-[0.16em] uppercase sm:text-[11px]"
                     style={{ color: sage }}
                   >
                     {article.category}
@@ -130,7 +130,7 @@ export function InsightsArchiveList({ articles }: InsightsArchiveListProps) {
                     ·
                   </span>
                   <p
-                    className="text-[10px] font-semibold tracking-[0.12em] uppercase sm:text-[11px]"
+                    className="text-sm font-semibold tracking-[0.12em] uppercase sm:text-[11px]"
                     style={{ color: muted }}
                   >
                     {article.displayDate}
@@ -139,7 +139,7 @@ export function InsightsArchiveList({ articles }: InsightsArchiveListProps) {
                     ·
                   </span>
                   <p
-                    className="text-[10px] font-semibold tracking-[0.12em] uppercase sm:text-[11px]"
+                    className="text-sm font-semibold tracking-[0.12em] uppercase sm:text-[11px]"
                     style={{ color: muted }}
                   >
                     {article.readTime}
@@ -199,7 +199,7 @@ export function InsightsArchiveList({ articles }: InsightsArchiveListProps) {
             type="button"
             onClick={() => void loadMore()}
             disabled={isLoading}
-            className="inline-flex min-h-12 items-center justify-center gap-2.5 rounded-sm border px-8 text-xs font-semibold tracking-[0.14em] uppercase transition-colors hover:bg-[#f3f2ed] disabled:cursor-wait disabled:opacity-70"
+            className="inline-flex min-h-12 items-center justify-center gap-2.5 rounded-sm border px-8 text-sm font-semibold tracking-[0.14em] uppercase transition-colors hover:bg-[#f3f2ed] disabled:cursor-wait disabled:opacity-70 sm:text-xs"
             style={{ borderColor: border, color: "#101820" }}
             aria-busy={isLoading}
           >
@@ -229,7 +229,7 @@ export function InsightsArchiveList({ articles }: InsightsArchiveListProps) {
         </div>
       ) : (
         <p
-          className="pt-8 text-center text-[11px] font-semibold tracking-[0.16em] uppercase"
+          className="pt-8 text-center text-sm font-semibold tracking-[0.16em] uppercase sm:text-[11px]"
           style={{ color: muted }}
         >
           All {String(articles.length).padStart(2, "0")} entries loaded

@@ -265,7 +265,7 @@ function ProductConnectionCard({ product }: { product: ProductConnection }) {
         <div className="mt-auto pt-7">
           <a
             href={product.href}
-            className="inline-flex items-center gap-4 text-xs font-bold tracking-[0.08em] text-[#20251f] uppercase"
+            className="inline-flex items-center gap-4 text-sm font-bold tracking-[0.08em] text-[#20251f] uppercase sm:text-xs"
           >
             <span className="transition-colors group-hover:text-[#6e7f42]">
               Learn More
@@ -588,7 +588,7 @@ export default function UseCasesPage() {
                 </div>
 
                 <div className="mt-auto border-t border-[#e1e3de] pt-7">
-                  <p className="text-center text-[11px] font-semibold tracking-[0.16em] text-[#8a9089] uppercase">
+                  <p className="text-center text-sm font-semibold tracking-[0.16em] text-[#8a9089] uppercase sm:text-[11px]">
                     Featured Products
                   </p>
 
@@ -675,7 +675,7 @@ export default function UseCasesPage() {
               </div>
 
               <div className="mt-auto border-t border-[#e1e3de] pt-7">
-                <p className="text-center text-[11px] font-semibold tracking-[0.16em] text-[#8a9089] uppercase">
+                <p className="text-center text-sm font-semibold tracking-[0.16em] text-[#8a9089] uppercase sm:text-[11px]">
                   Featured Products
                 </p>
 
@@ -787,7 +787,7 @@ export default function UseCasesPage() {
             <div className="mt-10 flex justify-center">
               <a
                 href="/products"
-                className="group inline-flex min-h-12 items-center justify-center gap-2 rounded-md px-9 text-xs font-bold tracking-[0.1em] text-white uppercase transition-opacity hover:opacity-90"
+                className="group inline-flex min-h-12 items-center justify-center gap-2 rounded-md px-9 text-sm font-bold tracking-[0.1em] text-white uppercase transition-opacity hover:opacity-90 sm:text-xs"
                 style={{ background: sage }}
               >
                 <span>Explore All Products</span>

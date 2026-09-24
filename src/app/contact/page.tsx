@@ -149,7 +149,7 @@ export default function ContactPage() {
                 {/* Email / Phone / Address — one row under the copy */}
                 <div className="mt-auto grid gap-6 border-t border-[#d9dfe3] pt-8 sm:grid-cols-3 sm:gap-0 sm:divide-x sm:divide-[#d9dfe3] lg:mt-10">
                   <div className="sm:pr-5">
-                    <p className="text-[11px] font-semibold tracking-[0.18em] text-[#6e7f42] uppercase">
+                    <p className="text-sm font-semibold tracking-[0.18em] text-[#6e7f42] uppercase sm:text-[11px]">
                       Email
                     </p>
                     <a
@@ -161,7 +161,7 @@ export default function ContactPage() {
                   </div>
 
                   <div className="border-t border-[#d9dfe3] pt-6 sm:border-t-0 sm:px-5 sm:pt-0">
-                    <p className="text-[11px] font-semibold tracking-[0.18em] text-[#6e7f42] uppercase">
+                    <p className="text-sm font-semibold tracking-[0.18em] text-[#6e7f42] uppercase sm:text-[11px]">
                       Phone
                     </p>
                     <a
@@ -173,7 +173,7 @@ export default function ContactPage() {
                   </div>
 
                   <div className="border-t border-[#d9dfe3] pt-6 sm:border-t-0 sm:pl-5 sm:pt-0">
-                    <p className="text-[11px] font-semibold tracking-[0.18em] text-[#6e7f42] uppercase">
+                    <p className="text-sm font-semibold tracking-[0.18em] text-[#6e7f42] uppercase sm:text-[11px]">
                       Address
                     </p>
                     <p className="mt-2 text-base leading-snug text-[#101820] sm:text-lg">

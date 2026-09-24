@@ -124,7 +124,7 @@ function PillarRow({
             className="h-px w-10 sm:w-14"
             style={{ background: "rgba(110, 127, 66, 0.55)" }}
           />
-          <p className="text-[11px] font-semibold tracking-[0.22em] text-[#8a9186] uppercase sm:text-xs">
+          <p className="text-sm font-semibold tracking-[0.22em] text-[#8a9186] uppercase sm:text-xs">
             {tab.eyebrow}
           </p>
         </div>
@@ -368,7 +368,7 @@ export default function CapabilitiesPage() {
                       index > 0 ? "lg:border-l lg:border-[#c9c4b8]" : "",
                     ].join(" ")}
                   >
-                    <span className="font-display text-[11px] font-semibold tracking-[0.28em] text-[#8a9186] uppercase transition-colors duration-500 group-hover:text-[#6e7f42]">
+                    <span className="font-display text-sm font-semibold tracking-[0.28em] text-[#8a9186] uppercase transition-colors duration-500 group-hover:text-[#6e7f42] sm:text-[11px]">
                       {String(index + 1).padStart(2, "0")}
                     </span>
 
@@ -378,7 +378,7 @@ export default function CapabilitiesPage() {
                       </p>
                       {gauge.unit ? (
                         <p
-                          className="font-display text-xs font-semibold tracking-[0.16em] uppercase sm:text-sm"
+                          className="font-display text-sm font-semibold tracking-[0.16em] uppercase sm:text-sm"
                           style={{ color: sage }}
                         >
                           {gauge.unit}

@@ -88,7 +88,7 @@ export function DatasheetProductSection({
                 style={{ backgroundColor: "#aeb6bd" }}
               />
               <p
-                className="text-xs font-semibold tracking-[0.18em] uppercase"
+                className="text-sm font-semibold tracking-[0.18em] uppercase sm:text-xs"
                 style={{ color: MUTED }}
               >
                 Datasheet · Beta
@@ -115,7 +115,7 @@ export function DatasheetProductSection({
 
             <div className="mt-6">
               <p
-                className="text-xs font-semibold tracking-[0.18em] uppercase"
+                className="text-sm font-semibold tracking-[0.18em] uppercase sm:text-xs"
                 style={{ color: INK }}
               >
                 {product.sectionTitle}
@@ -141,7 +141,7 @@ export function DatasheetProductSection({
                 <a
                   href={product.pdfHref}
                   download
-                  className="inline-flex min-h-12 items-center justify-center gap-2 rounded-sm px-7 text-xs font-semibold tracking-[0.08em] text-white uppercase transition-opacity hover:opacity-90"
+                  className="inline-flex min-h-12 items-center justify-center gap-2 rounded-sm px-7 text-sm font-semibold tracking-[0.08em] text-white uppercase transition-opacity hover:opacity-90 sm:text-xs"
                   style={{ backgroundColor: SAGE_CTA }}
                 >
                   Download Spec Sheet (PDF)
@@ -150,7 +150,7 @@ export function DatasheetProductSection({
               ) : (
                 <Link
                   href="/contact"
-                  className="inline-flex min-h-12 items-center justify-center gap-2 rounded-sm px-7 text-xs font-semibold tracking-[0.08em] text-white uppercase transition-opacity hover:opacity-90"
+                  className="inline-flex min-h-12 items-center justify-center gap-2 rounded-sm px-7 text-sm font-semibold tracking-[0.08em] text-white uppercase transition-opacity hover:opacity-90 sm:text-xs"
                   style={{ backgroundColor: SAGE_CTA }}
                 >
                   Request Full Datasheet

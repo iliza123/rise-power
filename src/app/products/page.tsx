@@ -297,7 +297,7 @@ function ProductSystemCard({
               <CategoryIcon className="size-4 sm:size-[18px]" strokeWidth={1.5} />
             </span>
 
-            <span className="truncate text-[11px] leading-none font-bold tracking-[0.1em] text-white uppercase sm:text-[12px]">
+            <span className="truncate text-sm leading-none font-bold tracking-[0.1em] text-white uppercase sm:text-[12px]">
               {meta.category}
             </span>
           </span>
@@ -311,7 +311,7 @@ function ProductSystemCard({
           {/* <sup className="ml-1 text-[9px]">™</sup> */}
         </h3>
 
-        <p className="mt-2 text-[12px] font-medium tracking-[0.08em] text-white uppercase">
+        <p className="mt-2 text-sm font-medium tracking-[0.08em] text-white uppercase sm:text-[12px]">
           {product.tagline}
         </p>
 
@@ -334,11 +334,11 @@ function ProductSystemCard({
                   strokeWidth={1.5}
                 />
 
-                <p className="truncate text-[12px] font-bold text-white sm:text-[13px]">
+                <p className="truncate text-sm font-bold text-white sm:text-[13px]">
                   {value as string}
                 </p>
 
-                <p className="mt-0.5 text-[8px] leading-tight font-medium tracking-[0.08em] text-white/55 uppercase">
+                <p className="mt-0.5 text-sm leading-tight font-medium tracking-[0.08em] text-white/55 uppercase sm:text-[8px]">
                   {label as string}
                 </p>
               </div>
@@ -381,14 +381,14 @@ export default function ProductsPage() {
           <div className="mt-7 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
             <Link
               href="/contact"
-              className="inline-flex min-h-12 items-center justify-center gap-2 whitespace-nowrap rounded-sm bg-[#849363] px-7 text-xs font-bold tracking-[0.12em] text-white uppercase transition-opacity hover:opacity-90"
+              className="inline-flex min-h-12 items-center justify-center gap-2 whitespace-nowrap rounded-sm bg-[#849363] px-7 text-sm font-bold tracking-[0.12em] text-white uppercase transition-opacity hover:opacity-90 sm:text-xs"
             >
               Request a Trial
               <ArrowRight className="size-4 shrink-0" />
             </Link>
             <Link
               href="/use-cases"
-              className="inline-flex min-h-12 items-center justify-center gap-2 whitespace-nowrap rounded-sm border border-white/35 px-7 text-xs font-bold tracking-[0.12em] text-white uppercase transition-colors hover:bg-white/10"
+              className="inline-flex min-h-12 items-center justify-center gap-2 whitespace-nowrap rounded-sm border border-white/35 px-7 text-sm font-bold tracking-[0.12em] text-white uppercase transition-colors hover:bg-white/10 sm:text-xs"
             >
               See Use Cases
               <ArrowRight className="size-4 shrink-0" />
@@ -480,7 +480,7 @@ export default function ProductsPage() {
           {/* Left copy — opaque panel + hard shadow for readability */}
           <Reveal variant="left" className="relative max-w-[34rem]">
             <div className="relative rounded-xl border border-[#e8e6df] bg-white/95 px-5 py-5 shadow-[6px_6px_0_0_rgba(20,26,20,0.35)] sm:px-6 sm:py-6">
-              <p className="text-[11px] font-semibold tracking-[0.2em] text-[#6e7f42] uppercase sm:text-xs">
+              <p className="text-sm font-semibold tracking-[0.2em] text-[#6e7f42] uppercase sm:text-xs">
                 ⌁ One Cartridge Ecosystem
               </p>
 
@@ -500,14 +500,14 @@ export default function ProductsPage() {
               <div className="mt-6 flex flex-wrap items-center gap-4">
                 <Link
                   href="/contact"
-                  className="inline-flex min-h-11 items-center gap-2 rounded-sm border border-[#252925] bg-white px-6 text-xs font-semibold uppercase shadow-[3px_3px_0_0_rgba(20,26,20,0.28)] transition-colors hover:bg-[#141a14] hover:text-white"
+                  className="inline-flex min-h-11 items-center gap-2 rounded-sm border border-[#252925] bg-white px-6 text-sm font-semibold uppercase shadow-[3px_3px_0_0_rgba(20,26,20,0.28)] transition-colors hover:bg-[#141a14] hover:text-white sm:text-xs"
                 >
                   Request a Briefing
                 </Link>
 
                 <Link
                   href="/use-cases"
-                  className="inline-flex items-center gap-2 text-xs font-semibold uppercase text-[#141a14]"
+                  className="inline-flex items-center gap-2 text-sm font-semibold uppercase text-[#141a14] sm:text-xs"
                 >
                   See Use Cases
                   <ArrowRight className="size-4 text-[#6e7f42]" />
@@ -551,10 +551,10 @@ export default function ProductsPage() {
                 </div>
 
                 <div className="min-w-0 flex-1 self-center pr-3.5 py-2.5 pl-1">
-                  <h3 className="text-[12px] font-bold uppercase leading-tight tracking-wide text-[#141a14] sm:text-[13px]">
+                  <h3 className="text-base font-bold uppercase leading-tight tracking-wide text-[#141a14] sm:text-[13px]">
                     {item.title}
                   </h3>
-                  <p className="mt-0.5 text-[12px] leading-snug text-[#5c584e] sm:text-[13px]">
+                  <p className="mt-0.5 text-sm leading-snug text-[#5c584e] sm:text-[13px]">
                     {item.body}
                   </p>
                 </div>
@@ -628,7 +628,7 @@ export default function ProductsPage() {
                         {/* <sup className="ml-1 text-[8px]">™</sup> */}
                       </h3>
 
-                      <p className="mt-1 text-[10px] font-semibold tracking-[0.12em] text-white uppercase">
+                      <p className="mt-1 text-sm font-semibold tracking-[0.12em] text-white uppercase sm:text-[10px]">
                         {product.tagline}
                       </p>
                     </div>
@@ -687,7 +687,7 @@ export default function ProductsPage() {
             </div>
           </Reveal>
 
-          <p className="mt-4 text-center text-[10px] tracking-[0.08em] text-[#77766f] uppercase sm:hidden">
+          <p className="mt-4 text-center text-sm tracking-[0.08em] text-[#77766f] uppercase sm:hidden">
             Swipe horizontally to compare all products
           </p>
         </div>

@@ -459,7 +459,7 @@ export default function ResourcesPage() {
                       {system.name}
                     </h3>
                     <p className="mt-1.5 text-sm text-white">{system.label}</p>
-                    <span className="mt-4 inline-flex items-center gap-2 text-xs font-semibold tracking-[0.1em] text-white uppercase">
+                    <span className="mt-4 inline-flex items-center gap-2 text-sm font-semibold tracking-[0.1em] text-white uppercase sm:text-xs">
                       View Specs
                       <ArrowRight className="size-4 transition-transform duration-300 group-hover:translate-x-1" />
                     </span>
@@ -498,7 +498,7 @@ export default function ResourcesPage() {
                     {system.name}
                   </h3>
                   <p className="mt-1.5 text-sm text-white">{system.label}</p>
-                  <span className="mt-4 inline-flex items-center gap-2 text-xs font-semibold tracking-[0.1em] text-white uppercase">
+                  <span className="mt-4 inline-flex items-center gap-2 text-sm font-semibold tracking-[0.1em] text-white uppercase sm:text-xs">
                     View Specs
                     <ArrowRight className="size-4 transition-transform duration-300 group-hover:translate-x-1" />
                   </span>
@@ -697,14 +697,14 @@ export default function ResourcesPage() {
                     className="object-cover object-center transition-transform duration-700 ease-out group-hover:scale-[1.03]"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0c1210]/45 via-transparent to-transparent" />
-                  <span className="absolute top-4 left-4 font-display text-[11px] font-semibold tracking-[0.28em] text-white/70 uppercase sm:top-5 sm:left-5">
+                  <span className="absolute top-4 left-4 font-display text-sm font-semibold tracking-[0.28em] text-white/70 uppercase sm:top-5 sm:left-5 sm:text-[11px]">
                     {item.number}
                   </span>
                 </div>
 
                 <div className="flex flex-1 flex-col px-5 py-5 sm:px-6 sm:py-6 lg:px-7 lg:py-6">
                   <p
-                    className="text-[11px] font-semibold tracking-[0.22em] uppercase"
+                    className="text-sm font-semibold tracking-[0.22em] uppercase sm:text-[11px]"
                     style={{ color: sage }}
                   >
                     {item.label}
@@ -731,7 +731,7 @@ export default function ResourcesPage() {
                       <ArrowRight className="size-4 transition-transform duration-300 group-hover/button:translate-x-1" />
                     </a>
                     <span
-                      className="text-[10px] font-medium tracking-[0.2em] uppercase"
+                      className="text-sm font-medium tracking-[0.2em] uppercase sm:text-[10px]"
                       style={{ color: muted }}
                     >
                       PDF

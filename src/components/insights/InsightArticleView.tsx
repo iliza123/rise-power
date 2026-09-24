@@ -38,7 +38,7 @@ function SectionEyebrow({ children }: { children: React.ReactNode }) {
         />
       </span>
       <p
-        className="text-xs font-semibold tracking-[0.18em] uppercase"
+        className="text-sm font-semibold tracking-[0.18em] uppercase sm:text-xs"
         style={{ color: SAGE }}
       >
         {children}
@@ -104,7 +104,7 @@ function BlockRenderer({
               {block.text}
             </p>
             {block.attribution ? (
-              <cite className="mt-4 block text-xs not-italic tracking-[0.16em] text-[#626a63] uppercase">
+              <cite className="mt-4 block text-sm not-italic tracking-[0.16em] text-[#626a63] uppercase sm:text-xs">
                 {block.attribution}
               </cite>
             ) : null}
@@ -150,7 +150,7 @@ function BlockRenderer({
               />
             </div>
             {block.caption ? (
-              <figcaption className="mt-3 text-xs tracking-[0.12em] text-[#626a63] uppercase">
+              <figcaption className="mt-3 text-sm tracking-[0.12em] text-[#626a63] uppercase sm:text-xs">
                 {block.caption}
               </figcaption>
             ) : null}
@@ -179,7 +179,7 @@ export function InsightArticleView({
         compact
       >
         <div className="hero-animate-copy w-full text-left">
-          <p className="text-xs font-semibold tracking-[0.2em] text-[#c5d4a8] uppercase sm:text-[13px]">
+          <p className="text-sm font-semibold tracking-[0.2em] text-[#c5d4a8] uppercase sm:text-[13px]">
             {article.category}
             <span className="mx-2 text-white/40" aria-hidden>
               ·
@@ -198,14 +198,14 @@ export function InsightArticleView({
             {article.excerpt}
           </p>
 
-          <p className="mt-5 border-t border-white/20 pt-4 text-xs tracking-[0.16em] text-white/70 uppercase">
+          <p className="mt-5 border-t border-white/20 pt-4 text-sm tracking-[0.16em] text-white/70 uppercase sm:text-xs">
             {article.readTime}
           </p>
 
           <div className="mt-7">
             <Link
               href="/insights"
-              className="group inline-flex min-h-11 items-center justify-center gap-2.5 rounded-sm border border-white/45 px-6 text-xs font-semibold tracking-[0.12em] text-white uppercase transition-colors hover:border-white hover:bg-white/10 sm:min-h-12 sm:px-7"
+              className="group inline-flex min-h-11 items-center justify-center gap-2.5 rounded-sm border border-white/45 px-6 text-sm font-semibold tracking-[0.12em] text-white uppercase transition-colors hover:border-white hover:bg-white/10 sm:min-h-12 sm:px-7 sm:text-xs"
             >
               <ArrowLeft
                 className="h-4 w-4 transition-transform duration-200 group-hover:-translate-x-0.5"
@@ -266,7 +266,7 @@ export function InsightArticleView({
                     </div>
 
                     <p
-                      className="mt-5 text-[11px] font-semibold tracking-[0.16em] uppercase"
+                      className="mt-5 text-sm font-semibold tracking-[0.16em] uppercase sm:text-[11px]"
                       style={{ color: MUTED }}
                     >
                       <span style={{ color: SAGE }}>{item.category}</span>
