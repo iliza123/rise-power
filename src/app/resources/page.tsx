@@ -163,7 +163,7 @@ function SectionEyebrow({
         />
       </span>
       <p
-        className={`text-mm font-semibold tracking-[0.18em] uppercase ${onDark ? "text-white" : ""}`}
+        className={`text-base font-semibold tracking-[0.14em] uppercase sm:text-[0.9375rem] ${onDark ? "text-white" : ""}`}
         style={{ color }}
       >
         {children}

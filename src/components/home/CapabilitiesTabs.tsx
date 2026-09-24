@@ -168,7 +168,7 @@ export function CapabilitiesTabs() {
         >
           <div role="tabpanel" className="flex flex-col">
             <p
-              className="text-[14px] font-semibold tracking-[0.2em] uppercase"
+              className="text-base font-semibold tracking-[0.14em] uppercase"
               style={{ color: sage }}
             >
               {active.eyebrow}

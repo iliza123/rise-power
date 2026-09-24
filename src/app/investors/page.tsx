@@ -158,7 +158,7 @@ function SectionHeading({
 }) {
   return (
     <div className="mx-auto max-w-[1000px] text-center">
-      <p className="text-mm font-semibold tracking-[0.18em] text-[#6e7f42] uppercase">
+      <p className="text-base font-semibold tracking-[0.14em] text-[#6e7f42] uppercase sm:text-[0.9375rem]">
         {eyebrow}
       </p>
 
@@ -347,7 +347,7 @@ export default function InvestorsPage() {
       >
         <div className="hero-animate-copy w-full text-left">
           <div className="flex items-center gap-4">
-            <p className="font-display text-mm font-semibold tracking-[0.2em] text-white uppercase">
+            <p className="font-display text-base font-semibold tracking-[0.14em] text-white uppercase sm:text-[0.9375rem]">
               Capital Raise
             </p>
           </div>
@@ -546,7 +546,7 @@ export default function InvestorsPage() {
                     >
                       ⌁
                     </span>
-                    <p className="text-sm font-semibold tracking-[0.2em] text-white uppercase sm:text-mm">
+                    <p className="text-base font-semibold tracking-[0.14em] text-white uppercase sm:text-[0.9375rem]">
                       At a Glance
                     </p>
                   </div>

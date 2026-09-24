@@ -24,14 +24,18 @@ function isSchematicAsset(src: string) {
 function SectionEyebrow({
   children,
   light = false,
+  center = false,
 }: {
   children: React.ReactNode;
   light?: boolean;
+  center?: boolean;
 }) {
   const color = light ? "#ffffff" : SAGE;
 
   return (
-    <div className="flex items-center gap-3">
+    <div
+      className={`flex items-center gap-3 ${center ? "justify-center" : ""}`}
+    >
       <span aria-hidden="true" className="relative block h-[13px] w-[38px]">
         <span
           className="absolute top-1/2 left-0 h-px w-full -translate-y-1/2"
@@ -43,7 +47,7 @@ function SectionEyebrow({
         />
       </span>
       <p
-        className="text-sm font-semibold tracking-[0.18em] uppercase sm:text-xs"
+        className="text-base font-semibold tracking-[0.14em] uppercase sm:text-[0.9375rem]"
         style={{ color }}
       >
         {children}
@@ -276,7 +280,8 @@ export function CapabilityDetail({ capability }: CapabilityDetailProps) {
         </div>
       </section>
 
-      {/* 3. What We Deliver */}
+      {/* 3. What We Deliver — skipped on Field (map replaces lower page) */}
+      {capability.id !== "field" ? (
       <section
         className="relative overflow-hidden border-t py-7 sm:py-8 lg:py-9"
         style={{ background: "#f3f0e8", borderColor: SECTION_RULE }}
@@ -331,6 +336,54 @@ export function CapabilityDetail({ capability }: CapabilityDetailProps) {
           </Reveal>
         </div>
       </section>
+      ) : null}
+
+      {/* Field Deployment — world map (Coming Soon) */}
+      {capability.id === "field" ? (
+        <section
+          id="mission-deployments"
+          className="relative overflow-hidden border-t bg-[#060806] py-10 sm:py-12 lg:py-14"
+          style={{ borderColor: "#1a2018" }}
+        >
+          <div className="relative mx-auto max-w-[1440px] px-6 lg:px-10">
+            <Reveal variant="up">
+              <div className="mx-auto max-w-3xl text-center">
+                <SectionEyebrow center>Mission Deployments</SectionEyebrow>
+                <h2 className="mt-3 font-display text-[1.75rem] leading-[0.95] font-bold tracking-tight text-white uppercase sm:text-[2.25rem] lg:text-[2.75rem]">
+                  Proven. Deployed.{" "}
+                  <span style={{ color: SAGE }}>Worldwide.</span>
+                </h2>
+                <p className="type-section-body mx-auto mt-4 max-w-2xl !text-white">
+                  Rise Mission Power systems are trusted in the world&apos;s most
+                  challenging environments and critical missions.
+                </p>
+              </div>
+            </Reveal>
+
+            <Reveal variant="fade" delay={80} className="mt-8 sm:mt-10">
+              <div className="relative aspect-[16/9] w-full overflow-hidden bg-[#0a0f0c] sm:aspect-[2.2/1]">
+                <Image
+                  src="/media/missions/world-map.png"
+                  alt="World map of Rise Mission Power deployment regions"
+                  fill
+                  quality={90}
+                  sizes="(min-width: 1440px) 1440px, 100vw"
+                  className="object-cover object-center"
+                />
+                <div
+                  className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#060806]/55 via-transparent to-[#060806]/25"
+                  aria-hidden
+                />
+                <div className="absolute inset-0 flex items-center justify-center p-6">
+                  <p className="rounded-sm border border-white/25 bg-[#060806]/75 px-6 py-3 font-display text-lg font-bold tracking-[0.18em] text-white uppercase backdrop-blur-sm sm:px-8 sm:py-3.5 sm:text-xl sm:tracking-[0.22em]">
+                    Coming Soon
+                  </p>
+                </div>
+              </div>
+            </Reveal>
+          </div>
+        </section>
+      ) : null}
 
       {/* 4. Certification roadmap — safety only */}
       {capability.showRoadmap ? (
@@ -388,7 +441,8 @@ export function CapabilityDetail({ capability }: CapabilityDetailProps) {
         </section>
       ) : null}
 
-      {/* 5. In Focus gallery — equal cells, shared aspect */}
+      {/* 5. In Focus gallery — skipped on Field */}
+      {capability.id !== "field" ? (
       <section className={`overflow-hidden bg-white ${SECTION_PAD}`}>
         <div className="mx-auto max-w-[1440px] px-6 lg:px-10">
           <Reveal variant="up">
@@ -425,9 +479,10 @@ export function CapabilityDetail({ capability }: CapabilityDetailProps) {
           </div>
         </div>
       </section>
+      ) : null}
 
-      {/* 6. Related capabilities */}
-      {related.length > 0 ? (
+      {/* 6. Related capabilities — skipped on Field */}
+      {capability.id !== "field" && related.length > 0 ? (
         <section
           className={`border-t ${SECTION_PAD}`}
           style={{ background: CREAM, borderColor: SECTION_RULE }}

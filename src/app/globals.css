@@ -63,14 +63,14 @@ h4 {
 /* —— Shared home type scale (keep section headings / cards consistent) —— */
 .type-eyebrow {
   font-family: var(--font-rajdhani), var(--font-barlow), sans-serif;
-  font-size: 0.875rem; /* 14px mobile floor */
+  font-size: 1rem; /* 16px mobile */
   font-weight: 600;
-  letter-spacing: 0.22em;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
 }
 @media (min-width: 640px) {
   .type-eyebrow {
-    font-size: 0.875rem; /* 14px desktop — unchanged */
+    font-size: 0.9375rem; /* 15px desktop */
   }
 }
 

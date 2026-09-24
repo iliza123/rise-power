@@ -370,7 +370,7 @@ export default function ProductsPage() {
         compact
       >
         <div className="hero-animate-copy w-full text-left">
-          <p className="text-mm font-semibold tracking-[0.18em] text-white uppercase">
+          <p className="text-base font-semibold tracking-[0.14em] text-white uppercase sm:text-[0.9375rem]">
             ⌁ Products
           </p>
 
@@ -410,7 +410,7 @@ export default function ProductsPage() {
       >
         <div className="mx-auto max-w-[1440px] px-5 sm:px-6 lg:px-10">
           <Reveal variant="up" className="mx-auto max-w-4xl text-center">
-            <p className="text-mm font-semibold tracking-[0.2em] text-[#6e7f42] uppercase">
+            <p className="text-base font-semibold tracking-[0.14em] text-[#6e7f42] uppercase sm:text-[0.9375rem]">
               ⌁ Our Product Systems
             </p>
 
@@ -486,7 +486,7 @@ export default function ProductsPage() {
           {/* Left copy — opaque panel + hard shadow for readability */}
           <Reveal variant="left" className="relative max-w-[34rem]">
             <div className="relative rounded-xl border border-[#e8e6df] bg-white/95 px-5 py-5 shadow-[6px_6px_0_0_rgba(20,26,20,0.35)] sm:px-6 sm:py-6">
-              <p className="text-sm font-semibold tracking-[0.2em] text-[#6e7f42] uppercase sm:text-xs">
+              <p className="text-base font-semibold tracking-[0.14em] text-[#6e7f42] uppercase sm:text-[0.9375rem]">
                 ⌁ One Cartridge Ecosystem
               </p>
 
@@ -579,7 +579,7 @@ export default function ProductsPage() {
         <div className="mx-auto w-full max-w-[1760px] px-6 lg:px-10">
           <Reveal variant="up">
             <p
-              className="type-eyebrow text-center text-[14px] sm:text-[15px]"
+              className="type-eyebrow text-center"
               style={{ color: sage }}
             >
               {performanceMetrics.eyebrow}
@@ -623,7 +623,7 @@ export default function ProductsPage() {
       >
         <div className="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8">
           <Reveal variant="up" className="mx-auto max-w-4xl text-center">
-            <p className="text-mm font-semibold tracking-[0.2em] text-[#6e7f42] uppercase">
+            <p className="text-base font-semibold tracking-[0.14em] text-[#6e7f42] uppercase sm:text-[0.9375rem]">
               ⌁ Product Comparison
             </p>
 

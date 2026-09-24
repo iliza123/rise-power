@@ -49,7 +49,7 @@ function SectionEyebrow({
         />
       </span>
       <p
-        className={`text-sm font-semibold tracking-[0.18em] uppercase sm:text-xs ${onDark ? "text-white" : ""}`}
+        className={`text-base font-semibold tracking-[0.14em] uppercase sm:text-[0.9375rem] ${onDark ? "text-white" : ""}`}
         style={{ color }}
       >
         {children}
@@ -141,7 +141,7 @@ export default function InsightsPage() {
                   style={{ borderColor: border }}
                 >
                   <p
-                    className="text-sm font-semibold tracking-[0.18em] uppercase sm:text-[11px]"
+                    className="text-base font-semibold tracking-[0.14em] uppercase sm:text-[0.9375rem]"
                     style={{ color: muted }}
                   >
                     <span style={{ color: sage }}>{featuredMeta.category}</span>

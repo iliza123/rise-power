@@ -38,7 +38,7 @@ function SectionEyebrow({ children }: { children: React.ReactNode }) {
         />
       </span>
       <p
-        className="text-sm font-semibold tracking-[0.18em] uppercase sm:text-xs"
+        className="text-base font-semibold tracking-[0.14em] uppercase sm:text-[0.9375rem]"
         style={{ color: SAGE }}
       >
         {children}
@@ -179,7 +179,7 @@ export function InsightArticleView({
         compact
       >
         <div className="hero-animate-copy w-full text-left">
-          <p className="text-sm font-semibold tracking-[0.2em] text-[#c5d4a8] uppercase sm:text-[13px]">
+          <p className="text-base font-semibold tracking-[0.14em] text-[#c5d4a8] uppercase sm:text-[0.9375rem]">
             {article.category}
             <span className="mx-2 text-white/40" aria-hidden>
               ·

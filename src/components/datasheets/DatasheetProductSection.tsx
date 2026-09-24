@@ -88,7 +88,7 @@ export function DatasheetProductSection({
                 style={{ backgroundColor: "#aeb6bd" }}
               />
               <p
-                className="text-sm font-semibold tracking-[0.18em] uppercase sm:text-xs"
+                className="text-base font-semibold tracking-[0.14em] uppercase sm:text-[0.9375rem]"
                 style={{ color: MUTED }}
               >
                 Datasheet · Beta
@@ -115,7 +115,7 @@ export function DatasheetProductSection({
 
             <div className="mt-6">
               <p
-                className="text-sm font-semibold tracking-[0.18em] uppercase sm:text-xs"
+                className="text-base font-semibold tracking-[0.14em] uppercase sm:text-[0.9375rem]"
                 style={{ color: INK }}
               >
                 {product.sectionTitle}

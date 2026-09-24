@@ -186,25 +186,25 @@ export function Header() {
     return () => window.removeEventListener("resize", onResize);
   }, []);
 
-  /** Transparent white chrome only while parked on the dark hero. */
-  const onHeroTransparent =
+  /** Frosted glass over the dark hero while parked at the top. */
+  const onHeroGlass =
     overDarkHero && !isScrolled && !megaOpen && !open;
   /** Home scrolled/menu stays dark glass; inner pages use cream sticky. */
   const useDarkSticky = isHome && (isScrolled || megaOpen || open);
 
-  const linkColor = onHeroTransparent || useDarkSticky
+  const linkColor = onHeroGlass || useDarkSticky
     ? "text-white/80 hover:text-white"
     : "text-ink/75 hover:text-ink";
 
   const activeColor =
-    onHeroTransparent || useDarkSticky ? "text-white" : "text-ink";
+    onHeroGlass || useDarkSticky ? "text-white" : "text-ink";
 
   /*
    * Header styling.
    *
    * Home + inner pages over dark heroes:
-   * - Top of page = transparent (hero shows through).
-   * - Home scrolled / menu open = dark glass.
+   * - Top of page = frosted blur (hero shows through).
+   * - Home scrolled / menu open = denser dark glass.
    * - Inner scrolled / menu open = cream sticky (not dark).
    *
    * Legal / light pages:
@@ -215,8 +215,8 @@ export function Header() {
       ? "translate-y-0 opacity-100"
       : "-translate-y-[110%] opacity-0";
 
-    if (onHeroTransparent) {
-      return `fixed top-0 right-0 left-0 z-50 will-change-transform transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${visibilityClass} bg-transparent text-white`;
+    if (onHeroGlass) {
+      return `fixed top-0 right-0 left-0 z-50 will-change-transform transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${visibilityClass} border-b border-white/10 bg-[#07100d]/45 text-white shadow-[0_8px_28px_rgba(0,0,0,0.18)] backdrop-blur-xl backdrop-saturate-150`;
     }
 
     if (useDarkSticky) {
@@ -228,8 +228,8 @@ export function Header() {
     return `fixed top-0 right-0 left-0 z-50 will-change-transform ${borderClass} bg-cream text-ink shadow-[0_4px_20px_rgba(0,0,0,0.06)] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${visibilityClass}`;
   })();
 
-  const logoOnDark = onHeroTransparent || useDarkSticky;
-  const chromeOnDark = onHeroTransparent || useDarkSticky;
+  const logoOnDark = onHeroGlass || useDarkSticky;
+  const chromeOnDark = onHeroGlass || useDarkSticky;
 
   const closeMega = () => setActiveKey(null);
 

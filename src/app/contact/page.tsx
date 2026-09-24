@@ -38,7 +38,7 @@ function SectionEyebrow({
         />
       </span>
       <p
-        className={`text-mm font-semibold tracking-[0.18em] uppercase ${light ? "text-white" : ""}`}
+        className={`text-base font-semibold tracking-[0.14em] uppercase sm:text-[0.9375rem] ${light ? "text-white" : ""}`}
         style={{ color }}
       >
         {children}
@@ -54,10 +54,9 @@ export default function ContactPage() {
         layout="split"
         imageSrc="/media/contact/hero-banner.png"
         mobileImageSrc="/media/contact/hero-banner-mobile.png"
-        imageAlt="Soldiers in a forest"
-        imageWidth={1920}
-        imageHeight={600}
-        imageClassName="translate-x-[14%]"
+        imageAlt="Soldier with Rise power systems and drone at a mountain overlook"
+        imageWidth={7680}
+        imageHeight={3200}
         quality={100}
         tone="#101820"
       >
@@ -150,7 +149,7 @@ export default function ContactPage() {
                 {/* Email / Phone / Address — one row under the copy */}
                 <div className="mt-auto grid gap-6 border-t border-[#d9dfe3] pt-8 sm:grid-cols-3 sm:gap-0 sm:divide-x sm:divide-[#d9dfe3] lg:mt-10">
                   <div className="sm:pr-5">
-                    <p className="text-sm font-semibold tracking-[0.18em] text-[#6e7f42] uppercase sm:text-[11px]">
+                    <p className="text-base font-semibold tracking-[0.14em] text-[#6e7f42] uppercase sm:text-[0.9375rem]">
                       Email
                     </p>
                     <a
@@ -162,7 +161,7 @@ export default function ContactPage() {
                   </div>
 
                   <div className="border-t border-[#d9dfe3] pt-6 sm:border-t-0 sm:px-5 sm:pt-0">
-                    <p className="text-sm font-semibold tracking-[0.18em] text-[#6e7f42] uppercase sm:text-[11px]">
+                    <p className="text-base font-semibold tracking-[0.14em] text-[#6e7f42] uppercase sm:text-[0.9375rem]">
                       Phone
                     </p>
                     <a
@@ -174,7 +173,7 @@ export default function ContactPage() {
                   </div>
 
                   <div className="border-t border-[#d9dfe3] pt-6 sm:border-t-0 sm:pl-5 sm:pt-0">
-                    <p className="text-sm font-semibold tracking-[0.18em] text-[#6e7f42] uppercase sm:text-[11px]">
+                    <p className="text-base font-semibold tracking-[0.14em] text-[#6e7f42] uppercase sm:text-[0.9375rem]">
                       Address
                     </p>
                     <p className="mt-2 text-base leading-snug text-[#101820] sm:text-lg">
