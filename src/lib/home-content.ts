@@ -166,6 +166,9 @@ export const contactCta: Cta = {
 /** Hero background from approved Frame 1 reference (photo lane, UI baked out). */
 export const heroImageSrc = "/media/hero.png";
 
+/** Home hero banner for stacked layout below xl (phones / tablets). */
+export const heroMobileImageSrc = "/media/hero-mobile.png";
+
 /** Exact Frame 1 product CTA / stat labels */
 export const productUiLabels = {
   runtime: "Runtime",

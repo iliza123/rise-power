@@ -356,6 +356,7 @@ export default function ProductsPage() {
       <StackedPageHero
         layout="split"
         imageSrc="/media/products/product-hero.png"
+        mobileImageSrc="/media/products/product-hero-mobile.png"
         imageAlt="Camouflage Rise product lineup"
         imageWidth={1920}
         imageHeight={1081}

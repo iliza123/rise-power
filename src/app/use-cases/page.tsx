@@ -384,6 +384,7 @@ export default function UseCasesPage() {
       <StackedPageHero
         layout="split"
         imageSrc="/media/use-cases/uc-hero.png"
+        mobileImageSrc="/media/use-cases/uc-hero-mobile.png"
         imageAlt="Rise Sentinel and hydrogen cartridge on a workshop floor"
         imageWidth={3840}
         imageHeight={1300}

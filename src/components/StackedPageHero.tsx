@@ -3,6 +3,8 @@ import Image from "next/image";
 type StackedPageHeroProps = {
   imageSrc: string;
   imageAlt: string;
+  /** Optional banner for stacked layout below xl. Falls back to `imageSrc`. */
+  mobileImageSrc?: string;
   /** Extra classes for desktop (xl+) framing — object-position, translate, etc.
    * Mobile always uses object-cover object-center. */
   imageClassName?: string;
@@ -42,6 +44,7 @@ type StackedPageHeroProps = {
 export function StackedPageHero({
   imageSrc,
   imageAlt,
+  mobileImageSrc,
   imageClassName,
   tone = "#0a100e",
   compact = false,
@@ -58,6 +61,7 @@ export function StackedPageHero({
   const mobileMediaClassName = "object-cover object-center";
   /** Desktop — caller framing or default center. */
   const desktopMediaClassName = imageClassName ?? "object-cover object-center";
+  const mobileSrc = mobileImageSrc ?? imageSrc;
   const overlayQuality = quality ?? 90;
   const splitQuality = quality ?? 100;
   const aspectRatio = imageWidth / Math.max(imageHeight, 1);
@@ -89,7 +93,7 @@ export function StackedPageHero({
           style={{ backgroundColor: tone }}
         >
           <Image
-            src={imageSrc}
+            src={mobileSrc}
             alt={imageAlt}
             fill
             priority
@@ -163,7 +167,7 @@ export function StackedPageHero({
       <div className="relative aspect-[3/2] w-full shrink-0 sm:aspect-[16/10] lg:aspect-[21/9] xl:absolute xl:inset-0 xl:aspect-auto">
         {/* Mobile: always centered. Desktop: optional framing via imageClassName. */}
         <Image
-          src={imageSrc}
+          src={mobileSrc}
           alt={imageAlt}
           fill
           priority

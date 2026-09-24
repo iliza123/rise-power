@@ -223,6 +223,7 @@ export default function CapabilitiesPage() {
       <StackedPageHero
         layout="split"
         imageSrc={hero.imageSrc}
+        mobileImageSrc="/media/capabilities/capabilities-hero-mobile.png"
         imageAlt="Soldiers with Rise Mission Power packs overlooking a mountain ridge at sunset"
         imageWidth={3840}
         imageHeight={1536}
