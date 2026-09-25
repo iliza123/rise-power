@@ -62,7 +62,7 @@ export const megaNavItems: readonly MegaNavItem[] = [
 
   /* No links → no desktop chevron / no mobile accordion */
   {
-    label: "Markets",
+    label: "Case Studies",
     href: "/use-cases",
   },
 

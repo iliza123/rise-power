@@ -1055,7 +1055,7 @@ export const footer = {
       heading: "Solutions",
       links: [
         { label: "Products", href: "/products" },
-        { label: "Use Cases", href: "/use-cases" },
+        { label: "Case Studies", href: "/use-cases" },
         { label: "Capabilities", href: "/capabilities" },
         { label: "How It Works", href: "/#how-it-works" },
       ],

@@ -94,7 +94,7 @@ import { useCases } from "@/lib/content";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Use Cases",
+  title: "Case Studies",
   description:
     "Explore how Rise Power hydrogen systems support municipalities, utilities, remote communities, homes, and emergency backup.",
   path: "/use-cases",
@@ -392,10 +392,10 @@ export default function UseCasesPage() {
         splitWash="linear-gradient(90deg, #0a0f10 0%, #0a0f10 44%, rgba(10,15,16,0.82) 52%, rgba(10,15,16,0.35) 62%, transparent 74%)"
       >
         <div className="hero-animate-copy w-full max-w-[40rem] text-left">
-          <SectionEyebrow light>Use Cases</SectionEyebrow>
+          <SectionEyebrow light>Case Studies</SectionEyebrow>
 
           <h1 className="mt-4 type-page-h1 sm:mt-5">
-            Use Cases
+            Case Studies
           </h1>
 
           <p className="type-section-body mt-4 max-w-[36rem] !text-white/90 sm:mt-5">
@@ -407,7 +407,7 @@ export default function UseCasesPage() {
               href="#use-cases"
               className="type-cta inline-flex min-h-12 items-center justify-center gap-2 rounded-sm bg-[#849363] px-8 text-white uppercase transition-opacity hover:opacity-90"
             >
-              Explore Use Cases
+              Explore Case Studies
               <ArrowRight className="size-5" />
             </a>
 
@@ -442,7 +442,7 @@ export default function UseCasesPage() {
         <div className="relative mx-auto max-w-[1440px] px-6 lg:px-10">
           <Reveal variant="up">
             <div className="mx-auto max-w-5xl text-center">
-              <SectionEyebrow center>Use Cases</SectionEyebrow>
+              <SectionEyebrow center>Case Studies</SectionEyebrow>
 
               <h2 className="mt-6 type-section-h2">
                 Four Environments.{" "}
@@ -458,7 +458,7 @@ export default function UseCasesPage() {
 
           <Reveal variant="up" delay={80} className="mt-10 sm:mt-12 xl:hidden">
             <SnapCarousel
-              ariaLabel="Use case environments"
+              ariaLabel="Case study environments"
               showArrows
               showDots
               itemClassName="w-[min(92vw,22.5rem)] sm:w-[min(85vw,26rem)] md:w-[min(70vw,28rem)]"
@@ -737,7 +737,7 @@ export default function UseCasesPage() {
           <Reveal variant="up">
             <div className="mx-auto max-w-4xl text-center">
               <SectionEyebrow center>
-                From Use Case to Solution
+                From Case Study to Solution
               </SectionEyebrow>
 
               <h2 className="mt-6 type-section-h2">
