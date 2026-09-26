@@ -25,7 +25,7 @@ const products: DatasheetProduct[] = [
     id: "sentinel",
     name: "Rise Sentinel™",
     image: "/media/datasheets/datasheet-1.png",
-    imageAlt: "Couple at a campsite using Rise Sentinel to power cooking and devices at sunset",
+    imageAlt: "Rise Sentinel backpack power system on a soldier in mountain terrain at sunset",
     description:
       "Compact hydrogen power for everyday backup and outdoor use. Quiet, plug-and-play setup with refillable hydrogen cartridges. Lightweight and easy to carry — no grid connection required, zero-emissions power at the point of use.",
     specs: [
