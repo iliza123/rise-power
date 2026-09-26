@@ -72,11 +72,11 @@ function PillarRow({
       id={tab.id}
       className="group scroll-mt-28 grid overflow-hidden rounded-[2px] border border-white/10 bg-[#f7f6f2] lg:grid-cols-2"
     >
-      {/* Cinematic image */}
+      {/* Clean image — edge-to-edge, no overlay */}
       <Reveal
         variant={imageFirst ? "left" : "right"}
         delay={40}
-        className={`relative min-h-[220px] overflow-hidden bg-[#0a1016] sm:min-h-[280px] lg:min-h-[380px] xl:min-h-[400px] ${
+        className={`relative min-h-[220px] overflow-hidden sm:min-h-[280px] lg:min-h-[380px] xl:min-h-[400px] ${
           imageFirst ? "lg:order-1" : "lg:order-2"
         }`}
       >
@@ -85,24 +85,8 @@ function PillarRow({
           alt={tab.imageAlt}
           fill
           sizes="(min-width: 1024px) 50vw, 100vw"
-          className="object-cover transition-transform duration-[900ms] ease-out group-hover:scale-[1.04]"
+          className="object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0a1016]/55 via-[#0a1016]/15 to-transparent" />
-        <div
-          className={`absolute inset-0 ${
-            imageFirst
-              ? "bg-gradient-to-r from-transparent via-transparent to-[#0a1016]/25"
-              : "bg-gradient-to-l from-transparent via-transparent to-[#0a1016]/25"
-          }`}
-        />
-
-        {/* Oversized watermark number on image */}
-        <span
-          aria-hidden
-          className="pointer-events-none absolute -bottom-4 -right-2 font-display text-[7.5rem] leading-none font-bold tracking-tight text-white/[0.08] select-none sm:text-[9rem] lg:text-[11rem]"
-        >
-          {number}
-        </span>
       </Reveal>
 
       {/* Editorial dossier */}

@@ -386,7 +386,7 @@ export const marketDetails: readonly MarketDetailPage[] = [
       hero: {
         src: "/media/markets/consumer-hero.png",
         mobileSrc: "/media/markets/consumer-hero-mobile.png",
-        alt: "Consumer market imagery",
+        alt: "Rise portable power at a lakeside campsite with RV at sunset",
       },
       secondary: {
         src: "/media/cases/homes-emergency.png",
@@ -485,16 +485,19 @@ export const marketDetails: readonly MarketDetailPage[] = [
           slug: "sentinel",
           role: "Camp & kit power",
           body: "Compact hydrogen power for camping and outdoor use. Lightweight enough for an RV cubby or home emergency kit — quiet, plug-and-play setup with refillable cartridges.",
+          imageSrc: "/media/markets/consumer-product-sentinel.png",
         },
         {
           slug: "titan",
           role: "Home essentials backup",
           body: "Clean backup for homes and community spaces during outages and severe weather. 1.5 kW capacity with unlimited runtime via cartridge swap — neighbourhood-quiet, zero exhaust at the point of use.",
+          imageSrc: "/media/markets/consumer-product-titan.png",
         },
         {
           slug: "falcon",
           role: "Property & recreation UAV",
           body: "Plug-and-play hydrogen range extender for compatible drones. Up to 5× extended flight range for property, mapping, and outdoor use with quick-swap cartridges.",
+          imageSrc: "/media/markets/consumer-product-falcon.png",
         },
       ],
     },

@@ -693,7 +693,7 @@ export const capabilities = {
       body: "Integration with existing vehicle platforms, communications systems, and facility power networks.",
       heroBody:
         "Integration with existing vehicle platforms, communications systems, and facility power networks.",
-      href: "/capabilities/system-integration",
+      href: "/capabilities",
       imageSrc: "/media/capabilities/system-integration.png",
       imageAlt:
         "Rise Mission Power module on a workbench beside a Rise-branded vehicle at a facility",
@@ -777,7 +777,7 @@ export const capabilities = {
       href: "/capabilities/field-deployment",
       imageSrc: "/media/capabilities/field-deployment-hero.png",
       imageAlt:
-        "Rise portable power units at a desert field camp with solar panels, tent, and communications tower at sunset",
+        "Rise portable power unit at a desert field camp with solar panels, tent, communications tower, and drone at sunset",
       secondaryImageSrc: "/media/products/hydrogen-cartridge-kit.png",
       secondaryImageAlt:
         "Hydrogen cartridge kit ready for rapid field replenishment",
@@ -1150,10 +1150,10 @@ export const footer = {
           label: "Engineering & Development",
           href: "/capabilities/engineering-development",
         },
-        {
-          label: "System Integration",
-          href: "/capabilities/system-integration",
-        },
+        // {
+        //   label: "System Integration",
+        //   href: "/capabilities/system-integration",
+        // },
         {
           label: "Field Deployment",
           href: "/capabilities/field-deployment",

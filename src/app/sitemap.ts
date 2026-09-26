@@ -39,7 +39,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly" as const,
       priority: 0.9,
     })),
-    ...capabilityDetails.map((capability) => ({
+    ...capabilityDetails
+      .filter((capability) => capability.slug !== "system-integration")
+      .map((capability) => ({
       url: `${site.url}/capabilities/${capability.slug}`,
       lastModified: new Date(),
       changeFrequency: "monthly" as const,

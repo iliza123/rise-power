@@ -130,11 +130,11 @@ export const megaNavItems: readonly MegaNavItem[] = [
         href: "/capabilities/engineering-development",
         description: "From prototypes to production-ready hardware.",
       },
-      {
-        label: "System Integration",
-        href: "/capabilities/system-integration",
-        description: "Works with existing platforms and infrastructure.",
-      },
+      // {
+      //   label: "System Integration",
+      //   href: "/capabilities/system-integration",
+      //   description: "Works with existing platforms and infrastructure.",
+      // },
       {
         label: "Field Deployment",
         href: "/capabilities/field-deployment",
