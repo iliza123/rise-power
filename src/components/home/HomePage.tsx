@@ -28,6 +28,7 @@ import { SectionSkeleton } from "./SectionSkeleton";
 import { SnapCarousel } from "./SnapCarousel";
 import { CustomersPartners } from "./CustomersPartners";
 import { HydrogenEcosystem } from "./HydrogenEcosystem";
+import { HydrogenNetwork } from "./HydrogenNetwork";
 
 const BusinessesCompanies = dynamic(
   () => import("./BusinessesCompanies").then((m) => m.BusinessesCompanies),
@@ -277,6 +278,8 @@ export function HomePage() {
       </section>
 
       <HydrogenEcosystem />
+
+      <HydrogenNetwork />
 
       {/* Partner marquee only — case cards live on Products */}
       <CustomersPartners showCases={false} />

@@ -252,7 +252,7 @@ export const threeMarkets = {
       points: ["Tactical Communications", "UAV Operations", "ISR Systems"],
       detail:
         "Ultra-quiet, zero-emission power with rapid cartridge swaps for mission-critical operations where diesel logistics and acoustic signature are unacceptable.",
-      href: "/use-cases#defense-security",
+      href: "/markets/defense",
       cta: "Explore Solutions",
       image: "Military and defence market imagery",
       imageSrc: "/media/markets/defense-military.png",
@@ -264,7 +264,7 @@ export const threeMarkets = {
       points: ["Construction Sites", "Telecom Backup", "Mining"],
       detail:
         "Robust, low-maintenance hydrogen power for electrified drilling, remote site infrastructure, and off-grid operations without fuel-truck dependency.",
-      href: "/use-cases#remote-operations",
+      href: "/markets/commercial",
       cta: "Explore Solutions",
       image: "Commercial market imagery",
       imageSrc: "/media/markets/commercial.png",
@@ -276,7 +276,7 @@ export const threeMarkets = {
       points: ["Camping", "RV Power", "Emergency Home Backup"],
       detail:
         "Quiet neighbourhood-ready operation with zero exhaust at the point of use. Refillable cartridges swap in under 30 seconds.",
-      href: "/use-cases#disaster-response",
+      href: "/markets/consumer",
       cta: "Explore Solutions",
       image: "Consumer market imagery",
       imageSrc: "/media/markets/field-consumer.png",
@@ -944,6 +944,59 @@ export const hydrogenEcosystem = {
   cta: { label: "Explore Products", href: "/products" },
 };
 
+/** Expanded network story — placed below SAME HYDROGEN on home. */
+export const hydrogenNetwork = {
+  eyebrow: "HYDROGEN NETWORK",
+  headingBefore: "THE HYDROGEN",
+  headingAccent: "ECOSYSTEM.",
+  body: "Rise Mission Power connects portable systems, refillable cartridges, and return logistics into one field-ready network—quiet, zero-emission power engineered in British Columbia.",
+  cards: [
+    {
+      title: "Fill Stations",
+      body: "Local refill hubs that keep cartridges circulating—swap empty for full without diesel runs.",
+      imageSrc: "/media/ecosystem/02.png",
+      imageAlt: "Rise Mission Power H2 refill station in mountain terrain",
+    },
+    {
+      title: "Distributed Equipment",
+      body: "Portable generators and range systems across sites and missions on one cartridge standard.",
+      imageSrc: "/media/ecosystem/03.png",
+      imageAlt: "Stacked Rise portable hydrogen power units",
+    },
+    {
+      title: "Remote Solutions",
+      body: "Off-grid and forward power where fuel trucks are costly or impractical—quiet at the point of use.",
+      imageSrc: "/media/ecosystem/04.png",
+      imageAlt: "Rise portable power supporting remote tower and drone operations",
+    },
+    {
+      title: "Plug & Play Cartridges",
+      body: "Standardized, refillable cartridges that swap in seconds and return through the refill loop.",
+      imageSrc: "/media/products/plug-and-play-cartridge.png",
+      imageAlt: "Rise plug-and-play hydrogen cartridges",
+    },
+  ],
+  flow: ["Deploy", "Use Power", "Return or Refill", "Reuse Again"],
+  pillars: [
+    {
+      title: "Scalable Network",
+      body: "Grow from a single unit to multi-site fleets on one cartridge standard.",
+    },
+    {
+      title: "Global Coverage",
+      body: "Transport-ready cartridges and field support beyond a single base.",
+    },
+    {
+      title: "Recurring Value",
+      body: "Return-and-refill keeps hardware in service and fuel cost predictable.",
+    },
+    {
+      title: "Sustainable Future",
+      body: "Zero-emission at the point of use with reusable cartridge logistics.",
+    },
+  ],
+} as const;
+
 export const customerPartners = {
   eyebrow: "CUSTOMERS & PARTNERS",
   headingBefore: "BUILT FOR REAL-WORLD USE.",
@@ -986,7 +1039,7 @@ export const customerPartners = {
         { value: "70% LESS MAINT.", label: "Downtime Reduced" },
         { value: "BUILT TOUGH", label: "For Harsh Sites" },
       ],
-      href: "/use-cases#remote-operations",
+      href: "/markets/commercial",
       image: "Mining company case study",
       imageSrc: "/media/cases/mining.png",
     },
@@ -1092,9 +1145,9 @@ export const footer = {
     {
       heading: "Markets",
       links: [
-        { label: "Military & Defence", href: "/use-cases#defense-security" },
-        { label: "Commercial", href: "/use-cases#remote-operations" },
-        { label: "Consumer", href: "/use-cases#disaster-response" },
+        { label: "Military & Defence", href: "/markets/defense" },
+        { label: "Commercial", href: "/markets/commercial" },
+        { label: "Consumer", href: "/markets/consumer" },
         { label: "Municipalities & Public Works", href: "/use-cases#use-cases" },
       ],
     },
@@ -1102,7 +1155,7 @@ export const footer = {
       heading: "Company",
       links: [
         { label: "About", href: "/about" },
-        { label: "Focus Areas", href: "/about#focus" },
+        { label: "How We Work", href: "/about#how-we-work" },
         { label: "Investors", href: "/investors" },
         { label: "Investor Deck", href: "/rise-power-deck.pdf" },
         {

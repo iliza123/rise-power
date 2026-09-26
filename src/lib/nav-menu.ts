@@ -76,9 +76,10 @@ export const megaNavItems: readonly MegaNavItem[] = [
       //   description: "The mission behind portable hydrogen power.",
       // },
       {
-        label: "Focus Areas",
-        href: "/about#focus",
-        description: "Military, commercial, and consumer power applications.",
+        label: "How We Work",
+        href: "/about#how-we-work",
+        description:
+          "Engineering, Canadian manufacturing, and field validation.",
       },
       {
         label: "Contact",
@@ -97,15 +98,15 @@ export const megaNavItems: readonly MegaNavItem[] = [
   /* No links → no desktop chevron / no mobile accordion */
   {
     label: "Defense",
-    href: "/use-cases#defense-security",
+    href: "/markets/defense",
   },
   {
     label: "Consumer",
-    href: "/use-cases#disaster-response",
+    href: "/markets/consumer",
   },
   {
     label: "Commercial",
-    href: "/use-cases#remote-operations",
+    href: "/markets/commercial",
   },
 
   {

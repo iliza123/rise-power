@@ -56,33 +56,27 @@ const values = [
   },
 ];
 
-const focusAreas = [
+const howWeWork = [
   {
     number: "01",
-    title: "Military &\nDefence",
-    description:
-      "Silent hydrogen power for tactical communications, UAV operations, and ISR systems in forward deployments.",
-    image: "/media/markets/defense-military.png",
-    href: "/use-cases#defense-security",
-    cta: "Explore Solutions",
+    title: "ENGINEERING & DEVELOPMENT",
+    body: "Prototypes to production-ready fuel cell hardware.",
+    image: "/media/capabilities/engineering-development.png",
+    href: "/capabilities/engineering-development",
   },
   {
     number: "02",
-    title: "Commercial",
-    description:
-      "Construction sites, telecom backup, mining, and remote industrial power without diesel fuel-truck dependency.",
-    image: "/media/markets/commercial.png",
-    href: "/use-cases#remote-operations",
-    cta: "Explore Solutions",
+    title: "CANADIAN MANUFACTURING",
+    body: "Built in BC on CIMtech’s 20+ year track record.",
+    image: "/media/company/company-value-3.png",
+    href: "/capabilities",
   },
   {
     number: "03",
-    title: "Consumer",
-    description:
-      "Camping, RV power, and emergency home backup with quiet, zero-emission operation at the point of use.",
-    image: "/media/markets/field-consumer.png",
-    href: "/use-cases#disaster-response",
-    cta: "Explore Solutions",
+    title: "FIELD VALIDATION",
+    body: "Proven in coastal, arctic, and high-altitude conditions.",
+    image: "/media/capabilities/field-validation-primary.png",
+    href: "/capabilities/field-deployment",
   },
 ];
 
@@ -211,56 +205,6 @@ function ValueCard({ value }: { value: (typeof values)[number] }) {
   );
 }
 
-function FocusCard({ area }: { area: (typeof focusAreas)[number] }) {
-  return (
-    <Link
-      href={area.href}
-      className="group flex h-full flex-col overflow-hidden rounded-[7px] border border-[#d9dfe3] bg-white transition-colors hover:border-[#b8c4a8] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6e7f42]"
-    >
-      <div className="flex flex-1 flex-col px-5 pt-4 sm:px-5 sm:pt-5">
-        <div className="flex items-center gap-4">
-          <span
-            className="font-display text-[30px] font-bold leading-none"
-            style={{ color: sage }}
-          >
-            {area.number}
-          </span>
-
-          <span className="h-px w-14 bg-[#aeb6bd]" />
-        </div>
-
-        <h3 className="mt-4 whitespace-pre-line font-display text-[27px] leading-[1.02] font-bold tracking-tight uppercase sm:text-[29px]">
-          {area.title}
-        </h3>
-
-        <p className="type-card-body mt-3 min-h-[4.5em] text-[#66717d]">
-          {area.description}
-        </p>
-      </div>
-
-      <div className="mt-auto px-5 pt-4 sm:px-5">
-        <div className="relative aspect-[1.45/1] overflow-hidden rounded-[5px]">
-          <Image
-            src={area.image}
-            alt={area.title.replace(/\n/g, " ")}
-            fill
-            sizes="(min-width: 1280px) 33vw, (min-width: 640px) 50vw, 88vw"
-            className="object-cover transition-transform duration-500 ease-out group-hover:scale-[1.03]"
-          />
-        </div>
-
-        <span
-          className="mt-4 mb-4 inline-flex items-center gap-2 text-sm font-semibold tracking-wide uppercase transition-opacity group-hover:opacity-80 sm:mb-5"
-          style={{ color: sage }}
-        >
-          {area.cta}
-          <ArrowRight className="size-4 shrink-0" aria-hidden="true" />
-        </span>
-      </div>
-    </Link>
-  );
-}
-
 /* -------------------------------------------------------------------------- */
 /* PAGE                                                                       */
 /* -------------------------------------------------------------------------- */
@@ -304,10 +248,10 @@ export default function AboutPage() {
             </a>
 
             <a
-              href="#focus"
+              href="#how-we-work"
               className="inline-flex min-h-12 items-center justify-center gap-2 rounded-sm border border-white/50 px-7 text-sm font-semibold tracking-wide text-white uppercase transition-colors hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
             >
-              Explore Focus Areas
+              How We Work
               <ArrowRight className="size-5" aria-hidden="true" />
             </a>
           </div>
@@ -471,56 +415,111 @@ export default function AboutPage() {
       </section>
 
       {/* ================================================================== */}
-      {/* FOCUS AREAS                                                         */}
+      {/* HOW WE WORK — ecosystem stage + outperform header language          */}
       {/* ================================================================== */}
 
-      <section className="relative bg-[#fbfaf7] py-10 sm:py-12 lg:py-16">
-        <div id="focus" className="pointer-events-none absolute top-0 h-0 w-0 scroll-mt-28" />
-        <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true">
-          <ContourDecoration position="left" />
-          <ContourDecoration position="right" />
-        </div>
+      <section
+        id="how-we-work"
+        className="relative scroll-mt-28 overflow-hidden bg-[#0e1210] py-12 sm:py-14 lg:py-16"
+      >
+        <div id="focus" className="pointer-events-none absolute top-0 h-0 w-0" />
+        <Image
+          src="/media/company/company-mission.png"
+          alt="Rise Power field operations"
+          fill
+          quality={90}
+          sizes="100vw"
+          className="object-cover object-[center_42%]"
+        />
+        <div className="absolute inset-0 bg-white/10" />
+        <div className="pointer-events-none absolute inset-y-0 left-0 z-[1] w-[22%] bg-gradient-to-r from-white/80 via-white/35 to-transparent" />
+        <div className="pointer-events-none absolute inset-y-0 right-0 z-[1] w-[14%] bg-gradient-to-l from-white/55 via-white/20 to-transparent" />
 
-        <div className="relative mx-auto max-w-[1440px] px-6 lg:px-10">
-          <Reveal variant="up">
-            <div className="text-center">
-              <div className="flex justify-center">
-                <SectionEyebrow>Focus Areas</SectionEyebrow>
-              </div>
+        <div className="relative z-10 mx-auto grid max-w-[1440px] items-center gap-8 px-5 sm:px-6 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.1fr)_minmax(0,0.85fr)] lg:gap-6 lg:px-10">
+          <Reveal variant="left" className="relative max-w-[34rem]">
+            <div className="relative rounded-xl border border-[#e8e6df] bg-white/95 px-5 py-5 shadow-[6px_6px_0_0_rgba(20,26,20,0.35)] sm:px-6 sm:py-6">
+              <p className="type-eyebrow" style={{ color: sage }}>
+                ENGINEERED FOR REAL-WORLD USE
+              </p>
 
-              <h2 className="mt-4 type-section-h2">
-                Built For The Missions That Matter.
+              <h2 className="mt-3 type-section-h2 text-[#141a14]">
+                Engineered.
+                <br />
+                Manufactured.
+                <br />
+                <span style={{ color: sage }}>Validated.</span>
               </h2>
 
-              <p className="type-section-body mx-auto mt-4 max-w-[640px] text-[#66717d]">
-                Silent, field-validated hydrogen power for defense, civic
-                operations, and emergency response.
+              <p className="type-section-body mt-4 max-w-[28rem] text-[#3f3c36]">
+                Quiet, zero-emission hydrogen systems designed and built in
+                British Columbia — a CIMtech Green Energy company, proven where
+                operators work.
               </p>
+
+              <div className="mt-6 flex flex-wrap items-center gap-4">
+                <Link
+                  href="/contact"
+                  className="inline-flex min-h-11 items-center gap-2 rounded-sm border border-[#252925] bg-white px-6 text-sm font-semibold uppercase shadow-[3px_3px_0_0_rgba(20,26,20,0.28)] transition-colors hover:bg-[#141a14] hover:text-white"
+                >
+                  Request a Demo
+                </Link>
+
+                <Link
+                  href="/capabilities"
+                  className="inline-flex items-center gap-2 text-sm font-semibold uppercase text-[#141a14]"
+                >
+                  See Capabilities
+                  <ArrowRight className="size-4" style={{ color: sage }} />
+                </Link>
+              </div>
             </div>
           </Reveal>
 
-          <div className="mt-8 xl:hidden">
-            <SnapCarousel
-              ariaLabel="Focus areas"
-              showArrows
-              showDots
-              itemClassName="w-[min(88vw,22rem)] sm:w-[min(70vw,26rem)] md:w-[min(55vw,28rem)]"
-              trackClassName="gap-4 px-1 pb-1"
-            >
-              {focusAreas.map((area, index) => (
-                <Reveal key={area.number} variant="up" delay={index * 70}>
-                  <FocusCard area={area} />
-                </Reveal>
-              ))}
-            </SnapCarousel>
-          </div>
+          <div className="hidden min-h-[18rem] lg:block" aria-hidden />
 
           <RevealStagger
-            className="mt-8 hidden gap-4 xl:grid xl:grid-cols-3"
+            className="flex w-full max-w-md flex-col gap-3 justify-self-end lg:max-w-none"
             step={70}
+            variant="right"
           >
-            {focusAreas.map((area) => (
-              <FocusCard key={area.number} area={area} />
+            {howWeWork.map((step, index) => (
+              <Link
+                key={step.number}
+                href={step.href}
+                className="relative flex items-stretch rounded-md border border-[#e8e6df] bg-white/95 shadow-[5px_5px_0_0_rgba(20,26,20,0.32)] transition-transform hover:-translate-y-0.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6e7f42]"
+              >
+                <div className="relative m-2.5 h-14 w-14 shrink-0 self-center overflow-hidden rounded-sm bg-[#f7f6f2] sm:h-16 sm:w-16">
+                  <Image
+                    src={step.image}
+                    alt={step.title}
+                    fill
+                    sizes="64px"
+                    className="object-cover"
+                  />
+                </div>
+
+                <div className="relative w-3 shrink-0">
+                  {index !== 0 && (
+                    <span className="absolute -top-3.5 bottom-1/2 left-1/2 w-px -translate-x-1/2 bg-[#c5c8bf]" />
+                  )}
+                  {index !== howWeWork.length - 1 && (
+                    <span className="absolute top-1/2 -bottom-3.5 left-1/2 w-px -translate-x-1/2 bg-[#c5c8bf]" />
+                  )}
+                  <span className="absolute top-1/2 left-1/2 z-10 size-2.5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#6e7f42] ring-[3px] ring-white" />
+                </div>
+
+                <div className="min-w-0 flex-1 self-center py-2.5 pr-3.5 pl-1">
+                  <p className="text-[11px] font-bold tracking-[0.14em] text-[#8a9186] uppercase">
+                    {step.number}
+                  </p>
+                  <h3 className="mt-0.5 text-base font-bold leading-tight tracking-wide text-[#141a14] uppercase sm:text-[13px]">
+                    {step.title}
+                  </h3>
+                  <p className="mt-0.5 text-sm leading-snug text-[#5c584e] sm:text-[13px]">
+                    {step.body}
+                  </p>
+                </div>
+              </Link>
             ))}
           </RevealStagger>
         </div>

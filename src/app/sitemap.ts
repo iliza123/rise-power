@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { capabilityDetails } from "@/lib/capabilities";
 import { insights, site } from "@/lib/content";
+import { marketDetails } from "@/lib/markets";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes: Array<{
@@ -10,6 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }> = [
     { path: "", changeFrequency: "weekly", priority: 1 },
     { path: "/products", changeFrequency: "monthly", priority: 0.9 },
+    { path: "/markets", changeFrequency: "monthly", priority: 0.9 },
     { path: "/capabilities", changeFrequency: "monthly", priority: 0.9 },
     { path: "/use-cases", changeFrequency: "monthly", priority: 0.9 },
     { path: "/about", changeFrequency: "monthly", priority: 0.8 },
@@ -28,6 +30,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: route.changeFrequency,
       priority: route.priority,
+    })),
+    ...marketDetails.map((market) => ({
+      url: `${site.url}/markets/${market.slug}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.9,
     })),
     ...capabilityDetails.map((capability) => ({
       url: `${site.url}/capabilities/${capability.slug}`,
