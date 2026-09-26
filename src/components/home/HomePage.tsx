@@ -31,6 +31,7 @@ import { PerformanceMetricCard } from "./PerformanceMetricCard";
 import { SectionSkeleton } from "./SectionSkeleton";
 import { SnapCarousel } from "./SnapCarousel";
 import { CustomersPartners } from "./CustomersPartners";
+import { HydrogenEcosystem } from "./HydrogenEcosystem";
 
 const BusinessesCompanies = dynamic(
   () => import("./BusinessesCompanies").then((m) => m.BusinessesCompanies),
@@ -275,7 +276,7 @@ export function HomePage() {
       {/* 5. Featured Products — snap carousel on mobile, grid on desktop */}
       <section
         id="featured-products"
-        className="scroll-mt-28 pt-8 pb-14 sm:pt-10 sm:pb-16 lg:pt-12 lg:pb-20"
+        className="scroll-mt-28 pt-8 pb-10 sm:pt-10 sm:pb-12 lg:pt-12 lg:pb-12"
         style={{ background: "#f3f0e8" }}
       >
         <div className={pageInset}>
@@ -326,6 +327,8 @@ export function HomePage() {
           </RevealStagger>
         </div>
       </section>
+
+      <HydrogenEcosystem />
 
       {/* Partner marquee only — case cards live on Products */}
       <CustomersPartners showCases={false} />

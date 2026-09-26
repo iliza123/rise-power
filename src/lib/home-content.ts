@@ -931,6 +931,17 @@ export const capabilities = {
   diagramImageSrc: "/media/capabilities/engineering.png",
 };
 
+export const hydrogenEcosystem = {
+  eyebrow: "ONE HYDROGEN ECOSYSTEM",
+  headingBefore: "SAME HYDROGEN.",
+  headingAccent: "MORE POSSIBILITIES.",
+  body: "One refillable cartridge powers Sentinel, Falcon, Titan, and field deployments — cleaner energy, greater independence, a stronger tomorrow.",
+  imageSrc: "/media/home/one-hydrogen-ecosystem.png",
+  imageAlt:
+    "One hydrogen ecosystem diagram showing Rise Mission Power systems for UAV range extender, tactical generator, home backup, outdoor, commercial, and portable field power",
+  cta: { label: "Explore Products", href: "/products" },
+};
+
 export const customerPartners = {
   eyebrow: "CUSTOMERS & PARTNERS",
   headingBefore: "BUILT FOR REAL-WORLD USE.",
@@ -1021,7 +1032,7 @@ export const businessesCompanies = {
       body: "Founder & CEO of CIMtech Green Energy and Rise Mission Power—visionary entrepreneur and award-winning leader in Canadian green energy.",
       image: "Portrait of Dr. Paul Ghotra",
       imageSrc: "/media/businesses/dr-paul-ghotra.png",
-      href: "https://www.drpaulghotra.com/",
+      href: "https://mediumspringgreen-penguin-228172.hostingersite.com/",
       cta: "Visit Dr. Paul Ghotra",
       external: true,
     },
