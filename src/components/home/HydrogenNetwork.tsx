@@ -74,32 +74,34 @@ export function HydrogenNetwork() {
         </RevealStagger>
 
         <Reveal variant="up" delay={80} className="hidden sm:block">
-          <div className="mt-10 overflow-hidden rounded-2xl border border-[#e8e4da] bg-[#f7f6f2] shadow-[0_12px_36px_-20px_rgba(0,0,0,0.55)] sm:mt-12">
+          <div className="mx-auto mt-10 max-w-3xl rounded-2xl border border-[#e8e4da] bg-[#f7f6f2] shadow-[0_12px_36px_-20px_rgba(0,0,0,0.55)] sm:mt-12 lg:max-w-4xl">
             <div
-              className="grid grid-cols-1 divide-y divide-[#ddd8cc] sm:grid-cols-2 sm:divide-x sm:divide-y-0 lg:grid-cols-4"
+              className="flex flex-wrap items-center justify-center gap-y-4 px-4 py-5 sm:px-6 sm:py-6 lg:flex-nowrap lg:justify-between lg:gap-2 lg:px-8"
               role="list"
             >
               {flow.map((step, index) => (
                 <div
                   key={step}
                   role="listitem"
-                  className="relative flex min-h-[4rem] items-center justify-center gap-3 px-4 py-5 sm:min-h-[4.5rem] sm:px-5 sm:py-6"
+                  className="flex items-center gap-2 sm:gap-3"
                 >
-                  <span
-                    className="grid size-8 shrink-0 place-items-center rounded-full text-sm font-bold tabular-nums text-white sm:size-9"
-                    style={{ background: sage }}
-                    aria-hidden
-                  >
-                    {String(index + 1).padStart(2, "0")}
-                  </span>
-                  <p className="type-card-label text-center tracking-[0.12em] text-[#141a14]">
-                    {step}
-                  </p>
+                  <div className="flex items-center gap-2.5 sm:gap-3">
+                    <span
+                      className="grid size-8 shrink-0 place-items-center rounded-full text-sm font-bold tabular-nums text-white sm:size-9"
+                      style={{ background: sage }}
+                      aria-hidden
+                    >
+                      {String(index + 1).padStart(2, "0")}
+                    </span>
+                    <p className="type-card-label tracking-[0.12em] whitespace-nowrap text-[#141a14]">
+                      {step}
+                    </p>
+                  </div>
                   {index < flow.length - 1 ? (
                     <ArrowRight
-                      className="absolute top-1/2 right-0 z-10 hidden size-4 -translate-y-1/2 translate-x-1/2 lg:block"
+                      className="mx-1 size-6 shrink-0 sm:mx-2 sm:size-7 lg:mx-3"
                       style={{ color: sage }}
-                      strokeWidth={2}
+                      strokeWidth={2.5}
                       aria-hidden
                     />
                   ) : null}
