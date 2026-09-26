@@ -305,6 +305,41 @@ export const marketDetails: readonly MarketDetailPage[] = [
     ],
     productsIntro:
       "Compact hydrogen power for everyday backup and outdoor use. Quiet, plug-and-play setup with refillable hydrogen cartridges.",
+    products: [
+      {
+        name: "Rise Sentinel™",
+        tagline: "Power Cube for everyday backup",
+        body: "Compact hydrogen power for everyday backup and outdoor use. Quiet, plug-and-play setup with refillable hydrogen cartridges. Lightweight and easy to carry — no grid connection required.",
+        href: "/products#sentinel",
+        imageSrc: "/media/use-cases/uc-product-sentinel.png",
+        imageAlt: "Rise Sentinel portable hydrogen power system",
+      },
+      {
+        name: "Rise Titan™",
+        tagline: "1.5 kW portable generator",
+        body: "Clean backup power for everyday and emergency use. 1.5 kW capacity, 40 lb portable weight, and unlimited runtime with refillable hydrogen cartridges.",
+        href: "/products#titan",
+        imageSrc: "/media/use-cases/uc-product-titan.png",
+        imageAlt: "Rise Titan portable hydrogen generator",
+      },
+      {
+        name: "Rise Falcon™",
+        tagline: "Drone range extender",
+        body: "Plug-and-play hydrogen range extender for compatible drones. Up to 5x extended flight range with low-noise, zero-emission operation and quick-swap hydrogen cartridges.",
+        href: "/products#falcon",
+        imageSrc: "/media/use-cases/uc-product-falcon.png",
+        imageAlt: "Rise Falcon hydrogen drone range extender",
+      },
+      {
+        name: "Hydrogen Cartridge Kit",
+        tagline: "Universal fuel logistics",
+        body: "Universal fuel cell compatible cartridges with RFID smart monitoring. Leak proof, lightweight, and designed for rapid field replenishment.",
+        href: "/products#cartridge-kit",
+        imageSrc: "/media/use-cases/uc-product-cartridge.png",
+        imageAlt: "Rise Power hydrogen cartridge kit",
+      },
+    ],
+    cta: { label: "Request a Briefing", href: "/contact" },
     stats: [
       {
         value: "Quiet",

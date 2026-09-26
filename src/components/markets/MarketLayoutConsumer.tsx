@@ -22,7 +22,8 @@ export function MarketLayoutConsumer({
 }: {
   market: MarketDetailPage;
 }) {
-  const [featured, ...otherProducts] = market.products;
+  const products = market.products ?? [];
+  const [featured, ...otherProducts] = products;
 
   return (
     <main className="bg-[#fbfaf7] text-[#101820]">
