@@ -12,7 +12,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata: Metadata = pageMetadata({
   title: "Resource Center",
   description:
-    "Datasheets, news, and documentation for procurement, programs, and integration leads evaluating Rise Power systems.",
+    "Company One Pager, news, and documentation for procurement, programs, and integration leads evaluating Rise Power systems.",
   path: "/resources",
 });
 
@@ -24,11 +24,11 @@ const border = "#d9dfe3";
 const destinations = [
   {
     number: "01",
-    title: "Datasheets",
+    title: "Company One Pager",
     description:
-      "Technical specifications for Rise Power systems. Beta-stage hardware in active validation — full datasheets available on briefing request.",
+      "Technical specifications for Rise Power systems. Beta-stage hardware in active validation — full one pagers available on briefing request.",
     href: "/datasheets",
-    cta: "Open Datasheets",
+    cta: "Open Company One Pager",
     image: "/media/resources/choose-brief-datasheets.png",
     imageAlt: "Soldier operating Rise Mission Power system in a snowy forest",
   },
@@ -241,7 +241,7 @@ export default function ResourcesPage() {
           </h1>
 
           <p className="type-section-body mt-4 max-w-[720px] text-white sm:mt-6">
-            Datasheets, procurement FAQ, insights, and investor materials for
+            Company One Pager, procurement FAQ, insights, and investor materials for
             programs, integration, and buying teams evaluating Rise Power systems.
           </p>
 
@@ -422,7 +422,7 @@ export default function ResourcesPage() {
               </h2>
               <p className="type-section-body mt-3 max-w-[540px] !text-white/85 sm:mt-4">
                 Open any system for engineering targets, form factor notes, and
-                briefing-gated datasheets.
+                briefing-gated one pagers.
               </p>
             </div>
           </Reveal>

@@ -1078,7 +1078,7 @@ export const businessesCompanies = {
       body: "Canadian advanced manufacturing for hydrogen systems—precision engineering, production capability, and field-ready energy platforms.",
       image: "Manufacturing plant image with mountains and a non-official logo",
       imageSrc: "/media/businesses/cimtech-green-energy.png",
-      href: "https://www.cimtechgreenenergy.com",
+      href: "https://cimtech.vercel.app",
       cta: "Visit CIMtech Green Energy",
       external: true,
     },
@@ -1117,9 +1117,10 @@ export const footer = {
   blurb:
     "Portable hydrogen fuel cell systems for municipal, emergency, field, and off-grid applications. Engineered and built in British Columbia.",
   /**
-   * Footer columns mirror primary header nav (megaNavItems):
-   * About | Markets (Defense / Consumer / Commercial) | Capabilities | Investors | Resources
-   * Careers lives under About. Flat lists — no nested dropdowns.
+   * Footer columns — standard grouped nav (not 1:1 with header mega items):
+   * About | Markets | Capabilities | Investors | Resources
+   * Single-link header items (Defense / Consumer / Commercial / Careers)
+   * are grouped so columns stay balanced.
    */
   groups: [
     {
@@ -1127,8 +1128,8 @@ export const footer = {
       links: [
         { label: "About", href: "/about" },
         { label: "How We Work", href: "/about#how-we-work" },
-        { label: "Careers", href: "/contact" },
         { label: "Contact", href: "/contact" },
+        { label: "Careers", href: "/contact" },
       ],
     },
     {
@@ -1178,7 +1179,7 @@ export const footer = {
       links: [
         { label: "Products", href: "/products" },
         { label: "Resource Center", href: "/resources" },
-        { label: "Datasheets", href: "/datasheets" },
+        { label: "Company One Pager", href: "/datasheets" },
         { label: "Procurement FAQ", href: "/resources/faq" },
         { label: "Insights", href: "/insights" },
       ],

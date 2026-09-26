@@ -190,8 +190,8 @@ export const megaNavItems: readonly MegaNavItem[] = [
         description: "Specs, insights, and field notes.",
       },
       {
-        label: "Datasheets",
-        href: "/resources/datasheets",
+        label: "Company One Pager",
+        href: "/datasheets",
         description: "Engineering targets and specifications.",
       },
       {
@@ -207,7 +207,7 @@ export const megaNavItems: readonly MegaNavItem[] = [
     ],
     feature: {
       title: "Browse Resources",
-      body: "Products, datasheets, FAQ, and insights for procurement, programs, and integration leads.",
+      body: "Products, Company One Pager, FAQ, and insights for procurement, programs, and integration leads.",
       href: "/resources",
       cta: "Open Resource Center",
     },

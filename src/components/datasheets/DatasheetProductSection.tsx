@@ -91,7 +91,7 @@ export function DatasheetProductSection({
                 className="text-base font-semibold tracking-[0.14em] uppercase sm:text-[0.9375rem]"
                 style={{ color: MUTED }}
               >
-                Datasheet · Beta
+                One Pager · Beta
               </p>
             </div>
 
@@ -153,7 +153,7 @@ export function DatasheetProductSection({
                   className="inline-flex min-h-12 items-center justify-center gap-2 rounded-sm px-7 text-sm font-semibold tracking-[0.08em] text-white uppercase transition-opacity hover:opacity-90"
                   style={{ backgroundColor: SAGE_CTA }}
                 >
-                  Request Full Datasheet
+                  Request Full One Pager
                   <ArrowRight className="size-4 shrink-0" aria-hidden="true" />
                 </Link>
               )}

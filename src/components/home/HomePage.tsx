@@ -12,20 +12,17 @@ import {
   Volume2,
 } from "lucide-react";
 import {
-  featuredProducts,
   hero,
   heroImageSrc,
   heroMobileImageSrc,
   threeMarkets,
 } from "@/lib/home-content";
 import { standards } from "@/lib/content";
-import { Reveal, RevealStagger } from "@/components/motion/Reveal";
-import { FeaturedProductRow } from "./FeaturedProductRow";
+import { Reveal } from "@/components/motion/Reveal";
 import { HowItWorks } from "./HowItWorks";
 // import { WhyHydrogen } from "./WhyHydrogen";
 import { MarketsShowcase } from "./MarketsShowcase";
 import { SectionSkeleton } from "./SectionSkeleton";
-import { SnapCarousel } from "./SnapCarousel";
 import { CustomersPartners } from "./CustomersPartners";
 import { HydrogenEcosystem } from "./HydrogenEcosystem";
 import { HydrogenNetwork } from "./HydrogenNetwork";
@@ -223,7 +220,7 @@ export function HomePage() {
       {/* <WhyHydrogen /> */}
 
       {/* 5. Featured Products — snap carousel on mobile, grid on desktop */}
-      <section
+      {/* <section
         id="featured-products"
         className="scroll-mt-28 pt-8 pb-10 sm:pt-10 sm:pb-12 lg:pt-12 lg:pb-12"
         style={{ background: "#f3f0e8" }}
@@ -275,7 +272,7 @@ export function HomePage() {
             ))}
           </RevealStagger>
         </div>
-      </section>
+      </section> */}
 
       <HydrogenEcosystem />
 

@@ -10,7 +10,7 @@ import { StackedPageHero } from "@/components/StackedPageHero";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Datasheets",
+  title: "Company One Pager",
   description:
     "Technical specifications and engineering targets for Rise Power hydrogen power systems.",
   path: "/datasheets",
@@ -155,12 +155,12 @@ export default function DatasheetsPage() {
           <SectionEyebrow onDark>Resources</SectionEyebrow>
 
           <h1 className="mt-5 type-page-h1">
-            Datasheets
+            Company One Pager
           </h1>
 
           <p className="type-section-body mt-5 max-w-[640px] text-white sm:mt-6">
             Technical specifications for Rise Power systems. Beta-stage hardware
-            in active validation — full datasheets are available on briefing
+            in active validation — full one pagers are available on briefing
             request as compliance work completes.
           </p>
 
@@ -177,7 +177,7 @@ export default function DatasheetsPage() {
               href="/contact"
               className="inline-flex min-h-12 items-center justify-center gap-2 rounded-sm border border-white/45 px-7 text-sm font-semibold tracking-wide text-white uppercase transition-colors hover:bg-white/10"
             >
-              Request Full Datasheets
+              Request Full One Pager
               <ArrowRight className="size-4 shrink-0" aria-hidden="true" />
             </Link>
           </div>

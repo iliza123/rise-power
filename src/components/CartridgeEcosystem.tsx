@@ -76,10 +76,10 @@ export function CartridgeEcosystem() {
               </Link>
 
               <Link
-                href="/use-cases"
+                href="/markets"
                 className="inline-flex items-center gap-2 text-sm font-semibold uppercase text-[#141a14]"
               >
-                See Case Studies
+                Explore Markets
                 <ArrowRight className="size-4 text-[#6e7f42]" />
               </Link>
             </div>

@@ -14,7 +14,7 @@ type FaqItem = {
 };
 
 function AnswerBody({ text }: { text: string }) {
-  if (text.includes("listed on Datasheets")) {
+  if (text.includes("listed on Company One Pager")) {
     return (
       <>
         Rise Sentinel™, Rise Falcon™, Rise Titan™, and the Hydrogen Cartridge
@@ -23,7 +23,7 @@ function AnswerBody({ text }: { text: string }) {
           href="/datasheets"
           className="font-medium text-[#101820] underline decoration-[#d9dfe3] underline-offset-4 transition-colors hover:text-[#6e7f42] hover:decoration-[#6e7f42]"
         >
-          Datasheets
+          Company One Pager
         </Link>
         .
       </>

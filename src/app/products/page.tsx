@@ -454,10 +454,10 @@ export default function ProductsPage() {
               <ArrowRight className="size-4 shrink-0" />
             </Link>
             <Link
-              href="/use-cases"
+              href="/markets"
               className="inline-flex min-h-12 items-center justify-center gap-2 whitespace-nowrap rounded-sm border border-white/35 px-7 text-sm font-bold tracking-[0.12em] text-white uppercase transition-colors hover:bg-white/10"
             >
-              See Case Studies
+              Explore Markets
               <ArrowRight className="size-4 shrink-0" />
             </Link>
           </div>

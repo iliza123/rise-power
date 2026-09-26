@@ -70,7 +70,7 @@ const faqGroups = [
     items: [
       {
         q: "What products are available for evaluation?",
-        a: "Rise Sentinel™, Rise Falcon™, Rise Titan™, and the Hydrogen Cartridge Kit. Specs and engineering targets are listed on Datasheets.",
+        a: "Rise Sentinel™, Rise Falcon™, Rise Titan™, and the Hydrogen Cartridge Kit. Specs and engineering targets are listed on Company One Pager.",
       },
       {
         q: "What is the lead time?",

@@ -119,7 +119,7 @@ export default function ContactPage() {
                   {[
                     {
                       label: "Technical package",
-                      detail: "Datasheets, runtime curves, and system architecture.",
+                      detail: "Company One Pager, runtime curves, and system architecture.",
                     },
                     {
                       label: "Deployment summary",

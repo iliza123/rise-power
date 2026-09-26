@@ -403,8 +403,8 @@ function FooterNavGroups() {
         })}
       </div>
 
-      {/* Desktop columns — mirrors header nav sections */}
-      <div className="hidden gap-x-4 lg:grid lg:grid-cols-5 lg:px-1 xl:gap-x-6 xl:px-2">
+      {/* Desktop columns — About | Markets | Capabilities | Investors | Resources */}
+      <div className="hidden gap-x-3 gap-y-10 lg:grid lg:grid-cols-5 lg:px-1 xl:gap-x-5 xl:px-2">
         {footer.groups.map((group) => (
           <div key={group.heading} className="min-w-0">
             <p className="font-display text-base font-semibold tracking-wide text-white uppercase xl:text-lg">
