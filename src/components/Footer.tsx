@@ -403,11 +403,11 @@ function FooterNavGroups() {
         })}
       </div>
 
-      {/* Desktop columns */}
-      <div className="hidden gap-x-6 lg:grid lg:grid-cols-4 lg:px-2">
+      {/* Desktop columns — mirrors header nav sections */}
+      <div className="hidden gap-x-4 lg:grid lg:grid-cols-5 lg:px-1 xl:gap-x-6 xl:px-2">
         {footer.groups.map((group) => (
           <div key={group.heading} className="min-w-0">
-            <p className="font-display text-lg font-semibold tracking-wide text-white uppercase">
+            <p className="font-display text-base font-semibold tracking-wide text-white uppercase xl:text-lg">
               {group.heading}
             </p>
 
@@ -416,12 +416,12 @@ function FooterNavGroups() {
               style={{ background: sage }}
             />
 
-            <ul className="mt-5 space-y-4">
+            <ul className="mt-5 space-y-3.5 xl:space-y-4">
               {group.links.map((item) => (
                 <li key={`${group.heading}-${item.label}`}>
                   <AppLink
                     href={item.href}
-                    className="text-[15px] leading-5 text-white transition-colors hover:text-sage"
+                    className="text-[14px] leading-5 text-white transition-colors hover:text-sage xl:text-[15px]"
                   >
                     {item.label}
                   </AppLink>
@@ -446,7 +446,7 @@ export function Footer() {
       {/* Main Footer */}
       <Reveal
         variant="fade"
-        className="mx-auto grid w-full max-w-[1716px] gap-10 px-6 py-12 sm:px-8 sm:py-14 lg:grid-cols-[1.05fr_2.2fr_1.05fr] lg:gap-8 lg:px-10 lg:py-14"
+        className="mx-auto grid w-full max-w-[1716px] gap-10 px-6 py-12 sm:px-8 sm:py-14 lg:grid-cols-[0.95fr_2.4fr_0.95fr] lg:gap-6 lg:px-10 lg:py-14 xl:gap-8"
       >
         {/* Brand */}
         <div className="lg:border-r lg:border-white/15 lg:pr-8 xl:pr-10">

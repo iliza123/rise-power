@@ -60,7 +60,8 @@ export function MarketLayoutCommercial({
           <Reveal variant="up">
             <SectionEyebrow>Site Requirements</SectionEyebrow>
             <h2 className="mt-3 font-display text-[1.75rem] leading-[0.95] font-bold tracking-tight uppercase sm:text-[2.25rem] lg:text-[2.75rem]">
-              Built For <span style={{ color: SAGE }}>Industry.</span>
+              Construction Sites, Telecom Backup &{" "}
+              <span style={{ color: SAGE }}>Mining.</span>
             </h2>
           </Reveal>
 
@@ -240,7 +241,7 @@ export function MarketLayoutCommercial({
                   <p className="mt-1 text-xs font-semibold tracking-[0.14em] uppercase" style={{ color: SAGE }}>
                     {stat.label}
                   </p>
-                  <p className="mt-2 text-sm leading-[1.45] text-white/50">
+                  <p className="mt-2 text-base leading-[1.55] text-white">
                     {stat.body}
                   </p>
                 </div>

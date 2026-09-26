@@ -1116,12 +1116,32 @@ export const footer = {
   tagline: "Quiet. Zero-Emission. Everyday Resilience.",
   blurb:
     "Portable hydrogen fuel cell systems for municipal, emergency, field, and off-grid applications. Engineered and built in British Columbia.",
+  /**
+   * Footer columns mirror primary header nav (megaNavItems):
+   * About | Markets (Defense / Consumer / Commercial) | Capabilities | Investors | Resources
+   * Careers lives under About. Flat lists — no nested dropdowns.
+   */
   groups: [
     {
-      heading: "Solutions",
+      heading: "About",
       links: [
-        { label: "Products", href: "/products" },
-        { label: "Case Studies", href: "/use-cases" },
+        { label: "About", href: "/about" },
+        { label: "How We Work", href: "/about#how-we-work" },
+        { label: "Careers", href: "/contact" },
+        { label: "Contact", href: "/contact" },
+      ],
+    },
+    {
+      heading: "Markets",
+      links: [
+        { label: "Defense", href: "/markets/defense" },
+        { label: "Consumer", href: "/markets/consumer" },
+        { label: "Commercial", href: "/markets/commercial" },
+      ],
+    },
+    {
+      heading: "Capabilities",
+      links: [
         { label: "Capabilities", href: "/capabilities" },
         {
           label: "Engineering & Development",
@@ -1139,39 +1159,25 @@ export const footer = {
           label: "Safety & Compliance",
           href: "/capabilities/safety-compliance",
         },
-        { label: "How It Works", href: "/#how-it-works" },
       ],
     },
     {
-      heading: "Markets",
+      heading: "Investors",
       links: [
-        { label: "Military & Defence", href: "/markets/defense" },
-        { label: "Commercial", href: "/markets/commercial" },
-        { label: "Consumer", href: "/markets/consumer" },
-        { label: "Municipalities & Public Works", href: "/use-cases#use-cases" },
-      ],
-    },
-    {
-      heading: "Company",
-      links: [
-        { label: "About", href: "/about" },
-        { label: "How We Work", href: "/about#how-we-work" },
-        { label: "Investors", href: "/investors" },
+        { label: "Investor Overview", href: "/investors" },
         { label: "Investor Deck", href: "/rise-power-deck.pdf" },
         {
           label: "Company Brochure",
           href: "/media/brochures/rise-mission-power-brochure.pdf",
         },
         { label: "Press & Updates", href: "/investors#press" },
-        { label: "Contact", href: "/contact" },
-        { label: "Careers", href: "/contact" },
       ],
     },
     {
       heading: "Resources",
       links: [
-        { label: "Resource Center", href: "/resources" },
         { label: "Products", href: "/products" },
+        { label: "Resource Center", href: "/resources" },
         { label: "Datasheets", href: "/datasheets" },
         { label: "Procurement FAQ", href: "/resources/faq" },
         { label: "Insights", href: "/insights" },

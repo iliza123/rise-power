@@ -211,7 +211,7 @@ export function MarketLayoutDefense({ market }: { market: MarketDetailPage }) {
           <Reveal variant="up">
             <SectionEyebrow>Systems</SectionEyebrow>
             <h2 className="mt-2.5 type-section-h2">
-              Mission <span style={{ color: SAGE }}>Hardware.</span>
+              Mission <span style={{ color: SAGE }}>Systems.</span>
             </h2>
             <p className="type-section-body mt-3 max-w-[42rem]" style={{ color: MUTED }}>
               {market.productsIntro}

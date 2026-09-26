@@ -90,9 +90,10 @@ export function MarketLayoutConsumer({
       <section className="bg-white py-10 sm:py-12 lg:py-14">
         <div className="mx-auto max-w-[900px] px-6 lg:px-10">
           <Reveal variant="up" className="text-center">
-            <SectionEyebrow center>Made For</SectionEyebrow>
+            <SectionEyebrow center>Consumer</SectionEyebrow>
             <h2 className="mt-3 font-display text-[1.75rem] leading-[0.95] font-bold tracking-tight uppercase sm:text-[2.25rem]">
-              Everyday <span style={{ color: SAGE }}>Moments.</span>
+              Camping, RV Power &{" "}
+              <span style={{ color: SAGE }}>Emergency Home Backup.</span>
             </h2>
           </Reveal>
 
@@ -135,7 +136,7 @@ export function MarketLayoutConsumer({
           <Reveal variant="right" delay={70}>
             <SectionEyebrow>Applications</SectionEyebrow>
             <h2 className="mt-3 font-display text-[1.75rem] leading-[0.95] font-bold tracking-tight uppercase sm:text-[2.25rem]">
-              Simple To <span style={{ color: SAGE }}>Use.</span>
+              How It <span style={{ color: SAGE }}>Works.</span>
             </h2>
             <p className="mt-4 text-base leading-[1.65]" style={{ color: MUTED }}>
               {market.applicationsIntro}
@@ -163,7 +164,7 @@ export function MarketLayoutConsumer({
           <Reveal variant="up" className="mx-auto max-w-2xl text-center">
             <SectionEyebrow center>Systems</SectionEyebrow>
             <h2 className="mt-3 type-section-h2">
-              Start With <span style={{ color: SAGE }}>Sentinel.</span>
+              Power You Can <span style={{ color: SAGE }}>Depend On.</span>
             </h2>
             <p className="type-section-body mt-3" style={{ color: MUTED }}>
               {market.productsIntro}
