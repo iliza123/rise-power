@@ -191,7 +191,13 @@ function CaseCard({ item, index }: { item: CaseItem; index: number }) {
   );
 }
 
-export function CustomersPartners() {
+export function CustomersPartners({
+  showCases = true,
+  showMarquee = true,
+}: {
+  showCases?: boolean;
+  showMarquee?: boolean;
+}) {
   const {
     eyebrow,
     headingBefore,
@@ -204,95 +210,103 @@ export function CustomersPartners() {
 
   const marqueePartners = [...partners, ...partners];
 
+  if (!showCases && !showMarquee) return null;
+
   return (
     <section
       id="customer-partners"
       className="w-full overflow-hidden"
       style={{ background: cream }}
     >
-      <div className="mx-auto w-full max-w-[1760px] px-4 py-14 sm:px-6 sm:py-16 lg:px-8 lg:py-[76px]">
-        <Reveal variant="up">
-          <p className="type-eyebrow text-center" style={{ color: sage }}>
-            {eyebrow}
-          </p>
+      {showCases ? (
+        <div className="mx-auto w-full max-w-[1760px] px-4 py-14 sm:px-6 sm:py-16 lg:px-8 lg:py-[76px]">
+          <Reveal variant="up">
+            <p className="type-eyebrow text-center" style={{ color: sage }}>
+              {eyebrow}
+            </p>
 
-          <h2 className="type-section-h2 mt-3 text-center text-[#080b09]">
-            {headingBefore}{" "}
-            <span style={{ color: sage }}>{headingAccent}</span>
-          </h2>
+            <h2 className="type-section-h2 mt-3 text-center text-[#080b09]">
+              {headingBefore}{" "}
+              <span style={{ color: sage }}>{headingAccent}</span>
+            </h2>
 
-          <p className="type-section-body mx-auto mt-5 max-w-[820px] text-center">
-            {body}
-          </p>
-        </Reveal>
+            <p className="type-section-body mx-auto mt-5 max-w-[820px] text-center">
+              {body}
+            </p>
+          </Reveal>
 
-        <div className="mt-9 xl:hidden">
-          <SnapCarousel
-            ariaLabel="Customer success cases"
-            showArrows
-            showDots
-            loop
-            autoPlayMs={5000}
-            itemClassName="w-[min(100%,22rem)] sm:w-[min(100%,26rem)] md:w-[min(70vw,28rem)] shrink-0"
+          <div className="mt-9 xl:hidden">
+            <SnapCarousel
+              ariaLabel="Customer success cases"
+              showArrows
+              showDots
+              loop
+              autoPlayMs={5000}
+              itemClassName="w-[min(100%,22rem)] sm:w-[min(100%,26rem)] md:w-[min(70vw,28rem)] shrink-0"
+            >
+              {cases.map((item, index) => (
+                <CaseCard key={item.category} item={item} index={index} />
+              ))}
+            </SnapCarousel>
+          </div>
+
+          <RevealStagger
+            className="mt-9 hidden items-stretch gap-4 xl:mt-6 xl:grid xl:grid-cols-2 xl:gap-4 2xl:grid-cols-4 2xl:gap-5"
+            step={70}
+            variant="up"
           >
             {cases.map((item, index) => (
               <CaseCard key={item.category} item={item} index={index} />
             ))}
-          </SnapCarousel>
+          </RevealStagger>
         </div>
+      ) : null}
 
-        <RevealStagger
-          className="mt-9 hidden items-stretch gap-4 xl:mt-6 xl:grid xl:grid-cols-2 xl:gap-4 2xl:grid-cols-4 2xl:gap-5"
-          step={70}
-          variant="up"
-        >
-          {cases.map((item, index) => (
-            <CaseCard key={item.category} item={item} index={index} />
-          ))}
-        </RevealStagger>
-      </div>
+      {showMarquee ? (
+        <Reveal variant="fade" delay={80}>
+          <div
+            className={`bg-[#fbfaf7] ${showCases ? "border-t border-[#dedbd3]" : ""}`}
+          >
+            <div className="mx-auto w-full max-w-[1760px] px-4 py-8 sm:px-6 sm:py-9 lg:px-8">
+              <div className="flex items-center gap-5">
+                <div className="hidden h-px flex-1 bg-[#d8d5cd] lg:block" />
 
-      <Reveal variant="fade" delay={80}>
-        <div className="border-t border-[#dedbd3] bg-[#fbfaf7]">
-          <div className="mx-auto w-full max-w-[1760px] px-4 py-8 sm:px-6 sm:py-9 lg:px-8">
-            <div className="flex items-center gap-5">
-              <div className="hidden h-px flex-1 bg-[#d8d5cd] lg:block" />
+                <p className="shrink-0 text-center font-display text-[15px] font-bold tracking-[0.04em] text-[#171b18] uppercase sm:text-[17px] lg:text-[19px]">
+                  {partnerHeading}
+                </p>
 
-              <p className="shrink-0 text-center font-display text-[15px] font-bold tracking-[0.04em] text-[#171b18] uppercase sm:text-[17px] lg:text-[19px]">
-                {partnerHeading}
-              </p>
+                <div className="hidden h-px flex-1 bg-[#d8d5cd] lg:block" />
+              </div>
 
-              <div className="hidden h-px flex-1 bg-[#d8d5cd] lg:block" />
-            </div>
+              <div className="partner-marquee mt-7 lg:mt-6">
+                <div className="partner-marquee__track">
+                  {marqueePartners.map((partner, index) => {
+                    const PartnerIcon =
+                      partnerIcons[index % partnerIcons.length] ?? Cog;
 
-            <div className="partner-marquee mt-7 lg:mt-6">
-              <div className="partner-marquee__track">
-                {marqueePartners.map((partner, index) => {
-                  const PartnerIcon =
-                    partnerIcons[index % partnerIcons.length] ?? Cog;
+                    return (
+                      <div
+                        key={`${partner}-${index}`}
+                        className="flex shrink-0 items-center gap-3 px-5 py-2"
+                      >
+                        <PartnerIcon
+                          className="size-[28px] shrink-0 text-[#414840] sm:size-[32px]"
+                          strokeWidth={1.35}
+                          aria-hidden
+                        />
 
-                  return (
-                    <div
-                      key={`${partner}-${index}`}
-                      className="flex shrink-0 items-center gap-3 px-5 py-2"
-                    >
-                      <PartnerIcon
-                        className="size-[28px] shrink-0 text-[#414840] sm:size-[32px]"
-                        strokeWidth={1.35}
-                        aria-hidden
-                      />
-
-                      <span className="whitespace-nowrap text-sm font-bold leading-[1.15] tracking-[0.03em] text-[#171b18] uppercase">
-                        {partner}
-                      </span>
-                    </div>
-                  );
-                })}
+                        <span className="whitespace-nowrap text-sm font-bold leading-[1.15] tracking-[0.03em] text-[#171b18] uppercase">
+                          {partner}
+                        </span>
+                      </div>
+                    );
+                  })}
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </Reveal>
+        </Reveal>
+      ) : null}
     </section>
   );
 }

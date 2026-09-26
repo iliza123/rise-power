@@ -7,7 +7,7 @@ import { Reveal } from "@/components/motion/Reveal";
 const sage = "#6e7f42";
 /** Match HomePage section rhythm */
 const pageInset = "mx-auto w-full max-w-[1760px] px-6 lg:px-10";
-const sectionY = "py-14 sm:py-18 lg:py-20";
+const sectionY = "pt-14 pb-8 sm:pt-18 sm:pb-10 lg:pt-20 lg:pb-12";
 
 const legendColors = [
   "#6e7f42",

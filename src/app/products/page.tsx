@@ -101,6 +101,7 @@ import {
   Weight,
   Zap,
 } from "lucide-react";
+import { CustomersPartners } from "@/components/home/CustomersPartners";
 import { PerformanceMetricCard } from "@/components/home/PerformanceMetricCard";
 import { SnapCarousel } from "@/components/home/SnapCarousel";
 import { Reveal, RevealStagger } from "@/components/motion/Reveal";
@@ -570,7 +571,10 @@ export default function ProductsPage() {
         </div>
       </section>
 
-      {/* BUILT FOR REAL-WORLD USE */}
+      {/* CUSTOMERS & PARTNERS — Built for Real-World Use (cards only; marquee stays on home) */}
+      <CustomersPartners showMarquee={false} />
+
+      {/* PERFORMANCE METRICS */}
       <section
         id="performance-metrics"
         className="scroll-mt-28 py-7 sm:py-8 lg:py-9"

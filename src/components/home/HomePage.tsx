@@ -3,6 +3,7 @@ import Link from "next/link";
 import dynamic from "next/dynamic";
 import {
   ArrowRight,
+  AudioLines,
   ChevronDown,
   Crosshair,
   Leaf,
@@ -10,12 +11,14 @@ import {
   Play,
   Shield,
   Volume2,
+  Weight,
 } from "lucide-react";
 import {
   featuredProducts,
   hero,
   heroImageSrc,
   heroMobileImageSrc,
+  performanceMetrics,
   threeMarkets,
 } from "@/lib/home-content";
 import { standards } from "@/lib/content";
@@ -24,16 +27,10 @@ import { FeaturedProductRow } from "./FeaturedProductRow";
 import { HowItWorks } from "./HowItWorks";
 // import { WhyHydrogen } from "./WhyHydrogen";
 import { MarketsShowcase } from "./MarketsShowcase";
+import { PerformanceMetricCard } from "./PerformanceMetricCard";
 import { SectionSkeleton } from "./SectionSkeleton";
 import { SnapCarousel } from "./SnapCarousel";
-
-const CustomersPartners = dynamic(
-  () => import("./CustomersPartners").then((m) => m.CustomersPartners),
-  {
-    ssr: true,
-    loading: () => <SectionSkeleton tone="cream" className="min-h-[32rem]" />,
-  },
-);
+import { CustomersPartners } from "./CustomersPartners";
 
 const BusinessesCompanies = dynamic(
   () => import("./BusinessesCompanies").then((m) => m.BusinessesCompanies),
@@ -48,6 +45,8 @@ const BusinessesCompanies = dynamic(
 const sage = "#6e7f42";
 /** Hero accent from Frame 1 reference (slightly brighter olive). */
 const heroSage = "#849363";
+
+const gaugeIcons = [AudioLines, Leaf, Crosshair, Weight] as const;
 
 /** Hero capability chips — quiet / precision / low signature / durable. */
 const heroChipIcons = [Leaf, Crosshair, Volume2, Shield] as const;
@@ -163,7 +162,7 @@ export function HomePage() {
         </div>
 
         <a
-          href="#three-markets"
+          href="#performance-metrics"
           className="absolute bottom-3 left-1/2 z-10 hidden -translate-x-1/2 flex-col items-center gap-1 text-white/75 transition-colors hover:text-white xl:flex"
           aria-label="Scroll to next section"
         >
@@ -193,7 +192,53 @@ export function HomePage() {
         </div>
       </section> */}
 
-      {/* 2. Three Markets — standard image-led panels */}
+      {/* 2. Performance Metrics — Built to Outperform */}
+      <section
+        id="performance-metrics"
+        className="scroll-mt-28 py-10 sm:py-12 lg:py-14"
+        style={{ background: "#fafaf8" }}
+      >
+        <div className={pageInset}>
+          <Reveal variant="up">
+            <p
+              className="type-eyebrow text-center"
+              style={{ color: sage }}
+            >
+              {performanceMetrics.eyebrow}
+            </p>
+            <h2 className="type-section-h2 mt-3 text-center">
+              {performanceMetrics.headingBefore}{" "}
+              <span style={{ color: sage }}>
+                {performanceMetrics.headingAccent}
+              </span>
+            </h2>
+            <p className="type-section-body mx-auto mt-3 max-w-2xl text-center">
+              {performanceMetrics.body}
+            </p>
+          </Reveal>
+          <RevealStagger
+            className="mx-auto mt-8 grid w-full max-w-5xl grid-cols-1 items-stretch gap-4 sm:mt-9 sm:grid-cols-2 sm:gap-4 xl:mt-10 xl:max-w-none xl:grid-cols-4 xl:gap-5"
+            step={70}
+          >
+            {performanceMetrics.gauges.map((item, index) => {
+              const Icon = gaugeIcons[index] ?? Crosshair;
+              return (
+                <PerformanceMetricCard
+                  key={item.title}
+                  icon={Icon}
+                  value={item.value}
+                  unit={item.unit}
+                  title={item.title}
+                  body={item.body}
+                  percent={item.percent}
+                />
+              );
+            })}
+          </RevealStagger>
+        </div>
+      </section>
+
+      {/* 3. Three Markets — standard image-led panels */}
       <section
         id="three-markets"
         className={`scroll-mt-28 bg-[#f3f0e8] ${sectionY}`}
@@ -230,7 +275,7 @@ export function HomePage() {
       {/* 5. Featured Products — snap carousel on mobile, grid on desktop */}
       <section
         id="featured-products"
-        className="scroll-mt-28 py-14 sm:py-16 lg:py-20"
+        className="scroll-mt-28 pt-8 pb-14 sm:pt-10 sm:pb-16 lg:pt-12 lg:pb-20"
         style={{ background: "#f3f0e8" }}
       >
         <div className={pageInset}>
@@ -282,12 +327,10 @@ export function HomePage() {
         </div>
       </section>
 
-      {/* 6. Customers & Partners */}
-      <div className="cv-auto">
-        <CustomersPartners />
-      </div>
+      {/* Partner marquee only — case cards live on Products */}
+      <CustomersPartners showCases={false} />
 
-      {/* 8. Businesses & Companies */}
+      {/* Businesses & Companies */}
       <BusinessesCompanies />
     </div>
   );
