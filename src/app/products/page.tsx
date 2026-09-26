@@ -164,7 +164,7 @@ const comparisonImages = [
   "/media/products/compare-cartridge.png",
 ] as const;
 
-const comparisonRows = [
+const comparisonFields = [
   {
     label: "Primary Use",
     icon: Crosshair,
@@ -225,10 +225,102 @@ const comparisonRows = [
       "Rapid deployment, field refuel, resupply",
     ],
   },
-];
+] as const;
+
+const productSpecSections = products.slice(0, 4).map((product, index) => ({
+  product,
+  image: comparisonImages[index] ?? product.image,
+  rows: comparisonFields.map((field) => ({
+    label: field.label,
+    icon: field.icon,
+    value: field.values[index],
+  })),
+}));
 
 type ProductItem = (typeof products)[number];
 type SystemMeta = (typeof systemMeta)[number];
+
+function ProductSpecSection({
+  product,
+  image,
+  rows,
+  reverse = false,
+}: {
+  product: ProductItem;
+  image: string;
+  rows: {
+    label: string;
+    icon: (typeof comparisonFields)[number]["icon"];
+    value: string;
+  }[];
+  reverse?: boolean;
+}) {
+  return (
+    <article
+      id={`${product.slug}-specs`}
+      className="scroll-mt-28 overflow-hidden rounded-lg border border-[#d9d8d0] bg-[#07151b] text-white shadow-[0_12px_30px_rgba(0,0,0,0.08)]"
+    >
+      <div
+        className={`grid lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] ${
+          reverse ? "lg:[&>*:first-child]:order-2" : ""
+        }`}
+      >
+        <div className="relative aspect-[16/10] min-h-[160px] sm:min-h-[180px] lg:aspect-auto lg:min-h-full">
+          <Image
+            src={image}
+            alt={product.name}
+            fill
+            quality={95}
+            sizes="(min-width: 1024px) 45vw, 100vw"
+            className="object-cover object-center"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#07151b] via-transparent to-transparent lg:bg-gradient-to-r lg:from-transparent lg:to-[#07151b]/40" />
+        </div>
+
+        <div className="flex flex-col">
+          <div className="border-b border-white/15 px-4 pt-5 pb-3 sm:px-5 sm:pt-6 sm:pb-3.5">
+            <p className="type-eyebrow text-[0.8125rem] sm:text-sm" style={{ color: sage }}>
+              ⌁ Specifications
+            </p>
+            <h3 className="type-card-title mt-1.5 text-white">
+              {product.name}
+            </h3>
+            <p className="type-card-label mt-1 text-white/70">
+              {product.tagline}
+            </p>
+          </div>
+
+          <ul className="divide-y divide-white/15 pb-4 sm:pb-5">
+            {rows.map((row) => {
+              const Icon = row.icon;
+              return (
+                <li
+                  key={row.label}
+                  className="flex items-center gap-3 px-4 py-2 sm:gap-3.5 sm:px-5 sm:py-2.5 first:pt-3 last:pb-1 sm:first:pt-3.5 sm:last:pb-1.5"
+                >
+                  <Icon
+                    className="size-4 shrink-0 sm:size-5"
+                    strokeWidth={1.5}
+                    style={{ color: lime }}
+                    aria-hidden
+                  />
+                  <div className="grid min-w-0 flex-1 gap-0.5 sm:grid-cols-[7.5rem_minmax(0,1fr)] sm:items-center sm:gap-3">
+                    <p className="type-card-label text-[0.75rem] leading-tight text-white/55 sm:text-[0.8125rem]">
+                      {row.label}
+                    </p>
+                    <p className="type-card-body-on-dark !text-[0.9375rem] !leading-snug sm:!text-base">
+                      {row.value}
+                    </p>
+                  </div>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      </div>
+    </article>
+  );
+}
 
 function ProductSystemCard({
   product,
@@ -440,132 +532,40 @@ export default function ProductsPage() {
       {/* CUSTOMERS & PARTNERS — Built for Real-World Use (cards only; marquee stays on home) */}
       <CustomersPartners showMarquee={false} />
 
-      {/* PRODUCT COMPARISON */}
+      {/* PRODUCT SPECIFICATIONS — one section per product */}
       <section
         id="product-comparison"
-        className="scroll-mt-20 bg-[#f7f6f2] pt-10 pb-16 sm:pt-12 sm:pb-20 lg:pt-14 lg:pb-24"
+        className="scroll-mt-20 bg-[#f7f6f2] py-8 sm:py-10 lg:py-12"
       >
         <div className="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8">
           <Reveal variant="up" className="mx-auto max-w-4xl text-center">
-            <p className="text-base font-semibold tracking-[0.14em] text-[#6e7f42] uppercase sm:text-[0.9375rem]">
-              ⌁ Product Comparison
+            <p className="type-eyebrow" style={{ color: sage }}>
+              ⌁ Product Specifications
             </p>
 
-            <h2 className="mt-4 type-section-h2">
+            <h2 className="mt-2 type-section-h2 sm:mt-2.5">
               Four Solutions.{" "}
-              <span className="text-[#6e7f42]">One Mission.</span>
+              <span style={{ color: sage }}>One Mission.</span>
             </h2>
 
-            <p className="type-section-body mx-auto mt-5 max-w-3xl text-[#596057]">
-              Compare our hydrogen power systems and find the right solution
-              for your operational needs.
+            <p className="type-section-body mx-auto mt-2.5 max-w-3xl sm:mt-3">
+              Specs for each Rise Power system — review Sentinel, Falcon, Titan,
+              and the Hydrogen Cartridge Kit on their own.
             </p>
           </Reveal>
 
-          <Reveal variant="up" delay={80} className="mt-12 overflow-x-auto lg:mt-14">
-            <div className="min-w-[1160px] text-white">
-              {/* TABLE HEADER */}
-              <div className="grid grid-cols-[240px_repeat(4,minmax(200px,1fr))]">
-                <div className="flex flex-col justify-center rounded-tl-lg border border-r-0 border-b-0 border-[#293a40] bg-[#071b23] p-6 shadow-[0_15px_40px_rgba(0,0,0,.08)]">
-                  <h3 className="font-display text-2xl font-bold uppercase">
-                    Specifications
-                  </h3>
-
-                  <p className="type-section-body mt-3 max-w-[190px] !text-white/90">
-                    Compare key features across the Rise Power product
-                    lineup.
-                  </p>
-                </div>
-
-                {products.slice(0, 4).map((product, index) => (
-                  <div
-                    key={product.slug}
-                    className={`overflow-hidden border border-b-0 border-[#293a40] bg-[#07151b] shadow-[0_15px_40px_rgba(0,0,0,.08)] ${index === 0
-                      ? "rounded-tr-lg border-l border-l-white/15"
-                      : "ml-1 rounded-t-lg"
-                      }`}
-                  >
-                    <div className="relative aspect-square overflow-hidden">
-                      <Image
-                        src={comparisonImages[index] ?? product.image}
-                        alt={product.name}
-                        fill
-                        quality={95}
-                        sizes="220px"
-                        className="object-cover object-center"
-                      />
-
-                      <div className="absolute inset-0 bg-gradient-to-t from-[#07151b] via-transparent to-transparent" />
-                    </div>
-
-                    <div className="px-4 pb-4 text-center">
-                      <h3 className="font-display text-lg font-bold uppercase">
-                        {product.name}
-                        {/* <sup className="ml-1 text-[8px]">™</sup> */}
-                      </h3>
-
-                      <p className="mt-1 text-sm font-semibold tracking-[0.12em] text-white uppercase">
-                        {product.tagline}
-                      </p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-
-              {/* COMPARISON ROWS */}
-              {comparisonRows.map((row, rowIndex) => {
-                const Icon = row.icon;
-                const isLast = rowIndex === comparisonRows.length - 1;
-
-                return (
-                  <div
-                    key={row.label}
-                    className="grid grid-cols-[240px_repeat(4,minmax(200px,1fr))]"
-                  >
-                    <div
-                      className={`flex items-center gap-4 border-l border-[#293a40] border-t border-t-white/15 bg-[#071b23] px-6 py-4 ${
-                        isLast ? "rounded-bl-lg border-b" : ""
-                      }`}
-                    >
-                      <Icon
-                        className="size-6 shrink-0 text-[#c1df29]"
-                        strokeWidth={1.5}
-                      />
-
-                      <span className="text-sm font-semibold">
-                        {row.label}
-                      </span>
-                    </div>
-
-                    {row.values.map((value, index) => (
-                      <div
-                        key={`${row.label}-${index}`}
-                        className={`flex min-w-0 items-center border-t border-t-white/15 bg-[#07151b] px-5 py-4 text-base leading-relaxed text-white ${
-                          index === 0
-                            ? "border-r border-[#293a40] border-l border-l-white/15"
-                            : "ml-1 border-x border-[#293a40]"
-                        } ${
-                          isLast
-                            ? `border-b ${
-                                index === 0
-                                  ? "rounded-br-lg"
-                                  : "rounded-b-lg"
-                              }`
-                            : ""
-                        }`}
-                      >
-                        {value}
-                      </div>
-                    ))}
-                  </div>
-                );
-              })}
-            </div>
-          </Reveal>
-
-          <p className="mt-4 text-center text-sm tracking-[0.08em] text-[#77766f] uppercase sm:hidden">
-            Swipe horizontally to compare all products
-          </p>
+          <div className="mt-6 flex flex-col gap-3 sm:mt-7 sm:gap-4 lg:mt-8">
+            {productSpecSections.map((item, index) => (
+              <Reveal key={item.product.slug} variant="up" delay={index * 40}>
+                <ProductSpecSection
+                  product={item.product}
+                  image={item.image}
+                  rows={item.rows}
+                  reverse={index % 2 === 1}
+                />
+              </Reveal>
+            ))}
+          </div>
         </div>
       </section>
     </>

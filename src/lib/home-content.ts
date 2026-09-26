@@ -11,6 +11,8 @@ export { megaNavItems } from "./nav-menu";
 export type NavItem = {
   label: string;
   href: string;
+  /** Optional nested footer / nav children (e.g. Capabilities pages). */
+  children?: readonly NavItem[];
 };
 
 export type Cta = {
@@ -1068,6 +1070,22 @@ export const footer = {
         { label: "Products", href: "/products" },
         { label: "Case Studies", href: "/use-cases" },
         { label: "Capabilities", href: "/capabilities" },
+        {
+          label: "Engineering & Development",
+          href: "/capabilities/engineering-development",
+        },
+        {
+          label: "System Integration",
+          href: "/capabilities/system-integration",
+        },
+        {
+          label: "Field Deployment",
+          href: "/capabilities/field-deployment",
+        },
+        {
+          label: "Safety & Compliance",
+          href: "/capabilities/safety-compliance",
+        },
         { label: "How It Works", href: "/#how-it-works" },
       ],
     },
@@ -1084,14 +1102,23 @@ export const footer = {
       heading: "Company",
       links: [
         { label: "About", href: "/about" },
+        { label: "Focus Areas", href: "/about#focus" },
         { label: "Investors", href: "/investors" },
+        { label: "Investor Deck", href: "/rise-power-deck.pdf" },
+        {
+          label: "Company Brochure",
+          href: "/media/brochures/rise-mission-power-brochure.pdf",
+        },
+        { label: "Press & Updates", href: "/investors#press" },
         { label: "Contact", href: "/contact" },
+        { label: "Careers", href: "/contact" },
       ],
     },
     {
       heading: "Resources",
       links: [
         { label: "Resource Center", href: "/resources" },
+        { label: "Products", href: "/products" },
         { label: "Datasheets", href: "/datasheets" },
         { label: "Procurement FAQ", href: "/resources/faq" },
         { label: "Insights", href: "/insights" },

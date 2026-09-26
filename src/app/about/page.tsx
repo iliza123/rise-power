@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, AudioLines, Crosshair, Leaf, Weight } from "lucide-react";
 
+import { PerformanceMetricCard } from "@/components/home/PerformanceMetricCard";
 import { SnapCarousel } from "@/components/home/SnapCarousel";
 import { Reveal, RevealStagger } from "@/components/motion/Reveal";
 import { CartridgeEcosystem } from "@/components/CartridgeEcosystem";
 import { StackedPageHero } from "@/components/StackedPageHero";
+import { performanceMetrics } from "@/lib/home-content";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata({
@@ -17,6 +19,7 @@ export const metadata: Metadata = pageMetadata({
 });
 
 const sage = "#6e7f42";
+const performanceGaugeIcons = [AudioLines, Leaf, Crosshair, Weight] as const;
 
 /* -------------------------------------------------------------------------- */
 /* DATA                                                                       */
@@ -315,7 +318,7 @@ export default function AboutPage() {
       {/* MISSION                                                            */}
       {/* ================================================================== */}
 
-      <section className="relative overflow-hidden bg-[#fbfaf7] py-10 sm:py-12 lg:py-16">
+      <section className="relative overflow-hidden bg-[#fbfaf7] pt-10 pb-6 sm:pt-12 sm:pb-8 lg:pt-16 lg:pb-10">
         <ContourDecoration position="left" />
         <ContourDecoration position="right" />
 
@@ -371,6 +374,49 @@ export default function AboutPage() {
               </div>
             </Reveal>
           </div>
+        </div>
+      </section>
+
+      {/* BUILT TO OUTPERFORM */}
+      <section
+        id="performance-metrics"
+        className="scroll-mt-28 pt-6 pb-10 sm:pt-8 sm:pb-12 lg:pt-10 lg:pb-14"
+        style={{ background: "#fafaf8" }}
+      >
+        <div className="mx-auto w-full max-w-[1760px] px-6 lg:px-10">
+          <Reveal variant="up">
+            <p className="type-eyebrow text-center" style={{ color: sage }}>
+              {performanceMetrics.eyebrow}
+            </p>
+            <h2 className="type-section-h2 mt-3 text-center">
+              {performanceMetrics.headingBefore}{" "}
+              <span style={{ color: sage }}>
+                {performanceMetrics.headingAccent}
+              </span>
+            </h2>
+            <p className="type-section-body mx-auto mt-3 max-w-2xl text-center">
+              {performanceMetrics.body}
+            </p>
+          </Reveal>
+          <RevealStagger
+            className="mx-auto mt-8 grid w-full max-w-5xl grid-cols-1 items-stretch gap-4 sm:mt-9 sm:grid-cols-2 sm:gap-4 xl:mt-10 xl:max-w-none xl:grid-cols-4 xl:gap-5"
+            step={70}
+          >
+            {performanceMetrics.gauges.map((item, index) => {
+              const Icon = performanceGaugeIcons[index] ?? Crosshair;
+              return (
+                <PerformanceMetricCard
+                  key={item.title}
+                  icon={Icon}
+                  value={item.value}
+                  unit={item.unit}
+                  title={item.title}
+                  body={item.body}
+                  percent={item.percent}
+                />
+              );
+            })}
+          </RevealStagger>
         </div>
       </section>
 

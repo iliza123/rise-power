@@ -44,11 +44,11 @@ const nextConfig: NextConfig = {
         destination: "/contact",
         permanent: false,
       },
-      {
-        source: "/capabilities/system-integration",
-        destination: "/capabilities",
-        permanent: true,
-      },
+      // {
+      //   source: "/capabilities/system-integration",
+      //   destination: "/capabilities",
+      //   permanent: true,
+      // },
       // Legacy Company / About Us paths → About
       {
         source: "/company",
