@@ -327,16 +327,21 @@ export function CapabilityDetail({ capability }: CapabilityDetailProps) {
             </ol>
           </Reveal>
 
-          <Reveal variant="right" delay={80} className="min-w-0 lg:justify-self-end lg:w-full lg:max-w-[380px]">
-            <div className="relative aspect-[4/3] overflow-hidden bg-[#dfe4dc] sm:aspect-[5/4] lg:aspect-[4/5]">
-              <Image
-                src={capability.images.secondary.src}
-                alt={capability.images.secondary.alt}
-                fill
-                sizes="(min-width: 1024px) 380px, 100vw"
-                className="object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
+          <Reveal
+            variant="right"
+            delay={80}
+            className="min-w-0 self-start lg:justify-self-end"
+          >
+            <div className="relative mx-auto w-full max-w-[240px] sm:max-w-[280px] lg:mx-0 lg:max-w-[260px]">
+              <div className="relative aspect-square w-full overflow-hidden rounded-[7px]">
+                <Image
+                  src={capability.images.secondary.src}
+                  alt={capability.images.secondary.alt}
+                  fill
+                  sizes="(min-width: 1024px) 260px, 280px"
+                  className="object-contain object-center"
+                />
+              </div>
             </div>
           </Reveal>
         </div>

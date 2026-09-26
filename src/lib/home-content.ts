@@ -537,7 +537,7 @@ export const capabilities = {
     },
     {
       src: "/media/capabilities/systems-context-4.png",
-      alt: "Stacked portable power units supporting a snowfield drone deployment",
+      alt: "Rise portable power stack and hydrogen cartridge at a mountain field station",
     },
   ] satisfies readonly CapabilityMedia[],
   proof: {
@@ -622,7 +622,7 @@ export const capabilities = {
       gallery: [
         {
           src: "/media/capabilities/engineering.png",
-          alt: "Soldiers in a forest with a portable generator",
+          alt: "Rise portable power stack powering outdoor tools at a snowy mountain worksite",
         },
         {
           src: "/media/missions/mountain.png",
