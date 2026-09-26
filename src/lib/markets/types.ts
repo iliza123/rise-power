@@ -29,6 +29,29 @@ export type MarketProduct = {
   imageAlt: string;
 };
 
+/** Core systems shown in the per-market “how it’s used” section. */
+export type MarketProductSlug = "sentinel" | "falcon" | "titan";
+
+export type MarketProductUseEntry = {
+  slug: MarketProductSlug;
+  /** Short role in this market, e.g. "Forward node power" */
+  role: string;
+  /** How this product is used in this specific market. */
+  body: string;
+};
+
+export type MarketProductUsesSection = {
+  eyebrow: string;
+  headingBefore: string;
+  headingAccent: string;
+  intro: string;
+  items: readonly [
+    MarketProductUseEntry,
+    MarketProductUseEntry,
+    MarketProductUseEntry,
+  ];
+};
+
 export type MarketSpotlight = {
   number: string;
   label: string;
@@ -66,6 +89,8 @@ export type MarketDetailPage = {
   products: readonly MarketProduct[];
   /** Use-cases-style image + feature card block */
   spotlight: MarketSpotlight;
+  /** How Sentinel, Falcon, and Titan are used in this market */
+  productUses: MarketProductUsesSection;
   cta: MarketCta;
   stats: readonly MarketStat[];
   callouts: readonly MarketCallout[];

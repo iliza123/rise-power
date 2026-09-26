@@ -8,9 +8,14 @@ export type {
   MarketLayout,
   MarketMedia,
   MarketProduct,
+  MarketProductSlug,
+  MarketProductUseEntry,
+  MarketProductUsesSection,
   MarketSpotlight,
   MarketStat,
 } from "./types";
+export { MARKET_PRODUCT_CATALOG } from "./product-catalog";
+export type { MarketProductCatalogEntry } from "./product-catalog";
 export { marketDetails } from "./details";
 
 export function getMarketBySlug(

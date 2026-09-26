@@ -1,6 +1,7 @@
 import { Reveal } from "@/components/motion/Reveal";
 import { StackedPageHero } from "@/components/StackedPageHero";
 import { type MarketDetailPage } from "@/lib/markets";
+import { MarketProductUses } from "./MarketProductUses";
 import { MarketSpotlightSection } from "./MarketSpotlightSection";
 import {
   HeroCtas,
@@ -108,6 +109,12 @@ export function MarketLayoutConsumer({
       </section>
 
       <MarketSpotlightSection spotlight={market.spotlight} />
+
+      <MarketProductUses
+        section={market.productUses}
+        tone="light"
+        headerAlign="center"
+      />
 
       {/* Large feature rows — callouts */}
       <section className="bg-white py-10 sm:py-12 lg:py-14">

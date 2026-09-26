@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Reveal } from "@/components/motion/Reveal";
 import { StackedPageHero } from "@/components/StackedPageHero";
 import { type MarketDetailPage } from "@/lib/markets";
+import { MarketProductUses } from "./MarketProductUses";
 import { MarketSpotlightSection } from "./MarketSpotlightSection";
 import {
   DARK,
@@ -124,6 +125,8 @@ export function MarketLayoutDefense({ market }: { market: MarketDetailPage }) {
       </section>
 
       <MarketSpotlightSection spotlight={market.spotlight} />
+
+      <MarketProductUses section={market.productUses} tone="dark" />
 
       {/* Deployment / How It Works — header above; image + steps aligned */}
       <section className="relative bg-[#f3f0e8] py-12 text-[#101820] sm:py-14 lg:py-16">

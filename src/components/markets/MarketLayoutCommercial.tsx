@@ -1,6 +1,7 @@
 import { Reveal } from "@/components/motion/Reveal";
 import { StackedPageHero } from "@/components/StackedPageHero";
 import { type MarketDetailPage } from "@/lib/markets";
+import { MarketProductUses } from "./MarketProductUses";
 import { MarketSpotlightSection } from "./MarketSpotlightSection";
 import {
   CREAM,
@@ -92,6 +93,8 @@ export function MarketLayoutCommercial({
       </section>
 
       <MarketSpotlightSection spotlight={market.spotlight} />
+
+      <MarketProductUses section={market.productUses} tone="light" />
     </main>
   );
 }

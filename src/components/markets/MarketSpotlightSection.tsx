@@ -1,7 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
 import {
-  ArrowRight,
   Clock3,
   Database,
   Leaf,
@@ -88,7 +86,8 @@ export function MarketSpotlightSection({
               })}
             </div>
 
-            <div className="mt-auto border-t border-[#e1e3de] pt-7">
+            {/* Temporarily hidden: Featured Products CTAs */}
+            {/* <div className="mt-auto border-t border-[#e1e3de] pt-7">
               <p className="text-center text-sm font-semibold tracking-[0.16em] text-[#8a9089] uppercase sm:text-base">
                 Featured Products
               </p>
@@ -104,7 +103,7 @@ export function MarketSpotlightSection({
                   </Link>
                 ))}
               </div>
-            </div>
+            </div> */}
           </div>
         </Reveal>
 

@@ -112,6 +112,30 @@ export const marketDetails: readonly MarketDetailPage[] = [
         { label: "Titan", href: "/products#titan" },
       ],
     },
+    productUses: {
+      eyebrow: "Systems",
+      headingBefore: "Products Built",
+      headingAccent: "For This Theater.",
+      intro:
+        "Silent portable power for bases, troops, and surveillance drones — Sentinel, Falcon, and Titan sized to the mission.",
+      items: [
+        {
+          slug: "sentinel",
+          role: "Forward node power",
+          body: "Deploy Sentinel to forward positions for communications and surveillance equipment. Lightweight, silent, and cartridge-refueled when diesel logistics are unacceptable.",
+        },
+        {
+          slug: "falcon",
+          role: "ISR range extension",
+          body: "Extend drone ISR missions with Falcon. Up to 5× flight range with low-noise, zero-emission operation and quick-swap hydrogen cartridges.",
+        },
+        {
+          slug: "titan",
+          role: "FOB & base power",
+          body: "Deploy Titan where loads exceed a Power Cube — 1.5 kW portable generation for bases and heavier tactical equipment with unlimited runtime via cartridge swap.",
+        },
+      ],
+    },
     cta: { label: "Request a Briefing", href: "/contact" },
     stats: [
       {
@@ -169,7 +193,8 @@ export const marketDetails: readonly MarketDetailPage[] = [
     href: "/markets/commercial",
     images: {
       hero: {
-        src: "/media/markets/commercial.png",
+        src: "/media/markets/commercial-hero.png",
+        mobileSrc: "/media/markets/commercial-hero-mobile.png",
         alt: "Commercial market imagery",
       },
       secondary: {
@@ -255,6 +280,30 @@ export const marketDetails: readonly MarketDetailPage[] = [
         { label: "Titan", href: "/products#titan" },
         { label: "Falcon", href: "/products#falcon" },
         { label: "Sentinel", href: "/products#sentinel" },
+      ],
+    },
+    productUses: {
+      eyebrow: "In This Market",
+      headingBefore: "Products Built",
+      headingAccent: "For The Job Site.",
+      intro:
+        "Reliable hydrogen power for construction, telecom, and mining — without fuel-truck dependency.",
+      items: [
+        {
+          slug: "titan",
+          role: "Primary site backup",
+          body: "Clean backup power for construction sites and industrial pads. 1.5 kW capacity, 40 lb portable weight, and unlimited runtime with refillable hydrogen cartridges.",
+        },
+        {
+          slug: "falcon",
+          role: "Industrial aerial survey",
+          body: "Up to 5× extended flight range for inspection, mapping, public safety, and remote operations over corridors, pits, and remote sites.",
+        },
+        {
+          slug: "sentinel",
+          role: "Site & telecom support",
+          body: "Compact portable power for telecom backup and early-site loads when permanent power is not live — quiet, plug-and-play, no grid connection required.",
+        },
       ],
     },
     cta: { label: "Request a Briefing", href: "/contact" },
@@ -402,6 +451,30 @@ export const marketDetails: readonly MarketDetailPage[] = [
         { label: "Sentinel", href: "/products#sentinel" },
         { label: "Falcon", href: "/products#falcon" },
         { label: "Titan", href: "/products#titan" },
+      ],
+    },
+    productUses: {
+      eyebrow: "For Home & Trail",
+      headingBefore: "Products Built",
+      headingAccent: "For Everyday Use.",
+      intro:
+        "Quiet neighbourhood-ready power for camping, RV, and emergency home backup — each system sized to the job.",
+      items: [
+        {
+          slug: "sentinel",
+          role: "Camp & kit power",
+          body: "Compact hydrogen power for camping and outdoor use. Lightweight enough for an RV cubby or home emergency kit — quiet, plug-and-play setup with refillable cartridges.",
+        },
+        {
+          slug: "titan",
+          role: "Home essentials backup",
+          body: "Clean backup for homes and community spaces during outages and severe weather. 1.5 kW capacity with unlimited runtime via cartridge swap — neighbourhood-quiet, zero exhaust at the point of use.",
+        },
+        {
+          slug: "falcon",
+          role: "Property & recreation UAV",
+          body: "Plug-and-play hydrogen range extender for compatible drones. Up to 5× extended flight range for property, mapping, and outdoor use with quick-swap cartridges.",
+        },
       ],
     },
     cta: { label: "Request a Briefing", href: "/contact" },
