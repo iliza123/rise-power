@@ -49,20 +49,20 @@ const nextConfig: NextConfig = {
         destination: "/capabilities",
         permanent: true,
       },
-      // Legacy About Us paths → Company
+      // Legacy Company / About Us paths → About
       {
-        source: "/about",
-        destination: "/company",
+        source: "/company",
+        destination: "/about",
         permanent: true,
       },
       {
         source: "/about-us",
-        destination: "/company",
+        destination: "/about",
         permanent: true,
       },
       {
         source: "/aboutus",
-        destination: "/company",
+        destination: "/about",
         permanent: true,
       },
     ];

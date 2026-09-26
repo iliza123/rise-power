@@ -1083,7 +1083,7 @@ export const footer = {
     {
       heading: "Company",
       links: [
-        { label: "About", href: "/company" },
+        { label: "About", href: "/about" },
         { label: "Investors", href: "/investors" },
         { label: "Contact", href: "/contact" },
       ],

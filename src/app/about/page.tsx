@@ -9,10 +9,10 @@ import { StackedPageHero } from "@/components/StackedPageHero";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Company",
+  title: "About",
   description:
     "Rise Power is engineered, manufactured, and validated in British Columbia. A CIMtech Green Energy company built on 20+ years of Canadian advanced manufacturing.",
-  path: "/company",
+  path: "/about",
 });
 
 const sage = "#6e7f42";
@@ -261,7 +261,7 @@ function FocusCard({ area }: { area: (typeof focusAreas)[number] }) {
 /* PAGE                                                                       */
 /* -------------------------------------------------------------------------- */
 
-export default function CompanyPage() {
+export default function AboutPage() {
   return (
     <main className="overflow-hidden bg-[#fbfaf7] text-[#101820]">
       <StackedPageHero
@@ -275,7 +275,7 @@ export default function CompanyPage() {
         splitWash="linear-gradient(90deg, #0a0f10 0%, #0a0f10 44%, rgba(10,15,16,0.82) 52%, rgba(10,15,16,0.35) 62%, transparent 74%)"
       >
         <div className="hero-animate-copy w-full text-left">
-          <SectionEyebrow light>Company</SectionEyebrow>
+          <SectionEyebrow light>About</SectionEyebrow>
 
           <h1 className="mt-6 type-page-h1">
             Canadian
