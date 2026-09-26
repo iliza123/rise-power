@@ -219,7 +219,13 @@ export function CustomersPartners({
       style={{ background: cream }}
     >
       {showCases ? (
-        <div className="mx-auto w-full max-w-[1760px] px-4 py-14 sm:px-6 sm:py-16 lg:px-8 lg:py-[76px]">
+        <div
+          className={`mx-auto w-full max-w-[1760px] px-4 sm:px-6 lg:px-8 ${
+            showMarquee
+              ? "py-14 sm:py-16 lg:py-[76px]"
+              : "pt-14 pb-8 sm:pt-16 sm:pb-10 lg:pt-[76px] lg:pb-12"
+          }`}
+        >
           <Reveal variant="up">
             <p className="type-eyebrow text-center" style={{ color: sage }}>
               {eyebrow}
