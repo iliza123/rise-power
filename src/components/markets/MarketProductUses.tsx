@@ -92,6 +92,8 @@ export function MarketProductUses({
         >
           {section.items.map((item, index) => {
             const product = MARKET_PRODUCT_CATALOG[item.slug];
+            const imageSrc = item.imageSrc ?? product.imageSrc;
+            const isScene = Boolean(item.imageSrc);
 
             return (
               <Reveal
@@ -110,11 +112,15 @@ export function MarketProductUses({
                     style={{ borderColor: gridBorder }}
                   >
                     <Image
-                      src={product.imageSrc}
+                      src={imageSrc}
                       alt={product.imageAlt}
                       fill
                       sizes="(min-width: 640px) 33vw, 100vw"
-                      className="object-contain p-4 transition-opacity group-hover:opacity-90 sm:p-5"
+                      className={
+                        isScene
+                          ? "object-cover transition-opacity group-hover:opacity-90"
+                          : "object-contain p-4 transition-opacity group-hover:opacity-90 sm:p-5"
+                      }
                     />
                   </Link>
 
@@ -171,6 +177,8 @@ export function MarketProductUses({
         <ul className="mt-8 space-y-0 sm:hidden">
           {section.items.map((item, index) => {
             const product = MARKET_PRODUCT_CATALOG[item.slug];
+            const imageSrc = item.imageSrc ?? product.imageSrc;
+            const isScene = Boolean(item.imageSrc);
 
             return (
               <Reveal key={item.slug} variant="up" delay={index * 50} as="li">
@@ -191,11 +199,13 @@ export function MarketProductUses({
                       style={{ borderColor: gridBorder }}
                     >
                       <Image
-                        src={product.imageSrc}
+                        src={imageSrc}
                         alt={product.imageAlt}
                         fill
                         sizes="120px"
-                        className="object-contain p-2"
+                        className={
+                          isScene ? "object-cover" : "object-contain p-2"
+                        }
                       />
                     </Link>
                     <div className="min-w-0">

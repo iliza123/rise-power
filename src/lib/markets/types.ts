@@ -38,6 +38,8 @@ export type MarketProductUseEntry = {
   role: string;
   /** How this product is used in this specific market. */
   body: string;
+  /** Optional scene image for this market; falls back to catalog product shot. */
+  imageSrc?: string;
 };
 
 export type MarketProductUsesSection = {
