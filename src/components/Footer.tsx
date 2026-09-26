@@ -379,8 +379,13 @@ function FooterNavGroups() {
               {expanded ? (
                 <ul
                   id={panelId}
-                  className="mobile-nav-accordion space-y-3 pb-4"
+                  className="mobile-nav-accordion relative grid grid-cols-2 gap-x-6 gap-y-3 pb-4"
                 >
+                  <span
+                    aria-hidden="true"
+                    className="pointer-events-none absolute top-0 bottom-4 left-1/2 w-px -translate-x-1/2"
+                    style={{ backgroundColor: sage }}
+                  />
                   {group.links.map((item) => (
                     <li key={`${group.heading}-${item.label}`}>
                       <AppLink
