@@ -21,6 +21,11 @@ export const marketDetails: readonly MarketDetailPage[] = [
     body: "Ultra-quiet, zero-emission power with rapid cartridge swaps for mission-critical operations where diesel logistics and acoustic signature are unacceptable.",
     heroBody:
       "Silent portable power for bases, troops, and surveillance drones. Reduces reliance on fuel convoys. Eliminates the acoustic, thermal, and emissions signatures that compromise operational security.",
+    overview: {
+      eyebrow: "Defense",
+      headingBefore: "Tactical Communications, UAV Operations &",
+      headingAccent: "ISR Systems.",
+    },
     href: "/markets/defense",
     images: {
       hero: {
@@ -190,6 +195,11 @@ export const marketDetails: readonly MarketDetailPage[] = [
     body: "Robust, low-maintenance hydrogen power for electrified drilling, remote site infrastructure, and off-grid operations without fuel-truck dependency.",
     heroBody:
       "Reliable power for construction sites, telecom backup, mining, and other demanding industrial applications.",
+    overview: {
+      eyebrow: "Commercial",
+      headingBefore: "Construction Sites, Telecom Backup &",
+      headingAccent: "Mining.",
+    },
     href: "/markets/commercial",
     images: {
       hero: {
@@ -360,6 +370,11 @@ export const marketDetails: readonly MarketDetailPage[] = [
     body: "Quiet neighbourhood-ready operation with zero exhaust at the point of use. Refillable cartridges swap in under 30 seconds.",
     heroBody:
       "Portable backup for camping, RV power, and emergency home use when the grid cannot be trusted.",
+    overview: {
+      eyebrow: "Consumer",
+      headingBefore: "Camping, RV Power &",
+      headingAccent: "Emergency Home Backup.",
+    },
     href: "/markets/consumer",
     images: {
       hero: {

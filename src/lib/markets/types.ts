@@ -70,13 +70,19 @@ export type MarketDetailPage = {
   slug: string;
   id: string;
   label: string;
-  /** Drives distinct page composition in MarketDetail layouts. */
+  /** Retained for data identity; all markets share one MarketLayout composition. */
   layout: MarketLayout;
   title: string;
   eyebrow: string;
   heading: string;
   body: string;
   heroBody: string;
+  /** Cream overview section — market label + accented H2. */
+  overview: {
+    eyebrow: string;
+    headingBefore: string;
+    headingAccent: string;
+  };
   href: string;
   images: {
     hero: MarketMedia;
