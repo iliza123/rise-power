@@ -5,6 +5,7 @@ import { ArrowRight } from "lucide-react";
 
 import { SnapCarousel } from "@/components/home/SnapCarousel";
 import { Reveal, RevealStagger } from "@/components/motion/Reveal";
+import { CartridgeEcosystem } from "@/components/CartridgeEcosystem";
 import { StackedPageHero } from "@/components/StackedPageHero";
 import { pageMetadata } from "@/lib/seo";
 
@@ -372,6 +373,9 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
+      {/* ONE CARTRIDGE ECOSYSTEM */}
+      <CartridgeEcosystem />
 
       {/* ================================================================== */}
       {/* VALUES                                                              */}

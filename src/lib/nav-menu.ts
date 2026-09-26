@@ -179,6 +179,11 @@ export const megaNavItems: readonly MegaNavItem[] = [
     href: "/resources",
     links: [
       {
+        label: "Products",
+        href: "/products",
+        description: "Sentinel, Falcon, Titan, and hydrogen cartridge systems.",
+      },
+      {
         label: "Resource Center",
         href: "/resources",
         description: "Specs, insights, and field notes.",
@@ -201,7 +206,7 @@ export const megaNavItems: readonly MegaNavItem[] = [
     ],
     feature: {
       title: "Browse Resources",
-      body: "Datasheets, FAQ, and insights for procurement, programs, and integration leads.",
+      body: "Products, datasheets, FAQ, and insights for procurement, programs, and integration leads.",
       href: "/resources",
       cta: "Open Resource Center",
     },
