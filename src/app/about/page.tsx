@@ -422,7 +422,7 @@ export default function AboutPage() {
       {/* HOW WE WORK — ecosystem stage + outperform header language          */}
       {/* ================================================================== */}
 
-      <section
+      {/* <section
         id="how-we-work"
         className="relative scroll-mt-28 overflow-hidden bg-[#0e1210] py-12 sm:py-14 lg:py-16"
       >
@@ -526,7 +526,7 @@ export default function AboutPage() {
             ))}
           </RevealStagger>
         </div>
-      </section>
+      </section> */}
     </main>
   );
 }
