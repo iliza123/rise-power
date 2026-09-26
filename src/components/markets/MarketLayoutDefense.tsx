@@ -1,6 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
-import { ArrowRight } from "lucide-react";
 
 import { Reveal } from "@/components/motion/Reveal";
 import { StackedPageHero } from "@/components/StackedPageHero";
@@ -9,7 +7,6 @@ import { MarketSpotlightSection } from "./MarketSpotlightSection";
 import {
   DARK,
   HeroCtas,
-  MUTED,
   SAGE,
   SectionEyebrow,
   SPLIT_WASH,
@@ -128,31 +125,31 @@ export function MarketLayoutDefense({ market }: { market: MarketDetailPage }) {
 
       <MarketSpotlightSection spotlight={market.spotlight} />
 
-      {/* Deployment / How It Works — left sticky, right steps */}
+      {/* Deployment / How It Works — header above; image + steps aligned */}
       <section className="relative bg-[#f3f0e8] py-12 text-[#101820] sm:py-14 lg:py-16">
         <div className="mx-auto max-w-[1440px] px-6 lg:px-10">
-          <div className="grid items-start gap-8 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)] lg:gap-10 xl:gap-12">
-            {/* Sticky left: stays fixed while steps scroll past */}
-            <div className="lg:sticky lg:top-24 lg:self-start">
-              <Reveal variant="left" className="flex flex-col">
-                <SectionEyebrow>Deployment</SectionEyebrow>
-                <h2 className="mt-3 font-display text-[1.75rem] leading-[0.95] font-bold tracking-tight uppercase sm:text-[2.25rem] lg:text-[2.5rem]">
-                  How It <span style={{ color: SAGE }}>Works.</span>
-                </h2>
-                <p className="mt-4 max-w-[30rem] text-base leading-[1.65] text-[#3d4440] sm:text-lg">
-                  {market.applicationsIntro}
-                </p>
-                <div className="relative mt-7 aspect-[4/3] w-full overflow-hidden border border-[#d9d8d0] bg-[#dfe4dc] lg:mt-8">
-                  <Image
-                    src={market.images.secondary.src}
-                    alt={market.images.secondary.alt}
-                    fill
-                    sizes="(min-width: 1024px) 44vw, 100vw"
-                    className="object-cover"
-                  />
-                </div>
-              </Reveal>
-            </div>
+          <Reveal variant="left">
+            <SectionEyebrow>Deployment</SectionEyebrow>
+            <h2 className="mt-3 font-display text-[1.75rem] leading-[0.95] font-bold tracking-tight uppercase sm:text-[2.25rem] lg:text-[2.5rem]">
+              How It <span style={{ color: SAGE }}>Works.</span>
+            </h2>
+            <p className="mt-4 max-w-[30rem] text-base leading-[1.65] text-[#3d4440] sm:text-lg">
+              {market.applicationsIntro}
+            </p>
+          </Reveal>
+
+          <div className="mt-7 grid items-start gap-8 lg:mt-8 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)] lg:gap-10 xl:gap-12">
+            <Reveal variant="left" delay={40} className="lg:sticky lg:top-24 lg:self-start">
+              <div className="relative aspect-[4/3] w-full overflow-hidden border border-[#d9d8d0] bg-[#dfe4dc]">
+                <Image
+                  src={market.images.secondary.src}
+                  alt={market.images.secondary.alt}
+                  fill
+                  sizes="(min-width: 1024px) 44vw, 100vw"
+                  className="object-cover"
+                />
+              </div>
+            </Reveal>
 
             <Reveal variant="right" delay={60}>
               <ol className="relative">
@@ -204,57 +201,6 @@ export function MarketLayoutDefense({ market }: { market: MarketDetailPage }) {
                 })}
               </ol>
             </Reveal>
-          </div>
-        </div>
-      </section>
-
-      {/* Compact product dossier rows */}
-      <section className="bg-[#fbfaf7] py-10 text-[#101820] sm:py-12 lg:py-14">
-        <div className="mx-auto max-w-[1440px] px-6 lg:px-10">
-          <Reveal variant="up">
-            <SectionEyebrow>Systems</SectionEyebrow>
-            <h2 className="mt-2.5 type-section-h2">
-              Mission <span style={{ color: SAGE }}>Systems.</span>
-            </h2>
-            <p className="type-section-body mt-3 max-w-[42rem]" style={{ color: MUTED }}>
-              {market.productsIntro}
-            </p>
-          </Reveal>
-
-          <div className="mt-8 divide-y divide-[#d9d8d0] border-y border-[#d9d8d0]">
-            {market.products.map((product, index) => (
-              <Reveal key={product.name} variant="up" delay={index * 50}>
-                <Link
-                  href={product.href}
-                  className="group grid items-center gap-4 py-5 sm:grid-cols-[7.5rem_1fr_auto] sm:gap-6 sm:py-6"
-                >
-                  <div className="relative aspect-[5/4] w-full max-w-[7.5rem] overflow-hidden bg-[#101820]">
-                    <Image
-                      src={product.imageSrc}
-                      alt={product.imageAlt}
-                      fill
-                      sizes="120px"
-                      className="object-cover transition-transform duration-500 group-hover:scale-[1.04]"
-                    />
-                  </div>
-                  <div className="min-w-0">
-                    <p className="text-xs font-semibold tracking-[0.16em] uppercase" style={{ color: SAGE }}>
-                      {product.tagline}
-                    </p>
-                    <h3 className="mt-1 font-display text-xl font-bold tracking-tight uppercase transition-colors group-hover:text-[#6e7f42] sm:text-2xl">
-                      {product.name}
-                    </h3>
-                    <p className="mt-1.5 max-w-[40rem] text-sm leading-[1.5]" style={{ color: MUTED }}>
-                      {product.body}
-                    </p>
-                  </div>
-                  <ArrowRight
-                    className="hidden size-5 text-[#6e7f42] transition-transform group-hover:translate-x-1 sm:block"
-                    aria-hidden
-                  />
-                </Link>
-              </Reveal>
-            ))}
           </div>
         </div>
       </section>

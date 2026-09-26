@@ -9,7 +9,6 @@ const checklist = [
   "Plug & Play Cartridge Interface",
   "Modular & Scalable Architecture",
   "Advanced Fuel Cell Technology",
-  "Intelligent Power Management",
   "Built for Extreme Conditions",
 ] as const;
 
@@ -20,7 +19,7 @@ export type CompanyTechnologyProps = {
   diagramAlt?: string;
 };
 
-/** About page technology section — Plug & Play Hydrogen Platform. */
+/** About page technology section — matches Mission / other About section patterns. */
 export function CompanyTechnology({
   className = "",
   diagramSrc = "/media/products/product-ecosystem.png",
@@ -29,66 +28,65 @@ export function CompanyTechnology({
   return (
     <section
       id="technology"
-      className={`scroll-mt-28 bg-white py-14 sm:py-16 lg:py-20 ${className}`.trim()}
+      className={`relative scroll-mt-28 overflow-hidden bg-white pt-10 pb-6 sm:pt-12 sm:pb-8 lg:pt-16 lg:pb-10 ${className}`.trim()}
       aria-labelledby="company-technology-heading"
     >
-      <div className="mx-auto max-w-[1440px] px-6 lg:px-10">
-        <div className="grid items-center gap-10 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)] lg:gap-14">
+      <div className="relative mx-auto max-w-[1440px] px-6 lg:px-10">
+        <div className="grid items-center gap-6 lg:grid-cols-[1.15fr_0.85fr] lg:gap-12">
           <Reveal variant="left" className="min-w-0">
-            <p className="type-eyebrow" style={{ color: SAGE }}>
-              OUR TECHNOLOGY
-            </p>
-
-            <h2
-              id="company-technology-heading"
-              className="type-section-h2 mt-3 text-[#101820]"
-            >
-              The Rise Plug &amp; Play Hydrogen Platform
-            </h2>
-
-            <div className="type-section-body mt-5 max-w-[34rem] space-y-4 text-[#66717d]">
-              <p>
-                Proprietary H₂-CORE™ architecture integrates fuel cells, power
-                electronics, and a patented Plug &amp; Play Hydrogen Cartridge
-                into one modular platform — engineered for field reliability
-                across mission profiles.
+            <div className="min-w-0 lg:pr-2">
+              <p className="type-eyebrow" style={{ color: SAGE }}>
+                Our Technology
               </p>
-              <p>
-                Hydrogen is converted into electricity through a chemical
-                reaction in the fuel cell — producing only water and heat.
-              </p>
-            </div>
 
-            <ul className="mt-8 space-y-3.5 sm:mt-9">
-              {checklist.map((item) => (
-                <li
-                  key={item}
-                  className="flex items-start gap-3 text-[15px] leading-snug text-[#101820] sm:text-base"
-                >
-                  <span
-                    className="mt-0.5 grid size-5 shrink-0 place-items-center rounded-full sm:size-[1.35rem]"
-                    style={{ backgroundColor: SAGE }}
-                    aria-hidden
+              <h2
+                id="company-technology-heading"
+                className="mt-4 type-section-h2"
+              >
+                The Rise Plug &amp; Play Hydrogen Platform
+              </h2>
+
+              <div className="type-section-body mt-5 max-w-xl space-y-4 break-words text-[#66717d]">
+                <p>
+                  Proprietary H₂-CORE™ architecture integrates fuel cells, power
+                  electronics, and a Plug &amp; Play Hydrogen Cartridge into one
+                  modular platform — engineered for field reliability across
+                  mission profiles.
+                </p>
+                <p>
+                  Hydrogen is converted into electricity through a chemical
+                  reaction in the fuel cell — producing only water and heat.
+                </p>
+              </div>
+
+              <ul className="mt-7 space-y-3">
+                {checklist.map((item) => (
+                  <li
+                    key={item}
+                    className="flex items-start gap-3 type-section-body text-[#101820]"
                   >
-                    <Check
-                      className="size-3 text-white sm:size-3.5"
-                      strokeWidth={3}
-                    />
-                  </span>
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
+                    <span
+                      className="mt-0.5 grid size-5 shrink-0 place-items-center rounded-full"
+                      style={{ backgroundColor: SAGE }}
+                      aria-hidden
+                    >
+                      <Check className="size-3 text-white" strokeWidth={3} />
+                    </span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </Reveal>
 
           <Reveal variant="right" delay={80} className="min-w-0">
-            <div className="relative aspect-[16/11] overflow-hidden rounded-[7px] bg-[#101820]">
+            <div className="relative mx-auto aspect-[1.15/1] w-full max-w-[26rem] overflow-hidden rounded-[7px] lg:ml-auto lg:mr-0">
               <Image
                 src={diagramSrc}
                 alt={diagramAlt}
                 fill
                 quality={90}
-                sizes="(max-width: 1024px) 100vw, 52vw"
+                sizes="(min-width: 1024px) 26rem, 88vw"
                 className="object-cover"
               />
             </div>
