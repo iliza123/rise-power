@@ -64,25 +64,45 @@ export function MarketLayoutDefense({ market }: { market: MarketDetailPage }) {
             </Reveal>
           </div>
 
-          <div className="mt-10 grid grid-cols-1 gap-px overflow-hidden bg-white/15 sm:mt-12 sm:grid-cols-2 lg:grid-cols-4">
-            {market.stats.map((stat, index) => (
-              <Reveal key={stat.label} variant="up" delay={index * 50}>
-                <article className="bg-[#0c1210] px-5 py-6 sm:px-6 sm:py-7">
-                  <p
-                    className="font-display text-[1.75rem] leading-none font-bold tracking-tight uppercase sm:text-[2rem]"
-                    style={{ color: SAGE }}
+          <div className="mt-10 grid grid-cols-1 border-t border-white/15 sm:mt-12 sm:grid-cols-2 lg:grid-cols-4">
+            {market.stats.map((stat, index) => {
+              const isOdd = index % 2 === 1;
+              const isBottomRow = index >= 2;
+
+              return (
+                <Reveal
+                  key={stat.label}
+                  variant="up"
+                  delay={index * 50}
+                  className="h-full min-h-0"
+                >
+                  <article
+                    className={[
+                      "flex h-full flex-col px-5 py-6 sm:px-6 sm:py-7",
+                      index > 0 ? "border-t border-white/15 sm:border-t-0" : "",
+                      isOdd ? "sm:border-l sm:border-white/15" : "",
+                      isBottomRow
+                        ? "sm:border-t sm:border-white/15 lg:border-t-0"
+                        : "",
+                      index > 0 ? "lg:border-l lg:border-white/15" : "",
+                    ].join(" ")}
                   >
-                    {stat.value}
-                  </p>
-                  <p className="mt-3 text-sm font-semibold tracking-[0.14em] text-white uppercase sm:text-[0.9375rem]">
-                    {stat.label}
-                  </p>
-                  <p className="mt-3 max-w-[28ch] text-base leading-[1.55] text-white">
-                    {stat.body}
-                  </p>
-                </article>
-              </Reveal>
-            ))}
+                    <p
+                      className="font-display text-[1.75rem] leading-none font-bold tracking-tight uppercase sm:text-[2rem]"
+                      style={{ color: SAGE }}
+                    >
+                      {stat.value}
+                    </p>
+                    <p className="mt-3 text-sm font-semibold tracking-[0.14em] text-white uppercase sm:text-[0.9375rem]">
+                      {stat.label}
+                    </p>
+                    <p className="mt-3 max-w-[28ch] text-base leading-[1.55] text-white">
+                      {stat.body}
+                    </p>
+                  </article>
+                </Reveal>
+              );
+            })}
           </div>
 
           <ul className="mt-8 grid gap-6 border-t border-white/15 pt-8 sm:grid-cols-2 sm:gap-x-8 sm:gap-y-7 lg:grid-cols-4">
@@ -105,10 +125,10 @@ export function MarketLayoutDefense({ market }: { market: MarketDetailPage }) {
         </div>
       </section>
 
-      {/* Deployment / How It Works — left sticky, right scrolls */}
-      <section className="relative bg-[#f3f0e8] py-10 text-[#101820] sm:py-12 lg:py-14">
+      {/* Deployment / How It Works — left sticky, right steps */}
+      <section className="relative bg-[#f3f0e8] py-12 text-[#101820] sm:py-14 lg:py-16">
         <div className="mx-auto max-w-[1440px] px-6 lg:px-10">
-          <div className="grid items-start gap-10 lg:grid-cols-2 lg:gap-16 xl:gap-20">
+          <div className="grid items-start gap-8 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)] lg:gap-10 xl:gap-12">
             {/* Sticky left: stays fixed while steps scroll past */}
             <div className="lg:sticky lg:top-24 lg:self-start">
               <Reveal variant="left" className="flex flex-col">
@@ -116,49 +136,69 @@ export function MarketLayoutDefense({ market }: { market: MarketDetailPage }) {
                 <h2 className="mt-3 font-display text-[1.75rem] leading-[0.95] font-bold tracking-tight uppercase sm:text-[2.25rem] lg:text-[2.5rem]">
                   How It <span style={{ color: SAGE }}>Works.</span>
                 </h2>
-                <p
-                  className="mt-4 max-w-[28rem] text-base leading-[1.65] sm:text-[1.0625rem]"
-                  style={{ color: MUTED }}
-                >
+                <p className="mt-4 max-w-[30rem] text-base leading-[1.65] text-[#3d4440] sm:text-lg">
                   {market.applicationsIntro}
                 </p>
-                <div className="relative mt-8 aspect-[5/4] w-full overflow-hidden bg-[#dfe4dc] sm:aspect-[4/3] lg:mt-10">
+                <div className="relative mt-7 aspect-[4/3] w-full overflow-hidden border border-[#d9d8d0] bg-[#dfe4dc] lg:mt-8">
                   <Image
                     src={market.images.secondary.src}
                     alt={market.images.secondary.alt}
                     fill
-                    sizes="(min-width: 1024px) 42vw, 100vw"
+                    sizes="(min-width: 1024px) 44vw, 100vw"
                     className="object-cover"
                   />
                 </div>
               </Reveal>
             </div>
 
-            <Reveal variant="right" delay={60} className="lg:pt-1">
-              <ol
-                className="relative space-y-10 border-l-2 sm:space-y-12 lg:space-y-16"
-                style={{ borderColor: `${SAGE}55` }}
-              >
-                {market.applications.map((item, index) => (
-                  <li key={item} className="relative min-h-[4.5rem] pl-8 sm:pl-10 lg:min-h-[5.5rem]">
-                    <span
-                      aria-hidden
-                      className="absolute top-0.5 left-0 flex size-7 -translate-x-1/2 items-center justify-center rounded-full border-2 bg-[#f3f0e8] text-[0.7rem] font-bold"
-                      style={{ borderColor: SAGE, color: SAGE }}
+            <Reveal variant="right" delay={60}>
+              <ol className="relative">
+                {market.applications.map((item, index) => {
+                  const isLast = index === market.applications.length - 1;
+
+                  return (
+                    <li
+                      key={item}
+                      className="relative grid grid-cols-[2.25rem_1fr] gap-x-4 pb-6 last:pb-0 sm:grid-cols-[2.75rem_1fr] sm:gap-x-5 sm:pb-7"
                     >
-                      {index + 1}
-                    </span>
-                    <p
-                      className="font-display text-sm font-bold tracking-[0.16em] uppercase"
-                      style={{ color: SAGE }}
-                    >
-                      Step {String(index + 1).padStart(2, "0")}
-                    </p>
-                    <p className="mt-2 max-w-[36rem] text-base leading-[1.55] text-[#20251f] sm:text-[1.0625rem]">
-                      {item}
-                    </p>
-                  </li>
-                ))}
+                      {/* Rail + marker */}
+                      <div className="relative flex justify-center">
+                        {!isLast ? (
+                          <span
+                            aria-hidden
+                            className="absolute top-8 bottom-0 w-px"
+                            style={{ background: `${SAGE}55` }}
+                          />
+                        ) : null}
+                        <span
+                          aria-hidden
+                          className="relative z-[1] flex size-8 shrink-0 items-center justify-center rounded-full font-display text-sm font-bold text-white sm:size-9 sm:text-base"
+                          style={{ background: SAGE }}
+                        >
+                          {index + 1}
+                        </span>
+                      </div>
+
+                      {/* Copy */}
+                      <div
+                        className={[
+                          "min-w-0 pt-0.5",
+                          !isLast ? "border-b border-[#d9d8d0] pb-6 sm:pb-7" : "",
+                        ].join(" ")}
+                      >
+                        <p
+                          className="font-display text-sm font-bold tracking-[0.16em] uppercase"
+                          style={{ color: SAGE }}
+                        >
+                          Step {String(index + 1).padStart(2, "0")}
+                        </p>
+                        <p className="mt-2 text-base leading-[1.55] font-medium text-[#1a1f1c] sm:text-[1.0625rem]">
+                          {item}
+                        </p>
+                      </div>
+                    </li>
+                  );
+                })}
               </ol>
             </Reveal>
           </div>
