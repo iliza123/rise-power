@@ -103,7 +103,7 @@ import {
 import { CustomersPartners } from "@/components/home/CustomersPartners";
 import { SnapCarousel } from "@/components/home/SnapCarousel";
 import { Reveal, RevealStagger } from "@/components/motion/Reveal";
-import { CartridgeEcosystem } from "@/components/CartridgeEcosystem";
+// import { CartridgeEcosystem } from "@/components/CartridgeEcosystem";
 import { StackedPageHero } from "@/components/StackedPageHero";
 import { products } from "@/lib/content";
 import { pageMetadata } from "@/lib/seo";
@@ -526,8 +526,9 @@ export default function ProductsPage() {
         </div>
       </section>
 
-      {/* ENGINEERED AS A SYSTEM */}
+      {/* ENGINEERED AS A SYSTEM — temporarily removed from products page
       <CartridgeEcosystem />
+      */}
 
       {/* CUSTOMERS & PARTNERS — Built for Real-World Use (cards only; marquee stays on home) */}
       <CustomersPartners showMarquee={false} />

@@ -1,0 +1,277 @@
+import type { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
+
+import { CompanyTechnology } from "@/components/company/CompanyTechnology";
+import { Reveal, RevealStagger } from "@/components/motion/Reveal";
+import { StackedPageHero } from "@/components/StackedPageHero";
+import { site } from "@/lib/content";
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata: Metadata = pageMetadata({
+  title: "Company",
+  description:
+    "Rise Power is a CIMtech Green Energy subsidiary building Plug & Play hydrogen systems through Canadian advanced manufacturing.",
+  path: "/company",
+});
+
+const sage = "#6e7f42";
+
+const companyFacts = [
+  { label: "Legal Name", value: site.legalName },
+  { label: "Parent", value: site.parent },
+  { label: "Email", value: site.email, href: `mailto:${site.email}` },
+  { label: "Phone", value: site.phone, href: site.phoneHref },
+  {
+    label: "Location",
+    value: `${site.address.city}, ${site.address.region}, ${site.address.country}`,
+  },
+] as const;
+
+/* -------------------------------------------------------------------------- */
+/* DECORATIVE CONTOUR LINES                                                   */
+/* -------------------------------------------------------------------------- */
+
+function ContourDecoration({
+  position = "left",
+}: {
+  position?: "left" | "right";
+}) {
+  return (
+    <div
+      aria-hidden="true"
+      className={`pointer-events-none absolute ${
+        position === "left" ? "-left-24 -top-8" : "-right-24 -top-8"
+      } h-[280px] w-[440px] opacity-70`}
+    >
+      <svg viewBox="0 0 440 330" className="h-full w-full" fill="none">
+        <path
+          d="M-20 35C55 80 85 0 165 28C240 55 275 4 350 36C405 60 430 40 465 15"
+          stroke="#e2e7e1"
+          strokeWidth="1"
+        />
+        <path
+          d="M-25 65C45 108 88 25 164 57C238 88 284 29 354 65C405 91 432 70 465 45"
+          stroke="#e5e9e5"
+          strokeWidth="1"
+        />
+        <path
+          d="M-25 95C42 137 91 54 164 87C237 119 288 59 355 94C405 121 433 101 465 75"
+          stroke="#e8ece8"
+          strokeWidth="1"
+        />
+        <path
+          d="M-25 125C43 167 92 84 165 117C238 150 287 90 356 124C406 151 434 131 465 105"
+          stroke="#ebeeeb"
+          strokeWidth="1"
+        />
+        <path
+          d="M-25 155C42 197 93 114 165 147C238 180 288 120 357 154C406 181 434 161 465 135"
+          stroke="#edf0ed"
+          strokeWidth="1"
+        />
+        <path
+          d="M-25 185C42 227 94 144 166 177C238 210 288 150 357 184C406 211 434 191 465 165"
+          stroke="#eff2ef"
+          strokeWidth="1"
+        />
+      </svg>
+    </div>
+  );
+}
+
+/* -------------------------------------------------------------------------- */
+/* SECTION EYEBROW                                                            */
+/* -------------------------------------------------------------------------- */
+
+function SectionEyebrow({
+  children,
+  light = false,
+}: {
+  children: React.ReactNode;
+  light?: boolean;
+}) {
+  const color = light ? "#ffffff" : sage;
+
+  return (
+    <div className="flex items-center gap-3">
+      <span aria-hidden="true" className="relative block h-[13px] w-[38px]">
+        <span
+          className="absolute top-1/2 left-0 h-px w-full -translate-y-1/2"
+          style={{ backgroundColor: color }}
+        />
+        <span
+          className="absolute top-1/2 left-0 h-[9px] w-[9px] -translate-y-1/2 rotate-45 border-b border-l"
+          style={{ borderColor: color }}
+        />
+      </span>
+
+      <p
+        className={`text-base font-semibold tracking-[0.14em] uppercase sm:text-[0.9375rem] ${light ? "text-white" : ""}`}
+        style={{ color }}
+      >
+        {children}
+      </p>
+    </div>
+  );
+}
+
+/* -------------------------------------------------------------------------- */
+/* PAGE — Hero · Technology · Corporate identity                              */
+/* -------------------------------------------------------------------------- */
+
+export default function CompanyPage() {
+  return (
+    <main className="overflow-hidden bg-[#fbfaf7] text-[#101820]">
+      {/* 1. Hero */}
+      <StackedPageHero
+        layout="split"
+        imageSrc="/media/company/company-hero.png"
+        mobileImageSrc="/media/company/company-hero-mobile.png"
+        imageAlt="Rise Power systems engineered in Canada for worldwide deployment"
+        imageWidth={1920}
+        imageHeight={650}
+        tone="#0a0f10"
+        splitWash="linear-gradient(90deg, #0a0f10 0%, #0a0f10 44%, rgba(10,15,16,0.82) 52%, rgba(10,15,16,0.35) 62%, transparent 74%)"
+      >
+        <div className="hero-animate-copy w-full text-left">
+          <SectionEyebrow light>Company</SectionEyebrow>
+
+          <h1 className="mt-6 type-page-h1">
+            A Canadian
+            <br />
+            Company.
+            <br />
+            <span style={{ color: sage }}>Field Validated.</span>
+          </h1>
+
+          <p className="type-section-body mt-6 max-w-[760px] text-white sm:mt-8">
+            Rise Power Corp. develops portable hydrogen fuel cell systems in
+            British Columbia — quiet, zero-emission power for municipal, field,
+            and off-grid use.
+          </p>
+
+          <div className="mt-8 flex flex-col gap-4 sm:mt-10 sm:flex-row">
+            <Link
+              href="/contact"
+              className="inline-flex min-h-12 items-center justify-center gap-2 rounded-sm bg-[#849363] px-8 text-sm font-semibold tracking-wide text-white uppercase transition-opacity hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+            >
+              Request a Demo
+              <ArrowRight className="size-5" aria-hidden="true" />
+            </Link>
+
+            <a
+              href="#technology"
+              className="inline-flex min-h-12 items-center justify-center gap-2 rounded-sm border border-white/50 px-7 text-sm font-semibold tracking-wide text-white uppercase transition-colors hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+            >
+              Our Technology
+              <ArrowRight className="size-5" aria-hidden="true" />
+            </a>
+          </div>
+        </div>
+      </StackedPageHero>
+
+      {/* 2. Technology */}
+      <CompanyTechnology />
+
+      {/* 3. Corporate identity — split layout */}
+      <section className="relative overflow-hidden bg-white py-14 sm:py-16 lg:py-20">
+        <ContourDecoration position="left" />
+
+        <div className="relative mx-auto max-w-[1440px] px-6 lg:px-10">
+          <div className="grid items-center gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:gap-14">
+            <Reveal variant="left" className="min-w-0">
+              <div className="relative aspect-[4/3] overflow-hidden rounded-[7px] bg-[#101820] sm:aspect-[5/4]">
+                <Image
+                  src="/media/businesses/cimtech-green-energy.png"
+                  alt="CIMtech Green Energy advanced manufacturing"
+                  fill
+                  sizes="(min-width: 1024px) 45vw, 100vw"
+                  className="object-cover"
+                  quality={90}
+                />
+              </div>
+            </Reveal>
+
+            <Reveal variant="right" delay={80} className="min-w-0">
+              <SectionEyebrow>Parent Company</SectionEyebrow>
+
+              <h2 className="mt-4 type-section-h2">
+                Built on Canadian
+                <br />
+                <span style={{ color: sage }}>Manufacturing.</span>
+              </h2>
+
+              <div className="type-section-body mt-5 max-w-xl space-y-4 text-[#66717d]">
+                <p>
+                  {site.legalName} operates as a subsidiary of {site.parent},
+                  drawing on more than two decades of Canadian advanced
+                  manufacturing — precision engineering, production capability,
+                  and systems validated for real field conditions.
+                </p>
+                <p>
+                  From Vancouver, British Columbia, we develop portable hydrogen
+                  fuel cell platforms for municipal, emergency, commercial, and
+                  defense partners who need quiet power when the grid cannot be
+                  trusted.
+                </p>
+              </div>
+
+              <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
+                <a
+                  href="https://cimtech.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex min-h-12 items-center justify-center gap-2 rounded-sm bg-[#849363] px-8 text-sm font-semibold tracking-wide text-white uppercase transition-opacity hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6e7f42]"
+                >
+                  Visit CIMtech
+                  <ArrowRight className="size-5" aria-hidden="true" />
+                </a>
+                <Link
+                  href="/contact"
+                  className="inline-flex items-center gap-2 text-sm font-semibold tracking-wide text-[#101820] uppercase transition-opacity hover:opacity-70"
+                >
+                  Contact Rise Power
+                  <ArrowRight className="size-4" style={{ color: sage }} aria-hidden="true" />
+                </Link>
+              </div>
+            </Reveal>
+          </div>
+
+          <RevealStagger
+            className="mt-12 grid gap-px overflow-hidden rounded-[7px] border border-[#e5e2d9] bg-[#e5e2d9] sm:mt-14 sm:grid-cols-2 lg:mt-16 lg:grid-cols-5"
+            step={50}
+            variant="up"
+          >
+            {companyFacts.map((fact) => (
+              <div
+                key={fact.label}
+                className="min-w-0 bg-[#fbfaf7] px-5 py-6 sm:px-6 sm:py-7"
+              >
+                <p
+                  className="text-[11px] font-semibold tracking-[0.16em] uppercase"
+                  style={{ color: sage }}
+                >
+                  {fact.label}
+                </p>
+                {"href" in fact && fact.href ? (
+                  <a
+                    href={fact.href}
+                    className="mt-2.5 block break-words text-[15px] font-semibold leading-snug text-[#101820] transition-opacity hover:opacity-70 sm:text-base"
+                  >
+                    {fact.value}
+                  </a>
+                ) : (
+                  <p className="mt-2.5 break-words text-[15px] font-semibold leading-snug text-[#101820] sm:text-base">
+                    {fact.value}
+                  </p>
+                )}
+              </div>
+            ))}
+          </RevealStagger>
+        </div>
+      </section>
+    </main>
+  );
+}

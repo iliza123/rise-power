@@ -28,7 +28,7 @@ export const marketDetails: readonly MarketDetailPage[] = [
         alt: "Military and defence market imagery",
       },
       secondary: {
-        src: "/media/use-cases/uc-defence.png",
+        src: "/media/use-cases/uc-defence-deployment.png",
         alt: "Military and defence market imagery",
       },
     },
@@ -97,7 +97,7 @@ export const marketDetails: readonly MarketDetailPage[] = [
       headingBefore: "Silent Power",
       headingAccent: "For Forward Deployments.",
       body: "Silent portable power for bases, troops, and surveillance drones. Reduces reliance on fuel convoys. Eliminates the acoustic, thermal, and emissions signatures that compromise operational security.",
-      imageSrc: "/media/use-cases/uc-defence.png",
+      imageSrc: "/media/use-cases/uc-defence-spotlight.png",
       imageAlt: "Military and defence market imagery",
       features: [
         "Quiet portable power",

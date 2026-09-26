@@ -22,7 +22,7 @@ export type MegaNavItem = {
 
 /**
  * Primary navigation — client proposed main nav:
- * About (Company) | Defense | Consumer | Commercial | Capabilities | Investors | Resources | Careers
+ * About | Defense | Consumer | Commercial | Capabilities | Investors | Resources | Careers
  *
  * Previous items (Products, Case Studies) are commented out as backup — do not delete.
  */
@@ -76,6 +76,17 @@ export const megaNavItems: readonly MegaNavItem[] = [
       //   description: "The mission behind portable hydrogen power.",
       // },
       {
+        label: "Company",
+        href: "/company",
+        description: "CIMtech Green Energy subsidiary. Canadian manufacturing.",
+      },
+      {
+        label: "Our Technology",
+        href: "/company#technology",
+        description:
+          "H₂-CORE Plug & Play Hydrogen Platform — modular, scalable, field-ready.",
+      },
+      {
         label: "How We Work",
         href: "/about#how-we-work",
         description:
@@ -90,8 +101,8 @@ export const megaNavItems: readonly MegaNavItem[] = [
     feature: {
       title: "Canadian-Built",
       body: "Engineered and built in British Columbia. A CIMtech Green Energy company.",
-      href: "/about",
-      cta: "About Rise Power",
+      href: "/company",
+      cta: "Our Company",
     },
   },
 

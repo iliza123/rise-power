@@ -14,7 +14,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata: Metadata = pageMetadata({
   title: "About",
   description:
-    "Rise Power is engineered, manufactured, and validated in British Columbia. A CIMtech Green Energy company built on 20+ years of Canadian advanced manufacturing.",
+    "Rise Power builds quiet, zero-emission hydrogen systems for municipal, emergency, field, and off-grid use — engineered in British Columbia.",
   path: "/about",
 });
 
@@ -67,7 +67,7 @@ const howWeWork = [
   {
     number: "02",
     title: "CANADIAN MANUFACTURING",
-    body: "Built in BC on CIMtech’s 20+ year track record.",
+    body: "Designed and built in British Columbia.",
     image: "/media/company/company-value-3.png",
     href: "/capabilities",
   },
@@ -234,8 +234,8 @@ export default function AboutPage() {
           </h1>
 
           <p className="type-section-body mt-6 max-w-[760px] text-white sm:mt-8">
-            Rise Power is engineered, manufactured, and validated in British
-            Columbia. A CIMtech Green Energy company.
+            Rise Power builds quiet, zero-emission hydrogen systems engineered
+            in British Columbia.
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:mt-10 sm:flex-row">
@@ -290,13 +290,11 @@ export default function AboutPage() {
 
                 <div className="type-section-body mt-5 max-w-xl space-y-4 break-words text-[#66717d]">
                   <p>
-                    Rise Mission Power builds zero-emissions, portable hydrogen
-                    power for municipal, emergency, field, and off-grid
-                    applications. Engineered and built in British Columbia, our
-                    systems are quiet, rapidly deployable, and designed for
-                    reliable everyday operations when the grid is down. The
-                    company is a CIMtech Green Energy subsidiary, built on a
-                    20-plus-year Canadian advanced manufacturing track record.
+                    Rise Power builds zero-emissions, portable hydrogen power
+                    for municipal, emergency, field, and off-grid applications.
+                    Engineered and built in British Columbia, our systems are
+                    quiet, rapidly deployable, and designed for reliable
+                    everyday operations when the grid is down.
                   </p>
                   <p>
                     We welcome municipalities, utilities, and community partners
@@ -306,7 +304,7 @@ export default function AboutPage() {
                   </p>
                 </div>
 
-                <div className="mt-7">
+                <div className="mt-7 flex flex-col gap-4 sm:flex-row sm:items-center">
                   <a
                     href="/contact"
                     className="inline-flex min-h-12 items-center justify-center gap-2 rounded-sm bg-[#849363] px-8 text-sm font-semibold tracking-wide text-white uppercase transition-opacity hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6e7f42]"
@@ -314,6 +312,12 @@ export default function AboutPage() {
                     Request a Demo
                     <ArrowRight className="size-5" aria-hidden="true" />
                   </a>
+                  <Link
+                    href="/company"
+                    className="text-sm font-medium text-[#66717d] underline-offset-4 transition-colors hover:text-[#101820] hover:underline"
+                  >
+                    Learn about our company
+                  </Link>
                 </div>
               </div>
             </Reveal>
@@ -418,7 +422,7 @@ export default function AboutPage() {
       {/* HOW WE WORK — ecosystem stage + outperform header language          */}
       {/* ================================================================== */}
 
-      {/* <section
+      <section
         id="how-we-work"
         className="relative scroll-mt-28 overflow-hidden bg-[#0e1210] py-12 sm:py-14 lg:py-16"
       >
@@ -452,8 +456,7 @@ export default function AboutPage() {
 
               <p className="type-section-body mt-4 max-w-[28rem] text-[#3f3c36]">
                 Quiet, zero-emission hydrogen systems designed and built in
-                British Columbia — a CIMtech Green Energy company, proven where
-                operators work.
+                British Columbia, proven where operators work.
               </p>
 
               <div className="mt-6 flex flex-wrap items-center gap-4">
@@ -523,7 +526,7 @@ export default function AboutPage() {
             ))}
           </RevealStagger>
         </div>
-      </section> */}
+      </section>
     </main>
   );
 }
