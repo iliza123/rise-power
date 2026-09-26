@@ -25,7 +25,7 @@ import { MarketsShowcase } from "./MarketsShowcase";
 import { SectionSkeleton } from "./SectionSkeleton";
 import { CustomersPartners } from "./CustomersPartners";
 import { HydrogenEcosystem } from "./HydrogenEcosystem";
-import { HydrogenNetwork } from "./HydrogenNetwork";
+// import { HydrogenNetwork } from "./HydrogenNetwork";
 
 const BusinessesCompanies = dynamic(
   () => import("./BusinessesCompanies").then((m) => m.BusinessesCompanies),
@@ -276,7 +276,7 @@ export function HomePage() {
 
       <HydrogenEcosystem />
 
-      <HydrogenNetwork />
+      {/* <HydrogenNetwork /> */}
 
       {/* Partner marquee only — case cards live on Products */}
       <CustomersPartners showCases={false} />
