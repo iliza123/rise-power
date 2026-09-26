@@ -29,6 +29,18 @@ export type MarketProduct = {
   imageAlt: string;
 };
 
+export type MarketSpotlight = {
+  number: string;
+  label: string;
+  headingBefore: string;
+  headingAccent: string;
+  body: string;
+  imageSrc: string;
+  imageAlt: string;
+  features: readonly string[];
+  featuredProducts: readonly { label: string; href: string }[];
+};
+
 export type MarketLayout = "defense" | "commercial" | "consumer";
 
 export type MarketDetailPage = {
@@ -52,6 +64,8 @@ export type MarketDetailPage = {
   applications: readonly string[];
   productsIntro: string;
   products: readonly MarketProduct[];
+  /** Use-cases-style image + feature card block */
+  spotlight: MarketSpotlight;
   cta: MarketCta;
   stats: readonly MarketStat[];
   callouts: readonly MarketCallout[];

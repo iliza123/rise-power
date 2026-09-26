@@ -91,6 +91,27 @@ export const marketDetails: readonly MarketDetailPage[] = [
         imageAlt: "Rise Power hydrogen cartridge kit",
       },
     ],
+    spotlight: {
+      number: "01",
+      label: "Military & Defence",
+      headingBefore: "Silent Power",
+      headingAccent: "For Forward Deployments.",
+      body: "Silent portable power for bases, troops, and surveillance drones. Reduces reliance on fuel convoys. Eliminates the acoustic, thermal, and emissions signatures that compromise operational security.",
+      imageSrc: "/media/use-cases/uc-defence.png",
+      imageAlt: "Military and defence market imagery",
+      features: [
+        "Quiet portable power",
+        "Zero emissions at point of use",
+        "No grid connection required",
+        "Unlimited runtime with cartridge swap",
+        "Drone range extension up to 5×",
+      ],
+      featuredProducts: [
+        { label: "Sentinel", href: "/products#sentinel" },
+        { label: "Falcon", href: "/products#falcon" },
+        { label: "Titan", href: "/products#titan" },
+      ],
+    },
     cta: { label: "Request a Briefing", href: "/contact" },
     stats: [
       {
@@ -215,6 +236,27 @@ export const marketDetails: readonly MarketDetailPage[] = [
         imageAlt: "Rise Power hydrogen cartridge kit",
       },
     ],
+    spotlight: {
+      number: "02",
+      label: "Commercial",
+      headingBefore: "Reliable Power",
+      headingAccent: "Without Fuel-Truck Dependency.",
+      body: "Reliable power for construction sites, telecom backup, mining, and other demanding industrial applications. Robust, low-maintenance hydrogen power for electrified drilling, remote site infrastructure, and off-grid operations without fuel-truck dependency.",
+      imageSrc: "/media/markets/commercial.png",
+      imageAlt: "Commercial market imagery",
+      features: [
+        "Quiet portable power",
+        "Zero emissions at point of use",
+        "No grid connection required",
+        "Unlimited runtime with cartridge swap",
+        "Drone range extension up to 5×",
+      ],
+      featuredProducts: [
+        { label: "Titan", href: "/products#titan" },
+        { label: "Falcon", href: "/products#falcon" },
+        { label: "Sentinel", href: "/products#sentinel" },
+      ],
+    },
     cta: { label: "Request a Briefing", href: "/contact" },
     stats: [
       {
@@ -241,11 +283,11 @@ export const marketDetails: readonly MarketDetailPage[] = [
     callouts: [
       {
         title: "Construction Sites",
-        body: "Reliable power for construction sites, telecom backup, mining, and other demanding industrial applications.",
+        body: "Clean backup power for everyday and emergency use. 1.5 kW capacity, 40 lb portable weight, and unlimited runtime with refillable hydrogen cartridges.",
       },
       {
         title: "Telecom Backup",
-        body: "Robust, low-maintenance hydrogen power for electrified drilling, remote site infrastructure, and off-grid operations without fuel-truck dependency.",
+        body: "Reliable power for construction sites, telecom backup, mining, and other demanding industrial applications.",
       },
       {
         title: "Mining",
@@ -339,6 +381,28 @@ export const marketDetails: readonly MarketDetailPage[] = [
         imageAlt: "Rise Power hydrogen cartridge kit",
       },
     ],
+    spotlight: {
+      number: "03",
+      label: "Consumer",
+      headingBefore: "Quiet Power",
+      headingAccent: "For Everyday Resilience.",
+      body: "Portable backup for camping, RV power, and emergency home use when the grid cannot be trusted. Quiet neighbourhood-ready operation with zero exhaust at the point of use. Refillable cartridges swap in under 30 seconds.",
+      imageSrc: "/media/cases/homes-emergency.png",
+      imageAlt:
+        "Backup during outages and severe weather for homes, community gathering spaces, and emergency kits",
+      features: [
+        "Quiet portable power",
+        "Zero emissions at point of use",
+        "No grid connection required",
+        "Unlimited runtime with cartridge swap",
+        "Drone range extension up to 5×",
+      ],
+      featuredProducts: [
+        { label: "Sentinel", href: "/products#sentinel" },
+        { label: "Falcon", href: "/products#falcon" },
+        { label: "Titan", href: "/products#titan" },
+      ],
+    },
     cta: { label: "Request a Briefing", href: "/contact" },
     stats: [
       {

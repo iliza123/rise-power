@@ -5,6 +5,7 @@ import { ArrowRight } from "lucide-react";
 import { Reveal } from "@/components/motion/Reveal";
 import { StackedPageHero } from "@/components/StackedPageHero";
 import { type MarketDetailPage } from "@/lib/markets";
+import { MarketSpotlightSection } from "./MarketSpotlightSection";
 import {
   CREAM,
   HeroCtas,
@@ -87,7 +88,9 @@ export function MarketLayoutConsumer({
         </div>
       </section>
 
-      {/* Large feature rows — not a dense 4-col grid */}
+      <MarketSpotlightSection spotlight={market.spotlight} />
+
+      {/* Large feature rows — callouts */}
       <section className="bg-white py-10 sm:py-12 lg:py-14">
         <div className="mx-auto max-w-[900px] px-6 lg:px-10">
           <Reveal variant="up" className="text-center">

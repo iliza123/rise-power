@@ -5,6 +5,7 @@ import { ArrowRight } from "lucide-react";
 import { Reveal } from "@/components/motion/Reveal";
 import { StackedPageHero } from "@/components/StackedPageHero";
 import { type MarketDetailPage } from "@/lib/markets";
+import { MarketSpotlightSection } from "./MarketSpotlightSection";
 import {
   DARK,
   HeroCtas,
@@ -124,6 +125,8 @@ export function MarketLayoutDefense({ market }: { market: MarketDetailPage }) {
           </ul>
         </div>
       </section>
+
+      <MarketSpotlightSection spotlight={market.spotlight} />
 
       {/* Deployment / How It Works — left sticky, right steps */}
       <section className="relative bg-[#f3f0e8] py-12 text-[#101820] sm:py-14 lg:py-16">

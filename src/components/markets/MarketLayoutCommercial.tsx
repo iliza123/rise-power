@@ -5,6 +5,7 @@ import { ArrowRight } from "lucide-react";
 import { Reveal } from "@/components/motion/Reveal";
 import { StackedPageHero } from "@/components/StackedPageHero";
 import { type MarketDetailPage } from "@/lib/markets";
+import { MarketSpotlightSection } from "./MarketSpotlightSection";
 import {
   CREAM,
   HeroCtas,
@@ -54,48 +55,53 @@ export function MarketLayoutCommercial({
         </div>
       </StackedPageHero>
 
-      {/* Callout tiles first, then body */}
+      {/* Three market verticals — equal card row */}
       <section className="py-10 sm:py-12 lg:py-14" style={{ background: CREAM }}>
         <div className="mx-auto max-w-[1440px] px-6 lg:px-10">
           <Reveal variant="up">
-            <SectionEyebrow>Site Requirements</SectionEyebrow>
-            <h2 className="mt-3 font-display text-[1.75rem] leading-[0.95] font-bold tracking-tight uppercase sm:text-[2.25rem] lg:text-[2.75rem]">
+            <SectionEyebrow>Commercial</SectionEyebrow>
+            <h2 className="mt-3 max-w-4xl font-display text-[1.75rem] leading-[0.95] font-bold tracking-tight uppercase sm:text-[2.25rem] lg:text-[2.75rem]">
               Construction Sites, Telecom Backup &{" "}
               <span style={{ color: SAGE }}>Mining.</span>
             </h2>
+            <p
+              className="mt-4 max-w-[42rem] text-base leading-[1.65] sm:text-lg"
+              style={{ color: MUTED }}
+            >
+              {market.body}
+            </p>
           </Reveal>
 
-          <div className="mt-8 grid gap-3 sm:grid-cols-2 sm:gap-4">
+          <div className="mt-8 grid gap-4 sm:mt-10 sm:grid-cols-3 sm:gap-5">
             {market.callouts.map((callout, index) => (
-              <Reveal key={callout.title} variant="up" delay={index * 60}>
+              <Reveal key={callout.title} variant="up" delay={index * 60} className="h-full">
                 <article
-                  className="border border-[#d9d8d0] bg-white p-5 sm:p-6"
+                  className="flex h-full flex-col border bg-white p-5 sm:p-6"
                   style={{ borderColor: SECTION_RULE }}
                 >
-                  <p className="font-display text-3xl font-bold tabular-nums" style={{ color: SAGE }}>
+                  <p
+                    className="font-display text-3xl font-bold tabular-nums"
+                    style={{ color: SAGE }}
+                  >
                     {String(index + 1).padStart(2, "0")}
                   </p>
                   <h3 className="mt-3 font-display text-xl font-bold tracking-tight uppercase sm:text-2xl">
                     {callout.title}
                   </h3>
-                  <p className="mt-2 text-base leading-[1.55]" style={{ color: MUTED }}>
+                  <p
+                    className="mt-3 flex-1 text-base leading-[1.55]"
+                    style={{ color: MUTED }}
+                  >
                     {callout.body}
                   </p>
                 </article>
               </Reveal>
             ))}
           </div>
-
-          <Reveal variant="up" delay={100}>
-            <p
-              className="mt-8 max-w-[48rem] border-t pt-6 text-[1.0625rem] leading-[1.65] sm:mt-10 sm:text-lg"
-              style={{ color: MUTED, borderColor: SECTION_RULE }}
-            >
-              {market.body}
-            </p>
-          </Reveal>
         </div>
       </section>
+
+      <MarketSpotlightSection spotlight={market.spotlight} />
 
       {/* Alternating application rows */}
       <section className="border-t bg-white py-10 sm:py-12 lg:py-14" style={{ borderColor: SECTION_RULE }}>

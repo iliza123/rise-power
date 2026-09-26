@@ -8,6 +8,7 @@ export type {
   MarketLayout,
   MarketMedia,
   MarketProduct,
+  MarketSpotlight,
   MarketStat,
 } from "./types";
 export { marketDetails } from "./details";

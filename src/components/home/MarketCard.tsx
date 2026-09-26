@@ -21,6 +21,7 @@ export type MarketRowProps = {
 /**
  * Market panel — image above / copy below at every breakpoint so cards
  * stay readable in carousels and multi-column grids.
+ * Entire card navigates to the individual market page.
  */
 export function MarketRow({
   index,
@@ -36,9 +37,11 @@ export function MarketRow({
   expanded = true,
 }: MarketRowProps) {
   return (
-    <article
+    <Link
+      href={href}
+      aria-label={`${cta}: ${title}`}
       data-expanded={expanded ? "true" : "false"}
-      className="market-card group relative flex h-full w-full flex-col overflow-hidden border border-[#ddd8cc] bg-white"
+      className="market-card group relative flex h-full w-full flex-col overflow-hidden border border-[#ddd8cc] bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6e7f42]"
     >
       <div
         className="pointer-events-none absolute inset-0 z-[1] bg-[linear-gradient(135deg,rgba(110,127,66,0.06),transparent_55%)]"
@@ -97,25 +100,21 @@ export function MarketRow({
         ) : null}
 
         {detail ? (
-          <p className="type-card-body mt-3 line-clamp-2 sm:mt-4">
-            {detail}
-          </p>
+          <p className="type-card-body mt-3 line-clamp-2 sm:mt-4">{detail}</p>
         ) : null}
 
         <div className="mt-4 pt-0 sm:mt-auto sm:pt-5">
-          <Link
-            href={href}
-            className="type-cta market-card__cta inline-flex w-full min-h-11 items-center justify-center gap-2 whitespace-nowrap rounded-sm border border-[#1a1c16] bg-transparent px-4 text-[#1a1c16] sm:w-auto sm:min-w-0 sm:px-5"
-          >
+          <span className="type-cta market-card__cta inline-flex w-full min-h-11 items-center justify-center gap-2 whitespace-nowrap rounded-sm border border-[#1a1c16] bg-transparent px-4 text-[#1a1c16] sm:w-auto sm:min-w-0 sm:px-5">
             <span className="whitespace-nowrap">{cta}</span>
             <ArrowRight
               className="market-card__cta-arrow size-4 shrink-0"
               strokeWidth={2}
+              aria-hidden
             />
-          </Link>
+          </span>
         </div>
       </div>
-    </article>
+    </Link>
   );
 }
 
