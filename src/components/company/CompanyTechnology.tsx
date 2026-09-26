@@ -1,14 +1,7 @@
 import Image from "next/image";
-import type { LucideIcon } from "lucide-react";
-import {
-  Activity,
-  BarChart3,
-  Check,
-  LayoutGrid,
-  ShieldCheck,
-} from "lucide-react";
+import { Check } from "lucide-react";
 
-import { Reveal, RevealStagger } from "@/components/motion/Reveal";
+import { Reveal } from "@/components/motion/Reveal";
 
 const SAGE = "#6e7f42";
 
@@ -20,33 +13,6 @@ const checklist = [
   "Built for Extreme Conditions",
 ] as const;
 
-const features: {
-  title: string;
-  body: string;
-  icon: LucideIcon;
-}[] = [
-  {
-    title: "Modular",
-    body: "One platform. Many solutions.",
-    icon: LayoutGrid,
-  },
-  {
-    title: "Scalable",
-    body: "From 1kW to 5MW+",
-    icon: BarChart3,
-  },
-  {
-    title: "Smart",
-    body: "Real-time monitoring & diagnostics",
-    icon: Activity,
-  },
-  {
-    title: "Safe",
-    body: "Multiple safety systems built-in",
-    icon: ShieldCheck,
-  },
-];
-
 export type CompanyTechnologyProps = {
   className?: string;
   /** Placeholder diagram — designer will replace with exploded H₂-CORE render. */
@@ -54,7 +20,7 @@ export type CompanyTechnologyProps = {
   diagramAlt?: string;
 };
 
-/** Company page technology section — cream content block below StackedPageHero. */
+/** About page technology section — Plug & Play Hydrogen Platform. */
 export function CompanyTechnology({
   className = "",
   diagramSrc = "/media/products/product-ecosystem.png",
@@ -128,40 +94,6 @@ export function CompanyTechnology({
             </div>
           </Reveal>
         </div>
-
-        <RevealStagger
-          className="mt-12 grid grid-cols-2 gap-x-6 gap-y-6 border-t border-[#e5e2d9] pt-10 sm:mt-14 sm:gap-x-8 lg:mt-16 lg:grid-cols-4 lg:gap-x-10 lg:pt-12"
-          step={50}
-          variant="up"
-        >
-          {features.map((feature) => {
-            const Icon = feature.icon;
-
-            return (
-              <div key={feature.title} className="flex min-w-0 gap-3.5 sm:gap-4">
-                <span
-                  className="mt-0.5 grid size-10 shrink-0 place-items-center rounded-full border sm:size-11"
-                  style={{
-                    borderColor: `${SAGE}55`,
-                    color: SAGE,
-                    backgroundColor: "rgba(110, 127, 66, 0.06)",
-                  }}
-                  aria-hidden
-                >
-                  <Icon className="size-[18px] sm:size-5" strokeWidth={1.5} />
-                </span>
-                <div className="min-w-0">
-                  <p className="font-display text-sm font-bold tracking-[0.14em] text-[#101820] uppercase sm:text-[0.9375rem]">
-                    {feature.title}
-                  </p>
-                  <p className="mt-1.5 text-sm leading-snug text-[#66717d] sm:text-[0.9375rem]">
-                    {feature.body}
-                  </p>
-                </div>
-              </div>
-            );
-          })}
-        </RevealStagger>
       </div>
     </section>
   );

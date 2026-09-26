@@ -75,14 +75,15 @@ export const megaNavItems: readonly MegaNavItem[] = [
       //   href: "/about",
       //   description: "The mission behind portable hydrogen power.",
       // },
-      {
-        label: "Company",
-        href: "/company",
-        description: "CIMtech Green Energy subsidiary. Canadian manufacturing.",
-      },
+      // Company page paused — technology section lives on About
+      // {
+      //   label: "Company",
+      //   href: "/company",
+      //   description: "CIMtech Green Energy subsidiary. Canadian manufacturing.",
+      // },
       {
         label: "Our Technology",
-        href: "/company#technology",
+        href: "/about#technology",
         description:
           "H₂-CORE Plug & Play Hydrogen Platform — modular, scalable, field-ready.",
       },
@@ -101,8 +102,8 @@ export const megaNavItems: readonly MegaNavItem[] = [
     feature: {
       title: "Canadian-Built",
       body: "Engineered and built in British Columbia. A CIMtech Green Energy company.",
-      href: "/company",
-      cta: "Our Company",
+      href: "/about",
+      cta: "About Rise Power",
     },
   },
 

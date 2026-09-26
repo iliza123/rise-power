@@ -7,6 +7,7 @@ import { PerformanceMetricCard } from "@/components/home/PerformanceMetricCard";
 import { SnapCarousel } from "@/components/home/SnapCarousel";
 import { Reveal, RevealStagger } from "@/components/motion/Reveal";
 import { CartridgeEcosystem } from "@/components/CartridgeEcosystem";
+import { CompanyTechnology } from "@/components/company/CompanyTechnology";
 import { StackedPageHero } from "@/components/StackedPageHero";
 import { performanceMetrics } from "@/lib/home-content";
 import { pageMetadata } from "@/lib/seo";
@@ -313,10 +314,10 @@ export default function AboutPage() {
                     <ArrowRight className="size-5" aria-hidden="true" />
                   </a>
                   <Link
-                    href="/company"
+                    href="/about#technology"
                     className="text-sm font-medium text-[#66717d] underline-offset-4 transition-colors hover:text-[#101820] hover:underline"
                   >
-                    Learn about our company
+                    Our technology
                   </Link>
                 </div>
               </div>
@@ -324,6 +325,9 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
+      {/* OUR TECHNOLOGY — from former Company page */}
+      <CompanyTechnology />
 
       {/* BUILT TO OUTPERFORM */}
       <section
