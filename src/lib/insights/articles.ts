@@ -16,7 +16,7 @@ export const insights: InsightArticle[] = [
     accentPhrase: `Hydrogen Fuel Cell`,
     hero: {
       src: `/media/insights/diesel-comparison.png`,
-      alt: `Couple at a lakeside campsite with Rise portable power and a laptop at sunset`,
+      alt: `Rise portable hydrogen power beside a diesel generator at a remote lakeside site`,
     },
     relatedSlugs: [
       `what-is-a-hydrogen-fuel-cell`,
@@ -164,7 +164,7 @@ export const insights: InsightArticle[] = [
     accentPhrase: `Hydrogen Fuel Cell`,
     hero: {
       src: `/media/insights/fuel-cell.png`,
-      alt: `Field workstation by a lake with Rise portable power systems and laptops`,
+      alt: `Rise portable power units and hydrogen cartridge at a field staging site at dusk`,
     },
     relatedSlugs: [
       `hydrogen-fuel-cell-vs-diesel-generator`,
@@ -351,7 +351,7 @@ export const insights: InsightArticle[] = [
     accentPhrase: `Silent Generators`,
     hero: {
       src: `/media/insights/defense-silent.png`,
-      alt: `Outdoor field setup with Rise portable power units, solar panel, and communications gear`,
+      alt: `Rise portable power units powering a tactical command tent at dusk`,
     },
     relatedSlugs: [
       `what-is-a-hydrogen-fuel-cell`,

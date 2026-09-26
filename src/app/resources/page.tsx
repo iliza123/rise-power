@@ -94,15 +94,15 @@ const systems = [
 const insightImages: Record<string, { src: string; alt: string }> = {
   "hydrogen-fuel-cell-vs-diesel-generator": {
     src: "/media/insights/diesel-comparison.png",
-    alt: "Couple at a lakeside campsite with Rise portable power and a laptop at sunset",
+    alt: "Rise portable hydrogen power beside a diesel generator at a remote lakeside site",
   },
   "what-is-a-hydrogen-fuel-cell": {
     src: "/media/insights/fuel-cell.png",
-    alt: "Field workstation by a lake with Rise portable power systems and laptops",
+    alt: "Rise portable power units and hydrogen cartridge at a field staging site at dusk",
   },
   "silent-generator-for-military-operations": {
     src: "/media/insights/defense-silent.png",
-    alt: "Outdoor field setup with Rise portable power units, solar panel, and communications gear",
+    alt: "Rise portable power units powering a tactical command tent at dusk",
   },
 };
 
