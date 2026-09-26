@@ -314,7 +314,8 @@ export const marketDetails: readonly MarketDetailPage[] = [
     href: "/markets/consumer",
     images: {
       hero: {
-        src: "/media/markets/field-consumer.png",
+        src: "/media/markets/consumer-hero.png",
+        mobileSrc: "/media/markets/consumer-hero-mobile.png",
         alt: "Consumer market imagery",
       },
       secondary: {
