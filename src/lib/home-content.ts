@@ -684,6 +684,7 @@ export const capabilities = {
         },
       ],
     },
+    /* System Integration — page removed; keep data commented for restore
     {
       id: "integration",
       label: "Integration",
@@ -765,6 +766,7 @@ export const capabilities = {
         },
       ],
     },
+    */
     {
       id: "field",
       label: "Field",

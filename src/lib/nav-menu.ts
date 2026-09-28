@@ -148,7 +148,7 @@ export const megaNavItems: readonly MegaNavItem[] = [
     ],
     feature: {
       title: "Our Capabilities",
-      body: "Engineering, integration, field deployment, and safety — built for real operating environments.",
+      body: "Engineering, field deployment, and safety — built for real operating environments.",
       href: "/capabilities",
       cta: "See Capabilities",
     },

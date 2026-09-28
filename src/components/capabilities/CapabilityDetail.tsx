@@ -90,11 +90,11 @@ function galleryHeading(capability: CapabilityDetailPage) {
         before: "From concept to",
         accent: "hardware.",
       };
-    case "integration":
-      return {
-        before: "Platforms in",
-        accent: "context.",
-      };
+    // case "integration":
+    //   return {
+    //     before: "Platforms in",
+    //     accent: "context.",
+    //   };
     case "field":
       return {
         before: "Deployed where it",

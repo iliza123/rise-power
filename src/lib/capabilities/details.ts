@@ -4,7 +4,7 @@ import type { CapabilityDetailPage } from "./types";
 /** Maps home-content tab ids to URL slug segments. */
 export const CAPABILITY_SLUG_BY_ID: Record<string, string> = {
   engineering: "engineering-development",
-  integration: "system-integration",
+  // integration: "system-integration", // page removed — restore with tab in home-content
   field: "field-deployment",
   safety: "safety-compliance",
 };
