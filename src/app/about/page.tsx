@@ -259,14 +259,6 @@ export default function AboutPage() {
               <span className="leading-none">Request a Demo</span>
               <ArrowRight className="size-4 shrink-0 sm:size-5" aria-hidden="true" />
             </a>
-
-            <a
-              href="#mission"
-              className="cta-with-icon inline-flex min-h-12 items-center justify-center gap-2 rounded-sm border border-white/50 px-7 text-sm font-semibold tracking-wide text-white uppercase transition-colors hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-            >
-              <span className="leading-none">Our Mission</span>
-              <ArrowRight className="size-4 shrink-0 sm:size-5" aria-hidden="true" />
-            </a>
           </div>
         </div>
       </StackedPageHero>
