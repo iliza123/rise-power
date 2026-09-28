@@ -3,12 +3,12 @@ import Image from "next/image";
 import {
   ArrowRight,
   AudioLines,
+  Check,
   Crosshair,
   Leaf,
   Weight,
 } from "lucide-react";
 
-import { CompanyTechnology } from "@/components/company/CompanyTechnology";
 import { PerformanceMetricCard } from "@/components/home/PerformanceMetricCard";
 import { SnapCarousel } from "@/components/home/SnapCarousel";
 import { Reveal, RevealStagger } from "@/components/motion/Reveal";
@@ -30,6 +30,13 @@ const performanceGaugeIcons = [AudioLines, Leaf, Crosshair, Weight] as const;
 /* -------------------------------------------------------------------------- */
 /* DATA                                                                       */
 /* -------------------------------------------------------------------------- */
+
+const technologyChecklist = [
+  "Plug & Play Cartridge Interface",
+  "Modular & Scalable Architecture",
+  "Advanced Fuel Cell Technology",
+  "Built for Extreme Conditions",
+] as const;
 
 const values = [
   {
@@ -257,7 +264,7 @@ export default function AboutPage() {
       </StackedPageHero>
 
       {/* ================================================================== */}
-      {/* MISSION                                                             */}
+      {/* MISSION + TECHNOLOGY                                               */}
       {/* ================================================================== */}
 
       <section
@@ -269,60 +276,98 @@ export default function AboutPage() {
         <ContourDecoration position="right" />
 
         <div className="relative mx-auto max-w-[1440px] px-6 lg:px-10">
-          <div className="grid items-center gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:gap-16">
+          <div className="grid items-stretch gap-8 lg:grid-cols-2 lg:gap-14 xl:gap-16">
             <Reveal variant="left" className="min-w-0">
-              <div className="relative aspect-[4/5] overflow-hidden rounded-[7px] sm:aspect-[1.05/1] lg:aspect-[1.08/1]">
+              <div className="relative min-h-[280px] overflow-hidden rounded-[7px] sm:min-h-[360px] lg:h-full lg:min-h-[520px]">
                 <Image
                   src="/media/company/company-mission.png"
                   alt="Rise Power units deployed in mountain field operations"
                   fill
-                  sizes="(min-width: 1024px) 48vw, 100vw"
+                  sizes="(min-width: 1024px) 50vw, 100vw"
                   className="object-cover"
                 />
               </div>
             </Reveal>
 
             <Reveal variant="right" delay={80} className="min-w-0">
-              <SectionEyebrow>Our Mission</SectionEyebrow>
+              <div className="flex h-full flex-col justify-center">
+                <SectionEyebrow>Our Mission</SectionEyebrow>
 
-              <h2 id="company-mission-heading" className="mt-5 type-section-h2">
-                Clean Power
-                <br />
-                For Critical Work.
-              </h2>
-
-              <div className="type-section-body mt-5 max-w-xl space-y-4 text-[#66717d]">
-                <p>
-                  Rise Power builds quiet, zero-emission portable hydrogen
-                  systems for municipal, emergency, field, and off-grid use —
-                  engineered and manufactured in British Columbia.
-                </p>
-                <p>
-                  Through product trials and clean-energy pilots, we help
-                  municipalities, utilities, and community partners replace
-                  diesel trucks and generators with refillable cartridge
-                  logistics.
-                </p>
-              </div>
-
-              <div className="mt-8">
-                <a
-                  href="/contact"
-                  className="cta-with-icon inline-flex min-h-12 items-center justify-center gap-2 rounded-sm bg-[#849363] px-8 text-sm font-semibold tracking-wide text-white uppercase transition-opacity hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6e7f42]"
+                <h2
+                  id="company-mission-heading"
+                  className="mt-4 type-section-h2"
                 >
-                  <span className="leading-none">Request a Demo</span>
-                  <ArrowRight
-                    className="size-4 shrink-0 sm:size-5"
-                    aria-hidden="true"
-                  />
-                </a>
+                  Clean Power
+                  <br />
+                  For Critical Work.
+                </h2>
+
+                <p className="type-section-body mt-4 max-w-xl text-[#66717d]">
+                  Quiet, zero-emission portable hydrogen systems for municipal,
+                  emergency, field, and off-grid use — engineered in British
+                  Columbia. We partner through product trials and clean-energy
+                  pilots to replace diesel trucks and generators with refillable
+                  cartridge logistics.
+                </p>
+
+                <div
+                  id="technology"
+                  className="mt-7 scroll-mt-28 border-t pt-7"
+                  style={{ borderColor: "rgba(110, 127, 66, 0.22)" }}
+                >
+                  <p className="type-eyebrow" style={{ color: sage }}>
+                    Our Technology
+                  </p>
+
+                  <h3 className="mt-2 font-display text-[1.25rem] leading-[1.1] font-bold tracking-tight text-[#101820] uppercase sm:text-[1.4rem] lg:text-[1.55rem]">
+                    H₂-CORE™ Plug &amp; Play Platform
+                  </h3>
+
+                  <p className="type-section-body mt-3 max-w-xl text-[#66717d]">
+                    Fuel cells, power electronics, and a Plug &amp; Play Hydrogen
+                    Cartridge in one modular platform — converting hydrogen to
+                    electricity with only water and heat as byproducts.
+                  </p>
+
+                  <ul className="mt-5 grid gap-x-6 gap-y-3 sm:grid-cols-2">
+                    {technologyChecklist.map((item) => (
+                      <li
+                        key={item}
+                        className="flex items-start gap-2.5 text-base leading-snug text-[#101820]"
+                      >
+                        <span
+                          className="mt-0.5 grid size-5 shrink-0 place-items-center rounded-full"
+                          style={{ backgroundColor: sage }}
+                          aria-hidden
+                        >
+                          <Check
+                            className="size-3 text-white"
+                            strokeWidth={3}
+                          />
+                        </span>
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div className="mt-7">
+                  <a
+                    href="/contact"
+                    className="cta-with-icon inline-flex min-h-12 items-center justify-center gap-2 rounded-sm bg-[#849363] px-8 text-sm font-semibold tracking-wide text-white uppercase transition-opacity hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6e7f42]"
+                  >
+                    <span className="leading-none">Request a Demo</span>
+                    <ArrowRight
+                      className="size-4 shrink-0 sm:size-5"
+                      aria-hidden="true"
+                    />
+                  </a>
+                </div>
               </div>
             </Reveal>
           </div>
         </div>
       </section>
-
-      <CompanyTechnology />
 
       {/* BUILT TO OUTPERFORM */}
       <section

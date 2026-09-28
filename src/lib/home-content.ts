@@ -618,7 +618,7 @@ export const capabilities = {
       mobileImageSrc: "/media/capabilities/engineering-development-mobile.png",
       secondaryImageSrc: "/media/capabilities/engineering-scope.png",
       secondaryImageAlt:
-        "Soldier using a laptop beside a camouflage generator in a forest",
+        "Rise Mission Power hydrogen ecosystem — cartridge, fuel cell, and product systems",
       gallery: [
         {
           src: "/media/capabilities/engineering.png",
@@ -780,6 +780,7 @@ export const capabilities = {
       imageSrc: "/media/capabilities/field-deployment-hero.png",
       imageAlt:
         "Rise portable power unit at a desert field camp with solar panels, tent, communications tower, and drone at sunset",
+      mobileImageSrc: "/media/capabilities/field-deployment-hero-mobile.png",
       secondaryImageSrc: "/media/products/hydrogen-cartridge-kit.png",
       secondaryImageAlt:
         "Hydrogen cartridge kit ready for rapid field replenishment",

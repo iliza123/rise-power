@@ -291,7 +291,13 @@ export function CapabilityDetail({ capability }: CapabilityDetailProps) {
         className="relative overflow-hidden border-t py-7 sm:py-8 lg:py-9"
         style={{ background: "#f3f0e8", borderColor: SECTION_RULE }}
       >
-        <div className="relative mx-auto grid max-w-[1440px] items-start gap-5 px-6 lg:grid-cols-[1.35fr_0.65fr] lg:gap-7 lg:px-10">
+        <div
+          className={`relative mx-auto grid max-w-[1440px] items-start gap-5 px-6 lg:gap-7 lg:px-10 ${
+            capability.id === "engineering"
+              ? "lg:grid-cols-[1.05fr_0.95fr] lg:items-center"
+              : "lg:grid-cols-[1.35fr_0.65fr]"
+          }`}
+        >
           <Reveal variant="left">
             <SectionEyebrow>What We Deliver</SectionEyebrow>
 
@@ -332,17 +338,32 @@ export function CapabilityDetail({ capability }: CapabilityDetailProps) {
             delay={80}
             className="min-w-0 self-start lg:justify-self-end"
           >
-            <div className="relative mx-auto w-full max-w-[240px] sm:max-w-[280px] lg:mx-0 lg:max-w-[260px]">
-              <div className="relative aspect-square w-full overflow-hidden rounded-[7px]">
-                <Image
-                  src={capability.images.secondary.src}
-                  alt={capability.images.secondary.alt}
-                  fill
-                  sizes="(min-width: 1024px) 260px, 280px"
-                  className="object-contain object-center"
-                />
+            {capability.id === "engineering" ? (
+              <div className="relative mx-auto w-full max-w-[420px] sm:max-w-[480px] lg:mx-0 lg:max-w-none lg:w-full">
+                <div className="relative aspect-[1672/941] w-full overflow-hidden rounded-[7px] bg-[#efebe3]">
+                  <Image
+                    src={capability.images.secondary.src}
+                    alt={capability.images.secondary.alt}
+                    fill
+                    sizes="(min-width: 1024px) 40vw, 90vw"
+                    className="object-contain object-center"
+                    quality={95}
+                  />
+                </div>
               </div>
-            </div>
+            ) : (
+              <div className="relative mx-auto w-full max-w-[240px] sm:max-w-[280px] lg:mx-0 lg:max-w-[260px]">
+                <div className="relative aspect-square w-full overflow-hidden rounded-[7px]">
+                  <Image
+                    src={capability.images.secondary.src}
+                    alt={capability.images.secondary.alt}
+                    fill
+                    sizes="(min-width: 1024px) 260px, 280px"
+                    className="object-contain object-center"
+                  />
+                </div>
+              </div>
+            )}
           </Reveal>
         </div>
       </section>
