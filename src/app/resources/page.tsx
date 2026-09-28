@@ -98,7 +98,7 @@ const insightImages: Record<string, { src: string; alt: string }> = {
   },
   "what-is-a-hydrogen-fuel-cell": {
     src: "/media/insights/fuel-cell.png",
-    alt: "Rise portable power units and hydrogen cartridge at a field staging site at dusk",
+    alt: "Rise portable power units and hydrogen cartridge on a workshop bench",
   },
   "silent-generator-for-military-operations": {
     src: "/media/insights/defense-silent.png",

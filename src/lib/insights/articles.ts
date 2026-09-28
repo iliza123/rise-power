@@ -164,8 +164,9 @@ export const insights: InsightArticle[] = [
     readTime: `4 min read`,
     accentPhrase: `Hydrogen Fuel Cell`,
     hero: {
-      src: `/media/insights/fuel-cell.png`,
-      alt: `Rise portable power units and hydrogen cartridge at a field staging site at dusk`,
+      src: `/media/insights/fuel-cell-desktop.png`,
+      mobileSrc: `/media/insights/fuel-cell.png`,
+      alt: `Rise portable power units and hydrogen cartridge on a workshop bench`,
     },
     relatedSlugs: [
       `hydrogen-fuel-cell-vs-diesel-generator`,
@@ -351,7 +352,8 @@ export const insights: InsightArticle[] = [
     readTime: `4 min read`,
     accentPhrase: `Silent Generators`,
     hero: {
-      src: `/media/insights/defense-silent.png`,
+      src: `/media/insights/defense-silent-desktop.png`,
+      mobileSrc: `/media/insights/defense-silent.png`,
       alt: `Rise portable power units powering a tactical command tent at dusk`,
     },
     relatedSlugs: [
