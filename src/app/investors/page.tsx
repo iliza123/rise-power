@@ -367,17 +367,17 @@ export default function InvestorsPage() {
           <div className="mt-8 flex flex-col gap-4 sm:mt-9 sm:flex-row">
             <Link
               href="/contact"
-              className="group inline-flex min-h-12 items-center justify-center gap-2 rounded-sm bg-[#849363] px-9 text-sm font-semibold tracking-[0.04em] text-white uppercase transition-opacity hover:opacity-90 sm:min-h-[64px]"
+              className="cta-with-icon group inline-flex min-h-12 items-center justify-center gap-2 rounded-sm bg-[#849363] px-9 text-sm font-semibold tracking-[0.04em] text-white uppercase transition-opacity hover:opacity-90 sm:min-h-[64px]"
             >
-              <span>Request a Briefing</span>
-              <ArrowRight className="size-5 transition-transform duration-300 group-hover:translate-x-1" />
+              <span className="leading-none">Request a Briefing</span>
+              <ArrowRight className="size-4 shrink-0 transition-transform duration-300 group-hover:translate-x-1 sm:size-5" />
             </Link>
             <Link
               href="#investor-materials"
-              className="group inline-flex min-h-12 items-center justify-center gap-2 rounded-sm border border-white/80 px-9 text-sm font-semibold tracking-[0.04em] text-white uppercase transition-colors hover:bg-white/10 sm:min-h-[64px]"
+              className="cta-with-icon group inline-flex min-h-12 items-center justify-center gap-2 rounded-sm border border-white/80 px-9 text-sm font-semibold tracking-[0.04em] text-white uppercase transition-colors hover:bg-white/10 sm:min-h-[64px]"
             >
-              <span>Download the Deck</span>
-              <ArrowRight className="size-5 transition-transform duration-300 group-hover:translate-x-1" />
+              <span className="leading-none">Download the Deck</span>
+              <ArrowRight className="size-4 shrink-0 transition-transform duration-300 group-hover:translate-x-1 sm:size-5" />
             </Link>
           </div>
         </div>

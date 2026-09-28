@@ -235,18 +235,18 @@ export default function CapabilitiesPage() {
           <div className="mt-6 flex flex-col gap-3 sm:mt-7 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
             <Link
               href={hero.primaryCta.href}
-              className="type-cta inline-flex min-h-12 items-center justify-center gap-2 rounded-sm px-8 text-white uppercase transition-opacity hover:opacity-90"
+              className="cta-with-icon type-cta inline-flex min-h-12 items-center justify-center gap-2 rounded-sm px-8 text-white uppercase transition-opacity hover:opacity-90"
               style={{ background: heroCta }}
             >
-              {hero.primaryCta.label}
-              <ArrowRight className="size-5" aria-hidden />
+              <span className="leading-none">{hero.primaryCta.label}</span>
+              <ArrowRight className="size-4 shrink-0 sm:size-5" aria-hidden />
             </Link>
             <Link
               href={hero.secondaryCta.href}
-              className="type-cta inline-flex min-h-12 items-center justify-center gap-2 rounded-sm border border-white/50 px-8 text-white uppercase transition-colors hover:bg-white/10"
+              className="cta-with-icon type-cta inline-flex min-h-12 items-center justify-center gap-2 rounded-sm border border-white/50 px-8 text-white uppercase transition-colors hover:bg-white/10"
             >
-              {hero.secondaryCta.label}
-              <ArrowRight className="size-5" aria-hidden />
+              <span className="leading-none">{hero.secondaryCta.label}</span>
+              <ArrowRight className="size-4 shrink-0 sm:size-5" aria-hidden />
             </Link>
           </div>
         </div>

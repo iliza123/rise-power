@@ -242,18 +242,18 @@ export default function AboutPage() {
           <div className="mt-8 flex flex-col gap-4 sm:mt-10 sm:flex-row">
             <a
               href="/contact"
-              className="inline-flex min-h-12 items-center justify-center gap-2 rounded-sm bg-[#849363] px-8 text-sm font-semibold tracking-wide text-white uppercase transition-opacity hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+              className="cta-with-icon inline-flex min-h-12 items-center justify-center gap-2 rounded-sm bg-[#849363] px-8 text-sm font-semibold tracking-wide text-white uppercase transition-opacity hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
             >
-              Request a Demo
-              <ArrowRight className="size-5" aria-hidden="true" />
+              <span className="leading-none">Request a Demo</span>
+              <ArrowRight className="size-4 shrink-0 sm:size-5" aria-hidden="true" />
             </a>
 
             <a
               href="#how-we-work"
-              className="inline-flex min-h-12 items-center justify-center gap-2 rounded-sm border border-white/50 px-7 text-sm font-semibold tracking-wide text-white uppercase transition-colors hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+              className="cta-with-icon inline-flex min-h-12 items-center justify-center gap-2 rounded-sm border border-white/50 px-7 text-sm font-semibold tracking-wide text-white uppercase transition-colors hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
             >
-              How We Work
-              <ArrowRight className="size-5" aria-hidden="true" />
+              <span className="leading-none">How We Work</span>
+              <ArrowRight className="size-4 shrink-0 sm:size-5" aria-hidden="true" />
             </a>
           </div>
         </div>

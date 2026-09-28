@@ -164,22 +164,22 @@ export function CapabilityDetail({ capability }: CapabilityDetailProps) {
           <div className="mt-7 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
             <Link
               href={capability.cta.href}
-              className="inline-flex min-h-12 items-center justify-center gap-2 rounded-sm px-8 text-sm font-semibold tracking-wide text-white uppercase transition-opacity hover:opacity-90"
+              className="cta-with-icon inline-flex min-h-12 items-center justify-center gap-2 rounded-sm px-7 text-sm font-semibold tracking-wide whitespace-nowrap text-white uppercase transition-opacity hover:opacity-90 sm:px-8"
               style={{ background: SAGE_CTA }}
             >
-              {capability.cta.label}
-              <ArrowRight className="size-5 shrink-0" aria-hidden />
+              <span className="leading-none">{capability.cta.label}</span>
+              <ArrowRight className="size-4 shrink-0 sm:size-5" aria-hidden />
             </Link>
             <Link
               href="/capabilities"
-              className="group inline-flex min-h-12 items-center justify-center gap-2 rounded-sm border border-white/50 px-7 text-sm font-semibold tracking-wide text-white uppercase transition-colors hover:bg-white/10"
+              className="cta-with-icon group inline-flex min-h-12 items-center justify-center gap-2 rounded-sm border border-white/50 px-6 text-sm font-semibold tracking-wide whitespace-nowrap text-white uppercase transition-colors hover:bg-white/10 sm:px-7"
             >
               <ArrowLeft
-                className="size-4 shrink-0 transition-transform duration-200 group-hover:-translate-x-0.5"
+                className="size-4 shrink-0 transition-transform duration-200 group-hover:-translate-x-0.5 sm:size-5"
                 strokeWidth={2}
                 aria-hidden
               />
-              All Capabilities
+              <span className="leading-none">All Capabilities</span>
             </Link>
           </div>
         </div>

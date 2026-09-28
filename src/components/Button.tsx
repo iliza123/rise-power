@@ -27,7 +27,7 @@ export function Button({
   type = "button",
   onClick,
 }: ButtonProps) {
-  const classes = `inline-flex min-h-12 items-center justify-center px-7 text-sm font-semibold tracking-normal transition-colors duration-200 ${variants[variant]} ${className}`;
+  const classes = `cta-with-icon inline-flex min-h-12 items-center justify-center gap-2 px-7 text-sm font-semibold leading-none tracking-normal transition-colors duration-200 ${variants[variant]} ${className}`;
 
   if (href) {
     return (

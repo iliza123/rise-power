@@ -206,14 +206,14 @@ export function InsightArticleView({
           <div className="mt-7">
             <Link
               href="/insights"
-              className="group inline-flex min-h-12 items-center justify-center gap-2.5 rounded-sm border border-white/50 px-7 text-sm font-semibold tracking-[0.12em] text-white uppercase transition-colors hover:bg-white/10"
+              className="cta-with-icon group inline-flex min-h-12 items-center justify-center gap-2.5 rounded-sm border border-white/50 px-7 text-sm font-semibold tracking-[0.12em] text-white uppercase transition-colors hover:bg-white/10"
             >
               <ArrowLeft
-                className="h-4 w-4 transition-transform duration-200 group-hover:-translate-x-0.5"
+                className="size-4 shrink-0 transition-transform duration-200 group-hover:-translate-x-0.5 sm:size-5"
                 strokeWidth={2}
                 aria-hidden
               />
-              All Insights
+              <span className="leading-none">All Insights</span>
             </Link>
           </div>
         </div>

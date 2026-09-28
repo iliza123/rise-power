@@ -79,17 +79,17 @@ export default function ContactPage() {
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <a
               href="#briefing"
-              className="inline-flex min-h-12 items-center justify-center gap-2 rounded-sm bg-[#849363] px-8 text-sm font-semibold tracking-wide text-white uppercase transition-opacity hover:opacity-90"
+              className="cta-with-icon inline-flex min-h-12 items-center justify-center gap-2 rounded-sm bg-[#849363] px-8 text-sm font-semibold tracking-wide text-white uppercase transition-opacity hover:opacity-90"
             >
-              Request Briefing
-              <ArrowRight className="size-5" />
+              <span className="leading-none">Request Briefing</span>
+              <ArrowRight className="size-4 shrink-0 sm:size-5" />
             </a>
             <a
               href={`mailto:${site.email}`}
-              className="inline-flex min-h-12 items-center justify-center gap-2 rounded-sm border border-white/50 px-7 text-sm font-semibold tracking-wide text-white uppercase transition-colors hover:bg-white/10"
+              className="cta-with-icon inline-flex min-h-12 items-center justify-center gap-2 rounded-sm border border-white/50 px-7 text-sm font-semibold tracking-wide text-white uppercase transition-colors hover:bg-white/10"
             >
-              Email Us
-              <ArrowRight className="size-5" />
+              <span className="leading-none">Email Us</span>
+              <ArrowRight className="size-4 shrink-0 sm:size-5" />
             </a>
           </div>
         </div>

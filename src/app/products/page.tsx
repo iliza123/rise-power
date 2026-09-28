@@ -448,17 +448,17 @@ export default function ProductsPage() {
           <div className="mt-7 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
             <Link
               href="/contact"
-              className="inline-flex min-h-12 items-center justify-center gap-2 whitespace-nowrap rounded-sm bg-[#849363] px-7 text-sm font-bold tracking-[0.12em] text-white uppercase transition-opacity hover:opacity-90"
+              className="cta-with-icon inline-flex min-h-12 items-center justify-center gap-2 whitespace-nowrap rounded-sm bg-[#849363] px-7 text-sm font-bold tracking-[0.12em] text-white uppercase transition-opacity hover:opacity-90"
             >
-              Request a Demo
-              <ArrowRight className="size-4 shrink-0" />
+              <span className="leading-none">Request a Demo</span>
+              <ArrowRight className="size-4 shrink-0" aria-hidden />
             </Link>
             <Link
               href="/markets"
-              className="inline-flex min-h-12 items-center justify-center gap-2 whitespace-nowrap rounded-sm border border-white/35 px-7 text-sm font-bold tracking-[0.12em] text-white uppercase transition-colors hover:bg-white/10"
+              className="cta-with-icon inline-flex min-h-12 items-center justify-center gap-2 whitespace-nowrap rounded-sm border border-white/35 px-7 text-sm font-bold tracking-[0.12em] text-white uppercase transition-colors hover:bg-white/10"
             >
-              Explore Markets
-              <ArrowRight className="size-4 shrink-0" />
+              <span className="leading-none">Explore Markets</span>
+              <ArrowRight className="size-4 shrink-0" aria-hidden />
             </Link>
           </div>
         </div>

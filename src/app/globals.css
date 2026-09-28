@@ -700,3 +700,32 @@ h4 {
     justify-content: center;
   }
 }
+
+/* -------------------------------------------------------------------------- */
+/* CTA + Lucide icon alignment (site-wide, responsive)                        */
+/* Inline SVGs sit on the text baseline by default and look high vs uppercase */
+/* tracked labels. Force block icons + optical nudge inside flex CTAs.        */
+/* -------------------------------------------------------------------------- */
+a.inline-flex > svg.lucide,
+button.inline-flex > svg.lucide,
+.inline-flex.items-center > svg.lucide {
+  display: block;
+  flex-shrink: 0;
+  overflow: visible;
+}
+
+/* Optical vertical center next to uppercase / tracked CTA labels */
+a.inline-flex.uppercase > svg.lucide,
+button.inline-flex.uppercase > svg.lucide,
+.cta-with-icon > svg.lucide {
+  position: relative;
+  top: 0.0625rem; /* 1px */
+}
+
+.cta-with-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  line-height: 1;
+}
