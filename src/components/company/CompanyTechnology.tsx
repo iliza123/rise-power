@@ -1,5 +1,6 @@
 import Image from "next/image";
-import { Check } from "lucide-react";
+import Link from "next/link";
+import { ArrowRight, Check } from "lucide-react";
 
 import { Reveal } from "@/components/motion/Reveal";
 
@@ -19,7 +20,7 @@ export type CompanyTechnologyProps = {
   diagramAlt?: string;
 };
 
-/** About page technology section — matches Mission / other About section patterns. */
+/** About page technology section — one job: explain the H₂-CORE platform. */
 export function CompanyTechnology({
   className = "",
   diagramSrc = "/media/products/product-ecosystem.png",
@@ -28,65 +29,72 @@ export function CompanyTechnology({
   return (
     <section
       id="technology"
-      className={`relative scroll-mt-28 overflow-hidden bg-white pt-10 pb-6 sm:pt-12 sm:pb-8 lg:pt-16 lg:pb-10 ${className}`.trim()}
+      className={`relative scroll-mt-28 overflow-hidden bg-white py-10 sm:py-12 lg:py-16 ${className}`.trim()}
       aria-labelledby="company-technology-heading"
     >
       <div className="relative mx-auto max-w-[1440px] px-6 lg:px-10">
-        <div className="grid items-center gap-6 lg:grid-cols-[1.15fr_0.85fr] lg:gap-12">
+        <div className="grid items-center gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
           <Reveal variant="left" className="min-w-0">
-            <div className="min-w-0 lg:pr-2">
-              <p className="type-eyebrow" style={{ color: SAGE }}>
-                Our Technology
-              </p>
+            <p className="type-eyebrow" style={{ color: SAGE }}>
+              Our Technology
+            </p>
 
-              <h2
-                id="company-technology-heading"
-                className="mt-4 type-section-h2"
-              >
-                The Rise Plug &amp; Play Hydrogen Platform
-              </h2>
+            <h2
+              id="company-technology-heading"
+              className="mt-5 type-section-h2"
+            >
+              The Rise Plug &amp; Play
+              <br />
+              Hydrogen Platform
+            </h2>
 
-              <div className="type-section-body mt-5 max-w-xl space-y-4 break-words text-[#66717d]">
-                <p>
-                  Proprietary H₂-CORE™ architecture integrates fuel cells, power
-                  electronics, and a Plug &amp; Play Hydrogen Cartridge into one
-                  modular platform — engineered for field reliability across
-                  mission profiles.
-                </p>
-                <p>
-                  Hydrogen is converted into electricity through a chemical
-                  reaction in the fuel cell — producing only water and heat.
-                </p>
-              </div>
+            <p className="type-section-body mt-5 max-w-xl text-[#66717d]">
+              Proprietary H₂-CORE™ architecture integrates fuel cells, power
+              electronics, and a Plug &amp; Play Hydrogen Cartridge into one
+              modular platform. Hydrogen converts to electricity in the fuel
+              cell — producing only water and heat.
+            </p>
 
-              <ul className="mt-7 space-y-3">
-                {checklist.map((item) => (
-                  <li
-                    key={item}
-                    className="flex items-start gap-3 type-section-body text-[#101820]"
+            <ul className="mt-7 space-y-3">
+              {checklist.map((item) => (
+                <li
+                  key={item}
+                  className="flex items-start gap-3 type-section-body text-[#101820]"
+                >
+                  <span
+                    className="mt-0.5 grid size-5 shrink-0 place-items-center rounded-full"
+                    style={{ backgroundColor: SAGE }}
+                    aria-hidden
                   >
-                    <span
-                      className="mt-0.5 grid size-5 shrink-0 place-items-center rounded-full"
-                      style={{ backgroundColor: SAGE }}
-                      aria-hidden
-                    >
-                      <Check className="size-3 text-white" strokeWidth={3} />
-                    </span>
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
+                    <Check className="size-3 text-white" strokeWidth={3} />
+                  </span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+
+            <div className="mt-8">
+              <Link
+                href="/products"
+                className="cta-with-icon inline-flex min-h-12 items-center justify-center gap-2 rounded-sm bg-[#849363] px-8 text-sm font-semibold tracking-wide text-white uppercase transition-opacity hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6e7f42]"
+              >
+                <span className="leading-none">Explore Products</span>
+                <ArrowRight
+                  className="size-4 shrink-0 sm:size-5"
+                  aria-hidden="true"
+                />
+              </Link>
             </div>
           </Reveal>
 
           <Reveal variant="right" delay={80} className="min-w-0">
-            <div className="relative mx-auto aspect-[1.15/1] w-full max-w-[26rem] overflow-hidden rounded-[7px] lg:ml-auto lg:mr-0">
+            <div className="relative aspect-[4/5] w-full overflow-hidden rounded-[7px] bg-[#141814] sm:aspect-[1.05/1] lg:aspect-[1.08/1]">
               <Image
                 src={diagramSrc}
                 alt={diagramAlt}
                 fill
                 quality={90}
-                sizes="(min-width: 1024px) 26rem, 88vw"
+                sizes="(min-width: 1024px) 45vw, 100vw"
                 className="object-cover"
               />
             </div>

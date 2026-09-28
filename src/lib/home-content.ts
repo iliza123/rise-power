@@ -614,7 +614,7 @@ export const capabilities = {
         "Hydrogen fuel cell design, power electronics, and ruggedized system development from concept through production.",
       href: "/capabilities/engineering-development",
       imageSrc: "/media/capabilities/engineering-development.png",
-      imageAlt: "Soldiers with backpacks walking through grassland",
+      imageAlt: "Rise hydrogen R&D lab bench with prototyping tools and CAD workstation",
       mobileImageSrc: "/media/capabilities/engineering-development-mobile.png",
       secondaryImageSrc: "/media/capabilities/engineering-scope.png",
       secondaryImageAlt:

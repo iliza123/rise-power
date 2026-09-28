@@ -3,12 +3,12 @@ import Image from "next/image";
 import {
   ArrowRight,
   AudioLines,
-  Check,
   Crosshair,
   Leaf,
   Weight,
 } from "lucide-react";
 
+import { CompanyTechnology } from "@/components/company/CompanyTechnology";
 import { PerformanceMetricCard } from "@/components/home/PerformanceMetricCard";
 import { SnapCarousel } from "@/components/home/SnapCarousel";
 import { Reveal, RevealStagger } from "@/components/motion/Reveal";
@@ -30,13 +30,6 @@ const performanceGaugeIcons = [AudioLines, Leaf, Crosshair, Weight] as const;
 /* -------------------------------------------------------------------------- */
 /* DATA                                                                       */
 /* -------------------------------------------------------------------------- */
-
-const technologyChecklist = [
-  "Plug & Play Cartridge Interface",
-  "Modular & Scalable Architecture",
-  "Advanced Fuel Cell Technology",
-  "Built for Extreme Conditions",
-] as const;
 
 const values = [
   {
@@ -264,114 +257,72 @@ export default function AboutPage() {
       </StackedPageHero>
 
       {/* ================================================================== */}
-      {/* MISSION + TECHNOLOGY — single section, mission imagery only         */}
+      {/* MISSION                                                             */}
       {/* ================================================================== */}
 
       <section
         id="mission"
-        className="relative scroll-mt-28 overflow-hidden bg-[#fbfaf7] pt-10 pb-10 sm:pt-12 sm:pb-12 lg:pt-16 lg:pb-16"
+        className="relative scroll-mt-28 overflow-hidden bg-[#fbfaf7] py-10 sm:py-12 lg:py-16"
+        aria-labelledby="company-mission-heading"
       >
-        <div id="technology" className="pointer-events-none absolute top-0 h-0 w-0" />
         <ContourDecoration position="left" />
         <ContourDecoration position="right" />
 
         <div className="relative mx-auto max-w-[1440px] px-6 lg:px-10">
-          <div className="grid items-start gap-8 lg:grid-cols-[1.04fr_0.96fr] lg:gap-12 lg:items-center">
+          <div className="grid items-center gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:gap-16">
             <Reveal variant="left" className="min-w-0">
-              <div className="relative aspect-[1.08/1] overflow-hidden rounded-[7px] lg:sticky lg:top-28">
+              <div className="relative aspect-[4/5] overflow-hidden rounded-[7px] sm:aspect-[1.05/1] lg:aspect-[1.08/1]">
                 <Image
                   src="/media/company/company-mission.png"
-                  alt="Military camp with a generator and mountains"
+                  alt="Rise Power units deployed in mountain field operations"
                   fill
-                  sizes="(min-width: 1024px) 52vw, 100vw"
+                  sizes="(min-width: 1024px) 48vw, 100vw"
                   className="object-cover"
                 />
               </div>
             </Reveal>
 
             <Reveal variant="right" delay={80} className="min-w-0">
-              <div className="min-w-0 lg:pl-2">
-                <SectionEyebrow>Our Mission</SectionEyebrow>
+              <SectionEyebrow>Our Mission</SectionEyebrow>
 
-                <h2 className="mt-4 type-section-h2">Mission.</h2>
+              <h2 id="company-mission-heading" className="mt-5 type-section-h2">
+                Clean Power
+                <br />
+                For Critical Work.
+              </h2>
 
-                <div className="type-section-body mt-5 max-w-xl space-y-4 break-words text-[#66717d]">
-                  <p>
-                    Rise Power builds zero-emissions, portable hydrogen power
-                    for municipal, emergency, field, and off-grid applications.
-                    Engineered and built in British Columbia, our systems are
-                    quiet, rapidly deployable, and designed for reliable
-                    everyday operations when the grid is down.
-                  </p>
-                  <p>
-                    We welcome municipalities, utilities, and community partners
-                    through product trials and clean-energy pilot programs —
-                    delivering refillable cartridge logistics instead of diesel
-                    trucks and noisy generators.
-                  </p>
-                </div>
+              <div className="type-section-body mt-5 max-w-xl space-y-4 text-[#66717d]">
+                <p>
+                  Rise Power builds quiet, zero-emission portable hydrogen
+                  systems for municipal, emergency, field, and off-grid use —
+                  engineered and manufactured in British Columbia.
+                </p>
+                <p>
+                  Through product trials and clean-energy pilots, we help
+                  municipalities, utilities, and community partners replace
+                  diesel trucks and generators with refillable cartridge
+                  logistics.
+                </p>
+              </div>
 
-                <div
-                  className="mt-8 border-t pt-8"
-                  style={{ borderColor: "rgba(110, 127, 66, 0.22)" }}
+              <div className="mt-8">
+                <a
+                  href="/contact"
+                  className="cta-with-icon inline-flex min-h-12 items-center justify-center gap-2 rounded-sm bg-[#849363] px-8 text-sm font-semibold tracking-wide text-white uppercase transition-opacity hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6e7f42]"
                 >
-                  <p className="type-eyebrow" style={{ color: sage }}>
-                    Our Technology
-                  </p>
-
-                  <h3 className="mt-3 font-display text-[1.35rem] leading-[1.05] font-bold tracking-tight text-[#101820] uppercase sm:text-[1.55rem] lg:text-[1.75rem]">
-                    The Rise Plug &amp; Play Hydrogen Platform
-                  </h3>
-
-                  <div className="type-section-body mt-4 max-w-xl space-y-4 break-words text-[#66717d]">
-                    <p>
-                      Proprietary H₂-CORE™ architecture integrates fuel cells,
-                      power electronics, and a Plug &amp; Play Hydrogen Cartridge
-                      into one modular platform — engineered for field reliability
-                      across mission profiles.
-                    </p>
-                    <p>
-                      Hydrogen is converted into electricity through a chemical
-                      reaction in the fuel cell — producing only water and heat.
-                    </p>
-                  </div>
-
-                  <ul className="mt-6 space-y-3">
-                    {technologyChecklist.map((item) => (
-                      <li
-                        key={item}
-                        className="flex items-start gap-3 type-section-body text-[#101820]"
-                      >
-                        <span
-                          className="mt-0.5 grid size-5 shrink-0 place-items-center rounded-full"
-                          style={{ backgroundColor: sage }}
-                          aria-hidden
-                        >
-                          <Check className="size-3 text-white" strokeWidth={3} />
-                        </span>
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                <div className="mt-8">
-                  <a
-                    href="/contact"
-                    className="cta-with-icon inline-flex min-h-12 items-center justify-center gap-2 rounded-sm bg-[#849363] px-8 text-sm font-semibold tracking-wide text-white uppercase transition-opacity hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6e7f42]"
-                  >
-                    <span className="leading-none">Request a Demo</span>
-                    <ArrowRight
-                      className="size-4 shrink-0 sm:size-5"
-                      aria-hidden="true"
-                    />
-                  </a>
-                </div>
+                  <span className="leading-none">Request a Demo</span>
+                  <ArrowRight
+                    className="size-4 shrink-0 sm:size-5"
+                    aria-hidden="true"
+                  />
+                </a>
               </div>
             </Reveal>
           </div>
         </div>
       </section>
+
+      <CompanyTechnology />
 
       {/* BUILT TO OUTPERFORM */}
       <section
