@@ -172,6 +172,7 @@ export function InsightArticleView({
       <StackedPageHero
         layout="split"
         imageSrc={article.hero.src}
+        mobileImageSrc={article.hero.mobileSrc}
         imageAlt={article.hero.alt}
         imageWidth={1672}
         imageHeight={941}
@@ -258,7 +259,7 @@ export function InsightArticleView({
                   >
                     <div className="relative aspect-[16/10] overflow-hidden bg-[#101820]">
                       <Image
-                        src={item.hero.src}
+                        src={item.hero.mobileSrc ?? item.hero.src}
                         alt={item.hero.alt}
                         fill
                         sizes="(min-width: 768px) 45vw, 100vw"

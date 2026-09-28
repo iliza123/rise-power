@@ -128,7 +128,7 @@ export default function InsightsPage() {
                   className="group relative block aspect-[16/10] overflow-hidden"
                 >
                   <Image
-                    src={featuredMeta.hero.src}
+                    src={featuredMeta.hero.mobileSrc ?? featuredMeta.hero.src}
                     alt={featuredMeta.hero.alt}
                     fill
                     sizes="(min-width: 1024px) 55vw, 100vw"

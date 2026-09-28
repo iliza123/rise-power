@@ -94,7 +94,7 @@ const systems = [
 const insightImages: Record<string, { src: string; alt: string }> = {
   "hydrogen-fuel-cell-vs-diesel-generator": {
     src: "/media/insights/diesel-comparison.png",
-    alt: "Rise portable hydrogen power beside a diesel generator at a remote lakeside site",
+    alt: "Rise portable hydrogen power beside a diesel generator at a remote field site",
   },
   "what-is-a-hydrogen-fuel-cell": {
     src: "/media/insights/fuel-cell.png",

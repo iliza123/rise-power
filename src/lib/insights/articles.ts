@@ -15,8 +15,9 @@ export const insights: InsightArticle[] = [
     readTime: `3 min read`,
     accentPhrase: `Hydrogen Fuel Cell`,
     hero: {
-      src: `/media/insights/diesel-comparison.png`,
-      alt: `Rise portable hydrogen power beside a diesel generator at a remote lakeside site`,
+      src: `/media/insights/diesel-comparison-desktop.png`,
+      mobileSrc: `/media/insights/diesel-comparison.png`,
+      alt: `Rise portable hydrogen power beside a diesel generator at a remote field site`,
     },
     relatedSlugs: [
       `what-is-a-hydrogen-fuel-cell`,

@@ -13,7 +13,12 @@ export type InsightArticle = {
   category: string;
   excerpt: string;
   readTime: string; // e.g. "6 min read"
-  hero: { src: string; alt: string };
+  hero: {
+    src: string;
+    alt: string;
+    /** Optional stacked/mobile banner; falls back to `src`. */
+    mobileSrc?: string;
+  };
   /** Optional word/phrase in title to render in sage accent */
   accentPhrase?: string;
   body: InsightBlock[];

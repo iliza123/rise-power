@@ -160,7 +160,7 @@ export function InsightsArchiveList({ articles }: InsightsArchiveListProps) {
 
               <div className="relative hidden size-[5.5rem] shrink-0 overflow-hidden bg-[#101820] sm:block">
                 <Image
-                  src={article.hero.src}
+                  src={article.hero.mobileSrc ?? article.hero.src}
                   alt={article.hero.alt}
                   fill
                   sizes="88px"
