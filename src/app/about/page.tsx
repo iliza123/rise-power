@@ -1,13 +1,18 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
-import { ArrowRight, AudioLines, Crosshair, Leaf, Weight } from "lucide-react";
+import {
+  ArrowRight,
+  AudioLines,
+  Check,
+  Crosshair,
+  Leaf,
+  Weight,
+} from "lucide-react";
 
 import { PerformanceMetricCard } from "@/components/home/PerformanceMetricCard";
 import { SnapCarousel } from "@/components/home/SnapCarousel";
 import { Reveal, RevealStagger } from "@/components/motion/Reveal";
 import { CartridgeEcosystem } from "@/components/CartridgeEcosystem";
-import { CompanyTechnology } from "@/components/company/CompanyTechnology";
 import { StackedPageHero } from "@/components/StackedPageHero";
 import { performanceMetrics } from "@/lib/home-content";
 import { pageMetadata } from "@/lib/seo";
@@ -25,6 +30,13 @@ const performanceGaugeIcons = [AudioLines, Leaf, Crosshair, Weight] as const;
 /* -------------------------------------------------------------------------- */
 /* DATA                                                                       */
 /* -------------------------------------------------------------------------- */
+
+const technologyChecklist = [
+  "Plug & Play Cartridge Interface",
+  "Modular & Scalable Architecture",
+  "Advanced Fuel Cell Technology",
+  "Built for Extreme Conditions",
+] as const;
 
 const values = [
   {
@@ -249,10 +261,10 @@ export default function AboutPage() {
             </a>
 
             <a
-              href="#how-we-work"
+              href="#mission"
               className="cta-with-icon inline-flex min-h-12 items-center justify-center gap-2 rounded-sm border border-white/50 px-7 text-sm font-semibold tracking-wide text-white uppercase transition-colors hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
             >
-              <span className="leading-none">How We Work</span>
+              <span className="leading-none">Our Mission</span>
               <ArrowRight className="size-4 shrink-0 sm:size-5" aria-hidden="true" />
             </a>
           </div>
@@ -260,17 +272,21 @@ export default function AboutPage() {
       </StackedPageHero>
 
       {/* ================================================================== */}
-      {/* MISSION                                                            */}
+      {/* MISSION + TECHNOLOGY — single section, mission imagery only         */}
       {/* ================================================================== */}
 
-      <section className="relative overflow-hidden bg-[#fbfaf7] pt-10 pb-6 sm:pt-12 sm:pb-8 lg:pt-16 lg:pb-10">
+      <section
+        id="mission"
+        className="relative scroll-mt-28 overflow-hidden bg-[#fbfaf7] pt-10 pb-10 sm:pt-12 sm:pb-12 lg:pt-16 lg:pb-16"
+      >
+        <div id="technology" className="pointer-events-none absolute top-0 h-0 w-0" />
         <ContourDecoration position="left" />
         <ContourDecoration position="right" />
 
         <div className="relative mx-auto max-w-[1440px] px-6 lg:px-10">
-          <div className="grid items-center gap-6 lg:grid-cols-[1.04fr_0.96fr] lg:gap-12">
+          <div className="grid items-start gap-8 lg:grid-cols-[1.04fr_0.96fr] lg:gap-12 lg:items-center">
             <Reveal variant="left" className="min-w-0">
-              <div className="relative aspect-[1.08/1] overflow-hidden rounded-[7px]">
+              <div className="relative aspect-[1.08/1] overflow-hidden rounded-[7px] lg:sticky lg:top-28">
                 <Image
                   src="/media/company/company-mission.png"
                   alt="Military camp with a generator and mountains"
@@ -285,9 +301,7 @@ export default function AboutPage() {
               <div className="min-w-0 lg:pl-2">
                 <SectionEyebrow>Our Mission</SectionEyebrow>
 
-                <h2 className="mt-4 type-section-h2">
-                  Mission.
-                </h2>
+                <h2 className="mt-4 type-section-h2">Mission.</h2>
 
                 <div className="type-section-body mt-5 max-w-xl space-y-4 break-words text-[#66717d]">
                   <p>
@@ -305,29 +319,67 @@ export default function AboutPage() {
                   </p>
                 </div>
 
-                <div className="mt-7 flex flex-col gap-4 sm:flex-row sm:items-center">
+                <div
+                  className="mt-8 border-t pt-8"
+                  style={{ borderColor: "rgba(110, 127, 66, 0.22)" }}
+                >
+                  <p className="type-eyebrow" style={{ color: sage }}>
+                    Our Technology
+                  </p>
+
+                  <h3 className="mt-3 font-display text-[1.35rem] leading-[1.05] font-bold tracking-tight text-[#101820] uppercase sm:text-[1.55rem] lg:text-[1.75rem]">
+                    The Rise Plug &amp; Play Hydrogen Platform
+                  </h3>
+
+                  <div className="type-section-body mt-4 max-w-xl space-y-4 break-words text-[#66717d]">
+                    <p>
+                      Proprietary H₂-CORE™ architecture integrates fuel cells,
+                      power electronics, and a Plug &amp; Play Hydrogen Cartridge
+                      into one modular platform — engineered for field reliability
+                      across mission profiles.
+                    </p>
+                    <p>
+                      Hydrogen is converted into electricity through a chemical
+                      reaction in the fuel cell — producing only water and heat.
+                    </p>
+                  </div>
+
+                  <ul className="mt-6 space-y-3">
+                    {technologyChecklist.map((item) => (
+                      <li
+                        key={item}
+                        className="flex items-start gap-3 type-section-body text-[#101820]"
+                      >
+                        <span
+                          className="mt-0.5 grid size-5 shrink-0 place-items-center rounded-full"
+                          style={{ backgroundColor: sage }}
+                          aria-hidden
+                        >
+                          <Check className="size-3 text-white" strokeWidth={3} />
+                        </span>
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div className="mt-8">
                   <a
                     href="/contact"
-                    className="inline-flex min-h-12 items-center justify-center gap-2 rounded-sm bg-[#849363] px-8 text-sm font-semibold tracking-wide text-white uppercase transition-opacity hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6e7f42]"
+                    className="cta-with-icon inline-flex min-h-12 items-center justify-center gap-2 rounded-sm bg-[#849363] px-8 text-sm font-semibold tracking-wide text-white uppercase transition-opacity hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6e7f42]"
                   >
-                    Request a Demo
-                    <ArrowRight className="size-5" aria-hidden="true" />
+                    <span className="leading-none">Request a Demo</span>
+                    <ArrowRight
+                      className="size-4 shrink-0 sm:size-5"
+                      aria-hidden="true"
+                    />
                   </a>
-                  <Link
-                    href="/about#technology"
-                    className="text-sm font-medium text-[#66717d] underline-offset-4 transition-colors hover:text-[#101820] hover:underline"
-                  >
-                    Our technology
-                  </Link>
                 </div>
               </div>
             </Reveal>
           </div>
         </div>
       </section>
-
-      {/* OUR TECHNOLOGY — from former Company page */}
-      <CompanyTechnology />
 
       {/* BUILT TO OUTPERFORM */}
       <section
