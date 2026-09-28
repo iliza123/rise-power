@@ -130,7 +130,11 @@ export function CapabilityDetail({ capability }: CapabilityDetailProps) {
         imageSrc={capability.images.hero.src}
         mobileImageSrc={capability.images.hero.mobileSrc}
         imageAlt={capability.images.hero.alt}
-        imageClassName="object-cover object-[center_55%]"
+        imageClassName={
+          capability.id === "safety"
+            ? "object-cover object-[72%_48%]"
+            : "object-cover object-[center_55%]"
+        }
         imageWidth={
           capability.id === "safety"
             ? 1254
