@@ -236,9 +236,9 @@ export const marketDetails: readonly MarketDetailPage[] = [
     gallery: [
       {
         src: "/media/markets/commercial-gallery-lead.png",
-        alt: "Rise hydrogen cartridges and open hard case on a medical table in a clinic with healthcare workers treating a patient in the background",
-        title: "Critical Sites",
-        caption: "Clean power for essential operations.",
+        alt: "Rise hydrogen cartridge and open hard case on a concrete ledge at an industrial utility site with a technician servicing blue pipes in the background",
+        title: "Industrial Sites",
+        caption: "Clean fuel for field operations.",
       },
       {
         src: "/media/markets/commercial-gallery-2.png",
