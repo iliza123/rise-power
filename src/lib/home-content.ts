@@ -615,8 +615,8 @@ export const capabilities = {
           alt: "Rise portable power stack powering outdoor tools at a snowy mountain worksite",
         },
         {
-          src: "/media/missions/mountain.png",
-          alt: "Mission environment where engineered systems are deployed",
+          src: "/media/capabilities/engineering-focus-2.png",
+          alt: "Operator with Rise stacked portable power units supporting field electronics at sunset",
         },
         {
           src: "/media/capabilities/engineering-focus-3.png",

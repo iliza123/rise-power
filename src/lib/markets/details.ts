@@ -40,7 +40,7 @@ export const marketDetails: readonly MarketDetailPage[] = [
     gallery: [
       {
         src: "/media/markets/defense-gallery-lead.png",
-        alt: "MultiCam soldiers at a desert forward operating base running command and communications from stacked Rise Mission Power units",
+        alt: "Stacked Military Edition Rise Mission Power units on wheels at a desert forward operating base with soldiers running command and communications gear",
         title: "Forward Ops",
         caption: "Silent power for tactical communications.",
       },
@@ -254,13 +254,13 @@ export const marketDetails: readonly MarketDetailPage[] = [
       },
       {
         src: "/media/markets/commercial-gallery-4.png",
-        alt: "Open-pit mining crew running survey and field tools from a Rise Mission Power stack at a remote job site",
-        title: "Job Sites",
-        caption: "Tools and lighting without generators.",
+        alt: "Disaster-relief crew using stacked Rise Mission Power units at a muddy emergency camp with water supplies and a relief truck",
+        title: "Disaster Relief",
+        caption: "Field power when infrastructure fails.",
       },
       {
         src: "/media/markets/commercial-gallery-5.png",
-        alt: "Alpine emergency and telecom crew with a Rise-branded hexacopter over snowy peaks near a ridge communications tower",
+        alt: "Emergency responders powering laptops and radios from a Rise portable system beside a fire truck after a storm",
         title: "Emergency",
         caption: "Rapid deploy for storm response.",
       },
