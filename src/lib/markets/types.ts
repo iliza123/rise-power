@@ -8,6 +8,8 @@ export type MarketMedia = {
 export type MarketGalleryItem = MarketMedia & {
   title: string;
   caption?: string;
+  /** CSS object-position for object-cover crops (e.g. "center 20%"). */
+  objectPosition?: string;
 };
 
 export type MarketStat = {

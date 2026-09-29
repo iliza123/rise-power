@@ -30,6 +30,11 @@ function GalleryTile({
         sizes={sizes}
         quality={quality}
         className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
+        style={
+          item.objectPosition
+            ? { objectPosition: item.objectPosition }
+            : undefined
+        }
       />
 
       <div

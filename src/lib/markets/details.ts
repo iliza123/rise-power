@@ -43,6 +43,7 @@ export const marketDetails: readonly MarketDetailPage[] = [
         alt: "Soldier launching a tactical drone from a grassy field beside a military transport truck",
         title: "Field Launch",
         caption: "UAV ops powered at the edge.",
+        objectPosition: "center 22%",
       },
       {
         src: "/media/use-cases/defense-security.jpg",
