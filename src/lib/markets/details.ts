@@ -52,9 +52,9 @@ export const marketDetails: readonly MarketDetailPage[] = [
       },
       {
         src: "/media/markets/defense-gallery-2.png",
-        alt: "Rise hexacopter drone surveying a flooded valley while emergency responders monitor the flight from a ridgeline",
-        title: "ISR Support",
-        caption: "Range extension for critical missions.",
+        alt: "Rise Mission Power octocopter on a rocky mountain ridge at golden hour with an operator running flight control from rugged cases nearby",
+        title: "UAV Support",
+        caption: "Range extension for ISR missions.",
       },
       {
         src: "/media/markets/defense-gallery-3.png",
