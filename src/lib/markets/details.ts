@@ -235,10 +235,10 @@ export const marketDetails: readonly MarketDetailPage[] = [
     },
     gallery: [
       {
-        src: "/media/capabilities/engineering.png",
-        alt: "Crew using Rise Mission Power at a snowy remote job site, cutting timber and charging tools against a mountain lake backdrop",
-        title: "Remote Sites",
-        caption: "Clean power for off-grid construction.",
+        src: "/media/markets/commercial-gallery-lead.png",
+        alt: "Rise hydrogen cartridges and open hard case on a medical table in a clinic with healthcare workers treating a patient in the background",
+        title: "Critical Sites",
+        caption: "Clean power for essential operations.",
       },
       {
         src: "/media/markets/commercial-gallery-2.png",
