@@ -3,7 +3,6 @@ import Link from "next/link";
 import type { LucideIcon } from "lucide-react";
 import {
   ArrowRight,
-  Download,
   Lock,
   RefreshCw,
   ShieldCheck,
@@ -136,14 +135,6 @@ export function ClosingCta() {
                 >
                   {closingCta.primaryCta.label}
                   <ArrowRight className="size-5" />
-                </Link>
-
-                <Link
-                  href={closingCta.secondaryCta.href}
-                  className="type-cta inline-flex min-h-11 items-center justify-center gap-3 rounded-sm border border-[#f3efe4]/50 px-6 text-[#f3efe4] transition-colors hover:bg-white/10 sm:min-h-12"
-                >
-                  {closingCta.secondaryCta.label}
-                  <Download className="size-5" />
                 </Link>
               </div>
             </div>
