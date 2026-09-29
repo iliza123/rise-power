@@ -1,6 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
-import { ArrowRight } from "lucide-react";
 import { hydrogenEcosystem } from "@/lib/home-content";
 import { Reveal } from "@/components/motion/Reveal";
 
@@ -17,12 +15,11 @@ export function HydrogenEcosystem() {
     body,
     imageSrc,
     imageAlt,
-    cta,
   } = hydrogenEcosystem;
 
   return (
     <section
-      id="hydrogen-ecosystem"
+      id="how-we-work"
       className={`scroll-mt-28 bg-[#f3f0e8] ${sectionY}`}
     >
       <div className={pageInset}>
@@ -51,17 +48,6 @@ export function HydrogenEcosystem() {
               sizes="(max-width: 1040px) 100vw, 1040px"
               priority={false}
             />
-          </div>
-
-          <div className="mt-8 flex justify-center sm:mt-10">
-            <Link
-              href={cta.href}
-              className="type-cta inline-flex min-h-12 items-center justify-center gap-2 rounded-sm px-7 text-white transition-opacity duration-200 hover:opacity-90"
-              style={{ background: sage }}
-            >
-              {cta.label}
-              <ArrowRight className="size-4" strokeWidth={2} aria-hidden />
-            </Link>
           </div>
         </Reveal>
       </div>

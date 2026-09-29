@@ -540,16 +540,6 @@ export const capabilities = {
       alt: "Rise portable power stack and hydrogen cartridge at a mountain field station",
     },
   ] satisfies readonly CapabilityMedia[],
-  proof: {
-    eyebrow: "FIELD VALIDATION",
-    headingBefore: "ENGINEERED FOR THE FIELD.",
-    headingAccent: "VALIDATED IN IT.",
-    body: "Rise Power systems are designed from operator requirements outward. Sealed against dust and salt spray. Validated across coastal British Columbia, arctic, and high altitude conditions. Built for mission duration in environments where commercial hardware fails.",
-    imageSrc: "/media/capabilities/field-validation-primary.png",
-    imageAlt: "Engineered for the field. Validated in it.",
-    secondaryImageSrc: "/media/capabilities/field-validation-secondary.png",
-    secondaryImageAlt: "Soldier with laptop beside a generator in a forest",
-  },
   closingBand: {
     imageSrc: "/media/use-cases/uc-defence.png",
     imageAlt: "Defense operations powered by Rise Mission Power",
@@ -937,10 +927,10 @@ export const capabilities = {
 };
 
 export const hydrogenEcosystem = {
-  eyebrow: "ONE HYDROGEN ECOSYSTEM",
-  headingBefore: "SAME HYDROGEN.",
-  headingAccent: "MORE POSSIBILITIES.",
-  body: "One refillable cartridge powers Sentinel, Falcon, Titan, and field deployments — cleaner energy, greater independence, a stronger tomorrow.",
+  eyebrow: "HOW WE WORK",
+  headingBefore: "ONE PLATFORM.",
+  headingAccent: "EVERY MISSION.",
+  body: "We design around a single refillable hydrogen cartridge. Swap it into Sentinel, Falcon, or Titan and the same fuel powers defense, commercial, and everyday use — without diesel logistics.",
   imageSrc: "/media/home/one-hydrogen-ecosystem.png",
   imageAlt:
     "One hydrogen ecosystem diagram showing Rise Mission Power systems for UAV range extender, tactical generator, home backup, outdoor, commercial, and portable field power",

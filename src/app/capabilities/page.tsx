@@ -200,7 +200,7 @@ function GalleryCard({
 }
 
 export default function CapabilitiesPage() {
-  const { hero, proof, tabs, gallery } =
+  const { hero, tabs, gallery } =
     capabilities;
 
   return (
@@ -401,59 +401,6 @@ export default function CapabilitiesPage() {
         </div>
       </section>
       */}
-
-      {/* FIELD VALIDATION */}
-      <section className="relative overflow-hidden bg-[#fbfaf7] py-10 sm:py-12 lg:py-16">
-        <div className="mx-auto grid max-w-[1440px] items-center gap-8 px-6 lg:grid-cols-[0.95fr_1.05fr] lg:gap-16 lg:px-10">
-          <Reveal variant="left">
-            <SectionEyebrow>{proof.eyebrow}</SectionEyebrow>
-            <h2 className="mt-7 max-w-3xl type-section-h2">
-              {proof.headingBefore}
-              <br />
-              <span style={{ color: sage }}>{proof.headingAccent}</span>
-            </h2>
-            <p className="type-section-body mt-5 max-w-2xl text-[#687068]">
-              {proof.body}
-            </p>
-            <Link
-              href="/contact"
-              className="group mt-9 inline-flex min-h-12 items-center justify-center gap-2 rounded-sm px-8 text-sm font-semibold tracking-wide text-white uppercase transition-opacity hover:opacity-90"
-              style={{ background: sage }}
-            >
-              Request a Briefing
-              <ArrowRight
-                className="size-5 transition-transform duration-300 group-hover:translate-x-1"
-                aria-hidden
-              />
-            </Link>
-          </Reveal>
-
-          <Reveal variant="right" delay={100}>
-            <div className="grid gap-3 sm:grid-cols-[1.15fr_0.85fr]">
-              <div className="relative aspect-[1.05/1] overflow-hidden rounded-xl bg-[#dfe4dc] sm:aspect-auto sm:min-h-[380px]">
-                <Image
-                  src={proof.imageSrc}
-                  alt={proof.imageAlt}
-                  fill
-                  sizes="(min-width: 1024px) 35vw, 100vw"
-                  className="object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-transparent" />
-              </div>
-              <div className="relative aspect-[4/5] overflow-hidden rounded-xl bg-[#dfe4dc] sm:aspect-auto sm:min-h-[380px]">
-                <Image
-                  src={proof.secondaryImageSrc}
-                  alt={proof.secondaryImageAlt}
-                  fill
-                  sizes="(min-width: 1024px) 20vw, 100vw"
-                  className="object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
-              </div>
-            </div>
-          </Reveal>
-        </div>
-      </section>
 
       {/* PHOTO GALLERY */}
       <section className="overflow-hidden bg-[#f3f0e8] pt-10 pb-14 sm:pt-12 sm:pb-16 lg:pt-14 lg:pb-20">

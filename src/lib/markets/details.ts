@@ -51,8 +51,8 @@ export const marketDetails: readonly MarketDetailPage[] = [
         caption: "Range extension for ISR missions.",
       },
       {
-        src: "/media/cases/defense.png",
-        alt: "Soldiers launch a camouflage hexacopter at sunset over a snowy field, with rugged RISE mission power units cabled to field equipment and a tactical vehicle nearby",
+        src: "/media/capabilities/field-validation-primary.png",
+        alt: "Soldiers with Rise portable power units at an arctic field camp at sunset",
         title: "Cold Weather",
         caption: "Mission-ready in austere climates.",
       },
@@ -63,10 +63,10 @@ export const marketDetails: readonly MarketDetailPage[] = [
         caption: "Low-signature endurance for drones.",
       },
       {
-        src: "/media/insights/defense-logistics.png",
-        alt: "Secure defense logistics bay with an open Pelican case of precision hardware, security safe, and controlled documentation in a gated facility",
-        title: "Logistics",
-        caption: "Cartridge resupply without diesel convoys.",
+        src: "/media/capabilities/field-validation-secondary.png",
+        alt: "Soldier launching a tactical drone from a grassy field beside a military transport truck",
+        title: "Field Launch",
+        caption: "UAV ops powered at the edge.",
       },
     ],
     applicationsIntro:
