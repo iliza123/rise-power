@@ -1,6 +1,7 @@
 import { Reveal } from "@/components/motion/Reveal";
 import { StackedPageHero } from "@/components/StackedPageHero";
 import { type MarketDetailPage } from "@/lib/markets";
+import { MarketGallerySection } from "./MarketGallerySection";
 import { MarketProductUses } from "./MarketProductUses";
 import { MarketSpotlightSection } from "./MarketSpotlightSection";
 import {
@@ -14,7 +15,7 @@ import {
   TitleWithAccent,
 } from "./market-ui";
 
-/** Shared market detail layout — split hero, cream callouts, spotlight, product uses. */
+/** Shared market detail layout — split hero, cream callouts, spotlight, gallery, product uses. */
 export function MarketLayout({ market }: { market: MarketDetailPage }) {
   return (
     <main className="bg-[#fbfaf7] text-[#101820]">
@@ -88,6 +89,11 @@ export function MarketLayout({ market }: { market: MarketDetailPage }) {
       </section>
 
       <MarketSpotlightSection spotlight={market.spotlight} />
+
+      <MarketGallerySection
+        heading={market.galleryHeading}
+        items={market.gallery}
+      />
 
       <MarketProductUses section={market.productUses} tone="light" />
     </main>

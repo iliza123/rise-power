@@ -40,15 +40,27 @@ export const marketDetails: readonly MarketDetailPage[] = [
     gallery: [
       {
         src: "/media/use-cases/defense-security.jpg",
-        alt: "Military and defence market imagery",
+        alt: "Three soldiers at a mountain forward operating base at golden hour, powering comms and a tactical laptop from stacked camouflage RISE military power units",
       },
       {
-        src: "/media/insights/defense-fob.png",
-        alt: "Military and defence market imagery",
+        src: "/media/use-cases/uc-defence-spotlight.png",
+        alt: "Specialist kneeling beside a large tactical drone under desert camouflage netting at a forward base, with flight-control gear and mission tents at dawn",
+      },
+      {
+        src: "/media/cases/defense.png",
+        alt: "Soldiers launch a camouflage hexacopter at sunset over a snowy field, with rugged RISE mission power units cabled to field equipment and a tactical vehicle nearby",
       },
       {
         src: "/media/insights/military-drone.png",
-        alt: "Military and defence market imagery",
+        alt: "Hydrogen-powered RISE surveillance drone hovering over an open-pit site at sunset while operators control the flight from a rugged tablet",
+      },
+      {
+        src: "/media/insights/defense-logistics.png",
+        alt: "Secure defense logistics bay with an open Pelican case of precision hardware, security safe, and controlled documentation in a gated facility",
+      },
+      {
+        src: "/media/use-cases/uc-defence-deployment.png",
+        alt: "Recon team on a high ridge at sunset with binoculars, a quadcopter overhead, Humvee support, and camouflage RISE power feeding a rugged map display",
       },
     ],
     applicationsIntro:
@@ -181,7 +193,7 @@ export const marketDetails: readonly MarketDetailPage[] = [
         body: "Operate communications and surveillance equipment silently.",
       },
     ],
-    galleryHeading: { before: "Defense in", accent: "focus." },
+    galleryHeading: { before: "In the", accent: "field." },
     metaTitle: "Military & Defence",
     metaDescription:
       "Silent hydrogen power for tactical communications, UAV operations, and ISR systems in forward deployments.",
@@ -217,16 +229,28 @@ export const marketDetails: readonly MarketDetailPage[] = [
     },
     gallery: [
       {
-        src: "/media/cases/telecom.png",
-        alt: "Commercial market imagery",
+        src: "/media/capabilities/engineering.png",
+        alt: "Crew using Rise Mission Power at a snowy remote job site, cutting timber and charging tools against a mountain lake backdrop",
       },
       {
-        src: "/media/cases/mining.png",
-        alt: "Clean Power for Extreme Environments",
+        src: "/media/markets/utilities.png",
+        alt: "Lineworkers maintaining power lines from a bucket truck at a remote roadside site, powered at golden hour with mountains and forest behind",
       },
       {
-        src: "/media/cases/utilities-remote.png",
-        alt: "Commercial market imagery",
+        src: "/media/markets/emergency.png",
+        alt: "Utility and disaster-relief teams coordinating hydrogen drone, water purification, and portable power amid coastal storm damage",
+      },
+      {
+        src: "/media/use-cases/uc-deployment.png",
+        alt: "Public Works crew deploying Rise Mission Power cases and a wheeled unit outside a municipal garage at dusk on wet pavement",
+      },
+      {
+        src: "/media/markets/commercial.png",
+        alt: "Parks and facilities crew running a circular saw and bench work from portable hydrogen power at a community center construction site",
+      },
+      {
+        src: "/media/cases/municipalities.png",
+        alt: "Municipal Public Works night operation with portable hydrogen power, service truck, and floodlights in front of city services building",
       },
     ],
     applicationsIntro:
@@ -359,7 +383,7 @@ export const marketDetails: readonly MarketDetailPage[] = [
         body: "Delivered robust, low-maintenance power solutions for electrified drilling and site infrastructure.",
       },
     ],
-    galleryHeading: { before: "Commercial in", accent: "focus." },
+    galleryHeading: { before: "Built for", accent: "industry." },
     metaTitle: "Commercial",
     metaDescription:
       "Reliable power for construction sites, telecom backup, mining, and other demanding industrial applications.",
@@ -395,16 +419,28 @@ export const marketDetails: readonly MarketDetailPage[] = [
     },
     gallery: [
       {
-        src: "/media/markets/consumer.png",
-        alt: "Consumer market imagery",
+        src: "/media/markets/field-consumer.png",
+        alt: "Camper and golden retriever at a lakeside RV site at sunset while a person works on a laptop powered by a Rise portable hydrogen system on a camp table",
       },
       {
-        src: "/media/cases/homes-community.png",
-        alt: "Backup during outages and severe weather for homes, community gathering spaces, and emergency kits",
+        src: "/media/cases/homes-emergency.png",
+        alt: "Family reading together in a warmly lit living room during a nighttime storm while a Rise backup unit keeps the home powered through the wall outlet",
+      },
+      {
+        src: "/media/use-cases/uc-grid4.png",
+        alt: "Evening community gathering with string lights and a coffee truck running on clean portable power from a Rise system at dusk",
+      },
+      {
+        src: "/media/cases/disaster-response.png",
+        alt: "Disaster-relief volunteers coordinating on a map at a field desk powered by Rise equipment, with Starlink and a lantern at a damaged coastal community",
       },
       {
         src: "/media/use-cases/disaster-response.jpg",
-        alt: "Backup during outages and severe weather for homes, community gathering spaces, and emergency kits",
+        alt: "Rise-branded disaster-relief command area with hydrogen drone, water purification, and responders planning aerial surveys after a coastal catastrophe",
+      },
+      {
+        src: "/media/markets/emergency.png",
+        alt: "Utility and disaster-relief teams deploying Rise hydrogen drone and mobile power amid storm-damaged buildings and debris on a shoreline",
       },
     ],
     applicationsIntro:
@@ -538,7 +574,7 @@ export const marketDetails: readonly MarketDetailPage[] = [
         body: "Backup during outages and severe weather for homes, community gathering spaces, and emergency kits.",
       },
     ],
-    galleryHeading: { before: "Consumer in", accent: "focus." },
+    galleryHeading: { before: "Ready when", accent: "you are." },
     metaTitle: "Consumer",
     metaDescription:
       "Portable backup for camping, RV power, and emergency home use when the grid cannot be trusted.",
