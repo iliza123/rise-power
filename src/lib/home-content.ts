@@ -852,7 +852,7 @@ export const capabilities = {
       imageSrc: "/media/capabilities/safety-compliance.png",
       mobileImageSrc: "/media/capabilities/safety-compliance-mobile.png",
       imageAlt:
-        "RISE hydrogen safety inspection lab with technicians and camo power units",
+        "Rise portable power units and hydrogen cartridge on a workshop bench",
       secondaryImageSrc: "/media/use-cases/disaster-response.jpg",
       secondaryImageAlt:
         "Disaster-response camp with rubble and temporary shelters",
