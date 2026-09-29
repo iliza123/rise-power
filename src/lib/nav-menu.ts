@@ -165,7 +165,7 @@ export const megaNavItems: readonly MegaNavItem[] = [
       },
       {
         label: "Investor Deck",
-        href: "/rise-power-deck.pdf",
+        href: "/media/investors/rise-power-deck.pdf",
         description: "Download the Rise Power investor briefing (PDF).",
       },
       {

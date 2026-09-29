@@ -1,5 +1,7 @@
 import { NextResponse } from "next/server";
 
+import { sendContactEmail } from "@/lib/mail";
+
 type ContactPayload = {
   name?: string;
   email?: string;
@@ -28,6 +30,7 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Invalid request." }, { status: 400 });
   }
 
+  // Honeypot — treat bots as success without sending mail
   if (body.website) {
     return NextResponse.json({ ok: true });
   }
@@ -36,6 +39,9 @@ export async function POST(request: Request) {
   const email = body.email?.trim();
   const phone = body.phone?.trim();
   const message = body.message?.trim();
+  const company = body.company?.trim();
+  const role = body.role?.trim();
+  const useCase = body.useCase?.trim();
 
   if (!name || !email || !phone || !message) {
     return NextResponse.json({ error: "Missing required fields." }, { status: 400 });
@@ -52,15 +58,23 @@ export async function POST(request: Request) {
     );
   }
 
-  console.info("[contact]", {
-    name,
-    email,
-    phone,
-    company: body.company,
-    role: body.role,
-    useCase: body.useCase,
-    message,
-  });
+  try {
+    await sendContactEmail({
+      name,
+      email,
+      phone,
+      company,
+      role,
+      useCase,
+      message,
+    });
+  } catch (error) {
+    console.error("[contact] Failed to send email:", error);
+    return NextResponse.json(
+      { error: "Unable to send your message right now. Please try again." },
+      { status: 502 },
+    );
+  }
 
   return NextResponse.json({ ok: true });
 }

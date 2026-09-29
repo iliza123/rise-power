@@ -34,7 +34,10 @@ const systemFlow = [
 /** One Cartridge Ecosystem — Engineered As a System. */
 export function CartridgeEcosystem() {
   return (
-    <section className="relative overflow-hidden bg-[#0e1210] py-12 sm:py-14 lg:py-16">
+    <section
+      id="how-we-work"
+      className="relative scroll-mt-28 overflow-hidden bg-[#0e1210] py-12 sm:py-14 lg:py-16"
+    >
       <Image
         src="/media/products/product-ecosystem.png"
         alt="Rise Power ecosystem"

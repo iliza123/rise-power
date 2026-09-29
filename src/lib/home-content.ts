@@ -1171,7 +1171,10 @@ export const footer = {
       heading: "Investors",
       links: [
         { label: "Investor Overview", href: "/investors" },
-        { label: "Investor Deck", href: "/rise-power-deck.pdf" },
+        {
+          label: "Investor Deck",
+          href: "/media/investors/rise-power-deck.pdf",
+        },
         {
           label: "Company Brochure",
           href: "/media/brochures/rise-mission-power-brochure.pdf",
