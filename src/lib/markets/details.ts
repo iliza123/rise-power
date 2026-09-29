@@ -431,10 +431,10 @@ export const marketDetails: readonly MarketDetailPage[] = [
     },
     gallery: [
       {
-        src: "/media/markets/field-consumer.png",
-        alt: "Camper and golden retriever at a lakeside RV site at sunset while a person works on a laptop powered by a Rise portable hydrogen system on a camp table",
-        title: "Camping & RV",
-        caption: "Quiet power for the outdoors.",
+        src: "/media/markets/consumer-gallery-events.png",
+        alt: "Stacked camouflage Rise Mission Power units on wheels at an outdoor sunset festival with a stage, crowd, and sound engineer in the background",
+        title: "Events",
+        caption: "Quiet power for outdoor gatherings.",
       },
       {
         src: "/media/markets/consumer-gallery-home.png",
