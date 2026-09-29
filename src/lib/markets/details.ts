@@ -39,6 +39,12 @@ export const marketDetails: readonly MarketDetailPage[] = [
     },
     gallery: [
       {
+        src: "/media/capabilities/field-validation-secondary.png",
+        alt: "Soldier launching a tactical drone from a grassy field beside a military transport truck",
+        title: "Field Launch",
+        caption: "UAV ops powered at the edge.",
+      },
+      {
         src: "/media/use-cases/defense-security.jpg",
         alt: "Three soldiers at a mountain forward operating base at golden hour, powering comms and a tactical laptop from stacked camouflage RISE military power units",
         title: "Forward Ops",
@@ -61,12 +67,6 @@ export const marketDetails: readonly MarketDetailPage[] = [
         alt: "Hydrogen-powered RISE surveillance drone hovering over an open-pit site at sunset while operators control the flight from a rugged tablet",
         title: "Surveillance",
         caption: "Low-signature endurance for drones.",
-      },
-      {
-        src: "/media/capabilities/field-validation-secondary.png",
-        alt: "Soldier launching a tactical drone from a grassy field beside a military transport truck",
-        title: "Field Launch",
-        caption: "UAV ops powered at the edge.",
       },
     ],
     applicationsIntro:
@@ -422,7 +422,7 @@ export const marketDetails: readonly MarketDetailPage[] = [
       hero: {
         src: "/media/markets/consumer-hero.png",
         mobileSrc: "/media/markets/consumer-hero-mobile.png",
-        alt: "Rise portable power at a lakeside campsite with RV at sunset",
+        alt: "Camper using a laptop powered by Rise portable hydrogen system at a mountain overlook at sunset",
       },
       secondary: {
         src: "/media/cases/homes-emergency.png",
