@@ -435,6 +435,7 @@ export const marketDetails: readonly MarketDetailPage[] = [
         alt: "Hiker overlooking a turquoise alpine lake and snow-capped mountains at sunrise with a Rise portable power unit strapped to an orange backpack",
         title: "Trail Ready",
         caption: "Portable power for every adventure.",
+        objectPosition: "72% center",
       },
       {
         src: "/media/markets/consumer-gallery-home.png",
