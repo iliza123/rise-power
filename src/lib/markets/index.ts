@@ -5,6 +5,7 @@ export type {
   MarketCallout,
   MarketCta,
   MarketDetailPage,
+  MarketGalleryItem,
   MarketLayout,
   MarketMedia,
   MarketProduct,

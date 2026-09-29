@@ -41,26 +41,32 @@ export const marketDetails: readonly MarketDetailPage[] = [
       {
         src: "/media/use-cases/defense-security.jpg",
         alt: "Three soldiers at a mountain forward operating base at golden hour, powering comms and a tactical laptop from stacked camouflage RISE military power units",
+        title: "Forward Ops",
+        caption: "Silent power for tactical communications.",
       },
       {
         src: "/media/use-cases/uc-defence-spotlight.png",
         alt: "Specialist kneeling beside a large tactical drone under desert camouflage netting at a forward base, with flight-control gear and mission tents at dawn",
+        title: "UAV Support",
+        caption: "Range extension for ISR missions.",
       },
       {
         src: "/media/cases/defense.png",
         alt: "Soldiers launch a camouflage hexacopter at sunset over a snowy field, with rugged RISE mission power units cabled to field equipment and a tactical vehicle nearby",
+        title: "Cold Weather",
+        caption: "Mission-ready in austere climates.",
       },
       {
         src: "/media/insights/military-drone.png",
         alt: "Hydrogen-powered RISE surveillance drone hovering over an open-pit site at sunset while operators control the flight from a rugged tablet",
+        title: "Surveillance",
+        caption: "Low-signature endurance for drones.",
       },
       {
         src: "/media/insights/defense-logistics.png",
         alt: "Secure defense logistics bay with an open Pelican case of precision hardware, security safe, and controlled documentation in a gated facility",
-      },
-      {
-        src: "/media/use-cases/uc-defence-deployment.png",
-        alt: "Recon team on a high ridge at sunset with binoculars, a quadcopter overhead, Humvee support, and camouflage RISE power feeding a rugged map display",
+        title: "Logistics",
+        caption: "Cartridge resupply without diesel convoys.",
       },
     ],
     applicationsIntro:
@@ -231,26 +237,32 @@ export const marketDetails: readonly MarketDetailPage[] = [
       {
         src: "/media/capabilities/engineering.png",
         alt: "Crew using Rise Mission Power at a snowy remote job site, cutting timber and charging tools against a mountain lake backdrop",
+        title: "Remote Sites",
+        caption: "Clean power for off-grid construction.",
       },
       {
         src: "/media/markets/utilities.png",
         alt: "Lineworkers maintaining power lines from a bucket truck at a remote roadside site, powered at golden hour with mountains and forest behind",
+        title: "Utilities",
+        caption: "Backup when the line goes down.",
       },
       {
         src: "/media/markets/emergency.png",
         alt: "Utility and disaster-relief teams coordinating hydrogen drone, water purification, and portable power amid coastal storm damage",
+        title: "Emergency",
+        caption: "Rapid deploy for storm response.",
       },
       {
         src: "/media/use-cases/uc-deployment.png",
         alt: "Public Works crew deploying Rise Mission Power cases and a wheeled unit outside a municipal garage at dusk on wet pavement",
+        title: "Public Works",
+        caption: "Quiet power for night operations.",
       },
       {
         src: "/media/markets/commercial.png",
         alt: "Parks and facilities crew running a circular saw and bench work from portable hydrogen power at a community center construction site",
-      },
-      {
-        src: "/media/cases/municipalities.png",
-        alt: "Municipal Public Works night operation with portable hydrogen power, service truck, and floodlights in front of city services building",
+        title: "Job Sites",
+        caption: "Tools and lighting without generators.",
       },
     ],
     applicationsIntro:
@@ -421,26 +433,32 @@ export const marketDetails: readonly MarketDetailPage[] = [
       {
         src: "/media/markets/field-consumer.png",
         alt: "Camper and golden retriever at a lakeside RV site at sunset while a person works on a laptop powered by a Rise portable hydrogen system on a camp table",
+        title: "Camping & RV",
+        caption: "Quiet power for the outdoors.",
       },
       {
         src: "/media/cases/homes-emergency.png",
         alt: "Family reading together in a warmly lit living room during a nighttime storm while a Rise backup unit keeps the home powered through the wall outlet",
+        title: "Home Backup",
+        caption: "Keep essentials on when the grid fails.",
       },
       {
         src: "/media/use-cases/uc-grid4.png",
         alt: "Evening community gathering with string lights and a coffee truck running on clean portable power from a Rise system at dusk",
+        title: "Community",
+        caption: "Neighbourhood-ready, zero exhaust.",
       },
       {
         src: "/media/cases/disaster-response.png",
         alt: "Disaster-relief volunteers coordinating on a map at a field desk powered by Rise equipment, with Starlink and a lantern at a damaged coastal community",
+        title: "Relief Ops",
+        caption: "Field power for response teams.",
       },
       {
         src: "/media/use-cases/disaster-response.jpg",
         alt: "Rise-branded disaster-relief command area with hydrogen drone, water purification, and responders planning aerial surveys after a coastal catastrophe",
-      },
-      {
-        src: "/media/markets/emergency.png",
-        alt: "Utility and disaster-relief teams deploying Rise hydrogen drone and mobile power amid storm-damaged buildings and debris on a shoreline",
+        title: "Resilience",
+        caption: "Ready when storms hit hard.",
       },
     ],
     applicationsIntro:

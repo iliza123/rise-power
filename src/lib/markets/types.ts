@@ -4,6 +4,12 @@ export type MarketMedia = {
   mobileSrc?: string;
 };
 
+/** Gallery tile — optional hover copy (title + one short line). */
+export type MarketGalleryItem = MarketMedia & {
+  title: string;
+  caption?: string;
+};
+
 export type MarketStat = {
   value: string;
   label: string;
@@ -90,7 +96,7 @@ export type MarketDetailPage = {
     hero: MarketMedia;
     secondary: MarketMedia;
   };
-  gallery: readonly MarketMedia[];
+  gallery: readonly MarketGalleryItem[];
   applicationsIntro: string;
   applications: readonly string[];
   productsIntro: string;
