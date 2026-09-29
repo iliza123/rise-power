@@ -432,9 +432,9 @@ export const marketDetails: readonly MarketDetailPage[] = [
     gallery: [
       {
         src: "/media/markets/consumer-gallery-events.png",
-        alt: "Stacked camouflage Rise Mission Power units on wheels at an outdoor sunset festival with a stage, crowd, and sound engineer in the background",
-        title: "Events",
-        caption: "Quiet power for outdoor gatherings.",
+        alt: "Hiker overlooking a turquoise alpine lake and snow-capped mountains at sunrise with a Rise portable power unit strapped to an orange backpack",
+        title: "Trail Ready",
+        caption: "Portable power for every adventure.",
       },
       {
         src: "/media/markets/consumer-gallery-home.png",
