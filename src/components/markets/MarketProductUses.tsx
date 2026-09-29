@@ -120,7 +120,7 @@ export function MarketProductUses({
   return (
     <section
       className={[
-        "relative scroll-mt-28 overflow-hidden py-14 sm:py-16 lg:py-20 xl:py-24",
+        "relative scroll-mt-28 overflow-hidden pt-8 pb-14 sm:pt-10 sm:pb-16 lg:pt-12 lg:pb-20 xl:pt-14 xl:pb-24",
         isDark ? "bg-[#0a0f10]" : "",
       ].join(" ")}
       aria-labelledby="market-product-uses-heading"

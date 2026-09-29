@@ -444,9 +444,9 @@ export const marketDetails: readonly MarketDetailPage[] = [
       },
       {
         src: "/media/markets/consumer-gallery-cartridge.png",
-        alt: "Rise Mission Power hydrogen cylinder on a tactical case at a mountain overlook during golden hour",
-        title: "Adventure Ready",
-        caption: "Clean energy for every expedition.",
+        alt: "Rise hydrogen cartridges and open hard case on a medical table in a clinic with healthcare workers treating a patient in the background",
+        title: "Cartridge Ready",
+        caption: "Clean fuel when you need it most.",
       },
       {
         src: "/media/markets/consumer-gallery-patio.png",

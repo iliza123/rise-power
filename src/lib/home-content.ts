@@ -620,7 +620,7 @@ export const capabilities = {
         },
         {
           src: "/media/capabilities/engineering-focus-3.png",
-          alt: "Fielded Rise Power hardware in operational use",
+          alt: "Construction crew operating a survey drone and tablet controls at an active build site",
         },
       ],
       deliverablesIntro:

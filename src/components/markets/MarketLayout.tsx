@@ -93,6 +93,7 @@ export function MarketLayout({ market }: { market: MarketDetailPage }) {
       <MarketGallerySection
         heading={market.galleryHeading}
         items={market.gallery}
+        variant={market.layout}
       />
 
       <MarketProductUses section={market.productUses} tone="light" />
