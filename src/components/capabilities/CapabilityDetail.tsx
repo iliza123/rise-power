@@ -289,8 +289,8 @@ export function CapabilityDetail({ capability }: CapabilityDetailProps) {
         </div>
       </section>
 
-      {/* 3. What We Deliver — skipped on Field (map replaces lower page) */}
-      {capability.id !== "field" ? (
+      {/* 3. What We Deliver — skipped on Field (map) and Safety */}
+      {capability.id !== "field" && capability.id !== "safety" ? (
       <section
         className="relative overflow-hidden border-t py-7 sm:py-8 lg:py-9"
         style={{ background: "#f3f0e8", borderColor: SECTION_RULE }}
@@ -340,11 +340,13 @@ export function CapabilityDetail({ capability }: CapabilityDetailProps) {
           <Reveal
             variant="right"
             delay={80}
-            className="min-w-0 self-start lg:justify-self-end"
+            className={`min-w-0 w-full ${
+              capability.id === "engineering" ? "self-center" : "self-start"
+            }`}
           >
             {capability.id === "engineering" ? (
-              <div className="relative mx-auto w-full max-w-[420px] sm:max-w-[480px] lg:mx-0 lg:max-w-none lg:w-full">
-                <div className="relative aspect-[1672/941] w-full overflow-hidden rounded-[7px] bg-[#efebe3]">
+              <div className="relative w-full">
+                <div className="relative aspect-[1672/941] w-full overflow-hidden rounded-[7px] bg-[#e8e4db]">
                   <Image
                     src={capability.images.secondary.src}
                     alt={capability.images.secondary.alt}
@@ -352,6 +354,7 @@ export function CapabilityDetail({ capability }: CapabilityDetailProps) {
                     sizes="(min-width: 1024px) 40vw, 90vw"
                     className="object-contain object-center"
                     quality={95}
+                    priority
                   />
                 </div>
               </div>
@@ -420,7 +423,47 @@ export function CapabilityDetail({ capability }: CapabilityDetailProps) {
         </section>
       ) : null}
 
-      {/* 4. Certification roadmap — safety only */}
+      {/* 4. In Focus gallery — skipped on Field; before roadmap on Safety */}
+      {capability.id !== "field" ? (
+      <section className={`overflow-hidden bg-white ${SECTION_PAD}`}>
+        <div className="mx-auto max-w-[1440px] px-6 lg:px-10">
+          <Reveal variant="up">
+            <SectionEyebrow>In Focus</SectionEyebrow>
+            <h2 className="mt-2.5 max-w-3xl type-section-h2">
+              {galleryCopy.before}{" "}
+              <span style={{ color: SAGE }}>{galleryCopy.accent}</span>
+            </h2>
+          </Reveal>
+
+          <div className="mt-5 grid grid-cols-1 gap-3 sm:mt-6 sm:grid-cols-3 sm:gap-3 lg:gap-4">
+            {capability.gallery.map((item, index) => (
+              <Reveal
+                key={item.src}
+                variant="fade"
+                delay={index * 70}
+                className="min-w-0"
+              >
+                <div className="relative aspect-[16/10] overflow-hidden bg-[#101820]">
+                  <Image
+                    src={item.src}
+                    alt={item.alt}
+                    fill
+                    sizes="(min-width: 1024px) 33vw, (min-width: 640px) 33vw, 100vw"
+                    className={
+                      isSchematicAsset(item.src)
+                        ? "object-contain object-center transition-transform duration-700 hover:scale-[1.02]"
+                        : "object-cover transition-transform duration-700 hover:scale-[1.03]"
+                    }
+                  />
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+      ) : null}
+
+      {/* 5. Certification roadmap — safety only */}
       {capability.showRoadmap ? (
         <section className={`relative overflow-hidden bg-white ${SECTION_PAD}`}>
           <div className="relative mx-auto max-w-[1440px] px-6 lg:px-10">
@@ -474,46 +517,6 @@ export function CapabilityDetail({ capability }: CapabilityDetailProps) {
             </div>
           </div>
         </section>
-      ) : null}
-
-      {/* 5. In Focus gallery — skipped on Field */}
-      {capability.id !== "field" ? (
-      <section className={`overflow-hidden bg-white ${SECTION_PAD}`}>
-        <div className="mx-auto max-w-[1440px] px-6 lg:px-10">
-          <Reveal variant="up">
-            <SectionEyebrow>In Focus</SectionEyebrow>
-            <h2 className="mt-2.5 max-w-3xl type-section-h2">
-              {galleryCopy.before}{" "}
-              <span style={{ color: SAGE }}>{galleryCopy.accent}</span>
-            </h2>
-          </Reveal>
-
-          <div className="mt-5 grid grid-cols-1 gap-3 sm:mt-6 sm:grid-cols-3 sm:gap-3 lg:gap-4">
-            {capability.gallery.map((item, index) => (
-              <Reveal
-                key={item.src}
-                variant="fade"
-                delay={index * 70}
-                className="min-w-0"
-              >
-                <div className="relative aspect-[16/10] overflow-hidden bg-[#101820]">
-                  <Image
-                    src={item.src}
-                    alt={item.alt}
-                    fill
-                    sizes="(min-width: 1024px) 33vw, (min-width: 640px) 33vw, 100vw"
-                    className={
-                      isSchematicAsset(item.src)
-                        ? "object-contain object-center transition-transform duration-700 hover:scale-[1.02]"
-                        : "object-cover transition-transform duration-700 hover:scale-[1.03]"
-                    }
-                  />
-                </div>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
       ) : null}
 
       {/* 6. Related capabilities — skipped on Field */}

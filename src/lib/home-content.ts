@@ -858,16 +858,16 @@ export const capabilities = {
         "Disaster-response camp with rubble and temporary shelters",
       gallery: [
         {
-          src: "/media/capabilities/safety-compliance.png",
-          alt: "RISE hydrogen safety inspection lab with H2 testing rack",
+          src: "/media/capabilities/safety-practice-1.png",
+          alt: "Rise portable power unit beside a large drone on an airfield at sunset",
         },
         {
-          src: "/media/products/product-sentinal.png",
-          alt: "Couple cooking at a campsite",
+          src: "/media/capabilities/safety-practice-2.png",
+          alt: "Rise portable power and hydrogen cartridge powering devices at a lakeside campsite",
         },
         {
-          src: "/media/cases/emergency.png",
-          alt: "Soldiers in a field deployment",
+          src: "/media/capabilities/safety-practice-3.png",
+          alt: "Soldiers operating field electronics powered by Rise portable hydrogen units at dusk",
         },
       ],
       deliverablesIntro:
