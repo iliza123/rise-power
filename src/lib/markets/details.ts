@@ -64,10 +64,11 @@ export const marketDetails: readonly MarketDetailPage[] = [
         caption: "Mission-ready in austere climates.",
       },
       {
-        src: "/media/insights/military-drone.png",
-        alt: "Hydrogen-powered RISE surveillance drone hovering over an open-pit site at sunset while operators control the flight from a rugged tablet",
-        title: "Surveillance",
-        caption: "Low-signature endurance for drones.",
+        src: "/media/markets/defense-gallery-surveillance.png",
+        alt: "Rise Mission Power portable unit and hydrogen cylinder powering a desert forward operating base with soldiers, radios, and field electronics",
+        title: "Field Power",
+        caption: "Quiet energy for forward positions.",
+        objectPosition: "center 40%",
       },
     ],
     applicationsIntro:
