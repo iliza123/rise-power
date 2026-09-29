@@ -46,9 +46,10 @@ export const marketDetails: readonly MarketDetailPage[] = [
       },
       {
         src: "/media/markets/defense-gallery-1.png",
-        alt: "Rise Mission Power units at a snowy mountain outpost with a communications tower, tent, and field technicians",
-        title: "Cold Weather",
-        caption: "Mission-ready in austere climates.",
+        alt: "Rise Mission Power unit and hydrogen cylinder at a mountain forward post with a tactical operator on a rugged laptop and a communications tower nearby",
+        title: "Mountain Ops",
+        caption: "Quiet power for remote posts.",
+        objectPosition: "62% center",
       },
       {
         src: "/media/markets/defense-gallery-2.png",
@@ -241,10 +242,10 @@ export const marketDetails: readonly MarketDetailPage[] = [
         caption: "Clean fuel for field operations.",
       },
       {
-        src: "/media/markets/commercial-gallery-2.png",
-        alt: "City Public Works crew using stacked Rise Mission Power units at an open street utility vault beside a municipal truck",
-        title: "Public Works",
-        caption: "Quiet power for night operations.",
+        src: "/media/markets/commercial-gallery-4.png",
+        alt: "Disaster-relief crew using stacked Rise Mission Power units at a muddy emergency camp with water supplies and a relief truck",
+        title: "Disaster Relief",
+        caption: "Field power when infrastructure fails.",
       },
       {
         src: "/media/markets/commercial-gallery-3.png",
@@ -253,10 +254,10 @@ export const marketDetails: readonly MarketDetailPage[] = [
         caption: "Backup when the line goes down.",
       },
       {
-        src: "/media/markets/commercial-gallery-4.png",
-        alt: "Disaster-relief crew using stacked Rise Mission Power units at a muddy emergency camp with water supplies and a relief truck",
-        title: "Disaster Relief",
-        caption: "Field power when infrastructure fails.",
+        src: "/media/markets/commercial-gallery-2.png",
+        alt: "City Public Works crew using stacked Rise Mission Power units at an open street utility vault beside a municipal truck",
+        title: "Public Works",
+        caption: "Quiet power for night operations.",
       },
       {
         src: "/media/markets/commercial-gallery-5.png",
