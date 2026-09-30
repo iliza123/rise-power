@@ -124,33 +124,16 @@ export function CartridgeEcosystem() {
       id="how-we-work"
       className="relative scroll-mt-28 overflow-hidden bg-[#0e1210]"
     >
-      {/*
-        Full-bleed cover + edge vignette so the photo fades into the section
-        bg instead of reading as a hard-cropped rectangle.
-      */}
+      {/* Full-bleed cover — uniform scale only (object-cover), no stretch. */}
       <div className="relative aspect-[2.55/1] w-full overflow-hidden sm:aspect-[2.7/1] lg:aspect-[2.9/1]">
         <Image
           src="/media/products/product-ecosystem.png"
-          alt="Rise Power products — drone, portable power systems, and hydrogen fuel cell on display"
+          alt="Rise Power portable power station and hydrogen cartridge on display"
           fill
           quality={92}
           sizes="100vw"
           className="object-cover object-[center_48%]"
           priority
-        />
-
-        {/* Soft shadow / fade on all four edges into #0e1210 */}
-        <div
-          aria-hidden
-          className="pointer-events-none absolute inset-0"
-          style={{
-            boxShadow: "inset 0 0 24px 8px #0e1210",
-            background: `
-              linear-gradient(to right, #0e1210 0%, transparent 4%, transparent 96%, #0e1210 100%),
-              linear-gradient(to bottom, #0e1210 0%, transparent 5%, transparent 95%, #0e1210 100%),
-              radial-gradient(ellipse 78% 70% at 50% 50%, transparent 55%, transparent 72%, #0e1210 100%)
-            `,
-          }}
         />
 
         {/* Desktop overlays — pin intro left, flow list right */}
