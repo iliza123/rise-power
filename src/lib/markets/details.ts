@@ -219,7 +219,7 @@ export const marketDetails: readonly MarketDetailPage[] = [
       "Reliable power for construction sites, telecom backup, mining, and other demanding industrial applications.",
     overview: {
       eyebrow: "Commercial",
-      headingBefore: "Construction Sites, Telecom Backup &",
+      headingBefore: "Construction Sites, Municipalities &",
       headingAccent: "Mining.",
     },
     href: "/markets/commercial",
@@ -270,7 +270,7 @@ export const marketDetails: readonly MarketDetailPage[] = [
       "Robust, low-maintenance hydrogen power for electrified drilling, remote site infrastructure, and off-grid operations without fuel-truck dependency.",
     applications: [
       "Construction Sites — clean backup power for everyday and emergency use with Titan",
-      "Telecom Backup — portable hydrogen power without fuel-truck dependency",
+      "Municipalities — quiet portable power for public works, emergency backup, and community infrastructure",
       "Delivered robust, low-maintenance power solutions for electrified drilling and site infrastructure",
       "Up to 5x extended flight range for inspection, mapping, public safety, and remote operations",
       "Swap a cartridge and restore full runtime without tools or specialized training",
@@ -388,8 +388,8 @@ export const marketDetails: readonly MarketDetailPage[] = [
         body: "Clean backup power for everyday and emergency use. 1.5 kW capacity, 40 lb portable weight, and unlimited runtime with refillable hydrogen cartridges.",
       },
       {
-        title: "Telecom Backup",
-        body: "Reliable power for construction sites, telecom backup, mining, and other demanding industrial applications.",
+        title: "Municipalities",
+        body: "Quiet portable power for public works, emergency backup, and community infrastructure when the grid cannot be trusted.",
       },
       {
         title: "Mining",

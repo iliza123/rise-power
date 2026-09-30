@@ -22,9 +22,9 @@ export type MegaNavItem = {
 
 /**
  * Primary navigation — client proposed main nav:
- * About | Defence | Consumer | Commercial | Capabilities | Investors | Resources | Careers
+ * About | Defence | Consumer | Commercial | Products | Capabilities | Investors | Resources | Careers
  *
- * Previous items (Products, Case Studies) are commented out as backup — do not delete.
+ * Previous mega-menu Products item and Case Studies are commented out as backup — do not delete.
  */
 export const megaNavItems: readonly MegaNavItem[] = [
   // {
@@ -119,6 +119,11 @@ export const megaNavItems: readonly MegaNavItem[] = [
   {
     label: "Commercial",
     href: "/markets/commercial",
+  },
+  /* No links → no desktop chevron / no mobile accordion */
+  {
+    label: "Products",
+    href: "/products",
   },
 
   {

@@ -308,7 +308,7 @@ const glanceItems = [
   {
     number: "03",
     title: "Parent",
-    lead: "Subsidiary of CIMtech Green Energy.",
+    lead: "Rise Mission Power is a subsidiary of CIMtech Green Energy.",
     detail: "20+ years of Canadian advanced manufacturing.",
     icon: BuildingIcon,
   },

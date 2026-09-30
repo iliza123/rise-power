@@ -132,7 +132,7 @@ export function CartridgeEcosystem() {
       <div className="relative aspect-[2.7/1] w-full overflow-hidden sm:aspect-[2.9/1] lg:aspect-[3.1/1]">
         {/* Wider + offset wrapper so a rightward shift is actually visible
             (wide aspect frames only crop top/bottom, so object-position X alone does nothing). */}
-        <div className="absolute inset-y-0 -right-[6%] left-auto w-[112%]">
+        <div className="absolute inset-y-0 -right-[12%] left-auto w-[118%]">
           <Image
             src="/media/products/product-ecosystem.png"
             alt="Rise Power products — drone, portable power systems, and hydrogen fuel cell on display"
@@ -144,19 +144,17 @@ export function CartridgeEcosystem() {
           />
         </div>
 
-        {/* Desktop overlays */}
+        {/* Desktop overlays — pin intro left, flow list right */}
         <div className="pointer-events-none absolute inset-0 hidden lg:block">
-          <div className="pointer-events-auto mx-auto grid h-full w-full max-w-[1716px] grid-cols-[minmax(320px,1.05fr)_minmax(0,1fr)_minmax(280px,0.98fr)] items-center gap-8 px-12 xl:gap-10">
+          <div className="pointer-events-auto flex h-full w-full items-center justify-between gap-8 px-6 xl:px-10 2xl:px-14">
             <Reveal
               variant="left"
-              className="relative max-w-[26rem] justify-self-start xl:max-w-[28rem]"
+              className="relative w-full max-w-[26rem] shrink-0 xl:max-w-[28rem]"
             >
               <IntroCard />
             </Reveal>
 
-            <div aria-hidden />
-
-            <div className="justify-self-end">
+            <div className="shrink-0">
               <SystemFlowList />
             </div>
           </div>
