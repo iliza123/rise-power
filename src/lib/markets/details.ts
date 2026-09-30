@@ -53,9 +53,9 @@ export const marketDetails: readonly MarketDetailPage[] = [
       },
       {
         src: "/media/markets/defense-gallery-2.png",
-        alt: "Rise Mission Power octocopter on a rocky mountain ridge at golden hour with an operator running flight control from rugged cases nearby",
-        title: "UAV Support",
-        caption: "Range extension for ISR missions.",
+        alt: "Stacked Military Edition Rise Mission Power units on wheels at a snowy mountain field camp with soldiers and a command tent",
+        title: "Cold Weather",
+        caption: "Mission-ready in austere climates.",
       },
       {
         src: "/media/markets/defense-gallery-3.png",
