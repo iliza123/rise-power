@@ -86,12 +86,6 @@ export default function MarketsPage() {
               Request a Briefing
               <ArrowRight className="size-5 shrink-0" aria-hidden />
             </Link>
-            <Link
-              href="#markets"
-              className="inline-flex min-h-12 items-center justify-center gap-2 rounded-sm border border-white/50 px-7 text-sm font-semibold tracking-wide text-white uppercase transition-colors hover:bg-white/10"
-            >
-              Explore Markets
-            </Link>
           </div>
         </div>
       </StackedPageHero>

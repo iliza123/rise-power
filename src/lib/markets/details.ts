@@ -4,7 +4,7 @@ import type { MarketDetailPage } from "./types";
  * Market detail pages — copy is quoted from existing site sources only:
  * - `threeMarkets` + `featuredProducts` + `customerPartners` (home-content)
  * - `products` + `stats` + Homes use-case lines (content.ts)
- * - Live Defence & Security use case (`_content-inventory/live-pages/use-cases.json`)
+ * - Live Defense & Security use case (`_content-inventory/live-pages/use-cases.json`)
  *
  * Do not invent marketing claims here.
  */
@@ -13,16 +13,16 @@ export const marketDetails: readonly MarketDetailPage[] = [
     slug: "defense",
     id: "defense",
     layout: "defense",
-    label: "Defence",
+    label: "Defense",
     title: "Military & Defence",
-    eyebrow: "Defence",
+    eyebrow: "Defense",
     heading:
       "Silent hydrogen power for tactical communications, UAV operations, and ISR systems in forward deployments.",
     body: "Ultra-quiet, zero-emission power with rapid cartridge swaps for mission-critical operations where diesel logistics and acoustic signature are unacceptable.",
     heroBody:
       "Silent portable power for bases, troops, and surveillance drones. Reduces reliance on fuel convoys. Eliminates the acoustic, thermal, and emissions signatures that compromise operational security.",
     overview: {
-      eyebrow: "Defence",
+      eyebrow: "Defense",
       headingBefore: "Tactical Communications, UAV Operations &",
       headingAccent: "ISR Systems.",
     },
@@ -73,9 +73,9 @@ export const marketDetails: readonly MarketDetailPage[] = [
     applicationsIntro:
       "Ultra-quiet, zero-emission power with rapid cartridge swaps for mission-critical operations where diesel logistics and acoustic signature are unacceptable.",
     applications: [
-      "Deploy Rise-Sentinel or Rise-Titan to forward positions",
+      "Deploy Sentinel or Titan to forward positions",
       "Operate communications and surveillance equipment silently",
-      "Extend drone ISR missions with Rise-Falcon range extender",
+      "Extend drone ISR missions with Falcon range extender",
       "Swap fuel cartridges for extended mission duration",
       "Maintain zero thermal and acoustic signature",
     ],
@@ -83,28 +83,28 @@ export const marketDetails: readonly MarketDetailPage[] = [
       "Four portable hydrogen systems. One refillable cartridge ecosystem.",
     products: [
       {
-        name: "Rise-Sentinel",
+        name: "Rise Sentinel™",
         tagline: "Power Cube for everyday backup",
         body: "Compact hydrogen power for everyday backup and outdoor use. Quiet, plug-and-play setup with refillable hydrogen cartridges. Lightweight and easy to carry — no grid connection required.",
         href: "/products#sentinel",
         imageSrc: "/media/use-cases/uc-product-sentinel.png",
-        imageAlt: "Rise-Sentinel portable hydrogen power system",
+        imageAlt: "Rise Sentinel portable hydrogen power system",
       },
       {
-        name: "Rise-Falcon",
+        name: "Rise Falcon™",
         tagline: "Drone range extender",
         body: "Plug-and-play hydrogen range extender for compatible drones. Up to 5x extended flight range with low-noise, zero-emission operation and quick-swap hydrogen cartridges.",
         href: "/products#falcon",
         imageSrc: "/media/use-cases/uc-product-falcon.png",
-        imageAlt: "Rise-Falcon hydrogen drone range extender",
+        imageAlt: "Rise Falcon hydrogen drone range extender",
       },
       {
-        name: "Rise-Titan",
+        name: "Rise Titan™",
         tagline: "1.5 kW portable generator",
         body: "Clean backup power for everyday and emergency use. 1.5 kW capacity, 40 lb portable weight, and unlimited runtime with refillable hydrogen cartridges.",
         href: "/products#titan",
         imageSrc: "/media/use-cases/uc-product-titan.png",
-        imageAlt: "Rise-Titan portable hydrogen generator",
+        imageAlt: "Rise Titan portable hydrogen generator",
       },
       {
         name: "Hydrogen Cartridge Kit",
@@ -131,34 +131,34 @@ export const marketDetails: readonly MarketDetailPage[] = [
         "Drone range extension up to 5×",
       ],
       featuredProducts: [
-        { label: "Rise-Sentinel", href: "/products#sentinel" },
-        { label: "Rise-Falcon", href: "/products#falcon" },
-        { label: "Rise-Titan", href: "/products#titan" },
+        { label: "Sentinel", href: "/products#sentinel" },
+        { label: "Falcon", href: "/products#falcon" },
+        { label: "Titan", href: "/products#titan" },
       ],
     },
     productUses: {
       eyebrow: "Systems",
-      headingBefore: "Silent Power,",
-      headingAccent: "Where It Matters.",
+      headingBefore: "Products Built",
+      headingAccent: "For This Theater.",
       intro:
-        "Silent portable power for bases, troops, and surveillance drones — Rise-Sentinel, Rise-Falcon, and Rise-Titan sized to the mission.",
+        "Silent portable power for bases, troops, and surveillance drones — Sentinel, Falcon, and Titan sized to the mission.",
       items: [
         {
           slug: "sentinel",
           role: "Forward node power",
-          body: "Deploy Rise-Sentinel to forward positions for communications and surveillance equipment. Lightweight, silent, and cartridge-refueled when diesel logistics are unacceptable.",
+          body: "Deploy Sentinel to forward positions for communications and surveillance equipment. Lightweight, silent, and cartridge-refueled when diesel logistics are unacceptable.",
           imageSrc: "/media/markets/defense-product-sentinel.png",
         },
         {
           slug: "falcon",
           role: "ISR range extension",
-          body: "Extend drone ISR missions with Rise-Falcon. Up to 5× flight range with low-noise, zero-emission operation and quick-swap hydrogen cartridges.",
+          body: "Extend drone ISR missions with Falcon. Up to 5× flight range with low-noise, zero-emission operation and quick-swap hydrogen cartridges.",
           imageSrc: "/media/markets/defense-product-falcon.png",
         },
         {
           slug: "titan",
           role: "FOB & base power",
-          body: "Deploy Rise-Titan where loads exceed a Power Cube — 1.5 kW portable generation for bases and heavier tactical equipment with unlimited runtime via cartridge swap.",
+          body: "Deploy Titan where loads exceed a Power Cube — 1.5 kW portable generation for bases and heavier tactical equipment with unlimited runtime via cartridge swap.",
           imageSrc: "/media/markets/defense-product-titan.png",
         },
       ],
@@ -193,7 +193,7 @@ export const marketDetails: readonly MarketDetailPage[] = [
       },
       {
         title: "UAV Operations",
-        body: "Extend drone ISR missions with Rise-Falcon range extender.",
+        body: "Extend drone ISR missions with Falcon range extender.",
       },
       {
         title: "ISR Systems",
@@ -219,7 +219,7 @@ export const marketDetails: readonly MarketDetailPage[] = [
       "Reliable power for construction sites, telecom backup, mining, and other demanding industrial applications.",
     overview: {
       eyebrow: "Commercial",
-      headingBefore: "Construction Sites, Municipalities &",
+      headingBefore: "Construction Sites, Telecom Backup &",
       headingAccent: "Mining.",
     },
     href: "/markets/commercial",
@@ -231,7 +231,7 @@ export const marketDetails: readonly MarketDetailPage[] = [
       },
       secondary: {
         src: "/media/cases/mining.png",
-        alt: "Military operations — soldiers guiding a tactical drone load at a desert forward site",
+        alt: "Mining company case study",
       },
     },
     gallery: [
@@ -269,8 +269,8 @@ export const marketDetails: readonly MarketDetailPage[] = [
     applicationsIntro:
       "Robust, low-maintenance hydrogen power for electrified drilling, remote site infrastructure, and off-grid operations without fuel-truck dependency.",
     applications: [
-      "Construction Sites — clean backup power for everyday and emergency use with Rise-Titan",
-      "Municipalities — quiet backup for public works and community facilities",
+      "Construction Sites — clean backup power for everyday and emergency use with Titan",
+      "Telecom Backup — portable hydrogen power without fuel-truck dependency",
       "Delivered robust, low-maintenance power solutions for electrified drilling and site infrastructure",
       "Up to 5x extended flight range for inspection, mapping, public safety, and remote operations",
       "Swap a cartridge and restore full runtime without tools or specialized training",
@@ -279,28 +279,28 @@ export const marketDetails: readonly MarketDetailPage[] = [
       "Four portable hydrogen systems. One refillable cartridge ecosystem.",
     products: [
       {
-        name: "Rise-Titan",
+        name: "Rise Titan™",
         tagline: "1.5 kW portable generator",
         body: "Clean backup power for everyday and emergency use. 1.5 kW capacity, 40 lb portable weight, and unlimited runtime with refillable hydrogen cartridges.",
         href: "/products#titan",
         imageSrc: "/media/use-cases/uc-product-titan.png",
-        imageAlt: "Rise-Titan portable hydrogen generator",
+        imageAlt: "Rise Titan portable hydrogen generator",
       },
       {
-        name: "Rise-Falcon",
+        name: "Rise Falcon™",
         tagline: "Drone range extender",
         body: "Plug-and-play hydrogen range extender for compatible drones. Up to 5x extended flight range with low-noise, zero-emission operation and quick-swap hydrogen cartridges.",
         href: "/products#falcon",
         imageSrc: "/media/use-cases/uc-product-falcon.png",
-        imageAlt: "Rise-Falcon hydrogen drone range extender",
+        imageAlt: "Rise Falcon hydrogen drone range extender",
       },
       {
-        name: "Rise-Sentinel",
+        name: "Rise Sentinel™",
         tagline: "Power Cube for everyday backup",
         body: "Compact hydrogen power for everyday backup and outdoor use. Quiet, plug-and-play setup with refillable hydrogen cartridges. Lightweight and easy to carry — no grid connection required.",
         href: "/products#sentinel",
         imageSrc: "/media/use-cases/uc-product-sentinel.png",
-        imageAlt: "Rise-Sentinel portable hydrogen power system",
+        imageAlt: "Rise Sentinel portable hydrogen power system",
       },
       {
         name: "Hydrogen Cartridge Kit",
@@ -327,9 +327,9 @@ export const marketDetails: readonly MarketDetailPage[] = [
         "Drone range extension up to 5×",
       ],
       featuredProducts: [
-        { label: "Rise-Titan", href: "/products#titan" },
-        { label: "Rise-Falcon", href: "/products#falcon" },
-        { label: "Rise-Sentinel", href: "/products#sentinel" },
+        { label: "Titan", href: "/products#titan" },
+        { label: "Falcon", href: "/products#falcon" },
+        { label: "Sentinel", href: "/products#sentinel" },
       ],
     },
     productUses: {
@@ -368,7 +368,7 @@ export const marketDetails: readonly MarketDetailPage[] = [
       },
       {
         value: "40 lb",
-        label: "Rise-Titan portable generator weight",
+        label: "Titan portable generator weight",
         body: "40 lb portable weight · 24 × 18 × 24 in",
       },
       {
@@ -388,8 +388,8 @@ export const marketDetails: readonly MarketDetailPage[] = [
         body: "Clean backup power for everyday and emergency use. 1.5 kW capacity, 40 lb portable weight, and unlimited runtime with refillable hydrogen cartridges.",
       },
       {
-        title: "Municipalities",
-        body: "Quiet backup for public works, community facilities, and essential municipal services when the grid cannot be trusted.",
+        title: "Telecom Backup",
+        body: "Reliable power for construction sites, telecom backup, mining, and other demanding industrial applications.",
       },
       {
         title: "Mining",
@@ -466,7 +466,7 @@ export const marketDetails: readonly MarketDetailPage[] = [
     applicationsIntro:
       "Quiet neighbourhood-ready operation with zero exhaust at the point of use. Refillable cartridges swap in under 30 seconds.",
     applications: [
-      "Keep Rise-Sentinel or Rise-Titan ready in home and community emergency kits",
+      "Keep Sentinel or Titan ready in home and community emergency kits",
       "Portable backup for camping, RV power, and emergency home use when the grid cannot be trusted",
       "Power lights, laptops, charging, and essential small devices",
       "Stockpile cartridges indefinitely for seasonal readiness",
@@ -476,28 +476,28 @@ export const marketDetails: readonly MarketDetailPage[] = [
       "Compact hydrogen power for everyday backup and outdoor use. Quiet, plug-and-play setup with refillable hydrogen cartridges.",
     products: [
       {
-        name: "Rise-Sentinel",
+        name: "Rise Sentinel™",
         tagline: "Power Cube for everyday backup",
         body: "Compact hydrogen power for everyday backup and outdoor use. Quiet, plug-and-play setup with refillable hydrogen cartridges. Lightweight and easy to carry — no grid connection required.",
         href: "/products#sentinel",
         imageSrc: "/media/use-cases/uc-product-sentinel.png",
-        imageAlt: "Rise-Sentinel portable hydrogen power system",
+        imageAlt: "Rise Sentinel portable hydrogen power system",
       },
       {
-        name: "Rise-Titan",
+        name: "Rise Titan™",
         tagline: "1.5 kW portable generator",
         body: "Clean backup power for everyday and emergency use. 1.5 kW capacity, 40 lb portable weight, and unlimited runtime with refillable hydrogen cartridges.",
         href: "/products#titan",
         imageSrc: "/media/use-cases/uc-product-titan.png",
-        imageAlt: "Rise-Titan portable hydrogen generator",
+        imageAlt: "Rise Titan portable hydrogen generator",
       },
       {
-        name: "Rise-Falcon",
+        name: "Rise Falcon™",
         tagline: "Drone range extender",
         body: "Plug-and-play hydrogen range extender for compatible drones. Up to 5x extended flight range with low-noise, zero-emission operation and quick-swap hydrogen cartridges.",
         href: "/products#falcon",
         imageSrc: "/media/use-cases/uc-product-falcon.png",
-        imageAlt: "Rise-Falcon hydrogen drone range extender",
+        imageAlt: "Rise Falcon hydrogen drone range extender",
       },
       {
         name: "Hydrogen Cartridge Kit",
@@ -525,9 +525,9 @@ export const marketDetails: readonly MarketDetailPage[] = [
         "Drone range extension up to 5×",
       ],
       featuredProducts: [
-        { label: "Rise-Sentinel", href: "/products#sentinel" },
-        { label: "Rise-Falcon", href: "/products#falcon" },
-        { label: "Rise-Titan", href: "/products#titan" },
+        { label: "Sentinel", href: "/products#sentinel" },
+        { label: "Falcon", href: "/products#falcon" },
+        { label: "Titan", href: "/products#titan" },
       ],
     },
     productUses: {

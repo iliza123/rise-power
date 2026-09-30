@@ -75,10 +75,10 @@ export function CompanyTechnology({
 
             <div className="mt-8">
               <Link
-                href="/products"
+                href="/markets"
                 className="cta-with-icon inline-flex min-h-12 items-center justify-center gap-2 rounded-sm bg-[#849363] px-8 text-sm font-semibold tracking-wide text-white uppercase transition-opacity hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6e7f42]"
               >
-                <span className="leading-none">Explore Products</span>
+                <span className="leading-none">Explore Markets</span>
                 <ArrowRight
                   className="size-4 shrink-0 sm:size-5"
                   aria-hidden="true"

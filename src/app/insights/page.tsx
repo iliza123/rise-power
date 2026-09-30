@@ -98,13 +98,13 @@ export default function InsightsPage() {
           </p>
 
           <div className="mt-7 sm:mt-8">
-            <a
-              href="#featured"
+            <Link
+              href="/contact"
               className="inline-flex min-h-12 items-center justify-center gap-2 rounded-sm bg-[#849363] px-8 text-sm font-semibold tracking-wide text-white uppercase transition-opacity hover:opacity-90"
             >
-              Browse Articles
+              Request a Briefing
               <ArrowRight className="size-4" aria-hidden="true" />
-            </a>
+            </Link>
           </div>
         </div>
       </StackedPageHero>

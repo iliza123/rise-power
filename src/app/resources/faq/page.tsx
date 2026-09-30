@@ -196,16 +196,9 @@ export default function ProcurementFaqPage() {
           </p>
 
           <div className="mt-6 flex flex-wrap items-center gap-3 sm:mt-7 sm:gap-4">
-            <a
-              href="#product-performance"
-              className="type-cta inline-flex min-h-12 items-center justify-center gap-2 rounded-sm bg-[#849363] px-7 text-white uppercase transition-opacity hover:opacity-90"
-            >
-              Browse Answers
-              <ArrowRight className="size-4 shrink-0" aria-hidden="true" />
-            </a>
             <Link
               href="/contact"
-              className="type-cta inline-flex min-h-12 items-center justify-center gap-2 rounded-sm border border-white/45 px-7 text-white uppercase transition-colors hover:bg-white/10"
+              className="type-cta inline-flex min-h-12 items-center justify-center gap-2 rounded-sm bg-[#849363] px-7 text-white uppercase transition-opacity hover:opacity-90"
             >
               Request a Briefing
               <ArrowRight className="size-4 shrink-0" aria-hidden="true" />

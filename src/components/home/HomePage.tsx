@@ -155,7 +155,7 @@ export function HomePage() {
         </div>
 
         <a
-          href="#performance-metrics"
+          href="#three-markets"
           className="absolute bottom-3 left-1/2 z-10 hidden -translate-x-1/2 flex-col items-center gap-1 text-white/75 transition-colors hover:text-white xl:flex"
           aria-label="Scroll to next section"
         >

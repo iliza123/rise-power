@@ -683,7 +683,7 @@ export default function InvestorsPage() {
           {/* View all */}
           <Reveal variant="up" delay={120} className="mt-9 flex justify-center">
             <Link
-              href="/resources"
+              href="/insights"
               className="group inline-flex min-h-[58px] items-center justify-center gap-2 rounded-[5px] bg-[#849363] px-9 text-sm font-semibold tracking-[0.04em] text-white uppercase transition-all duration-300 hover:opacity-90"
             >
               <span>View All Insights</span>

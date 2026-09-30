@@ -192,7 +192,7 @@ export const hero = {
   headlineLine2: "resilience.",
   body: "Zero-emissions portable power for municipal, emergency, field, and off-grid applications. Quiet, rapidly deployable, and engineered in British Columbia.",
   primaryCta: { label: "Request a Briefing", href: "/contact" } satisfies Cta,
-  secondaryCta: { label: "See Products", href: "/products" } satisfies Cta,
+  secondaryCta: { label: "Explore Markets", href: "/markets" } satisfies Cta,
   chips: [
     { title: "Everyday Backup", subtitle: "When the grid is down" },
     { title: "Zero Emissions", subtitle: "At point of use" },
@@ -507,7 +507,7 @@ export const capabilities = {
     headlineAccent: "",
     body: "End to end hydrogen power engineering, from concept to deployment.",
     imageSrc: "/media/capabilities/capabilities-hero.png",
-    primaryCta: { label: "Explore Capabilities", href: "#pillars" } satisfies Cta,
+    primaryCta: { label: "Explore Markets", href: "/markets" } satisfies Cta,
     secondaryCta: { label: "Request a Briefing", href: "/contact" } satisfies Cta,
   },
   atmosphere: {
@@ -934,7 +934,7 @@ export const hydrogenEcosystem = {
   imageSrc: "/media/home/one-hydrogen-ecosystem.png",
   imageAlt:
     "One hydrogen ecosystem diagram showing Rise Mission Power systems for UAV range extender, tactical generator, home backup, outdoor, commercial, and portable field power",
-  cta: { label: "Explore Products", href: "/products" },
+  cta: { label: "Explore Markets", href: "/markets" },
 };
 
 /** Expanded network story — placed below SAME HYDROGEN on home. */
@@ -1090,11 +1090,11 @@ export const businessesCompanies = {
 
 export const closingCta = {
   headingBefore: "REQUEST A",
-  headingAccent: "PRODUCT TRIAL.",
-  body: "We welcome municipalities, utilities, and community partners to explore product trials and clean-energy pilot programs. Tell us your backup or field power need and we will respond with specs and a deployment summary.",
+  headingAccent: "BRIEFING.",
+  body: "Tell us your backup or field power need. We will respond with specs, runtime guidance, and a deployment summary for your program.",
   panelEyebrow: "READY TO DISCUSS YOUR REQUIREMENTS?",
   primaryCta: { label: "REQUEST A BRIEFING", href: "/contact" } satisfies Cta,
-  secondaryCta: { label: "VIEW PRODUCTS", href: "/products" } satisfies Cta,
+  secondaryCta: { label: "EXPLORE MARKETS", href: "/markets" } satisfies Cta,
   chips: [
     { title: "ZERO EMISSIONS", subtitle: "Clean power at point of use." },
     { title: "QUIET OPERATION", subtitle: "Neighbourhood and public-space ready." },

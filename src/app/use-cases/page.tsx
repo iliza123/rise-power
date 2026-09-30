@@ -403,21 +403,13 @@ export default function UseCasesPage() {
           </p>
 
           <div className="mt-6 flex flex-col gap-3 sm:mt-7 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
-            <a
-              href="#use-cases"
+            <Link
+              href="/contact"
               className="type-cta inline-flex min-h-12 items-center justify-center gap-2 rounded-sm bg-[#849363] px-8 text-white uppercase transition-opacity hover:opacity-90"
             >
-              Explore Case Studies
+              Request a Briefing
               <ArrowRight className="size-5" />
-            </a>
-
-            <a
-              href="#products"
-              className="type-cta inline-flex min-h-12 items-center justify-center gap-2 rounded-sm border border-white/50 px-8 text-white uppercase transition-colors hover:bg-white/10"
-            >
-              View Products
-              <ArrowRight className="size-5" />
-            </a>
+            </Link>
           </div>
         </div>
       </StackedPageHero>

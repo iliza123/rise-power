@@ -246,20 +246,13 @@ export default function ResourcesPage() {
           </p>
 
           <div className="mt-7 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:gap-4">
-            <a
-              href="#destinations"
-              className="cta-with-icon inline-flex min-h-12 items-center justify-center gap-2 rounded-sm bg-[#849363] px-8 text-sm font-semibold tracking-wide text-white uppercase transition-opacity hover:opacity-90"
-            >
-              <span className="leading-none">Browse Destinations</span>
-              <ArrowRight className="size-4 shrink-0 sm:size-5" />
-            </a>
-            <a
+            <Link
               href="/contact"
-              className="cta-with-icon inline-flex min-h-12 items-center justify-center gap-2 rounded-sm border border-white/50 px-7 text-sm font-semibold tracking-wide text-white uppercase transition-colors hover:bg-white/10"
+              className="cta-with-icon inline-flex min-h-12 items-center justify-center gap-2 rounded-sm bg-[#849363] px-8 text-sm font-semibold tracking-wide text-white uppercase transition-opacity hover:opacity-90"
             >
               <span className="leading-none">Request a Briefing</span>
               <ArrowRight className="size-4 shrink-0 sm:size-5" />
-            </a>
+            </Link>
           </div>
         </div>
       </StackedPageHero>
