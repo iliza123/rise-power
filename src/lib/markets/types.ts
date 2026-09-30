@@ -105,7 +105,7 @@ export type MarketDetailPage = {
   products: readonly MarketProduct[];
   /** Use-cases-style image + feature card block */
   spotlight: MarketSpotlight;
-  /** How Sentinel, Falcon, and Titan are used in this market */
+  /** How Rise-Sentinel, Rise-Falcon, and Rise-Titan are used in this market */
   productUses: MarketProductUsesSection;
   cta: MarketCta;
   stats: readonly MarketStat[];

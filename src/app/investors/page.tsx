@@ -530,7 +530,7 @@ export default function InvestorsPage() {
             >
               <Image
                 src="/media/investors/investor-why.png"
-                alt="Titan on rocky ground with a soldier and mountains"
+                alt="Rise-Titan on rocky ground with a soldier and mountains"
                 fill
                 sizes="(min-width: 1024px) 45vw, 100vw"
                 className="object-cover object-center"

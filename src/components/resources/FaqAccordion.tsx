@@ -17,7 +17,7 @@ function AnswerBody({ text }: { text: string }) {
   if (text.includes("listed on Company One Pager")) {
     return (
       <>
-        Rise Sentinel™, Rise Falcon™, Rise Titan™, and the Hydrogen Cartridge
+        Rise-Sentinel, Rise-Falcon, Rise-Titan, and the Hydrogen Cartridge
         Kit. Specs and engineering targets are listed on{" "}
         <Link
           href="/datasheets"

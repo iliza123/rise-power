@@ -365,7 +365,7 @@ export default function UseCasesPage() {
     {
       icon: Box,
       label: "System",
-      value: "Rise Sentinel™ / Rise Titan™",
+      value: "Rise-Sentinel / Rise-Titan",
     },
     {
       icon: Settings2,
@@ -385,7 +385,7 @@ export default function UseCasesPage() {
         layout="split"
         imageSrc="/media/use-cases/uc-hero.png"
         mobileImageSrc="/media/use-cases/uc-hero-mobile.png"
-        imageAlt="Rise Sentinel and hydrogen cartridge on a workshop floor"
+        imageAlt="Rise-Sentinel and hydrogen cartridge on a workshop floor"
         imageWidth={3840}
         imageHeight={1300}
         tone="#0a0f10"
@@ -595,9 +595,9 @@ export default function UseCasesPage() {
 
                   <div className="mt-4 grid grid-cols-1 gap-2.5 sm:grid-cols-3">
                     {[
-                      { label: "Sentinel", href: "/products#sentinel" },
-                      { label: "Falcon", href: "/products#falcon" },
-                      { label: "Titan", href: "/products#titan" },
+                      { label: "Rise-Sentinel", href: "/products#sentinel" },
+                      { label: "Rise-Falcon", href: "/products#falcon" },
+                      { label: "Rise-Titan", href: "/products#titan" },
                     ].map((product) => (
                       <Link
                         key={product.href}
@@ -682,9 +682,9 @@ export default function UseCasesPage() {
 
                 <div className="mt-4 grid grid-cols-1 gap-2.5 sm:grid-cols-3">
                   {[
-                    { label: "Sentinel", href: "/products#sentinel" },
-                    { label: "Falcon", href: "/products#falcon" },
-                    { label: "Titan", href: "/products#titan" },
+                    { label: "Rise-Sentinel", href: "/products#sentinel" },
+                    { label: "Rise-Falcon", href: "/products#falcon" },
+                    { label: "Rise-Titan", href: "/products#titan" },
                   ].map((product) => (
                     <Link
                       key={product.href}

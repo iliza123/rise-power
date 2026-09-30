@@ -66,19 +66,19 @@ const destinations = [
 
 const systems = [
   {
-    name: "Rise Sentinel™",
+    name: "Rise-Sentinel",
     label: "Power Cube",
     href: "/datasheets#sentinel",
     image: "/media/products/product-sentinal2.png",
   },
   {
-    name: "Rise Falcon™",
+    name: "Rise-Falcon",
     label: "Drone range extender",
     href: "/datasheets#falcon",
     image: "/media/products/product-falcon2.png",
   },
   {
-    name: "Rise Titan™",
+    name: "Rise-Titan",
     label: "1.5 kW portable generator",
     href: "/datasheets#titan",
     image: "/media/products/product-titan2.png",

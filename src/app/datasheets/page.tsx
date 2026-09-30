@@ -23,9 +23,9 @@ const products: DatasheetProduct[] = [
   {
     number: "01",
     id: "sentinel",
-    name: "Rise Sentinel™",
+    name: "Rise-Sentinel",
     image: "/media/datasheets/datasheet-1.png",
-    imageAlt: "Rise Sentinel backpack power system on a soldier in mountain terrain at sunset",
+    imageAlt: "Rise-Sentinel backpack power system on a soldier in mountain terrain at sunset",
     description:
       "Compact hydrogen power for everyday backup and outdoor use. Quiet, plug-and-play setup with refillable hydrogen cartridges. Lightweight and easy to carry — no grid connection required, zero-emissions power at the point of use.",
     specs: [
@@ -44,9 +44,9 @@ const products: DatasheetProduct[] = [
   {
     number: "02",
     id: "falcon",
-    name: "Rise Falcon™",
+    name: "Rise-Falcon",
     image: "/media/products/compare-falcon.png",
-    imageAlt: "Rise Falcon hydrogen drone range extender delivering a package at sunset",
+    imageAlt: "Rise-Falcon hydrogen drone range extender delivering a package at sunset",
     description:
       "Plug-and-play hydrogen range extender for compatible drones. Up to 5x extended flight range with low-noise, zero-emission operation. Quick-swap cartridges for inspection, mapping, public safety, industrial sites, and remote operations.",
     specs: [
@@ -64,9 +64,9 @@ const products: DatasheetProduct[] = [
   {
     number: "03",
     id: "titan",
-    name: "Rise Titan™",
+    name: "Rise-Titan",
     image: "/media/products/compare-titan.png",
-    imageAlt: "Rise Titan portable generator powering tools on a construction site",
+    imageAlt: "Rise-Titan portable generator powering tools on a construction site",
     description:
       "Clean backup power for everyday and emergency use. A 1.5 kW zero-emissions portable generator with quiet operation, plug-and-play setup, and refillable hydrogen cartridges for municipalities, utilities, communities, and businesses.",
     specs: [

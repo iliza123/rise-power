@@ -455,7 +455,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Modern portable hydrogen generators like the Titan deliver 1.5 kW of continuous power at under 65 dBA. Compact systems like the Sentinel Power Cube provide extended runtime via cartridge swap with silent operation.`,
+        text: `Modern portable hydrogen generators like the Rise-Titan deliver 1.5 kW of continuous power at under 65 dBA. Compact systems like the Rise-Sentinel Power Cube provide extended runtime via cartridge swap with silent operation.`,
       },
       {
         type: "paragraph",
@@ -898,7 +898,7 @@ export const insights: InsightArticle[] = [
     accentPhrase: `Fuel Cell`,
     hero: {
       src: `/media/insights/drone-falcon.png`,
-      alt: `Rise Falcon hydrogen fuel cell range extender`,
+      alt: `Rise-Falcon hydrogen fuel cell range extender`,
     },
     relatedSlugs: [
       `hydrogen-power-disaster-response`,
@@ -1041,7 +1041,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Explore the Falcon drone range extender`,
+        text: `Explore the Rise-Falcon drone range extender`,
       },
       {
         type: "heading",
@@ -1216,7 +1216,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Standardized cartridges mean one fuel format across all compatible systems. The Sentinel, Falcon, and Titan all use the same cartridge platform.`,
+        text: `Standardized cartridges mean one fuel format across all compatible systems. The Rise-Sentinel, Rise-Falcon, and Rise-Titan all use the same cartridge platform.`,
       },
       {
         type: "heading",
@@ -1286,7 +1286,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Rise Power's cartridge system uses a universal interface designed for compatibility across the full product line. The same cartridges work with the Sentinel portable unit, the Falcon drone extender, and the Titan generator.`,
+        text: `Rise Power's cartridge system uses a universal interface designed for compatibility across the full product line. The same cartridges work with the Rise-Sentinel portable unit, the Rise-Falcon drone extender, and the Rise-Titan generator.`,
       },
       {
         type: "heading",
@@ -1568,7 +1568,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Every pound matters when soldiers operate on foot for days. Lithium battery packs for a 72-hour mission weigh 17-25 lbs depending on the power draw. The Sentinel is a lightweight Power Cube with extended runtime via cartridge swap. Swap cartridges to extend indefinitely without adding charging infrastructure.`,
+        text: `Every pound matters when soldiers operate on foot for days. Lithium battery packs for a 72-hour mission weigh 17-25 lbs depending on the power draw. The Rise-Sentinel is a lightweight Power Cube with extended runtime via cartridge swap. Swap cartridges to extend indefinitely without adding charging infrastructure.`,
       },
       {
         type: "heading",
@@ -1632,7 +1632,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Yes. Fuel cells output regulated DC power compatible with standard military power connectors. The Sentinel supports all common military electronics.`,
+        text: `Yes. Fuel cells output regulated DC power compatible with standard military power connectors. The Rise-Sentinel supports all common military electronics.`,
       },
       {
         type: "heading",
@@ -1676,7 +1676,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `A PEM fuel cell turns hydrogen into electricity, heat, and water. Nothing else. No combustion, no emissions, no noise from engine parts. This is the technology inside every Rise Power product, from the compact Sentinel Power Cube to the 1.5 kW Titan generator.`,
+        text: `A PEM fuel cell turns hydrogen into electricity, heat, and water. Nothing else. No combustion, no emissions, no noise from engine parts. This is the technology inside every Rise Power product, from the compact Rise-Sentinel Power Cube to the 1.5 kW Rise-Titan generator.`,
       },
       {
         type: "paragraph",
@@ -1740,7 +1740,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `The low operating temperature also means PEM cells can use lightweight polymer materials instead of heavy ceramics. That's why the Sentinel is a compact Power Cube delivering extended runtime via cartridge swap.`,
+        text: `The low operating temperature also means PEM cells can use lightweight polymer materials instead of heavy ceramics. That's why the Rise-Sentinel is a compact Power Cube delivering extended runtime via cartridge swap.`,
       },
       {
         type: "heading",
@@ -1868,7 +1868,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `The Titan 1.5 kW generator provides continuous baseload power for communications, computing, and command operations. At under 65 dBA, it runs without revealing position. Multiple Titan units can be networked for higher power demands.`,
+        text: `The Rise-Titan 1.5 kW generator provides continuous baseload power for communications, computing, and command operations. At under 65 dBA, it runs without revealing position. Multiple Rise-Titan units can be networked for higher power demands.`,
       },
       {
         type: "heading",
@@ -1876,7 +1876,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Patrol teams and observation posts carry the Sentinel for independent power. The lightweight Power Cube delivers extended runtime via cartridge swap, powering radios, optics, and tactical electronics without resupply.`,
+        text: `Patrol teams and observation posts carry the Rise-Sentinel for independent power. The lightweight Power Cube delivers extended runtime via cartridge swap, powering radios, optics, and tactical electronics without resupply.`,
       },
       {
         type: "heading",
@@ -1884,7 +1884,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `The Falcon range extender gives ISR drones up to 5x extended flight range over battery-only platforms. Launch, recover, and recharge from the FOB without dedicated generator support.`,
+        text: `The Rise-Falcon range extender gives ISR drones up to 5x extended flight range over battery-only platforms. Launch, recover, and recharge from the FOB without dedicated generator support.`,
       },
       {
         type: "heading",
@@ -1892,7 +1892,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Rise Power's Hydrogen Cartridge Kit standardizes fuel across all three platforms. One cartridge type works in the Sentinel, Falcon, and Titan. RFID tracking provides real-time inventory visibility across the supply chain.`,
+        text: `Rise Power's Hydrogen Cartridge Kit standardizes fuel across all three platforms. One cartridge type works in the Rise-Sentinel, Rise-Falcon, and Rise-Titan. RFID tracking provides real-time inventory visibility across the supply chain.`,
       },
       {
         type: "heading",
@@ -1948,7 +1948,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `The Titan's 1.5 kW output can run small portable AC units. For larger cooling loads, multiple Titan units can be networked. Most FOB cooling needs fall within a multi-kilowatt range.`,
+        text: `The Rise-Titan's 1.5 kW output can run small portable AC units. For larger cooling loads, multiple Rise-Titan units can be networked. Most FOB cooling needs fall within a multi-kilowatt range.`,
       },
       {
         type: "heading",
@@ -2052,7 +2052,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `NATO standards classify noise discipline levels for different operational environments. A generator producing 85+ dBA violates noise discipline in most tactical scenarios. The Sentinel fuel cell operates under 65 dBA, enabling powered operations during noise-restricted phases.`,
+        text: `NATO standards classify noise discipline levels for different operational environments. A generator producing 85+ dBA violates noise discipline in most tactical scenarios. The Rise-Sentinel fuel cell operates under 65 dBA, enabling powered operations during noise-restricted phases.`,
       },
       {
         type: "paragraph",
@@ -2260,7 +2260,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Rise Power systems include built-in leak detection. The fuel cell's own sensors monitor hydrogen flow rates and will shut down automatically if a leak is detected. The Sentinel and Titan both feature redundant safety monitoring.`,
+        text: `Rise Power systems include built-in leak detection. The fuel cell's own sensors monitor hydrogen flow rates and will shut down automatically if a leak is detected. The Rise-Sentinel and Rise-Titan both feature redundant safety monitoring.`,
       },
       {
         type: "paragraph",
@@ -2333,7 +2333,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Hydrogen fuel cells are used in commercial aviation for auxiliary power. The Falcon drone system demonstrates safe airborne hydrogen operation. Transport-classified hydrogen cartridges are permitted on cargo aircraft.`,
+        text: `Hydrogen fuel cells are used in commercial aviation for auxiliary power. The Rise-Falcon drone system demonstrates safe airborne hydrogen operation. Transport-classified hydrogen cartridges are permitted on cargo aircraft.`,
       },
       {
         type: "heading",
@@ -2401,7 +2401,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Best option: Hydrogen fuel cells. The Titan generator sets up in minutes, runs quietly, and leaves zero environmental trace. No fuel spill risk, no emissions reporting.`,
+        text: `Best option: Hydrogen fuel cells. The Rise-Titan generator sets up in minutes, runs quietly, and leaves zero environmental trace. No fuel spill risk, no emissions reporting.`,
       },
       {
         type: "heading",
@@ -2461,7 +2461,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Hydrogen fuel cells operate to −22°C and generate waste heat that can be captured for equipment warming. The Titan's operating range of −22°C to +50°C covers virtually every inhabited climate zone on Earth.`,
+        text: `Hydrogen fuel cells operate to −22°C and generate waste heat that can be captured for equipment warming. The Rise-Titan's operating range of −22°C to +50°C covers virtually every inhabited climate zone on Earth.`,
       },
       {
         type: "heading",
@@ -2493,7 +2493,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Yes. Multiple Titan units can be networked (for example, about 1.5–7.5 kW with 1–5 units). That covers lighting, communications, computing, refrigeration, and small HVAC loads for camps up to 50 people.`,
+        text: `Yes. Multiple Rise-Titan units can be networked (for example, about 1.5–7.5 kW with 1–5 units). That covers lighting, communications, computing, refrigeration, and small HVAC loads for camps up to 50 people.`,
       },
       {
         type: "heading",
@@ -2525,7 +2525,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Yes. PEM fuel cells actually perform slightly better in humid conditions because the membrane stays naturally hydrated. The Titan operates from −22°C to +50°C across all humidity levels.`,
+        text: `Yes. PEM fuel cells actually perform slightly better in humid conditions because the membrane stays naturally hydrated. The Rise-Titan operates from −22°C to +50°C across all humidity levels.`,
       },
     ],
   },
@@ -2619,9 +2619,9 @@ export const insights: InsightArticle[] = [
       {
         type: "takeaways",
         items: [
-          `Sentinel (man-portable, 200W)`,
-          `Falcon (drone range extender)`,
-          `Titan (1.5 kW generator)`,
+          `Rise-Sentinel (man-portable, 200W)`,
+          `Rise-Falcon (drone range extender)`,
+          `Rise-Titan (1.5 kW generator)`,
         ],
       },
       {
@@ -2674,7 +2674,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Equip SOF units with Sentinel fuel cells for dismounted operations. These units already prioritize weight, noise, and signature reduction.`,
+        text: `Equip SOF units with Rise-Sentinel fuel cells for dismounted operations. These units already prioritize weight, noise, and signature reduction.`,
       },
       {
         type: "heading",
@@ -2682,7 +2682,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Replace diesel generators at OPs, remote sensors, and unmanned surveillance sites with Titan generators and pre-positioned cartridge stocks.`,
+        text: `Replace diesel generators at OPs, remote sensors, and unmanned surveillance sites with Rise-Titan generators and pre-positioned cartridge stocks.`,
       },
       {
         type: "heading",
@@ -2702,7 +2702,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Cartridge density depends on configuration, but a standard 463L pallet can carry enough hydrogen cartridges for approximately 500+ hours of Sentinel operation or 100+ hours of Titan operation. Exact numbers available under NDA. Contact our defence team.`,
+        text: `Cartridge density depends on configuration, but a standard 463L pallet can carry enough hydrogen cartridges for approximately 500+ hours of Rise-Sentinel operation or 100+ hours of Rise-Titan operation. Exact numbers available under NDA. Contact our defence team.`,
       },
       {
         type: "heading",
@@ -2867,7 +2867,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Portable solar panels (25-100W) are useful for trickle-charging small devices. They typically produce 3-6 hours of useful output per day. For sustained multi-hundred-watt loads, they can't match the energy density of hydrogen cartridges. The Sentinel delivers more energy in a smaller, lighter package.`,
+        text: `Portable solar panels (25-100W) are useful for trickle-charging small devices. They typically produce 3-6 hours of useful output per day. For sustained multi-hundred-watt loads, they can't match the energy density of hydrogen cartridges. The Rise-Sentinel delivers more energy in a smaller, lighter package.`,
       },
       {
         type: "heading",
@@ -2875,7 +2875,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Yes. Rise Power products operate up to 50°C ambient temperature. The Titan includes thermal management that handles desert conditions. Solar panels actually lose efficiency in extreme heat (typically 0.3-0.5% per degree above 25°C).`,
+        text: `Yes. Rise Power products operate up to 50°C ambient temperature. The Rise-Titan includes thermal management that handles desert conditions. Solar panels actually lose efficiency in extreme heat (typically 0.3-0.5% per degree above 25°C).`,
       },
       {
         type: "heading",
@@ -3028,7 +3028,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Rise Power's Titan generator is already rated for indoor use. For data center scale applications, contact our team to discuss custom configurations.`,
+        text: `Rise Power's Rise-Titan generator is already rated for indoor use. For data center scale applications, contact our team to discuss custom configurations.`,
       },
       {
         type: "heading",
@@ -3271,7 +3271,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Diesel and gasoline generators in the 5-10 kW range can power most household loads. Propane standby generators are the most common home backup solution. Battery stations handle essentials for a few hours. Portable hydrogen fuel cells like the Titan deliver 1.5 kW, sufficient for critical loads but not whole-house.`,
+        text: `Diesel and gasoline generators in the 5-10 kW range can power most household loads. Propane standby generators are the most common home backup solution. Battery stations handle essentials for a few hours. Portable hydrogen fuel cells like the Rise-Titan deliver 1.5 kW, sufficient for critical loads but not whole-house.`,
       },
       {
         type: "heading",
@@ -3435,7 +3435,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Rise Power's Titan generator operates from −22°C to +50°C. The hydrogen itself does not freeze. Cold-weather performance is actually an advantage over diesel, which gels in extreme cold.`,
+        text: `Rise Power's Rise-Titan generator operates from −22°C to +50°C. The hydrogen itself does not freeze. Cold-weather performance is actually an advantage over diesel, which gels in extreme cold.`,
       },
       {
         type: "heading",
@@ -3519,7 +3519,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `The Sentinel portable fuel cell delivers extended runtime via cartridge swap. Swap a cartridge, and runtime continues. No maintenance stop required.`,
+        text: `The Rise-Sentinel portable fuel cell delivers extended runtime via cartridge swap. Swap a cartridge, and runtime continues. No maintenance stop required.`,
       },
       {
         type: "heading",
@@ -3575,7 +3575,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `For systems like the Sentinel, routine visual checks every 500 hours or quarterly. Major service intervals are typically every 2,000-5,000 hours. Compare that to diesel generators requiring attention every 100-250 hours.`,
+        text: `For systems like the Rise-Sentinel, routine visual checks every 500 hours or quarterly. Major service intervals are typically every 2,000-5,000 hours. Compare that to diesel generators requiring attention every 100-250 hours.`,
       },
       {
         type: "heading",
@@ -3599,7 +3599,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Fuel cells that operate in cold environments need freeze protection strategies for any residual water in the system. The Titan is rated for operation down to −22°C and handles cold-weather operation automatically.`,
+        text: `Fuel cells that operate in cold environments need freeze protection strategies for any residual water in the system. The Rise-Titan is rated for operation down to −22°C and handles cold-weather operation automatically.`,
       },
       {
         type: "heading",
@@ -3698,7 +3698,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Multiple fuel cell units can be deployed in parallel. Start with backup for the ICU and surgical suites. Add units for imaging, pharmacy, and administrative systems. The Titan 1.5 kW generator operates from −22°C to +50°C, and multiple units can be combined for higher power requirements.`,
+        text: `Multiple fuel cell units can be deployed in parallel. Start with backup for the ICU and surgical suites. Add units for imaging, pharmacy, and administrative systems. The Rise-Titan 1.5 kW generator operates from −22°C to +50°C, and multiple units can be combined for higher power requirements.`,
       },
       {
         type: "heading",
@@ -3734,7 +3734,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Disaster response medical facilities often operate in tents or temporary structures where diesel exhaust is not an option. The Sentinel's compact Power Cube provides clean, quiet power for mobile medical equipment.`,
+        text: `Disaster response medical facilities often operate in tents or temporary structures where diesel exhaust is not an option. The Rise-Sentinel's compact Power Cube provides clean, quiet power for mobile medical equipment.`,
       },
       {
         type: "heading",
@@ -3855,7 +3855,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `PEM (Proton Exchange Membrane) fuel cells are the dominant technology for portable and deployable power. Rise Power's Sentinel, Falcon, and Titan all use PEM technology, optimized for the specific demands of each application.`,
+        text: `PEM (Proton Exchange Membrane) fuel cells are the dominant technology for portable and deployable power. Rise Power's Rise-Sentinel, Rise-Falcon, and Rise-Titan all use PEM technology, optimized for the specific demands of each application.`,
       },
       {
         type: "heading",
@@ -3895,7 +3895,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Salt air, sand, extreme humidity, and temperature swings all affect auxiliary components (fans, pumps, electronics) more than the stack itself. Robust enclosure design mitigates these factors. The Titan is engineered for operation from −22°C to +50°C, covering virtually all deployment environments.`,
+        text: `Salt air, sand, extreme humidity, and temperature swings all affect auxiliary components (fans, pumps, electronics) more than the stack itself. Robust enclosure design mitigates these factors. The Rise-Titan is engineered for operation from −22°C to +50°C, covering virtually all deployment environments.`,
       },
       {
         type: "heading",
@@ -4080,7 +4080,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `The lightweight Sentinel is particularly suited for camera department power, monitor feeds, and remote charging stations where hauling a diesel generator would be impractical.`,
+        text: `The lightweight Rise-Sentinel is particularly suited for camera department power, monitor feeds, and remote charging stations where hauling a diesel generator would be impractical.`,
       },
       {
         type: "heading",
@@ -4140,7 +4140,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `For LED lighting setups under 5 kW, a single Titan or paired units handle the load. For high-wattage HMI rigs, fuel cells can power ancillary loads while diesel handles the heavy lighting, reducing overall diesel use and noise.`,
+        text: `For LED lighting setups under 5 kW, a single Rise-Titan or paired units handle the load. For high-wattage HMI rigs, fuel cells can power ancillary loads while diesel handles the heavy lighting, reducing overall diesel use and noise.`,
       },
       {
         type: "heading",
@@ -4148,7 +4148,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `The Sentinel delivers extended runtime via hydrogen cartridge swap. For a typical 12-14 hour shoot day, you may not need to swap cartridges at all. The Titan provides similar extended runtime for higher-power applications.`,
+        text: `The Rise-Sentinel delivers extended runtime via hydrogen cartridge swap. For a typical 12-14 hour shoot day, you may not need to swap cartridges at all. The Rise-Titan provides similar extended runtime for higher-power applications.`,
       },
       {
         type: "heading",
@@ -4187,7 +4187,7 @@ export const insights: InsightArticle[] = [
     accentPhrase: `Fuel Cell`,
     hero: {
       src: `/media/insights/military-drone.png`,
-      alt: `Rise Falcon hydrogen fuel cell range extender`,
+      alt: `Rise-Falcon hydrogen fuel cell range extender`,
     },
     relatedSlugs: [
       `hydrogen-fuel-cell-vs-diesel-generator`,
@@ -4204,7 +4204,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Hydrogen fuel cell propulsion shatters this limitation. Rise Power's Falcon drone range extender delivers up to 5x extended flight range over equivalent battery systems. For ISR (Intelligence, Surveillance, and Reconnaissance) missions, that means continuous coverage instead of scheduled gaps.`,
+        text: `Hydrogen fuel cell propulsion shatters this limitation. Rise Power's Rise-Falcon drone range extender delivers up to 5x extended flight range over equivalent battery systems. For ISR (Intelligence, Surveillance, and Reconnaissance) missions, that means continuous coverage instead of scheduled gaps.`,
       },
       {
         type: "heading",
@@ -4228,7 +4228,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `The Falcon integrates a PEM fuel cell stack with lightweight hydrogen storage. The fuel cell converts hydrogen and ambient air into electricity, which powers the drone's electric motors directly.`,
+        text: `The Rise-Falcon integrates a PEM fuel cell stack with lightweight hydrogen storage. The fuel cell converts hydrogen and ambient air into electricity, which powers the drone's electric motors directly.`,
       },
       {
         type: "heading",
@@ -4274,7 +4274,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Battery capacity drops 20-40% in cold weather. This is not a marginal concern when operating in arctic or high-altitude environments. Fuel cell output remains stable across the temperature range. The Falcon maintains full performance in conditions that would ground a battery drone.`,
+        text: `Battery capacity drops 20-40% in cold weather. This is not a marginal concern when operating in arctic or high-altitude environments. Fuel cell output remains stable across the temperature range. The Rise-Falcon maintains full performance in conditions that would ground a battery drone.`,
       },
       {
         type: "heading",
@@ -4302,7 +4302,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `The Falcon is designed to integrate with compatible UAS platforms. The fuel cell system replaces battery weight, so the airframe does not need structural modification in most cases. Net weight change is typically neutral or slightly favorable.`,
+        text: `The Rise-Falcon is designed to integrate with compatible UAS platforms. The fuel cell system replaces battery weight, so the airframe does not need structural modification in most cases. Net weight change is typically neutral or slightly favorable.`,
       },
       {
         type: "heading",
@@ -4359,7 +4359,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Yes. PEM fuel cells are sealed systems. The Falcon is designed for operation in adverse weather conditions consistent with military requirements.`,
+        text: `Yes. PEM fuel cells are sealed systems. The Rise-Falcon is designed for operation in adverse weather conditions consistent with military requirements.`,
       },
       {
         type: "heading",
@@ -4520,7 +4520,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `For field-deployable power systems like the Sentinel, Falcon, and Titan, the storage method must balance weight, volume, safety, and simplicity.`,
+        text: `For field-deployable power systems like the Rise-Sentinel, Rise-Falcon, and Rise-Titan, the storage method must balance weight, volume, safety, and simplicity.`,
       },
       {
         type: "paragraph",
@@ -4565,7 +4565,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `The Sentinel portable fuel cell delivers extended runtime via cartridge swap. Hydrogen consumption depends on the power output, but typical portable PEM systems consume 0.5-1.0 grams of hydrogen per watt-hour of electricity produced.`,
+        text: `The Rise-Sentinel portable fuel cell delivers extended runtime via cartridge swap. Hydrogen consumption depends on the power output, but typical portable PEM systems consume 0.5-1.0 grams of hydrogen per watt-hour of electricity produced.`,
       },
       {
         type: "heading",
@@ -4693,7 +4693,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Rise Power's Titan generator and Sentinel portable fuel cell operate with zero emissions in any regulatory jurisdiction worldwide. No exemptions needed. No compliance costs. No regulatory risk.`,
+        text: `Rise Power's Rise-Titan generator and Rise-Sentinel portable fuel cell operate with zero emissions in any regulatory jurisdiction worldwide. No exemptions needed. No compliance costs. No regulatory risk.`,
       },
       {
         type: "takeaways",
@@ -4880,7 +4880,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Rise Power's lightweight Sentinel Power Cube provides extended runtime via cartridge swap. A soldier carrying two cartridges has more energy available than 20 lbs of lithium batteries, at less total weight.`,
+        text: `Rise Power's lightweight Rise-Sentinel Power Cube provides extended runtime via cartridge swap. A soldier carrying two cartridges has more energy available than 20 lbs of lithium batteries, at less total weight.`,
       },
       {
         type: "heading",
@@ -4900,11 +4900,11 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `The Titan 1.5 kW generator provides silent, zero-emission power for FOB operations. Operating at under 70 dB, it eliminates the acoustic signature that diesel generators project. Zero exhaust means zero thermal signature from the power source.`,
+        text: `The Rise-Titan 1.5 kW generator provides silent, zero-emission power for FOB operations. Operating at under 70 dB, it eliminates the acoustic signature that diesel generators project. Zero exhaust means zero thermal signature from the power source.`,
       },
       {
         type: "paragraph",
-        text: `Multiple Titan units can operate in parallel for higher power demands. Combined with solar panels and battery storage, a hybrid microgrid eliminates diesel dependency entirely for small FOBs.`,
+        text: `Multiple Rise-Titan units can operate in parallel for higher power demands. Combined with solar panels and battery storage, a hybrid microgrid eliminates diesel dependency entirely for small FOBs.`,
       },
       {
         type: "heading",
@@ -5050,7 +5050,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Rise Power's product line exemplifies this maturation. The Sentinel delivers lightweight, man-portable hydrogen power with extended runtime via cartridge swap. The Falcon extends drone endurance by 5x. The Titan provides 1.5 kW zero-emission generation in extreme conditions.`,
+        text: `Rise Power's product line exemplifies this maturation. The Rise-Sentinel delivers lightweight, man-portable hydrogen power with extended runtime via cartridge swap. The Rise-Falcon extends drone endurance by 5x. The Rise-Titan provides 1.5 kW zero-emission generation in extreme conditions.`,
       },
       {
         type: "paragraph",

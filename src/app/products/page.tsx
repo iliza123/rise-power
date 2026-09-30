@@ -111,7 +111,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata: Metadata = pageMetadata({
   title: "Products",
   description:
-    "Rise Sentinel, Falcon, Titan, and hydrogen cartridge systems. Portable fuel cell power for everyday resilience — municipal, emergency, field, and off-grid applications.",
+    "Rise-Sentinel, Rise-Falcon, Rise-Titan, and hydrogen cartridge systems. Portable fuel cell power for everyday resilience — municipal, emergency, field, and off-grid applications.",
   path: "/products",
 });
 
@@ -374,7 +374,6 @@ function ProductSystemCard({
       <div className="flex flex-1 flex-col px-5 pt-5 pb-4">
         <h3 className="font-display text-2xl leading-none font-bold uppercase sm:text-[25px]">
           {product.name}
-          {/* <sup className="ml-1 text-[9px]">™</sup> */}
         </h3>
 
         <p className="mt-2 text-sm font-medium tracking-[0.08em] text-white uppercase">
@@ -550,7 +549,7 @@ export default function ProductsPage() {
             </h2>
 
             <p className="type-section-body mx-auto mt-2.5 max-w-3xl sm:mt-3">
-              Specs for each Rise Power system — review Sentinel, Falcon, Titan,
+              Specs for each Rise Power system — review Rise-Sentinel, Rise-Falcon, Rise-Titan,
               and the Hydrogen Cartridge Kit on their own.
             </p>
           </Reveal>

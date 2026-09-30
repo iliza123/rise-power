@@ -27,14 +27,14 @@ export const stats = [
   { value: "Quiet", label: "Neighbourhood-friendly operation" },
   { value: "0 Emissions", label: "Zero exhaust at point of use" },
   { value: "∞ Runtime", label: "Unlimited with cartridge swap" },
-  { value: "40 lb", label: "Titan portable generator weight" },
+  { value: "40 lb", label: "Rise-Titan portable generator weight" },
 ];
 
 export const products = [
   {
     slug: "sentinel",
     number: "01",
-    name: "Rise Sentinel™",
+    name: "Rise-Sentinel",
     tagline: "Power Cube for everyday backup",
     description:
       "Compact hydrogen power for everyday backup and outdoor use. Quiet, plug-and-play setup with refillable hydrogen cartridges. Lightweight and easy to carry — no grid connection required, zero-emissions power at the point of use.",
@@ -50,7 +50,7 @@ export const products = [
   {
     slug: "falcon",
     number: "02",
-    name: "Rise Falcon™",
+    name: "Rise-Falcon",
     tagline: "Drone range extender",
     description:
       "Plug-and-play hydrogen range extender for compatible drones. Up to 5x extended flight range with low-noise, zero-emission operation. Quick-swap hydrogen cartridges, reliable in cold weather, and a lightweight modular design for inspection, mapping, public safety, and remote operations.",
@@ -66,7 +66,7 @@ export const products = [
   {
     slug: "titan",
     number: "03",
-    name: "Rise Titan™",
+    name: "Rise-Titan",
     tagline: "1.5 kW portable generator",
     description:
       "Clean backup power for everyday and emergency use. A 1.5 kW zero-emissions portable generator with quiet operation, plug-and-play setup, and refillable hydrogen cartridges. Built for municipalities, utilities, communities, and businesses.",
@@ -105,9 +105,9 @@ export const useCases = [
       "Quiet, zero-emission backup for city facilities, public works, and neighbourhood operations when the grid is down. Rapidly deployable portable hydrogen power for civic teams.",
     image: "/media/cases/municipalities.png",
     howItWorks: [
-      "Deploy Sentinel or Titan at city facilities and public works sites",
+      "Deploy Rise-Sentinel or Rise-Titan at city facilities and public works sites",
       "Power lights, communications, charging, and essential devices",
-      "Extend drone inspection and mapping flights with Falcon",
+      "Extend drone inspection and mapping flights with Rise-Falcon",
       "Swap refillable hydrogen cartridges in under 30 seconds",
       "Operate quietly with zero emissions at the point of use",
     ],
@@ -122,7 +122,7 @@ export const useCases = [
       "Pre-position refillable cartridges at remote and community sites",
       "Support utility crews with portable power for tools and communications",
       "Operate without a grid connection for days of continuous use",
-      "Run Titan from −22 °C to +50 °C in real-world field conditions",
+      "Run Rise-Titan from −22 °C to +50 °C in real-world field conditions",
       "Eliminate fuel spill and contamination risk at sensitive sites",
     ],
   },
@@ -133,7 +133,7 @@ export const useCases = [
       "Backup during outages and severe weather for homes, community gathering spaces, and emergency kits. Zero exhaust enables indoor-safe operation when the grid drops.",
     image: "/media/cases/homes-emergency.png",
     howItWorks: [
-      "Keep Sentinel or Titan ready in home and community emergency kits",
+      "Keep Rise-Sentinel or Rise-Titan ready in home and community emergency kits",
       "Power lights, laptops, charging, and essential small devices",
       "Deploy to shelters and gathering spaces with zero emissions indoors",
       "Swap cartridges in seconds to extend runtime",
@@ -147,7 +147,7 @@ export const useCases = [
       "Temporary power for essential small-business operations, community facilities, events, and mobile work sites where grid access is limited or unreliable.",
     image: "/media/use-cases/uc-grid4.png",
     howItWorks: [
-      "Set up Titan plug-and-play for temporary or event power",
+      "Set up Rise-Titan plug-and-play for temporary or event power",
       "Run lights, communications, charging, and small tools",
       "Move a 40 lb portable generator where power is needed",
       "Scale runtime with refillable cartridges — no fuel truck required",
@@ -183,7 +183,7 @@ export const team = [
   {
     name: "Dr. Paul Ghotra",
     role: "Founder & Chief Executive Officer",
-    bio: "Two decades scaling Canadian advanced manufacturing and clean energy. Founder of CIMtech Green Energy. Recognized as Surrey Business Person of the Year for hydrogen leadership.",
+    bio: "Two decades scaling Canadian advanced manufacturing and clean energy. Recognized as Surrey Business Person of the Year for hydrogen leadership.",
   },
   {
     name: "[Team Member TBA]",

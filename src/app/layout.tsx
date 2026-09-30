@@ -29,10 +29,6 @@ const organizationJsonLd = {
       : {}),
     addressCountry: "CA",
   },
-  parentOrganization: {
-    "@type": "Organization",
-    name: site.parent,
-  },
 };
 
 const barlow = Barlow({
@@ -62,7 +58,7 @@ export const metadata: Metadata = {
   applicationName: site.name,
   authors: [{ name: site.legalName, url: site.url }],
   creator: site.name,
-  publisher: site.parent,
+  publisher: site.name,
   category: "technology",
   keywords: [
     "hydrogen fuel cell",
@@ -72,7 +68,7 @@ export const metadata: Metadata = {
     "disaster response",
     "critical infrastructure",
     "Rise Power",
-    "CIMtech Green Energy",
+    "Canadian manufacturing",
   ],
   referrer: "origin-when-cross-origin",
   formatDetection: {

@@ -608,7 +608,7 @@ export const capabilities = {
       mobileImageSrc: "/media/capabilities/engineering-development-mobile.png",
       secondaryImageSrc: "/media/capabilities/engineering-scope.png",
       secondaryImageAlt:
-        "Rise Mission Power product blueprint — Sentinel, Titan, Falcon, and hydrogen cartridge technical drawings",
+        "Rise Mission Power product blueprint — Rise-Sentinel, Rise-Titan, Rise-Falcon, and hydrogen cartridge technical drawings",
       gallery: [
         {
           src: "/media/capabilities/engineering.png",
@@ -930,7 +930,7 @@ export const hydrogenEcosystem = {
   eyebrow: "HOW WE WORK",
   headingBefore: "ONE PLATFORM.",
   headingAccent: "EVERY MISSION.",
-  body: "We design around a single refillable hydrogen cartridge. Swap it into Sentinel, Falcon, or Titan and the same fuel powers defence, commercial, and everyday use — without diesel logistics.",
+  body: "We design around a single refillable hydrogen cartridge. Swap it into Rise-Sentinel, Rise-Falcon, or Rise-Titan and the same fuel powers defence, commercial, and everyday use — without diesel logistics.",
   imageSrc: "/media/home/one-hydrogen-ecosystem.png",
   imageAlt:
     "One hydrogen ecosystem diagram showing Rise Mission Power systems for UAV range extender, tactical generator, home backup, outdoor, commercial, and portable field power",
@@ -999,7 +999,7 @@ export const customerPartners = {
     {
       category: "MUNICIPALITIES",
       title: "Quiet backup for city facilities and public works.",
-      body: "A municipal operations team needed quiet, zero-emission backup for civic facilities during outages. Sentinel and Titan units ran on refillable cartridges swapped in under 30 seconds — no diesel truck, no neighbourhood noise, no exhaust at the point of use.",
+      body: "A municipal operations team needed quiet, zero-emission backup for civic facilities during outages. Rise-Sentinel and Rise-Titan units ran on refillable cartridges swapped in under 30 seconds — no diesel truck, no neighbourhood noise, no exhaust at the point of use.",
       stats: [
         { value: "QUIET", label: "Neighbourhood-Friendly" },
         { value: "0 EMISSIONS", label: "At Point of Use" },

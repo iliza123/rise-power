@@ -105,7 +105,7 @@ function ProductUseCard({
 }
 
 /**
- * How Sentinel, Falcon, and Titan are used in this market —
+ * How Rise-Sentinel, Rise-Falcon, and Rise-Titan are used in this market —
  * shared across defence / commercial / consumer layouts.
  * Elevated editorial presentation with image-true frames.
  */

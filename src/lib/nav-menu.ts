@@ -32,17 +32,17 @@ export const megaNavItems: readonly MegaNavItem[] = [
   //   href: "/products",
   //   links: [
   //     {
-  //       label: "Rise Sentinel™",
+  //       label: "Rise-Sentinel",
   //       href: "/products#sentinel",
   //       description: "Power Cube for everyday backup and outdoor use.",
   //     },
   //     {
-  //       label: "Rise Falcon™",
+  //       label: "Rise-Falcon",
   //       href: "/products#falcon",
   //       description: "Plug-and-play drone range extender — up to 5x flight range.",
   //     },
   //     {
-  //       label: "Rise Titan™",
+  //       label: "Rise-Titan",
   //       href: "/products#titan",
   //       description: "1.5 kW portable generator for everyday and emergency backup.",
   //     },
@@ -194,7 +194,7 @@ export const megaNavItems: readonly MegaNavItem[] = [
       // {
       //   label: "Products",
       //   href: "/products",
-      //   description: "Sentinel, Falcon, Titan, and hydrogen cartridge systems.",
+      //   description: "Rise-Sentinel, Rise-Falcon, Rise-Titan, and hydrogen cartridge systems.",
       // },
       {
         label: "Resource Center",
