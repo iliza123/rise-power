@@ -191,7 +191,7 @@ export const hero = {
   headlineLine1: "for everyday",
   headlineLine2: "resilience.",
   body: "Zero-emissions portable power for municipal, emergency, field, and off-grid applications. Quiet, rapidly deployable, and engineered in British Columbia.",
-  primaryCta: { label: "Request a Demo", href: "/contact" } satisfies Cta,
+  primaryCta: { label: "Request a Briefing", href: "/contact" } satisfies Cta,
   secondaryCta: { label: "See Products", href: "/products" } satisfies Cta,
   chips: [
     { title: "Everyday Backup", subtitle: "When the grid is down" },
@@ -1093,7 +1093,7 @@ export const closingCta = {
   headingAccent: "PRODUCT TRIAL.",
   body: "We welcome municipalities, utilities, and community partners to explore product trials and clean-energy pilot programs. Tell us your backup or field power need and we will respond with specs and a deployment summary.",
   panelEyebrow: "READY TO DISCUSS YOUR REQUIREMENTS?",
-  primaryCta: { label: "REQUEST A DEMO", href: "/contact" } satisfies Cta,
+  primaryCta: { label: "REQUEST A BRIEFING", href: "/contact" } satisfies Cta,
   secondaryCta: { label: "VIEW PRODUCTS", href: "/products" } satisfies Cta,
   chips: [
     { title: "ZERO EMISSIONS", subtitle: "Clean power at point of use." },

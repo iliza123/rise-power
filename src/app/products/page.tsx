@@ -449,7 +449,7 @@ export default function ProductsPage() {
               href="/contact"
               className="cta-with-icon inline-flex min-h-12 items-center justify-center gap-2 whitespace-nowrap rounded-sm bg-[#849363] px-7 text-sm font-bold tracking-[0.12em] text-white uppercase transition-opacity hover:opacity-90"
             >
-              <span className="leading-none">Request a Demo</span>
+              <span className="leading-none">Request a Briefing</span>
               <ArrowRight className="size-4 shrink-0" aria-hidden />
             </Link>
             <Link

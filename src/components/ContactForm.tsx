@@ -274,7 +274,7 @@ export function ContactForm() {
           disabled={pending}
           className="group inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-sm bg-[#849363] px-8 text-sm font-semibold tracking-wide text-white uppercase transition-opacity hover:opacity-90 disabled:opacity-60 sm:w-auto"
         >
-          {pending ? "Sending..." : "Request Briefing"}
+          {pending ? "Sending..." : "Request a Briefing"}
           {!pending ? (
             <ArrowRight className="size-5 transition-transform duration-300 group-hover:translate-x-1" />
           ) : null}

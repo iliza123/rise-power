@@ -232,7 +232,7 @@ export default function AboutPage() {
               href="/contact"
               className="cta-with-icon inline-flex min-h-12 items-center justify-center gap-2 rounded-sm bg-[#849363] px-8 text-sm font-semibold tracking-wide text-white uppercase transition-opacity hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
             >
-              <span className="leading-none">Request a Demo</span>
+              <span className="leading-none">Request a Briefing</span>
               <ArrowRight className="size-4 shrink-0 sm:size-5" aria-hidden="true" />
             </a>
           </div>
@@ -325,19 +325,6 @@ export default function AboutPage() {
                       </li>
                     ))}
                   </ul>
-                </div>
-
-                <div className="mt-7">
-                  <a
-                    href="/contact"
-                    className="cta-with-icon inline-flex min-h-12 items-center justify-center gap-2 rounded-sm bg-[#849363] px-8 text-sm font-semibold tracking-wide text-white uppercase transition-opacity hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6e7f42]"
-                  >
-                    <span className="leading-none">Request a Demo</span>
-                    <ArrowRight
-                      className="size-4 shrink-0 sm:size-5"
-                      aria-hidden="true"
-                    />
-                  </a>
                 </div>
               </div>
             </Reveal>
