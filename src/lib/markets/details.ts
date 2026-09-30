@@ -4,32 +4,32 @@ import type { MarketDetailPage } from "./types";
  * Market detail pages — copy is quoted from existing site sources only:
  * - `threeMarkets` + `featuredProducts` + `customerPartners` (home-content)
  * - `products` + `stats` + Homes use-case lines (content.ts)
- * - Live Defense & Security use case (`_content-inventory/live-pages/use-cases.json`)
+ * - Live Defence & Security use case (`_content-inventory/live-pages/use-cases.json`)
  *
  * Do not invent marketing claims here.
  */
 export const marketDetails: readonly MarketDetailPage[] = [
   {
-    slug: "defense",
-    id: "defense",
-    layout: "defense",
-    label: "Defense",
+    slug: "defence",
+    id: "defence",
+    layout: "defence",
+    label: "Defence",
     title: "Military & Defence",
-    eyebrow: "Defense",
+    eyebrow: "Defence",
     heading:
       "Silent hydrogen power for tactical communications, UAV operations, and ISR systems in forward deployments.",
     body: "Ultra-quiet, zero-emission power with rapid cartridge swaps for mission-critical operations where diesel logistics and acoustic signature are unacceptable.",
     heroBody:
       "Silent portable power for bases, troops, and surveillance drones. Reduces reliance on fuel convoys. Eliminates the acoustic, thermal, and emissions signatures that compromise operational security.",
     overview: {
-      eyebrow: "Defense",
+      eyebrow: "Defence",
       headingBefore: "Tactical Communications, UAV Operations &",
       headingAccent: "ISR Systems.",
     },
-    href: "/markets/defense",
+    href: "/markets/defence",
     images: {
       hero: {
-        src: "/media/markets/defense-military.png",
+        src: "/media/markets/defence-military.png",
         alt: "Military and defence market imagery",
       },
       secondary: {
@@ -39,32 +39,32 @@ export const marketDetails: readonly MarketDetailPage[] = [
     },
     gallery: [
       {
-        src: "/media/markets/defense-gallery-lead.png",
+        src: "/media/markets/defence-gallery-lead.png",
         alt: "Stacked Military Edition Rise Mission Power units on wheels at a desert forward operating base with soldiers running command and communications gear",
         title: "Forward Ops",
         caption: "Silent power for tactical communications.",
       },
       {
-        src: "/media/markets/defense-gallery-1.png",
+        src: "/media/markets/defence-gallery-1.png",
         alt: "Rise Mission Power unit and hydrogen cylinder at a mountain forward post with a tactical operator on a rugged laptop and a communications tower nearby",
         title: "Mountain Ops",
         caption: "Quiet power for remote posts.",
         objectPosition: "62% center",
       },
       {
-        src: "/media/markets/defense-gallery-2.png",
+        src: "/media/markets/defence-gallery-2.png",
         alt: "Rise Mission Power octocopter on a rocky mountain ridge at golden hour with an operator running flight control from rugged cases nearby",
         title: "UAV Support",
         caption: "Range extension for ISR missions.",
       },
       {
-        src: "/media/markets/defense-gallery-3.png",
+        src: "/media/markets/defence-gallery-3.png",
         alt: "Stacked Military Edition Rise Mission Power units on wheels at a snowy mountain field camp with soldiers and a command tent",
         title: "Cold Weather",
         caption: "Mission-ready in austere climates.",
       },
       {
-        src: "/media/markets/defense-gallery-4.png",
+        src: "/media/markets/defence-gallery-4.png",
         alt: "Soldiers loading Rise hydrogen cartridges onto a wheeled cart at a desert forward operating base at golden hour",
         title: "Cartridge Logistics",
         caption: "Rapid refuel for extended missions.",
@@ -147,19 +147,19 @@ export const marketDetails: readonly MarketDetailPage[] = [
           slug: "sentinel",
           role: "Forward node power",
           body: "Deploy Sentinel to forward positions for communications and surveillance equipment. Lightweight, silent, and cartridge-refueled when diesel logistics are unacceptable.",
-          imageSrc: "/media/markets/defense-product-sentinel.png",
+          imageSrc: "/media/markets/defence-product-sentinel.png",
         },
         {
           slug: "falcon",
           role: "ISR range extension",
           body: "Extend drone ISR missions with Falcon. Up to 5× flight range with low-noise, zero-emission operation and quick-swap hydrogen cartridges.",
-          imageSrc: "/media/markets/defense-product-falcon.png",
+          imageSrc: "/media/markets/defence-product-falcon.png",
         },
         {
           slug: "titan",
           role: "FOB & base power",
           body: "Deploy Titan where loads exceed a Power Cube — 1.5 kW portable generation for bases and heavier tactical equipment with unlimited runtime via cartridge swap.",
-          imageSrc: "/media/markets/defense-product-titan.png",
+          imageSrc: "/media/markets/defence-product-titan.png",
         },
       ],
     },

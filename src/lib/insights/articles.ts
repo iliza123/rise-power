@@ -352,8 +352,8 @@ export const insights: InsightArticle[] = [
     readTime: `4 min read`,
     accentPhrase: `Silent Generators`,
     hero: {
-      src: `/media/insights/defense-silent-desktop.png`,
-      mobileSrc: `/media/insights/defense-silent.png`,
+      src: `/media/insights/defence-silent-desktop.png`,
+      mobileSrc: `/media/insights/defence-silent.png`,
       alt: `Rise portable power units powering a tactical command tent at dusk`,
     },
     relatedSlugs: [
@@ -1518,7 +1518,7 @@ export const insights: InsightArticle[] = [
     readTime: `4 min read`,
     accentPhrase: `Lithium Batteries`,
     hero: {
-      src: `/media/insights/defense-battery.png`,
+      src: `/media/insights/defence-battery.png`,
       alt: `Defence and military portable power operations`,
     },
     relatedSlugs: [
@@ -1826,7 +1826,7 @@ export const insights: InsightArticle[] = [
     readTime: `4 min read`,
     accentPhrase: `Forward Operating Bases`,
     hero: {
-      src: `/media/insights/defense-fob.png`,
+      src: `/media/insights/defence-fob.png`,
       alt: `Defence and military portable power operations`,
     },
     relatedSlugs: [
@@ -2539,7 +2539,7 @@ export const insights: InsightArticle[] = [
     readTime: `5 min read`,
     accentPhrase: `Power Logistics`,
     hero: {
-      src: `/media/insights/defense-logistics.png`,
+      src: `/media/insights/defence-logistics.png`,
       alt: `Rise Power hydrogen cartridge kit`,
     },
     relatedSlugs: [
@@ -4822,7 +4822,7 @@ export const insights: InsightArticle[] = [
     readTime: `5 min read`,
     accentPhrase: `Tactical Power`,
     hero: {
-      src: `/media/insights/defense-tactical.png`,
+      src: `/media/insights/defence-tactical.png`,
       alt: `Defence and military portable power operations`,
     },
     relatedSlugs: [

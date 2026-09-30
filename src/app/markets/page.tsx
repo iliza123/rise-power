@@ -57,7 +57,7 @@ export default function MarketsPage() {
     <main className="bg-[#fbfaf7] text-[#101820]">
       <StackedPageHero
         layout="split"
-        imageSrc="/media/markets/defense-military.png"
+        imageSrc="/media/markets/defence-military.png"
         imageAlt="Rise Mission Power across defence, commercial, and consumer markets"
         imageClassName="object-cover object-[center_45%]"
         imageWidth={3840}

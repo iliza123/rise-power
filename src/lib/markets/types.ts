@@ -74,7 +74,7 @@ export type MarketSpotlight = {
   featuredProducts: readonly { label: string; href: string }[];
 };
 
-export type MarketLayout = "defense" | "commercial" | "consumer";
+export type MarketLayout = "defence" | "commercial" | "consumer";
 
 export type MarketDetailPage = {
   slug: string;

@@ -285,7 +285,7 @@ export default function UseCasesPage() {
   const defence =
     useCases.find(
       (item) =>
-        item.slug === "defense" ||
+        item.slug === "defence" ||
         item.slug === "defence-security" ||
         item.title.toLowerCase().includes("defence"),
     ) ?? useCases[0];
@@ -483,7 +483,7 @@ export default function UseCasesPage() {
         </div>
       </section>
 
-      {/* DEFENSE & SECURITY FEATURE*/}
+      {/* DEFENCE & SECURITY FEATURE */}
 
       {defence && (
         <section

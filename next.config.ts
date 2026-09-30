@@ -65,6 +65,12 @@ const nextConfig: NextConfig = {
         destination: "/about",
         permanent: true,
       },
+      // Canadian spelling — legacy US market path
+      {
+        source: "/markets/defense",
+        destination: "/markets/defence",
+        permanent: true,
+      },
     ];
   },
   async headers() {

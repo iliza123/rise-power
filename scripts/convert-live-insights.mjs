@@ -85,7 +85,7 @@ function categoryFor(slug, title) {
       hay,
     )
   ) {
-    return "Defense";
+    return "Defence";
   }
   if (
     /disaster|hospital|emergency|infrastructure|data-center|film|off-grid/.test(
@@ -134,8 +134,8 @@ function heroFor(slug, title) {
   }
   if (/military|defense|defence|tactical|fob|forward/.test(hay)) {
     return {
-      src: "/media/markets/defense-military.png",
-      alt: "Defense and military portable power operations",
+      src: "/media/markets/defence-military.png",
+      alt: "Defence and military portable power operations",
     };
   }
   if (/disaster|emergency|hospital|response/.test(hay)) {

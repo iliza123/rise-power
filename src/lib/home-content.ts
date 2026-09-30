@@ -252,10 +252,10 @@ export const threeMarkets = {
       points: ["Tactical Communications", "UAV Operations", "ISR Systems"],
       detail:
         "Ultra-quiet, zero-emission power with rapid cartridge swaps for mission-critical operations where diesel logistics and acoustic signature are unacceptable.",
-      href: "/markets/defense",
+      href: "/markets/defence",
       cta: "Explore Solutions",
       image: "Military and defence market imagery",
-      imageSrc: "/media/markets/defense-military.png",
+      imageSrc: "/media/markets/defence-military.png",
     },
     {
       title: "Commercial",
@@ -697,7 +697,7 @@ export const capabilities = {
           alt: "Rise Mission Power module with blueprints and vehicle for system integration",
         },
         {
-          src: "/media/use-cases/defense-security.jpg",
+          src: "/media/use-cases/defence-security.jpg",
           alt: "Integrated power supporting defence communications hardware",
         },
         {
@@ -1018,7 +1018,7 @@ export const customerPartners = {
         { value: "0 EMISSIONS", label: "At Point of Use" },
         { value: "<30 SEC", label: "Cartridge Swap" },
       ],
-      href: "/markets/defense",
+      href: "/markets/defence",
       image:
         "Military field post with Rise Mission Power units supporting laptop and communications gear in a mountain tent",
       imageSrc: "/media/cases/mining.png",
@@ -1131,7 +1131,7 @@ export const footer = {
     {
       heading: "Markets",
       links: [
-        { label: "Defence", href: "/markets/defense" },
+        { label: "Defence", href: "/markets/defence" },
         { label: "Consumer", href: "/markets/consumer" },
         { label: "Commercial", href: "/markets/commercial" },
       ],

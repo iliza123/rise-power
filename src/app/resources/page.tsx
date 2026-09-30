@@ -101,7 +101,7 @@ const insightImages: Record<string, { src: string; alt: string }> = {
     alt: "Rise portable power units and hydrogen cartridge on a workshop bench",
   },
   "silent-generator-for-military-operations": {
-    src: "/media/insights/defense-silent.png",
+    src: "/media/insights/defence-silent.png",
     alt: "Rise portable power units powering a tactical command tent at dusk",
   },
 };
