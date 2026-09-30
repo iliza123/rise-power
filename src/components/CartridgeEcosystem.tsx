@@ -149,12 +149,12 @@ export function CartridgeEcosystem() {
           <div className="pointer-events-auto flex h-full w-full items-center justify-between gap-8 px-6 xl:px-10 2xl:px-14">
             <Reveal
               variant="left"
-              className="relative w-full max-w-[26rem] shrink-0 xl:max-w-[28rem]"
+              className="relative w-full max-w-[26rem] shrink-0 xl:max-w-[28rem] lg:ml-[1.5%] xl:ml-[2%] 2xl:ml-[3%]"
             >
               <IntroCard />
             </Reveal>
 
-            <div className="shrink-0">
+            <div className="shrink-0 lg:mr-[3%] xl:mr-[4%] 2xl:mr-[5%]">
               <SystemFlowList />
             </div>
           </div>
