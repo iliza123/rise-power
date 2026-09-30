@@ -65,7 +65,7 @@ export const marketDetails: readonly MarketDetailPage[] = [
       },
       {
         src: "/media/markets/defense-gallery-4.png",
-        alt: "Tactical glove lifting a Rise Mission Power hydrogen cartridge from a foam-lined hard case with three more cartridges secured inside",
+        alt: "Soldiers loading Rise hydrogen cartridges onto a wheeled cart at a desert forward operating base at golden hour",
         title: "Cartridge Logistics",
         caption: "Rapid refuel for extended missions.",
       },
