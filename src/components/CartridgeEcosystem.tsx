@@ -38,26 +38,61 @@ export function CartridgeEcosystem() {
       id="how-we-work"
       className="relative scroll-mt-28 overflow-hidden bg-[#0e1210] py-12 sm:py-14 lg:py-16"
     >
-      <Image
-        src="/media/products/product-ecosystem.png"
-        alt="Rise Power ecosystem"
-        fill
-        quality={90}
-        sizes="100vw"
-        className="object-cover object-[center_42%]"
-      />
-      <div className="absolute inset-0 bg-white/10" />
-      <div className="pointer-events-none absolute inset-y-0 left-0 z-[1] w-[22%] bg-gradient-to-r from-white/80 via-white/35 to-transparent" />
-      <div className="pointer-events-none absolute inset-y-0 right-0 z-[1] w-[14%] bg-gradient-to-l from-white/55 via-white/20 to-transparent" />
+      {/* Full-bleed BG — natural aspect, slight horizontal shift only */}
+      <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden>
+        <Image
+          src="/media/products/product-ecosystem.png"
+          alt=""
+          fill
+          quality={92}
+          sizes="100vw"
+          className="object-cover object-center translate-x-[7%] will-change-transform"
+          priority
+        />
+      </div>
 
-      <div className="relative z-10 mx-auto grid max-w-[1440px] items-center gap-8 px-5 sm:px-6 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.1fr)_minmax(0,0.85fr)] lg:gap-6 lg:px-10">
-        <Reveal variant="left" className="relative max-w-[34rem]">
+      {/* Soft edge shadows — blend image into section so sides don’t look cut off */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-y-0 left-0 z-[1] w-[min(28%,22rem)]"
+        style={{
+          background:
+            "linear-gradient(to right, #0e1210 0%, #0e1210 18%, rgba(14,18,16,0.88) 42%, rgba(14,18,16,0.35) 72%, transparent 100%)",
+        }}
+      />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-y-0 right-0 z-[1] w-[min(24%,18rem)]"
+        style={{
+          background:
+            "linear-gradient(to left, #0e1210 0%, #0e1210 16%, rgba(14,18,16,0.82) 40%, rgba(14,18,16,0.3) 70%, transparent 100%)",
+        }}
+      />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-x-0 top-0 z-[1] h-16"
+        style={{
+          background:
+            "linear-gradient(to bottom, #0e1210 0%, rgba(14,18,16,0.45) 55%, transparent 100%)",
+        }}
+      />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-x-0 bottom-0 z-[1] h-16"
+        style={{
+          background:
+            "linear-gradient(to top, #0e1210 0%, rgba(14,18,16,0.4) 55%, transparent 100%)",
+        }}
+      />
+
+      <div className="relative z-10 mx-auto grid w-full max-w-[1716px] items-center gap-6 px-5 sm:px-6 lg:grid-cols-[minmax(320px,1.05fr)_minmax(0,1fr)_minmax(280px,0.98fr)] lg:gap-8 lg:px-12 xl:gap-10">
+        <Reveal variant="left" className="relative max-w-[26rem] justify-self-start xl:max-w-[28rem]">
           <div className="relative rounded-xl border border-[#e8e6df] bg-white/95 px-5 py-5 shadow-[6px_6px_0_0_rgba(20,26,20,0.35)] sm:px-6 sm:py-6">
             <p className="text-base font-semibold tracking-[0.14em] text-[#6e7f42] uppercase sm:text-[0.9375rem]">
               ⌁ One Cartridge Ecosystem
             </p>
 
-            <h2 className="mt-3 text-[2rem] leading-[1.08] font-bold tracking-tight text-[#141a14] sm:text-[2.35rem] lg:text-[2.65rem]">
+            <h2 className="mt-3 text-[2rem] leading-[1.08] font-bold tracking-tight text-[#141a14] sm:text-[2.35rem] lg:text-[2.45rem]">
               Engineered
               <br />
               <span className="text-[#6e7f42]">As a System.</span>
@@ -92,7 +127,7 @@ export function CartridgeEcosystem() {
         <div className="hidden min-h-[18rem] lg:block" aria-hidden />
 
         <RevealStagger
-          className="flex w-full max-w-md flex-col gap-3 justify-self-end lg:max-w-none"
+          className="flex w-full max-w-[21rem] flex-col gap-3 justify-self-end xl:max-w-[22rem]"
           step={70}
           variant="right"
         >

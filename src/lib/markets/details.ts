@@ -4,7 +4,7 @@ import type { MarketDetailPage } from "./types";
  * Market detail pages — copy is quoted from existing site sources only:
  * - `threeMarkets` + `featuredProducts` + `customerPartners` (home-content)
  * - `products` + `stats` + Homes use-case lines (content.ts)
- * - Live Defense & Security use case (`_content-inventory/live-pages/use-cases.json`)
+ * - Live Defence & Security use case (`_content-inventory/live-pages/use-cases.json`)
  *
  * Do not invent marketing claims here.
  */
@@ -13,16 +13,16 @@ export const marketDetails: readonly MarketDetailPage[] = [
     slug: "defense",
     id: "defense",
     layout: "defense",
-    label: "Defense",
+    label: "Defence",
     title: "Military & Defence",
-    eyebrow: "Defense",
+    eyebrow: "Defence",
     heading:
       "Silent hydrogen power for tactical communications, UAV operations, and ISR systems in forward deployments.",
     body: "Ultra-quiet, zero-emission power with rapid cartridge swaps for mission-critical operations where diesel logistics and acoustic signature are unacceptable.",
     heroBody:
       "Silent portable power for bases, troops, and surveillance drones. Reduces reliance on fuel convoys. Eliminates the acoustic, thermal, and emissions signatures that compromise operational security.",
     overview: {
-      eyebrow: "Defense",
+      eyebrow: "Defence",
       headingBefore: "Tactical Communications, UAV Operations &",
       headingAccent: "ISR Systems.",
     },
@@ -138,8 +138,8 @@ export const marketDetails: readonly MarketDetailPage[] = [
     },
     productUses: {
       eyebrow: "Systems",
-      headingBefore: "Products Built",
-      headingAccent: "For This Theater.",
+      headingBefore: "Silent Power,",
+      headingAccent: "Where It Matters.",
       intro:
         "Silent portable power for bases, troops, and surveillance drones — Sentinel, Falcon, and Titan sized to the mission.",
       items: [
@@ -219,7 +219,7 @@ export const marketDetails: readonly MarketDetailPage[] = [
       "Reliable power for construction sites, telecom backup, mining, and other demanding industrial applications.",
     overview: {
       eyebrow: "Commercial",
-      headingBefore: "Construction Sites, Telecom Backup &",
+      headingBefore: "Construction Sites, Municipalities &",
       headingAccent: "Mining.",
     },
     href: "/markets/commercial",
@@ -270,7 +270,7 @@ export const marketDetails: readonly MarketDetailPage[] = [
       "Robust, low-maintenance hydrogen power for electrified drilling, remote site infrastructure, and off-grid operations without fuel-truck dependency.",
     applications: [
       "Construction Sites — clean backup power for everyday and emergency use with Titan",
-      "Telecom Backup — portable hydrogen power without fuel-truck dependency",
+      "Municipalities — quiet backup for public works and community facilities",
       "Delivered robust, low-maintenance power solutions for electrified drilling and site infrastructure",
       "Up to 5x extended flight range for inspection, mapping, public safety, and remote operations",
       "Swap a cartridge and restore full runtime without tools or specialized training",
@@ -388,8 +388,8 @@ export const marketDetails: readonly MarketDetailPage[] = [
         body: "Clean backup power for everyday and emergency use. 1.5 kW capacity, 40 lb portable weight, and unlimited runtime with refillable hydrogen cartridges.",
       },
       {
-        title: "Telecom Backup",
-        body: "Reliable power for construction sites, telecom backup, mining, and other demanding industrial applications.",
+        title: "Municipalities",
+        body: "Quiet backup for public works, community facilities, and essential municipal services when the grid cannot be trusted.",
       },
       {
         title: "Mining",

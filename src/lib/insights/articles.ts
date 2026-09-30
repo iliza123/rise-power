@@ -30,7 +30,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Diesel generators have powered field operations for decades. But hydrogen fuel cells are changing the equation for defense, disaster response, and remote operations. The differences go beyond fuel type.`,
+        text: `Diesel generators have powered field operations for decades. But hydrogen fuel cells are changing the equation for defence, disaster response, and remote operations. The differences go beyond fuel type.`,
       },
       {
         type: "paragraph",
@@ -106,7 +106,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `But for portable, deployable power under 5kW, hydrogen fuel cells are now the superior choice for most defense and critical infrastructure applications.`,
+        text: `But for portable, deployable power under 5kW, hydrogen fuel cells are now the superior choice for most defence and critical infrastructure applications.`,
       },
       {
         type: "heading",
@@ -245,7 +245,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "heading",
-        text: `Defense and Military`,
+        text: `Defence and Military`,
       },
       {
         type: "paragraph",
@@ -347,8 +347,8 @@ export const insights: InsightArticle[] = [
     title: `Silent Generators for Military: Why Noise Matters`,
     date: `2026-03-14`,
     displayDate: `Mar 14, 2026`,
-    category: `Defense`,
-    excerpt: `Why acoustic signature matters in military power and how hydrogen fuel cell generators deliver under 65 dBA for defense operations.`,
+    category: `Defence`,
+    excerpt: `Why acoustic signature matters in military power and how hydrogen fuel cell generators deliver under 65 dBA for defence operations.`,
     readTime: `4 min read`,
     accentPhrase: `Silent Generators`,
     hero: {
@@ -559,7 +559,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Best for: Extended operations (24-72+ hours), military and defense, disaster response, remote sites, and any application where recharging isn't practical.`,
+        text: `Best for: Extended operations (24-72+ hours), military and defence, disaster response, remote sites, and any application where recharging isn't practical.`,
       },
       {
         type: "paragraph",
@@ -611,7 +611,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "heading",
-        text: `Defense and Security`,
+        text: `Defence and Security`,
       },
       {
         type: "paragraph",
@@ -619,7 +619,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `View defense power use cases`,
+        text: `View defence power use cases`,
       },
       {
         type: "heading",
@@ -892,7 +892,7 @@ export const insights: InsightArticle[] = [
     title: `Drone Fuel Cell vs Battery: 5x More Flight Time`,
     date: `2026-02-20`,
     displayDate: `Feb 20, 2026`,
-    category: `Defense`,
+    category: `Defence`,
     excerpt: `Hydrogen fuel cells extend drone flight time by 5x over lithium batteries. Compare weight, runtime, and performance for ISR missions.`,
     readTime: `4 min read`,
     accentPhrase: `Fuel Cell`,
@@ -1513,13 +1513,13 @@ export const insights: InsightArticle[] = [
     title: `Hydrogen vs Lithium Batteries for Military Power`,
     date: `2026-01-30`,
     displayDate: `Jan 30, 2026`,
-    category: `Defense`,
+    category: `Defence`,
     excerpt: `Hydrogen fuel cells outperform lithium batteries on runtime, weight, and logistics for military portable power. See the full comparison.`,
     readTime: `4 min read`,
     accentPhrase: `Lithium Batteries`,
     hero: {
       src: `/media/insights/defense-battery.png`,
-      alt: `Defense and military portable power operations`,
+      alt: `Defence and military portable power operations`,
     },
     relatedSlugs: [
       `backup-power-critical-infrastructure`,
@@ -1536,7 +1536,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `This comparison covers every metric defense procurement teams care about when evaluating hydrogen fuel cells against lithium-ion and lithium-polymer batteries for portable military power.`,
+        text: `This comparison covers every metric defence procurement teams care about when evaluating hydrogen fuel cells against lithium-ion and lithium-polymer batteries for portable military power.`,
       },
       {
         type: "heading",
@@ -1648,7 +1648,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Hydrogen fuel cells have a higher upfront cost but lower total cost of ownership over multi-year deployments. Eliminating charging infrastructure, generator fuel, and battery replacement cycles makes hydrogen more cost-effective for sustained operations. Contact our defense team for detailed TCO analysis.`,
+        text: `Hydrogen fuel cells have a higher upfront cost but lower total cost of ownership over multi-year deployments. Eliminating charging infrastructure, generator fuel, and battery replacement cycles makes hydrogen more cost-effective for sustained operations. Contact our defence team for detailed TCO analysis.`,
       },
     ],
   },
@@ -1821,13 +1821,13 @@ export const insights: InsightArticle[] = [
     title: `Portable Power for Forward Operating Bases`,
     date: `2025-12-28`,
     displayDate: `Dec 28, 2025`,
-    category: `Defense`,
+    category: `Defence`,
     excerpt: `Forward operating bases need reliable, quiet, low-signature power. See how hydrogen fuel cells solve FOB power challenges that diesel can't.`,
     readTime: `4 min read`,
     accentPhrase: `Forward Operating Bases`,
     hero: {
       src: `/media/insights/defense-fob.png`,
-      alt: `Defense and military portable power operations`,
+      alt: `Defence and military portable power operations`,
     },
     relatedSlugs: [
       `what-is-pem-fuel-cell`,
@@ -1936,7 +1936,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Rise Power works with defense procurement teams to design phased transition plans. Contact us for a FOB power assessment.`,
+        text: `Rise Power works with defence procurement teams to design phased transition plans. Contact us for a FOB power assessment.`,
       },
       {
         type: "heading",
@@ -2048,7 +2048,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "heading",
-        text: `Military and Defense`,
+        text: `Military and Defence`,
       },
       {
         type: "paragraph",
@@ -2534,7 +2534,7 @@ export const insights: InsightArticle[] = [
     title: `How Hydrogen Cuts Military Power Logistics`,
     date: `2025-10-15`,
     displayDate: `Oct 15, 2025`,
-    category: `Defense`,
+    category: `Defence`,
     excerpt: `Hydrogen cartridges weigh less, last longer, and eliminate charging infrastructure. See how hydrogen simplifies military power supply chains.`,
     readTime: `5 min read`,
     accentPhrase: `Power Logistics`,
@@ -2702,7 +2702,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Cartridge density depends on configuration, but a standard 463L pallet can carry enough hydrogen cartridges for approximately 500+ hours of Sentinel operation or 100+ hours of Titan operation. Exact numbers available under NDA. Contact our defense team.`,
+        text: `Cartridge density depends on configuration, but a standard 463L pallet can carry enough hydrogen cartridges for approximately 500+ hours of Sentinel operation or 100+ hours of Titan operation. Exact numbers available under NDA. Contact our defence team.`,
       },
       {
         type: "heading",
@@ -3223,7 +3223,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Military and defense, emergency response, noise-sensitive operations, environmentally sensitive sites, cold-weather operations, extended off-grid deployments. Explore Rise Power's lineup.`,
+        text: `Military and defence, emergency response, noise-sensitive operations, environmentally sensitive sites, cold-weather operations, extended off-grid deployments. Explore Rise Power's lineup.`,
       },
       {
         type: "heading",
@@ -3243,7 +3243,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `For defense, emergency management, and critical infrastructure, hydrogen fuel cells aren't just competitive. They're the best available option today. See Rise Power's full product line or contact our team for a consultation.`,
+        text: `For defence, emergency management, and critical infrastructure, hydrogen fuel cells aren't just competitive. They're the best available option today. See Rise Power's full product line or contact our team for a consultation.`,
       },
       {
         type: "heading",
@@ -3297,7 +3297,7 @@ export const insights: InsightArticle[] = [
     date: `2025-08-10`,
     displayDate: `Aug 10, 2025`,
     category: `Technology`,
-    excerpt: `Learn what green hydrogen is, how it differs from grey and blue hydrogen, and why it matters for portable clean energy and defense applications.`,
+    excerpt: `Learn what green hydrogen is, how it differs from grey and blue hydrogen, and why it matters for portable clean energy and defence applications.`,
     readTime: `4 min read`,
     accentPhrase: `Green Hydrogen`,
     hero: {
@@ -3319,7 +3319,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `For organizations that need reliable, deployable energy with zero emissions, green hydrogen changes everything. Defense agencies, hospitals, and emergency responders are already making the switch.`,
+        text: `For organizations that need reliable, deployable energy with zero emissions, green hydrogen changes everything. Defence agencies, hospitals, and emergency responders are already making the switch.`,
       },
       {
         type: "heading",
@@ -3387,7 +3387,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "heading",
-        text: `Green Hydrogen in Defense and Emergency Response`,
+        text: `Green Hydrogen in Defence and Emergency Response`,
       },
       {
         type: "paragraph",
@@ -3511,7 +3511,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `For defense applications, minimal maintenance is a force multiplier. Every hour a technician spends changing oil on a diesel generator is an hour not spent on mission tasks.`,
+        text: `For defence applications, minimal maintenance is a force multiplier. Every hour a technician spends changing oil on a diesel generator is an hour not spent on mission tasks.`,
       },
       {
         type: "paragraph",
@@ -4181,7 +4181,7 @@ export const insights: InsightArticle[] = [
     title: `Extending Military Drone Endurance with Fuel Cells`,
     date: `2025-05-22`,
     displayDate: `May 22, 2025`,
-    category: `Defense`,
+    category: `Defence`,
     excerpt: `Hydrogen fuel cells give drones up to 5x extended flight range over batteries. Here is how fuel cell propulsion changes ISR operations.`,
     readTime: `6 min read`,
     accentPhrase: `Fuel Cell`,
@@ -4330,7 +4330,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `NATO and allied defense agencies have identified hydrogen fuel cell UAS as a priority capability for 2025-2030 procurement cycles. Learn about Rise Power's defense solutions.`,
+        text: `NATO and allied defence agencies have identified hydrogen fuel cell UAS as a priority capability for 2025-2030 procurement cycles. Learn about Rise Power's defence solutions.`,
       },
       {
         type: "takeaways",
@@ -4740,11 +4740,11 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "heading",
-        text: `Defense`,
+        text: `Defence`,
       },
       {
         type: "paragraph",
-        text: `While military operations often receive regulatory exemptions, defense agencies are voluntarily pursuing clean energy for operational reasons: reduced fuel logistics, lower thermal signatures, and reduced dependency on contested fuel supply chains. Explore defense applications.`,
+        text: `While military operations often receive regulatory exemptions, defence agencies are voluntarily pursuing clean energy for operational reasons: reduced fuel logistics, lower thermal signatures, and reduced dependency on contested fuel supply chains. Explore defence applications.`,
       },
       {
         type: "heading",
@@ -4817,13 +4817,13 @@ export const insights: InsightArticle[] = [
     title: `Tactical Power Management for Military Ops`,
     date: `2025-04-01`,
     displayDate: `Apr 1, 2025`,
-    category: `Defense`,
+    category: `Defence`,
     excerpt: `Modern military operations demand smarter power management. Hydrogen fuel cells reduce logistics burden, noise, and thermal signature in the field.`,
     readTime: `5 min read`,
     accentPhrase: `Tactical Power`,
     hero: {
       src: `/media/insights/defense-tactical.png`,
-      alt: `Defense and military portable power operations`,
+      alt: `Defence and military portable power operations`,
     },
     relatedSlugs: [
       `generator-emissions-regulations`,
@@ -4948,7 +4948,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Rise Power is positioned to support allied interoperability through standardized hydrogen cartridge systems. Explore our defense capabilities.`,
+        text: `Rise Power is positioned to support allied interoperability through standardized hydrogen cartridge systems. Explore our defence capabilities.`,
       },
       {
         type: "takeaways",
@@ -5002,7 +5002,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Rise Power's commercial fuel cell systems are available to qualified defense customers. Contact Rise Power for information on procurement, evaluation units, and security classification of specific system configurations.`,
+        text: `Rise Power's commercial fuel cell systems are available to qualified defence customers. Contact Rise Power for information on procurement, evaluation units, and security classification of specific system configurations.`,
       },
     ],
   },
@@ -5034,7 +5034,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `These trends matter most to defense procurement, critical infrastructure operators, and emergency management agencies that depend on portable power for mission-critical applications.`,
+        text: `These trends matter most to defence procurement, critical infrastructure operators, and emergency management agencies that depend on portable power for mission-critical applications.`,
       },
       {
         type: "heading",

@@ -13,7 +13,7 @@
 //       <PageHero
 //         eyebrow="Use Cases"
 //         title="Operating environments where Rise Power systems fit."
-//         description="Silent portable power for defense, disaster response, remote operations, and critical infrastructure."
+//         description="Silent portable power for defence, disaster response, remote operations, and critical infrastructure."
 //       />
 
 //       <div className="mx-auto max-w-[1440px] space-y-16 px-6 py-16 lg:px-10 lg:py-24">
@@ -167,17 +167,17 @@ type ProductConnection = {
 
 function EnvironmentTile({
   item,
-  defenseSlug,
+  defenceSlug,
   includeAnchorId = false,
 }: {
   item: OverviewCase;
-  defenseSlug?: string;
+  defenceSlug?: string;
   includeAnchorId?: boolean;
 }) {
   return (
     <article
       id={
-        includeAnchorId && item.slug !== defenseSlug ? item.slug : undefined
+        includeAnchorId && item.slug !== defenceSlug ? item.slug : undefined
       }
       className="group relative block aspect-[4/5] min-h-[22rem] scroll-mt-28 overflow-hidden rounded-xl bg-[#101713] sm:aspect-auto sm:min-h-[320px] lg:min-h-[340px]"
     >
@@ -282,12 +282,12 @@ function ProductConnectionCard({ product }: { product: ProductConnection }) {
 /* Page*/
 
 export default function UseCasesPage() {
-  const defense =
+  const defence =
     useCases.find(
       (item) =>
         item.slug === "defense" ||
-        item.slug === "defense-security" ||
-        item.title.toLowerCase().includes("defense"),
+        item.slug === "defence-security" ||
+        item.title.toLowerCase().includes("defence"),
     ) ?? useCases[0];
 
   const overviewCases = useCases.map((item, index) => ({
@@ -333,7 +333,7 @@ export default function UseCasesPage() {
     },
   ];
 
-  const defenseFeatures = [
+  const defenceFeatures = [
     {
       icon: VolumeX,
       title: "Quiet portable power",
@@ -468,7 +468,7 @@ export default function UseCasesPage() {
                 <EnvironmentTile
                   key={item.slug}
                   item={item}
-                  defenseSlug={defense?.slug}
+                  defenceSlug={defence?.slug}
                 />
               ))}
             </SnapCarousel>
@@ -483,7 +483,7 @@ export default function UseCasesPage() {
               <EnvironmentTile
                 key={item.slug}
                 item={item}
-                defenseSlug={defense?.slug}
+                defenceSlug={defence?.slug}
                 includeAnchorId
               />
             ))}
@@ -493,9 +493,9 @@ export default function UseCasesPage() {
 
       {/* DEFENSE & SECURITY FEATURE*/}
 
-      {defense && (
+      {defence && (
         <section
-          id={defense.slug}
+          id={defence.slug}
           className="relative scroll-mt-28 overflow-hidden bg-[#fbfaf7] pt-6 pb-16 sm:pt-8 sm:pb-20 lg:py-0"
         >
           <div className="mx-auto grid max-w-[1440px] items-center gap-5 px-6 lg:grid-cols-[1fr_0.92fr] lg:px-10">
@@ -504,7 +504,7 @@ export default function UseCasesPage() {
               <div className="relative aspect-[1.03/1] overflow-hidden rounded-xl bg-[#dfe4dc]">
                 <Image
                   src="/media/use-cases/uc-defence.png"
-                  alt={defense.title}
+                  alt={defence.title}
                   fill
                   sizes="(min-width: 1024px) 52vw, 100vw"
                   className="object-cover"
@@ -560,13 +560,13 @@ export default function UseCasesPage() {
 
                 {/* Feature list */}
                 <div className="mt-7 grid border-y border-[#e1e3de] sm:grid-cols-2">
-                  {defenseFeatures.map((feature, index) => {
+                  {defenceFeatures.map((feature, index) => {
                     const Icon = feature.icon;
 
                     return (
                       <div
                         key={feature.title}
-                        className={`flex items-center gap-4 py-5 ${index < defenseFeatures.length - 1
+                        className={`flex items-center gap-4 py-5 ${index < defenceFeatures.length - 1
                           ? "border-b border-[#e1e3de]"
                           : ""
                           } ${index === 1

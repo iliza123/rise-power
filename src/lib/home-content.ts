@@ -542,12 +542,12 @@ export const capabilities = {
   ] satisfies readonly CapabilityMedia[],
   closingBand: {
     imageSrc: "/media/use-cases/uc-defence.png",
-    imageAlt: "Defense operations powered by Rise Mission Power",
+    imageAlt: "Defence operations powered by Rise Mission Power",
   },
   certificationRoadmap: {
     eyebrow: "CERTIFICATION ROADMAP",
     heading: "Standards in active development.",
-    body: "Rise Power is beta-stage technology. The standards below are in active compliance and testing work. Final certification status will be published as each program completes. Defense and infrastructure procurement teams can request the current compliance brief during a capability review.",
+    body: "Rise Power is beta-stage technology. The standards below are in active compliance and testing work. Final certification status will be published as each program completes. Defence and infrastructure procurement teams can request the current compliance brief during a capability review.",
     items: [
       {
         status: "IN PROGRESS",
@@ -608,7 +608,7 @@ export const capabilities = {
       mobileImageSrc: "/media/capabilities/engineering-development-mobile.png",
       secondaryImageSrc: "/media/capabilities/engineering-scope.png",
       secondaryImageAlt:
-        "Rise Mission Power hydrogen ecosystem — cartridge, fuel cell, and product systems",
+        "Rise Mission Power product blueprint — Sentinel, Titan, Falcon, and hydrogen cartridge technical drawings",
       gallery: [
         {
           src: "/media/capabilities/engineering.png",
@@ -698,7 +698,7 @@ export const capabilities = {
         },
         {
           src: "/media/use-cases/defense-security.jpg",
-          alt: "Integrated power supporting defense communications hardware",
+          alt: "Integrated power supporting defence communications hardware",
         },
         {
           src: "/media/use-cases/uc-grid1.png",
@@ -781,7 +781,7 @@ export const capabilities = {
         },
         {
           src: "/media/use-cases/uc-defence.png",
-          alt: "Defense field operations with Rise Power systems",
+          alt: "Defence field operations with Rise Power systems",
         },
         {
           src: "/media/capabilities/field-deployment-hero.png",
@@ -845,9 +845,9 @@ export const capabilities = {
       title: "Safety & Compliance",
       eyebrow: "ENGINEERED IN FROM DAY ONE",
       heading: "Safety & Compliance",
-      body: "Safety engineered in from day one. Active certification across defense, transport, and indoor industrial standards.",
+      body: "Safety engineered in from day one. Active certification across defence, transport, and indoor industrial standards.",
       heroBody:
-        "Safety engineered in from day one. Active certification across defense, transport, and indoor industrial standards.",
+        "Safety engineered in from day one. Active certification across defence, transport, and indoor industrial standards.",
       href: "/capabilities/safety-compliance",
       imageSrc: "/media/capabilities/safety-compliance.png",
       mobileImageSrc: "/media/capabilities/safety-compliance-mobile.png",
@@ -871,7 +871,7 @@ export const capabilities = {
         },
       ],
       deliverablesIntro:
-        "Pressure vessels, leak detection, and thermal management are designed in from the start. Rise Power works directly with the regulatory bodies and standards organizations relevant to defense, transport, and indoor industrial deployment.",
+        "Pressure vessels, leak detection, and thermal management are designed in from the start. Rise Power works directly with the regulatory bodies and standards organizations relevant to defence, transport, and indoor industrial deployment.",
       deliverables: [
         "Safety by design engineering methodology",
         "Regulatory compliance assessment and documentation",
@@ -899,7 +899,7 @@ export const capabilities = {
         {
           value: "REGS",
           label: "ALIGNED",
-          body: "Defense, transport, and indoor standards.",
+          body: "Defence, transport, and indoor standards.",
         },
       ],
       callouts: [
@@ -917,7 +917,7 @@ export const capabilities = {
         },
         {
           title: "COMPLIANCE WORK",
-          body: "Defense, transport, and industrial bodies.",
+          body: "Defence, transport, and industrial bodies.",
         },
       ],
     },
@@ -930,7 +930,7 @@ export const hydrogenEcosystem = {
   eyebrow: "HOW WE WORK",
   headingBefore: "ONE PLATFORM.",
   headingAccent: "EVERY MISSION.",
-  body: "We design around a single refillable hydrogen cartridge. Swap it into Sentinel, Falcon, or Titan and the same fuel powers defense, commercial, and everyday use — without diesel logistics.",
+  body: "We design around a single refillable hydrogen cartridge. Swap it into Sentinel, Falcon, or Titan and the same fuel powers defence, commercial, and everyday use — without diesel logistics.",
   imageSrc: "/media/home/one-hydrogen-ecosystem.png",
   imageAlt:
     "One hydrogen ecosystem diagram showing Rise Mission Power systems for UAV range extender, tactical generator, home backup, outdoor, commercial, and portable field power",
@@ -1112,7 +1112,7 @@ export const footer = {
   /**
    * Footer columns — standard grouped nav (not 1:1 with header mega items):
    * About | Markets | Capabilities | Investors | Resources
-   * Single-link header items (Defense / Consumer / Commercial / Careers)
+   * Single-link header items (Defence / Consumer / Commercial / Careers)
    * are grouped so columns stay balanced.
    */
   groups: [
@@ -1130,7 +1130,7 @@ export const footer = {
     {
       heading: "Markets",
       links: [
-        { label: "Defense", href: "/markets/defense" },
+        { label: "Defence", href: "/markets/defense" },
         { label: "Consumer", href: "/markets/consumer" },
         { label: "Commercial", href: "/markets/commercial" },
       ],

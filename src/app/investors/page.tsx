@@ -294,7 +294,7 @@ const glanceItems = [
     title: "Category",
     lead: "Portable hydrogen fuel cell power.",
     detail:
-      "Disaster response, remote operations, critical infrastructure, and defense.",
+      "Disaster response, remote operations, critical infrastructure, and defence.",
     icon: LayersIcon,
   },
   {
@@ -360,7 +360,7 @@ export default function InvestorsPage() {
           <p className="type-section-body mt-4 max-w-[650px] text-white">
             Rise Power is raising to scale manufacturing, complete certification,
             and fulfill pilot deployments across disaster response, critical
-            infrastructure, and defense. Materials and contact below for qualified
+            infrastructure, and defence. Materials and contact below for qualified
             investors.
           </p>
 

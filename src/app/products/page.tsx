@@ -14,7 +14,7 @@
 //       <PageHero
 //         eyebrow="Products"
 //         title="Four products. One cartridge ecosystem."
-//         description="Engineered for defense, disaster response, remote operations, and critical backup."
+//         description="Engineered for defence, disaster response, remote operations, and critical backup."
 //       />
 
 //       <div className="mx-auto max-w-[1440px] px-6 py-16 lg:px-10 lg:py-24">

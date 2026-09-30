@@ -6,7 +6,7 @@ type MarketDetailProps = {
   market: MarketDetailPage;
 };
 
-/** Renders the shared market detail layout for Defense, Commercial, and Consumer. */
+/** Renders the shared market detail layout for Defence, Commercial, and Consumer. */
 export function MarketDetail({ market }: MarketDetailProps) {
   return <MarketLayout market={market} />;
 }

@@ -346,7 +346,7 @@ export function CapabilityDetail({ capability }: CapabilityDetailProps) {
           >
             {capability.id === "engineering" ? (
               <div className="relative w-full">
-                <div className="relative aspect-[1672/941] w-full overflow-hidden rounded-[7px] bg-[#e8e4db]">
+                <div className="relative aspect-[1774/887] w-full overflow-hidden rounded-[7px] bg-[#e8e4db]">
                   <Image
                     src={capability.images.secondary.src}
                     alt={capability.images.secondary.alt}

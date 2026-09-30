@@ -46,7 +46,7 @@ const destinations = [
     number: "03",
     title: "Insights",
     description:
-      "Guides and comparisons on hydrogen power, field logistics, and defense applications from Rise Power.",
+      "Guides and comparisons on hydrogen power, field logistics, and defence applications from Rise Power.",
     href: "/insights",
     cta: "View Insights",
     image: "/media/capabilities/field-deployment.png",

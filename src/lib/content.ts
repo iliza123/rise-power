@@ -99,7 +99,7 @@ export const products = [
 
 export const useCases = [
   {
-    slug: "defense-security",
+    slug: "defence-security",
     title: "Municipalities & Public Works",
     description:
       "Quiet, zero-emission backup for city facilities, public works, and neighbourhood operations when the grid is down. Rapidly deployable portable hydrogen power for civic teams.",

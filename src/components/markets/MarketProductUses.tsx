@@ -106,7 +106,7 @@ function ProductUseCard({
 
 /**
  * How Sentinel, Falcon, and Titan are used in this market —
- * shared across defense / commercial / consumer layouts.
+ * shared across defence / commercial / consumer layouts.
  * Elevated editorial presentation with image-true frames.
  */
 export function MarketProductUses({

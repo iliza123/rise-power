@@ -94,7 +94,7 @@ export default function InsightsPage() {
 
           <p className="type-section-body mt-4 max-w-[640px] text-white sm:mt-6">
             Guides and comparisons on hydrogen fuel cells, silent generators,
-            and portable power for defense and critical operations.
+            and portable power for defence and critical operations.
           </p>
 
           <div className="mt-7 sm:mt-8">

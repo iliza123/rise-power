@@ -58,7 +58,7 @@ export default function MarketsPage() {
       <StackedPageHero
         layout="split"
         imageSrc="/media/markets/defense-military.png"
-        imageAlt="Rise Mission Power across defense, commercial, and consumer markets"
+        imageAlt="Rise Mission Power across defence, commercial, and consumer markets"
         imageClassName="object-cover object-[center_45%]"
         imageWidth={3840}
         imageHeight={1300}

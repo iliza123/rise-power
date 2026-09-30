@@ -68,7 +68,7 @@ export const metadata: Metadata = {
     "hydrogen fuel cell",
     "portable power",
     "tactical power",
-    "defense energy",
+    "defence energy",
     "disaster response",
     "critical infrastructure",
     "Rise Power",
