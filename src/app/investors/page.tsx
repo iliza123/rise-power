@@ -68,7 +68,7 @@ function SettingsIcon() {
   );
 }
 
-function ZapIcon() {
+function BuildingIcon() {
   return (
     <svg
       viewBox="0 0 48 48"
@@ -78,7 +78,9 @@ function ZapIcon() {
       className="h-8 w-8 sm:h-9 sm:w-9"
       aria-hidden="true"
     >
-      <path d="M27 5 12 27h10l-2 16 16-24H26l1-14Z" />
+      <path d="M10 40V14l14-7 14 7v26" />
+      <path d="M20 40V30h8v10" />
+      <path d="M18 20h3M27 20h3M18 26h3M27 26h3" />
     </svg>
   );
 }
@@ -306,11 +308,10 @@ const glanceItems = [
   },
   {
     number: "03",
-    title: "Differentiator",
-    lead: "Plug & Play H₂-CORE cartridge platform.",
-    detail:
-      "Quiet, zero-emission power with under-30-second refuel — modular systems sharing one cartridge ecosystem.",
-    icon: ZapIcon,
+    title: "Parent",
+    lead: "Rise Mission Power is a subsidiary of CIMtech Green Energy.",
+    detail: "20+ years of Canadian advanced manufacturing.",
+    icon: BuildingIcon,
   },
   {
     number: "04",
