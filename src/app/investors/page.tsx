@@ -68,7 +68,7 @@ function SettingsIcon() {
   );
 }
 
-function BuildingIcon() {
+function ZapIcon() {
   return (
     <svg
       viewBox="0 0 48 48"
@@ -78,8 +78,7 @@ function BuildingIcon() {
       className="h-8 w-8 sm:h-9 sm:w-9"
       aria-hidden="true"
     >
-      <path d="M9 41V14h17v27M26 41V7h13v34M5 41h38" />
-      <path d="M14 20h3M14 27h3M14 34h3M31 14h3M31 21h3M31 28h3M31 35h3" />
+      <path d="M27 5 12 27h10l-2 16 16-24H26l1-14Z" />
     </svg>
   );
 }
@@ -307,10 +306,11 @@ const glanceItems = [
   },
   {
     number: "03",
-    title: "Company Relationship",
-    lead: "Rise Mission Power is a subsidiary of CIMtech Green Energy.",
-    detail: "20+ years of Canadian advanced manufacturing.",
-    icon: BuildingIcon,
+    title: "Differentiator",
+    lead: "Plug & Play H₂-CORE cartridge platform.",
+    detail:
+      "Quiet, zero-emission power with under-30-second refuel — modular systems sharing one cartridge ecosystem.",
+    icon: ZapIcon,
   },
   {
     number: "04",
