@@ -125,24 +125,33 @@ export function CartridgeEcosystem() {
       className="relative scroll-mt-28 overflow-hidden bg-[#0e1210]"
     >
       {/*
-        Wider-than-native frame crops top/bottom a bit; object-position shifts
-        the photo right so the product stack sits more center-right under the
-        overlays. Uniform scale only (object-cover) — no stretch.
+        Full-bleed cover + edge vignette so the photo fades into the section
+        bg instead of reading as a hard-cropped rectangle.
       */}
-      <div className="relative aspect-[2.7/1] w-full overflow-hidden sm:aspect-[2.9/1] lg:aspect-[3.1/1]">
-        {/* Wider + offset wrapper so a rightward shift is actually visible
-            (wide aspect frames only crop top/bottom, so object-position X alone does nothing). */}
-        <div className="absolute inset-y-0 -right-[12%] left-auto w-[118%]">
-          <Image
-            src="/media/products/product-ecosystem.png"
-            alt="Rise Power products — drone, portable power systems, and hydrogen fuel cell on display"
-            fill
-            quality={92}
-            sizes="100vw"
-            className="object-cover object-[center_48%]"
-            priority
-          />
-        </div>
+      <div className="relative aspect-[2.55/1] w-full overflow-hidden sm:aspect-[2.7/1] lg:aspect-[2.9/1]">
+        <Image
+          src="/media/products/product-ecosystem.png"
+          alt="Rise Power products — drone, portable power systems, and hydrogen fuel cell on display"
+          fill
+          quality={92}
+          sizes="100vw"
+          className="object-cover object-[center_48%]"
+          priority
+        />
+
+        {/* Soft shadow / fade on all four edges into #0e1210 */}
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0"
+          style={{
+            boxShadow:
+              "inset 0 0 70px 36px #0e1210, inset 0 0 140px 72px #0e1210",
+            background: `
+              linear-gradient(to right, #0e1210 0%, transparent 14%, transparent 86%, #0e1210 100%),
+              linear-gradient(to bottom, #0e1210 0%, transparent 20%, transparent 80%, #0e1210 100%)
+            `,
+          }}
+        />
 
         {/* Desktop overlays — pin intro left, flow list right */}
         <div className="pointer-events-none absolute inset-0 hidden lg:block">
