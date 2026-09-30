@@ -144,11 +144,11 @@ export function CartridgeEcosystem() {
           aria-hidden
           className="pointer-events-none absolute inset-0"
           style={{
-            boxShadow:
-              "inset 0 0 70px 36px #0e1210, inset 0 0 140px 72px #0e1210",
+            boxShadow: "inset 0 0 24px 8px #0e1210",
             background: `
-              linear-gradient(to right, #0e1210 0%, transparent 14%, transparent 86%, #0e1210 100%),
-              linear-gradient(to bottom, #0e1210 0%, transparent 20%, transparent 80%, #0e1210 100%)
+              linear-gradient(to right, #0e1210 0%, transparent 4%, transparent 96%, #0e1210 100%),
+              linear-gradient(to bottom, #0e1210 0%, transparent 5%, transparent 95%, #0e1210 100%),
+              radial-gradient(ellipse 78% 70% at 50% 50%, transparent 55%, transparent 72%, #0e1210 100%)
             `,
           }}
         />
