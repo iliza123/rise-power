@@ -33,13 +33,13 @@ const sage = "#6e7f42";
 const cream = "#f7f5ef";
 const charcoal = "#06141d";
 
-const categoryIcons: LucideIcon[] = [Shield, RadioTower, Pickaxe, Cross];
+const categoryIcons: LucideIcon[] = [Shield, Pickaxe, Cross, RadioTower];
 
 const statIcons: LucideIcon[][] = [
   [Timer, ShieldCheck, Leaf],
-  [RadioTower, Signal, Leaf],
   [Gauge, Wrench, ShieldCheck],
   [Timer, VolumeX, Users],
+  [RadioTower, Signal, Leaf],
 ];
 
 const partnerIcons: LucideIcon[] = [Cog, Handshake, ShieldCheck, Globe, Award];
