@@ -82,10 +82,10 @@ export const megaNavItems: readonly MegaNavItem[] = [
       //   description: "CIMtech Green Energy subsidiary. Canadian manufacturing.",
       // },
       {
-        label: "Our Technology",
-        href: "/about#technology",
+        label: "Our Mission",
+        href: "/about#mission",
         description:
-          "H₂-CORE Plug & Play Hydrogen Platform — modular, scalable, field-ready.",
+          "Quiet, zero-emission portable hydrogen power for municipal, emergency, field, and off-grid use.",
       },
       {
         label: "How We Work",

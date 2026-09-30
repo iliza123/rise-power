@@ -1122,7 +1122,7 @@ export const footer = {
       links: [
         { label: "About", href: "/about" },
         // { label: "Company", href: "/company" },
-        { label: "Our Technology", href: "/about#technology" },
+        { label: "Our Mission", href: "/about#mission" },
         { label: "How We Work", href: "/about#how-we-work" },
         { label: "Contact", href: "/contact" },
         { label: "Careers", href: "/contact" },
