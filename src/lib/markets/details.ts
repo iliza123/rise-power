@@ -53,15 +53,15 @@ export const marketDetails: readonly MarketDetailPage[] = [
       },
       {
         src: "/media/markets/defense-gallery-2.png",
-        alt: "Stacked Military Edition Rise Mission Power units on wheels at a snowy mountain field camp with soldiers and a command tent",
-        title: "Cold Weather",
-        caption: "Mission-ready in austere climates.",
+        alt: "Rise Mission Power octocopter on a rocky mountain ridge at golden hour with an operator running flight control from rugged cases nearby",
+        title: "UAV Support",
+        caption: "Range extension for ISR missions.",
       },
       {
         src: "/media/markets/defense-gallery-3.png",
-        alt: "Stacked camouflage Rise Mission Power units at a coastal field station with operators and expedition gear",
-        title: "Expeditionary",
-        caption: "Quiet power for remote deployments.",
+        alt: "Stacked Military Edition Rise Mission Power units on wheels at a snowy mountain field camp with soldiers and a command tent",
+        title: "Cold Weather",
+        caption: "Mission-ready in austere climates.",
       },
       {
         src: "/media/markets/defense-gallery-4.png",
