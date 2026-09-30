@@ -1025,15 +1025,16 @@ export const customerPartners = {
     },
     {
       category: "MILITARY OPERATIONS",
-      title: "Clean Power for Extreme Environments",
-      body: "Delivered robust, low-maintenance power solutions for electrified drilling and site infrastructure.",
+      title: "Silent Power for Forward Missions.",
+      body: "Quiet, zero-emission hydrogen power for tactical field posts — communications, computing, and mission gear without diesel signature or fuel-truck dependency.",
       stats: [
-        { value: "30% LOWER TCO", label: "vs Diesel" },
-        { value: "70% LESS MAINT.", label: "Downtime Reduced" },
-        { value: "BUILT TOUGH", label: "For Harsh Sites" },
+        { value: "QUIET", label: "Low Acoustic Signature" },
+        { value: "0 EMISSIONS", label: "At Point of Use" },
+        { value: "<30 SEC", label: "Cartridge Swap" },
       ],
-      href: "/markets/commercial",
-      image: "Military operations case study",
+      href: "/markets/defense",
+      image:
+        "Military field post with Rise Mission Power units supporting laptop and communications gear in a mountain tent",
       imageSrc: "/media/cases/mining.png",
     },
     {

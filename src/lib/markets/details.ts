@@ -231,7 +231,7 @@ export const marketDetails: readonly MarketDetailPage[] = [
       },
       secondary: {
         src: "/media/cases/mining.png",
-        alt: "Mining company case study",
+        alt: "Military operations — soldiers guiding a tactical drone load at a desert forward site",
       },
     },
     gallery: [
