@@ -1024,7 +1024,7 @@ export const customerPartners = {
       imageClassName: "object-cover object-center",
     },
     {
-      category: "MINING COMPANY",
+      category: "MILITARY OPERATIONS",
       title: "Clean Power for Extreme Environments",
       body: "Delivered robust, low-maintenance power solutions for electrified drilling and site infrastructure.",
       stats: [
@@ -1033,7 +1033,7 @@ export const customerPartners = {
         { value: "BUILT TOUGH", label: "For Harsh Sites" },
       ],
       href: "/markets/commercial",
-      image: "Mining company case study",
+      image: "Military operations case study",
       imageSrc: "/media/cases/mining.png",
     },
     {
