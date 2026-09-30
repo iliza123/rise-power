@@ -138,8 +138,8 @@ export const marketDetails: readonly MarketDetailPage[] = [
     },
     productUses: {
       eyebrow: "Systems",
-      headingBefore: "Products Built",
-      headingAccent: "For This Theater.",
+      headingBefore: "Silent Power,",
+      headingAccent: "Where It Matters.",
       intro:
         "Silent portable power for bases, troops, and surveillance drones — Sentinel, Falcon, and Titan sized to the mission.",
       items: [
