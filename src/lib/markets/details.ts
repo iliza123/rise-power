@@ -249,9 +249,9 @@ export const marketDetails: readonly MarketDetailPage[] = [
       },
       {
         src: "/media/markets/commercial-gallery-3.png",
-        alt: "Hi-vis technician servicing industrial electrical cabinets with a stacked Rise Mission Power unit providing field power",
-        title: "Utilities",
-        caption: "Backup when the line goes down.",
+        alt: "Rise Mission Power agricultural drone spraying crops at sunrise with mountains in the background",
+        title: "Agriculture",
+        caption: "Extended range for precision field operations.",
       },
       {
         src: "/media/markets/commercial-gallery-2.png",
