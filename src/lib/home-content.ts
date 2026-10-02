@@ -136,6 +136,15 @@ export type GroupCompanyCard = {
   cta: string;
   external?: boolean;
   featured?: boolean;
+  /** Dark split leadership card (framed portrait + copy) vs full-bleed photo card. */
+  variant?: "photo" | "leadership";
+  tagline?: string;
+  headlineBefore?: string;
+  headlineAccent?: string;
+  /** Shown under the profile photo on leadership cards (HTML — not baked into image). */
+  role?: string;
+  organization?: string;
+  primaryCta?: string;
 };
 
 export type FooterGroup = {
@@ -1069,21 +1078,30 @@ export const businessesCompanies = {
   companies: [
     {
       name: "CIMtech Green Energy",
-      body: "Canadian advanced manufacturing for hydrogen systems—precision engineering, production capability, and field-ready energy platforms.",
-      image: "Manufacturing plant image with mountains and a non-official logo",
+      body: "Advanced manufacturing partner specializing in hydrogen fuel cell components, precision machining, assemblies, injection molding, and scalable clean energy solutions.",
+      image: "Hydrogen energy campus at golden hour with wind turbines and H2 facility",
       imageSrc: "/media/businesses/cimtech-green-energy.png",
       href: "https://cimtech.vercel.app",
       cta: "Visit CIMtech Green Energy",
       external: true,
+      variant: "photo",
     },
     {
       name: "Dr. Paul Ghotra",
-      body: "Founder & CEO of CIMtech Green Energy and Rise Mission Power—visionary entrepreneur and award-winning leader in Canadian green energy.",
-      image: "Portrait of Dr. Paul Ghotra",
-      imageSrc: "/media/businesses/dr-paul-ghotra.png",
+      body: "Dr. Paul Ghotra is a visionary entrepreneur and award-winning leader in Canadian green energy. As Founder & CEO of CIMtech Green Energy, he advances hydrogen technologies and clean-energy systems that scale from lab to field.",
+      image: "Portrait of Dr. Paul Ghotra, CEO & Founder",
+      /** Drop the final profile headshot here (portrait ~3:4, face centered). */
+      imageSrc: "/media/businesses/dr-paul-ghotra-profile.png",
       href: "https://mediumspringgreen-penguin-228172.hostingersite.com/",
       cta: "Visit Dr. Paul Ghotra",
       external: true,
+      variant: "leadership",
+      tagline: "Vision. Experience. Impact.",
+      headlineBefore: "Leadership That",
+      headlineAccent: "Drives Innovation.",
+      role: "CEO & Founder",
+      organization: "CIMtech Green Energy",
+      primaryCta: "Visit Dr. Paul Ghotra",
     },
   ] satisfies readonly GroupCompanyCard[],
 };
