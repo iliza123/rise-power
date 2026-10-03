@@ -2,7 +2,13 @@ import nodemailer from "nodemailer";
 
 import { site } from "@/lib/content";
 
-type MailEnv = "GMAIL_USER" | "GMAIL_APP_PASSWORD" | "CONTACT_TO_EMAIL";
+type MailEnv =
+  | "SMTP_HOST"
+  | "SMTP_PORT"
+  | "SMTP_USER"
+  | "SMTP_PASS"
+  | "CONTACT_FROM_EMAIL"
+  | "CONTACT_TO_EMAIL";
 
 const BRAND = {
   sage: "#6e7f42",
@@ -22,13 +28,17 @@ function requireEnv(name: MailEnv): string {
   return value;
 }
 
-/** Gmail SMTP auth — GMAIL_USER only sends; destination is CONTACT_TO_EMAIL. */
+/** SMTP2GO — auth via SMTP_USER/SMTP_PASS; From/To use CONTACT_* emails. */
 function createTransporter() {
+  const port = Number(requireEnv("SMTP_PORT"));
   return nodemailer.createTransport({
-    service: "gmail",
+    host: requireEnv("SMTP_HOST"),
+    port,
+    // 465/8465/443 use implicit SSL; 2525/587 use STARTTLS.
+    secure: port === 465 || port === 8465 || port === 443,
     auth: {
-      user: requireEnv("GMAIL_USER"),
-      pass: requireEnv("GMAIL_APP_PASSWORD"),
+      user: requireEnv("SMTP_USER"),
+      pass: requireEnv("SMTP_PASS"),
     },
   });
 }
@@ -194,7 +204,7 @@ function buildContactEmailHtml(input: ContactEmailInput): string {
 }
 
 export async function sendContactEmail(input: ContactEmailInput) {
-  const user = requireEnv("GMAIL_USER");
+  const from = requireEnv("CONTACT_FROM_EMAIL");
   const to = requireEnv("CONTACT_TO_EMAIL");
   const transporter = createTransporter();
 
@@ -216,7 +226,7 @@ export async function sendContactEmail(input: ContactEmailInput) {
   const subjectOrg = org ? ` (${org})` : "";
 
   await transporter.sendMail({
-    from: `"${site.name} Website" <${user}>`,
+    from: `"${site.name} Website" <${from}>`,
     to,
     replyTo: `"${input.name}" <${input.email}>`,
     subject: `New inquiry — ${input.name}${subjectOrg}`,
