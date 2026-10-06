@@ -102,7 +102,7 @@ export default function ContactPage() {
         <div className="mx-auto max-w-[1440px] px-6 lg:px-10">
           <div className="grid items-start gap-8 lg:grid-cols-2 lg:gap-10">
             <Reveal variant="left">
-              <div className="flex h-full flex-col">
+              <div className="flex flex-col lg:h-full">
                 <SectionEyebrow>Contact</SectionEyebrow>
 
                 <h2 className="mt-4 type-section-h2 text-[#101820]">
@@ -148,7 +148,7 @@ export default function ContactPage() {
                 </ul>
 
                 {/* Email / Phone / Address — one row under the copy */}
-                <div className="mt-auto grid gap-6 border-t border-[#d9dfe3] pt-8 sm:grid-cols-3 sm:gap-0 sm:divide-x sm:divide-[#d9dfe3] lg:mt-10">
+                <div className="mt-6 grid gap-6 border-t border-[#d9dfe3] pt-6 sm:grid-cols-3 sm:gap-0 sm:divide-x sm:divide-[#d9dfe3] lg:mt-auto lg:pt-8">
                   <div className="sm:pr-5">
                     <p className="text-base font-semibold tracking-[0.14em] text-[#6e7f42] uppercase sm:text-[0.9375rem]">
                       Email

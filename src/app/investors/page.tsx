@@ -248,7 +248,7 @@ const pressUpdates = [
 function PressCard({ item }: { item: (typeof pressUpdates)[number] }) {
   return (
     <article className="group flex h-full flex-col overflow-hidden rounded-[8px] border border-[#d9dfe3] bg-white">
-      <div className="relative aspect-[1.65/1] overflow-hidden">
+      <div className="relative aspect-[1.65/1] shrink-0 overflow-hidden">
         <Image
           src={item.image}
           alt={item.imageAlt}
@@ -258,7 +258,7 @@ function PressCard({ item }: { item: (typeof pressUpdates)[number] }) {
         />
       </div>
 
-      <div className="flex flex-1 flex-col p-6 sm:p-7">
+      <div className="flex flex-1 flex-col p-5 sm:p-6">
         <div className="flex items-center gap-4">
           <span className="font-display text-2xl font-bold text-[#52a526]">
             {item.number}
@@ -267,17 +267,17 @@ function PressCard({ item }: { item: (typeof pressUpdates)[number] }) {
           <span className="h-px w-[105px] bg-[#b9c1c7]" />
         </div>
 
-        <h3 className="mt-2 font-display text-[25px] font-bold leading-[1.05] tracking-tight text-[#101820]">
+        <h3 className="mt-2 min-h-[3.15em] font-display text-[25px] font-bold leading-[1.05] tracking-tight text-[#101820]">
           {item.title}
         </h3>
 
-        <p className="mt-4 text-sm font-semibold tracking-[0.14em] text-[#66727d] uppercase">
+        <p className="mt-3 text-sm font-semibold tracking-[0.14em] text-[#66727d] uppercase">
           {item.meta}
           <span className="mx-2 text-[#aab1b7]">·</span>
           {item.category}
         </p>
 
-        <p className="mt-4 text-[16px] leading-[1.4] text-[#65717d]">
+        <p className="mt-3 line-clamp-3 min-h-[4.2em] text-[16px] leading-[1.4] text-[#65717d]">
           {item.body}
         </p>
       </div>
@@ -365,20 +365,20 @@ export default function InvestorsPage() {
             investors.
           </p>
 
-          <div className="mt-8 flex flex-col gap-4 sm:mt-9 sm:flex-row">
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
             <Link
               href="/contact"
-              className="cta-with-icon group inline-flex min-h-12 items-center justify-center gap-2 rounded-sm bg-[#849363] px-9 text-sm font-semibold tracking-[0.04em] text-white uppercase transition-opacity hover:opacity-90 sm:min-h-[64px]"
+              className="cta-with-icon inline-flex min-h-12 items-center justify-center gap-2 rounded-sm bg-[#849363] px-8 text-sm font-semibold tracking-wide text-white uppercase transition-opacity hover:opacity-90"
             >
               <span className="leading-none">Request a Briefing</span>
-              <ArrowRight className="size-4 shrink-0 transition-transform duration-300 group-hover:translate-x-1 sm:size-5" />
+              <ArrowRight className="size-4 shrink-0 sm:size-5" aria-hidden />
             </Link>
             <Link
               href="#investor-materials"
-              className="cta-with-icon group inline-flex min-h-12 items-center justify-center gap-2 rounded-sm border border-white/80 px-9 text-sm font-semibold tracking-[0.04em] text-white uppercase transition-colors hover:bg-white/10 sm:min-h-[64px]"
+              className="cta-with-icon inline-flex min-h-12 items-center justify-center gap-2 rounded-sm border border-white/50 px-8 text-sm font-semibold tracking-wide text-white uppercase transition-colors hover:bg-white/10"
             >
               <span className="leading-none">Download the Deck</span>
-              <ArrowRight className="size-4 shrink-0 transition-transform duration-300 group-hover:translate-x-1 sm:size-5" />
+              <ArrowRight className="size-4 shrink-0 sm:size-5" aria-hidden />
             </Link>
           </div>
         </div>
@@ -662,11 +662,16 @@ export default function InvestorsPage() {
               ariaLabel="Press and updates"
               showArrows
               showDots
-              itemClassName="w-[min(88vw,22rem)] sm:w-[min(70vw,26rem)] md:w-[min(55vw,28rem)]"
-              trackClassName="gap-4 px-1 pb-1"
+              itemClassName="flex h-full w-[min(88vw,22rem)] flex-col sm:w-[min(70vw,26rem)] md:w-[min(55vw,28rem)]"
+              trackClassName="items-stretch gap-4 px-1"
             >
               {pressUpdates.map((item, index) => (
-                <Reveal key={item.number} variant="up" delay={index * 70}>
+                <Reveal
+                  key={item.number}
+                  variant="up"
+                  delay={index * 70}
+                  className="flex h-full min-h-0 flex-col"
+                >
                   <PressCard item={item} />
                 </Reveal>
               ))}

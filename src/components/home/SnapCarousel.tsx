@@ -472,7 +472,7 @@ export function SnapCarousel({
 
       {showBottomControls ? (
         <div
-          className={`mt-5 flex items-center ${
+          className={`mt-4 flex items-center ${
             showBottomArrows
               ? "justify-center gap-3 sm:gap-4"
               : "justify-center"

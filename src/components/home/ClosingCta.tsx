@@ -50,7 +50,7 @@ export function ClosingCta() {
       <div className="absolute inset-x-0 bottom-0 h-48 bg-gradient-to-t from-[#061018]/75 via-[#061018]/35 to-transparent" />
 
       <div className="relative mx-auto w-full max-w-[1716px] px-5 py-8 sm:px-8 sm:py-12 lg:px-10 lg:py-16">
-        <div className="grid items-center xl:grid-cols-[minmax(0,1.75fr)_minmax(0,0.55fr)] xl:gap-10">
+        <div className="grid items-start xl:grid-cols-[minmax(0,1.75fr)_minmax(0,0.55fr)] xl:items-center xl:gap-10">
           {/* Story — shown once */}
           <div className="min-w-0">
             <Reveal variant="up">
@@ -66,7 +66,7 @@ export function ClosingCta() {
             </Reveal>
 
             <RevealStagger
-              className="mt-7 grid grid-cols-2 gap-x-5 gap-y-5 sm:mt-9 sm:grid-cols-4 sm:gap-x-6 sm:gap-y-6 lg:mt-11 lg:gap-x-8"
+              className="mt-6 grid grid-cols-2 gap-x-5 gap-y-4 sm:mt-8 sm:gap-x-6 sm:gap-y-5 lg:mt-9 lg:grid-cols-4 lg:gap-x-6"
               step={70}
               variant="up"
               baseDelay={40}
@@ -77,7 +77,7 @@ export function ClosingCta() {
                 return (
                   <div
                     key={chip.title}
-                    className="group relative flex min-w-0 items-center gap-2.5 sm:items-start sm:gap-3"
+                    className="group relative flex min-w-0 items-start gap-2.5 sm:gap-3"
                   >
                     <span
                       className="relative grid size-9 shrink-0 place-items-center rounded-full sm:size-11"
@@ -101,15 +101,15 @@ export function ClosingCta() {
                       />
                     </span>
 
-                    <div className="min-w-0 flex-1 sm:pt-0.5">
+                    <div className="min-w-0 flex-1 pt-0.5">
                       <p className="type-card-label text-base leading-tight text-white">
                         {chip.title}
                       </p>
-                      <p className="type-card-body-on-dark mt-0.5 hidden leading-snug sm:block">
+                      <p className="mt-0.5 text-sm leading-snug text-white sm:text-[0.9375rem]">
                         {chip.subtitle}
                       </p>
                       <span
-                        className="mt-1.5 hidden h-px w-6 origin-left transition-transform duration-300 group-hover:scale-x-125 sm:mt-2 sm:block"
+                        className="mt-1.5 block h-px w-6 origin-left transition-transform duration-300 group-hover:scale-x-125 sm:mt-2"
                         style={{ background: sage }}
                         aria-hidden
                       />
@@ -121,13 +121,13 @@ export function ClosingCta() {
           </div>
 
           {/* Actions only — no repeated headline/body */}
-          <Reveal variant="right" delay={120} className="mt-8 sm:mt-10 lg:mt-0">
-            <div className="border-t border-white/15 pt-6 lg:border-t-0 lg:border-l lg:pt-0 lg:pl-10">
+          <Reveal variant="right" delay={120} className="mt-6 sm:mt-7 xl:mt-0">
+            <div className="border-t border-white/15 pt-5 xl:border-t-0 xl:pt-0 xl:pl-10">
               <p className="type-eyebrow text-white">
                 {closingCta.panelEyebrow}
               </p>
 
-              <div className="mt-4 flex max-w-[430px] flex-col gap-2.5 sm:mt-6 sm:gap-3">
+              <div className="mt-3 flex max-w-[430px] flex-col gap-2.5 sm:mt-4 sm:gap-3">
                 <Link
                   href={closingCta.primaryCta.href}
                   className="type-cta motion-hover-glow inline-flex min-h-11 items-center justify-center gap-3 rounded-sm bg-[#849363] px-6 transition-transform hover:-translate-y-0.5 sm:min-h-12"

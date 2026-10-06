@@ -188,7 +188,7 @@ export function HomePage() {
       {/* 3. Three Markets — standard image-led panels */}
       <section
         id="three-markets"
-        className={`scroll-mt-28 bg-[#f3f0e8] ${sectionY}`}
+        className="scroll-mt-28 bg-[#f3f0e8] pt-14 pb-8 sm:pt-18 sm:pb-8 lg:pt-20 lg:pb-10"
       >
         <div className={pageInset}>
           <Reveal variant="up">

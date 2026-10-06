@@ -159,7 +159,7 @@ function SectionEyebrow({
 
 function ValueCard({ value }: { value: (typeof values)[number] }) {
   return (
-    <article className="flex h-full flex-col overflow-hidden rounded-[7px] border border-[#d9dfe3] bg-white">
+    <article className="flex h-full min-h-full flex-col overflow-hidden rounded-[7px] border border-[#d9dfe3] bg-white">
       <div className="flex flex-1 flex-col px-4 pt-4 sm:px-5 sm:pt-5">
         <div className="flex items-center gap-4">
           <span
@@ -176,7 +176,7 @@ function ValueCard({ value }: { value: (typeof values)[number] }) {
           {value.title}
         </h3>
 
-        <p className="mt-3 flex-1 text-base leading-[1.5] text-[#66717d]">
+        <p className="mt-3 min-h-[4.5em] flex-1 text-base leading-[1.5] text-[#66717d]">
           {value.description}
         </p>
       </div>
@@ -403,11 +403,16 @@ export default function AboutPage() {
               ariaLabel="Our values"
               showArrows
               showDots
-              itemClassName="w-[min(88vw,22rem)] sm:w-[min(70vw,26rem)] md:w-[min(55vw,28rem)]"
-              trackClassName="gap-4 px-1 pb-1"
+              itemClassName="flex h-full w-[min(88vw,22rem)] flex-col sm:w-[min(70vw,26rem)] md:w-[min(55vw,28rem)]"
+              trackClassName="items-stretch gap-4 px-1"
             >
               {values.map((value, index) => (
-                <Reveal key={value.number} variant="up" delay={index * 70}>
+                <Reveal
+                  key={value.number}
+                  variant="up"
+                  delay={index * 70}
+                  className="flex h-full min-h-0 flex-col"
+                >
                   <ValueCard value={value} />
                 </Reveal>
               ))}

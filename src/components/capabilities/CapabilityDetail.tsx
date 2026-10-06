@@ -491,7 +491,7 @@ export function CapabilityDetail({ capability }: CapabilityDetailProps) {
               {roadmap.items.map((item, index) => (
                 <Reveal key={item.standard} variant="up" delay={index * 40}>
                   <article
-                    className="grid gap-2 border-b py-4 sm:grid-cols-[140px_1fr] sm:gap-8 sm:py-5 lg:grid-cols-[140px_1.1fr_1fr] lg:gap-10"
+                    className="grid gap-2 border-b py-4 sm:grid-cols-[140px_minmax(0,1fr)] sm:gap-x-8 sm:gap-y-2 sm:py-5 lg:grid-cols-[140px_1.1fr_1fr] lg:gap-10"
                     style={{ borderColor: SECTION_RULE }}
                   >
                     <p
@@ -506,7 +506,7 @@ export function CapabilityDetail({ capability }: CapabilityDetailProps) {
                     </h3>
 
                     <p
-                      className="type-section-body lg:pt-1"
+                      className="type-section-body sm:col-span-2 lg:col-span-1 lg:pt-1"
                       style={{ color: MUTED }}
                     >
                       {item.description}

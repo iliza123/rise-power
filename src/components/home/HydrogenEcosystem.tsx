@@ -5,7 +5,7 @@ import { Reveal } from "@/components/motion/Reveal";
 const sage = "#6e7f42";
 const pageInset = "mx-auto w-full max-w-[1760px] px-6 lg:px-10";
 const sectionY =
-  "pt-10 pb-10 sm:pt-12 sm:pb-12 lg:pt-14 lg:pb-14";
+  "pt-6 pb-14 sm:pt-8 sm:pb-18 lg:pt-10 lg:pb-20";
 
 export function HydrogenEcosystem() {
   const {

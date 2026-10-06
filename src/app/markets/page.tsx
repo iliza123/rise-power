@@ -120,7 +120,7 @@ export default function MarketsPage() {
               <Link
                 key={market.slug}
                 href={market.href}
-                className="group block h-full"
+                className="group flex h-full flex-col"
               >
                 <div className="relative aspect-[16/10] overflow-hidden bg-[#101820]">
                   <Image
@@ -148,7 +148,7 @@ export default function MarketsPage() {
                 </p>
 
                 <span
-                  className="mt-4 inline-flex items-center gap-2 text-sm font-semibold tracking-wide uppercase"
+                  className="mt-auto inline-flex items-center gap-2 pt-4 text-sm font-semibold tracking-wide uppercase"
                   style={{ color: SAGE }}
                 >
                   Explore Solutions
