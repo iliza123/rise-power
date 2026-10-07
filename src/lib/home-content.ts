@@ -1081,7 +1081,7 @@ export const businessesCompanies = {
       body: "Advanced manufacturing partner specializing in hydrogen fuel cell components, precision machining, assemblies, injection molding, and scalable clean energy solutions.",
       image: "Hydrogen energy campus at golden hour with wind turbines and H2 facility",
       imageSrc: "/media/businesses/cimtech-green-energy.png",
-      href: "https://palegreen-anteater-738014.hostingersite.com/",
+      href: "https://www.cimtechgreenenergy.com/",
       cta: "Visit CIMtech Green Energy",
       external: true,
       variant: "photo",
@@ -1092,7 +1092,7 @@ export const businessesCompanies = {
       image: "Portrait of Dr. Paul Ghotra, CEO & Founder",
       /** Drop the final profile headshot here (portrait ~3:4, face centered). */
       imageSrc: "/media/businesses/dr-paul-ghotra-profile.png",
-      href: "https://limegreen-mink-391489.hostingersite.com/",
+      href: "https://www.drpaulghotra.com/",
       cta: "Visit Dr. Paul Ghotra",
       external: true,
       variant: "leadership",
