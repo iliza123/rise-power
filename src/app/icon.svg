@@ -1,11 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Rise Power">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Rise Mission Power">
+  <!-- Dark tile -->
   <rect width="32" height="32" rx="7" fill="#161616"/>
-  <polygon
-    points="16,4.5 27,11 27,22.5 16,29 5,22.5 5,11"
-    fill="none"
-    stroke="#6e7f42"
-    stroke-width="1.7"
-    stroke-linejoin="round"
-  />
-  <line x1="16" y1="10" x2="16" y2="23.5" stroke="#6e7f42" stroke-width="1.7" stroke-linecap="round"/>
+  <!-- Olive wing marks (brand lockup, scaled for favicon) -->
+  <g fill="#7e8d57">
+    <!-- Left wing -->
+    <polygon points="4,8 13.5,8 15,12.5 6.5,12.5"/>
+    <polygon points="7.5,14.5 15,14.5 15,18.5 9.5,18.5"/>
+    <polygon points="10.5,20.5 15,20.5 15,24 12.5,24"/>
+    <!-- Right wing -->
+    <polygon points="18.5,8 28,8 25.5,12.5 17,12.5"/>
+    <polygon points="17,14.5 24.5,14.5 22.5,18.5 17,18.5"/>
+    <polygon points="17,20.5 21.5,20.5 19.5,24 17,24"/>
+  </g>
 </svg>
