@@ -10,8 +10,8 @@ type LogoProps = {
 
 /** Rise Mission Power lockup — white (onDark) / ink (onLight), olive wing marks. */
 const sources = {
-  onDark: "/media/brand/rise-power-logo.png",
-  onLight: "/media/brand/rise-power-logo-dark.png",
+  onDark: "/media/brand/rise-mission-power-logo-on-dark.svg",
+  onLight: "/media/brand/rise-mission-power-logo.svg",
 } as const;
 
 export function Logo({
