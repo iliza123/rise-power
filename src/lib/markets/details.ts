@@ -426,8 +426,9 @@ export const marketDetails: readonly MarketDetailPage[] = [
     href: "/markets/ai-backup",
     images: {
       hero: {
-        src: "/media/insights/data-centers.png",
-        alt: "Hydrogen backup power for AI data centers and critical facilities",
+        src: "/media/markets/ai-backup-hero.png",
+        mobileSrc: "/media/insights/data-centers.png",
+        alt: "Camo Mission Power System installed in a data center",
       },
       secondary: {
         src: "/media/insights/infrastructure-backup.png",

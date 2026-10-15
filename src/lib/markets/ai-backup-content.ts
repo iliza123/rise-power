@@ -3,7 +3,7 @@
  * Software-platform section omitted (no product UI).
  * Page-local closing CTA omitted (global ClosingCta + Footer).
  * Claims aligned with commercial callouts, FAQ, and data-centers insight.
- * Images from existing /public/media assets (no new uploads).
+ * Hero desktop image: /media/markets/ai-backup-hero.png; mobile keeps data-centers.png.
  */
 export const aiBackupPage = {
   eyebrow: "AI Backup",
@@ -17,8 +17,9 @@ export const aiBackupPage = {
     href: "/products",
   },
   hero: {
-    src: "/media/insights/data-centers.png",
-    alt: "Hydrogen backup power for AI data centers and critical facilities",
+    src: "/media/markets/ai-backup-hero.png",
+    mobileSrc: "/media/insights/data-centers.png",
+    alt: "Camo Mission Power System installed in a data center",
   },
   badges: [
     { label: "AI Ready" },

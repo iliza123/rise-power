@@ -28,8 +28,9 @@ export function MarketLayoutAiBackup() {
       <StackedPageHero
         layout="split"
         imageSrc={page.hero.src}
+        mobileImageSrc={page.hero.mobileSrc}
         imageAlt={page.hero.alt}
-        imageClassName="object-cover object-[center_50%]"
+        imageClassName="object-cover object-[center_50%] xl:object-[68%_50%]"
         tone="#0a0f10"
         splitWash={SPLIT_WASH}
       >
