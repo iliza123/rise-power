@@ -1,80 +1,180 @@
 /**
- * Short AI Backup page copy — every section is AI data-center backup specific.
- * Sourced from existing site claims (insights data-centers article, FAQ, commercial callouts).
+ * AI Backup landing — full client AI BACKUP.png section set (1–6).
+ * Software-platform section omitted (no product UI).
+ * Page-local closing CTA omitted (global ClosingCta + Footer).
+ * Claims aligned with commercial callouts, FAQ, and data-centers insight.
+ * Images from existing /public/media assets (no new uploads).
  */
 export const aiBackupPage = {
   eyebrow: "AI Backup",
-  title: "AI Data Center Backup Power",
+  titleLine1: "AI Never Sleeps.",
+  titleAccent: "Backup Power Shouldn't Either.",
   heroBody:
-    "Zero-emission hydrogen backup for AI data centers — indoor-safe failover for GPU halls, edge AI sites, and critical racks.",
+    "Mission-critical hydrogen backup for AI infrastructure, data centers, and a more resilient tomorrow — indoor-safe, zero emissions at the point of use.",
   cta: { label: "Request a Briefing", href: "/contact" },
   secondaryCta: {
-    label: "Data Centers Insight",
-    href: "/insights/hydrogen-power-data-centers",
+    label: "View Products",
+    href: "/products",
   },
   hero: {
     src: "/media/insights/data-centers.png",
     alt: "Hydrogen backup power for AI data centers and critical facilities",
   },
-  overview: {
-    eyebrow: "Why AI Backup Needs Hydrogen",
-    headingBefore: "Diesel Can't Keep Up",
-    headingAccent: "With AI Uptime.",
-    body: "AI data centers need backup that starts instantly, runs for hours, and meets net-zero goals. Hydrogen fuel cells replace diesel generators — indoor-safe, zero emissions at the point of use, modular as GPU loads grow.",
-    points: [
-      {
-        title: "On the data floor",
-        body: "Install hydrogen backup beside AI racks — warm air and water vapour only. No outdoor diesel pads or heavy exhaust ventilation.",
-      },
-      {
-        title: "Zero AI downtime",
-        body: "Full power in under 10 seconds. Pair with your UPS bridge for seamless failover when the grid drops.",
-      },
-      {
-        title: "Scales with AI loads",
-        body: "Add fuel cells rack by rack as GPU halls expand. Cartridge storage covers 24–72 hour backup windows.",
-      },
-    ],
-  },
-  fit: {
-    eyebrow: "AI Backup Applications",
-    headingBefore: "Built For AI Halls,",
-    headingAccent: "Not Job Sites.",
-    body: "This page is for AI data center backup power — GPU halls, inference clusters, and edge AI rooms that cannot run diesel indoors. Rise-Titan is indoor-rated; larger AI halls are scoped with your facilities team.",
-    imageSrc: "/media/insights/infrastructure-backup.png",
-    imageAlt: "Infrastructure backup power for AI data center facilities",
-    bullets: [
-      "GPU halls and AI training / inference clusters",
-      "Edge AI nodes and colo / micro data centers",
-      "UPS-to-hydrogen failover for critical AI racks",
-    ],
-  },
-  systems: {
-    eyebrow: "AI Backup Systems",
-    headingBefore: "Sized For AI",
-    headingAccent: "Backup Duty.",
-    body: "Three pieces of the AI backup stack — facility-level generation, edge-node power, and cartridge reserves for your runtime target.",
+  badges: [
+    { label: "AI Ready" },
+    { label: "Mission Critical" },
+    { label: "Always-On Power" },
+  ],
+
+  features: {
+    eyebrow: "Built For Always-On AI",
     items: [
       {
-        name: "Rise Titan™",
-        role: "AI hall & rack backup",
-        body: "Indoor-rated 1.5 kW hydrogen generator for AI data center backup and critical rack loads — unlimited runtime via cartridges.",
+        title: "Modular Power Systems",
+        body: "Scalable hydrogen backup that grows with AI data centers and edge facilities — add capacity as loads grow.",
         imageSrc: "/media/markets/commercial-product-titan.png",
-        imageAlt: "Rise Titan for AI data center backup power",
+        imageAlt: "Modular Rise Titan hydrogen backup system",
+        href: "/products#titan",
       },
       {
-        name: "Rise Sentinel™",
-        role: "Edge AI & support power",
-        body: "Compact Power Cube for edge AI rooms, network closets, and support loads when permanent power is not live.",
+        title: "Zero-Downtime Operations",
+        body: "Instant failover in under 10 seconds. Pair with your UPS bridge for seamless handoff when the grid drops.",
+        imageSrc: "/media/insights/infrastructure-backup.png",
+        imageAlt: "Infrastructure backup for uninterrupted critical systems",
+        href: "/insights/hydrogen-power-data-centers",
+      },
+      {
+        title: "Intelligent Energy Control",
+        body: "RFID-monitored cartridges track fuel level and health — clearer inventory for AI backup reserves.",
+        imageSrc: "/media/insights/cartridge-tech.png",
+        imageAlt: "RFID-monitored hydrogen cartridges for backup logistics",
+        href: "/products#cartridge-kit",
+      },
+    ],
+  },
+
+  resilient: {
+    eyebrow: "Resilient Energy",
+    headingBefore: "Resilient Energy For An",
+    headingAccent: "Always-On World.",
+    body: "Clean, scalable hydrogen backup for AI data centers and critical infrastructure — without diesel pads, exhaust, or fuel-truck dependency.",
+    cta: { label: "Meet Our Products", href: "/products" },
+    imageSrc: "/media/insights/off-grid.png",
+    imageAlt: "Portable hydrogen backup supporting always-on critical operations",
+    benefits: [
+      {
+        title: "Clean & Reliable Power",
+        body: "Zero emissions at the point of use — warm air and water vapour only.",
+        imageSrc: "/media/ecosystem/hydrogen.png",
+        imageAlt: "Clean hydrogen energy for reliable backup power",
+      },
+      {
+        title: "Scalable Deployment",
+        body: "Modular capacity that scales with AI loads, not fixed diesel generator sizes.",
+        imageSrc: "/media/products/product-ecosystem.png",
+        imageAlt: "Modular Rise hydrogen power ecosystem",
+      },
+      {
+        title: "Built For Any Environment",
+        body: "Indoor-safe operation for data floors, edge rooms, and space-constrained halls.",
         imageSrc: "/media/markets/commercial-product-sentinel.png",
-        imageAlt: "Rise Sentinel for edge AI backup power",
+        imageAlt: "Indoor-safe portable hydrogen power for constrained spaces",
       },
       {
-        name: "Hydrogen Cartridge Kit",
-        role: "AI backup fuel reserve",
-        body: "RFID-monitored cartridges sized to your AI facility’s 24–72 hour backup window — long shelf life for on-site reserves.",
-        imageSrc: "/media/use-cases/uc-product-cartridge.png",
-        imageAlt: "Hydrogen cartridges for AI data center backup runtime",
+        title: "Lower Total Cost Of Ownership",
+        body: "Avoid diesel logistics, aftertreatment, and compliance overhead over the backup lifecycle.",
+        imageSrc: "/media/insights/hydrogen-storage.png",
+        imageAlt: "Hydrogen cartridge storage for long-duration backup reserves",
+      },
+    ],
+  },
+
+  hydrogen: {
+    eyebrow: "Hydrogen Technology",
+    headingBefore: "Cleaner, Stronger, Smarter Power",
+    headingAccent: "Fueled By Hydrogen.",
+    body: "Rise portable hydrogen systems deliver indoor-rated backup for AI facilities — cartridge-fueled runtime without diesel generators.",
+    imageSrc: "/media/home/one-hydrogen-ecosystem.png",
+    imageAlt: "Rise Mission Power hydrogen backup ecosystem with cartridge systems",
+    cta: {
+      label: "See How It Works",
+      href: "/insights/hydrogen-power-data-centers",
+    },
+    bullets: [
+      "Modular for multiple deployment scales — from edge rooms to facility backup.",
+      "Clean, emission-free operation at the point of use.",
+      "Integrates with existing UPS and power infrastructure for seamless failover.",
+    ],
+  },
+
+  steps: {
+    eyebrow: "How It Works",
+    headingBefore: "From Hydrogen To",
+    headingAccent: "Always-On Power.",
+    items: [
+      {
+        number: "01",
+        title: "Produce",
+        body: "Source clean hydrogen from renewable electrolysis or industrial supply networks.",
+        imageSrc: "/media/insights/green-hydrogen.png",
+        imageAlt: "Clean hydrogen production from renewable sources",
+      },
+      {
+        number: "02",
+        title: "Store",
+        body: "Stockpile and distribute RFID-monitored cartridges with long shelf life for your 24–72 hour backup window.",
+        imageSrc: "/media/insights/hydrogen-storage.png",
+        imageAlt: "Hydrogen cartridge storage for backup reserves",
+      },
+      {
+        number: "03",
+        title: "Generate",
+        body: "Run Rise Titan or Sentinel for reliable indoor-safe power when the grid fails.",
+        imageSrc: "/media/use-cases/uc-product-titan.png",
+        imageAlt: "Rise Titan generating indoor-safe hydrogen power",
+      },
+      {
+        number: "04",
+        title: "Keep Online",
+        body: "Keep AI halls, edge nodes, and critical infrastructure online — anywhere you deploy.",
+        imageSrc: "/media/insights/infrastructure-backup.png",
+        imageAlt: "Critical infrastructure staying online with hydrogen backup",
+      },
+    ],
+  },
+
+  applications: {
+    eyebrow: "Applications",
+    headingBefore: "Where AI Backup",
+    headingAccent: "Matters Most.",
+    items: [
+      {
+        title: "Data Centers",
+        body: "High-density backup for always-on AI — critical racks, edge facilities, and server halls.",
+        imageSrc: "/media/insights/data-centers.png",
+        imageAlt: "AI data center backup power",
+        href: "/insights/hydrogen-power-data-centers",
+      },
+      {
+        title: "Medical",
+        body: "Indoor-safe backup when life-critical systems cannot tolerate diesel exhaust or downtime.",
+        imageSrc: "/media/markets/consumer-gallery-cartridge.png",
+        imageAlt: "Hydrogen backup for medical and clinical environments",
+        href: "/contact",
+      },
+      {
+        title: "Telecom",
+        body: "Quiet portable power for telecom backup and edge sites that must stay connected.",
+        imageSrc: "/media/cases/telecom.png",
+        imageAlt: "Telecom backup power for connected infrastructure",
+        href: "/markets/commercial",
+      },
+      {
+        title: "Industrial",
+        body: "Resilient hydrogen backup for industrial facilities moving off diesel generators.",
+        imageSrc: "/media/markets/commercial-hero.png",
+        imageAlt: "Industrial hydrogen backup power",
+        href: "/markets/commercial",
       },
     ],
   },

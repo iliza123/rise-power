@@ -405,23 +405,23 @@ export const marketDetails: readonly MarketDetailPage[] = [
   {
     /**
      * Index/SEO entry only — page body is rendered by MarketLayoutAiBackup
-     * from `ai-backup-content.ts` (lean, AI-specific sections).
+     * from `ai-backup-content.ts` (client AI BACKUP.png structure).
      */
     slug: "ai-backup",
     id: "ai-backup",
     layout: "ai-backup",
     label: "AI Backup",
-    title: "AI Data Center Backup Power",
+    title: "AI Never Sleeps. Backup Power Shouldn't Either.",
     eyebrow: "AI Backup",
     heading:
-      "Zero-emission hydrogen backup for AI data centers — indoor-safe failover for GPU halls, edge AI sites, and critical racks.",
-    body: "Zero-emission hydrogen backup for AI data centers — indoor-safe failover for GPU halls, edge AI sites, and critical racks.",
+      "Mission-critical hydrogen backup for AI infrastructure, data centers, and a more resilient tomorrow.",
+    body: "Mission-critical hydrogen backup for AI infrastructure, data centers, and a more resilient tomorrow — indoor-safe, zero emissions at the point of use.",
     heroBody:
-      "Zero-emission hydrogen backup for AI data centers — indoor-safe failover for GPU halls, edge AI sites, and critical racks.",
+      "Mission-critical hydrogen backup for AI infrastructure, data centers, and a more resilient tomorrow — indoor-safe, zero emissions at the point of use.",
     overview: {
       eyebrow: "AI Backup",
-      headingBefore: "Diesel Can't Keep Up",
-      headingAccent: "With AI Uptime.",
+      headingBefore: "Resilient Energy For An",
+      headingAccent: "Always-On World.",
     },
     href: "/markets/ai-backup",
     images: {
@@ -465,20 +465,20 @@ export const marketDetails: readonly MarketDetailPage[] = [
       items: [
         {
           slug: "titan",
-          role: "Primary facility backup",
+          role: "Primary AI hall & rack backup",
           body: "Indoor-rated 1.5 kW backup for AI data center loads.",
           imageSrc: "/media/markets/commercial-product-titan.png",
         },
         {
           slug: "sentinel",
-          role: "Edge & support loads",
-          body: "Compact power for edge rooms and telecom backup.",
+          role: "Edge rooms & support loads",
+          body: "Compact power for edge facilities and support loads.",
           imageSrc: "/media/markets/commercial-product-sentinel.png",
         },
         {
           slug: "falcon",
-          role: "Facility survey",
-          body: "Extended-range UAV support for campus and corridor survey.",
+          role: "UAV range extender",
+          body: "Featured on Defence and Commercial markets — not part of the AI Backup systems stack.",
           imageSrc: "/media/markets/commercial-product-falcon.png",
         },
       ],
@@ -487,9 +487,9 @@ export const marketDetails: readonly MarketDetailPage[] = [
     stats: [],
     callouts: [],
     galleryHeading: { before: "Built for", accent: "uptime." },
-    metaTitle: "AI Data Center Backup Power | Hydrogen Without Diesel",
+    metaTitle: "AI Backup Power | Hydrogen for Data Centers & AI Infrastructure",
     metaDescription:
-      "Zero-emission AI data center backup power without diesel. Instant failover, indoor-safe hydrogen generation, and modular capacity for AI halls and edge facilities.",
+      "AI never sleeps — backup power shouldn't either. Mission-critical hydrogen backup for AI infrastructure and data centers. Indoor-safe, zero-emission failover without diesel.",
   },
   {
     slug: "consumer",
