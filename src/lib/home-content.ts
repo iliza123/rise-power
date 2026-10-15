@@ -1134,7 +1134,7 @@ export const footer = {
   /**
    * Footer columns — standard grouped nav (not 1:1 with header mega items):
    * About | Markets | Capabilities | Investors | Resources
-   * Single-link header items (Defence / Consumer / Commercial / Careers)
+   * Single-link header items (Defence / Consumer / Commercial / AI Backup / Careers)
    * are grouped so columns stay balanced.
    */
   groups: [
@@ -1155,6 +1155,7 @@ export const footer = {
         { label: "Military Portable Power", href: "/markets/defence" },
         { label: "Clean Emergency Generators", href: "/markets/consumer" },
         { label: "Commercial Backup Power", href: "/markets/commercial" },
+        { label: "AI Backup", href: "/markets/ai-backup" },
       ],
     },
     {

@@ -403,6 +403,95 @@ export const marketDetails: readonly MarketDetailPage[] = [
       "Portable power for construction sites, clean power for remote locations, and AI data center backup power. Zero-emission hydrogen backup power and diesel generator alternatives for industry.",
   },
   {
+    /**
+     * Index/SEO entry only — page body is rendered by MarketLayoutAiBackup
+     * from `ai-backup-content.ts` (lean, AI-specific sections).
+     */
+    slug: "ai-backup",
+    id: "ai-backup",
+    layout: "ai-backup",
+    label: "AI Backup",
+    title: "AI Data Center Backup Power",
+    eyebrow: "AI Backup",
+    heading:
+      "Zero-emission hydrogen backup for AI data centers — indoor-safe failover for GPU halls, edge AI sites, and critical racks.",
+    body: "Zero-emission hydrogen backup for AI data centers — indoor-safe failover for GPU halls, edge AI sites, and critical racks.",
+    heroBody:
+      "Zero-emission hydrogen backup for AI data centers — indoor-safe failover for GPU halls, edge AI sites, and critical racks.",
+    overview: {
+      eyebrow: "AI Backup",
+      headingBefore: "Diesel Can't Keep Up",
+      headingAccent: "With AI Uptime.",
+    },
+    href: "/markets/ai-backup",
+    images: {
+      hero: {
+        src: "/media/insights/data-centers.png",
+        alt: "Hydrogen backup power for AI data centers and critical facilities",
+      },
+      secondary: {
+        src: "/media/insights/infrastructure-backup.png",
+        alt: "Infrastructure backup power for facilities that cannot afford downtime",
+      },
+    },
+    gallery: [],
+    applicationsIntro: "",
+    applications: [],
+    productsIntro: "",
+    products: [],
+    spotlight: {
+      number: "04",
+      label: "AI Backup",
+      headingBefore: "Uptime Without",
+      headingAccent: "Diesel Exhaust.",
+      body: "Zero-emission hydrogen backup for AI data centers with instant failover and indoor-safe operation.",
+      imageSrc: "/media/insights/infrastructure-backup.png",
+      imageAlt: "Infrastructure backup power for AI data center facilities",
+      features: [
+        "Indoor-safe backup",
+        "Instant failover",
+        "Modular rack-level capacity",
+      ],
+      featuredProducts: [
+        { label: "Titan", href: "/products#titan" },
+        { label: "Sentinel", href: "/products#sentinel" },
+      ],
+    },
+    productUses: {
+      eyebrow: "AI Backup",
+      headingBefore: "Start With",
+      headingAccent: "Titan.",
+      intro: "Indoor-rated hydrogen backup for AI halls and edge rooms.",
+      items: [
+        {
+          slug: "titan",
+          role: "Primary facility backup",
+          body: "Indoor-rated 1.5 kW backup for AI data center loads.",
+          imageSrc: "/media/markets/commercial-product-titan.png",
+        },
+        {
+          slug: "sentinel",
+          role: "Edge & support loads",
+          body: "Compact power for edge rooms and telecom backup.",
+          imageSrc: "/media/markets/commercial-product-sentinel.png",
+        },
+        {
+          slug: "falcon",
+          role: "Facility survey",
+          body: "Extended-range UAV support for campus and corridor survey.",
+          imageSrc: "/media/markets/commercial-product-falcon.png",
+        },
+      ],
+    },
+    cta: { label: "Request a Briefing", href: "/contact" },
+    stats: [],
+    callouts: [],
+    galleryHeading: { before: "Built for", accent: "uptime." },
+    metaTitle: "AI Data Center Backup Power | Hydrogen Without Diesel",
+    metaDescription:
+      "Zero-emission AI data center backup power without diesel. Instant failover, indoor-safe hydrogen generation, and modular capacity for AI halls and edge facilities.",
+  },
+  {
     slug: "consumer",
     id: "consumer",
     layout: "consumer",

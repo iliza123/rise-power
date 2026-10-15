@@ -22,7 +22,7 @@ export type MegaNavItem = {
 
 /**
  * Primary navigation — client proposed main nav:
- * About | Defence | Consumer | Commercial | Products | Capabilities | Investors | Resources | Careers
+ * About | Defence | Consumer | Commercial | AI Backup | Products | Capabilities | Investors | Resources | Careers
  *
  * Previous mega-menu Products item and Case Studies are commented out as backup — do not delete.
  */
@@ -119,6 +119,10 @@ export const megaNavItems: readonly MegaNavItem[] = [
   {
     label: "Commercial",
     href: "/markets/commercial",
+  },
+  {
+    label: "AI Backup",
+    href: "/markets/ai-backup",
   },
   /* No links → no desktop chevron / no mobile accordion */
   {

@@ -23,7 +23,7 @@ export async function generateMetadata({
     return pageMetadata({
       title: "Markets",
       description:
-        "Hydrogen power for defence, commercial, and consumer applications.",
+        "Hydrogen power for defence, commercial, AI backup, and consumer applications.",
       path: "/markets",
     });
   }

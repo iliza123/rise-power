@@ -10,9 +10,9 @@ import { marketDetails } from "@/lib/markets";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Military, Commercial & Emergency Hydrogen Power Markets",
+  title: "Military, Commercial, AI Backup & Emergency Hydrogen Power Markets",
   description:
-    "Military portable power, tactical hydrogen generators, portable power for construction sites, clean power for remote locations, and indoor safe emergency backup — hydrogen backup power without diesel.",
+    "Military portable power, commercial backup, AI data center backup power, and indoor safe emergency generators — hydrogen backup power without diesel.",
   path: "/markets",
   keywords: [
     "military portable power",
@@ -69,7 +69,7 @@ export default function MarketsPage() {
       <StackedPageHero
         layout="split"
         imageSrc="/media/markets/defence-military.png"
-        imageAlt="Rise Mission Power across defence, commercial, and consumer markets"
+        imageAlt="Rise Mission Power across defence, commercial, AI backup, and consumer markets"
         imageClassName="object-cover object-[center_45%]"
         imageWidth={3840}
         imageHeight={1300}
@@ -116,14 +116,14 @@ export default function MarketsPage() {
               className="mt-4 max-w-[42rem] text-[1.0625rem] leading-[1.65] sm:text-lg"
               style={{ color: MUTED }}
             >
-              Three markets. One cartridge ecosystem. Select a market to see
+              Four markets. One cartridge ecosystem. Select a market to see
               applications, recommended systems, and how Rise Mission Power
               performs in the field.
             </p>
           </Reveal>
 
           <RevealStagger
-            className="mt-8 grid gap-6 sm:mt-10 md:grid-cols-3 md:gap-5 lg:gap-6"
+            className="mt-8 grid gap-6 sm:mt-10 md:grid-cols-2 md:gap-5 lg:grid-cols-4 lg:gap-6"
             step={80}
             variant="up"
           >
