@@ -353,13 +353,10 @@ export function MarketLayoutAiBackup() {
                   <h3 className="font-display text-xl font-bold tracking-tight text-white uppercase">
                     {app.title}
                   </h3>
-                  <p className="mt-2 text-sm leading-[1.5] text-white/85">
+                  <p className="mt-2 text-sm leading-[1.5] text-white">
                     {app.body}
                   </p>
-                  <span
-                    className="mt-4 inline-flex items-center gap-2 text-sm font-semibold tracking-wide uppercase"
-                    style={{ color: SAGE }}
-                  >
+                  <span className="cta-with-icon mt-4 inline-flex min-h-10 items-center justify-center gap-2 rounded-sm bg-[#849363] px-5 text-sm font-semibold tracking-wide text-white uppercase transition-opacity group-hover:opacity-90">
                     Explore
                     <ArrowRight
                       className="size-4 transition-transform group-hover:translate-x-0.5"
