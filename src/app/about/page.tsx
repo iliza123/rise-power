@@ -18,10 +18,18 @@ import { performanceMetrics } from "@/lib/home-content";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata({
-  title: "About",
+  title: "About | Canadian Hydrogen Power Engineering & Manufacturing",
   description:
-    "Rise Power builds quiet, zero-emission hydrogen systems for municipal, emergency, field, and off-grid use — engineered in British Columbia.",
+    "Rise Power is a Canadian engineering and manufacturing company building portable hydrogen power, zero-emission generators, and hydrogen cartridge systems in British Columbia for defence, commercial, and emergency backup.",
   path: "/about",
+  keywords: [
+    "engineering and manufacturing company",
+    "portable hydrogen power",
+    "zero-emission generator",
+    "defence manufacturing Canada",
+    "hydrogen component manufacturing",
+    "Canadian manufacturing",
+  ],
 });
 
 const sage = "#6e7f42";
@@ -43,28 +51,28 @@ const values = [
     number: "01",
     title: "Everyday\nResilience",
     description:
-      "Portable hydrogen power engineered for backup, outdoor, and off-grid use when the grid cannot be trusted.",
+      "Portable hydrogen power and clean emergency generators engineered for backup, outdoor, and off-grid use when the grid cannot be trusted.",
     image: "/media/company/company-value-1.png",
   },
   {
     number: "02",
     title: "Safety\nEngineered In",
     description:
-      "Pressure vessels, leak detection, and thermal management are designed in from day one.",
+      "Pressure vessels, leak detection, and thermal management are designed in from day one — enabling indoor safe backup power.",
     image: "/media/company/company-value-2.png",
   },
   {
     number: "03",
     title: "Canadian\nManufacturing",
     description:
-      "Engineered and built in British Columbia for quiet, reliable, rapidly deployable operations.",
+      "A Canadian engineering and manufacturing company — aerospace manufacturing Canada and defence manufacturing Canada capability in British Columbia.",
     image: "/media/company/company-value-3.png",
   },
   {
     number: "04",
     title: "Clean &\nSustainable",
     description:
-      "Zero-emissions at the point of use. Refillable cartridges and long service life reduce waste.",
+      "Zero-emission generators at the point of use. Plug-and-play hydrogen cartridge systems and long service life reduce waste.",
     image: "/media/company/company-value-4.png",
   },
 ];

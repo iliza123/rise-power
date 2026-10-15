@@ -8,9 +8,9 @@ import { site } from "@/lib/content";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Investors",
+  title: "Investors | Canadian Hydrogen Power Manufacturing",
   description:
-    "Investor materials, company information, milestones, and updates from Rise Power.",
+    "Investor materials for Rise Power — a Canadian engineering and manufacturing company building portable hydrogen power, zero-emission generators, and hydrogen cartridge systems.",
   path: "/investors",
 });
 

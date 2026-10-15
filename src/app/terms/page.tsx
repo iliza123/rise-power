@@ -15,7 +15,7 @@ const sections = [
   {
     title: "1. Acceptance of Terms",
     paragraphs: [
-      'By accessing and using the Rise Power Corp. ("Rise Power") website at risepower.com (the "Site"), you agree to be bound by these Terms of Use. If you do not agree, please do not use the Site.',
+      'By accessing and using the Rise Power Inc. ("Rise Power") website at risepower.com (the "Site"), you agree to be bound by these Terms of Use. If you do not agree, please do not use the Site.',
     ],
   },
   {

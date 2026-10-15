@@ -104,15 +104,54 @@ import { CustomersPartners } from "@/components/home/CustomersPartners";
 import { SnapCarousel } from "@/components/home/SnapCarousel";
 import { Reveal, RevealStagger } from "@/components/motion/Reveal";
 import { StackedPageHero } from "@/components/StackedPageHero";
-import { products } from "@/lib/content";
+import { products, site } from "@/lib/content";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Products",
+  title: "Portable Hydrogen Fuel Cell Generators & Cartridge Systems",
   description:
-    "Rise-Sentinel, Rise-Falcon, Rise-Titan, and hydrogen cartridge systems. Portable fuel cell power for everyday resilience — municipal, emergency, field, and off-grid applications.",
+    "Portable hydrogen fuel cell generators, UAV hydrogen range extenders, and plug-and-play hydrogen cartridge systems. Zero-emission backup power and diesel generator alternatives for military, commercial, and emergency use.",
   path: "/products",
+  keywords: [
+    "portable hydrogen fuel cell generator",
+    "hydrogen range extender for drones",
+    "UAV hydrogen fuel cell",
+    "hydrogen cartridge system",
+    "plug-and-play hydrogen cartridge",
+    "zero-emission generator",
+    "diesel generator alternative",
+    "clean emergency generator",
+  ],
 });
+
+const productsJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Rise Power Portable Hydrogen Systems",
+  description:
+    "Portable hydrogen fuel cell generators, UAV hydrogen range extenders, and plug-and-play hydrogen cartridge systems.",
+  numberOfItems: products.length,
+  itemListElement: products.map((product, index) => ({
+    "@type": "ListItem",
+    position: index + 1,
+    item: {
+      "@type": "Product",
+      name: product.name,
+      description: product.description,
+      brand: {
+        "@type": "Brand",
+        name: "Rise Power",
+      },
+      manufacturer: {
+        "@type": "Organization",
+        name: site.legalName,
+        url: site.url,
+      },
+      image: `${site.url}${product.image}`,
+      url: `${site.url}/products#${product.slug}`,
+    },
+  })),
+};
 
 const sage = "#6e7f42";
 const lime = "#b5d13c";
@@ -417,6 +456,10 @@ function ProductSystemCard({
 export default function ProductsPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productsJsonLd) }}
+      />
       <StackedPageHero
         layout="split"
         imageSrc="/media/products/product-hero.png"
@@ -434,13 +477,13 @@ export default function ProductsPage() {
           </p>
 
           <h1 className="mt-4 type-page-h1 sm:mt-5">
-            Products
+            Portable Hydrogen Fuel Cell Generators
           </h1>
 
           <p className="type-section-body mt-5 max-w-[32rem] !text-white/90 sm:mt-6">
-            Four products. One cartridge ecosystem. Portable hydrogen power
-            for everyday resilience — municipal, emergency, field, and
-            off-grid applications.
+            Four products. One plug-and-play hydrogen cartridge ecosystem.
+            Portable hydrogen power, UAV range extenders, and zero-emission
+            generators for municipal, emergency, field, and off-grid use.
           </p>
 
           <div className="mt-7 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">

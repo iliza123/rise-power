@@ -128,7 +128,7 @@ export function CartridgeEcosystem() {
       <div className="relative aspect-[2.55/1] w-full overflow-hidden sm:aspect-[2.7/1] lg:aspect-[2.9/1]">
         <Image
           src="/media/products/product-ecosystem.png"
-          alt="Rise Power portable power station and hydrogen cartridge on display"
+          alt="Rise portable power station and hydrogen cartridge on display"
           fill
           quality={92}
           sizes="100vw"

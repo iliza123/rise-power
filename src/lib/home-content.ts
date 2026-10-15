@@ -196,10 +196,10 @@ export const productUiLabels = {
 } as const;
 
 export const hero = {
-  eyebrow: "PORTABLE HYDROGEN POWER",
-  headlineLine1: "for everyday",
-  headlineLine2: "resilience.",
-  body: "Zero-emissions portable power for municipal, emergency, field, and off-grid applications. Quiet, rapidly deployable, and engineered in British Columbia.",
+  eyebrow: "RISE POWER",
+  headlineLine1: "Portable hydrogen power",
+  headlineLine2: "for everyday resilience.",
+  body: "Portable hydrogen fuel cell generators for municipal, emergency, field, and off-grid use. A quiet, zero-emission diesel generator alternative — engineered and manufactured in British Columbia.",
   primaryCta: { label: "Request a Briefing", href: "/contact" } satisfies Cta,
   secondaryCta: { label: "Explore Markets", href: "/markets" } satisfies Cta,
   chips: [
@@ -250,44 +250,47 @@ export const performanceMetrics = {
 
 export const threeMarkets = {
   eyebrow: "THREE MARKETS. ONE MISSION.",
-  headingBefore: "POWERING",
+  headingBefore: "HYDROGEN POWER FOR",
   headingAccent: "EVERY MISSION.",
-  body: "Rise Mission Power systems are engineered to perform in the toughest environments across military, commercial, and consumer applications.",
+  body: "Military portable power, commercial hydrogen backup, and clean emergency generators — engineered for the toughest environments.",
   cards: [
     {
       title: "Military & Defence",
-      body: "Silent hydrogen power for tactical communications, UAV operations, and ISR systems in forward deployments.",
+      body: "Military portable power and tactical hydrogen generators for communications, hydrogen-powered drones, and ISR in forward deployments.",
       theater: "DEFENCE",
       points: ["Tactical Communications", "UAV Operations", "ISR Systems"],
       detail:
         "Ultra-quiet, zero-emission power with rapid cartridge swaps for mission-critical operations where diesel logistics and acoustic signature are unacceptable.",
       href: "/markets/defence",
       cta: "Explore Solutions",
-      image: "Military and defence market imagery",
+      image:
+        "Military portable power and tactical hydrogen generators at a forward operating base",
       imageSrc: "/media/markets/defence-military.png",
     },
     {
       title: "Commercial",
-      body: "Reliable power for construction sites, telecom backup, mining, and other demanding industrial applications.",
+      body: "Portable power for construction sites, clean power for remote locations, telecom backup, and AI data center backup power.",
       theater: "COMMERCIAL",
-      points: ["Construction Sites", "Telecom Backup", "Mining"],
+      points: ["Construction Sites", "AI Data Centers", "Mining"],
       detail:
-        "Robust, low-maintenance hydrogen power for electrified drilling, remote site infrastructure, and off-grid operations without fuel-truck dependency.",
+        "Robust, low-maintenance hydrogen backup power for construction sites, remote locations, and AI data center backup — a diesel generator alternative without fuel-truck dependency.",
       href: "/markets/commercial",
       cta: "Explore Solutions",
-      image: "Commercial market imagery",
+      image:
+        "Portable hydrogen backup power for construction sites and industrial facilities",
       imageSrc: "/media/markets/commercial.png",
     },
     {
       title: "Consumer",
-      body: "Portable backup for camping, RV power, and emergency home use when the grid cannot be trusted.",
+      body: "Clean emergency generators and indoor safe backup power for camping, RV, and home use when the grid cannot be trusted.",
       theater: "CONSUMER",
       points: ["Camping", "RV Power", "Emergency Home Backup"],
       detail:
-        "Quiet neighbourhood-ready operation with zero exhaust at the point of use. Refillable cartridges swap in under 30 seconds.",
+        "Quiet neighbourhood-ready operation with zero exhaust — indoor safe backup power without diesel. Refillable cartridges swap in under 30 seconds.",
       href: "/markets/consumer",
       cta: "Explore Solutions",
-      image: "Consumer market imagery",
+      image:
+        "Clean emergency generators and indoor safe backup power for home and outdoor use",
       imageSrc: "/media/markets/field-consumer.png",
     },
   ] satisfies readonly MarketCard[],
@@ -364,7 +367,7 @@ export const whyHydrogen = {
   headingBefore: "CLEANER.",
   headingAccent: "QUIETER.",
   headingAfter: "STRONGER.",
-  body: "Hydrogen fuel cells provide silent, zero-emission power while reducing maintenance and enabling rapid cartridge refueling for mission-critical operations.",
+  body: "Hydrogen fuel cells provide silent, zero-emission portable hydrogen power while reducing maintenance and enabling rapid plug-and-play hydrogen cartridge refueling for mission-critical backup power.",
   tableHeading: "HYDROGEN VS DIESEL",
   tableHeaders: {
     metric: "METRIC",
@@ -429,13 +432,13 @@ export const featuredProducts = {
   headingBefore: "POWER YOU CAN",
   headingAccent: "DEPEND ON.",
   headingAfter: "",
-  body: "Four portable hydrogen systems. One refillable cartridge ecosystem.",
+  body: "Four portable hydrogen systems. One plug-and-play hydrogen cartridge ecosystem.",
   products: [
     {
       name: "SENTINEL",
       trademark: "",
       subtitle: "Power Cube",
-      body: "Compact hydrogen power for everyday backup and outdoor use. Quiet, plug-and-play setup with refillable hydrogen cartridges. Lightweight and easy to carry — no grid connection required.",
+      body: "Compact portable hydrogen power for everyday backup and outdoor use. Quiet, plug-and-play hydrogen cartridge setup. Lightweight and easy to carry — no grid connection required.",
       runtime: "QUIET",
       runtimeNote: "Everyday Operation",
       weight: "−22 °C to +50 °C",
@@ -454,7 +457,7 @@ export const featuredProducts = {
       name: "FALCON",
       trademark: "",
       subtitle: "Hydrogen Drone Range Extender",
-      body: "Plug-and-play hydrogen range extender for compatible drones. Up to 5x extended flight range with low-noise, zero-emission operation and quick-swap hydrogen cartridges.",
+      body: "UAV hydrogen fuel cell and plug-and-play hydrogen range extender for drones. Up to 5× flight range with low-noise, zero-emission operation and quick-swap hydrogen cartridges.",
       runtime: "UP TO 5×",
       runtimeNote: "Extended Flight Range",
       weight: "−22 °C to +50 °C",
@@ -471,7 +474,7 @@ export const featuredProducts = {
       name: "TITAN",
       trademark: "",
       subtitle: "Portable Generator",
-      body: "Clean backup power for everyday and emergency use. 1.5 kW capacity, 40 lb portable weight, and unlimited runtime with refillable hydrogen cartridges.",
+      body: "Portable hydrogen fuel cell generator and clean emergency backup power. 1.5 kW capacity, 40 lb portable weight — a zero-emission diesel generator alternative with refillable hydrogen cartridges.",
       runtime: "UNLIMITED",
       runtimeNote: "With Cartridge Swap",
       weight: "−22 °C to +50 °C",
@@ -488,7 +491,7 @@ export const featuredProducts = {
       name: "HYDROGEN CARTRIDGE KIT",
       trademark: "",
       subtitle: "Universal Fuel System",
-      body: "Universal fuel cell compatible cartridges with RFID smart monitoring. Leak proof, lightweight, and designed for rapid field replenishment. Swap a cartridge and restore full runtime without tools or specialized training.",
+      body: "Plug-and-play hydrogen cartridge system with RFID smart monitoring. Leak proof, lightweight, and designed for rapid field replenishment. Swap a cartridge and restore full runtime without tools or specialized training.",
       runtime: "15 YEARS",
       runtimeNote: "Shelf Life",
       weight: "−22 °C to +50 °C",
@@ -509,12 +512,12 @@ export const capabilities = {
   eyebrow: "WHAT WE DO",
   headingBefore: "OUR",
   headingAccent: "CAPABILITIES.",
-  body: "From early-stage prototypes to production-ready hardware, our engineering team delivers hydrogen power systems designed for the environment where they will actually operate.",
+  body: "A Canadian engineering and manufacturing company delivering prototype manufacturing services, new product introduction manufacturing, and design for manufacturing services for hydrogen fuel cell systems — from concept to production-ready hardware.",
   hero: {
     eyebrow: "CAPABILITIES",
-    headlineLine1: "Capabilities",
-    headlineAccent: "",
-    body: "End to end hydrogen power engineering, from concept to deployment.",
+    headlineLine1: "Engineering &",
+    headlineAccent: "Manufacturing.",
+    body: "Canadian engineering and manufacturing for portable hydrogen power — prototype manufacturing services, design for manufacturing services, and field deployment.",
     imageSrc: "/media/capabilities/capabilities-hero.png",
     primaryCta: { label: "Explore Markets", href: "/markets" } satisfies Cta,
     secondaryCta: { label: "Request a Briefing", href: "/contact" } satisfies Cta,
@@ -605,12 +608,12 @@ export const capabilities = {
     {
       id: "engineering",
       label: "Engineering",
-      title: "Engineering & Development",
+      title: "Prototype Manufacturing & Design for Manufacturing",
       eyebrow: "CONCEPT TO DEPLOYMENT",
-      heading: "Engineering & Development",
-      body: "From early-stage prototypes to production-ready hardware, our engineering team delivers hydrogen power systems designed for the environment where they will actually operate.",
+      heading: "Prototype Manufacturing & Design for Manufacturing",
+      body: "Prototype manufacturing services and design for manufacturing services for hydrogen fuel cell systems — from early-stage concepts to production-ready hardware built for real operating environments.",
       heroBody:
-        "Hydrogen fuel cell design, power electronics, and ruggedized system development from concept through production.",
+        "Fuel cell component manufacturing, hydrogen component manufacturing, and electrolyzer component manufacturing — plus power electronics and ruggedized system development from concept through production.",
       href: "/capabilities/engineering-development",
       imageSrc: "/media/capabilities/engineering-development.png",
       imageAlt: "Rise hydrogen R&D lab bench with prototyping tools and CAD workstation",
@@ -633,13 +636,13 @@ export const capabilities = {
         },
       ],
       deliverablesIntro:
-        "Rise Power engineering covers hydrogen fuel cell systems, power electronics, and ruggedized system design. We work from early stage concepts through detailed engineering, prototyping, and production readiness, with the operating environment defined up front.",
+        "Rise Power is a Canadian engineering and manufacturing company. We design hydrogen fuel cell systems and support fuel cell component manufacturing, hydrogen component manufacturing, and electrolyzer component manufacturing — including aerospace manufacturing Canada and defence manufacturing Canada programs from concept through production readiness.",
       deliverables: [
-        "Hydrogen fuel cell system design and optimization",
-        "Power electronics and control system development",
-        "Ruggedized enclosure and thermal management design",
-        "Prototype fabrication and iterative testing",
-        "Production engineering and manufacturing support",
+        "Fuel cell component manufacturing and system design",
+        "Hydrogen component manufacturing and electrolyzer component manufacturing",
+        "Prototype manufacturing services with iterative testing",
+        "Design for manufacturing services and new product introduction manufacturing (NPI / DFM)",
+        "Aerospace manufacturing Canada and defence manufacturing Canada — production readiness",
       ],
       cta: { label: "Request a Briefing", href: "/contact" },
       stats: [
@@ -1127,7 +1130,7 @@ export const footer = {
   brand: "RISE POWER",
   tagline: "Quiet. Zero-Emission. Everyday Resilience.",
   blurb:
-    "Portable hydrogen fuel cell systems for municipal, emergency, field, and off-grid applications. Engineered and built in British Columbia.",
+    "Canadian engineering and manufacturing for portable hydrogen power — prototype to production, military portable power, and clean backup power without diesel.",
   /**
    * Footer columns — standard grouped nav (not 1:1 with header mega items):
    * About | Markets | Capabilities | Investors | Resources
@@ -1149,9 +1152,9 @@ export const footer = {
     {
       heading: "Markets",
       links: [
-        { label: "Defence", href: "/markets/defence" },
-        { label: "Consumer", href: "/markets/consumer" },
-        { label: "Commercial", href: "/markets/commercial" },
+        { label: "Military Portable Power", href: "/markets/defence" },
+        { label: "Clean Emergency Generators", href: "/markets/consumer" },
+        { label: "Commercial Backup Power", href: "/markets/commercial" },
       ],
     },
     {
@@ -1159,7 +1162,7 @@ export const footer = {
       links: [
         { label: "Capabilities", href: "/capabilities" },
         {
-          label: "Engineering & Development",
+          label: "Prototype Manufacturing",
           href: "/capabilities/engineering-development",
         },
         // {
@@ -1225,7 +1228,7 @@ export const footer = {
     { label: "Terms of Use", href: "/terms" },
     { label: "Cookies Policy", href: "/privacy#cookies" },
   ] satisfies readonly NavItem[],
-  copyright: "© 2026 Rise Power, Inc. All rights reserved.",
+  copyright: "© 2023 Rise Mission Power Inc.",
   badgeBefore: "CANADIAN-ENGINEERED.",
   badgeAccent: "FIELD-VALIDATED.",
 };

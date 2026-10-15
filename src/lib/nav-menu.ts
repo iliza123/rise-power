@@ -133,7 +133,8 @@ export const megaNavItems: readonly MegaNavItem[] = [
       {
         label: "Engineering & Development",
         href: "/capabilities/engineering-development",
-        description: "From prototypes to production-ready hardware.",
+        description:
+          "Prototype manufacturing services, NPI, design for manufacturing services, and aerospace manufacturing Canada.",
       },
       // {
       //   label: "System Integration",
@@ -143,17 +144,19 @@ export const megaNavItems: readonly MegaNavItem[] = [
       {
         label: "Field Deployment",
         href: "/capabilities/field-deployment",
-        description: "Rapid deployment with end-to-end logistics support.",
+        description:
+          "Logistics and training for portable hydrogen power and tactical hydrogen generators.",
       },
       {
         label: "Safety & Compliance",
         href: "/capabilities/safety-compliance",
-        description: "Safety and compliance engineered in from day one.",
+        description:
+          "Indoor safe backup power compliance and hydrogen cartridge safety engineering.",
       },
     ],
     feature: {
       title: "Our Capabilities",
-      body: "Engineering, field deployment, and safety — built for real operating environments.",
+      body: "Canadian engineering and manufacturing — prototype to production for portable hydrogen power.",
       href: "/capabilities",
       cta: "See Capabilities",
     },

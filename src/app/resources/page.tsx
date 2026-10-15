@@ -10,9 +10,9 @@ import { insights } from "@/lib/content";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Resource Center",
+  title: "Resources | Hydrogen Power Specs, FAQ & Procurement",
   description:
-    "Company One Pager, news, and documentation for procurement, programs, and integration leads evaluating Rise Power systems.",
+    "Specs, procurement FAQ, and documentation for portable hydrogen fuel cell generators, military portable power, hydrogen cartridge systems, and clean emergency backup from Rise Power.",
   path: "/resources",
 });
 

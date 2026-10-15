@@ -15,9 +15,9 @@ import {
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata({
-  title: "News & Insights",
+  title: "Insights | Hydrogen Power, Fuel Cells & Clean Backup",
   description:
-    "Guides and comparisons on hydrogen fuel cells, portable power, and field logistics from Rise Power.",
+    "Guides on portable hydrogen power, hydrogen fuel cell generators, diesel generator alternatives, UAV hydrogen fuel cells, and clean emergency backup power from Rise Power.",
   path: "/insights",
 });
 

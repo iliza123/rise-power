@@ -11,10 +11,21 @@ import { capabilities } from "@/lib/home-content";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Capabilities",
+  title: "Engineering & Manufacturing | Prototype to Production",
   description:
-    "Engineering, field deployment, and safety — hydrogen power systems built for real operating environments.",
+    "Canadian engineering and manufacturing company for hydrogen fuel cell systems. Prototype manufacturing, new product introduction, design for manufacturing, and aerospace & defence manufacturing in Canada — including fuel cell, hydrogen, and electrolyzer component manufacturing.",
   path: "/capabilities",
+  keywords: [
+    "engineering and manufacturing company",
+    "prototype manufacturing services",
+    "new product introduction manufacturing",
+    "design for manufacturing services",
+    "aerospace manufacturing Canada",
+    "defence manufacturing Canada",
+    "fuel cell component manufacturing",
+    "hydrogen component manufacturing",
+    "electrolyzer component manufacturing",
+  ],
 });
 
 const sage = "#6e7f42";

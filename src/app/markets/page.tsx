@@ -10,10 +10,21 @@ import { marketDetails } from "@/lib/markets";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Markets",
+  title: "Military, Commercial & Emergency Hydrogen Power Markets",
   description:
-    "Hydrogen power for military & defence, commercial, and consumer applications. Rise Mission Power systems for every mission.",
+    "Military portable power, tactical hydrogen generators, portable power for construction sites, clean power for remote locations, and indoor safe emergency backup — hydrogen backup power without diesel.",
   path: "/markets",
+  keywords: [
+    "military portable power",
+    "tactical hydrogen generator",
+    "hydrogen-powered drones",
+    "portable power for construction sites",
+    "clean power for remote locations",
+    "hydrogen backup power",
+    "indoor safe backup power",
+    "AI data center backup power",
+    "backup power without diesel",
+  ],
 });
 
 const SAGE = "#6e7f42";

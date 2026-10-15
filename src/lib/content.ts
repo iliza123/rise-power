@@ -37,27 +37,27 @@ export const products = [
     name: "Rise-Sentinel",
     tagline: "Power Cube for everyday backup",
     description:
-      "Compact hydrogen power for everyday backup and outdoor use. Quiet, plug-and-play setup with refillable hydrogen cartridges. Lightweight and easy to carry — no grid connection required, zero-emissions power at the point of use.",
+      "Compact portable hydrogen power for everyday backup and outdoor use. Quiet, plug-and-play hydrogen cartridge setup. Lightweight and easy to carry — no grid connection required, zero-emission power at the point of use.",
     image: "/media/products/product-sentinal.png",
     specs: [
       "Quiet operation for everyday settings",
-      "Plug-and-play setup with simple controls",
+      "Plug-and-play hydrogen cartridge setup",
       "Refillable hydrogen cartridge system",
       "Lightweight and easy to carry",
-      "Zero-emissions power at point of use",
+      "Zero-emission power at point of use",
     ],
   },
   {
     slug: "falcon",
     number: "02",
     name: "Rise-Falcon",
-    tagline: "Drone range extender",
+    tagline: "UAV hydrogen fuel cell range extender",
     description:
-      "Plug-and-play hydrogen range extender for compatible drones. Up to 5x extended flight range with low-noise, zero-emission operation. Quick-swap hydrogen cartridges, reliable in cold weather, and a lightweight modular design for inspection, mapping, public safety, and remote operations.",
+      "UAV hydrogen fuel cell and plug-and-play hydrogen range extender for drones. Up to 5× extended flight range with low-noise, zero-emission operation. Quick-swap hydrogen cartridges for inspection, mapping, public safety, and remote operations.",
     image: "/media/products/product-falcon.png",
     specs: [
-      "Up to 5x extended flight range",
-      "Low noise, zero-emission operation",
+      "Up to 5× extended flight range",
+      "UAV hydrogen fuel cell — low noise, zero emission",
       "Quick-swap hydrogen cartridge system",
       "Reliable in cold-weather missions (−20 °C to +50 °C)",
       "Cartridge load time under 30 seconds",
@@ -67,12 +67,12 @@ export const products = [
     slug: "titan",
     number: "03",
     name: "Rise-Titan",
-    tagline: "1.5 kW portable generator",
+    tagline: "1.5 kW portable hydrogen fuel cell generator",
     description:
-      "Clean backup power for everyday and emergency use. A 1.5 kW zero-emissions portable generator with quiet operation, plug-and-play setup, and refillable hydrogen cartridges. Built for municipalities, utilities, communities, and businesses.",
+      "Portable hydrogen fuel cell generator and clean emergency backup power. A 1.5 kW zero-emission diesel generator alternative with quiet operation, plug-and-play setup, and refillable hydrogen cartridges. Built for municipalities, utilities, construction sites, and businesses.",
     image: "/media/products/product-titan.png",
     specs: [
-      "1.5 kW capacity",
+      "1.5 kW portable hydrogen fuel cell generator",
       "40 lb portable weight · 24 × 18 × 24 in",
       "Operates −22 °C to +50 °C",
       "Unlimited runtime with 3-cartridge support",
@@ -83,15 +83,15 @@ export const products = [
     slug: "cartridge-kit",
     number: "04",
     name: "Hydrogen Cartridge Kit",
-    tagline: "Universal fuel logistics",
+    tagline: "Plug-and-play hydrogen cartridge system",
     description:
-      "Universal fuel cell compatible cartridges with RFID smart monitoring. Leak proof, lightweight, and designed for rapid field replenishment. Swap a cartridge and restore full runtime without tools or specialized training.",
+      "Plug-and-play hydrogen cartridge system with RFID smart monitoring. Leak proof, lightweight, and designed for rapid field replenishment. Swap a cartridge and restore full runtime without tools or specialized training.",
     image: "/media/products/product-hydro-kit.png",
     specs: [
       "Universal fuel cell compatibility",
+      "Plug-and-play hydrogen cartridge system",
       "RFID enabled smart monitoring",
       "Leak proof technology",
-      "Tool free cartridge exchange",
       "15 year shelf life",
     ],
   },
@@ -102,7 +102,7 @@ export const useCases = [
     slug: "defence-security",
     title: "Municipalities & Public Works",
     description:
-      "Quiet, zero-emission backup for city facilities, public works, and neighbourhood operations when the grid is down. Rapidly deployable portable hydrogen power for civic teams.",
+      "Quiet, zero-emission backup power without diesel for city facilities, public works, and neighbourhood operations. Rapidly deployable portable hydrogen power for civic teams.",
     image: "/media/cases/municipalities.png",
     howItWorks: [
       "Deploy Rise-Sentinel or Rise-Titan at city facilities and public works sites",
@@ -116,7 +116,7 @@ export const useCases = [
     slug: "remote-operations",
     title: "Utilities & Remote Communities",
     description:
-      "Field support for utility service and repair crews, plus reliable off-grid power for remote and Indigenous communities where grid access is limited.",
+      "Clean power for remote locations — field support for utility crews plus reliable off-grid hydrogen backup power for remote and Indigenous communities where grid access is limited.",
     image: "/media/cases/utilities-remote.png",
     howItWorks: [
       "Pre-position refillable cartridges at remote and community sites",
@@ -130,7 +130,7 @@ export const useCases = [
     slug: "disaster-response",
     title: "Homes & Emergency Response",
     description:
-      "Backup during outages and severe weather for homes, community gathering spaces, and emergency kits. Zero exhaust enables indoor-safe operation when the grid drops.",
+      "Clean emergency generators and indoor safe backup power for homes, community gathering spaces, and emergency kits. Zero exhaust enables indoor operation when the grid drops.",
     image: "/media/cases/homes-emergency.png",
     howItWorks: [
       "Keep Rise-Sentinel or Rise-Titan ready in home and community emergency kits",
@@ -144,7 +144,7 @@ export const useCases = [
     slug: "critical-infrastructure",
     title: "Small Business & Mobile Sites",
     description:
-      "Temporary power for essential small-business operations, community facilities, events, and mobile work sites where grid access is limited or unreliable.",
+      "Portable power for construction sites, events, and mobile work sites — temporary hydrogen backup power where grid access is limited or unreliable.",
     image: "/media/use-cases/uc-grid4.png",
     howItWorks: [
       "Set up Rise-Titan plug-and-play for temporary or event power",

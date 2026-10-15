@@ -4,12 +4,12 @@ import { pageMetadata, siteDescription, siteTitle } from "@/lib/seo";
 
 export const metadata: Metadata = {
   ...pageMetadata({
-    title: `${siteTitle} | Portable Hydrogen Fuel Cell Systems`,
+    title: `${siteTitle} | Portable Hydrogen Power & Fuel Cell Generators`,
     description: siteDescription,
     path: "/",
   }),
   title: {
-    absolute: `${siteTitle} | Portable Hydrogen Fuel Cell Systems`,
+    absolute: `${siteTitle} | Portable Hydrogen Power & Fuel Cell Generators`,
   },
 };
 

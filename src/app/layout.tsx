@@ -6,18 +6,25 @@ import { ClosingCta } from "@/components/home/ClosingCta";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { site } from "@/lib/content";
-import { siteDescription, siteTitle } from "@/lib/seo";
+import { siteDescription, siteKeywords, siteTitle } from "@/lib/seo";
 import "./globals.css";
 
 const organizationJsonLd = {
   "@context": "https://schema.org",
-  "@type": "Organization",
+  "@type": ["Organization", "Corporation"],
   name: site.name,
+  alternateName: ["Rise Mission Power", "Rise Power Corp."],
   legalName: site.legalName,
+  parentOrganization: {
+    "@type": "Organization",
+    name: site.parent,
+  },
   url: site.url,
   logo: `${site.url}/media/brand/rise-mission-power-logo.svg`,
   image: `${site.url}/media/brand/rise-mission-power-logo.svg`,
   description: siteDescription,
+  slogan:
+    "Portable hydrogen power — quiet, zero-emission fuel cell systems engineered in Canada.",
   email: site.email,
   telephone: site.phoneHref.replace("tel:", ""),
   address: {
@@ -28,6 +35,78 @@ const organizationJsonLd = {
       ? { postalCode: site.address.postalCode }
       : {}),
     addressCountry: "CA",
+  },
+  areaServed: ["CA", "US", "Worldwide"],
+  knowsAbout: [
+    "Portable hydrogen power",
+    "Portable hydrogen fuel cell generator",
+    "Hydrogen backup power",
+    "Military portable power",
+    "Tactical hydrogen generator",
+    "Hydrogen-powered drones",
+    "UAV hydrogen fuel cell",
+    "Hydrogen range extender for drones",
+    "Hydrogen cartridge system",
+    "Plug-and-play hydrogen cartridge",
+    "Zero-emission generator",
+    "Diesel generator alternative",
+    "Clean power for remote locations",
+    "Portable power for construction sites",
+    "Clean emergency generator",
+    "Backup power without diesel",
+    "Indoor safe backup power",
+    "AI data center backup power",
+    "Engineering and manufacturing company",
+    "Prototype manufacturing services",
+    "New product introduction manufacturing",
+    "Design for manufacturing services",
+    "Aerospace manufacturing Canada",
+    "Defence manufacturing Canada",
+    "Fuel cell component manufacturing",
+    "Hydrogen component manufacturing",
+    "Electrolyzer component manufacturing",
+  ],
+  makesOffer: {
+    "@type": "OfferCatalog",
+    name: "Rise Mission Power Systems",
+    itemListElement: [
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Product",
+          name: "Rise-Sentinel",
+          description:
+            "Portable hydrogen power cube for everyday backup and outdoor use with plug-and-play hydrogen cartridges.",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Product",
+          name: "Rise-Falcon",
+          description:
+            "UAV hydrogen fuel cell range extender for drones — up to 5× flight range.",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Product",
+          name: "Rise-Titan",
+          description:
+            "Portable hydrogen fuel cell generator — clean emergency and backup power without diesel.",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Product",
+          name: "Hydrogen Cartridge Kit",
+          description:
+            "Plug-and-play hydrogen cartridge system for rapid field replenishment.",
+        },
+      },
+    ],
   },
 };
 
@@ -60,16 +139,7 @@ export const metadata: Metadata = {
   creator: site.name,
   publisher: site.name,
   category: "technology",
-  keywords: [
-    "hydrogen fuel cell",
-    "portable power",
-    "tactical power",
-    "defence energy",
-    "disaster response",
-    "critical infrastructure",
-    "Rise Power",
-    "Canadian manufacturing",
-  ],
+  keywords: [...siteKeywords],
   referrer: "origin-when-cross-origin",
   formatDetection: {
     email: false,
@@ -126,6 +196,25 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: siteTitle,
+              alternateName: ["Rise Power", "Rise Mission Power"],
+              url: site.url,
+              description: siteDescription,
+              publisher: {
+                "@type": "Organization",
+                name: site.name,
+                url: site.url,
+              },
+              inLanguage: "en-CA",
+            }),
+          }}
         />
         <HashScroll />
         <Header />

@@ -94,10 +94,18 @@ import { useCases } from "@/lib/content";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Case Studies",
+  title: "Case Studies | Clean Backup Power & Remote Hydrogen Solutions",
   description:
-    "Explore how Rise Power hydrogen systems support municipalities, utilities, remote communities, homes, and emergency backup.",
+    "How portable hydrogen power delivers clean emergency generators, backup power without diesel, clean power for remote locations, and indoor safe backup for homes, municipalities, and critical sites.",
   path: "/use-cases",
+  keywords: [
+    "clean emergency generator",
+    "backup power without diesel",
+    "clean power for remote locations",
+    "indoor safe backup power",
+    "portable power for construction sites",
+    "hydrogen backup power",
+  ],
 });
 
 const sage = "#6e7f42";
@@ -395,11 +403,12 @@ export default function UseCasesPage() {
           <SectionEyebrow light>Case Studies</SectionEyebrow>
 
           <h1 className="mt-4 type-page-h1 sm:mt-5">
-            Case Studies
+            Clean Backup Power in the Field
           </h1>
 
           <p className="type-section-body mt-4 max-w-[36rem] !text-white/90 sm:mt-5">
-            Operating environments where Rise Power systems fit.
+            Portable hydrogen power for remote locations, construction sites,
+            emergency backup, and indoor safe generators — without diesel.
           </p>
 
           <div className="mt-6 flex flex-col gap-3 sm:mt-7 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">

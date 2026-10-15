@@ -10,9 +10,9 @@ import { StackedPageHero } from "@/components/StackedPageHero";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Company One Pager",
+  title: "Specs | Portable Hydrogen Fuel Cell Generators",
   description:
-    "Technical specifications and engineering targets for Rise Power hydrogen power systems.",
+    "Technical specifications for Rise-Sentinel, Rise-Falcon, Rise-Titan, and hydrogen cartridge systems — portable hydrogen fuel cell generators and UAV range extenders.",
   path: "/datasheets",
 });
 

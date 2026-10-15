@@ -8,9 +8,9 @@ import { StackedPageHero } from "@/components/StackedPageHero";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Procurement FAQ",
+  title: "Procurement FAQ | Portable Hydrogen Power & Generators",
   description:
-    "Common questions from procurement, programs, and integration teams evaluating Rise Power systems.",
+    "FAQ on portable hydrogen fuel cell generators, hydrogen cartridge systems, indoor safe backup power, military portable power, and Canadian manufacturing from Rise Power.",
   path: "/resources/faq",
 });
 
@@ -40,7 +40,15 @@ const faqGroups = [
       },
       {
         q: "Can the systems run indoors?",
-        a: "Yes. The only emissions from a hydrogen fuel cell are warm air and water vapour, with no carbon monoxide, no NOx, and no particulates. Indoor operation in shelters, server halls, command facilities, and field tents is the design intent. CSA and NFPA 2 indoor use compliance work is in progress.",
+        a: "Yes. The only emissions from a hydrogen fuel cell are warm air and water vapour, with no carbon monoxide, no NOx, and no particulates. Indoor safe backup power in shelters, command facilities, and field tents is the design intent — including AI data center backup power. CSA and NFPA 2 indoor use compliance work is in progress.",
+      },
+      {
+        q: "How do Rise systems compare to a diesel generator?",
+        a: "Rise portable hydrogen fuel cell generators are a zero-emission diesel generator alternative. They deliver quiet backup power without diesel, fuel-truck logistics, or acoustic signature — with unlimited runtime via plug-and-play hydrogen cartridge swaps.",
+      },
+      {
+        q: "Do you support drones and UAV platforms?",
+        a: "Yes. Rise-Falcon is a UAV hydrogen fuel cell and hydrogen range extender for drones — including hydrogen-powered drones — designed for up to 5× flight range with low-noise, zero-emission operation and quick-swap hydrogen cartridges.",
       },
     ],
   },
@@ -109,7 +117,11 @@ const faqGroups = [
       },
       {
         q: "Where are the systems built?",
-        a: "Rise Power is based in Vancouver, Canada, and is a CIMtech Green Energy company — a Canadian advanced manufacturing operation with a multi decade track record.",
+        a: "Rise Power is a Canadian engineering and manufacturing company based in Vancouver, and a CIMtech Green Energy company. We support aerospace manufacturing Canada and defence manufacturing Canada programs, plus fuel cell component manufacturing, hydrogen component manufacturing, and electrolyzer component manufacturing.",
+      },
+      {
+        q: "Do you offer prototype and new product introduction manufacturing?",
+        a: "Yes. Our engineering capability includes prototype manufacturing services, new product introduction manufacturing, and design for manufacturing services for hydrogen fuel cell systems and related components.",
       },
       {
         q: "Do you support integration with existing platforms?",

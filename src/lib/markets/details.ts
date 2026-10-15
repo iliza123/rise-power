@@ -14,13 +14,13 @@ export const marketDetails: readonly MarketDetailPage[] = [
     id: "defence",
     layout: "defence",
     label: "Defence",
-    title: "Military & Defence",
+    title: "Military Portable Power & Tactical Generators",
     eyebrow: "Defence",
     heading:
-      "Silent hydrogen power for tactical communications, UAV operations, and ISR systems in forward deployments.",
-    body: "Ultra-quiet, zero-emission power with rapid cartridge swaps for mission-critical operations where diesel logistics and acoustic signature are unacceptable.",
+      "Military portable power and tactical hydrogen generators for communications, UAV operations, and ISR in forward deployments.",
+    body: "Ultra-quiet, zero-emission military portable power with rapid cartridge swaps for mission-critical operations where diesel logistics and acoustic signature are unacceptable.",
     heroBody:
-      "Silent portable power for bases, troops, and surveillance drones. Reduces reliance on fuel convoys. Eliminates the acoustic, thermal, and emissions signatures that compromise operational security.",
+      "Silent military portable power and tactical hydrogen generators for bases, troops, and hydrogen-powered drones. Reduces reliance on fuel convoys. Eliminates the acoustic, thermal, and emissions signatures that compromise operational security.",
     overview: {
       eyebrow: "Defence",
       headingBefore: "Tactical Communications, UAV Operations &",
@@ -30,11 +30,11 @@ export const marketDetails: readonly MarketDetailPage[] = [
     images: {
       hero: {
         src: "/media/markets/defence-military.png",
-        alt: "Military and defence market imagery",
+        alt: "Military portable power and tactical hydrogen generators at a forward operating base",
       },
       secondary: {
         src: "/media/use-cases/uc-defence-deployment.png",
-        alt: "Military and defence market imagery",
+        alt: "Tactical hydrogen generator supporting defence field communications",
       },
     },
     gallery: [
@@ -53,9 +53,9 @@ export const marketDetails: readonly MarketDetailPage[] = [
       },
       {
         src: "/media/markets/defence-gallery-2.png",
-        alt: "Rise Mission Power octocopter on a rocky mountain ridge at golden hour with an operator running flight control from rugged cases nearby",
+        alt: "Hydrogen-powered drones and UAV hydrogen fuel cell range extender on a rocky mountain ridge at golden hour",
         title: "UAV Support",
-        caption: "Range extension for ISR missions.",
+        caption: "Hydrogen-powered drones for ISR missions.",
       },
       {
         src: "/media/markets/defence-gallery-3.png",
@@ -92,27 +92,27 @@ export const marketDetails: readonly MarketDetailPage[] = [
       },
       {
         name: "Rise Falcon™",
-        tagline: "Drone range extender",
-        body: "Plug-and-play hydrogen range extender for compatible drones. Up to 5x extended flight range with low-noise, zero-emission operation and quick-swap hydrogen cartridges.",
+        tagline: "UAV hydrogen fuel cell range extender",
+        body: "UAV hydrogen fuel cell and hydrogen range extender for drones — including hydrogen-powered drones for ISR. Up to 5× flight range with low-noise, zero-emission operation and quick-swap hydrogen cartridges.",
         href: "/products#falcon",
         imageSrc: "/media/use-cases/uc-product-falcon.png",
-        imageAlt: "Rise Falcon hydrogen drone range extender",
+        imageAlt: "Rise Falcon UAV hydrogen fuel cell range extender for hydrogen-powered drones",
       },
       {
         name: "Rise Titan™",
-        tagline: "1.5 kW portable generator",
+        tagline: "1.5 kW portable hydrogen fuel cell generator",
         body: "Clean backup power for everyday and emergency use. 1.5 kW capacity, 40 lb portable weight, and unlimited runtime with refillable hydrogen cartridges.",
         href: "/products#titan",
         imageSrc: "/media/use-cases/uc-product-titan.png",
-        imageAlt: "Rise Titan portable hydrogen generator",
+        imageAlt: "Rise Titan portable hydrogen fuel cell generator",
       },
       {
         name: "Hydrogen Cartridge Kit",
-        tagline: "Universal fuel logistics",
-        body: "Universal fuel cell compatible cartridges with RFID smart monitoring. Leak proof, lightweight, and designed for rapid field replenishment. Swap a cartridge and restore full runtime without tools or specialized training.",
+        tagline: "Plug-and-play hydrogen cartridge system",
+        body: "Plug-and-play hydrogen cartridge system with RFID smart monitoring. Leak proof, lightweight, and designed for rapid field replenishment. Swap a cartridge and restore full runtime without tools or specialized training.",
         href: "/products#cartridge-kit",
         imageSrc: "/media/use-cases/uc-product-cartridge.png",
-        imageAlt: "Rise Power hydrogen cartridge kit",
+        imageAlt: "Rise Power plug-and-play hydrogen cartridge system",
       },
     ],
     spotlight: {
@@ -122,7 +122,7 @@ export const marketDetails: readonly MarketDetailPage[] = [
       headingAccent: "For Forward Deployments.",
       body: "Silent portable power for bases, troops, and surveillance drones. Reduces reliance on fuel convoys. Eliminates the acoustic, thermal, and emissions signatures that compromise operational security.",
       imageSrc: "/media/use-cases/uc-defence-spotlight.png",
-      imageAlt: "Military and defence market imagery",
+      imageAlt: "Military portable power supporting tactical operations in the field",
       features: [
         "Quiet portable power",
         "Zero emissions at point of use",
@@ -201,37 +201,37 @@ export const marketDetails: readonly MarketDetailPage[] = [
       },
     ],
     galleryHeading: { before: "In the", accent: "field." },
-    metaTitle: "Military & Defence",
+    metaTitle: "Military Portable Power & Tactical Hydrogen Generators",
     metaDescription:
-      "Silent hydrogen power for tactical communications, UAV operations, and ISR systems in forward deployments.",
+      "Military portable power and tactical hydrogen generators for forward ops. UAV hydrogen fuel cells and hydrogen-powered drones for silent ISR, communications, and field deployment — backup power without diesel.",
   },
   {
     slug: "commercial",
     id: "commercial",
     layout: "commercial",
     label: "Commercial",
-    title: "Commercial",
+    title: "Commercial Backup Power & Construction Sites",
     eyebrow: "Commercial",
     heading:
-      "Reliable power for construction sites, telecom backup, mining, and other demanding industrial applications.",
-    body: "Robust, low-maintenance hydrogen power for electrified drilling, remote site infrastructure, and off-grid operations without fuel-truck dependency.",
+      "Portable power for construction sites, clean power for remote locations, telecom backup, mining, and AI data center backup power.",
+    body: "Robust, low-maintenance hydrogen backup power for electrified drilling, remote site infrastructure, and off-grid operations — a diesel generator alternative without fuel-truck dependency.",
     heroBody:
-      "Reliable power for construction sites, telecom backup, mining, and other demanding industrial applications.",
+      "Portable power for construction sites, clean power for remote locations, telecom backup, mining, and AI data center backup power without diesel.",
     overview: {
       eyebrow: "Commercial",
-      headingBefore: "Construction Sites, Municipalities &",
-      headingAccent: "Mining.",
+      headingBefore: "Construction, Mining &",
+      headingAccent: "AI Data Centers.",
     },
     href: "/markets/commercial",
     images: {
       hero: {
         src: "/media/markets/commercial-hero.png",
         mobileSrc: "/media/markets/commercial-hero-mobile.png",
-        alt: "Commercial market imagery",
+        alt: "Portable hydrogen backup power for construction sites and industrial facilities",
       },
       secondary: {
         src: "/media/cases/mining.png",
-        alt: "Mining company case study",
+        alt: "Clean power for remote mining and industrial sites",
       },
     },
     gallery: [
@@ -318,13 +318,14 @@ export const marketDetails: readonly MarketDetailPage[] = [
       headingAccent: "Without Fuel-Truck Dependency.",
       body: "Reliable power for construction sites, telecom backup, mining, and other demanding industrial applications. Robust, low-maintenance hydrogen power for electrified drilling, remote site infrastructure, and off-grid operations without fuel-truck dependency.",
       imageSrc: "/media/markets/commercial.png",
-      imageAlt: "Commercial market imagery",
+      imageAlt:
+        "Portable power for construction sites and hydrogen backup power without diesel",
       features: [
         "Quiet portable power",
         "Zero emissions at point of use",
         "No grid connection required",
         "Unlimited runtime with cartridge swap",
-        "Drone range extension up to 5×",
+        "AI data center backup power ready",
       ],
       featuredProducts: [
         { label: "Titan", href: "/products#titan" },
@@ -337,12 +338,12 @@ export const marketDetails: readonly MarketDetailPage[] = [
       headingBefore: "Products Built",
       headingAccent: "For The Job Site.",
       intro:
-        "Reliable hydrogen power for construction, telecom, and mining — without fuel-truck dependency.",
+        "Reliable hydrogen power for construction, telecom, mining, and AI data center backup power — without fuel-truck dependency.",
       items: [
         {
           slug: "titan",
-          role: "Primary site backup",
-          body: "Clean backup power for construction sites and industrial pads. 1.5 kW capacity, 40 lb portable weight, and unlimited runtime with refillable hydrogen cartridges.",
+          role: "Primary site & facility backup",
+          body: "Clean backup power for construction sites, industrial pads, and AI data center backup power needs. 1.5 kW capacity, 40 lb portable weight, and unlimited runtime with refillable hydrogen cartridges.",
           imageSrc: "/media/markets/commercial-product-titan.png",
         },
         {
@@ -385,34 +386,34 @@ export const marketDetails: readonly MarketDetailPage[] = [
     callouts: [
       {
         title: "Construction Sites",
-        body: "Clean backup power for everyday and emergency use. 1.5 kW capacity, 40 lb portable weight, and unlimited runtime with refillable hydrogen cartridges.",
+        body: "Portable power for construction sites — clean backup for everyday and emergency use with 1.5 kW capacity and unlimited runtime via hydrogen cartridges.",
       },
       {
-        title: "Municipalities",
-        body: "Quiet portable power for public works, emergency backup, and community infrastructure when the grid cannot be trusted.",
+        title: "AI Data Centers",
+        body: "Indoor safe AI data center backup power without diesel — quiet hydrogen generation for critical racks, edge facilities, and server halls.",
       },
       {
-        title: "Mining",
-        body: "Delivered robust, low-maintenance power solutions for electrified drilling and site infrastructure.",
+        title: "Mining & Remote Sites",
+        body: "Clean power for remote locations — robust, low-maintenance hydrogen backup for electrified drilling and off-grid site infrastructure.",
       },
     ],
     galleryHeading: { before: "Built for", accent: "industry." },
-    metaTitle: "Commercial",
+    metaTitle: "Commercial Hydrogen Backup Power & Construction Site Power",
     metaDescription:
-      "Reliable power for construction sites, telecom backup, mining, and other demanding industrial applications.",
+      "Portable power for construction sites, clean power for remote locations, and AI data center backup power. Zero-emission hydrogen backup power and diesel generator alternatives for industry.",
   },
   {
     slug: "consumer",
     id: "consumer",
     layout: "consumer",
     label: "Consumer",
-    title: "Consumer",
+    title: "Clean Emergency Generators & Indoor Safe Backup",
     eyebrow: "Consumer",
     heading:
-      "Portable backup for camping, RV power, and emergency home use when the grid cannot be trusted.",
-    body: "Quiet neighbourhood-ready operation with zero exhaust at the point of use. Refillable cartridges swap in under 30 seconds.",
+      "Clean emergency generators and indoor safe backup power for camping, RV, and home use when the grid cannot be trusted.",
+    body: "Quiet neighbourhood-ready operation with zero exhaust at the point of use — indoor safe backup power without diesel. Refillable cartridges swap in under 30 seconds.",
     heroBody:
-      "Portable backup for camping, RV power, and emergency home use when the grid cannot be trusted.",
+      "Clean emergency generators and indoor safe backup power for camping, RV power, and emergency home use when the grid cannot be trusted.",
     overview: {
       eyebrow: "Consumer",
       headingBefore: "Camping, RV Power &",
@@ -595,8 +596,8 @@ export const marketDetails: readonly MarketDetailPage[] = [
       },
     ],
     galleryHeading: { before: "Ready when", accent: "you are." },
-    metaTitle: "Consumer",
+    metaTitle: "Clean Emergency Generators & Indoor Safe Backup Power",
     metaDescription:
-      "Portable backup for camping, RV power, and emergency home use when the grid cannot be trusted.",
+      "Clean emergency generators and indoor safe backup power for homes, camping, and RV use. Portable hydrogen power with zero exhaust — backup power without diesel when the grid fails.",
   },
 ];
