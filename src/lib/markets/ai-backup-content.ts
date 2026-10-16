@@ -95,8 +95,8 @@ export const aiBackupPage = {
     headingBefore: "Cleaner, Stronger, Smarter Power",
     headingAccent: "Fueled By Hydrogen.",
     body: "Rise portable hydrogen systems deliver indoor-rated backup for AI facilities — cartridge-fueled runtime without diesel generators.",
-    imageSrc: "/media/home/one-hydrogen-ecosystem.png",
-    imageAlt: "Rise Mission Power hydrogen backup ecosystem with cartridge systems",
+    imageSrc: "/media/markets/ai-backup-hydrogen.png",
+    imageAlt: "Rise Mission Power data center hub with hydrogen backup systems",
     cta: {
       label: "See How It Works",
       href: "/insights/hydrogen-power-data-centers",
