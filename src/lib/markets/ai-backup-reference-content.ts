@@ -189,6 +189,6 @@ export const aiBackupReferencePage: AiBackupPageContent = {
     cta: { label: "See The Platform", href: "/contact" },
     imageSrc: "/media/markets/ai-backup-platform.png",
     imageAlt:
-      "Rise Mission Power energy management dashboard showing fleet status and output",
+      "High-tech energy command center at dusk with Rise Mission Power fleet monitoring",
   },
 };
