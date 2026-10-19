@@ -1,10 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import type { ReactNode } from "react";
 
+import { SnapCarousel } from "@/components/home/SnapCarousel";
 import { Reveal, RevealStagger } from "@/components/motion/Reveal";
 import { StackedPageHero } from "@/components/StackedPageHero";
 import { aiBackupPage } from "@/lib/markets/ai-backup-content";
+import type { AiBackupPageContent } from "@/lib/markets/ai-backup-page-types";
 import {
   CREAM,
   MUTED,
@@ -15,15 +18,92 @@ import {
   SPLIT_WASH,
 } from "./market-ui";
 
-/**
- * Full client-reference AI Backup page (sections 1–6) with images throughout.
- * No software platform. No page-local closing CTA (global ClosingCta + Footer).
- */
-export function MarketLayoutAiBackup() {
-  const page = aiBackupPage;
+function ResilientBenefitCard({
+  benefit,
+}: {
+  benefit: AiBackupPageContent["resilient"]["benefits"][number];
+}) {
+  return (
+    <article
+      className="flex h-full flex-col overflow-hidden border bg-[#fbfaf7]"
+      style={{ borderColor: SECTION_RULE }}
+    >
+      <div className="relative aspect-[16/10] bg-[#101820]">
+        <Image
+          src={benefit.imageSrc}
+          alt={benefit.imageAlt}
+          fill
+          sizes="(min-width: 1024px) 22vw, (min-width: 640px) 50vw, 85vw"
+          className="object-cover"
+        />
+      </div>
+      <div className="flex flex-1 flex-col p-4 sm:p-5">
+        <h3 className="font-display text-sm font-bold tracking-[0.12em] uppercase sm:text-base">
+          {benefit.title}
+        </h3>
+        <p className="mt-2 text-sm leading-[1.55]" style={{ color: MUTED }}>
+          {benefit.body}
+        </p>
+      </div>
+    </article>
+  );
+}
 
+function HowItWorksStepCard({
+  step,
+}: {
+  step: AiBackupPageContent["steps"]["items"][number];
+}) {
+  return (
+    <article
+      className="flex h-full flex-col overflow-hidden border bg-[#fbfaf7]"
+      style={{ borderColor: SECTION_RULE }}
+    >
+      <div className="relative aspect-[16/10] bg-[#101820]">
+        <Image
+          src={step.imageSrc}
+          alt={step.imageAlt}
+          fill
+          sizes="(min-width: 1024px) 22vw, (min-width: 640px) 50vw, 85vw"
+          className="object-cover"
+        />
+      </div>
+      <div className="flex flex-1 flex-col p-4 sm:p-5">
+        <span
+          className="font-display text-sm font-bold tracking-[0.14em] uppercase"
+          style={{ color: SAGE }}
+        >
+          {step.number}
+        </span>
+        <h3 className="mt-2 font-display text-xl font-bold tracking-tight uppercase">
+          {step.title}
+        </h3>
+        <p className="mt-2 text-base leading-[1.55]" style={{ color: MUTED }}>
+          {step.body}
+        </p>
+      </div>
+    </article>
+  );
+}
+
+type MarketLayoutAiBackupProps = {
+  page?: AiBackupPageContent;
+  /** Optional banner above the hero (e.g. client-reference compare link). */
+  compareBanner?: ReactNode;
+};
+
+/**
+ * AI Backup page (sections 1–7) with images throughout.
+ * No page-local closing CTA (global ClosingCta + Footer).
+ * Pass `page` to render the client-reference copy on /markets/ai-backup2.
+ */
+export function MarketLayoutAiBackup({
+  page = aiBackupPage,
+  compareBanner,
+}: MarketLayoutAiBackupProps) {
   return (
     <main className="bg-[#fbfaf7] text-[#101820]">
+      {compareBanner}
       {/* 1. Hero */}
       <StackedPageHero
         layout="split"
@@ -138,7 +218,19 @@ export function MarketLayoutAiBackup() {
       <section className="bg-white py-10 sm:py-12 lg:py-14">
         <div className="mx-auto max-w-[1440px] px-6 lg:px-10">
           <div className="grid items-center gap-8 lg:grid-cols-2 lg:gap-12">
-            <Reveal variant="left">
+            {/* Image first on mobile; text stays left on desktop */}
+            <Reveal variant="right" className="order-1 lg:order-2">
+              <div className="relative aspect-[4/3] overflow-hidden bg-[#101820]">
+                <Image
+                  src={page.resilient.imageSrc}
+                  alt={page.resilient.imageAlt}
+                  fill
+                  sizes="(min-width: 1024px) 45vw, 100vw"
+                  className="object-cover"
+                />
+              </div>
+            </Reveal>
+            <Reveal variant="left" className="order-2 lg:order-1">
               <SectionEyebrow>{page.resilient.eyebrow}</SectionEyebrow>
               <h2 className="mt-3 font-display text-[1.75rem] leading-[0.95] font-bold tracking-tight uppercase sm:text-[2.25rem] lg:text-[2.75rem]">
                 {page.resilient.headingBefore}{" "}
@@ -161,60 +253,49 @@ export function MarketLayoutAiBackup() {
                 <ArrowRight className="size-4 shrink-0" aria-hidden />
               </Link>
             </Reveal>
-            <Reveal variant="right">
-              <div className="relative aspect-[4/3] overflow-hidden bg-[#101820]">
-                <Image
-                  src={page.resilient.imageSrc}
-                  alt={page.resilient.imageAlt}
-                  fill
-                  sizes="(min-width: 1024px) 45vw, 100vw"
-                  className="object-cover"
-                />
-              </div>
-            </Reveal>
           </div>
 
+          <Reveal variant="up" delay={80} className="mt-10 lg:hidden">
+            <SnapCarousel
+              ariaLabel="Resilient energy benefits"
+              showArrows
+              showDots
+              itemClassName="w-[min(85vw,20rem)]"
+              trackClassName="gap-4 px-1 pb-1"
+            >
+              {page.resilient.benefits.map((benefit) => (
+                <ResilientBenefitCard key={benefit.title} benefit={benefit} />
+              ))}
+            </SnapCarousel>
+          </Reveal>
+
           <RevealStagger
-            className="mt-10 grid gap-4 sm:mt-12 sm:grid-cols-2 lg:grid-cols-4 lg:gap-5"
+            className="mt-12 hidden gap-5 lg:grid lg:grid-cols-4"
             step={50}
             variant="up"
           >
             {page.resilient.benefits.map((benefit) => (
-              <article
-                key={benefit.title}
-                className="flex h-full flex-col overflow-hidden border bg-[#fbfaf7]"
-                style={{ borderColor: SECTION_RULE }}
-              >
-                <div className="relative aspect-[16/10] bg-[#101820]">
-                  <Image
-                    src={benefit.imageSrc}
-                    alt={benefit.imageAlt}
-                    fill
-                    sizes="(min-width: 1024px) 22vw, (min-width: 640px) 50vw, 100vw"
-                    className="object-cover"
-                  />
-                </div>
-                <div className="flex flex-1 flex-col p-4 sm:p-5">
-                  <h3 className="font-display text-sm font-bold tracking-[0.12em] uppercase sm:text-base">
-                    {benefit.title}
-                  </h3>
-                  <p
-                    className="mt-2 text-sm leading-[1.55]"
-                    style={{ color: MUTED }}
-                  >
-                    {benefit.body}
-                  </p>
-                </div>
-              </article>
+              <ResilientBenefitCard key={benefit.title} benefit={benefit} />
             ))}
           </RevealStagger>
         </div>
       </section>
 
-      {/* 4. Hydrogen tech */}
+      {/* 4. Hydrogen tech — image first on mobile; text stays left on desktop */}
       <section className="py-10 sm:py-12 lg:py-14" style={{ background: CREAM }}>
         <div className="mx-auto grid max-w-[1440px] items-center gap-8 px-6 lg:grid-cols-2 lg:gap-12 lg:px-10">
-          <Reveal variant="left">
+          <Reveal variant="right" className="order-1 lg:order-2">
+            <div className="relative aspect-[4/3] overflow-hidden bg-[#101820]">
+              <Image
+                src={page.hydrogen.imageSrc}
+                alt={page.hydrogen.imageAlt}
+                fill
+                sizes="(min-width: 1024px) 45vw, 100vw"
+                className="object-cover"
+              />
+            </div>
+          </Reveal>
+          <Reveal variant="left" className="order-2 lg:order-1">
             <SectionEyebrow>{page.hydrogen.eyebrow}</SectionEyebrow>
             <h2 className="mt-3 font-display text-[1.75rem] leading-[0.95] font-bold tracking-tight uppercase sm:text-[2.25rem] lg:text-[2.5rem]">
               {page.hydrogen.headingBefore}{" "}
@@ -247,21 +328,10 @@ export function MarketLayoutAiBackup() {
               <ArrowRight className="size-4 shrink-0" aria-hidden />
             </Link>
           </Reveal>
-          <Reveal variant="right">
-            <div className="relative aspect-[4/3] overflow-hidden bg-[#101820]">
-              <Image
-                src={page.hydrogen.imageSrc}
-                alt={page.hydrogen.imageAlt}
-                fill
-                sizes="(min-width: 1024px) 45vw, 100vw"
-                className="object-cover"
-              />
-            </div>
-          </Reveal>
         </div>
       </section>
 
-      {/* 5. Four-step process — with images */}
+      {/* 5. Four-step process — slider on mobile, grid on desktop */}
       <section className="bg-white py-10 sm:py-12 lg:py-14">
         <div className="mx-auto max-w-[1440px] px-6 lg:px-10">
           <Reveal variant="up">
@@ -272,44 +342,27 @@ export function MarketLayoutAiBackup() {
             </h2>
           </Reveal>
 
+          <Reveal variant="up" delay={80} className="mt-8 lg:hidden">
+            <SnapCarousel
+              ariaLabel="How it works steps"
+              showArrows
+              showDots
+              itemClassName="w-[min(85vw,20rem)]"
+              trackClassName="gap-4 px-1 pb-1"
+            >
+              {page.steps.items.map((step) => (
+                <HowItWorksStepCard key={step.number} step={step} />
+              ))}
+            </SnapCarousel>
+          </Reveal>
+
           <RevealStagger
-            className="mt-8 grid gap-4 sm:mt-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-5"
+            className="mt-10 hidden gap-5 lg:grid lg:grid-cols-4"
             step={60}
             variant="up"
           >
             {page.steps.items.map((step) => (
-              <article
-                key={step.number}
-                className="flex h-full flex-col overflow-hidden border bg-[#fbfaf7]"
-                style={{ borderColor: SECTION_RULE }}
-              >
-                <div className="relative aspect-[16/10] bg-[#101820]">
-                  <Image
-                    src={step.imageSrc}
-                    alt={step.imageAlt}
-                    fill
-                    sizes="(min-width: 1024px) 22vw, (min-width: 640px) 50vw, 100vw"
-                    className="object-cover"
-                  />
-                  <span
-                    className="absolute top-3 left-3 font-display text-sm font-bold tracking-[0.14em] text-white uppercase"
-                    style={{ textShadow: "0 1px 8px rgba(0,0,0,0.55)" }}
-                  >
-                    {step.number}
-                  </span>
-                </div>
-                <div className="flex flex-1 flex-col p-4 sm:p-5">
-                  <h3 className="font-display text-xl font-bold tracking-tight uppercase">
-                    {step.title}
-                  </h3>
-                  <p
-                    className="mt-2 text-base leading-[1.55]"
-                    style={{ color: MUTED }}
-                  >
-                    {step.body}
-                  </p>
-                </div>
-              </article>
+              <HowItWorksStepCard key={step.number} step={step} />
             ))}
           </RevealStagger>
         </div>
@@ -370,6 +423,48 @@ export function MarketLayoutAiBackup() {
           </RevealStagger>
         </div>
       </section>
+
+      {/* 7. Platform — image first on mobile; text stays left on desktop */}
+      {page.platform ? (
+        <section className="bg-white py-10 sm:py-12 lg:py-14">
+          <div className="mx-auto grid max-w-[1440px] items-center gap-8 px-6 lg:grid-cols-2 lg:gap-12 lg:px-10">
+            <Reveal variant="right" className="order-1 lg:order-2">
+              <div className="relative aspect-[16/10] overflow-hidden bg-[#101820]">
+                <Image
+                  src={page.platform.imageSrc}
+                  alt={page.platform.imageAlt}
+                  fill
+                  sizes="(min-width: 1024px) 45vw, 100vw"
+                  className="object-cover object-left"
+                />
+              </div>
+            </Reveal>
+            <Reveal variant="left" className="order-2 lg:order-1">
+              <SectionEyebrow>{page.platform.eyebrow}</SectionEyebrow>
+              <h2 className="mt-3 font-display text-[1.75rem] leading-[0.95] font-bold tracking-tight uppercase sm:text-[2.25rem] lg:text-[2.5rem]">
+                {page.platform.headingBefore}{" "}
+                <span style={{ color: SAGE }}>
+                  {page.platform.headingAccent}
+                </span>
+              </h2>
+              <p
+                className="mt-4 text-base leading-[1.65] sm:text-lg"
+                style={{ color: MUTED }}
+              >
+                {page.platform.body}
+              </p>
+              <Link
+                href={page.platform.cta.href}
+                className="mt-6 inline-flex min-h-12 items-center justify-center gap-2 rounded-sm px-7 text-sm font-semibold tracking-wide text-white uppercase transition-opacity hover:opacity-90"
+                style={{ background: SAGE_CTA }}
+              >
+                {page.platform.cta.label}
+                <ArrowRight className="size-4 shrink-0" aria-hidden />
+              </Link>
+            </Reveal>
+          </div>
+        </section>
+      ) : null}
     </main>
   );
 }

@@ -19,6 +19,8 @@ export { MARKET_PRODUCT_CATALOG } from "./product-catalog";
 export type { MarketProductCatalogEntry } from "./product-catalog";
 export { marketDetails } from "./details";
 export { aiBackupPage } from "./ai-backup-content";
+export { aiBackupReferencePage } from "./ai-backup-reference-content";
+export type { AiBackupPageContent } from "./ai-backup-page-types";
 
 export function getMarketBySlug(
   slug: string,

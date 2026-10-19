@@ -1,11 +1,12 @@
+import type { AiBackupPageContent } from "./ai-backup-page-types";
+
 /**
- * AI Backup landing — full client AI BACKUP.png section set (1–6).
- * Software-platform section omitted (no product UI).
+ * Live AI Backup landing — site content for /markets/ai-backup.
  * Page-local closing CTA omitted (global ClosingCta + Footer).
  * Claims aligned with commercial callouts, FAQ, and data-centers insight.
- * Hero desktop image: /media/markets/ai-backup-hero.png; mobile keeps data-centers.png.
+ * Client mockup wording lives in `ai-backup-reference-content.ts` (/markets/ai-backup2).
  */
-export const aiBackupPage = {
+export const aiBackupPage: AiBackupPageContent = {
   eyebrow: "AI Backup",
   titleLine1: "AI Never Sleeps.",
   titleAccent: "Backup Power Shouldn't Either.",
@@ -18,7 +19,7 @@ export const aiBackupPage = {
   },
   hero: {
     src: "/media/markets/ai-backup-hero.png",
-    mobileSrc: "/media/insights/data-centers.png",
+    mobileSrc: "/media/markets/ai-backup-hero-mobile.jpg",
     alt: "Camo Mission Power System installed in a data center",
   },
   badges: [
@@ -179,4 +180,15 @@ export const aiBackupPage = {
       },
     ],
   },
-} as const;
+
+  platform: {
+    eyebrow: "Platform",
+    headingBefore: "Visibility Across Every",
+    headingAccent: "Power Asset.",
+    body: "Monitor, manage, and optimize your entire fleet with Rise Mission Power's intelligent energy management platform — clearer status for AI backup reserves and field deployments.",
+    cta: { label: "See The Platform", href: "/contact" },
+    imageSrc: "/media/markets/ai-backup-platform.png",
+    imageAlt:
+      "Rise Mission Power energy management dashboard showing fleet status and output",
+  },
+};
