@@ -66,7 +66,7 @@ export function HomePage() {
             {/* Mobile / tablet — stacked hero banner */}
             <Image
               src={heroMobileImageSrc}
-              alt="Rise Power tactical field deployment"
+              alt="RISE MISSION POWER tactical field deployment"
               fill
               priority
               sizes="100vw"

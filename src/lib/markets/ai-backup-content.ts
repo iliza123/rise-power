@@ -42,7 +42,7 @@ export const aiBackupPage: AiBackupPageContent = {
         title: "Zero-Downtime Operations",
         body: "Instant failover in under 10 seconds. Pair with your UPS bridge for seamless handoff when the grid drops.",
         imageSrc: "/media/markets/ai-backup-feature-zero-downtime.png",
-        imageAlt: "Rise power unit operating in a control room",
+        imageAlt: "RISE MISSION POWER unit operating in a control room",
         href: "/insights/hydrogen-power-data-centers",
       },
       {
@@ -68,7 +68,7 @@ export const aiBackupPage: AiBackupPageContent = {
         title: "Clean & Reliable Power",
         body: "Zero emissions at the point of use — warm air and water vapour only.",
         imageSrc: "/media/markets/ai-backup-benefit-clean.png",
-        imageAlt: "Rise power station operating in mountain terrain",
+        imageAlt: "RISE MISSION POWER station operating in mountain terrain",
       },
       {
         title: "Scalable Deployment",
@@ -80,7 +80,7 @@ export const aiBackupPage: AiBackupPageContent = {
         title: "Built For Any Environment",
         body: "Indoor-safe operation for data floors, edge rooms, and space-constrained halls.",
         imageSrc: "/media/markets/ai-backup-benefit-environment.png",
-        imageAlt: "Rise power system in a technical server room",
+        imageAlt: "RISE MISSION POWER system in a technical server room",
       },
       {
         title: "Lower Total Cost Of Ownership",
@@ -95,7 +95,7 @@ export const aiBackupPage: AiBackupPageContent = {
     eyebrow: "Hydrogen Technology",
     headingBefore: "Cleaner, Stronger, Smarter Power",
     headingAccent: "Fueled By Hydrogen.",
-    body: "Rise portable hydrogen systems deliver indoor-rated backup for AI facilities — cartridge-fueled runtime without diesel generators.",
+    body: "Rise Mission Power portable hydrogen systems deliver indoor-rated backup for AI facilities — cartridge-fueled runtime without diesel generators.",
     imageSrc: "/media/markets/ai-backup-hydrogen.png",
     imageAlt: "Rise Mission Power data center hub with hydrogen backup systems",
     cta: {
@@ -126,7 +126,7 @@ export const aiBackupPage: AiBackupPageContent = {
         title: "Store",
         body: "Stockpile and distribute RFID-monitored cartridges with long shelf life for your 24–72 hour backup window.",
         imageSrc: "/media/markets/ai-backup-step-store.png",
-        imageAlt: "Inventory scan in the Rise energy warehouse",
+        imageAlt: "Inventory scan in the Rise Mission Power energy warehouse",
       },
       {
         number: "03",

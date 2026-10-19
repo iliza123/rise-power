@@ -45,7 +45,7 @@ function IntroCard() {
       </h2>
 
       <p className="mt-4 max-w-[28rem] text-[14px] leading-relaxed text-[#3f3c36] sm:text-[15px]">
-        Every Rise Power product is designed as a complete system. Power
+        Every RISE MISSION POWER product is designed as a complete system. Power
         generation, fuel delivery, controls, and enclosure working together.
         Integrated system design delivers better performance and reliability
         than assembled from parts alternatives.
@@ -128,7 +128,7 @@ export function CartridgeEcosystem() {
       <div className="relative aspect-[2.55/1] w-full overflow-hidden sm:aspect-[2.7/1] lg:aspect-[2.9/1]">
         <Image
           src="/media/products/product-ecosystem.png"
-          alt="Rise portable power station and hydrogen cartridge on display"
+          alt="Rise Mission Power portable power station and hydrogen cartridge on display"
           fill
           quality={92}
           sizes="100vw"

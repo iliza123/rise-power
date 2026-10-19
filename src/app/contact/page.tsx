@@ -10,7 +10,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata: Metadata = pageMetadata({
   title: "Contact | Request a Portable Hydrogen Power Briefing",
   description:
-    "Request a briefing on portable hydrogen fuel cell generators, military portable power, hydrogen cartridge systems, and Canadian prototype-to-production manufacturing from Rise Power.",
+    "Request a briefing on portable hydrogen fuel cell generators, military portable power, hydrogen cartridge systems, and Canadian prototype-to-production manufacturing from RISE MISSION POWER.",
   path: "/contact",
 });
 
@@ -54,7 +54,7 @@ export default function ContactPage() {
         layout="split"
         imageSrc="/media/contact/hero-banner.png"
         mobileImageSrc="/media/contact/hero-banner-mobile.png"
-        imageAlt="Soldier with Rise Power systems and drone at a mountain overlook"
+        imageAlt="Soldier with RISE MISSION POWER systems and drone at a mountain overlook"
         imageWidth={7680}
         imageHeight={3200}
         quality={100}

@@ -136,7 +136,7 @@ function buildContactEmailHtml(input: ContactEmailInput): string {
           <tr>
             <td style="background-color:${BRAND.ink};padding:28px 32px;">
               <p style="margin:0 0 6px;font-family:Arial,Helvetica,sans-serif;font-size:11px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:${BRAND.sageCta};">
-                Rise Power · Website
+                RISE MISSION POWER · Website
               </p>
               <h1 style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:22px;line-height:1.25;font-weight:700;letter-spacing:-0.02em;color:${BRAND.white};">
                 New contact inquiry
@@ -210,7 +210,7 @@ export async function sendContactEmail(input: ContactEmailInput) {
 
   const org = input.company?.trim();
   const textLines = [
-    "New contact inquiry — Rise Power website",
+    "New contact inquiry — RISE MISSION POWER website",
     "",
     `Name: ${input.name}`,
     `Email: ${input.email}`,

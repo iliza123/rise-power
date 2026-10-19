@@ -12,7 +12,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata: Metadata = pageMetadata({
   title: "Resources | Hydrogen Power Specs, FAQ & Procurement",
   description:
-    "Specs, procurement FAQ, and documentation for portable hydrogen fuel cell generators, military portable power, hydrogen cartridge systems, and clean emergency backup from Rise Power.",
+    "Specs, procurement FAQ, and documentation for portable hydrogen fuel cell generators, military portable power, hydrogen cartridge systems, and clean emergency backup from RISE MISSION POWER.",
   path: "/resources",
 });
 
@@ -26,7 +26,7 @@ const destinations = [
     number: "01",
     title: "Company One Pager",
     description:
-      "Technical specifications for Rise Power systems. Beta-stage hardware in active validation — full one pagers available on briefing request.",
+      "Technical specifications for RISE MISSION POWER systems. Beta-stage hardware in active validation — full one pagers available on briefing request.",
     href: "/datasheets",
     cta: "Open Company One Pager",
     image: "/media/resources/choose-brief-datasheets.png",
@@ -36,7 +36,7 @@ const destinations = [
     number: "02",
     title: "Procurement FAQ",
     description:
-      "Common questions from procurement, programs, and integration teams evaluating Rise Power portable power systems.",
+      "Common questions from procurement, programs, and integration teams evaluating RISE MISSION POWER portable power systems.",
     href: "/resources/faq",
     cta: "Read FAQ",
     image: "/media/FAQ/FAQ-hero.png",
@@ -46,11 +46,11 @@ const destinations = [
     number: "03",
     title: "Insights",
     description:
-      "Guides and comparisons on hydrogen power, field logistics, and defence applications from Rise Power.",
+      "Guides and comparisons on hydrogen power, field logistics, and defence applications from RISE MISSION POWER.",
     href: "/insights",
     cta: "View Insights",
     image: "/media/capabilities/field-deployment.png",
-    imageAlt: "Rise Power systems in field deployment",
+    imageAlt: "RISE MISSION POWER systems in field deployment",
   },
   {
     number: "04",
@@ -60,7 +60,7 @@ const destinations = [
     href: "/investors",
     cta: "View Investors",
     image: "/media/investors/investor-deck.png",
-    imageAlt: "Rise Power investor briefing materials",
+    imageAlt: "RISE MISSION POWER investor briefing materials",
   },
 ] as const;
 
@@ -94,15 +94,15 @@ const systems = [
 const insightImages: Record<string, { src: string; alt: string }> = {
   "hydrogen-fuel-cell-vs-diesel-generator": {
     src: "/media/insights/diesel-comparison.png",
-    alt: "Rise portable hydrogen power beside a diesel generator at a remote field site",
+    alt: "Rise Mission Power portable hydrogen power beside a diesel generator at a remote field site",
   },
   "what-is-a-hydrogen-fuel-cell": {
     src: "/media/insights/fuel-cell.png",
-    alt: "Rise portable power units and hydrogen cartridge on a workshop bench",
+    alt: "Rise Mission Power portable power units and hydrogen cartridge on a workshop bench",
   },
   "silent-generator-for-military-operations": {
     src: "/media/insights/defence-silent.png",
-    alt: "Rise portable power units powering a tactical command tent at dusk",
+    alt: "Rise Mission Power portable power units powering a tactical command tent at dusk",
   },
 };
 
@@ -122,11 +122,11 @@ const downloads = [
     label: "PDF · Investor Briefing",
     title: "Investor Deck",
     description:
-      "Full Rise Power investor briefing. Market sizing, technology, traction, team, and use of funds.",
+      "Full RISE MISSION POWER investor briefing. Market sizing, technology, traction, team, and use of funds.",
     href: "/media/investors/rise-power-deck.pdf",
     download: "rise-power-deck.pdf",
     image: "/media/investors/investor-deck.png",
-    imageAlt: "Rise Power investor deck",
+    imageAlt: "RISE MISSION POWER investor deck",
   },
   {
     number: "02",
@@ -242,7 +242,7 @@ export default function ResourcesPage() {
 
           <p className="type-section-body mt-4 max-w-[720px] text-white sm:mt-6">
             Company One Pager, procurement FAQ, insights, and investor materials for
-            programs, integration, and buying teams evaluating Rise Power systems.
+            programs, integration, and buying teams evaluating RISE MISSION POWER systems.
           </p>
 
           <div className="mt-7 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:gap-4">
@@ -277,7 +277,7 @@ export default function ResourcesPage() {
                 className="type-section-body mt-3 max-w-[560px] sm:mt-4"
                 style={{ color: muted }}
               >
-                Four paths into the Rise Power resource stack — specs,
+                Four paths into the RISE MISSION POWER resource stack — specs,
                 procurement answers, field notes, and technical articles.
               </p>
             </div>

@@ -17,7 +17,7 @@ export const insights: InsightArticle[] = [
     hero: {
       src: `/media/insights/diesel-comparison-desktop.png`,
       mobileSrc: `/media/insights/diesel-comparison.png`,
-      alt: `Rise portable hydrogen power beside a diesel generator at a remote field site`,
+      alt: `Rise Mission Power portable hydrogen power beside a diesel generator at a remote field site`,
     },
     relatedSlugs: [
       `what-is-a-hydrogen-fuel-cell`,
@@ -166,7 +166,7 @@ export const insights: InsightArticle[] = [
     hero: {
       src: `/media/insights/fuel-cell-desktop.png`,
       mobileSrc: `/media/insights/fuel-cell.png`,
-      alt: `Rise portable power units and hydrogen cartridge on a workshop bench`,
+      alt: `Rise Mission Power portable power units and hydrogen cartridge on a workshop bench`,
     },
     relatedSlugs: [
       `hydrogen-fuel-cell-vs-diesel-generator`,
@@ -354,7 +354,7 @@ export const insights: InsightArticle[] = [
     hero: {
       src: `/media/insights/defence-silent-desktop.png`,
       mobileSrc: `/media/insights/defence-silent.png`,
-      alt: `Rise portable power units powering a tactical command tent at dusk`,
+      alt: `Rise Mission Power portable power units powering a tactical command tent at dusk`,
     },
     relatedSlugs: [
       `what-is-a-hydrogen-fuel-cell`,
@@ -659,7 +659,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Explore Rise Power solutions`,
+        text: `Explore RISE MISSION POWER solutions`,
       },
       {
         type: "takeaways",
@@ -837,7 +837,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Contact Rise Power about disaster response solutions`,
+        text: `Contact RISE MISSION POWER about disaster response solutions`,
       },
       {
         type: "takeaways",
@@ -1250,7 +1250,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Learn more about Rise Power's hydrogen cartridge system`,
+        text: `Learn more about RISE MISSION POWER's hydrogen cartridge system`,
       },
       {
         type: "heading",
@@ -1286,7 +1286,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Rise Power's cartridge system uses a universal interface designed for compatibility across the full product line. The same cartridges work with the Rise-Sentinel portable unit, the Rise-Falcon drone extender, and the Rise-Titan generator.`,
+        text: `RISE MISSION POWER's cartridge system uses a universal interface designed for compatibility across the full product line. The same cartridges work with the Rise-Sentinel portable unit, the Rise-Falcon drone extender, and the Rise-Titan generator.`,
       },
       {
         type: "heading",
@@ -1468,7 +1468,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Contact Rise Power about backup power solutions`,
+        text: `Contact RISE MISSION POWER about backup power solutions`,
       },
       {
         type: "heading",
@@ -1588,7 +1588,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Rise Power's Hydrogen Cartridge Kit uses universal fuel cells with RFID tracking for real-time inventory management across the supply chain.`,
+        text: `RISE MISSION POWER's Hydrogen Cartridge Kit uses universal fuel cells with RFID tracking for real-time inventory management across the supply chain.`,
       },
       {
         type: "heading",
@@ -1616,7 +1616,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Rise Power's hydrogen cartridges maintain full capacity for 15 years with no maintenance. Lithium batteries degrade to 60-80% capacity within 2-3 years even in storage.`,
+        text: `RISE MISSION POWER's hydrogen cartridges maintain full capacity for 15 years with no maintenance. Lithium batteries degrade to 60-80% capacity within 2-3 years even in storage.`,
       },
       {
         type: "heading",
@@ -1676,7 +1676,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `A PEM fuel cell turns hydrogen into electricity, heat, and water. Nothing else. No combustion, no emissions, no noise from engine parts. This is the technology inside every Rise Power product, from the compact Rise-Sentinel Power Cube to the 1.5 kW Rise-Titan generator.`,
+        text: `A PEM fuel cell turns hydrogen into electricity, heat, and water. Nothing else. No combustion, no emissions, no noise from engine parts. This is the technology inside every RISE MISSION POWER product, from the compact Rise-Sentinel Power Cube to the 1.5 kW Rise-Titan generator.`,
       },
       {
         type: "paragraph",
@@ -1760,7 +1760,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `The membrane must stay hydrated to conduct protons effectively. Too dry and conductivity drops. Too wet and water floods the catalyst. Rise Power's fuel cell systems manage this water balance automatically, which is why they perform reliably from −22°C to +50°C.`,
+        text: `The membrane must stay hydrated to conduct protons effectively. Too dry and conductivity drops. Too wet and water floods the catalyst. RISE MISSION POWER's fuel cell systems manage this water balance automatically, which is why they perform reliably from −22°C to +50°C.`,
       },
       {
         type: "heading",
@@ -1768,7 +1768,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `PEM cells need hydrogen. The hydrogen can come from compressed gas tanks, metal hydride storage, or chemical hydride cartridges. Rise Power uses solid-state hydrogen storage in its Hydrogen Cartridge Kit, which eliminates the need for high-pressure tanks and makes transport and storage simple.`,
+        text: `PEM cells need hydrogen. The hydrogen can come from compressed gas tanks, metal hydride storage, or chemical hydride cartridges. RISE MISSION POWER uses solid-state hydrogen storage in its Hydrogen Cartridge Kit, which eliminates the need for high-pressure tanks and makes transport and storage simple.`,
       },
       {
         type: "heading",
@@ -1788,7 +1788,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Yes. While the membrane needs some warmth to function optimally, PEM fuel cells generate their own heat during operation. Rise Power systems operate down to −22°C. The startup process includes a brief warm-up phase that takes seconds.`,
+        text: `Yes. While the membrane needs some warmth to function optimally, PEM fuel cells generate their own heat during operation. RISE MISSION POWER systems operate down to −22°C. The startup process includes a brief warm-up phase that takes seconds.`,
       },
       {
         type: "heading",
@@ -1892,7 +1892,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Rise Power's Hydrogen Cartridge Kit standardizes fuel across all three platforms. One cartridge type works in the Rise-Sentinel, Rise-Falcon, and Rise-Titan. RFID tracking provides real-time inventory visibility across the supply chain.`,
+        text: `RISE MISSION POWER's Hydrogen Cartridge Kit standardizes fuel across all three platforms. One cartridge type works in the Rise-Sentinel, Rise-Falcon, and Rise-Titan. RFID tracking provides real-time inventory visibility across the supply chain.`,
       },
       {
         type: "heading",
@@ -1936,7 +1936,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Rise Power works with defence procurement teams to design phased transition plans. Contact us for a FOB power assessment.`,
+        text: `RISE MISSION POWER works with defence procurement teams to design phased transition plans. Contact us for a FOB power assessment.`,
       },
       {
         type: "heading",
@@ -1956,7 +1956,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Rise Power's solid-state hydrogen cartridges are safer than diesel fuel storage. No pressurized tanks, no flammable liquid pools, no vapor ignition risk. Cartridges can take small arms impacts without catastrophic failure.`,
+        text: `RISE MISSION POWER's solid-state hydrogen cartridges are safer than diesel fuel storage. No pressurized tanks, no flammable liquid pools, no vapor ignition risk. Cartridges can take small arms impacts without catastrophic failure.`,
       },
       {
         type: "heading",
@@ -1972,7 +1972,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `PEM fuel cells use ambient oxygen, which is less dense at altitude. Performance decreases slightly above 3,000m. Rise Power systems are rated for operation up to 4,500m with moderate derating. Most FOB operations fall well within this envelope.`,
+        text: `PEM fuel cells use ambient oxygen, which is less dense at altitude. Performance decreases slightly above 3,000m. RISE MISSION POWER systems are rated for operation up to 4,500m with moderate derating. Most FOB operations fall well within this envelope.`,
       },
       {
         type: "heading",
@@ -2112,7 +2112,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Solar-plus-battery systems produce almost zero noise. Among fuel-based generators, hydrogen fuel cells are the quietest, typically under 65 dBA at 1 meter. Rise Power's products operate below 70 dBA across the full product line.`,
+        text: `Solar-plus-battery systems produce almost zero noise. Among fuel-based generators, hydrogen fuel cells are the quietest, typically under 65 dBA at 1 meter. RISE MISSION POWER's products operate below 70 dBA across the full product line.`,
       },
       {
         type: "heading",
@@ -2216,7 +2216,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Modern hydrogen systems bear zero resemblance to a 1937 airship. Comparing Rise Power's solid-state hydrogen cartridges to the Hindenburg is like comparing a smartphone battery to a stick of dynamite.`,
+        text: `Modern hydrogen systems bear zero resemblance to a 1937 airship. Comparing RISE MISSION POWER's solid-state hydrogen cartridges to the Hindenburg is like comparing a smartphone battery to a stick of dynamite.`,
       },
       {
         type: "heading",
@@ -2232,7 +2232,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Rise Power's Hydrogen Cartridge Kit uses solid-state storage. There's no high-pressure tank to rupture. If a cartridge is punctured, hydrogen release is slow and controlled. The cartridge cannot detonate because there's no stored mechanical energy.`,
+        text: `RISE MISSION POWER's Hydrogen Cartridge Kit uses solid-state storage. There's no high-pressure tank to rupture. If a cartridge is punctured, hydrogen release is slow and controlled. The cartridge cannot detonate because there's no stored mechanical energy.`,
       },
       {
         type: "takeaways",
@@ -2260,7 +2260,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Rise Power systems include built-in leak detection. The fuel cell's own sensors monitor hydrogen flow rates and will shut down automatically if a leak is detected. The Rise-Sentinel and Rise-Titan both feature redundant safety monitoring.`,
+        text: `RISE MISSION POWER systems include built-in leak detection. The fuel cell's own sensors monitor hydrogen flow rates and will shut down automatically if a leak is detected. The Rise-Sentinel and Rise-Titan both feature redundant safety monitoring.`,
       },
       {
         type: "paragraph",
@@ -2284,7 +2284,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `For portable power applications, the infrastructure question is moot. Rise Power's cartridge-based system requires no pipelines, no refueling stations, and no specialized training. Swap a cartridge like you'd swap a battery. See how it works.`,
+        text: `For portable power applications, the infrastructure question is moot. RISE MISSION POWER's cartridge-based system requires no pipelines, no refueling stations, and no specialized training. Swap a cartridge like you'd swap a battery. See how it works.`,
       },
       {
         type: "heading",
@@ -2304,7 +2304,7 @@ export const insights: InsightArticle[] = [
           `IEC 62282: International standard for fuel cell technologies`,
           `SAE J2578: Fuel cell vehicle safety`,
           `UN/DOT: Transport classification for hydrogen storage`,
-          `MIL-STD-810: Military environmental testing (Rise Power products)`,
+          `MIL-STD-810: Military environmental testing (RISE MISSION POWER products)`,
         ],
       },
       {
@@ -2317,7 +2317,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Yes, with proper ventilation. Hydrogen rises, so any ceiling-level ventilation prevents accumulation. Rise Power's solid-state cartridges are classified for indoor storage without special ventilation requirements because they don't release hydrogen until activated.`,
+        text: `Yes, with proper ventilation. Hydrogen rises, so any ceiling-level ventilation prevents accumulation. RISE MISSION POWER's solid-state cartridges are classified for indoor storage without special ventilation requirements because they don't release hydrogen until activated.`,
       },
       {
         type: "heading",
@@ -2349,7 +2349,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Hydrogen is odorless. If you smell something, it's not hydrogen. Check for other sources. Rise Power fuel cells include electronic hydrogen sensors that detect leaks before any human could. If a sensor alerts, the system shuts down automatically.`,
+        text: `Hydrogen is odorless. If you smell something, it's not hydrogen. Check for other sources. RISE MISSION POWER fuel cells include electronic hydrogen sensors that detect leaks before any human could. If a sensor alerts, the system shuts down automatically.`,
       },
     ],
   },
@@ -2540,7 +2540,7 @@ export const insights: InsightArticle[] = [
     accentPhrase: `Power Logistics`,
     hero: {
       src: `/media/insights/defence-logistics.png`,
-      alt: `Rise Power hydrogen cartridge kit`,
+      alt: `RISE MISSION POWER hydrogen cartridge kit`,
     },
     relatedSlugs: [
       `off-grid-power-solutions`,
@@ -2610,7 +2610,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Rise Power's Hydrogen Cartridge Kit uses a universal cartridge that works across all Rise Power platforms:`,
+        text: `RISE MISSION POWER's Hydrogen Cartridge Kit uses a universal cartridge that works across all RISE MISSION POWER platforms:`,
       },
       {
         type: "paragraph",
@@ -2662,7 +2662,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Hydrogen fuel cells have no oil, no filters (except a simple air filter), no belts, no spark plugs, and no moving parts in the power generation stack. If a unit fails, swap in a replacement. The failed unit can be repaired at depot level rather than in the field. Learn about Rise Power's support model.`,
+        text: `Hydrogen fuel cells have no oil, no filters (except a simple air filter), no belts, no spark plugs, and no moving parts in the power generation stack. If a unit fails, swap in a replacement. The failed unit can be repaired at depot level rather than in the field. Learn about RISE MISSION POWER's support model.`,
       },
       {
         type: "heading",
@@ -2718,7 +2718,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Rise Power cartridges use passive UHF RFID tags compatible with standard military logistics RFID readers. Each cartridge carries a unique ID for tracking manufacture date, energy remaining, and chain of custody.`,
+        text: `RISE MISSION POWER cartridges use passive UHF RFID tags compatible with standard military logistics RFID readers. Each cartridge carries a unique ID for tracking manufacture date, energy remaining, and chain of custody.`,
       },
       {
         type: "heading",
@@ -2875,7 +2875,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Yes. Rise Power products operate up to 50°C ambient temperature. The Rise-Titan includes thermal management that handles desert conditions. Solar panels actually lose efficiency in extreme heat (typically 0.3-0.5% per degree above 25°C).`,
+        text: `Yes. RISE MISSION POWER products operate up to 50°C ambient temperature. The Rise-Titan includes thermal management that handles desert conditions. Solar panels actually lose efficiency in extreme heat (typically 0.3-0.5% per degree above 25°C).`,
       },
       {
         type: "heading",
@@ -3028,7 +3028,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Rise Power's Rise-Titan generator is already rated for indoor use. For data center scale applications, contact our team to discuss custom configurations.`,
+        text: `RISE MISSION POWER's Rise-Titan generator is already rated for indoor use. For data center scale applications, contact our team to discuss custom configurations.`,
       },
       {
         type: "heading",
@@ -3223,7 +3223,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Military and defence, emergency response, noise-sensitive operations, environmentally sensitive sites, cold-weather operations, extended off-grid deployments. Explore Rise Power's lineup.`,
+        text: `Military and defence, emergency response, noise-sensitive operations, environmentally sensitive sites, cold-weather operations, extended off-grid deployments. Explore RISE MISSION POWER's lineup.`,
       },
       {
         type: "heading",
@@ -3243,7 +3243,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `For defence, emergency management, and critical infrastructure, hydrogen fuel cells aren't just competitive. They're the best available option today. See Rise Power's full product line or contact our team for a consultation.`,
+        text: `For defence, emergency management, and critical infrastructure, hydrogen fuel cells aren't just competitive. They're the best available option today. See RISE MISSION POWER's full product line or contact our team for a consultation.`,
       },
       {
         type: "heading",
@@ -3367,7 +3367,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Rise Power's Hydrogen Cartridge Kit stores green hydrogen in compact, swappable cartridges with a 15-year shelf life. Compare that to diesel fuel, which degrades in 6-12 months.`,
+        text: `RISE MISSION POWER's Hydrogen Cartridge Kit stores green hydrogen in compact, swappable cartridges with a 15-year shelf life. Compare that to diesel fuel, which degrades in 6-12 months.`,
       },
       {
         type: "heading",
@@ -3395,7 +3395,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Green hydrogen cartridges can be pre-positioned years in advance without degradation. A forward operating base powered by Rise Power fuel cells eliminates generator noise that compromises position, exhaust that creates thermal signatures, and fuel convoy requirements that expose supply lines.`,
+        text: `Green hydrogen cartridges can be pre-positioned years in advance without degradation. A forward operating base powered by RISE MISSION POWER fuel cells eliminates generator noise that compromises position, exhaust that creates thermal signatures, and fuel convoy requirements that expose supply lines.`,
       },
       {
         type: "paragraph",
@@ -3411,7 +3411,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Yes. Hydrogen cartridges are designed for safe handling and transport. Rise Power's cartridges include RFID tracking and meet DOT transport standards. Hydrogen dissipates rapidly if released, unlike liquid fuels that pool and ignite.`,
+        text: `Yes. Hydrogen cartridges are designed for safe handling and transport. RISE MISSION POWER's cartridges include RFID tracking and meet DOT transport standards. Hydrogen dissipates rapidly if released, unlike liquid fuels that pool and ignite.`,
       },
       {
         type: "heading",
@@ -3435,7 +3435,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Rise Power's Rise-Titan generator operates from −22°C to +50°C. The hydrogen itself does not freeze. Cold-weather performance is actually an advantage over diesel, which gels in extreme cold.`,
+        text: `RISE MISSION POWER's Rise-Titan generator operates from −22°C to +50°C. The hydrogen itself does not freeze. Cold-weather performance is actually an advantage over diesel, which gels in extreme cold.`,
       },
       {
         type: "heading",
@@ -3539,7 +3539,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Basic fuel cell maintenance requires less training than diesel generator maintenance. The systems are designed for operator-level care. Rise Power provides training and documentation for all products.`,
+        text: `Basic fuel cell maintenance requires less training than diesel generator maintenance. The systems are designed for operator-level care. RISE MISSION POWER provides training and documentation for all products.`,
       },
       {
         type: "heading",
@@ -3563,7 +3563,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `When you factor in maintenance labor, spare parts, unplanned downtime, and fuel logistics, hydrogen fuel cells deliver a lower total cost of ownership than diesel generators for most portable power applications under 5kW. Contact Rise Power for a TCO analysis specific to your operational requirements.`,
+        text: `When you factor in maintenance labor, spare parts, unplanned downtime, and fuel logistics, hydrogen fuel cells deliver a lower total cost of ownership than diesel generators for most portable power applications under 5kW. Contact RISE MISSION POWER for a TCO analysis specific to your operational requirements.`,
       },
       {
         type: "heading",
@@ -3690,7 +3690,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Rise Power's Hydrogen Cartridge Kit enables rapid refueling by swapping cartridges. A hospital can stockpile cartridges for weeks of runtime in the same space a diesel tank would occupy, with the cartridges remaining viable for 15 years.`,
+        text: `RISE MISSION POWER's Hydrogen Cartridge Kit enables rapid refueling by swapping cartridges. A hospital can stockpile cartridges for weeks of runtime in the same space a diesel tank would occupy, with the cartridges remaining viable for 15 years.`,
       },
       {
         type: "heading",
@@ -3758,7 +3758,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Contact Rise Power for a facility assessment and pilot program proposal tailored to your hospital's critical load requirements.`,
+        text: `Contact RISE MISSION POWER for a facility assessment and pilot program proposal tailored to your hospital's critical load requirements.`,
       },
       {
         type: "takeaways",
@@ -3855,7 +3855,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `PEM (Proton Exchange Membrane) fuel cells are the dominant technology for portable and deployable power. Rise Power's Rise-Sentinel, Rise-Falcon, and Rise-Titan all use PEM technology, optimized for the specific demands of each application.`,
+        text: `PEM (Proton Exchange Membrane) fuel cells are the dominant technology for portable and deployable power. RISE MISSION POWER's Rise-Sentinel, Rise-Falcon, and Rise-Titan all use PEM technology, optimized for the specific demands of each application.`,
       },
       {
         type: "heading",
@@ -3944,7 +3944,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Rise Power designs its systems for stack replaceability. When a stack reaches end of life, the balance of plant (housing, electronics, controls) continues in service with a replacement stack.`,
+        text: `RISE MISSION POWER designs its systems for stack replaceability. When a stack reaches end of life, the balance of plant (housing, electronics, controls) continues in service with a replacement stack.`,
       },
       {
         type: "heading",
@@ -3976,11 +3976,11 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "heading",
-        text: `What is the warranty on Rise Power fuel cells?`,
+        text: `What is the warranty on RISE MISSION POWER fuel cells?`,
       },
       {
         type: "paragraph",
-        text: `Contact Rise Power for current warranty terms. Warranties are structured around operating hours and calendar time, reflecting the dual nature of fuel cell aging.`,
+        text: `Contact RISE MISSION POWER for current warranty terms. Warranties are structured around operating hours and calendar time, reflecting the dual nature of fuel cell aging.`,
       },
       {
         type: "heading",
@@ -3988,7 +3988,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Higher altitudes mean lower oxygen partial pressure, which can reduce peak power output. This does not significantly affect lifespan but may require system derating above certain altitudes. Rise Power systems are tested for operation at altitude.`,
+        text: `Higher altitudes mean lower oxygen partial pressure, which can reduce peak power output. This does not significantly affect lifespan but may require system derating above certain altitudes. RISE MISSION POWER systems are tested for operation at altitude.`,
       },
     ],
   },
@@ -4128,7 +4128,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Contact Rise Power for production rental pricing and availability.`,
+        text: `Contact RISE MISSION POWER for production rental pricing and availability.`,
       },
       {
         type: "heading",
@@ -4204,7 +4204,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Hydrogen fuel cell propulsion shatters this limitation. Rise Power's Rise-Falcon drone range extender delivers up to 5x extended flight range over equivalent battery systems. For ISR (Intelligence, Surveillance, and Reconnaissance) missions, that means continuous coverage instead of scheduled gaps.`,
+        text: `Hydrogen fuel cell propulsion shatters this limitation. RISE MISSION POWER's Rise-Falcon drone range extender delivers up to 5x extended flight range over equivalent battery systems. For ISR (Intelligence, Surveillance, and Reconnaissance) missions, that means continuous coverage instead of scheduled gaps.`,
       },
       {
         type: "heading",
@@ -4318,7 +4318,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Rise Power's Hydrogen Cartridge Kit standardizes fuel logistics. RFID-tagged cartridges integrate with existing supply chain tracking systems. With a 15-year shelf life, cartridges can be pre-positioned at forward operating bases, patrol bases, and supply depots without degradation concerns.`,
+        text: `RISE MISSION POWER's Hydrogen Cartridge Kit standardizes fuel logistics. RFID-tagged cartridges integrate with existing supply chain tracking systems. With a 15-year shelf life, cartridges can be pre-positioned at forward operating bases, patrol bases, and supply depots without degradation concerns.`,
       },
       {
         type: "heading",
@@ -4330,7 +4330,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `NATO and allied defence agencies have identified hydrogen fuel cell UAS as a priority capability for 2025-2030 procurement cycles. Learn about Rise Power's defence solutions.`,
+        text: `NATO and allied defence agencies have identified hydrogen fuel cell UAS as a priority capability for 2025-2030 procurement cycles. Learn about RISE MISSION POWER's defence solutions.`,
       },
       {
         type: "takeaways",
@@ -4383,7 +4383,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Hydrogen cartridges are classified as compressed gas and have specific transport regulations. Rise Power cartridges are designed and certified for safe transport, including air shipment under applicable DOT and IATA regulations.`,
+        text: `Hydrogen cartridges are classified as compressed gas and have specific transport regulations. RISE MISSION POWER cartridges are designed and certified for safe transport, including air shipment under applicable DOT and IATA regulations.`,
       },
     ],
   },
@@ -4397,7 +4397,7 @@ export const insights: InsightArticle[] = [
     readTime: `5 min read`,
     hero: {
       src: `/media/insights/hydrogen-storage.png`,
-      alt: `Rise Power hydrogen cartridge kit`,
+      alt: `RISE MISSION POWER hydrogen cartridge kit`,
     },
     relatedSlugs: [
       `military-drone-endurance`,
@@ -4524,7 +4524,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Rise Power's Hydrogen Cartridge Kit is engineered to deliver the optimal balance of energy density, weight, safety, and shelf life for portable applications. The cartridges feature RFID tracking for supply chain visibility and a 15-year shelf life, making them ideal for pre-positioning in military and emergency response scenarios.`,
+        text: `RISE MISSION POWER's Hydrogen Cartridge Kit is engineered to deliver the optimal balance of energy density, weight, safety, and shelf life for portable applications. The cartridges feature RFID tracking for supply chain visibility and a 15-year shelf life, making them ideal for pre-positioning in military and emergency response scenarios.`,
       },
       {
         type: "heading",
@@ -4557,7 +4557,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Solid-state storage operates at low pressure and ambient temperature, making it inherently the safest option for portable use. Compressed gas at 700 bar is safe with proper engineering but requires more robust containment. Rise Power cartridges are designed for field safety across all conditions.`,
+        text: `Solid-state storage operates at low pressure and ambient temperature, making it inherently the safest option for portable use. Compressed gas at 700 bar is safe with proper engineering but requires more robust containment. RISE MISSION POWER cartridges are designed for field safety across all conditions.`,
       },
       {
         type: "heading",
@@ -4693,7 +4693,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Rise Power's Rise-Titan generator and Rise-Sentinel portable fuel cell operate with zero emissions in any regulatory jurisdiction worldwide. No exemptions needed. No compliance costs. No regulatory risk.`,
+        text: `RISE MISSION POWER's Rise-Titan generator and Rise-Sentinel portable fuel cell operate with zero emissions in any regulatory jurisdiction worldwide. No exemptions needed. No compliance costs. No regulatory risk.`,
       },
       {
         type: "takeaways",
@@ -4756,7 +4756,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `For portable power applications under 5 kW, option 3 is already economically competitive when total cost of ownership is considered. Contact Rise Power for a regulatory impact assessment and transition plan.`,
+        text: `For portable power applications under 5 kW, option 3 is already economically competitive when total cost of ownership is considered. Contact RISE MISSION POWER for a regulatory impact assessment and transition plan.`,
       },
       {
         type: "takeaways",
@@ -4808,7 +4808,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Potentially. Some jurisdictions offer carbon offset credits or clean energy incentives for replacing combustion equipment with zero-emission alternatives. Consult local regulations or contact Rise Power for guidance specific to your jurisdiction.`,
+        text: `Potentially. Some jurisdictions offer carbon offset credits or clean energy incentives for replacing combustion equipment with zero-emission alternatives. Consult local regulations or contact RISE MISSION POWER for guidance specific to your jurisdiction.`,
       },
     ],
   },
@@ -4880,7 +4880,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Rise Power's lightweight Rise-Sentinel Power Cube provides extended runtime via cartridge swap. A soldier carrying two cartridges has more energy available than 20 lbs of lithium batteries, at less total weight.`,
+        text: `RISE MISSION POWER's lightweight Rise-Sentinel Power Cube provides extended runtime via cartridge swap. A soldier carrying two cartridges has more energy available than 20 lbs of lithium batteries, at less total weight.`,
       },
       {
         type: "heading",
@@ -4948,7 +4948,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Rise Power is positioned to support allied interoperability through standardized hydrogen cartridge systems. Explore our defence capabilities.`,
+        text: `RISE MISSION POWER is positioned to support allied interoperability through standardized hydrogen cartridge systems. Explore our defence capabilities.`,
       },
       {
         type: "takeaways",
@@ -5002,7 +5002,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Rise Power's commercial fuel cell systems are available to qualified defence customers. Contact Rise Power for information on procurement, evaluation units, and security classification of specific system configurations.`,
+        text: `RISE MISSION POWER's commercial fuel cell systems are available to qualified defence customers. Contact RISE MISSION POWER for information on procurement, evaluation units, and security classification of specific system configurations.`,
       },
     ],
   },
@@ -5050,7 +5050,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Rise Power's product line exemplifies this maturation. The Rise-Sentinel delivers lightweight, man-portable hydrogen power with extended runtime via cartridge swap. The Rise-Falcon extends drone endurance by 5x. The Rise-Titan provides 1.5 kW zero-emission generation in extreme conditions.`,
+        text: `RISE MISSION POWER's product line exemplifies this maturation. The Rise-Sentinel delivers lightweight, man-portable hydrogen power with extended runtime via cartridge swap. The Rise-Falcon extends drone endurance by 5x. The Rise-Titan provides 1.5 kW zero-emission generation in extreme conditions.`,
       },
       {
         type: "paragraph",
@@ -5164,7 +5164,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `Contact Rise Power to discuss how these trends apply to your specific operational requirements and procurement timeline. Explore our full product capabilities and solution applications.`,
+        text: `Contact RISE MISSION POWER to discuss how these trends apply to your specific operational requirements and procurement timeline. Explore our full product capabilities and solution applications.`,
       },
       {
         type: "heading",
@@ -5200,7 +5200,7 @@ export const insights: InsightArticle[] = [
       },
       {
         type: "paragraph",
-        text: `For portable power applications using cartridge-based systems like Rise Power's Hydrogen Cartridge Kit, infrastructure requirements are minimal. Cartridges are manufactured, shipped, and stored like any other consumable supply item. This is fundamentally different from building hydrogen refueling stations for vehicles.`,
+        text: `For portable power applications using cartridge-based systems like RISE MISSION POWER's Hydrogen Cartridge Kit, infrastructure requirements are minimal. Cartridges are manufactured, shipped, and stored like any other consumable supply item. This is fundamentally different from building hydrogen refueling stations for vehicles.`,
       },
       {
         type: "heading",

@@ -112,7 +112,7 @@ export const marketDetails: readonly MarketDetailPage[] = [
         body: "Plug-and-play hydrogen cartridge system with RFID smart monitoring. Leak proof, lightweight, and designed for rapid field replenishment. Swap a cartridge and restore full runtime without tools or specialized training.",
         href: "/products#cartridge-kit",
         imageSrc: "/media/use-cases/uc-product-cartridge.png",
-        imageAlt: "Rise Power plug-and-play hydrogen cartridge system",
+        imageAlt: "RISE MISSION POWER plug-and-play hydrogen cartridge system",
       },
     ],
     spotlight: {
@@ -261,7 +261,7 @@ export const marketDetails: readonly MarketDetailPage[] = [
       },
       {
         src: "/media/markets/commercial-gallery-5.png",
-        alt: "Emergency responders powering laptops and radios from a Rise portable system beside a fire truck after a storm",
+        alt: "Emergency responders powering laptops and radios from a Rise Mission Power portable system beside a fire truck after a storm",
         title: "Emergency",
         caption: "Rapid deploy for storm response.",
       },
@@ -308,7 +308,7 @@ export const marketDetails: readonly MarketDetailPage[] = [
         body: "Universal fuel cell compatible cartridges with RFID smart monitoring. Leak proof, lightweight, and designed for rapid field replenishment. Swap a cartridge and restore full runtime without tools or specialized training.",
         href: "/products#cartridge-kit",
         imageSrc: "/media/use-cases/uc-product-cartridge.png",
-        imageAlt: "Rise Power hydrogen cartridge kit",
+        imageAlt: "RISE MISSION POWER hydrogen cartridge kit",
       },
     ],
     spotlight: {
@@ -514,7 +514,7 @@ export const marketDetails: readonly MarketDetailPage[] = [
       hero: {
         src: "/media/markets/consumer-hero.png",
         mobileSrc: "/media/markets/consumer-hero-mobile.png",
-        alt: "Camper using a laptop powered by Rise portable hydrogen system at a mountain overlook at sunset",
+        alt: "Camper using a laptop powered by Rise Mission Power portable hydrogen system at a mountain overlook at sunset",
       },
       secondary: {
         src: "/media/cases/homes-emergency.png",
@@ -524,14 +524,14 @@ export const marketDetails: readonly MarketDetailPage[] = [
     gallery: [
       {
         src: "/media/markets/consumer-gallery-events.png",
-        alt: "Hiker overlooking a turquoise alpine lake and snow-capped mountains at sunrise with a Rise portable power unit strapped to an orange backpack",
+        alt: "Hiker overlooking a turquoise alpine lake and snow-capped mountains at sunrise with a Rise Mission Power portable power unit strapped to an orange backpack",
         title: "Trail Ready",
         caption: "Portable power for every adventure.",
         objectPosition: "72% center",
       },
       {
         src: "/media/markets/consumer-gallery-home.png",
-        alt: "Woman working on a laptop in a living room at night with a Rise portable power unit and hydrogen cylinder nearby and a dog resting on the rug",
+        alt: "Woman working on a laptop in a living room at night with a Rise Mission Power portable power unit and hydrogen cylinder nearby and a dog resting on the rug",
         title: "Home Life",
         caption: "Quiet power for everyday essentials.",
       },
@@ -543,13 +543,13 @@ export const marketDetails: readonly MarketDetailPage[] = [
       },
       {
         src: "/media/markets/consumer-gallery-patio.png",
-        alt: "Rise portable power system on a stone patio at dusk beside a modern glass home",
+        alt: "Rise Mission Power portable power system on a stone patio at dusk beside a modern glass home",
         title: "Patio Ready",
         caption: "Rugged power for outdoor living.",
       },
       {
         src: "/media/markets/consumer-gallery-outdoor.png",
-        alt: "Camper cooking at an RV site at sunset with a Rise portable power unit powering an electric cooktop on a folding table",
+        alt: "Camper cooking at an RV site at sunset with a Rise Mission Power portable power unit powering an electric cooktop on a folding table",
         title: "Outdoor Living",
         caption: "Clean energy for camping and RV.",
       },
@@ -596,7 +596,7 @@ export const marketDetails: readonly MarketDetailPage[] = [
         body: "Universal fuel cell compatible cartridges with RFID smart monitoring. Leak proof, lightweight, and designed for rapid field replenishment.",
         href: "/products#cartridge-kit",
         imageSrc: "/media/use-cases/uc-product-cartridge.png",
-        imageAlt: "Rise Power hydrogen cartridge kit",
+        imageAlt: "RISE MISSION POWER hydrogen cartridge kit",
       },
     ],
     spotlight: {

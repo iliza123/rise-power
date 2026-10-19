@@ -49,7 +49,7 @@ function AnswerBody({ text }: { text: string }) {
   if (text.includes("System Integration covers") || text.includes("platform integration")) {
     return (
       <>
-        Yes. Rise Power covers electronics, mounts, and field interfaces for
+        Yes. RISE MISSION POWER covers electronics, mounts, and field interfaces for
         drones, generators, and facility backup loads. See{" "}
         <Link
           href="/capabilities/engineering-development"

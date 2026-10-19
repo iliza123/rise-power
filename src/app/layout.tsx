@@ -13,7 +13,7 @@ const organizationJsonLd = {
   "@context": "https://schema.org",
   "@type": ["Organization", "Corporation"],
   name: site.name,
-  alternateName: ["Rise Mission Power", "Rise Power Corp."],
+  alternateName: ["Rise Mission Power", "Rise Mission Power Corp."],
   legalName: site.legalName,
   parentOrganization: {
     "@type": "Organization",
@@ -204,7 +204,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
               "@context": "https://schema.org",
               "@type": "WebSite",
               name: siteTitle,
-              alternateName: ["Rise Power", "Rise Mission Power"],
+              alternateName: ["RISE MISSION POWER", "Rise Mission Power"],
               url: site.url,
               description: siteDescription,
               publisher: {

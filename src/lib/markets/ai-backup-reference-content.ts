@@ -42,7 +42,7 @@ export const aiBackupReferencePage: AiBackupPageContent = {
         title: "Zero-Downtime Operations",
         body: "Uninterrupted power for critical systems.",
         imageSrc: "/media/markets/ai-backup-feature-zero-downtime.png",
-        imageAlt: "Rise power unit operating in a control room",
+        imageAlt: "RISE MISSION POWER unit operating in a control room",
         href: "/insights/hydrogen-power-data-centers",
       },
       {
@@ -68,7 +68,7 @@ export const aiBackupReferencePage: AiBackupPageContent = {
         title: "Clean & Reliable Power",
         body: "Low-emission solutions for a sustainable tomorrow.",
         imageSrc: "/media/markets/ai-backup-benefit-clean.png",
-        imageAlt: "Rise power station operating in mountain terrain",
+        imageAlt: "RISE MISSION POWER station operating in mountain terrain",
       },
       {
         title: "Scalable Deployment",
@@ -80,7 +80,7 @@ export const aiBackupReferencePage: AiBackupPageContent = {
         title: "Built For Any Environment",
         body: "Rugged, reliable, and ready for the world's toughest conditions.",
         imageSrc: "/media/markets/ai-backup-benefit-environment.png",
-        imageAlt: "Rise power system in a technical server room",
+        imageAlt: "RISE MISSION POWER system in a technical server room",
       },
       {
         title: "Lower Total Cost Of Ownership",
@@ -126,7 +126,7 @@ export const aiBackupReferencePage: AiBackupPageContent = {
         title: "Store",
         body: "Store and distribute for flexible use.",
         imageSrc: "/media/markets/ai-backup-step-store.png",
-        imageAlt: "Inventory scan in the Rise energy warehouse",
+        imageAlt: "Inventory scan in the Rise Mission Power energy warehouse",
       },
       {
         number: "03",

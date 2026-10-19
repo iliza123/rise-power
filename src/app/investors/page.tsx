@@ -10,7 +10,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata: Metadata = pageMetadata({
   title: "Investors | Canadian Hydrogen Power Manufacturing",
   description:
-    "Investor materials for Rise Power — a Canadian engineering and manufacturing company building portable hydrogen power, zero-emission generators, and hydrogen cartridge systems.",
+    "Investor materials for RISE MISSION POWER — a Canadian engineering and manufacturing company building portable hydrogen power, zero-emission generators, and hydrogen cartridge systems.",
   path: "/investors",
 });
 
@@ -180,10 +180,10 @@ const pressUpdates = [
   {
     number: "01",
     image: "/media/investors/investor-p1.png",
-    imageAlt: "Rise Power hydrogen power system",
+    imageAlt: "RISE MISSION POWER hydrogen power system",
     title: (
       <>
-        Rise Power Completes
+        RISE MISSION POWER Completes
         <br />
         Phase II Development
         <br />
@@ -192,7 +192,7 @@ const pressUpdates = [
     ),
     meta: "2026-02-10",
     category: "Company News",
-    body: "Rise Power engineering has reached a development milestone on the portable hydrogen power system, validating core performance targets ahead of schedule.",
+    body: "RISE MISSION POWER engineering has reached a development milestone on the portable hydrogen power system, validating core performance targets ahead of schedule.",
   },
   {
     number: "02",
@@ -234,14 +234,14 @@ const pressUpdates = [
     imageAlt: "Soldiers walking through a field",
     title: (
       <>
-        Rise Power Expands
+        RISE MISSION POWER Expands
         <br />
         Engineering Team
       </>
     ),
     meta: "2025-10-05",
     category: "Company News",
-    body: "Rise Power is expanding the engineering team with additional power electronics and thermal management capacity.",
+    body: "RISE MISSION POWER is expanding the engineering team with additional power electronics and thermal management capacity.",
   },
 ] as const;
 
@@ -341,7 +341,7 @@ export default function InvestorsPage() {
         layout="split"
         imageSrc="/media/investors/investor-hero.png"
         mobileImageSrc="/media/investors/investor-hero-mobile.png"
-        imageAlt="Rise Power systems supporting field and municipal operations"
+        imageAlt="RISE MISSION POWER systems supporting field and municipal operations"
         imageWidth={1672}
         imageHeight={941}
         tone="#0a0f10"
@@ -359,7 +359,7 @@ export default function InvestorsPage() {
           </h1>
 
           <p className="type-section-body mt-4 max-w-[650px] text-white">
-            Rise Power is raising to scale manufacturing, complete certification,
+            RISE MISSION POWER is raising to scale manufacturing, complete certification,
             and fulfill pilot deployments across disaster response, critical
             infrastructure, and defence. Materials and contact below for qualified
             investors.
@@ -425,7 +425,7 @@ export default function InvestorsPage() {
               <div className="relative aspect-[16/9] overflow-hidden bg-[#0c1210]">
                 <Image
                   src="/media/investors/investor-deck.png"
-                  alt="Rise Power investor deck"
+                  alt="RISE MISSION POWER investor deck"
                   fill
                   sizes="(min-width: 1024px) 50vw, 100vw"
                   className="object-cover object-center transition-transform duration-700 ease-out group-hover:scale-[1.03]"
@@ -444,7 +444,7 @@ export default function InvestorsPage() {
                   Investor Deck
                 </h3>
                 <p className="type-card-body mt-2 min-h-[4.5rem] max-w-[420px] flex-1 text-[#66717d]">
-                  Full Rise Power investor briefing. Market sizing, technology,
+                  Full RISE MISSION POWER investor briefing. Market sizing, technology,
                   traction, team, and use of funds.
                 </p>
                 <div className="mt-auto flex items-center justify-between gap-4 border-t border-[#ebe7de] pt-4">

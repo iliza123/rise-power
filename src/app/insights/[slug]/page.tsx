@@ -25,7 +25,7 @@ export async function generateMetadata({
   if (!article) {
     return pageMetadata({
       title: "Insight",
-      description: "Rise Power news and field analysis.",
+      description: "RISE MISSION POWER news and field analysis.",
       path: "/insights",
     });
   }

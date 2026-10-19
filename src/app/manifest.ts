@@ -4,7 +4,7 @@ import { siteDescription, siteTitle } from "@/lib/seo";
 export default function manifest(): MetadataRoute.Manifest {
   return {
     name: siteTitle,
-    short_name: "Rise Power",
+    short_name: "RISE MISSION POWER",
     description: siteDescription,
     start_url: "/",
     display: "standalone",

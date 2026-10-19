@@ -8,7 +8,7 @@ export const siteDescription =
   "Portable hydrogen power and hydrogen fuel cell generators for military, commercial, and emergency backup. Zero-emission diesel generator alternative with plug-and-play hydrogen cartridges — engineered and manufactured in Canada.";
 
 /**
- * Priority SEO keywords for Rise Power.
+ * Priority SEO keywords for RISE MISSION POWER.
  * Used in root metadata and page-level keyword tags.
  */
 export const siteKeywords = [

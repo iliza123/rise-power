@@ -196,7 +196,7 @@ export const productUiLabels = {
 } as const;
 
 export const hero = {
-  eyebrow: "RISE POWER",
+  eyebrow: "RISE MISSION POWER",
   headlineLine1: "Portable hydrogen power",
   headlineLine2: "for everyday resilience.",
   body: "Portable hydrogen fuel cell generators for municipal, emergency, field, and off-grid use. A quiet, zero-emission diesel generator alternative — engineered and manufactured in British Columbia.",
@@ -242,7 +242,7 @@ export const performanceMetrics = {
       value: "−22°",
       unit: "to +50°C",
       title: "Operating temperature for all products",
-      body: "Rated from −22 °C to +50 °C across the Rise Power product line.",
+      body: "Rated from −22 °C to +50 °C across the RISE MISSION POWER product line.",
       percent: 60,
     },
   ] satisfies readonly PerformanceGauge[],
@@ -384,7 +384,7 @@ export const whyHydrogen = {
   /** Prior design visual: Rise unit + cartridge swap vs diesel smoke */
   productImageSrc: "/media/why-hydrogen/vs-diesel-visual.jpg",
   productImageAlt:
-    "Rise Power hydrogen unit with cartridge swap compared to a diesel generator",
+    "RISE MISSION POWER hydrogen unit with cartridge swap compared to a diesel generator",
   benefits: [
     {
       title: "ZERO EMISSIONS",
@@ -526,9 +526,9 @@ export const capabilities = {
     eyebrow: "IN THE FIELD",
     headingBefore: "BUILT FOR",
     headingAccent: "REAL THEATERS.",
-    body: "From alpine ridges to forward operating bases, Rise Power systems are photographed and proven where operators actually work.",
+    body: "From alpine ridges to forward operating bases, RISE MISSION POWER systems are photographed and proven where operators actually work.",
     imageSrc: "/media/hero.png",
-    imageAlt: "Rise Power hydrogen system in a tactical field deployment",
+    imageAlt: "RISE MISSION POWER hydrogen system in a tactical field deployment",
   },
   metricsBand: {
     imageSrc: "/media/missions/mountain.png",
@@ -549,7 +549,7 @@ export const capabilities = {
     },
     {
       src: "/media/capabilities/systems-context-4.png",
-      alt: "Rise portable power stack and hydrogen cartridge at a mountain field station",
+      alt: "Rise Mission Power portable power stack and hydrogen cartridge at a mountain field station",
     },
   ] satisfies readonly CapabilityMedia[],
   closingBand: {
@@ -559,7 +559,7 @@ export const capabilities = {
   certificationRoadmap: {
     eyebrow: "CERTIFICATION ROADMAP",
     heading: "Standards in active development.",
-    body: "Rise Power is beta-stage technology. The standards below are in active compliance and testing work. Final certification status will be published as each program completes. Defence and infrastructure procurement teams can request the current compliance brief during a capability review.",
+    body: "RISE MISSION POWER is beta-stage technology. The standards below are in active compliance and testing work. Final certification status will be published as each program completes. Defence and infrastructure procurement teams can request the current compliance brief during a capability review.",
     items: [
       {
         status: "IN PROGRESS",
@@ -624,7 +624,7 @@ export const capabilities = {
       gallery: [
         {
           src: "/media/capabilities/engineering.png",
-          alt: "Rise portable power stack powering outdoor tools at a snowy mountain worksite",
+          alt: "Rise Mission Power portable power stack powering outdoor tools at a snowy mountain worksite",
         },
         {
           src: "/media/capabilities/engineering-focus-2.png",
@@ -636,7 +636,7 @@ export const capabilities = {
         },
       ],
       deliverablesIntro:
-        "Rise Power is a Canadian engineering and manufacturing company. We design hydrogen fuel cell systems and support fuel cell component manufacturing, hydrogen component manufacturing, and electrolyzer component manufacturing — including aerospace manufacturing Canada and defence manufacturing Canada programs from concept through production readiness.",
+        "RISE MISSION POWER is a Canadian engineering and manufacturing company. We design hydrogen fuel cell systems and support fuel cell component manufacturing, hydrogen component manufacturing, and electrolyzer component manufacturing — including aerospace manufacturing Canada and defence manufacturing Canada programs from concept through production readiness.",
       deliverables: [
         "Fuel cell component manufacturing and system design",
         "Hydrogen component manufacturing and electrolyzer component manufacturing",
@@ -718,7 +718,7 @@ export const capabilities = {
         },
       ],
       deliverablesIntro:
-        "Rise Power systems are designed from the start to work within existing infrastructure. Integration covers vehicle platforms, communications systems, facility power networks, and legacy power management hardware.",
+        "RISE MISSION POWER systems are designed from the start to work within existing infrastructure. Integration covers vehicle platforms, communications systems, facility power networks, and legacy power management hardware.",
       deliverables: [
         "Platform specific integration engineering",
         "Power management and load balancing",
@@ -781,7 +781,7 @@ export const capabilities = {
       href: "/capabilities/field-deployment",
       imageSrc: "/media/capabilities/field-deployment-hero.png",
       imageAlt:
-        "Rise portable power unit at a desert field camp with solar panels, tent, communications tower, and drone at sunset",
+        "Rise Mission Power portable power unit at a desert field camp with solar panels, tent, communications tower, and drone at sunset",
       mobileImageSrc: "/media/capabilities/field-deployment-hero-mobile.png",
       secondaryImageSrc: "/media/products/hydrogen-cartridge-kit.png",
       secondaryImageAlt:
@@ -793,15 +793,15 @@ export const capabilities = {
         },
         {
           src: "/media/use-cases/uc-defence.png",
-          alt: "Defence field operations with Rise Power systems",
+          alt: "Defence field operations with RISE MISSION POWER systems",
         },
         {
           src: "/media/capabilities/field-deployment-hero.png",
-          alt: "Desert field camp with Rise portable power, solar panels, and a drone overhead",
+          alt: "Desert field camp with Rise Mission Power portable power, solar panels, and a drone overhead",
         },
       ],
       deliverablesIntro:
-        "Deployment is end to end. Rise Power provides logistics planning, operator training, field service, and cartridge supply chain management for every fielded system.",
+        "Deployment is end to end. RISE MISSION POWER provides logistics planning, operator training, field service, and cartridge supply chain management for every fielded system.",
       deliverables: [
         "Deployment planning and logistics support",
         "Operator and maintainer training programs",
@@ -864,26 +864,26 @@ export const capabilities = {
       imageSrc: "/media/capabilities/safety-compliance.png",
       mobileImageSrc: "/media/capabilities/safety-compliance-mobile.png",
       imageAlt:
-        "Rise portable power units and hydrogen cartridge on a workshop bench",
+        "Rise Mission Power portable power units and hydrogen cartridge on a workshop bench",
       secondaryImageSrc: "/media/use-cases/disaster-response.jpg",
       secondaryImageAlt:
         "Disaster-response camp with rubble and temporary shelters",
       gallery: [
         {
           src: "/media/capabilities/safety-practice-1.png",
-          alt: "Rise portable power unit beside a large drone on an airfield at sunset",
+          alt: "Rise Mission Power portable power unit beside a large drone on an airfield at sunset",
         },
         {
           src: "/media/capabilities/safety-practice-2.png",
-          alt: "Rise portable power and hydrogen cartridge powering devices at a lakeside campsite",
+          alt: "Rise Mission Power portable power and hydrogen cartridge powering devices at a lakeside campsite",
         },
         {
           src: "/media/capabilities/safety-practice-3.png",
-          alt: "Soldiers operating field electronics powered by Rise portable hydrogen units at dusk",
+          alt: "Soldiers operating field electronics powered by Rise Mission Power portable hydrogen units at dusk",
         },
       ],
       deliverablesIntro:
-        "Pressure vessels, leak detection, and thermal management are designed in from the start. Rise Power works directly with the regulatory bodies and standards organizations relevant to defence, transport, and indoor industrial deployment.",
+        "Pressure vessels, leak detection, and thermal management are designed in from the start. RISE MISSION POWER works directly with the regulatory bodies and standards organizations relevant to defence, transport, and indoor industrial deployment.",
       deliverables: [
         "Safety by design engineering methodology",
         "Regulatory compliance assessment and documentation",
@@ -966,13 +966,13 @@ export const hydrogenNetwork = {
       title: "Distributed Equipment",
       body: "Portable generators and range systems across sites and missions on one cartridge standard.",
       imageSrc: "/media/ecosystem/03.png",
-      imageAlt: "Stacked Rise portable hydrogen power units",
+      imageAlt: "Stacked Rise Mission Power portable hydrogen power units",
     },
     {
       title: "Remote Solutions",
       body: "Off-grid and forward power where fuel trucks are costly or impractical—quiet at the point of use.",
       imageSrc: "/media/ecosystem/04.png",
-      imageAlt: "Rise portable power supporting remote tower and drone operations",
+      imageAlt: "Rise Mission Power portable power supporting remote tower and drone operations",
     },
     {
       title: "Plug & Play Cartridges",
@@ -1006,7 +1006,7 @@ export const customerPartners = {
   eyebrow: "CUSTOMERS & PARTNERS",
   headingBefore: "BUILT FOR REAL-WORLD USE.",
   headingAccent: "EVERYDAY RESILIENCE FIRST.",
-  body: "Rise Power systems are engineered for municipalities, utilities, communities, and organizations that need quiet, zero-emission backup when the grid cannot be trusted.",
+  body: "RISE MISSION POWER systems are engineered for municipalities, utilities, communities, and organizations that need quiet, zero-emission backup when the grid cannot be trusted.",
   cases: [
     {
       category: "MUNICIPALITIES",
@@ -1127,7 +1127,7 @@ export const closingCta = {
 };
 
 export const footer = {
-  brand: "RISE POWER",
+  brand: "RISE MISSION POWER",
   tagline: "Quiet. Zero-Emission. Everyday Resilience.",
   blurb:
     "Canadian engineering and manufacturing for portable hydrogen power — prototype to production, military portable power, and clean backup power without diesel.",

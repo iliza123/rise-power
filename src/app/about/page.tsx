@@ -20,7 +20,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata: Metadata = pageMetadata({
   title: "About | Canadian Hydrogen Power Engineering & Manufacturing",
   description:
-    "Rise Power is a Canadian engineering and manufacturing company building portable hydrogen power, zero-emission generators, and hydrogen cartridge systems in British Columbia for defence, commercial, and emergency backup.",
+    "RISE MISSION POWER is a Canadian engineering and manufacturing company building portable hydrogen power, zero-emission generators, and hydrogen cartridge systems in British Columbia for defence, commercial, and emergency backup.",
   path: "/about",
   keywords: [
     "engineering and manufacturing company",
@@ -231,7 +231,7 @@ export default function AboutPage() {
           </h1>
 
           <p className="type-section-body mt-6 max-w-[760px] text-white sm:mt-8">
-            Rise Power builds quiet, zero-emission hydrogen systems engineered
+            RISE MISSION POWER builds quiet, zero-emission hydrogen systems engineered
             in British Columbia.
           </p>
 
@@ -265,7 +265,7 @@ export default function AboutPage() {
               <div className="relative min-h-[280px] overflow-hidden rounded-[7px] sm:min-h-[360px] lg:h-full lg:min-h-[520px]">
                 <Image
                   src="/media/company/company-mission.png"
-                  alt="Rise Power units deployed in mountain field operations"
+                  alt="RISE MISSION POWER units deployed in mountain field operations"
                   fill
                   sizes="(min-width: 1024px) 50vw, 100vw"
                   className="object-cover"

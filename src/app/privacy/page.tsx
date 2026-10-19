@@ -7,7 +7,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata: Metadata = pageMetadata({
   title: "Privacy Policy",
   description:
-    "How Rise Power collects, uses, and safeguards information when you visit risepower.com.",
+    "How RISE MISSION POWER collects, uses, and safeguards information when you visit risepower.com.",
   path: "/privacy",
 });
 
@@ -15,7 +15,7 @@ const sections = [
   {
     title: "1. Introduction",
     paragraphs: [
-      'Rise Power Inc. ("Rise Power," "we," "us," or "our") respects your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website risepower.com (the "Site").',
+      'Rise Mission Power Inc. ("RISE MISSION POWER," "we," "us," or "our") respects your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website risepower.com (the "Site").',
     ],
   },
   {

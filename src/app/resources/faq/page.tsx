@@ -10,7 +10,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata: Metadata = pageMetadata({
   title: "Procurement FAQ | Portable Hydrogen Power & Generators",
   description:
-    "FAQ on portable hydrogen fuel cell generators, hydrogen cartridge systems, indoor safe backup power, military portable power, and Canadian manufacturing from Rise Power.",
+    "FAQ on portable hydrogen fuel cell generators, hydrogen cartridge systems, indoor safe backup power, military portable power, and Canadian manufacturing from RISE MISSION POWER.",
   path: "/resources/faq",
 });
 
@@ -44,7 +44,7 @@ const faqGroups = [
       },
       {
         q: "How do Rise systems compare to a diesel generator?",
-        a: "Rise portable hydrogen fuel cell generators are a zero-emission diesel generator alternative. They deliver quiet backup power without diesel, fuel-truck logistics, or acoustic signature — with unlimited runtime via plug-and-play hydrogen cartridge swaps.",
+        a: "Rise Mission Power portable hydrogen fuel cell generators are a zero-emission diesel generator alternative. They deliver quiet backup power without diesel, fuel-truck logistics, or acoustic signature — with unlimited runtime via plug-and-play hydrogen cartridge swaps.",
       },
       {
         q: "Do you support drones and UAV platforms?",
@@ -82,7 +82,7 @@ const faqGroups = [
       },
       {
         q: "What is the lead time?",
-        a: "Rise Power is beta stage technology in active development and validation. Lead times for evaluation units, pilot deployments, and production orders are confirmed during the briefing process based on configuration and program timeline. Request a briefing for a specific quote.",
+        a: "RISE MISSION POWER is beta stage technology in active development and validation. Lead times for evaluation units, pilot deployments, and production orders are confirmed during the briefing process based on configuration and program timeline. Request a briefing for a specific quote.",
       },
       {
         q: "What is the minimum order quantity?",
@@ -113,11 +113,11 @@ const faqGroups = [
       },
       {
         q: "What is the export control posture?",
-        a: "Rise Power is designed and manufactured in Canada and is subject to Canadian export controls. Controlled Goods Program compliance is in place. Specific export determinations are made program by program based on customer destination and end use.",
+        a: "RISE MISSION POWER is designed and manufactured in Canada and is subject to Canadian export controls. Controlled Goods Program compliance is in place. Specific export determinations are made program by program based on customer destination and end use.",
       },
       {
         q: "Where are the systems built?",
-        a: "Rise Power is a Canadian engineering and manufacturing company based in Vancouver, and a CIMtech Green Energy company. We support aerospace manufacturing Canada and defence manufacturing Canada programs, plus fuel cell component manufacturing, hydrogen component manufacturing, and electrolyzer component manufacturing.",
+        a: "RISE MISSION POWER is a Canadian engineering and manufacturing company based in Vancouver, and a CIMtech Green Energy company. We support aerospace manufacturing Canada and defence manufacturing Canada programs, plus fuel cell component manufacturing, hydrogen component manufacturing, and electrolyzer component manufacturing.",
       },
       {
         q: "Do you offer prototype and new product introduction manufacturing?",
@@ -125,7 +125,7 @@ const faqGroups = [
       },
       {
         q: "Do you support integration with existing platforms?",
-        a: "Yes. Rise Power covers electronics, mounts, and field interfaces for drones, generators, and facility backup loads — platform integration is part of engineering and development.",
+        a: "Yes. RISE MISSION POWER covers electronics, mounts, and field interfaces for drones, generators, and facility backup loads — platform integration is part of engineering and development.",
       },
     ],
   },
@@ -189,7 +189,7 @@ export default function ProcurementFaqPage() {
         layout="split"
         imageSrc="/media/FAQ/FAQ-hero.png"
         mobileImageSrc="/media/FAQ/FAQ-hero-mobile.png"
-        imageAlt="Rise Power portable unit in a forest mountain landscape at dusk"
+        imageAlt="RISE MISSION POWER portable unit in a forest mountain landscape at dusk"
         imageWidth={3840}
         imageHeight={1200}
         tone="#0a0f10"
@@ -204,7 +204,7 @@ export default function ProcurementFaqPage() {
 
           <p className="type-section-body mt-4 max-w-[36rem] !text-white/90 sm:mt-5">
             Common questions from procurement, programs, and integration teams
-            evaluating Rise Power systems.
+            evaluating RISE MISSION POWER systems.
           </p>
 
           <div className="mt-6 flex flex-wrap items-center gap-3 sm:mt-7 sm:gap-4">
