@@ -159,7 +159,7 @@ export default function DatasheetsPage() {
           </h1>
 
           <p className="type-section-body mt-5 max-w-[640px] text-white sm:mt-6">
-            Technical specifications for RISE MISSION POWER systems. Beta-stage hardware
+            Technical specifications for Rise Mission Power systems. Beta-stage hardware
             in active validation — full one pagers are available on briefing
             request as compliance work completes.
           </p>

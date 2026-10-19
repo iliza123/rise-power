@@ -7,7 +7,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata: Metadata = pageMetadata({
   title: "Terms of Use",
   description:
-    "Terms of use for the RISE MISSION POWER website at risepower.com.",
+    "Terms of use for the Rise Mission Power website at risepower.com.",
   path: "/terms",
 });
 
@@ -15,7 +15,7 @@ const sections = [
   {
     title: "1. Acceptance of Terms",
     paragraphs: [
-      'By accessing and using the Rise Mission Power Inc. ("RISE MISSION POWER") website at risepower.com (the "Site"), you agree to be bound by these Terms of Use. If you do not agree, please do not use the Site.',
+      'By accessing and using the Rise Power Inc. ("RISE MISSION POWER") website at risepower.com (the "Site"), you agree to be bound by these Terms of Use. If you do not agree, please do not use the Site.',
     ],
   },
   {
@@ -33,19 +33,19 @@ const sections = [
   {
     title: "3. Intellectual Property",
     paragraphs: [
-      "All content on the Site, including text, graphics, logos, images, and software, is the property of RISE MISSION POWER or its licensors and is protected by applicable intellectual property laws. You may not reproduce, distribute, or create derivative works from any content without our prior written consent.",
+      "All content on the Site, including text, graphics, logos, images, and software, is the property of Rise Mission Power or its licensors and is protected by applicable intellectual property laws. You may not reproduce, distribute, or create derivative works from any content without our prior written consent.",
     ],
   },
   {
     title: "4. Disclaimer of Warranties",
     paragraphs: [
-      'The Site and its content are provided "as is" and "as available" without warranties of any kind, whether express or implied. RISE MISSION POWER does not warrant that the Site will be uninterrupted, error-free, or free of harmful components.',
+      'The Site and its content are provided "as is" and "as available" without warranties of any kind, whether express or implied. Rise Mission Power does not warrant that the Site will be uninterrupted, error-free, or free of harmful components.',
     ],
   },
   {
     title: "5. Limitation of Liability",
     paragraphs: [
-      "To the fullest extent permitted by law, RISE MISSION POWER shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of the Site, even if we have been advised of the possibility of such damages.",
+      "To the fullest extent permitted by law, Rise Mission Power shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of the Site, even if we have been advised of the possibility of such damages.",
     ],
   },
   {
@@ -57,7 +57,7 @@ const sections = [
   {
     title: "7. Third-Party Links",
     paragraphs: [
-      "The Site may contain links to third-party websites. These links are provided for convenience only, and RISE MISSION POWER is not responsible for the content or practices of any linked sites.",
+      "The Site may contain links to third-party websites. These links are provided for convenience only, and Rise Mission Power is not responsible for the content or practices of any linked sites.",
     ],
   },
   {
@@ -69,7 +69,7 @@ const sections = [
   {
     title: "9. Changes to These Terms",
     paragraphs: [
-      "RISE MISSION POWER reserves the right to modify these Terms of Use at any time. Changes will be effective when posted on this page. Your continued use of the Site constitutes acceptance of any modifications.",
+      "Rise Mission Power reserves the right to modify these Terms of Use at any time. Changes will be effective when posted on this page. Your continued use of the Site constitutes acceptance of any modifications.",
     ],
   },
   {

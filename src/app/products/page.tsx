@@ -69,7 +69,7 @@
 //             Engineered as a system
 //           </h2>
 //           <p className="mx-auto mt-4 max-w-2xl text-muted">
-//             Every RISE MISSION POWER product is designed as a complete system. Power
+//             Every Rise Mission Power product is designed as a complete system. Power
 //             generation, fuel delivery, controls, and enclosure working together.
 //           </p>
 //           <div className="mt-8">
@@ -127,7 +127,7 @@ export const metadata: Metadata = pageMetadata({
 const productsJsonLd = {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  name: "RISE MISSION POWER Portable Hydrogen Systems",
+  name: "Rise Mission Power Portable Hydrogen Systems",
   description:
     "Portable hydrogen fuel cell generators, UAV hydrogen range extenders, and plug-and-play hydrogen cartridge systems.",
   numberOfItems: products.length,
@@ -140,7 +140,7 @@ const productsJsonLd = {
       description: product.description,
       brand: {
         "@type": "Brand",
-        name: "RISE MISSION POWER",
+        name: "Rise Mission Power",
       },
       manufacturer: {
         "@type": "Organization",
@@ -587,7 +587,7 @@ export default function ProductsPage() {
             </h2>
 
             <p className="type-section-body mx-auto mt-2.5 max-w-3xl sm:mt-3">
-              Specs for each RISE MISSION POWER system — review Rise-Sentinel, Rise-Falcon, Rise-Titan,
+              Specs for each Rise Mission Power system — review Rise-Sentinel, Rise-Falcon, Rise-Titan,
               and the Hydrogen Cartridge Kit on their own.
             </p>
           </Reveal>

@@ -42,7 +42,7 @@ export const aiBackupPage: AiBackupPageContent = {
         title: "Zero-Downtime Operations",
         body: "Instant failover in under 10 seconds. Pair with your UPS bridge for seamless handoff when the grid drops.",
         imageSrc: "/media/markets/ai-backup-feature-zero-downtime.png",
-        imageAlt: "RISE MISSION POWER unit operating in a control room",
+        imageAlt: "Rise Mission Power unit operating in a control room",
         href: "/insights/hydrogen-power-data-centers",
       },
       {
@@ -68,7 +68,7 @@ export const aiBackupPage: AiBackupPageContent = {
         title: "Clean & Reliable Power",
         body: "Zero emissions at the point of use — warm air and water vapour only.",
         imageSrc: "/media/markets/ai-backup-benefit-clean.png",
-        imageAlt: "RISE MISSION POWER station operating in mountain terrain",
+        imageAlt: "Rise Mission Power station operating in mountain terrain",
       },
       {
         title: "Scalable Deployment",
@@ -80,7 +80,7 @@ export const aiBackupPage: AiBackupPageContent = {
         title: "Built For Any Environment",
         body: "Indoor-safe operation for data floors, edge rooms, and space-constrained halls.",
         imageSrc: "/media/markets/ai-backup-benefit-environment.png",
-        imageAlt: "RISE MISSION POWER system in a technical server room",
+        imageAlt: "Rise Mission Power system in a technical server room",
       },
       {
         title: "Lower Total Cost Of Ownership",
@@ -131,7 +131,7 @@ export const aiBackupPage: AiBackupPageContent = {
       {
         number: "03",
         title: "Generate",
-        body: "Run Rise Titan or Sentinel for reliable indoor-safe power when the grid fails.",
+        body: "Run Rise-Titan or Rise-Sentinel for reliable indoor-safe power when the grid fails.",
         imageSrc: "/media/markets/ai-backup-step-generate.png",
         imageAlt: "Tactical power station at a mountain telecom site",
       },

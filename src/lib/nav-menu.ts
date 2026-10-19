@@ -71,7 +71,7 @@ export const megaNavItems: readonly MegaNavItem[] = [
     href: "/about",
     links: [
       // {
-      //   label: "About RISE MISSION POWER",
+      //   label: "About Rise Mission Power",
       //   href: "/about",
       //   description: "The mission behind portable hydrogen power.",
       // },
@@ -103,7 +103,7 @@ export const megaNavItems: readonly MegaNavItem[] = [
       title: "Canadian-Built",
       body: "Engineered and built in British Columbia. A CIMtech Green Energy company.",
       href: "/about",
-      cta: "About RISE MISSION POWER",
+      cta: "About Rise Mission Power",
     },
   },
 
@@ -178,7 +178,7 @@ export const megaNavItems: readonly MegaNavItem[] = [
       {
         label: "Investor Deck",
         href: "/media/investors/rise-power-deck.pdf",
-        description: "Download the RISE MISSION POWER investor briefing (PDF).",
+        description: "Download the Rise Mission Power investor briefing (PDF).",
       },
       {
         label: "Company Brochure",

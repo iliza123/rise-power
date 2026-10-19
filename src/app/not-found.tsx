@@ -3,7 +3,7 @@ import { Button } from "@/components/Button";
 
 export const metadata: Metadata = {
   title: "Page not found",
-  description: "The page you requested is not available on RISE MISSION POWER.",
+  description: "The page you requested is not available on Rise Mission Power.",
   robots: {
     index: false,
     follow: false,

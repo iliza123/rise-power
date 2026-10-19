@@ -12,7 +12,7 @@
 //     <>
 //       <PageHero
 //         eyebrow="Use Cases"
-//         title="Operating environments where RISE MISSION POWER systems fit."
+//         title="Operating environments where Rise Mission Power systems fit."
 //         description="Silent portable power for defence, disaster response, remote operations, and critical infrastructure."
 //       />
 

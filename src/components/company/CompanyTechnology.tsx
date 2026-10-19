@@ -24,7 +24,7 @@ export type CompanyTechnologyProps = {
 export function CompanyTechnology({
   className = "",
   diagramSrc = "/media/products/product-ecosystem.png",
-  diagramAlt = "RISE MISSION POWER H₂-CORE platform diagram",
+  diagramAlt = "Rise Mission Power H₂-CORE platform diagram",
 }: CompanyTechnologyProps) {
   return (
     <section

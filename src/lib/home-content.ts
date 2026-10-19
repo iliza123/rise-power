@@ -242,7 +242,7 @@ export const performanceMetrics = {
       value: "−22°",
       unit: "to +50°C",
       title: "Operating temperature for all products",
-      body: "Rated from −22 °C to +50 °C across the RISE MISSION POWER product line.",
+      body: "Rated from −22 °C to +50 °C across the Rise Mission Power product line.",
       percent: 60,
     },
   ] satisfies readonly PerformanceGauge[],
@@ -384,7 +384,7 @@ export const whyHydrogen = {
   /** Prior design visual: Rise unit + cartridge swap vs diesel smoke */
   productImageSrc: "/media/why-hydrogen/vs-diesel-visual.jpg",
   productImageAlt:
-    "RISE MISSION POWER hydrogen unit with cartridge swap compared to a diesel generator",
+    "Rise Mission Power hydrogen unit with cartridge swap compared to a diesel generator",
   benefits: [
     {
       title: "ZERO EMISSIONS",
@@ -526,9 +526,9 @@ export const capabilities = {
     eyebrow: "IN THE FIELD",
     headingBefore: "BUILT FOR",
     headingAccent: "REAL THEATERS.",
-    body: "From alpine ridges to forward operating bases, RISE MISSION POWER systems are photographed and proven where operators actually work.",
+    body: "From alpine ridges to forward operating bases, Rise Mission Power systems are photographed and proven where operators actually work.",
     imageSrc: "/media/hero.png",
-    imageAlt: "RISE MISSION POWER hydrogen system in a tactical field deployment",
+    imageAlt: "Rise Mission Power hydrogen system in a tactical field deployment",
   },
   metricsBand: {
     imageSrc: "/media/missions/mountain.png",
@@ -559,7 +559,7 @@ export const capabilities = {
   certificationRoadmap: {
     eyebrow: "CERTIFICATION ROADMAP",
     heading: "Standards in active development.",
-    body: "RISE MISSION POWER is beta-stage technology. The standards below are in active compliance and testing work. Final certification status will be published as each program completes. Defence and infrastructure procurement teams can request the current compliance brief during a capability review.",
+    body: "Rise Mission Power is beta-stage technology. The standards below are in active compliance and testing work. Final certification status will be published as each program completes. Defence and infrastructure procurement teams can request the current compliance brief during a capability review.",
     items: [
       {
         status: "IN PROGRESS",
@@ -636,7 +636,7 @@ export const capabilities = {
         },
       ],
       deliverablesIntro:
-        "RISE MISSION POWER is a Canadian engineering and manufacturing company. We design hydrogen fuel cell systems and support fuel cell component manufacturing, hydrogen component manufacturing, and electrolyzer component manufacturing — including aerospace manufacturing Canada and defence manufacturing Canada programs from concept through production readiness.",
+        "Rise Mission Power is a Canadian engineering and manufacturing company. We design hydrogen fuel cell systems and support fuel cell component manufacturing, hydrogen component manufacturing, and electrolyzer component manufacturing — including aerospace manufacturing Canada and defence manufacturing Canada programs from concept through production readiness.",
       deliverables: [
         "Fuel cell component manufacturing and system design",
         "Hydrogen component manufacturing and electrolyzer component manufacturing",
@@ -718,7 +718,7 @@ export const capabilities = {
         },
       ],
       deliverablesIntro:
-        "RISE MISSION POWER systems are designed from the start to work within existing infrastructure. Integration covers vehicle platforms, communications systems, facility power networks, and legacy power management hardware.",
+        "Rise Mission Power systems are designed from the start to work within existing infrastructure. Integration covers vehicle platforms, communications systems, facility power networks, and legacy power management hardware.",
       deliverables: [
         "Platform specific integration engineering",
         "Power management and load balancing",
@@ -793,7 +793,7 @@ export const capabilities = {
         },
         {
           src: "/media/use-cases/uc-defence.png",
-          alt: "Defence field operations with RISE MISSION POWER systems",
+          alt: "Defence field operations with Rise Mission Power systems",
         },
         {
           src: "/media/capabilities/field-deployment-hero.png",
@@ -801,7 +801,7 @@ export const capabilities = {
         },
       ],
       deliverablesIntro:
-        "Deployment is end to end. RISE MISSION POWER provides logistics planning, operator training, field service, and cartridge supply chain management for every fielded system.",
+        "Deployment is end to end. Rise Mission Power provides logistics planning, operator training, field service, and cartridge supply chain management for every fielded system.",
       deliverables: [
         "Deployment planning and logistics support",
         "Operator and maintainer training programs",
@@ -883,7 +883,7 @@ export const capabilities = {
         },
       ],
       deliverablesIntro:
-        "Pressure vessels, leak detection, and thermal management are designed in from the start. RISE MISSION POWER works directly with the regulatory bodies and standards organizations relevant to defence, transport, and indoor industrial deployment.",
+        "Pressure vessels, leak detection, and thermal management are designed in from the start. Rise Mission Power works directly with the regulatory bodies and standards organizations relevant to defence, transport, and indoor industrial deployment.",
       deliverables: [
         "Safety by design engineering methodology",
         "Regulatory compliance assessment and documentation",
@@ -1006,7 +1006,7 @@ export const customerPartners = {
   eyebrow: "CUSTOMERS & PARTNERS",
   headingBefore: "BUILT FOR REAL-WORLD USE.",
   headingAccent: "EVERYDAY RESILIENCE FIRST.",
-  body: "RISE MISSION POWER systems are engineered for municipalities, utilities, communities, and organizations that need quiet, zero-emission backup when the grid cannot be trusted.",
+  body: "Rise Mission Power systems are engineered for municipalities, utilities, communities, and organizations that need quiet, zero-emission backup when the grid cannot be trusted.",
   cases: [
     {
       category: "MUNICIPALITIES",
@@ -1229,7 +1229,7 @@ export const footer = {
     { label: "Terms of Use", href: "/terms" },
     { label: "Cookies Policy", href: "/privacy#cookies" },
   ] satisfies readonly NavItem[],
-  copyright: "© 2023 Rise Mission Power Inc.",
+  copyright: "© 2023 Rise Power Inc.",
   badgeBefore: "CANADIAN-ENGINEERED.",
   badgeAccent: "FIELD-VALIDATED.",
 };

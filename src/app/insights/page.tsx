@@ -17,7 +17,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata: Metadata = pageMetadata({
   title: "Insights | Hydrogen Power, Fuel Cells & Clean Backup",
   description:
-    "Guides on portable hydrogen power, hydrogen fuel cell generators, diesel generator alternatives, UAV hydrogen fuel cells, and clean emergency backup power from RISE MISSION POWER.",
+    "Guides on portable hydrogen power, hydrogen fuel cell generators, diesel generator alternatives, UAV hydrogen fuel cells, and clean emergency backup power from Rise Mission Power.",
   path: "/insights",
 });
 
@@ -76,7 +76,7 @@ export default function InsightsPage() {
       <StackedPageHero
         layout="split"
         imageSrc="/media/insights/insights-hero.png"
-        imageAlt="RISE MISSION POWER systems prepared for field briefing and evaluation"
+        imageAlt="Rise Mission Power systems prepared for field briefing and evaluation"
         imageWidth={1920}
         imageHeight={600}
         tone="#0a0f10"

@@ -112,7 +112,7 @@ export const marketDetails: readonly MarketDetailPage[] = [
         body: "Plug-and-play hydrogen cartridge system with RFID smart monitoring. Leak proof, lightweight, and designed for rapid field replenishment. Swap a cartridge and restore full runtime without tools or specialized training.",
         href: "/products#cartridge-kit",
         imageSrc: "/media/use-cases/uc-product-cartridge.png",
-        imageAlt: "RISE MISSION POWER plug-and-play hydrogen cartridge system",
+        imageAlt: "Rise Mission Power plug-and-play hydrogen cartridge system",
       },
     ],
     spotlight: {
@@ -308,7 +308,7 @@ export const marketDetails: readonly MarketDetailPage[] = [
         body: "Universal fuel cell compatible cartridges with RFID smart monitoring. Leak proof, lightweight, and designed for rapid field replenishment. Swap a cartridge and restore full runtime without tools or specialized training.",
         href: "/products#cartridge-kit",
         imageSrc: "/media/use-cases/uc-product-cartridge.png",
-        imageAlt: "RISE MISSION POWER hydrogen cartridge kit",
+        imageAlt: "Rise Mission Power hydrogen cartridge kit",
       },
     ],
     spotlight: {
@@ -596,7 +596,7 @@ export const marketDetails: readonly MarketDetailPage[] = [
         body: "Universal fuel cell compatible cartridges with RFID smart monitoring. Leak proof, lightweight, and designed for rapid field replenishment.",
         href: "/products#cartridge-kit",
         imageSrc: "/media/use-cases/uc-product-cartridge.png",
-        imageAlt: "RISE MISSION POWER hydrogen cartridge kit",
+        imageAlt: "Rise Mission Power hydrogen cartridge kit",
       },
     ],
     spotlight: {

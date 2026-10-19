@@ -45,7 +45,7 @@ function IntroCard() {
       </h2>
 
       <p className="mt-4 max-w-[28rem] text-[14px] leading-relaxed text-[#3f3c36] sm:text-[15px]">
-        Every RISE MISSION POWER product is designed as a complete system. Power
+        Every Rise Mission Power product is designed as a complete system. Power
         generation, fuel delivery, controls, and enclosure working together.
         Integrated system design delivers better performance and reliability
         than assembled from parts alternatives.
