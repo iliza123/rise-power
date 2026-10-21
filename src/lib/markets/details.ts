@@ -427,7 +427,7 @@ export const marketDetails: readonly MarketDetailPage[] = [
     images: {
       hero: {
         src: "/media/markets/ai-backup-hero.png",
-        mobileSrc: "/media/markets/ai-backup-hero-mobile.jpg",
+        mobileSrc: "/media/markets/ai-backup-hero-mobile.png",
         alt: "Camo Mission Power System installed in a data center",
       },
       secondary: {
