@@ -49,7 +49,7 @@ export const aiBackupReferencePage: AiBackupPageContent = {
         title: "Intelligent Energy Control",
         body: "Smarter power for a resilient world.",
         imageSrc: "/media/markets/ai-backup-feature-energy-control.png",
-        imageAlt: "Industrial drone over a mountain facility",
+        imageAlt: "Industrial hexacopter over a mountain facility",
         href: "/products#cartridge-kit",
       },
     ],
@@ -168,14 +168,14 @@ export const aiBackupReferencePage: AiBackupPageContent = {
         title: "Telecommunications",
         body: "Keeping our communities connected.",
         imageSrc: "/media/markets/ai-backup-app-telecom.png",
-        imageAlt: "Olive field command power station",
+        imageAlt: "Rise Mission Power field command camp",
         href: "/markets/commercial",
       },
       {
         title: "Industrial",
         body: "Powering a stronger, more resilient world.",
         imageSrc: "/media/markets/ai-backup-app-industrial.png",
-        imageAlt: "Olive green industrial power system",
+        imageAlt: "Industrial monitoring scene with Rise Mission Power at a process facility",
         href: "/markets/commercial",
       },
     ],
@@ -189,6 +189,6 @@ export const aiBackupReferencePage: AiBackupPageContent = {
     cta: { label: "See The Platform", href: "/contact" },
     imageSrc: "/media/markets/ai-backup-platform.png",
     imageAlt:
-      "High-tech energy command center at dusk with Rise Mission Power fleet monitoring",
+      "Tactical power command center with fleet monitoring and a Rise Mission Power station",
   },
 };

@@ -49,7 +49,7 @@ export const aiBackupPage: AiBackupPageContent = {
         title: "Intelligent Energy Control",
         body: "RFID-monitored cartridges track fuel level and health — clearer inventory for AI backup reserves.",
         imageSrc: "/media/markets/ai-backup-feature-energy-control.png",
-        imageAlt: "Industrial drone over a mountain facility",
+        imageAlt: "Industrial hexacopter over a mountain facility",
         href: "/products#cartridge-kit",
       },
     ],
@@ -158,6 +158,13 @@ export const aiBackupPage: AiBackupPageContent = {
         href: "/insights/hydrogen-power-data-centers",
       },
       {
+        title: "Telecom",
+        body: "Quiet portable power for telecom backup and edge sites that must stay connected.",
+        imageSrc: "/media/markets/ai-backup-app-telecom.png",
+        imageAlt: "Rise Mission Power field command camp",
+        href: "/markets/commercial",
+      },
+      {
         title: "Medical",
         body: "Indoor-safe backup when life-critical systems cannot tolerate diesel exhaust or downtime.",
         imageSrc: "/media/markets/ai-backup-app-medical.png",
@@ -165,17 +172,10 @@ export const aiBackupPage: AiBackupPageContent = {
         href: "/contact",
       },
       {
-        title: "Telecom",
-        body: "Quiet portable power for telecom backup and edge sites that must stay connected.",
-        imageSrc: "/media/markets/ai-backup-app-telecom.png",
-        imageAlt: "Olive field command power station",
-        href: "/markets/commercial",
-      },
-      {
         title: "Industrial",
         body: "Resilient hydrogen backup for industrial facilities moving off diesel generators.",
         imageSrc: "/media/markets/ai-backup-app-industrial.png",
-        imageAlt: "Olive green industrial power system",
+        imageAlt: "Industrial monitoring scene with Rise Mission Power at a process facility",
         href: "/markets/commercial",
       },
     ],
@@ -189,6 +189,6 @@ export const aiBackupPage: AiBackupPageContent = {
     cta: { label: "See The Platform", href: "/contact" },
     imageSrc: "/media/markets/ai-backup-platform.png",
     imageAlt:
-      "High-tech energy command center at dusk with Rise Mission Power fleet monitoring",
+      "Tactical power command center with fleet monitoring and a Rise Mission Power station",
   },
 };

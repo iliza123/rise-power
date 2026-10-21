@@ -435,7 +435,7 @@ export function MarketLayoutAiBackup({
                   alt={page.platform.imageAlt}
                   fill
                   sizes="(min-width: 1024px) 45vw, 100vw"
-                  className="object-cover object-left"
+                  className="object-cover object-center"
                 />
               </div>
             </Reveal>
