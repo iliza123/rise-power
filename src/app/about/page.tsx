@@ -304,7 +304,7 @@ export default function AboutPage() {
                   </p>
 
                   <h3 className="mt-2 font-display text-[1.25rem] leading-[1.1] font-bold tracking-tight text-[#101820] uppercase sm:text-[1.4rem] lg:text-[1.55rem]">
-                    H₂-CORE Plug &amp; Play Platform
+                    H₂<span className="align-super text-[0.62em] font-semibold leading-none">™</span>-CORE Plug &amp; Play Platform
                   </h3>
 
                   <p className="type-section-body mt-3 max-w-xl text-[#66717d]">

@@ -258,7 +258,15 @@ function ProductConnectionCard({ product }: { product: ProductConnection }) {
           </span>
 
           <p className="text-mm font-bold tracking-[0.08em] text-[#20251f] uppercase">
-            {product.eyebrow}
+            {product.eyebrow.includes("™") ? (
+              <>
+                {product.eyebrow.split("™")[0]}
+                <span className="align-super text-[0.72em] leading-none">™</span>
+                {product.eyebrow.split("™")[1]}
+              </>
+            ) : (
+              product.eyebrow
+            )}
           </p>
         </div>
 
@@ -332,7 +340,7 @@ export default function UseCasesPage() {
       href: "/products#titan",
     },
     {
-      eyebrow: "H2 CARTRIDGE",
+      eyebrow: "H2™ CARTRIDGE",
       title: "Energy on demand.",
       description:
         "Pre-positioned hydrogen for rapid refueling and extended runtime.",

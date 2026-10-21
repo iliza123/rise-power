@@ -24,7 +24,7 @@ export type CompanyTechnologyProps = {
 export function CompanyTechnology({
   className = "",
   diagramSrc = "/media/products/product-ecosystem.png",
-  diagramAlt = "Rise Mission Power H₂-CORE platform diagram",
+  diagramAlt = "Rise Mission Power H₂™-CORE platform diagram",
 }: CompanyTechnologyProps) {
   return (
     <section
@@ -49,7 +49,7 @@ export function CompanyTechnology({
             </h2>
 
             <p className="type-section-body mt-5 max-w-xl text-[#66717d]">
-              Proprietary H₂-CORE architecture integrates fuel cells, power
+              Proprietary H₂<span className="align-super text-[0.7em] leading-none">™</span>-CORE architecture integrates fuel cells, power
               electronics, and a Plug &amp; Play Hydrogen Cartridge into one
               modular platform. Hydrogen converts to electricity in the fuel
               cell — producing only water and heat.
