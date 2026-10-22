@@ -28,13 +28,13 @@ function ResilientBenefitCard({
       className="flex h-full flex-col overflow-hidden border bg-[#fbfaf7]"
       style={{ borderColor: SECTION_RULE }}
     >
-      <div className="relative aspect-[16/10] bg-[#101820]">
+      <div className="relative aspect-square overflow-hidden bg-[#101820]">
         <Image
           src={benefit.imageSrc}
           alt={benefit.imageAlt}
           fill
           sizes="(min-width: 1024px) 22vw, (min-width: 640px) 50vw, 85vw"
-          className="object-cover"
+          className="object-cover object-center"
         />
       </div>
       <div className="flex flex-1 flex-col p-4 sm:p-5">
@@ -56,10 +56,10 @@ function HowItWorksStepCard({
 }) {
   return (
     <article
-      className="flex h-full flex-col overflow-hidden border bg-[#fbfaf7]"
+      className="flex h-full flex-col overflow-hidden rounded-[7px] border bg-[#fbfaf7]"
       style={{ borderColor: SECTION_RULE }}
     >
-      <div className="relative aspect-[16/10] bg-[#101820]">
+      <div className="relative aspect-square overflow-hidden bg-[#101820]">
         <Image
           src={step.imageSrc}
           alt={step.imageAlt}
@@ -110,7 +110,11 @@ export function MarketLayoutAiBackup({
         imageSrc={page.hero.src}
         mobileImageSrc={page.hero.mobileSrc}
         imageAlt={page.hero.alt}
-        imageClassName="object-cover object-[center_50%] xl:object-[100%_50%]"
+        imageClassName="object-cover object-[center_50%] xl:object-[92%_50%]"
+        splitImageWidthClassName="w-[66%]"
+        splitImageSizes="66vw"
+        heroMinHeightClassName="xl:min-h-[min(88svh,800px)]"
+        mobileBannerClassName="relative h-[min(58svh,480px)] w-full overflow-hidden sm:h-[min(52svh,520px)] xl:hidden"
         tone="#0a0f10"
         splitWash={SPLIT_WASH}
       >
@@ -175,16 +179,16 @@ export function MarketLayoutAiBackup({
               <Link
                 key={item.title}
                 href={item.href}
-                className="group flex h-full flex-col overflow-hidden border bg-white transition-colors hover:border-[#6e7f42]"
+                className="group flex h-full flex-col overflow-hidden rounded-[7px] border bg-white transition-colors hover:border-[#6e7f42]"
                 style={{ borderColor: SECTION_RULE }}
               >
-                <div className="relative aspect-[16/10] bg-[#101820]">
+                <div className="relative aspect-square overflow-hidden bg-[#101820]">
                   <Image
                     src={item.imageSrc}
                     alt={item.imageAlt}
                     fill
                     sizes="(min-width: 1024px) 30vw, 100vw"
-                    className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                    className="object-cover object-center transition-transform duration-500 group-hover:scale-[1.03]"
                   />
                 </div>
                 <div className="flex flex-1 flex-col p-5 sm:p-6">
@@ -217,16 +221,16 @@ export function MarketLayoutAiBackup({
       {/* 3. Resilient energy — image + benefit cards with photos */}
       <section className="bg-white py-10 sm:py-12 lg:py-14">
         <div className="mx-auto max-w-[1440px] px-6 lg:px-10">
-          <div className="grid items-center gap-8 lg:grid-cols-2 lg:gap-12">
+          <div className="grid items-center gap-8 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)] lg:gap-12">
             {/* Image first on mobile; text stays left on desktop */}
             <Reveal variant="right" className="order-1 lg:order-2">
-              <div className="relative aspect-[4/3] overflow-hidden bg-[#101820]">
+              <div className="relative aspect-[5/4] overflow-hidden rounded-[7px] bg-[#101820]">
                 <Image
                   src={page.resilient.imageSrc}
                   alt={page.resilient.imageAlt}
                   fill
-                  sizes="(min-width: 1024px) 45vw, 100vw"
-                  className="object-cover"
+                  sizes="(min-width: 1024px) 48vw, 100vw"
+                  className="object-cover object-[center_58%]"
                 />
               </div>
             </Reveal>
@@ -283,15 +287,15 @@ export function MarketLayoutAiBackup({
 
       {/* 4. Hydrogen tech — image first on mobile; text stays left on desktop */}
       <section className="py-10 sm:py-12 lg:py-14" style={{ background: CREAM }}>
-        <div className="mx-auto grid max-w-[1440px] items-center gap-8 px-6 lg:grid-cols-2 lg:gap-12 lg:px-10">
+        <div className="mx-auto grid max-w-[1440px] items-center gap-8 px-6 lg:grid-cols-[minmax(0,0.82fr)_minmax(0,1.18fr)] lg:gap-10 lg:px-10">
           <Reveal variant="right" className="order-1 lg:order-2">
-            <div className="relative aspect-[4/3] overflow-hidden bg-[#101820]">
+            <div className="relative aspect-[3/2] overflow-hidden rounded-[7px] bg-[#101820]">
               <Image
                 src={page.hydrogen.imageSrc}
                 alt={page.hydrogen.imageAlt}
                 fill
-                sizes="(min-width: 1024px) 45vw, 100vw"
-                className="object-cover"
+                sizes="(min-width: 1024px) 58vw, 100vw"
+                className="object-cover object-center"
               />
             </div>
           </Reveal>
@@ -390,7 +394,7 @@ export function MarketLayoutAiBackup({
               <Link
                 key={app.title}
                 href={app.href}
-                className="group relative flex min-h-[280px] flex-col justify-end overflow-hidden bg-[#101820]"
+                className="group relative flex min-h-[360px] flex-col justify-end overflow-hidden rounded-[7px] bg-[#101820] lg:min-h-[440px]"
               >
                 <Image
                   src={app.imageSrc}
@@ -427,14 +431,14 @@ export function MarketLayoutAiBackup({
       {/* 7. Platform — image first on mobile; text stays left on desktop */}
       {page.platform ? (
         <section className="bg-white py-10 sm:py-12 lg:py-14">
-          <div className="mx-auto grid max-w-[1440px] items-center gap-8 px-6 lg:grid-cols-2 lg:gap-12 lg:px-10">
+          <div className="mx-auto grid max-w-[1440px] items-center gap-8 px-6 lg:grid-cols-[minmax(0,0.82fr)_minmax(0,1.18fr)] lg:gap-10 lg:px-10">
             <Reveal variant="right" className="order-1 lg:order-2">
-              <div className="relative aspect-[16/10] overflow-hidden bg-[#101820]">
+              <div className="relative aspect-[4/3] overflow-hidden rounded-[7px] bg-[#101820]">
                 <Image
                   src={page.platform.imageSrc}
                   alt={page.platform.imageAlt}
                   fill
-                  sizes="(min-width: 1024px) 45vw, 100vw"
+                  sizes="(min-width: 1024px) 55vw, 100vw"
                   className="object-cover object-center"
                 />
               </div>

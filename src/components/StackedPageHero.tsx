@@ -40,6 +40,20 @@ type StackedPageHeroProps = {
    * Pass a full CSS `background` value (e.g. linear-gradient).
    */
   splitWash?: string;
+  /**
+   * Split layout only: desktop image column width. Default `w-[58%]`.
+   * Other pages keep the shared hero size.
+   */
+  splitImageWidthClassName?: string;
+  /** Split layout only: Next/Image `sizes` for the desktop column. Default `58vw`. */
+  splitImageSizes?: string;
+  /** Split layout only: desktop hero min-height. Default matches the Products hero. */
+  heroMinHeightClassName?: string;
+  /**
+   * Split layout only: mobile banner height. Default matches the Products hero.
+   * Include `xl:hidden`.
+   */
+  mobileBannerClassName?: string;
   children: React.ReactNode;
 };
 
@@ -59,6 +73,10 @@ export function StackedPageHero({
   quality,
   animateMedia = true,
   splitWash,
+  splitImageWidthClassName = "w-[58%]",
+  splitImageSizes = "58vw",
+  heroMinHeightClassName = "xl:min-h-[min(78svh,680px)]",
+  mobileBannerClassName = "relative h-[min(48svh,400px)] w-full overflow-hidden sm:h-[min(44svh,460px)] xl:hidden",
   children,
 }: StackedPageHeroProps) {
   /**
@@ -77,8 +95,8 @@ export function StackedPageHero({
   const overlayQuality = quality ?? 90;
   const splitQuality = quality ?? 100;
 
-  /** Same as Products page hero. */
-  const heroMinH = "xl:min-h-[min(78svh,680px)]";
+  /** Same as Products page hero unless a page opts into a larger frame. */
+  const heroMinH = heroMinHeightClassName;
   const copyPad = "xl:pt-32 xl:pb-16";
   /** Strong left band so title/copy read like main marketing heroes (Resources pattern). */
   const defaultSplitWash = `linear-gradient(90deg, ${tone} 0%, ${tone} 44%, ${tone}d1 52%, ${tone}59 62%, transparent 74%)`;
@@ -94,10 +112,7 @@ export function StackedPageHero({
         <div className={HEADER_SPACER} aria-hidden style={{ backgroundColor: tone }} />
 
         <div className={`relative w-full ${heroMinH}`}>
-          <div
-            className="relative h-[min(48svh,400px)] w-full overflow-hidden sm:h-[min(44svh,460px)] xl:hidden"
-            style={{ backgroundColor: tone }}
-          >
+          <div className={mobileBannerClassName} style={{ backgroundColor: tone }}>
             <Image
               src={mobileSrc}
               alt={imageAlt}
@@ -117,7 +132,7 @@ export function StackedPageHero({
           </div>
 
           <div
-            className="pointer-events-none absolute inset-y-0 right-0 z-0 hidden w-[58%] overflow-hidden xl:block"
+            className={`pointer-events-none absolute inset-y-0 right-0 z-0 hidden overflow-hidden xl:block ${splitImageWidthClassName}`}
             aria-hidden
             style={{ backgroundColor: tone }}
           >
@@ -127,7 +142,7 @@ export function StackedPageHero({
               fill
               priority
               quality={splitQuality}
-              sizes="58vw"
+              sizes={splitImageSizes}
               className={mediaClassName}
             />
           </div>
