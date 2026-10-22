@@ -428,7 +428,7 @@ export const marketDetails: readonly MarketDetailPage[] = [
       hero: {
         src: "/media/markets/ai-backup-hero.png",
         mobileSrc: "/media/markets/ai-backup-hero-mobile.png",
-        alt: "Camo Mission Power System installed in a data center",
+        alt: "Camouflaged mission power station in a server room",
       },
       secondary: {
         src: "/media/insights/infrastructure-backup.png",

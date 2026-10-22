@@ -221,16 +221,16 @@ export function MarketLayoutAiBackup({
       {/* 3. Resilient energy — image + benefit cards with photos */}
       <section className="bg-white py-10 sm:py-12 lg:py-14">
         <div className="mx-auto max-w-[1440px] px-6 lg:px-10">
-          <div className="grid items-center gap-8 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)] lg:gap-12">
+          <div className="grid items-center gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(18rem,32rem)] lg:gap-10">
             {/* Image first on mobile; text stays left on desktop */}
-            <Reveal variant="right" className="order-1 lg:order-2">
-              <div className="relative aspect-[5/4] overflow-hidden rounded-[7px] bg-[#101820]">
+            <Reveal variant="right" className="order-1 w-full lg:order-2 lg:justify-self-end">
+              <div className="relative aspect-square overflow-hidden rounded-[7px] bg-[#101820]">
                 <Image
                   src={page.resilient.imageSrc}
                   alt={page.resilient.imageAlt}
                   fill
                   sizes="(min-width: 1024px) 48vw, 100vw"
-                  className="object-cover object-[center_58%]"
+                  className="object-contain object-center"
                 />
               </div>
             </Reveal>
@@ -274,7 +274,7 @@ export function MarketLayoutAiBackup({
           </Reveal>
 
           <RevealStagger
-            className="mt-12 hidden gap-5 lg:grid lg:grid-cols-4"
+            className="mt-8 hidden gap-5 lg:grid lg:grid-cols-4"
             step={50}
             variant="up"
           >
@@ -394,27 +394,32 @@ export function MarketLayoutAiBackup({
               <Link
                 key={app.title}
                 href={app.href}
-                className="group relative flex min-h-[360px] flex-col justify-end overflow-hidden rounded-[7px] bg-[#101820] lg:min-h-[440px]"
+                className="group flex h-full flex-col overflow-hidden rounded-[7px] border bg-white transition-colors hover:border-[#6e7f42]"
+                style={{ borderColor: SECTION_RULE }}
               >
-                <Image
-                  src={app.imageSrc}
-                  alt={app.imageAlt}
-                  fill
-                  sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
-                  className="object-cover transition-transform duration-700 group-hover:scale-[1.04]"
-                />
-                <div
-                  aria-hidden
-                  className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 to-transparent"
-                />
-                <div className="relative z-10 p-5 sm:p-6">
-                  <h3 className="font-display text-xl font-bold tracking-tight text-white uppercase">
+                <div className="relative aspect-square overflow-hidden bg-[#101820]">
+                  <Image
+                    src={app.imageSrc}
+                    alt={app.imageAlt}
+                    fill
+                    sizes="(min-width: 1024px) 22vw, (min-width: 640px) 45vw, 100vw"
+                    className="object-cover object-center"
+                  />
+                </div>
+                <div className="flex flex-1 flex-col p-5 sm:p-6">
+                  <h3 className="font-display text-xl font-bold tracking-tight uppercase sm:text-2xl">
                     {app.title}
                   </h3>
-                  <p className="mt-2 text-sm leading-[1.5] text-white">
+                  <p
+                    className="mt-3 flex-1 text-base leading-[1.55]"
+                    style={{ color: MUTED }}
+                  >
                     {app.body}
                   </p>
-                  <span className="cta-with-icon mt-4 inline-flex min-h-10 items-center justify-center gap-2 rounded-sm bg-[#849363] px-5 text-sm font-semibold tracking-wide text-white uppercase transition-opacity group-hover:opacity-90">
+                  <span
+                    className="cta-with-icon mt-4 inline-flex min-h-10 items-center gap-2 text-sm font-semibold tracking-wide uppercase"
+                    style={{ color: SAGE }}
+                  >
                     Explore
                     <ArrowRight
                       className="size-4 transition-transform group-hover:translate-x-0.5"
