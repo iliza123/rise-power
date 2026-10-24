@@ -32,7 +32,7 @@
     },
     {
       "q": "What is the lead time?",
-      "a": "Rise Power is beta stage technology in active development and validation. Lead times for evaluation units, pilot deployments, and production orders are confirmed during the briefing process based on configuration and program timeline. Request a briefing for a specific quote."
+      "a": "Rise Mission Power is beta stage technology in active development and validation. Lead times for evaluation units, pilot deployments, and production orders are confirmed during the briefing process based on configuration and program timeline. Request a briefing for a specific quote."
     },
     {
       "q": "What is the minimum order quantity?",
@@ -52,11 +52,11 @@
     },
     {
       "q": "What is the export control posture?",
-      "a": "Rise Power is designed and manufactured in Canada and is subject to Canadian export controls. Controlled Goods Program compliance is in place. Specific export determinations are made program by program based on customer destination and end use."
+      "a": "Rise Mission Power is designed and manufactured in Canada and is subject to Canadian export controls. Controlled Goods Program compliance is in place. Specific export determinations are made program by program based on customer destination and end use."
     },
     {
       "q": "Where are the systems built?",
-      "a": "Engineered, manufactured, and validated in Surrey, British Columbia. Rise Power is a CIMtech Green Energy company. A Canadian advanced manufacturing operation with a multi decade track record."
+      "a": "Engineered, manufactured, and validated in Surrey, British Columbia. Rise Mission Power is a CIMtech Green Energy company. A Canadian advanced manufacturing operation with a multi decade track record."
     }
   ]
 }

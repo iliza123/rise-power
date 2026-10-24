@@ -12,7 +12,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata: Metadata = pageMetadata({
   title: "Company",
   description:
-    "Rise Power is a CIMtech Green Energy subsidiary building Plug & Play hydrogen systems through Canadian advanced manufacturing.",
+    "Rise Mission Power is a CIMtech Green Energy subsidiary building Plug & Play hydrogen systems through Canadian advanced manufacturing.",
   path: "/company",
 });
 
@@ -129,7 +129,7 @@ export default function CompanyPage() {
         layout="split"
         imageSrc="/media/company/company-hero.png"
         mobileImageSrc="/media/company/company-hero-mobile.png"
-        imageAlt="Rise Power systems engineered in Canada for worldwide deployment"
+        imageAlt="Rise Mission Power systems engineered in Canada for worldwide deployment"
         imageWidth={1920}
         imageHeight={650}
         tone="#0a0f10"
@@ -147,7 +147,7 @@ export default function CompanyPage() {
           </h1>
 
           <p className="type-section-body mt-6 max-w-[760px] text-white sm:mt-8">
-            Rise Power Corp. develops portable hydrogen fuel cell systems in
+            Rise Mission Power Corp. develops portable hydrogen fuel cell systems in
             British Columbia — quiet, zero-emission power for municipal, field,
             and off-grid use.
           </p>
@@ -232,7 +232,7 @@ export default function CompanyPage() {
                   href="/contact"
                   className="inline-flex items-center gap-2 text-sm font-semibold tracking-wide text-[#101820] uppercase transition-opacity hover:opacity-70"
                 >
-                  Contact Rise Power
+                  Contact Rise Mission Power
                   <ArrowRight className="size-4" style={{ color: sage }} aria-hidden="true" />
                 </Link>
               </div>

@@ -1229,7 +1229,7 @@ export const footer = {
     { label: "Terms of Use", href: "/terms" },
     { label: "Cookies Policy", href: "/privacy#cookies" },
   ] satisfies readonly NavItem[],
-  copyright: "© 2023 Rise Power Inc.",
+  copyright: "© 2023 Rise Mission Power Corp.",
   badgeBefore: "CANADIAN-ENGINEERED.",
   badgeAccent: "FIELD-VALIDATED.",
 };

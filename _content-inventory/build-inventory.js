@@ -39,7 +39,7 @@ for (const m of faqChunk.matchAll(/<(summary|p)[^>]*>(.*?)<\/\1>/gs)) {
 }
 
 let md = "";
-md += "# Rise Power Live Site Content Inventory\n\n";
+md += "# Rise Mission Power Live Site Content Inventory\n\n";
 md += `Fetched: ${inv.fetchedAt}\n`;
 md += `Site: ${inv.site} (canonical www: ${inv.wwwCanonical})\n`;
 md += `Platform: ${inv.platform}\n\n`;
@@ -66,7 +66,7 @@ md +=
 md += "## Resources: FAQ (/resources/faq)\n\n";
 md += "Title: Procurement FAQ\n";
 md +=
-  "Excerpt: Common questions from procurement, programs, and integration teams evaluating Rise Power portable power systems.\n\n";
+  "Excerpt: Common questions from procurement, programs, and integration teams evaluating Rise Mission Power portable power systems.\n\n";
 for (const item of qa) {
   md += `### ${item.q}\n${item.a}\n\n`;
 }

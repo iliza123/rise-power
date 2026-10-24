@@ -15,7 +15,7 @@ const sections = [
   {
     title: "1. Introduction",
     paragraphs: [
-      'Rise Power Inc. ("RISE MISSION POWER," "we," "us," or "our") respects your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website risepower.com (the "Site").',
+      'Rise Mission Power Corp. ("Rise Mission Power," "we," "us," or "our") respects your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website risepower.com (the "Site").',
     ],
   },
   {

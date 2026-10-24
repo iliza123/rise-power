@@ -1,6 +1,6 @@
 export const site = {
   name: "Rise Mission Power",
-  legalName: "Rise Power Corp.",
+  legalName: "Rise Mission Power Corp.",
   parent: "CIMtech Green Energy",
   email: "info@risepower.com",
   phone: "+1 (604) 575-8853",

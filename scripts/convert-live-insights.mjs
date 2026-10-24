@@ -123,7 +123,7 @@ function heroFor(slug, title) {
   if (/cartridge|storage|logistics|shelf/.test(hay)) {
     return {
       src: "/media/products/hydrogen-cartridge-kit.png",
-      alt: "Rise Power hydrogen cartridge kit",
+      alt: "Rise Mission Power hydrogen cartridge kit",
     };
   }
   if (/diesel|generator|noise|silent|comparison|emissions/.test(hay)) {
@@ -172,7 +172,7 @@ function heroFor(slug, title) {
   }
   return {
     src: "/media/capabilities/field-deployment.jpg",
-    alt: "Rise Power field deployment",
+    alt: "Rise Mission Power field deployment",
   };
 }
 

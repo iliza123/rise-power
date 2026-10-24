@@ -1,4 +1,4 @@
-# Rise Power Live Site Content Inventory
+# Rise Mission Power Live Site Content Inventory
 
 Fetched: 2026-09-19T17:03:37.2881257+05:30
 Site: https://risepower.com (canonical www: https://www.risepower.com)
@@ -53,7 +53,7 @@ Platform: Next.js on Vercel (custom React app; not WordPress/Webflow)
 ## Resources: FAQ (/resources/faq)
 
 Title: Procurement FAQ
-Excerpt: Common questions from procurement, programs, and integration teams evaluating Rise Power portable power systems.
+Excerpt: Common questions from procurement, programs, and integration teams evaluating Rise Mission Power portable power systems.
 
 ### What is the runtime?
 Runtime: unlimited power with cartridge swap. Operators perform a 30 second cartridge exchange to extend mission duration indefinitely — no tools, no spillage, no recharge cycle. Final certified per cartridge output figures will be published as field validation completes.
@@ -77,7 +77,7 @@ Hydrogen cartridges have effectively indefinite shelf life under normal storage 
 Target swap time is under 30 seconds with no tools, gloves on, in any conditions. The quick disconnect coupler is a single action mate and lock fitting designed for one handed field exchange.
 
 ### What is the lead time?
-Rise Power is beta stage technology in active development and validation. Lead times for evaluation units, pilot deployments, and production orders are confirmed during the briefing process based on configuration and program timeline. Request a briefing for a specific quote.
+Rise Mission Power is beta stage technology in active development and validation. Lead times for evaluation units, pilot deployments, and production orders are confirmed during the briefing process based on configuration and program timeline. Request a briefing for a specific quote.
 
 ### What is the minimum order quantity?
 Evaluation programs typically begin with single units or small lots for technical validation. Production volumes are scoped per program. There is no fixed minimum. We engage with serious technical evaluators at any volume.
@@ -92,10 +92,10 @@ Yes. Standard deployment includes operator training on cartridge handling, syste
 Transport Canada hydrogen cartridge transport, UN 38.3, DOT-39, MIL-STD-810 environmental, MIL-STD-461 EMI and EMC, ISO 9001 quality management, and CSA and NFPA 2 indoor use are all currently in progress. See the safety and compliance capability page for the full roadmap.
 
 ### What is the export control posture?
-Rise Power is designed and manufactured in Canada and is subject to Canadian export controls. Controlled Goods Program compliance is in place. Specific export determinations are made program by program based on customer destination and end use.
+Rise Mission Power is designed and manufactured in Canada and is subject to Canadian export controls. Controlled Goods Program compliance is in place. Specific export determinations are made program by program based on customer destination and end use.
 
 ### Where are the systems built?
-Engineered, manufactured, and validated in Surrey, British Columbia. Rise Power is a CIMtech Green Energy company. A Canadian advanced manufacturing operation with a multi decade track record.
+Engineered, manufactured, and validated in Surrey, British Columbia. Rise Mission Power is a CIMtech Green Energy company. A Canadian advanced manufacturing operation with a multi decade track record.
 
 ## Resources: Datasheets (/resources/datasheets)
 
@@ -111,7 +111,7 @@ Full PDFs available on briefing request. Public PDFs: /rise-power-deck.pdf, /ris
 - URL: https://risepower.com/insights/hydrogen-fuel-cell-vs-diesel-generator
 - Slug: hydrogen-fuel-cell-vs-diesel-generator
 - Date: 2026-03-28
-- Author: Rise Power
+- Author: Rise Mission Power
 - Excerpt: Compare hydrogen fuel cells and diesel generators on noise, emissions, weight, and runtime. See which wins for portable power.
 - Category/tags: none detected
 - Hero image: none
@@ -189,7 +189,7 @@ Yes. Hydrogen fuel cells operate efficiently down to -20Â°C without the gellin
 - URL: https://risepower.com/insights/what-is-a-hydrogen-fuel-cell
 - Slug: what-is-a-hydrogen-fuel-cell
 - Date: 2026-03-20
-- Author: Rise Power
+- Author: Rise Mission Power
 - Excerpt: Learn how hydrogen fuel cells convert hydrogen to electricity with zero emissions. Simple explanation of the science and real-world uses.
 - Category/tags: none detected
 - Hero image: none
@@ -288,7 +288,7 @@ Not yet. For very high power applications (50kW+), diesel generators still domin
 - URL: https://risepower.com/insights/silent-generator-for-military-operations
 - Slug: silent-generator-for-military-operations
 - Date: 2026-03-14
-- Author: Rise Power
+- Author: Rise Mission Power
 - Excerpt: Why acoustic signature matters in military power and how hydrogen fuel cell generators deliver under 65 dBA for defense operations.
 - Category/tags: none detected
 - Hero image: none
@@ -370,7 +370,7 @@ Yes. Military-grade hydrogen fuel cell generators are designed for operational e
 - URL: https://risepower.com/insights/zero-emission-portable-power
 - Slug: zero-emission-portable-power
 - Date: 2026-03-07
-- Author: Rise Power
+- Author: Rise Mission Power
 - Excerpt: Explore zero emission portable power options including hydrogen fuel cells. Compare technologies, use cases, and real-world performance.
 - Category/tags: none detected
 - Hero image: none
@@ -447,7 +447,7 @@ Ask these three questions:
 
 For most professional and military applications requiring 24+ hours of portable power, hydrogen fuel cells offer the best combination of runtime, weight, and reliability.
 
-Explore Rise Power solutions
+Explore Rise Mission Power solutions
 
 - How long do you need power? Under 8 hours, batteries are fine. Over 24 hours, hydrogen wins on weight.
 - Can you recharge? If you have grid access overnight, batteries work. If not, hydrogen is self-contained.
@@ -478,7 +478,7 @@ Hydrogen fuel cells operate reliably down to -20Â°C. Lithium batteries lose 20
 - URL: https://risepower.com/insights/hydrogen-power-disaster-response
 - Slug: hydrogen-power-disaster-response
 - Date: 2026-02-28
-- Author: Rise Power
+- Author: Rise Mission Power
 - Excerpt: How hydrogen fuel cell generators give disaster response teams safe, portable power with zero emissions for indoor use.
 - Category/tags: none detected
 - Hero image: none
@@ -541,7 +541,7 @@ Organizations preparing for disaster response should consider hydrogen fuel cell
 
 The key advantage is pre-positioning. Store hydrogen cartridges at staging locations today and they'll be ready in 15 years. Try that with diesel.
 
-Contact Rise Power about disaster response solutions
+Contact Rise Mission Power about disaster response solutions
 
 - FEMA and emergency management staging areas
 - Hospital emergency preparedness kits
@@ -574,7 +574,7 @@ Hydrogen fuel cell generators require no warmup, no fuel priming, and no complex
 - URL: https://risepower.com/insights/drone-fuel-cell-vs-battery
 - Slug: drone-fuel-cell-vs-battery
 - Date: 2026-02-20
-- Author: Rise Power
+- Author: Rise Mission Power
 - Excerpt: Hydrogen fuel cells extend drone flight time by 5x over lithium batteries. Compare weight, runtime, and performance for ISR missions.
 - Category/tags: none detected
 - Hero image: none
@@ -679,7 +679,7 @@ In a hybrid system, the onboard battery serves as backup. If the fuel cell stops
 - URL: https://risepower.com/insights/hydrogen-cartridge-technology
 - Slug: hydrogen-cartridge-technology
 - Date: 2026-02-12
-- Author: Rise Power
+- Author: Rise Mission Power
 - Excerpt: How hydrogen cartridges store and deliver fuel for portable fuel cells. Covers safety, shelf life, RFID monitoring, and field use.
 - Category/tags: none detected
 - Hero image: none
@@ -759,7 +759,7 @@ Hydrogen cartridges are classified for standard ground and air transport. They c
 
 No special storage facilities. No temperature-controlled environments (within the -40Â°C to 60Â°C range). No hazardous materials handling beyond standard precautions.
 
-Learn more about Rise Power's hydrogen cartridge system
+Learn more about Rise Mission Power's hydrogen cartridge system
 
 ### FAQ
 
@@ -777,7 +777,7 @@ Empty cartridges are returned through a reverse logistics program for refilling 
 
 #### Are hydrogen cartridges compatible across different fuel cell systems?
 
-Rise Power's cartridge system uses a universal interface designed for compatibility across the full product line. The same cartridges work with the Sentinel portable unit, the Falcon drone extender, and the Titan generator.
+Rise Mission Power's cartridge system uses a universal interface designed for compatibility across the full product line. The same cartridges work with the Sentinel portable unit, the Falcon drone extender, and the Titan generator.
 
 #### What does RFID monitoring tell you about a cartridge?
 
@@ -790,7 +790,7 @@ The RFID chip reports fuel level, usage history, manufacturing data, and health 
 - URL: https://risepower.com/insights/backup-power-critical-infrastructure
 - Slug: backup-power-critical-infrastructure
 - Date: 2026-02-05
-- Author: Rise Power
+- Author: Rise Mission Power
 - Excerpt: Hydrogen fuel cells provide zero-emission backup power for data centers, hospitals, and command facilities. No diesel, no downtime.
 - Category/tags: none detected
 - Hero image: none
@@ -873,7 +873,7 @@ Command and control facilities need reliable, secure backup power. Hydrogen fuel
 
 Cell towers and switching centers need backup power in every weather condition. Hydrogen fuel cells operate reliably from -20Â°C to 50Â°C without the cold-weather issues that affect diesel.
 
-Contact Rise Power about backup power solutions
+Contact Rise Mission Power about backup power solutions
 
 ### FAQ
 
@@ -900,7 +900,7 @@ Hydrogen fuel cells produce only warm air and water vapor. They do not require t
 - URL: https://risepower.com/insights/hydrogen-vs-lithium-battery-military
 - Slug: hydrogen-vs-lithium-battery-military
 - Date: 2026-01-30
-- Author: Rise Power
+- Author: Rise Mission Power
 - Excerpt: Hydrogen fuel cells outperform lithium batteries on runtime, weight, and logistics for military portable power. See the full comparison.
 - Category/tags: none detected
 - Hero image: none
@@ -937,7 +937,7 @@ Lithium batteries lose 20-40% of their capacity below freezing. In Arctic or hig
 
 Batteries create a hidden logistics burden. Every forward position needs charging stations, which need generators, which need diesel fuel. The chain grows fast. Hydrogen cartridges are compact, shelf-stable for 15 years, and require zero infrastructure. Drop-ship cartridges to any location and soldiers have instant power.
 
-Rise Power's Hydrogen Cartridge Kit uses universal fuel cells with RFID tracking for real-time inventory management across the supply chain.
+Rise Mission Power's Hydrogen Cartridge Kit uses universal fuel cells with RFID tracking for real-time inventory management across the supply chain.
 
 ### When Batteries Still Make Sense
 
@@ -951,7 +951,7 @@ The most effective field power systems combine both technologies. A hydrogen fue
 
 #### How long do hydrogen cartridges last in storage?
 
-Rise Power's hydrogen cartridges maintain full capacity for 15 years with no maintenance. Lithium batteries degrade to 60-80% capacity within 2-3 years even in storage.
+Rise Mission Power's hydrogen cartridges maintain full capacity for 15 years with no maintenance. Lithium batteries degrade to 60-80% capacity within 2-3 years even in storage.
 
 #### Are hydrogen fuel cells safe to carry in the field?
 
@@ -976,7 +976,7 @@ Hydrogen fuel cells have a higher upfront cost but lower total cost of ownership
 - URL: https://risepower.com/insights/what-is-pem-fuel-cell
 - Slug: what-is-pem-fuel-cell
 - Date: 2026-01-15
-- Author: Rise Power
+- Author: Rise Mission Power
 - Excerpt: Learn how PEM fuel cells convert hydrogen to electricity with zero emissions. Simple breakdown of the science behind portable hydrogen power.
 - Category/tags: none detected
 - Hero image: none
@@ -985,7 +985,7 @@ Hydrogen fuel cells have a higher upfront cost but lower total cost of ownership
 
 ### Clean Electricity from a Chemical Reaction
 
-A PEM fuel cell turns hydrogen into electricity, heat, and water. Nothing else. No combustion, no emissions, no noise from engine parts. This is the technology inside every Rise Power product, from the man-portable Sentinel to the 3kW Titan generator.
+A PEM fuel cell turns hydrogen into electricity, heat, and water. Nothing else. No combustion, no emissions, no noise from engine parts. This is the technology inside every Rise Mission Power product, from the man-portable Sentinel to the 3kW Titan generator.
 
 Here's how it works, explained without the jargon.
 
@@ -1027,11 +1027,11 @@ A PEM fuel cell converts 40-60% of hydrogen's chemical energy into electricity. 
 
 The proton exchange membrane is what makes PEM technology possible. DuPont's Nafion membrane, developed in the 1960s, remains the gold standard. Modern membranes are thinner, more durable, and more conductive than early versions.
 
-The membrane must stay hydrated to conduct protons effectively. Too dry and conductivity drops. Too wet and water floods the catalyst. Rise Power's fuel cell systems manage this water balance automatically, which is why they perform reliably from -20Â°C to 50Â°C.
+The membrane must stay hydrated to conduct protons effectively. Too dry and conductivity drops. Too wet and water floods the catalyst. Rise Mission Power's fuel cell systems manage this water balance automatically, which is why they perform reliably from -20Â°C to 50Â°C.
 
 ### What Fuels a PEM Fuel Cell?
 
-PEM cells need hydrogen. The hydrogen can come from compressed gas tanks, metal hydride storage, or chemical hydride cartridges. Rise Power uses solid-state hydrogen storage in its Hydrogen Cartridge Kit, which eliminates the need for high-pressure tanks and makes transport and storage simple.
+PEM cells need hydrogen. The hydrogen can come from compressed gas tanks, metal hydride storage, or chemical hydride cartridges. Rise Mission Power uses solid-state hydrogen storage in its Hydrogen Cartridge Kit, which eliminates the need for high-pressure tanks and makes transport and storage simple.
 
 ### FAQ
 
@@ -1041,7 +1041,7 @@ Modern PEM fuel cells last 5,000-20,000 hours depending on operating conditions.
 
 #### Do PEM fuel cells work in the cold?
 
-Yes. While the membrane needs some warmth to function optimally, PEM fuel cells generate their own heat during operation. Rise Power systems operate down to -20Â°C. The startup process includes a brief warm-up phase that takes seconds.
+Yes. While the membrane needs some warmth to function optimally, PEM fuel cells generate their own heat during operation. Rise Mission Power systems operate down to -20Â°C. The startup process includes a brief warm-up phase that takes seconds.
 
 #### What maintenance do PEM fuel cells need?
 
@@ -1062,7 +1062,7 @@ Not directly. PEM cells require hydrogen. Some systems include a reformer that e
 - URL: https://risepower.com/insights/portable-power-forward-operating-base
 - Slug: portable-power-forward-operating-base
 - Date: 2025-12-28
-- Author: Rise Power
+- Author: Rise Mission Power
 - Excerpt: Forward operating bases need reliable, quiet, low-signature power. See how hydrogen fuel cells solve FOB power challenges that diesel can't.
 - Category/tags: none detected
 - Hero image: none
@@ -1097,7 +1097,7 @@ The Falcon range extender gives ISR drones 4+ hours of flight time and 5x the ra
 
 #### Fuel Supply: Universal Cartridges
 
-Rise Power's Hydrogen Cartridge Kit standardizes fuel across all three platforms. One cartridge type works in the Sentinel, Falcon, and Titan. RFID tracking provides real-time inventory visibility across the supply chain.
+Rise Mission Power's Hydrogen Cartridge Kit standardizes fuel across all three platforms. One cartridge type works in the Sentinel, Falcon, and Titan. RFID tracking provides real-time inventory visibility across the supply chain.
 
 ### Operational Advantages
 
@@ -1119,7 +1119,7 @@ Hydrogen cartridges pack more energy per kilogram than diesel fuel. Fewer resupp
 
 No one is suggesting ripping out every diesel generator overnight. A practical transition starts with high-value, noise-sensitive positions: observation posts, special operations elements, and forward aid stations. As hydrogen infrastructure scales, broader FOB power can shift progressively.
 
-Rise Power works with defense procurement teams to design phased transition plans. Contact us for a FOB power assessment.
+Rise Mission Power works with defense procurement teams to design phased transition plans. Contact us for a FOB power assessment.
 
 ### FAQ
 
@@ -1129,7 +1129,7 @@ The Titan's 3kW output can run small portable AC units. For larger cooling loads
 
 #### What's the operational risk of storing hydrogen at a FOB?
 
-Rise Power's solid-state hydrogen cartridges are safer than diesel fuel storage. No pressurized tanks, no flammable liquid pools, no vapor ignition risk. Cartridges can take small arms impacts without catastrophic failure.
+Rise Mission Power's solid-state hydrogen cartridges are safer than diesel fuel storage. No pressurized tanks, no flammable liquid pools, no vapor ignition risk. Cartridges can take small arms impacts without catastrophic failure.
 
 #### How do you resupply hydrogen to remote FOBs?
 
@@ -1137,7 +1137,7 @@ The same way you'd resupply batteries or ammunition. Hydrogen cartridges are com
 
 #### Do hydrogen fuel cells work at altitude?
 
-PEM fuel cells use ambient oxygen, which is less dense at altitude. Performance decreases slightly above 3,000m. Rise Power systems are rated for operation up to 4,500m with moderate derating. Most FOB operations fall well within this envelope.
+PEM fuel cells use ambient oxygen, which is less dense at altitude. Performance decreases slightly above 3,000m. Rise Mission Power systems are rated for operation up to 4,500m with moderate derating. Most FOB operations fall well within this envelope.
 
 #### What happens if the fuel cell is damaged in combat?
 
@@ -1150,7 +1150,7 @@ The fuel cell stops producing power. There's no explosion, no fire, no toxic gas
 - URL: https://risepower.com/insights/fuel-cell-generator-noise-levels
 - Slug: fuel-cell-generator-noise-levels
 - Date: 2025-12-10
-- Author: Rise Power
+- Author: Rise Mission Power
 - Excerpt: Generator noise isn't just annoying -- it's a tactical and operational liability. Compare noise levels across generator types and learn why dBA matters.
 - Category/tags: none detected
 - Hero image: none
@@ -1212,7 +1212,7 @@ Diesel generator manufacturers sell "quiet" or "silenced" models with acoustic e
 
 #### What's the quietest generator technology available?
 
-Solar-plus-battery systems produce almost zero noise. Among fuel-based generators, hydrogen fuel cells are the quietest, typically under 65 dBA at 1 meter. Rise Power's products operate below 70 dBA across the full product line.
+Solar-plus-battery systems produce almost zero noise. Among fuel-based generators, hydrogen fuel cells are the quietest, typically under 65 dBA at 1 meter. Rise Mission Power's products operate below 70 dBA across the full product line.
 
 #### Do noise levels change with load?
 
@@ -1237,7 +1237,7 @@ Slightly. Cooling fans may run less in cold conditions, marginally reducing nois
 - URL: https://risepower.com/insights/hydrogen-safety-myths
 - Slug: hydrogen-safety-myths
 - Date: 2025-11-20
-- Author: Rise Power
+- Author: Rise Mission Power
 - Excerpt: Hydrogen is lighter, dissipates faster, and won't pool like gasoline. We debunk 5 common hydrogen safety myths with data.
 - Category/tags: none detected
 - Hero image: none
@@ -1269,7 +1269,7 @@ The lower ignition energy of hydrogen sounds concerning until you realize that s
 
 The Hindenburg's skin was coated with a mixture of iron oxide and aluminum powder -- essentially thermite. Investigations suggest the skin ignited first, not the hydrogen. The hydrogen burned off rapidly upward while the thermite-like skin burned downward. Of the 97 people aboard, 62 survived. Most fatalities resulted from jumping or from the burning diesel fuel, not hydrogen flames.
 
-Modern hydrogen systems bear zero resemblance to a 1937 airship. Comparing Rise Power's solid-state hydrogen cartridges to the Hindenburg is like comparing a smartphone battery to a stick of dynamite.
+Modern hydrogen systems bear zero resemblance to a 1937 airship. Comparing Rise Mission Power's solid-state hydrogen cartridges to the Hindenburg is like comparing a smartphone battery to a stick of dynamite.
 
 ### Myth 3: Hydrogen Tanks Are Bombs
 
@@ -1277,7 +1277,7 @@ Modern hydrogen systems bear zero resemblance to a 1937 airship. Comparing Rise 
 
 Modern hydrogen storage comes in multiple forms, each with robust safety engineering:
 
-Rise Power's Hydrogen Cartridge Kit uses solid-state storage. There's no high-pressure tank to rupture. If a cartridge is punctured, hydrogen release is slow and controlled. The cartridge cannot detonate because there's no stored mechanical energy.
+Rise Mission Power's Hydrogen Cartridge Kit uses solid-state storage. There's no high-pressure tank to rupture. If a cartridge is punctured, hydrogen release is slow and controlled. The cartridge cannot detonate because there's no stored mechanical energy.
 
 - Compressed gas tanks (Type IV): Carbon fiber wrapped, tested to 2.25x operating pressure, equipped with thermally activated pressure relief devices
 - Metal hydride storage: Hydrogen absorbed into metal alloy at low pressure (under 10 bar)
@@ -1291,7 +1291,7 @@ Rise Power's Hydrogen Cartridge Kit uses solid-state storage. There's no high-pr
 
 Hydrogen is odorless and colorless, which makes it harder to detect than natural gas (which has odorant added). However, hydrogen detection technology is mature and widely deployed. Hydrogen sensors can detect concentrations as low as 0.1% and trigger alarms well before reaching the 4% flammability threshold.
 
-Rise Power systems include built-in leak detection. The fuel cell's own sensors monitor hydrogen flow rates and will shut down automatically if a leak is detected. The Sentinel and Titan both feature redundant safety monitoring.
+Rise Mission Power systems include built-in leak detection. The fuel cell's own sensors monitor hydrogen flow rates and will shut down automatically if a leak is detected. The Sentinel and Titan both feature redundant safety monitoring.
 
 More importantly, hydrogen's extreme buoyancy means any leak in an outdoor or ventilated environment disperses harmlessly within seconds. Compare this to a propane leak, which pools invisibly at floor level.
 
@@ -1303,7 +1303,7 @@ Over 70 million tonnes of hydrogen are produced and used globally every year. It
 
 The safety record speaks for itself. The U.S. Department of Energy's Hydrogen Incident Reporting Database shows that hydrogen incidents per unit of energy delivered are comparable to or lower than natural gas incidents.
 
-For portable power applications, the infrastructure question is moot. Rise Power's cartridge-based system requires no pipelines, no refueling stations, and no specialized training. Swap a cartridge like you'd swap a battery. See how it works.
+For portable power applications, the infrastructure question is moot. Rise Mission Power's cartridge-based system requires no pipelines, no refueling stations, and no specialized training. Swap a cartridge like you'd swap a battery. See how it works.
 
 ### Safety Standards and Certifications
 
@@ -1314,13 +1314,13 @@ These standards mandate pressure relief, leak detection, electrical isolation, a
 - IEC 62282: International standard for fuel cell technologies
 - SAE J2578: Fuel cell vehicle safety
 - UN/DOT: Transport classification for hydrogen storage
-- MIL-STD-810: Military environmental testing (Rise Power products)
+- MIL-STD-810: Military environmental testing (Rise Mission Power products)
 
 ### FAQ
 
 #### Is hydrogen safe to store in a garage or warehouse?
 
-Yes, with proper ventilation. Hydrogen rises, so any ceiling-level ventilation prevents accumulation. Rise Power's solid-state cartridges are classified for indoor storage without special ventilation requirements because they don't release hydrogen until activated.
+Yes, with proper ventilation. Hydrogen rises, so any ceiling-level ventilation prevents accumulation. Rise Mission Power's solid-state cartridges are classified for indoor storage without special ventilation requirements because they don't release hydrogen until activated.
 
 #### What happens if you breathe hydrogen gas?
 
@@ -1336,7 +1336,7 @@ Hydrogen fuel cells have zero thermal runaway risk. Lithium batteries can self-i
 
 #### What should I do if I smell something near a hydrogen fuel cell?
 
-Hydrogen is odorless. If you smell something, it's not hydrogen. Check for other sources. Rise Power fuel cells include electronic hydrogen sensors that detect leaks before any human could. If a sensor alerts, the system shuts down automatically.
+Hydrogen is odorless. If you smell something, it's not hydrogen. Check for other sources. Rise Mission Power fuel cells include electronic hydrogen sensors that detect leaks before any human could. If a sensor alerts, the system shuts down automatically.
 
 ---
 
@@ -1345,7 +1345,7 @@ Hydrogen is odorless. If you smell something, it's not hydrogen. Check for other
 - URL: https://risepower.com/insights/off-grid-power-solutions
 - Slug: off-grid-power-solutions
 - Date: 2025-11-01
-- Author: Rise Power
+- Author: Rise Mission Power
 - Excerpt: Compare diesel, solar, battery, and hydrogen fuel cell solutions for off-grid power. Find the right fit for remote sites, camps, and field operations.
 - Category/tags: none detected
 - Hero image: none
@@ -1437,7 +1437,7 @@ Yes. PEM fuel cells actually perform slightly better in humid conditions because
 - URL: https://risepower.com/insights/military-power-logistics
 - Slug: military-power-logistics
 - Date: 2025-10-15
-- Author: Rise Power
+- Author: Rise Mission Power
 - Excerpt: Hydrogen cartridges weigh less, last longer, and eliminate charging infrastructure. See how hydrogen simplifies military power supply chains.
 - Category/tags: none detected
 - Hero image: none
@@ -1477,7 +1477,7 @@ For a 72-hour dismounted patrol powering radios, optics, and tactical devices:
 
 One of the biggest logistics headaches in military power is the variety of battery types and charging requirements. A single platoon might carry AA, CR123, BB-2590, conformal batteries, and proprietary device batteries -- each with different chargers.
 
-Rise Power's Hydrogen Cartridge Kit uses a universal cartridge that works across all Rise Power platforms:
+Rise Mission Power's Hydrogen Cartridge Kit uses a universal cartridge that works across all Rise Mission Power platforms:
 
 One cartridge type. One supply chain. RFID tracking on every cartridge provides real-time visibility from depot to point of use. No more guessing which batteries are charged, which are dead, and which are somewhere in the supply chain.
 
@@ -1503,7 +1503,7 @@ Hydrogen's superior energy density means fewer resupply trips. A single pallet o
 
 Diesel generators require oil changes every 250-500 hours, filter replacements, belt inspections, and trained mechanics. In austere environments, a broken generator can leave an entire position without power until a mechanic arrives or a replacement is shipped.
 
-Hydrogen fuel cells have no oil, no filters (except a simple air filter), no belts, no spark plugs, and no moving parts in the power generation stack. If a unit fails, swap in a replacement. The failed unit can be repaired at depot level rather than in the field. Learn about Rise Power's support model.
+Hydrogen fuel cells have no oil, no filters (except a simple air filter), no belts, no spark plugs, and no moving parts in the power generation stack. If a unit fails, swap in a replacement. The failed unit can be repaired at depot level rather than in the field. Learn about Rise Mission Power's support model.
 
 ### Implementation Roadmap
 
@@ -1531,7 +1531,7 @@ Yes. Solid-state hydrogen cartridges meet transport classification requirements 
 
 #### What RFID system do the cartridges use?
 
-Rise Power cartridges use passive UHF RFID tags compatible with standard military logistics RFID readers. Each cartridge carries a unique ID for tracking manufacture date, energy remaining, and chain of custody.
+Rise Mission Power cartridges use passive UHF RFID tags compatible with standard military logistics RFID readers. Each cartridge carries a unique ID for tracking manufacture date, energy remaining, and chain of custody.
 
 #### How does hydrogen compare to JP-8 single-fuel logistics?
 
@@ -1548,7 +1548,7 @@ Basic operator training takes under 2 hours. Insert cartridge, press start, conn
 - URL: https://risepower.com/insights/fuel-cell-vs-solar-power
 - Slug: fuel-cell-vs-solar-power
 - Date: 2025-09-28
-- Author: Rise Power
+- Author: Rise Mission Power
 - Excerpt: Solar needs sun. Fuel cells don't. Compare hydrogen fuel cells and solar panels for portable power across weather, weight, and 24/7 reliability.
 - Category/tags: none detected
 - Hero image: none
@@ -1614,7 +1614,7 @@ Portable solar panels (25-100W) are useful for trickle-charging small devices. T
 
 #### Do fuel cells work in direct sunlight and heat?
 
-Yes. Rise Power products operate up to 50Â°C ambient temperature. The Titan includes thermal management that handles desert conditions. Solar panels actually lose efficiency in extreme heat (typically 0.3-0.5% per degree above 25Â°C).
+Yes. Rise Mission Power products operate up to 50Â°C ambient temperature. The Titan includes thermal management that handles desert conditions. Solar panels actually lose efficiency in extreme heat (typically 0.3-0.5% per degree above 25Â°C).
 
 #### How do I decide between solar and hydrogen for my application?
 
@@ -1631,7 +1631,7 @@ Both are zero-emission at the point of use. Solar panel manufacturing has a carb
 - URL: https://risepower.com/insights/hydrogen-power-data-centers
 - Slug: hydrogen-power-data-centers
 - Date: 2025-09-10
-- Author: Rise Power
+- Author: Rise Mission Power
 - Excerpt: Data centers need zero-emission backup power that starts instantly and runs for hours. Hydrogen fuel cells deliver where diesel UPS falls short.
 - Category/tags: none detected
 - Hero image: none
@@ -1696,7 +1696,7 @@ As carbon pricing expands across North America and Europe, the TCO advantage for
 
 Diesel generators require outdoor pads or heavily ventilated enclosures due to toxic exhaust. Hydrogen fuel cells can be installed indoors, on the data center floor, alongside the racks they protect. This opens up design options for underground, urban, and space-constrained facilities.
 
-Rise Power's Titan generator is already rated for indoor use. For data center scale applications, contact our team to discuss custom configurations.
+Rise Mission Power's Titan generator is already rated for indoor use. For data center scale applications, contact our team to discuss custom configurations.
 
 ### FAQ
 
@@ -1727,7 +1727,7 @@ Hydrogen fuel cells are more electrically efficient than diesel generators (40-6
 - URL: https://risepower.com/insights/portable-generator-comparison
 - Slug: portable-generator-comparison
 - Date: 2025-08-15
-- Author: Rise Power
+- Author: Rise Mission Power
 - Excerpt: Compare diesel, gas, propane, solar, battery, and hydrogen portable generators on noise, weight, runtime, emissions, and cost. Full comparison table.
 - Category/tags: none detected
 - Hero image: none
@@ -1799,7 +1799,7 @@ Short events, apartment backup, quiet outdoor activities, supplementing other po
 
 #### Best for
 
-Military and defense, emergency response, noise-sensitive operations, environmentally sensitive sites, cold-weather operations, extended off-grid deployments. Explore Rise Power's lineup.
+Military and defense, emergency response, noise-sensitive operations, environmentally sensitive sites, cold-weather operations, extended off-grid deployments. Explore Rise Mission Power's lineup.
 
 ### Choosing by Application
 
@@ -1809,7 +1809,7 @@ The portable generator market is shifting. Diesel and gasoline generators face i
 
 Hydrogen fuel cells sit at the intersection of all the qualities modern users need: clean, quiet, lightweight, long-running, and weather-independent. As hydrogen cartridge production scales and costs decrease, expect fuel cells to capture market share across every application above.
 
-For defense, emergency management, and critical infrastructure, hydrogen fuel cells aren't just competitive. They're the best available option today. See Rise Power's full product line or contact our team for a consultation.
+For defense, emergency management, and critical infrastructure, hydrogen fuel cells aren't just competitive. They're the best available option today. See Rise Mission Power's full product line or contact our team for a consultation.
 
 ### FAQ
 
@@ -1840,7 +1840,7 @@ Dual-fuel (gasoline/propane) and tri-fuel (gasoline/propane/natural gas) generat
 - URL: https://risepower.com/insights/green-hydrogen-explained
 - Slug: green-hydrogen-explained
 - Date: 2025-08-10
-- Author: Rise Power
+- Author: Rise Mission Power
 - Excerpt: Learn what green hydrogen is, how it differs from grey and blue hydrogen, and why it matters for portable clean energy and defense applications.
 - Category/tags: none detected
 - Hero image: none
@@ -1876,7 +1876,7 @@ PEM technology pairs naturally with variable renewable sources because it ramps 
 
 Traditional portable power relies on diesel or gasoline. These fuels are heavy, loud, emit toxic exhaust, and degrade over time. Green hydrogen stored in cartridges solves every one of these problems.
 
-Rise Power's Hydrogen Cartridge Kit stores green hydrogen in compact, swappable cartridges with a 15-year shelf life. Compare that to diesel fuel, which degrades in 6-12 months.
+Rise Mission Power's Hydrogen Cartridge Kit stores green hydrogen in compact, swappable cartridges with a 15-year shelf life. Compare that to diesel fuel, which degrades in 6-12 months.
 
 #### Field Advantages
 
@@ -1890,7 +1890,7 @@ Rising carbon prices and tightening emissions regulations are simultaneously inc
 
 NATO has identified green hydrogen as a strategic priority for reducing operational fuel dependency. Fuel convoys are a top vulnerability in theater. Every reduction in fuel transport reduces risk to personnel.
 
-Green hydrogen cartridges can be pre-positioned years in advance without degradation. A forward operating base powered by Rise Power fuel cells eliminates generator noise that compromises position, exhaust that creates thermal signatures, and fuel convoy requirements that expose supply lines.
+Green hydrogen cartridges can be pre-positioned years in advance without degradation. A forward operating base powered by Rise Mission Power fuel cells eliminates generator noise that compromises position, exhaust that creates thermal signatures, and fuel convoy requirements that expose supply lines.
 
 For emergency response, green hydrogen means hospitals and shelters get clean, quiet backup power that works safely indoors. No carbon monoxide risk. No fuel spill liability.
 
@@ -1898,7 +1898,7 @@ For emergency response, green hydrogen means hospitals and shelters get clean, q
 
 #### Is green hydrogen safe to store and transport?
 
-Yes. Hydrogen cartridges are designed for safe handling and transport. Rise Power's cartridges include RFID tracking and meet DOT transport standards. Hydrogen dissipates rapidly if released, unlike liquid fuels that pool and ignite.
+Yes. Hydrogen cartridges are designed for safe handling and transport. Rise Mission Power's cartridges include RFID tracking and meet DOT transport standards. Hydrogen dissipates rapidly if released, unlike liquid fuels that pool and ignite.
 
 #### How much water does green hydrogen production use?
 
@@ -1910,7 +1910,7 @@ Yes. Small-scale electrolyzers paired with solar panels can produce hydrogen at 
 
 #### Does green hydrogen work in extreme cold?
 
-Rise Power's Titan generator operates from -20C to 50C. The hydrogen itself does not freeze. Cold-weather performance is actually an advantage over diesel, which gels in extreme cold.
+Rise Mission Power's Titan generator operates from -20C to 50C. The hydrogen itself does not freeze. Cold-weather performance is actually an advantage over diesel, which gels in extreme cold.
 
 #### How does green hydrogen compare to battery storage?
 
@@ -1923,7 +1923,7 @@ Hydrogen stores more energy per kilogram than lithium-ion batteries. For extende
 - URL: https://risepower.com/insights/fuel-cell-maintenance-guide
 - Slug: fuel-cell-maintenance-guide
 - Date: 2025-07-28
-- Author: Rise Power
+- Author: Rise Mission Power
 - Excerpt: Hydrogen fuel cells require far less maintenance than diesel generators. Here is what you actually need to do to keep them running.
 - Category/tags: none detected
 - Hero image: none
@@ -1966,7 +1966,7 @@ The opposite is true. A diesel engine has hundreds of moving parts subject to we
 
 #### "You need specialized technicians"
 
-Basic fuel cell maintenance requires less training than diesel generator maintenance. The systems are designed for operator-level care. Rise Power provides training and documentation for all products.
+Basic fuel cell maintenance requires less training than diesel generator maintenance. The systems are designed for operator-level care. Rise Mission Power provides training and documentation for all products.
 
 #### "Fuel cells degrade quickly"
 
@@ -1978,7 +1978,7 @@ Three practices maximize fuel cell service life:
 
 ### Total Cost of Ownership Impact
 
-When you factor in maintenance labor, spare parts, unplanned downtime, and fuel logistics, hydrogen fuel cells deliver a lower total cost of ownership than diesel generators for most portable power applications under 5kW. Contact Rise Power for a TCO analysis specific to your operational requirements.
+When you factor in maintenance labor, spare parts, unplanned downtime, and fuel logistics, hydrogen fuel cells deliver a lower total cost of ownership than diesel generators for most portable power applications under 5kW. Contact Rise Mission Power for a TCO analysis specific to your operational requirements.
 
 ### FAQ
 
@@ -2009,7 +2009,7 @@ Gradual voltage decline across cells indicates membrane aging. Most systems incl
 - URL: https://risepower.com/insights/emergency-power-hospitals
 - Slug: emergency-power-hospitals
 - Date: 2025-07-12
-- Author: Rise Power
+- Author: Rise Mission Power
 - Excerpt: Hospitals need backup power that starts instantly, runs clean, and works indoors. Hydrogen fuel cells deliver where diesel generators fall short.
 - Category/tags: none detected
 - Hero image: none
@@ -2046,7 +2046,7 @@ Fuel cell systems deliver power within seconds of activation. There is no engine
 
 #### Extended Runtime Without Resupply
 
-Rise Power's Hydrogen Cartridge Kit enables rapid refueling by swapping cartridges. A hospital can stockpile cartridges for weeks of runtime in the same space a diesel tank would occupy, with the cartridges remaining viable for 15 years.
+Rise Mission Power's Hydrogen Cartridge Kit enables rapid refueling by swapping cartridges. A hospital can stockpile cartridges for weeks of runtime in the same space a diesel tank would occupy, with the cartridges remaining viable for 15 years.
 
 #### Scalable Architecture
 
@@ -2080,7 +2080,7 @@ As emissions regulations tighten globally, hospitals using diesel backup will fa
 
 Transitioning hospital backup power does not have to be all-or-nothing. A phased approach works:
 
-Contact Rise Power for a facility assessment and pilot program proposal tailored to your hospital's critical load requirements.
+Contact Rise Mission Power for a facility assessment and pilot program proposal tailored to your hospital's critical load requirements.
 
 - Pilot - Deploy fuel cells for a single critical department (ICU, ED, or surgical suite)
 - Evaluate - Measure performance, maintenance burden, and staff feedback over 6-12 months
@@ -2116,7 +2116,7 @@ Upfront cost for fuel cells is currently higher than diesel generators. However,
 - URL: https://risepower.com/insights/hydrogen-fuel-cell-lifespan
 - Slug: hydrogen-fuel-cell-lifespan
 - Date: 2025-06-25
-- Author: Rise Power
+- Author: Rise Mission Power
 - Excerpt: Hydrogen fuel cells last 5,000 to 40,000+ hours depending on type and application. Here is what determines lifespan and how to maximize it.
 - Category/tags: none detected
 - Hero image: none
@@ -2133,7 +2133,7 @@ This compares favorably to diesel generators, which typically require major over
 
 Different fuel cell technologies have different longevity profiles.
 
-PEM (Proton Exchange Membrane) fuel cells are the dominant technology for portable and deployable power. Rise Power's Sentinel, Falcon, and Titan all use PEM technology, optimized for the specific demands of each application.
+PEM (Proton Exchange Membrane) fuel cells are the dominant technology for portable and deployable power. Rise Mission Power's Sentinel, Falcon, and Titan all use PEM technology, optimized for the specific demands of each application.
 
 ### What Determines Fuel Cell Lifespan
 
@@ -2178,7 +2178,7 @@ The fuel cell advantage is not just total hours. It is the quality of those hour
 
 When a fuel cell stack reaches end of life, the platinum catalyst and membrane materials can be recycled. Platinum recovery rates exceed 95%. This contrasts with diesel generators, where worn engines become scrap with limited material recovery value.
 
-Rise Power designs its systems for stack replaceability. When a stack reaches end of life, the balance of plant (housing, electronics, controls) continues in service with a replacement stack.
+Rise Mission Power designs its systems for stack replaceability. When a stack reaches end of life, the balance of plant (housing, electronics, controls) continues in service with a replacement stack.
 
 ### FAQ
 
@@ -2194,13 +2194,13 @@ Modern fuel cells include onboard diagnostics that track cell voltages, output c
 
 Frequent start-stop cycles do cause more degradation per operating hour than steady-state use. For applications like drone range extension where the duty cycle is inherently intermittent, system designers account for this in the durability specifications.
 
-#### What is the warranty on Rise Power fuel cells?
+#### What is the warranty on Rise Mission Power fuel cells?
 
-Contact Rise Power for current warranty terms. Warranties are structured around operating hours and calendar time, reflecting the dual nature of fuel cell aging.
+Contact Rise Mission Power for current warranty terms. Warranties are structured around operating hours and calendar time, reflecting the dual nature of fuel cell aging.
 
 #### How does altitude affect fuel cell lifespan?
 
-Higher altitudes mean lower oxygen partial pressure, which can reduce peak power output. This does not significantly affect lifespan but may require system derating above certain altitudes. Rise Power systems are tested for operation at altitude.
+Higher altitudes mean lower oxygen partial pressure, which can reduce peak power output. This does not significantly affect lifespan but may require system derating above certain altitudes. Rise Mission Power systems are tested for operation at altitude.
 
 ---
 
@@ -2209,7 +2209,7 @@ Higher altitudes mean lower oxygen partial pressure, which can reduce peak power
 - URL: https://risepower.com/insights/portable-power-film-production
 - Slug: portable-power-film-production
 - Date: 2025-06-08
-- Author: Rise Power
+- Author: Rise Mission Power
 - Excerpt: Film and event production is shifting to clean portable power. Hydrogen fuel cells eliminate generator noise, fumes, and disruption on set.
 - Category/tags: none detected
 - Hero image: none
@@ -2274,7 +2274,7 @@ Diesel generator rental for film production typically runs $500-$2,000 per day d
 
 Fuel cell rental costs are currently higher per day. But when you factor in eliminated sound post-production, reduced permitting costs, access to restricted locations, and no fuel spill liability, the total production cost often favors fuel cells.
 
-Contact Rise Power for production rental pricing and availability.
+Contact Rise Mission Power for production rental pricing and availability.
 
 ### FAQ
 
@@ -2305,7 +2305,7 @@ Fuel cells have no combustion and minimal moving parts, so mechanical failure is
 - URL: https://risepower.com/insights/military-drone-endurance
 - Slug: military-drone-endurance
 - Date: 2025-05-22
-- Author: Rise Power
+- Author: Rise Mission Power
 - Excerpt: Hydrogen fuel cells give military drones 4+ hours of flight time and 5x range over batteries. Here is how fuel cell propulsion changes ISR operations.
 - Category/tags: none detected
 - Hero image: none
@@ -2317,7 +2317,7 @@ Fuel cells have no combustion and minimal moving parts, so mechanical failure is
 
 The single biggest limitation of military UAS (Unmanned Aerial Systems) is endurance. Most battery-powered tactical drones fly 20-45 minutes before they need to land, swap batteries, and relaunch. That gap in coverage is an operational vulnerability.
 
-Hydrogen fuel cell propulsion shatters this limitation. Rise Power's Falcon drone range extender delivers 4+ hours of flight time and 5x the range of equivalent battery systems. For ISR (Intelligence, Surveillance, and Reconnaissance) missions, that means continuous coverage instead of scheduled gaps.
+Hydrogen fuel cell propulsion shatters this limitation. Rise Mission Power's Falcon drone range extender delivers 4+ hours of flight time and 5x the range of equivalent battery systems. For ISR (Intelligence, Surveillance, and Reconnaissance) missions, that means continuous coverage instead of scheduled gaps.
 
 ### Why Batteries Cannot Solve the Endurance Problem
 
@@ -2375,13 +2375,13 @@ Fuel cell propulsion works with both fixed-wing and multirotor platforms. Fixed-
 
 #### Hydrogen Logistics
 
-Rise Power's Hydrogen Cartridge Kit standardizes fuel logistics. RFID-tagged cartridges integrate with existing supply chain tracking systems. With a 15-year shelf life, cartridges can be pre-positioned at forward operating bases, patrol bases, and supply depots without degradation concerns.
+Rise Mission Power's Hydrogen Cartridge Kit standardizes fuel logistics. RFID-tagged cartridges integrate with existing supply chain tracking systems. With a 15-year shelf life, cartridges can be pre-positioned at forward operating bases, patrol bases, and supply depots without degradation concerns.
 
 ### Future Developments
 
 Fuel cell drone technology is advancing on several fronts:
 
-NATO and allied defense agencies have identified hydrogen fuel cell UAS as a priority capability for 2025-2030 procurement cycles. Learn about Rise Power's defense solutions.
+NATO and allied defense agencies have identified hydrogen fuel cell UAS as a priority capability for 2025-2030 procurement cycles. Learn about Rise Mission Power's defense solutions.
 
 - Higher power density stacks enabling heavier payloads
 - Solid-state hydrogen storage reducing cartridge volume
@@ -2408,7 +2408,7 @@ Gas-powered drones offer similar endurance but produce significant noise and the
 
 #### Are hydrogen cartridges classified as hazardous material for air transport?
 
-Hydrogen cartridges are classified as compressed gas and have specific transport regulations. Rise Power cartridges are designed and certified for safe transport, including air shipment under applicable DOT and IATA regulations.
+Hydrogen cartridges are classified as compressed gas and have specific transport regulations. Rise Mission Power cartridges are designed and certified for safe transport, including air shipment under applicable DOT and IATA regulations.
 
 ---
 
@@ -2417,7 +2417,7 @@ Hydrogen cartridges are classified as compressed gas and have specific transport
 - URL: https://risepower.com/insights/hydrogen-storage-methods
 - Slug: hydrogen-storage-methods
 - Date: 2025-05-05
-- Author: Rise Power
+- Author: Rise Mission Power
 - Excerpt: Compressed gas, liquid, and solid-state: each hydrogen storage method has trade-offs. Here is which works best for portable power applications.
 - Category/tags: none detected
 - Hero image: none
@@ -2484,7 +2484,7 @@ This is the frontier of hydrogen storage technology, and it is the most relevant
 
 For field-deployable power systems like the Sentinel, Falcon, and Titan, the storage method must balance weight, volume, safety, and simplicity.
 
-Rise Power's Hydrogen Cartridge Kit is engineered to deliver the optimal balance of energy density, weight, safety, and shelf life for portable applications. The cartridges feature RFID tracking for supply chain visibility and a 15-year shelf life, making them ideal for pre-positioning in military and emergency response scenarios.
+Rise Mission Power's Hydrogen Cartridge Kit is engineered to deliver the optimal balance of energy density, weight, safety, and shelf life for portable applications. The cartridges feature RFID tracking for supply chain visibility and a 15-year shelf life, making them ideal for pre-positioning in military and emergency response scenarios.
 
 ### The Future of Hydrogen Storage
 
@@ -2501,7 +2501,7 @@ For portable power applications, the trajectory is toward higher energy density 
 
 #### Which hydrogen storage method is safest for portable applications?
 
-Solid-state storage operates at low pressure and ambient temperature, making it inherently the safest option for portable use. Compressed gas at 700 bar is safe with proper engineering but requires more robust containment. Rise Power cartridges are designed for field safety across all conditions.
+Solid-state storage operates at low pressure and ambient temperature, making it inherently the safest option for portable use. Compressed gas at 700 bar is safe with proper engineering but requires more robust containment. Rise Mission Power cartridges are designed for field safety across all conditions.
 
 #### How much hydrogen does a portable fuel cell need?
 
@@ -2526,7 +2526,7 @@ Yes. The U.S. Department of Energy targets for on-board hydrogen storage are 6.5
 - URL: https://risepower.com/insights/generator-emissions-regulations
 - Slug: generator-emissions-regulations
 - Date: 2025-04-18
-- Author: Rise Power
+- Author: Rise Mission Power
 - Excerpt: Diesel generator emissions face stricter regulations worldwide. Zero-emission hydrogen fuel cells offer a compliance-proof alternative.
 - Category/tags: none detected
 - Hero image: none
@@ -2574,7 +2574,7 @@ Hydrogen fuel cells produce zero regulated emissions. No NOx. No particulates. N
 
 This means:
 
-Rise Power's Titan generator and Sentinel portable fuel cell operate with zero emissions in any regulatory jurisdiction worldwide. No exemptions needed. No compliance costs. No regulatory risk.
+Rise Mission Power's Titan generator and Sentinel portable fuel cell operate with zero emissions in any regulatory jurisdiction worldwide. No exemptions needed. No compliance costs. No regulatory risk.
 
 - No aftertreatment systems needed
 - No emission permits required
@@ -2607,7 +2607,7 @@ While military operations often receive regulatory exemptions, defense agencies 
 
 Organizations currently dependent on diesel generators have three options:
 
-For portable power applications under 5 kW, option 3 is already economically competitive when total cost of ownership is considered. Contact Rise Power for a regulatory impact assessment and transition plan.
+For portable power applications under 5 kW, option 3 is already economically competitive when total cost of ownership is considered. Contact Rise Mission Power for a regulatory impact assessment and transition plan.
 
 - Comply and absorb costs - Retrofit existing generators, buy compliant new units, pay for permits and monitoring. Costs escalate over time
 - Hybrid approach - Use fuel cells for loads under 5 kW, diesel for larger loads. Reduces compliance burden proportionally
@@ -2633,7 +2633,7 @@ Compliance costs add 15-30% to diesel generator TCO when you include aftertreatm
 
 #### Can I get carbon credits for switching to hydrogen?
 
-Potentially. Some jurisdictions offer carbon offset credits or clean energy incentives for replacing combustion equipment with zero-emission alternatives. Consult local regulations or contact Rise Power for guidance specific to your jurisdiction.
+Potentially. Some jurisdictions offer carbon offset credits or clean energy incentives for replacing combustion equipment with zero-emission alternatives. Consult local regulations or contact Rise Mission Power for guidance specific to your jurisdiction.
 
 ---
 
@@ -2642,7 +2642,7 @@ Potentially. Some jurisdictions offer carbon offset credits or clean energy ince
 - URL: https://risepower.com/insights/tactical-power-management
 - Slug: tactical-power-management
 - Date: 2025-04-01
-- Author: Rise Power
+- Author: Rise Mission Power
 - Excerpt: Modern military operations demand smarter power management. Hydrogen fuel cells reduce logistics burden, noise, and thermal signature in the field.
 - Category/tags: none detected
 - Hero image: none
@@ -2673,7 +2673,7 @@ Effective tactical power management layers solutions by echelon:
 
 The soldier needs power for personal electronics: radio, GPS, NVGs, weapon optics. Current solutions rely on heavy lithium batteries that must be recharged or replaced frequently.
 
-Rise Power's Sentinel weighing under 15 lbs provides 30+ hours of continuous power from a single hydrogen cartridge. A soldier carrying two cartridges has more energy available than 20 lbs of lithium batteries, at less total weight.
+Rise Mission Power's Sentinel weighing under 15 lbs provides 30+ hours of continuous power from a single hydrogen cartridge. A soldier carrying two cartridges has more energy available than 20 lbs of lithium batteries, at less total weight.
 
 #### Squad/Platoon Level
 
@@ -2707,7 +2707,7 @@ Effective tactical power management requires integrating fuel cell capability in
 
 NATO members are actively evaluating and fielding hydrogen fuel cell power systems:
 
-Rise Power is positioned to support allied interoperability through standardized hydrogen cartridge systems. Explore our defense capabilities.
+Rise Mission Power is positioned to support allied interoperability through standardized hydrogen cartridge systems. Explore our defense capabilities.
 
 - United States - Army Research Lab programs for soldier-portable fuel cells and UAS propulsion
 - United Kingdom - MOD clean energy initiative for forward operating bases
@@ -2735,7 +2735,7 @@ Fuel cells provide continuous power for extended durations, eliminating the char
 
 #### Are fuel cell power systems classified or restricted?
 
-Rise Power's commercial fuel cell systems are available to qualified defense customers. Contact Rise Power for information on procurement, evaluation units, and security classification of specific system configurations.
+Rise Mission Power's commercial fuel cell systems are available to qualified defense customers. Contact Rise Mission Power for information on procurement, evaluation units, and security classification of specific system configurations.
 
 ---
 
@@ -2744,7 +2744,7 @@ Rise Power's commercial fuel cell systems are available to qualified defense cus
 - URL: https://risepower.com/insights/future-of-portable-power
 - Slug: future-of-portable-power
 - Date: 2025-03-15
-- Author: Rise Power
+- Author: Rise Mission Power
 - Excerpt: Portable power is evolving fast. From hydrogen fuel cells to solid-state batteries, here are five trends shaping the next decade.
 - Category/tags: none detected
 - Hero image: none
@@ -2764,7 +2764,7 @@ Hydrogen fuel cells have moved from laboratory curiosity to field-ready technolo
 
 #### What Changed
 
-Rise Power's product line exemplifies this maturation. The Sentinel delivers man-portable hydrogen power at under 15 lbs with 30+ hours of runtime. The Falcon extends drone endurance by 5x. The Titan provides 3kW zero-emission generation in extreme conditions.
+Rise Mission Power's product line exemplifies this maturation. The Sentinel delivers man-portable hydrogen power at under 15 lbs with 30+ hours of runtime. The Falcon extends drone endurance by 5x. The Titan provides 3kW zero-emission generation in extreme conditions.
 
 Over the next decade, expect fuel cell costs to continue declining, power density to increase, and hydrogen logistics infrastructure to expand globally.
 
@@ -2822,7 +2822,7 @@ Organizations making portable power procurement decisions today should consider:
 
 The organizations that adopt these trends early gain operational advantages and avoid costly transitions later. Those that wait will face higher costs, regulatory penalties, and capability gaps.
 
-Contact Rise Power to discuss how these trends apply to your specific operational requirements and procurement timeline. Explore our full product capabilities and solution applications.
+Contact Rise Mission Power to discuss how these trends apply to your specific operational requirements and procurement timeline. Explore our full product capabilities and solution applications.
 
 ### FAQ
 
@@ -2840,7 +2840,7 @@ Start with a pilot deployment of zero-emission portable power for a defined use 
 
 #### Is the hydrogen infrastructure ready for widespread adoption?
 
-For portable power applications using cartridge-based systems like Rise Power's Hydrogen Cartridge Kit, infrastructure requirements are minimal. Cartridges are manufactured, shipped, and stored like any other consumable supply item. This is fundamentally different from building hydrogen refueling stations for vehicles.
+For portable power applications using cartridge-based systems like Rise Mission Power's Hydrogen Cartridge Kit, infrastructure requirements are minimal. Cartridges are manufactured, shipped, and stored like any other consumable supply item. This is fundamentally different from building hydrogen refueling stations for vehicles.
 
 #### What role will solar play in portable power?
 
