@@ -30,11 +30,12 @@ export type AiBackupPageContent = {
     cta: { label: string; href: string };
     imageSrc: string;
     imageAlt: string;
+    /** Optional frame classes when the photo is not square. */
+    imageFrameClassName?: string;
     benefits: {
       title: string;
       body: string;
-      imageSrc: string;
-      imageAlt: string;
+      icon: "bolt" | "modular" | "cycle" | "chart";
     }[];
   };
   hydrogen: {

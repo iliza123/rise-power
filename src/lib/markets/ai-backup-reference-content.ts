@@ -4,7 +4,9 @@ import type { AiBackupPageContent } from "./ai-backup-page-types";
  * Client reference copy from the original AI BACKUP.png mockup.
  * Used on /markets/ai-backup2 so the client can compare their existing
  * content against the live /markets/ai-backup page.
- * Same section structure + site imagery; wording matches the mockup.
+ * Same section structure; wording matches the mockup.
+ * Image paths live only in this file (`/media/markets/ai-backup2/`).
+ * Drop replacement art on those paths when the final mockup images arrive.
  */
 export const aiBackupReferencePage: AiBackupPageContent = {
   eyebrow: "AI Backup",
@@ -18,9 +20,9 @@ export const aiBackupReferencePage: AiBackupPageContent = {
     href: "/products",
   },
   hero: {
-    src: "/media/markets/ai-backup-hero.png",
-    mobileSrc: "/media/markets/ai-backup-hero-mobile.png",
-    alt: "Camouflaged mission power station in a server room",
+    src: "/media/markets/ai-backup2/ai-backup-hero-renewable.png",
+    mobileSrc: "/media/markets/ai-backup2/ai-backup-hero-renewable-mobile.png",
+    alt: "RISE Mission Power stations with a hydrogen canister, wind turbines, solar panels, and a data center",
   },
   badges: [
     { label: "AI Ready" },
@@ -34,22 +36,22 @@ export const aiBackupReferencePage: AiBackupPageContent = {
       {
         title: "Modular Power Systems",
         body: "Scalable solutions for any environment.",
-        imageSrc: "/media/markets/ai-backup-feature-modular.png",
-        imageAlt: "Rugged RISE military power station",
+        imageSrc: "/media/markets/ai-backup2/ai-backup-feature-modular-unit.png",
+        imageAlt: "Olive RISE power unit on a pad with wind turbines and mountains",
         href: "/products#titan",
       },
       {
         title: "Zero-Downtime Operations",
         body: "Uninterrupted power for critical systems.",
-        imageSrc: "/media/markets/ai-backup-feature-zero-downtime.png",
-        imageAlt: "RISE mission power station",
+        imageSrc: "/media/markets/ai-backup2/ai-backup-feature-zero-downtime-canister.png",
+        imageAlt: "RISE hydrogen canister at a harbor at sunset",
         href: "/insights/hydrogen-power-data-centers",
       },
       {
         title: "Intelligent Energy Control",
         body: "Smarter power for a resilient world.",
-        imageSrc: "/media/markets/ai-backup-feature-energy-control.png",
-        imageAlt: "Industrial drone at a mountain facility",
+        imageSrc: "/media/markets/ai-backup2/ai-backup-feature-energy-control-console.png",
+        imageAlt: "RISE tactical command console showing a live energy map",
         href: "/products#cartridge-kit",
       },
     ],
@@ -61,32 +63,28 @@ export const aiBackupReferencePage: AiBackupPageContent = {
     headingAccent: "Always-On World.",
     body: "From data centers to remote locations, Rise Mission Power delivers clean, scalable backup power solutions that ensure uninterrupted operations for a more connected, more resilient tomorrow.",
     cta: { label: "Meet Our Products", href: "/products" },
-    imageSrc: "/media/markets/ai-backup-resilient.png",
+    imageSrc: "/media/markets/ai-backup2/ai-backup-resilient.png",
     imageAlt: "Industrial RISE power unit in a control room",
     benefits: [
       {
         title: "Clean & Reliable Power",
         body: "Low-emission solutions for a sustainable tomorrow.",
-        imageSrc: "/media/markets/ai-backup-benefit-clean.png",
-        imageAlt: "RISE mission power station in mountain terrain",
+        icon: "bolt",
       },
       {
         title: "Scalable Deployment",
         body: "Modular systems that grow with your power demands.",
-        imageSrc: "/media/markets/ai-backup-benefit-scalable.png",
-        imageAlt: "Rugged RISE generator at a mountain telecom site",
+        icon: "modular",
       },
       {
         title: "Built For Any Environment",
         body: "Rugged, reliable, and ready for the world's toughest conditions.",
-        imageSrc: "/media/markets/ai-backup-benefit-environment.png",
-        imageAlt: "RISE mission power station in a tech lab",
+        icon: "cycle",
       },
       {
         title: "Lower Total Cost Of Ownership",
         body: "More uptime. Less risk. Greater long-term value.",
-        imageSrc: "/media/markets/ai-backup-benefit-tco.png",
-        imageAlt: "Military-grade power station in a workshop",
+        icon: "chart",
       },
     ],
   },
@@ -96,7 +94,7 @@ export const aiBackupReferencePage: AiBackupPageContent = {
     headingBefore: "Cleaner, Stronger, Smarter Power",
     headingAccent: "Fueled By Hydrogen.",
     body: "A next-generation fuel source for backup power systems that delivers high-energy density, zero emissions, and reliable performance when it matters most.",
-    imageSrc: "/media/markets/ai-backup-hydrogen.png",
+    imageSrc: "/media/markets/ai-backup2/ai-backup-hydrogen.png",
     imageAlt: "Rise Mission Power data center hub with hydrogen backup systems",
     cta: {
       label: "See How It Works",
@@ -118,28 +116,28 @@ export const aiBackupReferencePage: AiBackupPageContent = {
         number: "01",
         title: "Produce",
         body: "Produce clean hydrogen from renewable sources.",
-        imageSrc: "/media/markets/ai-backup-step-produce.png",
+        imageSrc: "/media/markets/ai-backup2/ai-backup-step-produce.png",
         imageAlt: "High-tech hydrogen processing facility",
       },
       {
         number: "02",
         title: "Store",
         body: "Store and distribute for flexible use.",
-        imageSrc: "/media/markets/ai-backup-step-store.png",
+        imageSrc: "/media/markets/ai-backup2/ai-backup-step-store.png",
         imageAlt: "Inventory scan in the RISE energy warehouse",
       },
       {
         number: "03",
         title: "Generate",
         body: "Generate reliable power with Rise Mission Power systems.",
-        imageSrc: "/media/markets/ai-backup-step-generate.png",
+        imageSrc: "/media/markets/ai-backup2/ai-backup-step-generate.png",
         imageAlt: "Military power unit at golden hour",
       },
       {
         number: "04",
         title: "Keep Online",
         body: "Keep critical infrastructure online and resilient anywhere in the world.",
-        imageSrc: "/media/markets/ai-backup-step-keep-online.png",
+        imageSrc: "/media/markets/ai-backup2/ai-backup-step-keep-online.png",
         imageAlt: "Rise off-grid power station in the mountains",
       },
     ],
@@ -153,28 +151,28 @@ export const aiBackupReferencePage: AiBackupPageContent = {
       {
         title: "Data Centers",
         body: "High-density power for Always-On AI.",
-        imageSrc: "/media/markets/ai-backup-app-data-centers.png",
+        imageSrc: "/media/markets/ai-backup2/ai-backup-app-data-centers.png",
         imageAlt: "Military power station in a warehouse",
         href: "/insights/hydrogen-power-data-centers",
       },
       {
         title: "Telecommunications",
         body: "Keeping our communities connected.",
-        imageSrc: "/media/markets/ai-backup-app-telecom.png",
+        imageSrc: "/media/markets/ai-backup2/ai-backup-app-telecom.png",
         imageAlt: "Tactical mission power in the mountains",
         href: "/markets/commercial",
       },
       {
         title: "Medical",
         body: "Life-saving power when it matters most.",
-        imageSrc: "/media/markets/ai-backup-app-medical.png",
+        imageSrc: "/media/markets/ai-backup2/ai-backup-app-medical.png",
         imageAlt: "Rugged mission power station at dusk",
         href: "/contact",
       },
       {
         title: "Industrial",
         body: "Powering a stronger, more resilient world.",
-        imageSrc: "/media/markets/ai-backup-app-industrial.png",
+        imageSrc: "/media/markets/ai-backup2/ai-backup-app-industrial.png",
         imageAlt: "Olive green mission power at a refinery",
         href: "/markets/commercial",
       },
@@ -187,7 +185,7 @@ export const aiBackupReferencePage: AiBackupPageContent = {
     headingAccent: "Power Asset.",
     body: "Monitor, manage, and optimize your entire fleet with Rise Mission Power's intelligent energy management platform.",
     cta: { label: "See The Platform", href: "/contact" },
-    imageSrc: "/media/markets/ai-backup-platform.png",
+    imageSrc: "/media/markets/ai-backup2/ai-backup-platform.png",
     imageAlt:
       "Rugged mission power station in the field",
   },

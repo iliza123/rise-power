@@ -18,46 +18,112 @@ import {
   SPLIT_WASH,
 } from "./market-ui";
 
+type BenefitIconName = AiBackupPageContent["resilient"]["benefits"][number]["icon"];
+
+const benefitIconProps = {
+  viewBox: "0 0 48 48",
+  fill: "none",
+  stroke: "currentColor",
+  strokeWidth: 1.75,
+  strokeLinecap: "round" as const,
+  strokeLinejoin: "round" as const,
+  "aria-hidden": true,
+};
+
+function BenefitIcon({
+  name,
+  className,
+}: {
+  name: BenefitIconName;
+  className: string;
+}) {
+  if (name === "bolt") {
+    return (
+      <svg {...benefitIconProps} className={className}>
+        <path d="M26 5 14 27h9l-3 16 16-24h-9l3-14Z" />
+      </svg>
+    );
+  }
+  if (name === "modular") {
+    return (
+      <svg {...benefitIconProps} className={className}>
+        <path d="M18 14 32 8l12 6-14 6Z" />
+        <path d="M18 14v12l14 6V20" />
+        <path d="M44 14v12L30 32" />
+        <path d="M10 22a8 8 0 1 0 3.2-6.4" />
+        <path d="M10 12.5V18h5.5" />
+      </svg>
+    );
+  }
+  if (name === "cycle") {
+    return (
+      <svg {...benefitIconProps} className={className}>
+        <path d="M16 18a10 10 0 0 1 16.5-6.2L36 15" />
+        <path d="M36 9v7h-7" />
+        <path d="M32 30a10 10 0 0 1-16.5 6.2L12 33" />
+        <path d="M12 39v-7h7" />
+      </svg>
+    );
+  }
+  return (
+    <svg {...benefitIconProps} className={className}>
+      <path d="M8 38V27" />
+      <path d="M18 38V21" />
+      <path d="M28 38V15" />
+      <path d="M8 31 18 24l10-7 12-8" />
+      <path d="M32 9h8v8" />
+    </svg>
+  );
+}
+
 function ResilientBenefitCard({
   benefit,
+  tone,
 }: {
   benefit: AiBackupPageContent["resilient"]["benefits"][number];
+  tone: "light" | "dark";
 }) {
+  const dark = tone === "dark";
   return (
     <article
-      className="flex h-full flex-col overflow-hidden border bg-[#fbfaf7]"
-      style={{ borderColor: SECTION_RULE }}
+      className={
+        dark
+          ? "flex h-full flex-col rounded-xl border border-[#d4e56a]/30 bg-[#0c1210]/78 p-6 shadow-[inset_0_1px_0_rgba(255,255,255,0.08),0_22px_48px_rgba(0,0,0,0.32)] backdrop-blur-md sm:p-7"
+          : "flex h-full flex-col rounded-xl border bg-[#fbfaf7] p-6 shadow-[0_16px_40px_rgba(16,24,32,0.05)] sm:p-7"
+      }
+      style={dark ? undefined : { borderColor: SECTION_RULE }}
     >
-      <div className="relative aspect-square overflow-hidden bg-[#101820]">
-        <Image
-          src={benefit.imageSrc}
-          alt={benefit.imageAlt}
-          fill
-          sizes="(min-width: 1024px) 22vw, (min-width: 640px) 50vw, 85vw"
-          className="object-cover object-center"
-        />
-      </div>
-      <div className="flex flex-1 flex-col p-4 sm:p-5">
-        <h3 className="font-display text-sm font-bold tracking-[0.12em] uppercase sm:text-base">
-          {benefit.title}
-        </h3>
-        <p className="mt-2 text-sm leading-[1.55]" style={{ color: MUTED }}>
-          {benefit.body}
-        </p>
-      </div>
+      <BenefitIcon
+        name={benefit.icon}
+        className={dark ? "size-10 text-[#d4e56a]" : "size-10 text-[#6e7f42]"}
+      />
+      <h3
+        className={`mt-5 font-display text-[0.95rem] leading-[1.2] font-bold tracking-[0.04em] uppercase sm:text-base ${dark ? "text-white" : "text-[#101820]"}`}
+      >
+        {benefit.title}
+      </h3>
+      <p
+        className="mt-2.5 text-sm leading-snug sm:text-[0.9375rem]"
+        style={{ color: dark ? "rgba(255,255,255,0.72)" : MUTED }}
+      >
+        {benefit.body}
+      </p>
     </article>
   );
 }
 
 function HowItWorksStepCard({
   step,
+  tone,
 }: {
   step: AiBackupPageContent["steps"]["items"][number];
+  tone: "light" | "dark";
 }) {
+  const dark = tone === "dark";
   return (
     <article
-      className="flex h-full flex-col overflow-hidden rounded-[7px] border bg-[#fbfaf7]"
-      style={{ borderColor: SECTION_RULE }}
+      className={`flex h-full flex-col overflow-hidden rounded-[7px] border ${dark ? "bg-[#141a18]" : "bg-[#fbfaf7]"}`}
+      style={{ borderColor: dark ? "rgba(255,255,255,0.12)" : SECTION_RULE }}
     >
       <div className="relative aspect-square overflow-hidden bg-[#101820]">
         <Image
@@ -75,10 +141,15 @@ function HowItWorksStepCard({
         >
           {step.number}
         </span>
-        <h3 className="mt-2 font-display text-xl font-bold tracking-tight uppercase">
+        <h3
+          className={`mt-2 font-display text-xl font-bold tracking-tight uppercase ${dark ? "text-white" : "text-[#101820]"}`}
+        >
           {step.title}
         </h3>
-        <p className="mt-2 text-base leading-[1.55]" style={{ color: MUTED }}>
+        <p
+          className="mt-2 text-base leading-[1.55]"
+          style={{ color: dark ? "rgba(255,255,255,0.72)" : MUTED }}
+        >
           {step.body}
         </p>
       </div>
@@ -86,8 +157,12 @@ function HowItWorksStepCard({
   );
 }
 
+type AiBackupTone = "light" | "dark";
+
 type MarketLayoutAiBackupProps = {
   page?: AiBackupPageContent;
+  /** Light is the live page. Dark is the client-reference page. */
+  tone?: AiBackupTone;
   /** Optional banner above the hero (e.g. client-reference compare link). */
   compareBanner?: ReactNode;
 };
@@ -95,14 +170,54 @@ type MarketLayoutAiBackupProps = {
 /**
  * AI Backup page (sections 1–7) with images throughout.
  * No page-local closing CTA (global ClosingCta + Footer).
- * Pass `page` to render the client-reference copy on /markets/ai-backup2.
+ * `tone="light"` is /markets/ai-backup. `tone="dark"` is /markets/ai-backup2.
+ * Both read images from the page content, so art can be swapped per page.
  */
 export function MarketLayoutAiBackup({
   page = aiBackupPage,
+  tone = "light",
   compareBanner,
 }: MarketLayoutAiBackupProps) {
+  const dark = tone === "dark";
+  const copy = dark ? "rgba(244,246,242,0.72)" : MUTED;
+  const wash = dark ? "#10161a" : CREAM;
+  const paper = dark ? "#070b0c" : "#ffffff";
+  const cardSurface = dark ? "#141a18" : "#ffffff";
+  const cardRule = dark ? "rgba(255,255,255,0.12)" : SECTION_RULE;
+
+  const benefitCards = (band: boolean) => (
+    <>
+      <Reveal variant="up" delay={80} className={band ? "lg:hidden" : "mt-10 lg:hidden"}>
+        <SnapCarousel
+          ariaLabel="Resilient energy benefits"
+          showArrows
+          showDots
+          itemClassName="w-[min(85vw,22rem)]"
+          trackClassName="gap-4 px-1 pb-1"
+        >
+          {page.resilient.benefits.map((benefit) => (
+            <ResilientBenefitCard key={benefit.title} benefit={benefit} tone={tone} />
+          ))}
+        </SnapCarousel>
+      </Reveal>
+      <RevealStagger
+        className={
+          band
+            ? "hidden gap-4 lg:grid lg:grid-cols-4 lg:gap-5"
+            : "mt-10 hidden gap-4 lg:grid lg:grid-cols-4 lg:mt-14 lg:gap-5"
+        }
+        step={50}
+        variant="up"
+      >
+        {page.resilient.benefits.map((benefit) => (
+          <ResilientBenefitCard key={benefit.title} benefit={benefit} tone={tone} />
+        ))}
+      </RevealStagger>
+    </>
+  );
+
   return (
-    <main className="bg-[#fbfaf7] text-[#101820]">
+    <main className={dark ? "bg-[#070b0c] text-white" : "bg-[#fbfaf7] text-[#101820]"}>
       {compareBanner}
       {/* 1. Hero */}
       <StackedPageHero
@@ -110,7 +225,7 @@ export function MarketLayoutAiBackup({
         imageSrc={page.hero.src}
         mobileImageSrc={page.hero.mobileSrc}
         imageAlt={page.hero.alt}
-        imageClassName="object-cover object-[center_50%] xl:object-[92%_50%]"
+        imageClassName="object-cover object-center xl:object-[68%_center]"
         splitImageWidthClassName="w-[66%]"
         splitImageSizes="66vw"
         heroMinHeightClassName="xl:min-h-[min(88svh,800px)]"
@@ -165,10 +280,10 @@ export function MarketLayoutAiBackup({
       </StackedPageHero>
 
       {/* 2. Feature cards */}
-      <section className="py-10 sm:py-12 lg:py-14" style={{ background: CREAM }}>
+      <section className="py-10 sm:py-12 lg:py-14" style={{ background: wash }}>
         <div className="mx-auto max-w-[1440px] px-6 lg:px-10">
           <Reveal variant="up">
-            <SectionEyebrow>{page.features.eyebrow}</SectionEyebrow>
+            <SectionEyebrow light={dark}>{page.features.eyebrow}</SectionEyebrow>
           </Reveal>
           <RevealStagger
             className="mt-8 grid gap-4 sm:mt-10 sm:grid-cols-3 sm:gap-5"
@@ -179,8 +294,8 @@ export function MarketLayoutAiBackup({
               <Link
                 key={item.title}
                 href={item.href}
-                className="group flex h-full flex-col overflow-hidden rounded-[7px] border bg-white transition-colors hover:border-[#6e7f42]"
-                style={{ borderColor: SECTION_RULE }}
+                className="group flex h-full flex-col overflow-hidden rounded-[7px] border transition-colors hover:border-[#6e7f42]"
+                style={{ borderColor: cardRule, background: cardSurface, color: dark ? "#ffffff" : "#101820" }}
               >
                 <div className="relative aspect-square overflow-hidden bg-[#101820]">
                   <Image
@@ -197,7 +312,7 @@ export function MarketLayoutAiBackup({
                   </h3>
                   <p
                     className="mt-3 flex-1 text-base leading-[1.55]"
-                    style={{ color: MUTED }}
+                    style={{ color: copy }}
                   >
                     {item.body}
                   </p>
@@ -218,24 +333,35 @@ export function MarketLayoutAiBackup({
         </div>
       </section>
 
-      {/* 3. Resilient energy — image + benefit cards with photos */}
-      <section className="bg-white py-10 sm:py-12 lg:py-14">
+      {/* 3. Resilient energy — light cards, or a dark photo band on ai-backup2 */}
+      <section className={dark ? "pt-10 sm:pt-12 lg:pt-14" : "bg-white py-10 sm:py-12 lg:py-14"} style={dark ? { background: paper } : undefined}>
         <div className="mx-auto max-w-[1440px] px-6 lg:px-10">
-          <div className="grid items-center gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(18rem,32rem)] lg:gap-10">
+          <div
+            className={`grid items-center gap-6 lg:gap-10 ${
+              page.resilient.imageFrameClassName
+                ? "lg:grid-cols-[minmax(0,0.9fr)_minmax(18rem,40rem)]"
+                : "lg:grid-cols-[minmax(0,1fr)_minmax(18rem,32rem)]"
+            }`}
+          >
             {/* Image first on mobile; text stays left on desktop */}
             <Reveal variant="right" className="order-1 w-full lg:order-2 lg:justify-self-end">
-              <div className="relative aspect-square overflow-hidden rounded-[7px] bg-[#101820]">
+              <div
+                className={
+                  page.resilient.imageFrameClassName ??
+                  "relative aspect-square overflow-hidden rounded-[7px] bg-[#101820]"
+                }
+              >
                 <Image
                   src={page.resilient.imageSrc}
                   alt={page.resilient.imageAlt}
                   fill
                   sizes="(min-width: 1024px) 48vw, 100vw"
-                  className="object-contain object-center"
+                  className="object-cover object-center"
                 />
               </div>
             </Reveal>
             <Reveal variant="left" className="order-2 lg:order-1">
-              <SectionEyebrow>{page.resilient.eyebrow}</SectionEyebrow>
+              <SectionEyebrow light={dark}>{page.resilient.eyebrow}</SectionEyebrow>
               <h2 className="mt-3 font-display text-[1.75rem] leading-[0.95] font-bold tracking-tight uppercase sm:text-[2.25rem] lg:text-[2.75rem]">
                 {page.resilient.headingBefore}{" "}
                 <span style={{ color: SAGE }}>
@@ -244,7 +370,7 @@ export function MarketLayoutAiBackup({
               </h2>
               <p
                 className="mt-4 text-base leading-[1.65] sm:text-lg"
-                style={{ color: MUTED }}
+                style={{ color: copy }}
               >
                 {page.resilient.body}
               </p>
@@ -259,34 +385,32 @@ export function MarketLayoutAiBackup({
             </Reveal>
           </div>
 
-          <Reveal variant="up" delay={80} className="mt-10 lg:hidden">
-            <SnapCarousel
-              ariaLabel="Resilient energy benefits"
-              showArrows
-              showDots
-              itemClassName="w-[min(85vw,20rem)]"
-              trackClassName="gap-4 px-1 pb-1"
-            >
-              {page.resilient.benefits.map((benefit) => (
-                <ResilientBenefitCard key={benefit.title} benefit={benefit} />
-              ))}
-            </SnapCarousel>
-          </Reveal>
-
-          <RevealStagger
-            className="mt-8 hidden gap-5 lg:grid lg:grid-cols-4"
-            step={50}
-            variant="up"
-          >
-            {page.resilient.benefits.map((benefit) => (
-              <ResilientBenefitCard key={benefit.title} benefit={benefit} />
-            ))}
-          </RevealStagger>
+          {dark ? null : benefitCards(false)}
         </div>
+        {dark ? (
+          <div className="relative mt-10 overflow-hidden sm:mt-12 lg:mt-16">
+            <Image
+              src={page.resilient.imageSrc}
+              alt=""
+              fill
+              sizes="100vw"
+              className="object-cover object-[center_82%] scale-110"
+              aria-hidden
+            />
+            <div className="absolute inset-0 bg-[#070b0c]/88" aria-hidden />
+            <div
+              className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(214,164,72,0.22),transparent_58%)]"
+              aria-hidden
+            />
+            <div className="relative mx-auto max-w-[1440px] px-6 py-8 sm:py-10 lg:px-10 lg:py-12">
+              {benefitCards(true)}
+            </div>
+          </div>
+        ) : null}
       </section>
 
       {/* 4. Hydrogen tech — image first on mobile; text stays left on desktop */}
-      <section className="py-10 sm:py-12 lg:py-14" style={{ background: CREAM }}>
+      <section className="py-10 sm:py-12 lg:py-14" style={{ background: wash }}>
         <div className="mx-auto grid max-w-[1440px] items-center gap-8 px-6 lg:grid-cols-[minmax(0,0.82fr)_minmax(0,1.18fr)] lg:gap-10 lg:px-10">
           <Reveal variant="right" className="order-1 lg:order-2">
             <div className="relative aspect-[3/2] overflow-hidden rounded-[7px] bg-[#101820]">
@@ -300,14 +424,14 @@ export function MarketLayoutAiBackup({
             </div>
           </Reveal>
           <Reveal variant="left" className="order-2 lg:order-1">
-            <SectionEyebrow>{page.hydrogen.eyebrow}</SectionEyebrow>
+            <SectionEyebrow light={dark}>{page.hydrogen.eyebrow}</SectionEyebrow>
             <h2 className="mt-3 font-display text-[1.75rem] leading-[0.95] font-bold tracking-tight uppercase sm:text-[2.25rem] lg:text-[2.5rem]">
               {page.hydrogen.headingBefore}{" "}
               <span style={{ color: SAGE }}>{page.hydrogen.headingAccent}</span>
             </h2>
             <p
               className="mt-4 text-base leading-[1.65] sm:text-lg"
-              style={{ color: MUTED }}
+              style={{ color: copy }}
             >
               {page.hydrogen.body}
             </p>
@@ -319,14 +443,14 @@ export function MarketLayoutAiBackup({
                     className="mt-2 size-1.5 shrink-0 rounded-full"
                     style={{ background: SAGE }}
                   />
-                  <span style={{ color: MUTED }}>{bullet}</span>
+                  <span style={{ color: copy }}>{bullet}</span>
                 </li>
               ))}
             </ul>
             <Link
               href={page.hydrogen.cta.href}
               className="mt-7 inline-flex min-h-12 items-center justify-center gap-2 rounded-sm border px-7 text-sm font-semibold tracking-wide uppercase transition-colors hover:border-[#6e7f42]"
-              style={{ borderColor: SECTION_RULE, color: SAGE }}
+              style={{ borderColor: cardRule, color: SAGE }}
             >
               {page.hydrogen.cta.label}
               <ArrowRight className="size-4 shrink-0" aria-hidden />
@@ -336,10 +460,10 @@ export function MarketLayoutAiBackup({
       </section>
 
       {/* 5. Four-step process — slider on mobile, grid on desktop */}
-      <section className="bg-white py-10 sm:py-12 lg:py-14">
+      <section className="py-10 sm:py-12 lg:py-14" style={{ background: paper }}>
         <div className="mx-auto max-w-[1440px] px-6 lg:px-10">
           <Reveal variant="up">
-            <SectionEyebrow>{page.steps.eyebrow}</SectionEyebrow>
+            <SectionEyebrow light={dark}>{page.steps.eyebrow}</SectionEyebrow>
             <h2 className="mt-3 max-w-4xl font-display text-[1.75rem] leading-[0.95] font-bold tracking-tight uppercase sm:text-[2.25rem] lg:text-[2.75rem]">
               {page.steps.headingBefore}{" "}
               <span style={{ color: SAGE }}>{page.steps.headingAccent}</span>
@@ -355,7 +479,7 @@ export function MarketLayoutAiBackup({
               trackClassName="gap-4 px-1 pb-1"
             >
               {page.steps.items.map((step) => (
-                <HowItWorksStepCard key={step.number} step={step} />
+                <HowItWorksStepCard key={step.number} step={step} tone={tone} />
               ))}
             </SnapCarousel>
           </Reveal>
@@ -366,17 +490,17 @@ export function MarketLayoutAiBackup({
             variant="up"
           >
             {page.steps.items.map((step) => (
-              <HowItWorksStepCard key={step.number} step={step} />
+              <HowItWorksStepCard key={step.number} step={step} tone={tone} />
             ))}
           </RevealStagger>
         </div>
       </section>
 
       {/* 6. Applications */}
-      <section className="py-10 sm:py-12 lg:py-14" style={{ background: CREAM }}>
+      <section className="py-10 sm:py-12 lg:py-14" style={{ background: wash }}>
         <div className="mx-auto max-w-[1440px] px-6 lg:px-10">
           <Reveal variant="up">
-            <SectionEyebrow>{page.applications.eyebrow}</SectionEyebrow>
+            <SectionEyebrow light={dark}>{page.applications.eyebrow}</SectionEyebrow>
             <h2 className="mt-3 max-w-4xl font-display text-[1.75rem] leading-[0.95] font-bold tracking-tight uppercase sm:text-[2.25rem] lg:text-[2.75rem]">
               {page.applications.headingBefore}{" "}
               <span style={{ color: SAGE }}>
@@ -394,8 +518,8 @@ export function MarketLayoutAiBackup({
               <Link
                 key={app.title}
                 href={app.href}
-                className="group flex h-full flex-col overflow-hidden rounded-[7px] border bg-white transition-colors hover:border-[#6e7f42]"
-                style={{ borderColor: SECTION_RULE }}
+                className="group flex h-full flex-col overflow-hidden rounded-[7px] border transition-colors hover:border-[#6e7f42]"
+                style={{ borderColor: cardRule, background: cardSurface, color: dark ? "#ffffff" : "#101820" }}
               >
                 <div className="relative aspect-square overflow-hidden bg-[#101820]">
                   <Image
@@ -412,7 +536,7 @@ export function MarketLayoutAiBackup({
                   </h3>
                   <p
                     className="mt-3 flex-1 text-base leading-[1.55]"
-                    style={{ color: MUTED }}
+                    style={{ color: copy }}
                   >
                     {app.body}
                   </p>
@@ -435,7 +559,7 @@ export function MarketLayoutAiBackup({
 
       {/* 7. Platform — image first on mobile; text stays left on desktop */}
       {page.platform ? (
-        <section className="bg-white py-10 sm:py-12 lg:py-14">
+        <section className="py-10 sm:py-12 lg:py-14" style={{ background: paper }}>
           <div className="mx-auto grid max-w-[1440px] items-center gap-8 px-6 lg:grid-cols-[minmax(0,0.82fr)_minmax(0,1.18fr)] lg:gap-10 lg:px-10">
             <Reveal variant="right" className="order-1 lg:order-2">
               <div className="relative aspect-[4/3] overflow-hidden rounded-[7px] bg-[#101820]">
@@ -449,7 +573,7 @@ export function MarketLayoutAiBackup({
               </div>
             </Reveal>
             <Reveal variant="left" className="order-2 lg:order-1">
-              <SectionEyebrow>{page.platform.eyebrow}</SectionEyebrow>
+              <SectionEyebrow light={dark}>{page.platform.eyebrow}</SectionEyebrow>
               <h2 className="mt-3 font-display text-[1.75rem] leading-[0.95] font-bold tracking-tight uppercase sm:text-[2.25rem] lg:text-[2.5rem]">
                 {page.platform.headingBefore}{" "}
                 <span style={{ color: SAGE }}>
@@ -458,7 +582,7 @@ export function MarketLayoutAiBackup({
               </h2>
               <p
                 className="mt-4 text-base leading-[1.65] sm:text-lg"
-                style={{ color: MUTED }}
+                style={{ color: copy }}
               >
                 {page.platform.body}
               </p>

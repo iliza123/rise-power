@@ -18,12 +18,13 @@ export const metadata: Metadata = {
 };
 
 /**
- * Same layout as /markets/ai-backup, with the client's original mockup copy.
- * Share this URL to compare existing vs live site content.
+ * Dark layout of the AI Backup page, with the client's original mockup copy.
+ * Image slots are independent of the live page.
  */
 export default function AiBackupReferencePage() {
   return (
     <MarketLayoutAiBackup
+      tone="dark"
       page={aiBackupReferencePage}
       compareBanner={
         <div className="border-b border-[#d9d4c8] bg-[#101820] text-white">
