@@ -21,7 +21,7 @@ import {
 type BenefitIconName = AiBackupPageContent["resilient"]["benefits"][number]["icon"];
 
 const benefitIconProps = {
-  viewBox: "0 0 48 48",
+  viewBox: "0 0 24 24",
   fill: "none",
   stroke: "currentColor",
   strokeWidth: 1.75,
@@ -40,38 +40,36 @@ function BenefitIcon({
   if (name === "bolt") {
     return (
       <svg {...benefitIconProps} className={className}>
-        <path d="M26 5 14 27h9l-3 16 16-24h-9l3-14Z" />
+        <path d="M13 2 4 13.5h6.5L8.5 22 20 10h-6.5L15 2Z" />
       </svg>
     );
   }
   if (name === "modular") {
     return (
       <svg {...benefitIconProps} className={className}>
-        <path d="M18 14 32 8l12 6-14 6Z" />
-        <path d="M18 14v12l14 6V20" />
-        <path d="M44 14v12L30 32" />
-        <path d="M10 22a8 8 0 1 0 3.2-6.4" />
-        <path d="M10 12.5V18h5.5" />
+        <path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z" />
+        <path d="m3.3 7 8.7 5 8.7-5" />
+        <path d="M12 22V12" />
       </svg>
     );
   }
   if (name === "cycle") {
     return (
       <svg {...benefitIconProps} className={className}>
-        <path d="M16 18a10 10 0 0 1 16.5-6.2L36 15" />
-        <path d="M36 9v7h-7" />
-        <path d="M32 30a10 10 0 0 1-16.5 6.2L12 33" />
-        <path d="M12 39v-7h7" />
+        <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8" />
+        <path d="M21 3v5h-5" />
+        <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16" />
+        <path d="M8 16H3v5" />
       </svg>
     );
   }
   return (
     <svg {...benefitIconProps} className={className}>
-      <path d="M8 38V27" />
-      <path d="M18 38V21" />
-      <path d="M28 38V15" />
-      <path d="M8 31 18 24l10-7 12-8" />
-      <path d="M32 9h8v8" />
+      <path d="M4 21V15" />
+      <path d="M9 21V11" />
+      <path d="M14 21V8" />
+      <path d="M2 14.5 9 9.2 21 3" />
+      <path d="M15 3h6v6" />
     </svg>
   );
 }
@@ -186,34 +184,19 @@ export function MarketLayoutAiBackup({
   const cardRule = dark ? "rgba(255,255,255,0.12)" : SECTION_RULE;
 
   const benefitCards = (band: boolean) => (
-    <>
-      <Reveal variant="up" delay={80} className={band ? "lg:hidden" : "mt-10 lg:hidden"}>
-        <SnapCarousel
-          ariaLabel="Resilient energy benefits"
-          showArrows
-          showDots
-          itemClassName="w-[min(85vw,22rem)]"
-          trackClassName="gap-4 px-1 pb-1"
-        >
-          {page.resilient.benefits.map((benefit) => (
-            <ResilientBenefitCard key={benefit.title} benefit={benefit} tone={tone} />
-          ))}
-        </SnapCarousel>
-      </Reveal>
-      <RevealStagger
-        className={
-          band
-            ? "hidden gap-4 lg:grid lg:grid-cols-4 lg:gap-5"
-            : "mt-10 hidden gap-4 lg:grid lg:grid-cols-4 lg:mt-14 lg:gap-5"
-        }
-        step={50}
-        variant="up"
-      >
-        {page.resilient.benefits.map((benefit) => (
-          <ResilientBenefitCard key={benefit.title} benefit={benefit} tone={tone} />
-        ))}
-      </RevealStagger>
-    </>
+    <RevealStagger
+      className={
+        band
+          ? "grid grid-cols-2 gap-4 lg:grid-cols-4 lg:gap-5"
+          : "mt-10 grid grid-cols-2 gap-4 lg:mt-14 lg:grid-cols-4 lg:gap-5"
+      }
+      step={50}
+      variant="up"
+    >
+      {page.resilient.benefits.map((benefit) => (
+        <ResilientBenefitCard key={benefit.title} benefit={benefit} tone={tone} />
+      ))}
+    </RevealStagger>
   );
 
   return (

@@ -19,7 +19,7 @@ export const aiBackupPage: AiBackupPageContent = {
   },
   hero: {
     src: "/media/markets/ai-backup-hero-station.png",
-    mobileSrc: "/media/markets/ai-backup-hero-station.png",
+    mobileSrc: "/media/markets/ai-backup-hero-mobile-v2.png",
     alt: "RISE Mission Power stations and a hydrogen canister on a sunset plaza, with wind turbines, solar panels, and a glass building",
   },
   badges: [
