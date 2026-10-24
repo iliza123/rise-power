@@ -1,8 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import type { ReactNode } from "react";
-
 import { SnapCarousel } from "@/components/home/SnapCarousel";
 import { Reveal, RevealStagger } from "@/components/motion/Reveal";
 import { StackedPageHero } from "@/components/StackedPageHero";
@@ -161,8 +159,6 @@ type MarketLayoutAiBackupProps = {
   page?: AiBackupPageContent;
   /** Light is the live page. Dark is the client-reference page. */
   tone?: AiBackupTone;
-  /** Optional banner above the hero (e.g. client-reference compare link). */
-  compareBanner?: ReactNode;
 };
 
 /**
@@ -174,7 +170,6 @@ type MarketLayoutAiBackupProps = {
 export function MarketLayoutAiBackup({
   page = aiBackupPage,
   tone = "light",
-  compareBanner,
 }: MarketLayoutAiBackupProps) {
   const dark = tone === "dark";
   const copy = dark ? "rgba(244,246,242,0.72)" : MUTED;
@@ -201,7 +196,6 @@ export function MarketLayoutAiBackup({
 
   return (
     <main className={dark ? "bg-[#070b0c] text-white" : "bg-[#fbfaf7] text-[#101820]"}>
-      {compareBanner}
       {/* 1. Hero */}
       <StackedPageHero
         layout="split"
@@ -280,7 +274,7 @@ export function MarketLayoutAiBackup({
                 className="group flex h-full flex-col overflow-hidden rounded-[7px] border transition-colors hover:border-[#6e7f42]"
                 style={{ borderColor: cardRule, background: cardSurface, color: dark ? "#ffffff" : "#101820" }}
               >
-                <div className="relative aspect-square overflow-hidden bg-[#101820]">
+                <div className="relative aspect-[3/2] overflow-hidden bg-[#101820] sm:aspect-square">
                   <Image
                     src={item.imageSrc}
                     alt={item.imageAlt}
@@ -504,7 +498,7 @@ export function MarketLayoutAiBackup({
                 className="group flex h-full flex-col overflow-hidden rounded-[7px] border transition-colors hover:border-[#6e7f42]"
                 style={{ borderColor: cardRule, background: cardSurface, color: dark ? "#ffffff" : "#101820" }}
               >
-                <div className="relative aspect-square overflow-hidden bg-[#101820]">
+                <div className="relative aspect-[3/2] overflow-hidden bg-[#101820] sm:aspect-square">
                   <Image
                     src={app.imageSrc}
                     alt={app.imageAlt}
