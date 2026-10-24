@@ -118,7 +118,7 @@ function HowItWorksStepCard({
   const dark = tone === "dark";
   return (
     <article
-      className={`flex h-full flex-col overflow-hidden rounded-[7px] border ${dark ? "bg-[#141a18]" : "bg-[#fbfaf7]"}`}
+      className={`flex h-full flex-col overflow-hidden rounded-[7px] border ${dark ? "bg-[#171e22]" : "bg-[#fbfaf7]"}`}
       style={{ borderColor: dark ? "rgba(255,255,255,0.12)" : SECTION_RULE }}
     >
       <div className="relative aspect-square overflow-hidden bg-[#101820]">
@@ -133,7 +133,7 @@ function HowItWorksStepCard({
       <div className="flex flex-1 flex-col p-4 sm:p-5">
         <span
           className="font-display text-sm font-bold tracking-[0.14em] uppercase"
-          style={{ color: SAGE }}
+          style={{ color: dark ? "#c5d4a8" : SAGE }}
         >
           {step.number}
         </span>
@@ -172,11 +172,12 @@ export function MarketLayoutAiBackup({
   tone = "light",
 }: MarketLayoutAiBackupProps) {
   const dark = tone === "dark";
-  const copy = dark ? "rgba(244,246,242,0.72)" : MUTED;
+  const copy = dark ? "rgba(244,246,242,0.78)" : MUTED;
   const wash = dark ? "#10161a" : CREAM;
   const paper = dark ? "#070b0c" : "#ffffff";
-  const cardSurface = dark ? "#141a18" : "#ffffff";
+  const cardSurface = dark ? "#171e22" : "#ffffff";
   const cardRule = dark ? "rgba(255,255,255,0.12)" : SECTION_RULE;
+  const accent = dark ? "#c5d4a8" : SAGE;
 
   const benefitCards = (band: boolean) => (
     <RevealStagger
@@ -206,7 +207,7 @@ export function MarketLayoutAiBackup({
         splitImageWidthClassName="w-[66%]"
         splitImageSizes="66vw"
         heroMinHeightClassName="xl:min-h-[min(88svh,800px)]"
-        mobileBannerClassName="relative h-[min(58svh,480px)] w-full overflow-hidden sm:h-[min(52svh,520px)] xl:hidden"
+        framedHero={{ mobile: "aspect-[6/5]", desktop: "aspect-[16/9]" }}
         tone="#0a0f10"
         splitWash={SPLIT_WASH}
       >
@@ -274,7 +275,7 @@ export function MarketLayoutAiBackup({
                 className="group flex h-full flex-col overflow-hidden rounded-[7px] border transition-colors hover:border-[#6e7f42]"
                 style={{ borderColor: cardRule, background: cardSurface, color: dark ? "#ffffff" : "#101820" }}
               >
-                <div className="relative aspect-[3/2] overflow-hidden bg-[#101820] sm:aspect-square">
+                <div className="relative aspect-square overflow-hidden bg-[#101820]">
                   <Image
                     src={item.imageSrc}
                     alt={item.imageAlt}
@@ -294,8 +295,8 @@ export function MarketLayoutAiBackup({
                     {item.body}
                   </p>
                   <span
-                    className="mt-4 inline-flex items-center gap-2 text-sm font-semibold tracking-wide uppercase"
-                    style={{ color: SAGE }}
+                    className="mt-4 inline-flex w-fit items-center gap-2 self-start text-sm font-semibold tracking-wide uppercase"
+                    style={{ color: accent }}
                   >
                     Learn more
                     <ArrowRight
@@ -427,7 +428,7 @@ export function MarketLayoutAiBackup({
             <Link
               href={page.hydrogen.cta.href}
               className="mt-7 inline-flex min-h-12 items-center justify-center gap-2 rounded-sm border px-7 text-sm font-semibold tracking-wide uppercase transition-colors hover:border-[#6e7f42]"
-              style={{ borderColor: cardRule, color: SAGE }}
+              style={{ borderColor: dark ? "rgba(197,212,168,0.45)" : cardRule, color: accent }}
             >
               {page.hydrogen.cta.label}
               <ArrowRight className="size-4 shrink-0" aria-hidden />
@@ -518,8 +519,8 @@ export function MarketLayoutAiBackup({
                     {app.body}
                   </p>
                   <span
-                    className="cta-with-icon mt-4 inline-flex min-h-10 items-center gap-2 text-sm font-semibold tracking-wide uppercase"
-                    style={{ color: SAGE }}
+                    className="cta-with-icon mt-4 inline-flex min-h-10 w-fit items-center gap-2 self-start text-sm font-semibold tracking-wide uppercase"
+                    style={{ color: accent }}
                   >
                     Explore
                     <ArrowRight
