@@ -18,9 +18,9 @@ export const aiBackupPage: AiBackupPageContent = {
     href: "/products",
   },
   hero: {
-    src: "/media/markets/ai-backup-hero-renewable.png",
-    mobileSrc: "/media/markets/ai-backup-hero-renewable-mobile.png",
-    alt: "RISE Mission Power stations with a hydrogen canister, wind turbines, solar panels, and a data center",
+    src: "/media/markets/ai-backup-hero-station.png",
+    mobileSrc: "/media/markets/ai-backup-hero-station.png",
+    alt: "RISE Mission Power stations and a hydrogen canister on a sunset plaza, with wind turbines, solar panels, and a glass building",
   },
   badges: [
     { label: "AI Ready" },
@@ -34,21 +34,21 @@ export const aiBackupPage: AiBackupPageContent = {
       {
         title: "Modular Power Systems",
         body: "Scalable hydrogen backup that grows with AI data centers and edge facilities — add capacity as loads grow.",
-        imageSrc: "/media/markets/ai-backup-feature-modular-unit.png",
-        imageAlt: "Olive RISE power unit on a pad with wind turbines and mountains",
+        imageSrc: "/media/markets/ai-backup-feature-modular-unit-v6.png",
+        imageAlt: "Olive RISE power unit on a pad with mountains behind it",
         href: "/products#titan",
       },
       {
         title: "Zero-Downtime Operations",
         body: "Instant failover in under 10 seconds. Pair with your UPS bridge for seamless handoff when the grid drops.",
-        imageSrc: "/media/markets/ai-backup-feature-zero-downtime-canister.png",
-        imageAlt: "RISE hydrogen canister at a harbor at sunset",
+        imageSrc: "/media/markets/ai-backup-feature-zero-downtime-v6.png",
+        imageAlt: "Camouflage RISE canister on a harbor pier at sunset",
         href: "/insights/hydrogen-power-data-centers",
       },
       {
         title: "Intelligent Energy Control",
         body: "RFID-monitored cartridges track fuel level and health — clearer inventory for AI backup reserves.",
-        imageSrc: "/media/markets/ai-backup-feature-energy-control-console.png",
+        imageSrc: "/media/markets/ai-backup-feature-console-v6.png",
         imageAlt: "RISE tactical command console showing a live energy map",
         href: "/products#cartridge-kit",
       },
@@ -61,7 +61,7 @@ export const aiBackupPage: AiBackupPageContent = {
     headingAccent: "Always-On World.",
     body: "Clean, scalable hydrogen backup for AI data centers and critical infrastructure — without diesel pads, exhaust, or fuel-truck dependency.",
     cta: { label: "Meet Our Products", href: "/products" },
-    imageSrc: "/media/markets/ai-backup-resilient-campus.png",
+    imageSrc: "/media/markets/ai-backup-resilient-campus-v6.png",
     imageAlt:
       "RISE Mission Power units on a campus plaza with solar panels, wind turbines, and a glass building",
     imageFrameClassName:
@@ -95,7 +95,7 @@ export const aiBackupPage: AiBackupPageContent = {
     headingBefore: "Cleaner, Stronger, Smarter Power",
     headingAccent: "Fueled By Hydrogen.",
     body: "Rise Mission Power portable hydrogen systems deliver indoor-rated backup for AI facilities — cartridge-fueled runtime without diesel generators.",
-    imageSrc: "/media/markets/ai-backup-hydrogen-sea.png",
+    imageSrc: "/media/markets/ai-backup-hydrogen-sea-v6.png",
     imageAlt:
       "RISE Mission Power units and a hydrogen canister beside the sea, with wind turbines and a hydrogen plant",
     cta: {
@@ -118,29 +118,33 @@ export const aiBackupPage: AiBackupPageContent = {
         number: "01",
         title: "Produce",
         body: "Source clean hydrogen from renewable electrolysis or industrial supply networks.",
-        imageSrc: "/media/markets/ai-backup-step-produce.png",
-        imageAlt: "High-tech hydrogen processing facility",
+        imageSrc: "/media/markets/ai-backup-step-produce-v6.png",
+        imageAlt:
+          "RISE hydrogen tanks and power units at an alpine energy facility with wind turbines and solar panels",
       },
       {
         number: "02",
         title: "Store",
         body: "Stockpile and distribute RFID-monitored cartridges with long shelf life for your 24–72 hour backup window.",
-        imageSrc: "/media/markets/ai-backup-step-store.png",
-        imageAlt: "Inventory scan in the RISE energy warehouse",
+        imageSrc: "/media/markets/ai-backup-step-store-v6.png",
+        imageAlt:
+          "Camouflage RISE hydrogen canister at alpine sunrise with solar panels and wind turbines",
       },
       {
         number: "03",
         title: "Generate",
         body: "Run Rise-Titan or Rise-Sentinel for reliable indoor-safe power when the grid fails.",
-        imageSrc: "/media/markets/ai-backup-step-generate.png",
-        imageAlt: "Military power unit at golden hour",
+        imageSrc: "/media/markets/ai-backup-step-generate-v6.png",
+        imageAlt:
+          "RISE Mission Power generator at sunset beside solar arrays and a communications tower",
       },
       {
         number: "04",
         title: "Keep Online",
         body: "Keep AI halls, edge nodes, and critical infrastructure online — anywhere you deploy.",
-        imageSrc: "/media/markets/ai-backup-step-keep-online.png",
-        imageAlt: "Rise off-grid power station in the mountains",
+        imageSrc: "/media/markets/ai-backup-step-keep-online-v6.png",
+        imageAlt:
+          "RISE data center racks at golden hour with rooftop solar and wind turbines",
       },
     ],
   },
@@ -153,29 +157,32 @@ export const aiBackupPage: AiBackupPageContent = {
       {
         title: "Data Centers",
         body: "High-density backup for always-on AI — critical racks, edge facilities, and server halls.",
-        imageSrc: "/media/markets/ai-backup-app-data-centers.png",
-        imageAlt: "Military power station in a warehouse",
+        imageSrc: "/media/markets/ai-backup-app-data-centers-v6.png",
+        imageAlt:
+          "RISE server racks outside a data center at sunset, with solar panels and a wind turbine",
         href: "/insights/hydrogen-power-data-centers",
       },
       {
         title: "Telecom",
         body: "Quiet portable power for telecom backup and edge sites that must stay connected.",
-        imageSrc: "/media/markets/ai-backup-app-telecom.png",
-        imageAlt: "Tactical mission power in the mountains",
+        imageSrc: "/media/markets/ai-backup-app-telecom-v6.png",
+        imageAlt: "RISE power unit outside a modern hospital",
         href: "/markets/commercial",
       },
       {
         title: "Medical",
         body: "Indoor-safe backup when life-critical systems cannot tolerate diesel exhaust or downtime.",
-        imageSrc: "/media/markets/ai-backup-app-medical.png",
-        imageAlt: "Rugged mission power station at dusk",
+        imageSrc: "/media/markets/ai-backup-app-medical-v6.png",
+        imageAlt:
+          "RISE power unit at a mountain telecom site at sunrise",
         href: "/contact",
       },
       {
         title: "Industrial",
         body: "Resilient hydrogen backup for industrial facilities moving off diesel generators.",
-        imageSrc: "/media/markets/ai-backup-app-industrial.png",
-        imageAlt: "Olive green mission power at a refinery",
+        imageSrc: "/media/markets/ai-backup-app-industrial-v6.png",
+        imageAlt:
+          "RISE power units in the mountains at sunset, with solar panels",
         href: "/markets/commercial",
       },
     ],
@@ -187,8 +194,8 @@ export const aiBackupPage: AiBackupPageContent = {
     headingAccent: "Power Asset.",
     body: "Monitor, manage, and optimize your entire fleet with Rise Mission Power's intelligent energy management platform — clearer status for AI backup reserves and field deployments.",
     cta: { label: "See The Platform", href: "/contact" },
-    imageSrc: "/media/markets/ai-backup-platform.png",
+    imageSrc: "/media/markets/ai-backup-platform-v6.png",
     imageAlt:
-      "Rugged mission power station in the field",
+      "RISE energy control center overlooking wind turbines, solar panels, and power units",
   },
 };

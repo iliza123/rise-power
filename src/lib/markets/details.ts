@@ -426,9 +426,9 @@ export const marketDetails: readonly MarketDetailPage[] = [
     href: "/markets/ai-backup",
     images: {
       hero: {
-        src: "/media/markets/ai-backup-hero-renewable.png",
-        mobileSrc: "/media/markets/ai-backup-hero-renewable-mobile.png",
-        alt: "RISE Mission Power stations with a hydrogen canister, wind turbines, solar panels, and a data center",
+        src: "/media/markets/ai-backup-hero-station.png",
+        mobileSrc: "/media/markets/ai-backup-hero-station.png",
+        alt: "RISE Mission Power stations and a hydrogen canister on a sunset plaza, with wind turbines, solar panels, and a glass building",
       },
       secondary: {
         src: "/media/insights/infrastructure-backup.png",
