@@ -54,6 +54,15 @@ type StackedPageHeroProps = {
    * Include `xl:hidden`.
    */
   mobileBannerClassName?: string;
+  /**
+   * Split layout only. Shows each hero photo at its own aspect ratio below xl
+   * so the frame does not crop the subject. `mobile` is below `sm`; `desktop`
+   * is from `sm` until the split column.
+   */
+  framedHero?: {
+    mobile: string;
+    desktop: string;
+  };
   children: React.ReactNode;
 };
 
@@ -77,6 +86,7 @@ export function StackedPageHero({
   splitImageSizes = "58vw",
   heroMinHeightClassName = "xl:min-h-[min(78svh,680px)]",
   mobileBannerClassName = "relative h-[min(48svh,400px)] w-full overflow-hidden sm:h-[min(44svh,460px)] xl:hidden",
+  framedHero,
   children,
 }: StackedPageHeroProps) {
   /**
@@ -112,24 +122,66 @@ export function StackedPageHero({
         <div className={HEADER_SPACER} aria-hidden style={{ backgroundColor: tone }} />
 
         <div className={`relative w-full ${heroMinH}`}>
-          <div className={mobileBannerClassName} style={{ backgroundColor: tone }}>
-            <Image
-              src={mobileSrc}
-              alt={imageAlt}
-              fill
-              priority
-              quality={splitQuality}
-              sizes="100vw"
-              className={mediaClassName}
-            />
-            <div
-              className="pointer-events-none absolute inset-x-0 bottom-0 h-24"
-              aria-hidden
-              style={{
-                background: `linear-gradient(to top, ${tone} 0%, ${tone}00 100%)`,
-              }}
-            />
-          </div>
+          {framedHero ? (
+            <div className="relative w-full xl:hidden" style={{ backgroundColor: tone }}>
+              <div
+                className={`relative w-full overflow-hidden ${framedHero.mobile} ${
+                  mobileSrc !== imageSrc ? "sm:hidden" : ""
+                }`}
+              >
+                <Image
+                  src={mobileSrc}
+                  alt={imageAlt}
+                  fill
+                  priority
+                  quality={splitQuality}
+                  sizes="100vw"
+                  className="object-cover object-center"
+                />
+              </div>
+              {mobileSrc !== imageSrc ? (
+                <div
+                  className={`relative hidden w-full overflow-hidden sm:block ${framedHero.desktop}`}
+                >
+                  <Image
+                    src={imageSrc}
+                    alt=""
+                    fill
+                    quality={splitQuality}
+                    sizes="100vw"
+                    className="object-cover object-center"
+                    aria-hidden
+                  />
+                </div>
+              ) : null}
+              <div
+                className="pointer-events-none absolute inset-x-0 bottom-0 h-16"
+                aria-hidden
+                style={{
+                  background: `linear-gradient(to top, ${tone} 0%, ${tone}00 100%)`,
+                }}
+              />
+            </div>
+          ) : (
+            <div className={mobileBannerClassName} style={{ backgroundColor: tone }}>
+              <Image
+                src={mobileSrc}
+                alt={imageAlt}
+                fill
+                priority
+                quality={splitQuality}
+                sizes="100vw"
+                className={mediaClassName}
+              />
+              <div
+                className="pointer-events-none absolute inset-x-0 bottom-0 h-24"
+                aria-hidden
+                style={{
+                  background: `linear-gradient(to top, ${tone} 0%, ${tone}00 100%)`,
+                }}
+              />
+            </div>
+          )}
 
           <div
             className={`pointer-events-none absolute inset-y-0 right-0 z-0 hidden overflow-hidden xl:block ${splitImageWidthClassName}`}
