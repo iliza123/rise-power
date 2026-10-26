@@ -63,11 +63,8 @@ function BenefitIcon({
   }
   return (
     <svg {...benefitIconProps} className={className}>
-      <path d="M4 21V15" />
-      <path d="M9 21V11" />
-      <path d="M14 21V8" />
-      <path d="M2 14.5 9 9.2 21 3" />
-      <path d="M15 3h6v6" />
+      <path d="M16 7h6v6" />
+      <path d="m22 7-8.5 8.5-5-5L2 17" />
     </svg>
   );
 }
@@ -294,8 +291,8 @@ export function MarketLayoutAiBackup({
                     {item.body}
                   </p>
                   <span
-                    className="mt-4 inline-flex items-center gap-2 text-sm font-semibold tracking-wide uppercase"
-                    style={{ color: SAGE }}
+                    className="cta-with-icon mt-5 inline-flex min-h-10 w-fit items-center justify-center gap-2 self-start rounded-sm px-4 text-sm font-semibold tracking-wide text-white uppercase transition-opacity group-hover:opacity-90"
+                    style={{ background: SAGE_CTA }}
                   >
                     Learn more
                     <ArrowRight
@@ -426,8 +423,8 @@ export function MarketLayoutAiBackup({
             </ul>
             <Link
               href={page.hydrogen.cta.href}
-              className="mt-7 inline-flex min-h-12 items-center justify-center gap-2 rounded-sm border px-7 text-sm font-semibold tracking-wide uppercase transition-colors hover:border-[#6e7f42]"
-              style={{ borderColor: cardRule, color: SAGE }}
+              className="mt-7 inline-flex min-h-12 items-center justify-center gap-2 rounded-sm px-7 text-sm font-semibold tracking-wide text-white uppercase transition-opacity hover:opacity-90"
+              style={{ background: SAGE_CTA }}
             >
               {page.hydrogen.cta.label}
               <ArrowRight className="size-4 shrink-0" aria-hidden />
@@ -518,8 +515,8 @@ export function MarketLayoutAiBackup({
                     {app.body}
                   </p>
                   <span
-                    className="cta-with-icon mt-4 inline-flex min-h-10 items-center gap-2 text-sm font-semibold tracking-wide uppercase"
-                    style={{ color: SAGE }}
+                    className="cta-with-icon mt-5 inline-flex min-h-10 w-fit items-center justify-center gap-2 self-start rounded-sm px-4 text-sm font-semibold tracking-wide text-white uppercase transition-opacity group-hover:opacity-90"
+                    style={{ background: SAGE_CTA }}
                   >
                     Explore
                     <ArrowRight

@@ -155,18 +155,18 @@ export const aiBackupReferencePage: AiBackupPageContent = {
         href: "/insights/hydrogen-power-data-centers",
       },
       {
-        title: "Telecommunications",
-        body: "Keeping our communities connected.",
-        imageSrc: "/media/markets/ai-backup2/ai-backup2-app-telecom.png",
-        imageAlt: "Concrete facility with cooling louvers in front of snowy mountains",
-        href: "/markets/commercial",
-      },
-      {
         title: "Medical",
         body: "Life-saving power when it matters most.",
+        imageSrc: "/media/markets/ai-backup2/ai-backup2-app-telecom-alpine.png",
+        imageAlt: "Alpine medical center with a glowing cross at sunset in front of snowy mountains",
+        href: "/contact",
+      },
+      {
+        title: "Telecommunications",
+        body: "Keeping our communities connected.",
         imageSrc: "/media/markets/ai-backup2/ai-backup2-app-medical.png",
         imageAlt: "Cell towers on a mountain ridge at sunset",
-        href: "/contact",
+        href: "/markets/commercial",
       },
       {
         title: "Industrial",

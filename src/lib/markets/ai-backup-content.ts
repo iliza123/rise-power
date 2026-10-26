@@ -165,16 +165,15 @@ export const aiBackupPage: AiBackupPageContent = {
       {
         title: "Telecom",
         body: "Quiet portable power for telecom backup and edge sites that must stay connected.",
-        imageSrc: "/media/markets/ai-backup-app-telecom-v6.png",
-        imageAlt: "RISE power unit outside a modern hospital",
+        imageSrc: "/media/markets/ai-backup-app-medical-v6.png",
+        imageAlt: "RISE power unit at a mountain telecom site at sunrise",
         href: "/markets/commercial",
       },
       {
         title: "Medical",
         body: "Indoor-safe backup when life-critical systems cannot tolerate diesel exhaust or downtime.",
-        imageSrc: "/media/markets/ai-backup-app-medical-v6.png",
-        imageAlt:
-          "RISE power unit at a mountain telecom site at sunrise",
+        imageSrc: "/media/markets/ai-backup-app-telecom-v6.png",
+        imageAlt: "RISE power unit outside a modern hospital",
         href: "/contact",
       },
       {
