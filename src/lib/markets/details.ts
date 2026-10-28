@@ -405,7 +405,7 @@ export const marketDetails: readonly MarketDetailPage[] = [
   {
     /**
      * Index/SEO entry only — page body is rendered by MarketLayoutAiBackup
-     * from `ai-backup-content.ts` (client AI BACKUP.png structure).
+     * from `ai-backup-reference-content.ts` with the dark layout.
      */
     slug: "ai-backup",
     id: "ai-backup",

@@ -2,8 +2,7 @@ import type { AiBackupPageContent } from "./ai-backup-page-types";
 
 /**
  * Client reference copy from the original AI BACKUP.png mockup.
- * Used on /markets/ai-backup2 so the client can compare their existing
- * content against the live /markets/ai-backup page.
+ * Used on /markets/ai-backup. /markets/ai-backup2 is commented out.
  * Same section structure; wording matches the mockup.
  * Image paths live only in this file (`/media/markets/ai-backup2/`).
  */

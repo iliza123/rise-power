@@ -1,12 +1,20 @@
+import { notFound } from "next/navigation";
+
+/** /markets/ai-backup2 is turned off. Uncomment the block below to restore it. */
+export default function AiBackupReferencePage() {
+  notFound();
+}
+
+/*
 import type { Metadata } from "next";
 
 import { MarketLayoutAiBackup } from "@/components/markets/MarketLayoutAiBackup";
-import { aiBackupReferencePage } from "@/lib/markets/ai-backup-reference-content";
+import { aiBackupPage } from "@/lib/markets/ai-backup-content";
 
 export const metadata: Metadata = {
-  title: "AI Backup — Client Reference Content",
+  title: "AI Backup — Site Content",
   description:
-    "Client reference content from the original AI Backup mockup. For review against the live page.",
+    "Site copy for the AI Backup page, shown here for comparison with /markets/ai-backup.",
   robots: {
     index: false,
     follow: false,
@@ -16,12 +24,7 @@ export const metadata: Metadata = {
   },
 };
 
-/**
- * Dark layout of the AI Backup page, with the client's original mockup copy.
- * Image slots are independent of the live page.
- */
 export default function AiBackupReferencePage() {
-  return (
-    <MarketLayoutAiBackup tone="dark" page={aiBackupReferencePage} />
-  );
+  return <MarketLayoutAiBackup tone="light" page={aiBackupPage} />;
 }
+*/

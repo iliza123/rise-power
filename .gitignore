@@ -49,3 +49,4 @@ temp_interactive_push.bat
 .tmp-docx-extract/
 .tmp-*/
 
+.gitignore

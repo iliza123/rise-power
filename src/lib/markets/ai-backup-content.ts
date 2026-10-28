@@ -1,10 +1,10 @@
 import type { AiBackupPageContent } from "./ai-backup-page-types";
 
 /**
- * Live AI Backup landing — site content for /markets/ai-backup.
+ * Site AI Backup copy. /markets/ai-backup2 is commented out.
  * Page-local closing CTA omitted (global ClosingCta + Footer).
  * Claims aligned with commercial callouts, FAQ, and data-centers insight.
- * Client mockup wording lives in `ai-backup-reference-content.ts` (/markets/ai-backup2).
+ * Client mockup wording lives in `ai-backup-reference-content.ts` (/markets/ai-backup).
  */
 export const aiBackupPage: AiBackupPageContent = {
   eyebrow: "AI Backup",

@@ -154,14 +154,14 @@ type AiBackupTone = "light" | "dark";
 
 type MarketLayoutAiBackupProps = {
   page?: AiBackupPageContent;
-  /** Light is the live page. Dark is the client-reference page. */
+  /** Dark is /markets/ai-backup. Light is unused while /markets/ai-backup2 is off. */
   tone?: AiBackupTone;
 };
 
 /**
  * AI Backup page (sections 1–7) with images throughout.
  * No page-local closing CTA (global ClosingCta + Footer).
- * `tone="light"` is /markets/ai-backup. `tone="dark"` is /markets/ai-backup2.
+ * `tone="dark"` is /markets/ai-backup. `tone="light"` is unused while /markets/ai-backup2 is off.
  * Both read images from the page content, so art can be swapped per page.
  */
 export function MarketLayoutAiBackup({
